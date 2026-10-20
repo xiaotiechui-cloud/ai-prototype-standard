@@ -4,6 +4,7 @@
 
 | 触发条件 | 读取 | 权威依据 |
 | --- | --- | --- |
+| 生成交付、自测计划、能力缺口或缺陷修复回归 | [AI自测](selftest.md) | STD-QA-001；STD-GATE-001 |
 | 改尺寸、排版、响应式或说明滚动 | [几何与阅读](layout-and-reading.md) | ui 7、8.4、9.3；reader 19 |
 | 改组件选择、描边、工具或父子弹层 | [上下文与层栈](context-and-layers.md) | STD-RV-001、STD-RT-001；ui 8.5/9.5 |
 | 改确认、保存、记录、上传、图示或数据联动 | [动作与结果](actions-and-results.md) | STD-ACT-001；admin 12.6；reader 18 |
@@ -23,3 +24,5 @@ TC/CHK / 矩阵行：
 ```
 
 可配合 [局部参考实现](../../reference/implementations/review-kit/README.md) 理解执行方式；参考实现没有替代项目回归的效力。
+
+涉及具体能力时按 [模式入口](../patterns/README.md) 补读，适用性/契约由项目模型记录。矩阵正文通过support显式加载，缺省包不携带全部步骤；权威条款仍按阶段读取。

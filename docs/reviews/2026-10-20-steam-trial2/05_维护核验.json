@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-20",
+  "status": "expanded_analysis_and_candidate_patterns_only",
+  "head_at_review": "fbc394d02e9e5fa07bf0511be284e7155f31f6f8",
+  "user_confirmed": [
+    "Final prototype is the project design target",
+    "Chinese primary labels",
+    "Hide unnecessary business scrollbar thumbs while preserving scrolling",
+    "Keep interaction and use grayscale wireframes"
+  ],
+  "pending": [
+    "Cross-project applicability and opt-in pattern routing (expanded A/B)",
+    "Project label mapping: completed versus closed",
+    "Project additions and real capability boundaries (expanded C)"
+  ],
+  "checks": {
+    "maintain_verify": "passed: archive SHA-256; 45 source sections; 16 modules; 9 stable rule IDs; dependency routes; 5 opt-in resources; 224 links; 9 starter templates",
+    "git_diff_check": "passed",
+    "trial_inline_script_syntax": "3 of 3 passed",
+    "final_inline_script_syntax": "12 of 12 passed",
+    "independent_and_embedded_deliverable_markdown": "9 of 9 identical decoded texts",
+    "source_pointer_bounds": "checked T and F pointers against pinned files",
+    "planned_browser_regression_rows": 60,
+    "executed_browser_regression_rows": 0,
+    "input_html_sha256_unchanged": true,
+    "active_standards_manifest_entry_routes_templates_tools_reference_unchanged": true,
+    "original_isolated_function_observations": "10 of 10 reproduced differences or defects in pinned trial; not browser acceptance",
+    "expanded_isolated_function_observations": "7 of 7 reproduced pinned-trial differences/defects; 17 total across two harnesses; no browser acceptance",
+    "original_difference_observation_ids": 42,
+    "expanded_analysis_groups": 30,
+    "candidate_interaction_patterns": 18,
+    "registered_page_semantic_mapping": {
+      "trial": 38,
+      "final": 41,
+      "groups": 42,
+      "unmapped_trial": 0,
+      "unmapped_final": 0,
+      "meaning": "source/semantic review, not complete state execution"
+    },
+    "expanded_browser_regression_rows": 24,
+    "expanded_source_pointer_bounds": "143 explicit T/F line ranges within pinned source bounds; not proof of semantic correctness",
+    "new_structure_counts": "30 X groups;18 P patterns;24 E browser cases mechanically checked"
+  },
+  "browser": {
+    "status": "not_run",
+    "reason": "Local HTML navigation previously rejected by browser automatic security approval; no alternate route used",
+    "producer_logs": "Inspected adjacent historical probe logs; probe source not inspected or rerun; pass results not inherited"
+  },
+  "changed_scope": [
+    "New review folder",
+    "README review navigation",
+    "docs/REVIEW user decision record",
+    "CHANGELOG pending analysis entry"
+  ],
+  "git_actions": {
+    "commit": false,
+    "push": false,
+    "tag": false,
+    "release": false
+  }
+}

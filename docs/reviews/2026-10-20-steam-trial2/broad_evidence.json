@@ -1,0 +1,550 @@
+{
+  "review_date": "2026-10-20",
+  "method": "static_semantic_comparison_and_isolated_functions",
+  "browser_tests": "not_run",
+  "coverage_meaning": "Every registered page is semantically mapped; not every state or interaction was executed",
+  "inputs": [
+    {
+      "role": "trial",
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑2.0\\Steam商城原型交付_V1.4\\02_低保真交互原型-试跑2.0.html",
+      "sha256": "e743f225f7ce6b62f88e0e15b3b509cb9ffee4097bc760fc4ef2742d6ca6c7b6"
+    },
+    {
+      "role": "final",
+      "path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.0\\02_低保真交互原型-最终版本.html",
+      "sha256": "04bf9e76f416833e1ac84e97408b81cbceb043bb44dca4a0529f3c80f418765f"
+    }
+  ],
+  "coverage": {
+    "trial_registered": 38,
+    "final_registered": 41,
+    "semantic_groups": 42,
+    "trial_unmapped": [],
+    "final_unmapped": []
+  },
+  "page_mapping": [
+    {
+      "scope": "移动首页",
+      "trial": [
+        "APP-HOME-01"
+      ],
+      "final": [
+        "APP-HOME-01"
+      ],
+      "source": "T1866–1901 / F1577–1618",
+      "finding": "分区、广告/商品入口、排序与一级导航；首页入口收敛有差异"
+    },
+    {
+      "scope": "首次进入提醒",
+      "trial": [
+        "APP-AUTH-01"
+      ],
+      "final": [
+        "APP-NOTICE-01"
+      ],
+      "source": "T1993–1998 / F1619–1648",
+      "finding": "语义对应；不能把两个 AUTH-01 当同一职责"
+    },
+    {
+      "scope": "搜索默认",
+      "trial": [
+        "APP-SEARCH-01"
+      ],
+      "final": [
+        "APP-SEARCH-01"
+      ],
+      "source": "T1918–1929 / F1663–1710",
+      "finding": "空输入、历史管理、发现/热门区、局部失败"
+    },
+    {
+      "scope": "搜索结果",
+      "trial": [
+        "APP-SEARCH-02"
+      ],
+      "final": [
+        "APP-SEARCH-02"
+      ],
+      "source": "T1930–1937 / F1711–1758",
+      "finding": "排序差异、空数组回退、末页与重试；F也有空结果回退局限"
+    },
+    {
+      "scope": "移动详情",
+      "trial": [
+        "APP-PRODUCT-01"
+      ],
+      "final": [
+        "APP-PRODUCT-01"
+      ],
+      "source": "T1938–1965 / F1759–1882",
+      "finding": "媒体、资料、空字段、展开、不可售与购买入口"
+    },
+    {
+      "scope": "购买面板",
+      "trial": [
+        "APP-BUY-01"
+      ],
+      "final": [
+        "APP-PANEL-01"
+      ],
+      "source": "T1966–1992 / F1883–2000",
+      "finding": "规格/发货/资料/支付/协议、父子层、草稿恢复"
+    },
+    {
+      "scope": "购买资格引导",
+      "trial": [
+        "APP-AUTH-02"
+      ],
+      "final": [
+        "APP-AUTH-01"
+      ],
+      "source": "T1999–2012 / F2001–2019",
+      "finding": "资格校验、外部返回、就地保留；更多状态不等于动作正确"
+    },
+    {
+      "scope": "协议查看",
+      "trial": [
+        "APP-AGREEMENT-01"
+      ],
+      "final": [
+        "APP-AGREEMENT-01"
+      ],
+      "source": "T2013–2026 / F2020–2051",
+      "finding": "版本、正文、只读查看与授权确认分开"
+    },
+    {
+      "scope": "购买须知",
+      "trial": [
+        "APP-AGREEMENT-02"
+      ],
+      "final": [],
+      "source": "T2027–2034 / F1883–2000",
+      "finding": "F并入购买面板 PANEL_AGREE 子态，不属于缺页"
+    },
+    {
+      "scope": "手机绑定",
+      "trial": [
+        "APP-PHONE-01"
+      ],
+      "final": [
+        "APP-PHONE-01"
+      ],
+      "source": "T2035–2047 / F2052–2076",
+      "finding": "入口、取消/失败/未知、返回重验"
+    },
+    {
+      "scope": "移动确认订单",
+      "trial": [
+        "APP-CHECKOUT-01"
+      ],
+      "final": [
+        "APP-CHECKOUT-01"
+      ],
+      "source": "T2048–2081 / F2077–2143",
+      "finding": "交易快照、到期依据、继续支付与只读"
+    },
+    {
+      "scope": "移动支付返回",
+      "trial": [
+        "APP-PAYRET-01"
+      ],
+      "final": [
+        "APP-PAYRET-01"
+      ],
+      "source": "T2082–2091 / F2144–2179",
+      "finding": "用户回答与实际支付查询分开"
+    },
+    {
+      "scope": "移动支付/交付结果",
+      "trial": [
+        "APP-RESULT-01"
+      ],
+      "final": [
+        "APP-RESULT-01"
+      ],
+      "source": "T2092–2128 / F2180–2274",
+      "finding": "支付/取码/赠送/通知分离；异常查询和客服入口"
+    },
+    {
+      "scope": "移动订单列表",
+      "trial": [
+        "APP-ORDER-01"
+      ],
+      "final": [
+        "APP-ORDER-01"
+      ],
+      "source": "T2129–2147 / F2275–2332",
+      "finding": "派生页签、计数、本人数据、返回上下文"
+    },
+    {
+      "scope": "移动订单详情",
+      "trial": [
+        "APP-ORDER-02"
+      ],
+      "final": [
+        "APP-ORDER-02"
+      ],
+      "source": "T2148–2170 / F2333–2419",
+      "finding": "稳定订单ID、最新交付、复制与只读资料"
+    },
+    {
+      "scope": "移动我的",
+      "trial": [
+        "APP-PROFILE-01"
+      ],
+      "final": [
+        "APP-MINE-01"
+      ],
+      "source": "T2171–2181 / F2420–2477",
+      "finding": "命名对应；订单快捷入口和资格动作颗粒度不同"
+    },
+    {
+      "scope": "移动客服",
+      "trial": [
+        "APP-SERVICE-01"
+      ],
+      "final": [
+        "APP-SERVICE-01"
+      ],
+      "source": "T2182–2192 / F2478–2512",
+      "finding": "上下文订单、后台配置、备用路径；两版均有硬编码局限"
+    },
+    {
+      "scope": "容器异常",
+      "trial": [],
+      "final": [
+        "APP-CONTAINER-01"
+      ],
+      "source": "F2513–2530",
+      "finding": "F登记设计建议；T未登记独立页，不能直接认定必须新增业务"
+    },
+    {
+      "scope": "PC首页",
+      "trial": [
+        "WEB-HOME-01"
+      ],
+      "final": [
+        "WEB-HOME-01"
+      ],
+      "source": "T2243–2259 / F2598–2624",
+      "finding": "导航、搜索、广告与商品卡的宽屏组织"
+    },
+    {
+      "scope": "PC搜索",
+      "trial": [
+        "WEB-SEARCH-01"
+      ],
+      "final": [
+        "WEB-SEARCH-01"
+      ],
+      "source": "T2260–2266 / F2625–2672",
+      "finding": "默认/结果同页、空结果、分页与页面上下文"
+    },
+    {
+      "scope": "PC详情与购买子层",
+      "trial": [
+        "WEB-PRODUCT-01"
+      ],
+      "final": [
+        "WEB-PRODUCT-01"
+      ],
+      "source": "T2267–2303 / F2673–2773",
+      "finding": "左右分区、内容顺序、媒体高度、购买主层/子层；详见旧报告"
+    },
+    {
+      "scope": "PC确认/扫码",
+      "trial": [
+        "WEB-CHECKOUT-01"
+      ],
+      "final": [
+        "WEB-CHECKOUT-01"
+      ],
+      "source": "T2304–2314 / F2774–2859",
+      "finding": "建单后出码、扫码层状态与关闭、支付方式来源"
+    },
+    {
+      "scope": "PC支付返回",
+      "trial": [],
+      "final": [
+        "WEB-PAYRET-01"
+      ],
+      "source": "T3625–4081 / F2860–2872",
+      "finding": "T无独立页，需核对现有支付查询动作；不能以移动跳转充当PC实现"
+    },
+    {
+      "scope": "PC结果",
+      "trial": [
+        "WEB-RESULT-01"
+      ],
+      "final": [
+        "WEB-RESULT-01"
+      ],
+      "source": "T2343–2351 / F2873–2916",
+      "finding": "同业务状态、端内落地、当前对象和动作守卫"
+    },
+    {
+      "scope": "PC订单与详情",
+      "trial": [
+        "WEB-ORDER-01"
+      ],
+      "final": [
+        "WEB-ORDER-01"
+      ],
+      "source": "T2315–2342 / F2917–3030",
+      "finding": "表格/抽屉、按行打开、复制、恢复支付和客服来源"
+    },
+    {
+      "scope": "PC我的",
+      "trial": [],
+      "final": [
+        "WEB-MINE-01"
+      ],
+      "source": "T2365–2392 / F3031–3110",
+      "finding": "T未登记对应账号中心；是否补齐作为项目功能范围处理"
+    },
+    {
+      "scope": "PC协议",
+      "trial": [
+        "WEB-AGREEMENT-01"
+      ],
+      "final": [],
+      "source": "T2352–2357 / F2020–2051、6600–6607",
+      "finding": "T独立页面；F复用查看能力，关注端保持与返回而非ID一致"
+    },
+    {
+      "scope": "PC客服",
+      "trial": [
+        "WEB-SERVICE-01"
+      ],
+      "final": [],
+      "source": "T2358–2364 / F3031–3110",
+      "finding": "T独立页；F我的入口承接，关注配置和来源订单"
+    },
+    {
+      "scope": "后台登录",
+      "trial": [
+        "ADM-LOGIN-01"
+      ],
+      "final": [
+        "ADM-LOGIN-01"
+      ],
+      "source": "T2821–2825、4259–4274 / F5452–5467、7609–7617",
+      "finding": "状态、必填、反馈与模拟边界"
+    },
+    {
+      "scope": "后台工作台/统计",
+      "trial": [
+        "ADM-DASH-01"
+      ],
+      "final": [
+        "ADM-STAT-01"
+      ],
+      "source": "T2589–2595、2826–2832 / F4997–5046",
+      "finding": "并非完全等价：T全局概览，F可筛选统计；比较口径而非名称"
+    },
+    {
+      "scope": "后台首页配置",
+      "trial": [
+        "ADM-HOME-01"
+      ],
+      "final": [
+        "ADM-HOME-01"
+      ],
+      "source": "T2833–2847、4388–4441 / F3605–3735、7073–7168",
+      "finding": "广告列表 vs 固定分区编辑；草稿/发布语义、关联选择与排序"
+    },
+    {
+      "scope": "后台商品",
+      "trial": [
+        "ADM-PRODUCT-01"
+      ],
+      "final": [
+        "ADM-GOODS-01"
+      ],
+      "source": "T2780–2790、4371–4386 / F3764–4019",
+      "finding": "单规格字段 vs 重复规格/多选/媒体/硬件；字段生命周期与前台联动"
+    },
+    {
+      "scope": "后台供应商/库存",
+      "trial": [
+        "ADM-SUPPLIER-01"
+      ],
+      "final": [
+        "ADM-STOCK-01"
+      ],
+      "source": "T2848–2859、4443–4451 / F ADM_CFG库存配置与7516",
+      "finding": "T合并供应商和库存；F移除一期供应商维护入口，保留可售库存；不照抄删功能"
+    },
+    {
+      "scope": "后台订单",
+      "trial": [
+        "ADM-ORDER-01"
+      ],
+      "final": [
+        "ADM-ORDER-01"
+      ],
+      "source": "T2791–2800 / F4237–4350、7412–7447",
+      "finding": "主列/详情优先级、用户卡片、退款二次确认；状态“关闭”有语义冲突"
+    },
+    {
+      "scope": "后台赠送",
+      "trial": [
+        "ADM-GIFT-01"
+      ],
+      "final": [
+        "ADM-GIFT-01"
+      ],
+      "source": "T2801–2805、4452–4507 / F4361–4379、4555起、7054–7057",
+      "finding": "查看/开始处理/导出/确认完成分开；批次与对象范围"
+    },
+    {
+      "scope": "后台口令码",
+      "trial": [
+        "ADM-CODE-01"
+      ],
+      "final": [
+        "ADM-CODE-01"
+      ],
+      "source": "T2806–2809、1783–1797 / F ADM_CFG口令码配置、7644",
+      "finding": "查码权限、补发/换码、新旧关联与通知版本"
+    },
+    {
+      "scope": "后台通知",
+      "trial": [
+        "ADM-NOTIFY-01"
+      ],
+      "final": [
+        "ADM-NOTIFY-01"
+      ],
+      "source": "T2815–2817、1798–1810 / F4394–4448、7369–7411",
+      "finding": "T记录/重试；F还含模板编辑；未纳入的模板能力属于范围差异"
+    },
+    {
+      "scope": "后台退款",
+      "trial": [
+        "ADM-REFUND-01"
+      ],
+      "final": [
+        "ADM-REFUND-01"
+      ],
+      "source": "T2810–2814、1811–1837 / F7412–7447、7646–7647",
+      "finding": "审核/提交/资金回执拆开；T有退款能力，不能写成缺失"
+    },
+    {
+      "scope": "运营配置合并页",
+      "trial": [
+        "ADM-CONFIG-01"
+      ],
+      "final": [
+        "ADM-SEARCH-01",
+        "ADM-AGREE-01",
+        "ADM-SERVICE-01"
+      ],
+      "source": "T2860–2872、4616–4642 / F4088起、4452–4523、5468起",
+      "finding": "三页合并为三页签；搜索配置生效、协议历史、客服配置逐能力比较"
+    },
+    {
+      "scope": "后台权限",
+      "trial": [
+        "ADM-RBAC-01"
+      ],
+      "final": [
+        "ADM-RBAC-01"
+      ],
+      "source": "T2873–2886、4603–4615 / F4524–4554、7333–7368",
+      "finding": "T角色只读+账号分配，F角色增改/菜单树；动作权限与数据范围仍需单独定义"
+    },
+    {
+      "scope": "后台审计",
+      "trial": [
+        "ADM-AUDIT-01"
+      ],
+      "final": [
+        "ADM-AUDIT-01"
+      ],
+      "source": "T2818–2820、4439、4611 / F4955起",
+      "finding": "详情、对象、真实before/after、操作者与版本；不把占位字符串当快照"
+    },
+    {
+      "scope": "后台支付核查",
+      "trial": [],
+      "final": [
+        "ADM-PAYCHK-01"
+      ],
+      "source": "F5559、7649",
+      "finding": "F页库保留但侧栏已移除；T用订单查询/退款相关动作承接部分职责；入口保留策略待契约确认"
+    }
+  ],
+  "observations": {
+    "method": "isolated_extracted_functions_with_stub_dependencies",
+    "browser": false,
+    "results": [
+      {
+        "id": "BROAD-01",
+        "stored": {
+          "keywords": [
+            "新推荐"
+          ],
+          "hot": [
+            "P2"
+          ]
+        },
+        "shownKeywords": [
+          "旧推荐"
+        ],
+        "shownHot": [
+          {
+            "id": "P1"
+          }
+        ],
+        "reproduced": true
+      },
+      {
+        "id": "BROAD-02",
+        "publishedActionExecuted": false,
+        "liveName": "新广告",
+        "reproduced": true
+      },
+      {
+        "id": "BROAD-03",
+        "action": "open",
+        "status": "PROCESSING",
+        "batches": 1,
+        "reproduced": true
+      },
+      {
+        "id": "BROAD-04",
+        "original": "旧角色",
+        "audit": {
+          "id": "AU-1",
+          "operator": "管理员-赵",
+          "action": "分配角色",
+          "object": "u",
+          "detail": "新角色",
+          "before": "新角色",
+          "after": "新角色",
+          "at": "fixture"
+        },
+        "reproduced": true
+      },
+      {
+        "id": "BROAD-05",
+        "reqVer": 2,
+        "loading": false,
+        "oldCallbackRendered": true,
+        "reproduced": true
+      },
+      {
+        "id": "BROAD-06",
+        "pageAStillLoading": true,
+        "pageBLoading": false,
+        "reproduced": true
+      },
+      {
+        "id": "BROAD-07",
+        "catalogPrice": 99,
+        "buySpecPrice": 10,
+        "reproduced": true
+      }
+    ]
+  }
+}

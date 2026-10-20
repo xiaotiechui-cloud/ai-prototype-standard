@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-20",
+  "status": "candidate_analysis_not_active_rules",
+  "checks": {
+    "maintain_verify": {
+      "result": "PASS",
+      "source_sections": 45,
+      "modules": 16,
+      "stable_rule_ids": 9,
+      "opt_in_resources": 5,
+      "links": 240,
+      "starter_templates": 9
+    },
+    "git_diff_check": "PASS (Git emitted line-ending normalization warnings only)",
+    "four_input_hashes_unchanged": true,
+    "manifest_hash_unchanged": true,
+    "active_rules_or_archive_changed": false,
+    "rule_comparisons": 27,
+    "new_markdown_trailing_whitespace": 0
+  },
+  "file_sha256": {
+    "00_重新梳理与结论.md": "b82223d5ff0f1371932a6e90939a00d1298e58664966bd4c1ee7149f4d3738bd",
+    "01_V2.2与V3.0规则核对.md": "c5e2254d7078c6f18a6f984b928329b29239ebaacb833d39bd5284ec56b58590",
+    "02_通用稳定性与自测协议_待审.md": "64d9f08b866349e531cd8797f318bb28cc4cff5e6d81f03b613e214929a793d4",
+    "03_执行卡与修订落点.md": "b8657ceae2cfa6ef485ed1b0f6e305d2ac6b5364bf2bbe72b8e103b932ffc43d",
+    "inspect_lineage.py": "a8787112c679af3dd8c060abe4a64f87b47ba00aa8c4414c482e3aa2a8bfe58d",
+    "evidence.json": "8fda0ae745732095a1d092a1016e0e473288f2b77472191ff70ca5b29c1869aa"
+  },
+  "browser_executed": false,
+  "cross_model_generation_experiment_executed": false,
+  "previous_browser_cases": {
+    "planned": 60,
+    "executed": 0
+  },
+  "previous_isolated_observations": {
+    "count": 17,
+    "meaning": "reproduced differences or defects; not prototype acceptance passes"
+  },
+  "commit_created": false,
+  "push_performed": false,
+  "release_created": false
+}

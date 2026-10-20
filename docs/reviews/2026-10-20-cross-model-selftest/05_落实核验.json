@@ -1,0 +1,114 @@
+{
+  "date": "2026-10-20",
+  "status": "user_confirmed_maintenance_draft",
+  "user_confirmation": "本轮1～8全部采用建议",
+  "head_commit": "fbc394d02e9e5fa07bf0511be284e7155f31f6f8",
+  "rule_version": "V3.0",
+  "layout_revision": "modular-1",
+  "content_revision": "draft-20261020-selftest",
+  "manifest_sha256": "b8e081305f6a8d033221c210dcf003a1f7a26800d094e9597ebc333fda2e5f4c",
+  "checks": {
+    "archive_sha256_unchanged": true,
+    "four_input_hashes_unchanged": true,
+    "source_section_ownership_and_order_unchanged": true,
+    "module_ids_requires_profiles_and_stage_routes_unchanged": true,
+    "stable_rule_ids_unique": 10,
+    "support_resources": 11,
+    "ui_7_1_color_tokens_all_grayscale": true,
+    "new_markdown_whitespace_checked": 21,
+    "default_support_boundary_and_export_hashes": "PASS",
+    "maintain_verify": {
+      "exit_code": 0,
+      "stdout": "PASS: archive SHA-256; 45 source sections; 16 modules; 10 stable rule IDs; dependency routes; 11 opt-in resources; 318 links; 9 starter templates",
+      "stderr": ""
+    },
+    "git_diff_check": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  "sources": {
+    "v22": {
+      "path": "D:\\模型汇总\\CDK商城\\AI原型图与组件级文档说明标准_V2.2.md",
+      "sha256": "d8fcad9c5cab7a45b3b6b6973e960d08636189c4d2c8f67befec5a55cabfdcc1",
+      "unchanged": true
+    },
+    "v30": {
+      "path": "D:\\模型汇总\\CDK商城\\AI原型图与组件级文档说明标准_V3.0.md",
+      "sha256": "d0c411cec047e0e2387a7a3c8f50f56cbbb7c8a2d4f88e6080ecf6a0ed4ba0ec",
+      "unchanged": true
+    },
+    "final": {
+      "path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.0\\02_低保真交互原型-最终版本.html",
+      "sha256": "04bf9e76f416833e1ac84e97408b81cbceb043bb44dca4a0529f3c80f418765f",
+      "unchanged": true
+    },
+    "trial2": {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑2.0\\Steam商城原型交付_V1.4\\02_低保真交互原型-试跑2.0.html",
+      "sha256": "e743f225f7ce6b62f88e0e15b3b509cb9ffee4097bc760fc4ef2742d6ca6c7b6",
+      "unchanged": true
+    }
+  },
+  "module_sha256": {
+    "standards/core.md": "1baa09443c6c39d8f3496bdb6e3149b9fc4d54b61784957a8be2ecd1ac07f089",
+    "standards/workflow-and-model.md": "8d2ef444c086438b3d5eb186acec7474bc0b594a1976f6ce02e972f685eab6f8",
+    "standards/ui-and-components.md": "59f2fbe7e5f37505f2c06c4a4dc92e898a13a96f53cb4752a12bc2e9f7559207",
+    "standards/profiles/client.md": "9baff921151b2503a36043ce1fad607184985334dce895b4599ad4ecf2d45389",
+    "standards/profiles/desktop-web.md": "6802e5ff0c70f3408e872ac156baa4126e54fa75210770c2c6167c920e0f2081",
+    "standards/profiles/admin.md": "33d3847f10ee543bc45f6a9f25a5319d0ed8946305da1b2c5e7c84dbb4737a4d",
+    "standards/runtime-and-build.md": "3b8f4cd9ae60cbf00e0055271aad9b11cc7d305b6b4f41e4322034b6d2c87300",
+    "standards/diagrams-and-reader.md": "85a025338043a4d3b2351e11a257702a16f897306fb12ddd8f98b112d23b2d8c",
+    "standards/deliverables-ui.md": "bc03bbaee2b2a079e53ea19b04e8b05291224c8af121d58f6b54d25b3034ced8",
+    "standards/deliverables-business.md": "9ffe832016cb0109f49e51053a89f7fd0afe3488704d961ea769c570d40e583b",
+    "standards/quality-and-evidence.md": "e4dc4748d3d48514fefa592c73e6251facbb99afd2885542ca50c7ecbf934d36",
+    "standards/decisions-and-change.md": "2e213a0a2dbb5609e472c5bc67d70eac5e77c2a7885f85c5f13456437145371c",
+    "standards/contracts-and-checklists.md": "5fc9f9cb8e55c1e3e05af390705695816e9fc139ee4055d2fed5b88ed6dd047c",
+    "reference/original-front-matter.md": "bd7dd98bbd12bc6317b53e0f6beec69674d7138c02976216b26c6d2af5e01182",
+    "reference/original-prompts.md": "1ba715f8203e3424d77282f1912ed4013a1218e6633ece0d86efcf1c1711988c",
+    "reference/examples.md": "a65af63209e30876bd91b179b16233ff412fa195b8b9d930b073aacefe89b0ee"
+  },
+  "exports": [
+    {
+      "path": "exports/selftest-approved-default-20261020.md",
+      "sha256": "2f4caaf9e18f0b367f251544a3a5bfd2925df7bc3596f1a566ef4a29ad7fff63",
+      "bytes": 129013,
+      "modules": 7,
+      "support_ids": [],
+      "support_files": 0,
+      "file_hashes_and_bodies_match": true,
+      "historical_report_bodies_included": false
+    },
+    {
+      "path": "exports/selftest-approved-support-20261020.md",
+      "sha256": "ad950bcfd6df98bd2d75562e2cda1ff63617fdf5a0a41f1580ae17c4b7024473",
+      "bytes": 117358,
+      "modules": 6,
+      "support_ids": [
+        "acceptance-selftest",
+        "patterns-content",
+        "patterns-forms",
+        "patterns-data",
+        "patterns-query",
+        "project-steam"
+      ],
+      "support_files": 8,
+      "file_hashes_and_bodies_match": true,
+      "historical_report_bodies_included": false
+    }
+  ],
+  "browser_executed": false,
+  "cross_model_generation_experiment_executed": false,
+  "previous_browser_cases": {
+    "planned": 60,
+    "executed": 0
+  },
+  "previous_isolated_observations": {
+    "count": 17,
+    "meaning": "reproduced differences or defects; not prototype acceptance passes"
+  },
+  "commit_created": false,
+  "push_performed": false,
+  "tag_created": false,
+  "release_created": false
+}
