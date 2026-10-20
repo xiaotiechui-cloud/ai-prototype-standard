@@ -1,6 +1,7 @@
 {
   "rule_version": "V3.0",
   "layout_revision": "modular-1",
+  "content_revision": "draft-20261020-q1-q7",
   "status": "user-confirmed-maintenance-draft",
   "baseline": {
     "path": "archive/AI原型图与组件级文档说明标准_V3.0.md",
@@ -285,6 +286,33 @@
       "admin"
     ]
   },
+  "support_resources": [
+    {
+      "id": "acceptance-layout",
+      "title": "几何、滚动与阅读验收方法",
+      "paths": ["docs/acceptance/README.md", "docs/acceptance/layout-and-reading.md"]
+    },
+    {
+      "id": "acceptance-context",
+      "title": "评审上下文、组件与弹层验收方法",
+      "paths": ["docs/acceptance/README.md", "docs/acceptance/context-and-layers.md"]
+    },
+    {
+      "id": "acceptance-actions",
+      "title": "动作、记录与图示验收方法",
+      "paths": ["docs/acceptance/README.md", "docs/acceptance/actions-and-results.md"]
+    },
+    {
+      "id": "review-kit",
+      "title": "外壳、层栈与图示局部参考（浏览器未验证）",
+      "paths": ["reference/implementations/review-kit/README.md", "reference/implementations/review-kit/scenario.md", "reference/implementations/review-kit/review-kit.html", "reference/implementations/review-kit/diagram.puml", "reference/implementations/review-kit/baseline.json", "reference/implementations/review-kit/validation.json"]
+    },
+    {
+      "id": "golden-records",
+      "title": "黄金样例档案与反馈记录骨架（维护时读取）",
+      "paths": ["reference/golden/README.md", "reference/golden/CASE-TEMPLATE.json", "reference/golden/steam-20261020.json"]
+    }
+  ],
   "stages": {
     "model": [
       "workflow",

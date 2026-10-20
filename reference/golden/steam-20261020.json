@@ -1,0 +1,14 @@
+{
+  "case_id": "steam-20261020",
+  "status": "human-reference-baseline-incomplete",
+  "scope": ["两份用户交付原型的静态差异", "Q1-Q7通用规则确认"],
+  "prd": {"version_claimed": "V1.4", "sha256": null, "gap": "试跑HTML内嵌PRD可辅助阅读；最终版原始PRD及两次输入一致性未确认"},
+  "generation_standard": {"commit": null, "module_hashes": [], "gap": "两次生成的规范加载快照缺失，不能倒填当前仓库HEAD"},
+  "trial": {"path": "D:/模型汇总/电子宠物/Steam商城原型交付_V1.4/02_低保真交互原型-试跑版本.html", "sha256": "383a5dd1b1d9933d67d3fee31c7f7a69ea8f795c081162e871caa7791a13262a"},
+  "accepted_reference": {"path": "D:/模型汇总/CDK商城/Steam商城原型交付_V1.0/02_低保真交互原型-最终版本.html", "sha256": "04bf9e76f416833e1ac84e97408b81cbceb043bb44dca4a0529f3c80f418765f", "accepted_by": "用户作为人工调整后的最终参考提供", "acceptance_scope": "参考尺寸、布局、组件交互和图示细节；不是本轮完整验收通过"},
+  "confirmed_overrides": {"complete_source_record": null, "gap": "未提供完整人工调教对话；仅明确采用本次Q1-Q7通用建议"},
+  "decisions": "docs/REVIEW.md：2026-10-20 Q1-Q7",
+  "evidence_locations": ["docs/reviews/2026-10-20-steam/evidence.json", "docs/reviews/2026-10-20-steam/01_详细差异分析.md", "docs/reviews/2026-10-20-steam/04_确认与落实.md"],
+  "unverified": ["浏览器布局/交互/滚动/焦点/离线运行", "完整00-09交付", "两次PRD及规范输入一致性", "原样例的已知源码局限"],
+  "promotion_record": null
+}

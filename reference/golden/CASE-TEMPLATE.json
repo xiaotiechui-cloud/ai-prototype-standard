@@ -1,0 +1,15 @@
+{
+  "case_id": "待填写",
+  "status": "candidate-unverified",
+  "scope": [],
+  "prd": {"path_or_uri": null, "version": null, "sha256": null},
+  "standard": {"rule_version": null, "content_revision": null, "commit": null, "module_hashes": []},
+  "confirmed_overrides": [],
+  "trial": {"path_or_uri": null, "sha256": null},
+  "accepted_reference": {"path_or_uri": null, "sha256": null, "accepted_by": null, "acceptance_scope": null},
+  "conversation_or_decisions": [],
+  "differences": [{"id": "待填写", "classification": "执行错误/条款歧义/规范缺项/项目特例/合理替代", "final_decision": null, "authority": null, "regression": []}],
+  "evidence_locations": [],
+  "unverified": [],
+  "promotion_record": null
+}

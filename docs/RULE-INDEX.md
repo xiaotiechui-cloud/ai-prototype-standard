@@ -20,6 +20,9 @@
 | `STD-MODEL-001` | 同一事实唯一归口 | [core 3.4](../standards/core.md#s-3) | 事实来源与派生内容规则在此维护 |
 | `STD-MODEL-002` | 项目实体编号稳定与废止 | [core 3.6](../standards/core.md#s-3) | 编号生命周期规则在此维护 |
 | `STD-GATE-001` | 交付关卡与完成/停止判定 | [core 31](../standards/core.md#s-31) | 闸门条件在此维护；验证方法细节归 quality 29 |
+| `STD-RV-001` | 评审工具与业务上下文隔离 | [ui 8.9](../standards/ui-and-components.md#s-8) | 快照与恢复契约在此维护；阅读器/运行时引用 |
+| `STD-RT-001` | 弹层层栈、关闭生命周期与滚动锁 | [runtime 13.8](../standards/runtime-and-build.md#s-13) | 未保存退出默认、父子层与全部出口在此维护 |
+| `STD-ACT-001` | 动作分发与可观察闭环 | [runtime 13.3](../standards/runtime-and-build.md#s-13) | 真实入口、确认重放、目标及结果判定在此维护 |
 
 ## 自动核验
 

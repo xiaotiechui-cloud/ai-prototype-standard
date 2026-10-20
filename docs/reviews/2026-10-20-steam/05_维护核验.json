@@ -1,0 +1,254 @@
+{
+  "status": "completed-local-checks",
+  "date": "2026-10-20",
+  "content_revision": "draft-20261020-q1-q7",
+  "head_commit": "e531711ea20ef65e2fa4909fd5f09304852b2160",
+  "worktree_uncommitted": true,
+  "commands": [
+    {
+      "command": [
+        "D:\\Tools\\Python\\cpython-3.11.15-windows-x86_64-none\\python.exe",
+        "-X",
+        "utf8",
+        "tools/check_reference.py"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "PASS: missing ID; isolated draft; invalid/failed no-write; stable target; exactly-once replay; reset fixture\nPASS: 1 script syntax; unique static IDs; no static resource dependency; SVG/source sync\nUNVERIFIED: browser layout, scrolling, focus, layer exits, clicks, visible SVG scaling, offline execution\nsample_sha256=9fb1fe36d5389a1301e1cc41a45a9ab1e0518b77128710079e6c507a53d63131",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "D:\\Tools\\Python\\cpython-3.11.15-windows-x86_64-none\\python.exe",
+        "-X",
+        "utf8",
+        "tools/maintain.py",
+        "verify"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "PASS: archive SHA-256; 45 source sections; 16 modules; 9 stable rule IDs; dependency routes; 5 opt-in resources; 167 links; 9 starter templates",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "D:\\Tools\\Python\\cpython-3.11.15-windows-x86_64-none\\python.exe",
+        "-m",
+        "py_compile",
+        "tools/maintain.py",
+        "tools/check_reference.py"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "core.safecrlf=false",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "D:\\Tools\\Python\\cpython-3.11.15-windows-x86_64-none\\python.exe",
+        "-X",
+        "utf8",
+        "tools/maintain.py",
+        "pack",
+        "--stage",
+        "model",
+        "--profiles",
+        "admin",
+        "--name",
+        "q1q7-20261020-r1-admin-model"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "PASS: archive SHA-256; 45 source sections; 16 modules; 9 stable rule IDs; dependency routes; 5 opt-in resources; 167 links; 9 starter templates\nPACK: 5 modules; 90012 UTF-8 bytes vs baseline 191673 bytes (not a token estimate)\nCREATED: exports/q1q7-20261020-r1-admin-model.md",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "D:\\Tools\\Python\\cpython-3.11.15-windows-x86_64-none\\python.exe",
+        "-X",
+        "utf8",
+        "tools/maintain.py",
+        "pack",
+        "--stage",
+        "prototype",
+        "--profiles",
+        "client",
+        "--name",
+        "q1q7-20261020-r1-client-prototype"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "PASS: archive SHA-256; 45 source sections; 16 modules; 9 stable rule IDs; dependency routes; 5 opt-in resources; 167 links; 9 starter templates\nPACK: 7 modules; 124124 UTF-8 bytes vs baseline 191673 bytes (not a token estimate)\nCREATED: exports/q1q7-20261020-r1-client-prototype.md",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "D:\\Tools\\Python\\cpython-3.11.15-windows-x86_64-none\\python.exe",
+        "-X",
+        "utf8",
+        "tools/maintain.py",
+        "pack",
+        "--stage",
+        "full",
+        "--profiles",
+        "client",
+        "web",
+        "admin",
+        "--name",
+        "q1q7-20261020-r1-full"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "PASS: archive SHA-256; 45 source sections; 16 modules; 9 stable rule IDs; dependency routes; 5 opt-in resources; 167 links; 9 starter templates\nPACK: 13 modules; 193176 UTF-8 bytes vs baseline 191673 bytes (not a token estimate)\nCREATED: exports/q1q7-20261020-r1-full.md",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "D:\\Tools\\Python\\cpython-3.11.15-windows-x86_64-none\\python.exe",
+        "-X",
+        "utf8",
+        "tools/maintain.py",
+        "pack",
+        "--stage",
+        "full",
+        "--profiles",
+        "client",
+        "web",
+        "admin",
+        "--name",
+        "q1q7-20261020-r1-full-support",
+        "--support",
+        "acceptance-layout",
+        "acceptance-context",
+        "acceptance-actions",
+        "review-kit",
+        "golden-records"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "PASS: archive SHA-256; 45 source sections; 16 modules; 9 stable rule IDs; dependency routes; 5 opt-in resources; 167 links; 9 starter templates\nPACK: 13 modules; 244946 UTF-8 bytes vs baseline 191673 bytes (not a token estimate)\nCREATED: exports/q1q7-20261020-r1-full-support.md",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "D:\\Tools\\Python\\cpython-3.11.15-windows-x86_64-none\\python.exe",
+        "-X",
+        "utf8",
+        "tools/maintain.py",
+        "pack",
+        "--stage",
+        "model",
+        "--profiles",
+        "admin",
+        "--name",
+        "q1q7-20261020-r1-invalid",
+        "--support",
+        "does-not-exist"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "stdout": "PASS: archive SHA-256; 45 source sections; 16 modules; 9 stable rule IDs; dependency routes; 5 opt-in resources; 167 links; 9 starter templates",
+      "stderr": "Traceback (most recent call last):\n  File \"D:\\资料备份\\产品蒸馏房\\ai-prototype-standard\\tools\\maintain.py\", line 289, in <module>\n    main()\n  File \"D:\\资料备份\\产品蒸馏房\\ai-prototype-standard\\tools\\maintain.py\", line 285, in main\n    export(manifest, args)\n  File \"D:\\资料备份\\产品蒸馏房\\ai-prototype-standard\\tools\\maintain.py\", line 237, in export\n    extras = support_files(manifest, args.support)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\资料备份\\产品蒸馏房\\ai-prototype-standard\\tools\\maintain.py\", line 64, in support_files\n    raise ValueError(f'Unknown support resource: {key}')\nValueError: Unknown support resource: does-not-exist"
+    },
+    {
+      "command": [
+        "D:\\Tools\\Python\\cpython-3.11.15-windows-x86_64-none\\python.exe",
+        "-X",
+        "utf8",
+        "tools/maintain.py",
+        "pack",
+        "--stage",
+        "model",
+        "--profiles",
+        "admin",
+        "--name",
+        "q1q7-20261020-r1-admin-model"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "stdout": "PASS: archive SHA-256; 45 source sections; 16 modules; 9 stable rule IDs; dependency routes; 5 opt-in resources; 167 links; 9 starter templates\nPACK: 5 modules; 90012 UTF-8 bytes vs baseline 191673 bytes (not a token estimate)",
+      "stderr": "Traceback (most recent call last):\n  File \"D:\\资料备份\\产品蒸馏房\\ai-prototype-standard\\tools\\maintain.py\", line 289, in <module>\n    main()\n  File \"D:\\资料备份\\产品蒸馏房\\ai-prototype-standard\\tools\\maintain.py\", line 285, in main\n    export(manifest, args)\n  File \"D:\\资料备份\\产品蒸馏房\\ai-prototype-standard\\tools\\maintain.py\", line 265, in export\n    write_export(ROOT / 'exports' / (args.name + '.md'), content)\n  File \"D:\\资料备份\\产品蒸馏房\\ai-prototype-standard\\tools\\maintain.py\", line 218, in write_export\n    raise ValueError(f'Export already exists; choose a new --name: {path.name}')\nValueError: Export already exists; choose a new --name: q1q7-20261020-r1-admin-model.md"
+    }
+  ],
+  "unchanged_inputs": [
+    {
+      "path": "archive/AI原型图与组件级文档说明标准_V3.0.md",
+      "expected": "d0c411cec047e0e2387a7a3c8f50f56cbbb7c8a2d4f88e6080ecf6a0ed4ba0ec",
+      "actual": "d0c411cec047e0e2387a7a3c8f50f56cbbb7c8a2d4f88e6080ecf6a0ed4ba0ec"
+    },
+    {
+      "path": "D:/模型汇总/电子宠物/Steam商城原型交付_V1.4/02_低保真交互原型-试跑版本.html",
+      "expected": "383a5dd1b1d9933d67d3fee31c7f7a69ea8f795c081162e871caa7791a13262a",
+      "actual": "383a5dd1b1d9933d67d3fee31c7f7a69ea8f795c081162e871caa7791a13262a"
+    },
+    {
+      "path": "D:/模型汇总/CDK商城/Steam商城原型交付_V1.0/02_低保真交互原型-最终版本.html",
+      "expected": "04bf9e76f416833e1ac84e97408b81cbceb043bb44dca4a0529f3c80f418765f",
+      "actual": "04bf9e76f416833e1ac84e97408b81cbceb043bb44dca4a0529f3c80f418765f"
+    }
+  ],
+  "exports": [
+    {
+      "path": "exports/q1q7-20261020-r1-admin-model.md",
+      "sha256": "538fbb3bfd0eda29b00115e9ff7cab1e6a77f09b1021c0cf560824f45a90bbe0",
+      "bytes": 90012,
+      "module_count": 5,
+      "support_file_count": 0
+    },
+    {
+      "path": "exports/q1q7-20261020-r1-client-prototype.md",
+      "sha256": "4987746ffea61004a27245053af47446a13cb80fea6e9252b6504d93189084de",
+      "bytes": 124124,
+      "module_count": 7,
+      "support_file_count": 0
+    },
+    {
+      "path": "exports/q1q7-20261020-r1-full.md",
+      "sha256": "3b001466d212ddbc42381da4392f39f00be94fabb1f1b42eb87c5bdcf91756f1",
+      "bytes": 193176,
+      "module_count": 13,
+      "support_file_count": 0
+    },
+    {
+      "path": "exports/q1q7-20261020-r1-full-support.md",
+      "sha256": "5abe05db5a3cc314fd4c079b53d0bd7f2be7740c14abbaf4a84a16932cac1a2e",
+      "bytes": 244946,
+      "module_count": 13,
+      "support_file_count": 13
+    }
+  ],
+  "additional_assertions": [
+    "support hashes match files",
+    "default/full do not embed auxiliary bodies",
+    "explicit support includes 13 deduplicated files",
+    "unknown support rejected without export",
+    "existing export not overwritten",
+    "unsafe/missing support path rejected",
+    "ten template section labels in parser order",
+    "sample baseline module/input hashes match",
+    "24 on-demand matrix methods"
+  ],
+  "matrix_method_count": 24,
+  "browser_executed": false,
+  "prd_rerun_executed": false,
+  "commit_push_tag_release_executed": false,
+  "unverified": [
+    "two original prototypes: browser layout/clicks/scroll/focus/offline",
+    "new reference: browser behavior and visible SVG scaling",
+    "complete 00-09 business trial",
+    "precise readability threshold calibration"
+  ]
+}

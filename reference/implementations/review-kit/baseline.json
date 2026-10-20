@@ -1,0 +1,59 @@
+{
+  "sample_id": "RK-01",
+  "status": "candidate-browser-unverified",
+  "date": "2026-10-20",
+  "input": {
+    "path": "scenario.md",
+    "sha256": "9ba3dd21153b659ec466226bb1fb51b6795cbec8f9710c2f20f105621d5df57d"
+  },
+  "standard": {
+    "rule_version": "V3.0",
+    "layout_revision": "modular-1",
+    "content_revision": "draft-20261020-q1-q7",
+    "parent_commit": "e531711ea20ef65e2fa4909fd5f09304852b2160",
+    "uncommitted_worktree": true,
+    "modules": [
+      {
+        "id": "core",
+        "path": "standards/core.md",
+        "sha256": "bde6436cc47a41b7d5dcce22c4f0b8f43b21e10d2292b1b6650b4d15bb50850f"
+      },
+      {
+        "id": "ui",
+        "path": "standards/ui-and-components.md",
+        "sha256": "8b79f9b64ba8c197d46fec8ddbd943e92f3a9294e21527510c28eed33dea821e"
+      },
+      {
+        "id": "client",
+        "path": "standards/profiles/client.md",
+        "sha256": "9fb1c03fdb06970161ca8ffe26b3b54beb59031fb85c2d9729142d177c52311d"
+      },
+      {
+        "id": "runtime",
+        "path": "standards/runtime-and-build.md",
+        "sha256": "f59e6bfba55dc97cc03bed989947f5be8becf77598844e981fe0f9aadb68d1d0"
+      },
+      {
+        "id": "reader",
+        "path": "standards/diagrams-and-reader.md",
+        "sha256": "85a025338043a4d3b2351e11a257702a16f897306fb12ddd8f98b112d23b2d8c"
+      }
+    ]
+  },
+  "confirmed_rule_decisions": "docs/REVIEW.md Q1-Q7",
+  "sample_code_acceptance": null,
+  "sample_sha256": "9fb1fe36d5389a1301e1cc41a45a9ab1e0518b77128710079e6c507a53d63131",
+  "diagram": {
+    "tool": "PlantUML 1.2024.8; local Java/Graphviz build, UTF-8",
+    "source_sha256": "377a4738fdb0305b2de2b8659dd23c3e4d45bb5d5c18e300be7c8980d1bdbb15",
+    "svg_sha256": "b492569ba438341534534ae3219bbdc507141459ae76a805626196b13d4619af"
+  },
+  "unverified": [
+    "browser layout",
+    "focus and scrolling",
+    "layer exits and clicks",
+    "visible SVG zoom",
+    "offline browser execution"
+  ],
+  "full_project_delivery": false
+}

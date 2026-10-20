@@ -1,0 +1,24 @@
+@startuml
+skinparam monochrome true
+skinparam shadowing false
+title FL-RK-01 资料保存（局部示例）
+|用户|
+start
+:修改资料草稿;
+|本地模拟系统|
+if (目标记录仍存在?) then (是)
+  if (校验通过且模拟成功?) then (是)
+    :按稳定 ID 写回一次;
+    :更新列表并关闭编辑层;
+    stop
+  else (否)
+    :显示错误并保留草稿;
+    :允许继续编辑或重试;
+    stop
+  endif
+else (否)
+  :显示目标失效;
+  :禁止替换为其他记录;
+  stop
+endif
+@enduml

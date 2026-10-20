@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-20",
+  "command": "python -X utf8 tools/check_reference.py",
+  "script_sha256": "d42b6998291b5e6244114601e8788e5e6a9a30cc7801c7988a936a4c15bf60cc",
+  "sample_sha256": "9fb1fe36d5389a1301e1cc41a45a9ab1e0518b77128710079e6c507a53d63131",
+  "exit_code": 0,
+  "stdout": "PASS: missing ID; isolated draft; invalid/failed no-write; stable target; exactly-once replay; reset fixture\nPASS: 1 script syntax; unique static IDs; no static resource dependency; SVG/source sync\nUNVERIFIED: browser layout, scrolling, focus, layer exits, clicks, visible SVG scaling, offline execution\nsample_sha256=9fb1fe36d5389a1301e1cc41a45a9ab1e0518b77128710079e6c507a53d63131",
+  "browser_executed": false,
+  "meaning": "Static and pure-model results only; not browser validation"
+}

@@ -52,6 +52,25 @@ def load():
     return json.loads(read(MANIFEST))
 
 
+def support_files(manifest, selected):
+    """Explicit opt-in only; support assets never enter module dependencies."""
+    resources = manifest.get('support_resources', [])
+    by_id = {r['id']: r for r in resources}
+    if len(by_id) != len(resources):
+        raise ValueError('Duplicate support resource ID')
+    files = []
+    for key in selected:
+        if key not in by_id:
+            raise ValueError(f'Unknown support resource: {key}')
+        for rel in by_id[key]['paths']:
+            path = (ROOT / rel).resolve()
+            if not path.is_relative_to(ROOT.resolve()) or not path.is_file():
+                raise ValueError(f'Missing or unsafe support file: {rel}')
+            if rel not in files:
+                files.append(rel)
+    return files
+
+
 def extract(module):
     body = read(ROOT / module['path'])
     matches = list(MARKER.finditer(body))
@@ -117,6 +136,8 @@ def verify(manifest, baseline=False):
         for profile in manifest['profiles']:
             select(manifest, stage, [profile])
         select(manifest, stage, list(manifest['profiles']))
+    resources = manifest.get('support_resources', [])
+    support_files(manifest, [r['id'] for r in resources])
     rule_index = read(ROOT / 'docs' / 'RULE-INDEX.md')
     indexed_rules = re.findall(r'^\| `(STD-[A-Z0-9-]+)` \|.*?\]\(\.\./(standards/[^)#]+)#', rule_index, re.M)
     if not indexed_rules or len({rule for rule, _ in indexed_rules}) != len(indexed_rules):
@@ -134,10 +155,11 @@ def verify(manifest, baseline=False):
             raise ValueError(f'Rule authority mismatch: {rule}')
     # Only maintained navigation/templates are checked; inherited chapter prose may
     # contain product output paths which do not exist inside this standard repo.
-    docs = [*ROOT.glob('*.md'), *(ROOT / 'templates').glob('*.md'), *(ROOT / 'docs').glob('*.md')]
+    docs = [*ROOT.glob('*.md'), *(ROOT / 'templates').glob('*.md'), *(ROOT / 'docs').rglob('*.md')]
     docs += [ROOT / m['path'] for m in manifest['modules']]
+    docs += [ROOT / p for p in support_files(manifest, [r['id'] for r in resources]) if p.endswith('.md')]
     checked = 0
-    for path in docs:
+    for path in dict.fromkeys(docs):
         for target in markdown_targets(read(path)):
             if re.match(r'^[A-Za-z][A-Za-z0-9+.-]*:', target):
                 continue
@@ -151,7 +173,7 @@ def verify(manifest, baseline=False):
     templates = list((ROOT / 'templates').glob('[0-9][0-9]_*.md'))
     if len(templates) != 9 or {p.name[:2] for p in templates} != {'00', '01', '03', '04', '05', '06', '07', '08', '09'}:
         raise ValueError('Expected exactly nine MD starter templates; 02 is HTML')
-    print(f'PASS: archive SHA-256; {len(sections)} source sections; {len(modules)} modules; {len(indexed_rules)} stable rule IDs; dependency routes; {checked} links; 9 starter templates')
+    print(f'PASS: archive SHA-256; {len(sections)} source sections; {len(modules)} modules; {len(indexed_rules)} stable rule IDs; dependency routes; {len(resources)} opt-in resources; {checked} links; 9 starter templates')
     if baseline:
         print('PASS: every migrated section matches V3.0 text exactly (line endings normalized)')
 
@@ -206,22 +228,38 @@ def export(manifest, args):
     if args.command == 'bundle':
         parts = collect(manifest)
         content = ('# 规范合订导出（由模块生成，请勿直接维护）\n\n'
-                   f"规则基线：{manifest['rule_version']}；结构修订：{manifest['layout_revision']}。\n\n"
+                   f"规则基线：{manifest['rule_version']}；结构修订：{manifest['layout_revision']}；内容修订：{manifest.get('content_revision', 'initial')}。\n\n"
                    'front / 第32章 / H、I 是历史入口或参考示例，不参与当前加载路由；原有章号保留。\n\n')
         content += ''.join(parts[key] for key in manifest['section_order'])
     else:
         chosen = select(manifest, args.stage, args.profiles)
         hashes = [{'path': m['path'], 'sha256': sha((ROOT / m['path']).read_bytes())} for m in chosen]
+        extras = support_files(manifest, args.support)
         evidence = {'rule_version': manifest['rule_version'], 'layout_revision': manifest['layout_revision'],
-                    'stage': args.stage, 'profiles': args.profiles, 'head_commit': snapshot_sha(), 'files': hashes}
+                    'content_revision': manifest.get('content_revision', 'initial'),
+                    'stage': args.stage, 'profiles': args.profiles, 'head_commit': snapshot_sha(), 'files': hashes,
+                    'support_ids': args.support,
+                    'support_files': [{'path': p, 'sha256': sha((ROOT / p).read_bytes())} for p in extras]}
         content = ('# AI 当前阶段规范包\n\n'
                    f"规则基线：{manifest['rule_version']}；维护结构：{manifest['layout_revision']}（用户已确认、未发布）。\n\n"
+                   f"内容修订：{manifest.get('content_revision', 'initial')}。\n\n"
                    f"阶段：{args.stage}；端：{', '.join(args.profiles)}。\n\n"
                    '这是当前阶段输入，不能据此把完整交付范围缩减为部分文件。完整任务仍需后续阶段规则和验收。\n'
                    '只在真正读取文件后报告已加载；跨章引用需要时补读对应模块。示例业务不构成 PRD。\n\n'
                    '## 加载快照\n\n```json\n' + json.dumps(evidence, ensure_ascii=False, indent=2) + '\n```\n\n')
         for m in chosen:
             content += f"\n<!-- MODULE: {m['id']} | {m['path']} -->\n" + read(ROOT / m['path'])
+        for rel in extras:
+            body = read(ROOT / rel)
+            content += f'\n\n## 按需辅助材料：{rel}\n\n仅作检查方法或参考实现，不替代权威规则或项目 PRD。\n\n'
+            if rel.endswith('.md'):
+                content += body
+            else:
+                # Avoid closing a wrapper fence if an embedded asset contains one.
+                longest = max([len(m[0]) for m in re.finditer(r'`+', body)] or [0])
+                fence = '`' * max(3, longest + 1)
+                lang = Path(rel).suffix.lstrip('.')
+                content += f'{fence}{lang}\n{body}\n{fence}\n'
         original_bytes = (ROOT / manifest['baseline']['path']).stat().st_size
         print(f'PACK: {len(chosen)} modules; {len(content.encode("utf-8"))} UTF-8 bytes vs baseline {original_bytes} bytes (not a token estimate)')
     write_export(ROOT / 'exports' / (args.name + '.md'), content)
@@ -238,6 +276,7 @@ def main():
     pack.add_argument('--stage', required=True, choices=['model', 'prototype', 'docs', 'verify', 'change', 'full'])
     pack.add_argument('--profiles', nargs='+', required=True, choices=['client', 'web', 'admin'])
     pack.add_argument('--name', required=True)
+    pack.add_argument('--support', nargs='+', default=[], help='Opt-in support IDs from standard-manifest.json')
     args = parser.parse_args()
     manifest = load()
     if args.command == 'verify':

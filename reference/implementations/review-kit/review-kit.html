@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>评审外壳、层栈与图示局部参考</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f3f4f6;color:#20242a;font:14px/1.7 "Microsoft YaHei",Arial,sans-serif}button,input,select,textarea{font:inherit}button,select,input{min-height:40px}button{cursor:pointer;border:1px solid #c9cdd3;background:white;color:inherit;padding:6px 12px}button:disabled{cursor:default}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #526477;outline-offset:2px}[hidden]{display:none!important}h1{font-size:20px;font-weight:500}h2{font-size:17px}h3{font-size:14px}main{max-width:1440px;margin:auto;padding:20px}.controls{display:flex;gap:12px;flex-wrap:wrap;align-items:center}.host{container-type:inline-size}.layout{display:grid;grid-template-columns:384px minmax(0,1fr);gap:24px;margin:16px 0}.layout>*{min-width:0}.canvas-column{position:sticky;top:12px;align-self:start;max-height:calc(100dvh - 24px);overflow:auto}.phone{position:relative;width:320px;height:610px;margin:auto;border:2px solid #c9cdd3;border-radius:22px;padding:14px;background:white;overflow:hidden}.business{height:100%;overflow:auto;overscroll-behavior:contain}.phone button,.phone input,.phone select{min-height:44px}.phone button{min-width:44px}.phone input,.phone textarea{max-width:100%;width:100%}.phone input[type=checkbox]{width:44px;min-width:44px}.card{border:1px solid #c9cdd3;background:white;padding:12px;margin-bottom:14px}.side{font-size:13px;max-height:calc(100dvh - 24px);overflow:auto;position:sticky;top:12px;align-self:start;scrollbar-color:transparent transparent}.side:hover,.side:focus-within{scrollbar-color:#6b7280 transparent}.selector{position:sticky;top:0;background:white;padding:12px;border-bottom:1px solid #c9cdd3;z-index:1}.selector select{width:100%}#description{padding:12px;background:white}.wide{overflow-x:auto;max-width:100%}table{border-collapse:collapse;font-size:12px;min-width:750px}td,th{border:1px solid #c9cdd3;padding:6px;vertical-align:top;white-space:normal}p{overflow-wrap:anywhere}.outlined{outline:2px dashed #526477;outline-offset:-2px}.layer{position:absolute;inset:0;background:#0007;display:flex;align-items:center;justify-content:center;padding:8px;z-index:20}.layer.viewport{position:fixed;padding:20px}.panel{background:white;border:1px solid #c9cdd3;max-height:100%;width:100%;display:flex;flex-direction:column;min-height:0;min-width:0}.viewport .panel{max-width:1000px;max-height:86dvh}.panel-head{display:flex;gap:6px;align-items:center;flex-wrap:wrap;padding:8px;border-bottom:1px solid #c9cdd3}.panel-head h2{margin:0 auto 0 0}.panel-body{padding:12px;overflow:auto;overscroll-behavior:contain;min-height:0}.error{color:#a33b3b}.diagram-scroll{overflow:auto;max-width:100%}#diagram-svg svg{display:block;max-width:none;height:auto}pre{white-space:pre-wrap;overflow-wrap:anywhere}label{display:block;margin:8px 0}.note{font-size:12px;color:#6b7280}@container (max-width:759px){.layout{grid-template-columns:minmax(0,1fr)}.canvas-column,.side{position:static;max-height:none;overflow:visible}.selector{position:static}.phone{max-width:100%}}
+</style>
+<main id="shell">
+<h1>评审机制局部样例</h1>
+<p class="note">仅内存演示；浏览器交互尚未验收。输入备注后切组件、描边或图示，检查值与滚动是否保留。刷新恢复初始数据。</p>
+<div class="controls"><label>评审容器宽度 <select id="container-width"><option value="100%">自动</option><option value="740px">单栏 740px</option><option value="1080px">双栏 1080px</option></select></label><button id="outline" aria-pressed="false">辅助描边</button><button id="open-diagram">流程图示</button></div>
+<p>页面 RK-01 · 当前 <span id="page-state">DEFAULT</span> · 本地模拟数据 · <span id="geometry"></span></p>
+<div id="host" class="host"><div class="layout">
+<section class="canvas-column" aria-label="业务画布"><div id="phone" class="phone"><div id="business" class="business">
+<h2>资料记录</h2><section class="card" data-component="RK-NOTE"><label>未提交备注<textarea id="note" rows="4"></textarea></label><p data-note-kind="help" class="note">备注只在当前页面保留，保存记录不会提交此备注。</p></section>
+<section data-component="RK-LIST" id="records"></section>
+<button data-act="edit" data-id="missing">查看失效目标</button>
+<div id="long-content"></div><p>正文末端</p><button data-act="edit" data-id="r2">编辑第二条</button>
+</div></div></section>
+<aside class="side" aria-label="组件说明"><div class="selector"><label for="component">当前页面组件（3 个）</label><select id="component"></select><p id="visibility" role="status"></p></div><div id="description"></div></aside>
+</div></div>
+<p id="status" role="status">尚未保存记录。</p><details><summary>业务快照（点击按钮刷新，不改变业务）</summary><button id="snapshot">读取快照</button><pre id="snapshot-output"></pre></details>
+</main>
+<template id="diagram-template"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="435px" preserveAspectRatio="none" style="width:592px;height:435px;background:#FFFFFF;" version="1.1" viewBox="0 0 592 435" width="592px" zoomAndPan="magnify"><title>FL-RK-01 &#36164;&#26009;&#20445;&#23384;&#65288;&#23616;&#37096;&#31034;&#20363;&#65289;</title><defs/><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="213.7666" x="187.8669" y="36.0439">FL-RK-01 &#36164;&#26009;&#20445;&#23384;&#65288;&#23616;&#37096;&#31034;&#20363;&#65289;</text><rect fill="none" height="24.583" style="stroke:none;stroke-width:1;" width="559.5005" x="15" y="52.5752"/><ellipse cx="67" cy="92.1582" fill="#222222" rx="10" ry="10" style="stroke:#222222;stroke-width:1;"/><rect fill="#F1F1F1" height="36.3887" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="92" x="21" y="122.1582"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="72" x="31" y="145.9102">&#20462;&#25913;&#36164;&#26009;&#33609;&#31295;</text><line style="stroke:#000000;stroke-width:1.5;" x1="15" x2="15" y1="52.5752" y2="423.3242"/><polygon fill="#F1F1F1" points="345.9412,178.5469,429.0588,178.5469,441.0588,190.5469,429.0588,202.5469,345.9412,202.5469,333.9412,190.5469,345.9412,178.5469" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="83.1177" x="345.9412" y="195.6414">&#30446;&#26631;&#35760;&#24405;&#20173;&#23384;&#22312;?</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="11" x="322.9412" y="188.1299">&#26159;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="11" x="441.0588" y="188.1299">&#21542;</text><polygon fill="#F1F1F1" points="217.4412,212.5469,322.5588,212.5469,334.5588,224.5469,322.5588,236.5469,217.4412,236.5469,205.4412,224.5469,217.4412,212.5469" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="105.1177" x="217.4412" y="229.6414">&#26657;&#39564;&#36890;&#36807;&#19988;&#27169;&#25311;&#25104;&#21151;?</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="11" x="194.4412" y="222.1299">&#26159;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="11" x="334.5588" y="222.1299">&#21542;</text><rect fill="#F1F1F1" height="36.3887" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="122.668" x="131.666" y="246.5469"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="102.668" x="141.666" y="270.2988">&#25353;&#31283;&#23450; ID &#20889;&#22238;&#19968;&#27425;</text><rect fill="#F1F1F1" height="36.3887" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="140" x="123" y="317.9355"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="120" x="133" y="341.6875">&#26356;&#26032;&#21015;&#34920;&#24182;&#20851;&#38381;&#32534;&#36753;&#23618;</text><ellipse cx="193" cy="400.3242" fill="none" rx="11" ry="11" style="stroke:#222222;stroke-width:1;"/><ellipse cx="193" cy="400.3242" fill="#222222" rx="6" ry="6" style="stroke:#222222;stroke-width:1;"/><rect fill="#F1F1F1" height="36.3887" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="128" x="283" y="246.5469"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="108" x="293" y="270.2988">&#26174;&#31034;&#38169;&#35823;&#24182;&#20445;&#30041;&#33609;&#31295;</text><rect fill="#F1F1F1" height="36.3887" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="128" x="283" y="317.9355"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="108" x="293" y="341.6875">&#20801;&#35768;&#32487;&#32493;&#32534;&#36753;&#25110;&#37325;&#35797;</text><ellipse cx="347" cy="400.3242" fill="none" rx="11" ry="11" style="stroke:#222222;stroke-width:1;"/><ellipse cx="347" cy="400.3242" fill="#222222" rx="6" ry="6" style="stroke:#222222;stroke-width:1;"/><rect fill="#F1F1F1" height="36.3887" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="92" x="459" y="212.5469"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="72" x="469" y="236.2988">&#26174;&#31034;&#30446;&#26631;&#22833;&#25928;</text><rect fill="#F1F1F1" height="36.3887" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="128" x="441" y="283.9355"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="108" x="451" y="307.6875">&#31105;&#27490;&#26367;&#25442;&#20026;&#20854;&#20182;&#35760;&#24405;</text><ellipse cx="505" cy="366.3242" fill="none" rx="11" ry="11" style="stroke:#222222;stroke-width:1;"/><ellipse cx="505" cy="366.3242" fill="#222222" rx="6" ry="6" style="stroke:#222222;stroke-width:1;"/><line style="stroke:#000000;stroke-width:1.5;" x1="117" x2="117" y1="52.5752" y2="423.3242"/><line style="stroke:#000000;stroke-width:1.5;" x1="573" x2="573" y1="52.5752" y2="423.3242"/><line style="stroke:#181818;stroke-width:1;" x1="67" x2="67" y1="102.1582" y2="122.1582"/><polygon fill="#181818" points="63,112.1582,67,122.1582,71,112.1582,67,116.1582" style="stroke:#181818;stroke-width:1;"/><line style="stroke:#181818;stroke-width:1;" x1="193" x2="193" y1="282.9355" y2="317.9355"/><polygon fill="#181818" points="189,307.9355,193,317.9355,197,307.9355,193,311.9355" style="stroke:#181818;stroke-width:1;"/><line style="stroke:#181818;stroke-width:1;" x1="193" x2="193" y1="354.3242" y2="389.3242"/><polygon fill="#181818" points="189,379.3242,193,389.3242,197,379.3242,193,383.3242" style="stroke:#181818;stroke-width:1;"/><line style="stroke:#181818;stroke-width:1;" x1="347" x2="347" y1="282.9355" y2="317.9355"/><polygon fill="#181818" points="343,307.9355,347,317.9355,351,307.9355,347,311.9355" style="stroke:#181818;stroke-width:1;"/><line style="stroke:#181818;stroke-width:1;" x1="347" x2="347" y1="354.3242" y2="389.3242"/><polygon fill="#181818" points="343,379.3242,347,389.3242,351,379.3242,347,383.3242" style="stroke:#181818;stroke-width:1;"/><line style="stroke:#181818;stroke-width:1;" x1="205.4412" x2="193" y1="224.5469" y2="224.5469"/><line style="stroke:#181818;stroke-width:1;" x1="193" x2="193" y1="224.5469" y2="246.5469"/><polygon fill="#181818" points="189,236.5469,193,246.5469,197,236.5469,193,240.5469" style="stroke:#181818;stroke-width:1;"/><line style="stroke:#181818;stroke-width:1;" x1="334.5588" x2="347" y1="224.5469" y2="224.5469"/><line style="stroke:#181818;stroke-width:1;" x1="347" x2="347" y1="224.5469" y2="246.5469"/><polygon fill="#181818" points="343,236.5469,347,246.5469,351,236.5469,347,240.5469" style="stroke:#181818;stroke-width:1;"/><line style="stroke:#181818;stroke-width:1;" x1="505" x2="505" y1="248.9355" y2="283.9355"/><polygon fill="#181818" points="501,273.9355,505,283.9355,509,273.9355,505,277.9355" style="stroke:#181818;stroke-width:1;"/><line style="stroke:#181818;stroke-width:1;" x1="505" x2="505" y1="320.3242" y2="355.3242"/><polygon fill="#181818" points="501,345.3242,505,355.3242,509,345.3242,505,349.3242" style="stroke:#181818;stroke-width:1;"/><line style="stroke:#181818;stroke-width:1;" x1="333.9412" x2="270" y1="190.5469" y2="190.5469"/><line style="stroke:#181818;stroke-width:1;" x1="270" x2="270" y1="190.5469" y2="212.5469"/><polygon fill="#181818" points="266,202.5469,270,212.5469,274,202.5469,270,206.5469" style="stroke:#181818;stroke-width:1;"/><line style="stroke:#181818;stroke-width:1;" x1="441.0588" x2="505" y1="190.5469" y2="190.5469"/><line style="stroke:#181818;stroke-width:1;" x1="505" x2="505" y1="190.5469" y2="212.5469"/><polygon fill="#181818" points="501,202.5469,505,212.5469,509,202.5469,505,206.5469" style="stroke:#181818;stroke-width:1;"/><line style="stroke:#181818;stroke-width:1;" x1="67" x2="67" y1="158.5469" y2="163.5469"/><line style="stroke:#181818;stroke-width:1;" x1="67" x2="387.5" y1="163.5469" y2="163.5469"/><line style="stroke:#181818;stroke-width:1;" x1="387.5" x2="387.5" y1="163.5469" y2="178.5469"/><polygon fill="#181818" points="383.5,168.5469,387.5,178.5469,391.5,168.5469,387.5,172.5469" style="stroke:#181818;stroke-width:1;"/><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="36" x="48" y="73.2031">&#29992;&#25143;</text><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="108" x="291" y="73.2031">&#26412;&#22320;&#27169;&#25311;&#31995;&#32479;</text><!--SRC=[NP3DJi9G58Jtzodk4XSakeM56sDYTEKRD5AaKLf3Qzomm1-aY2IQG0L1-GdHnaY1u0zIf2_JS-xjobUmK3JHtKbcvfkSKVSa-K182KcQL6Hb9v5IaYBLKeSYKNyLDI74b2D9tgLnOLyLYIPf-o9TtmflRuQNLoX_FKEZwZftqAryJNGOPBnJatN6xhJmDScJD2kPgB-dYQe9AOr4NCV2qaSGuiKyCvqeIMFz6UfzD5jOQB2XpUn6caXn6c8r2vivRlNXi-pQHRy1wkRg4jKIean3MEaj4KfdHcoslATBBtFBdPmxAWKarA_Wel7VJca4B_tU8LYtT6EDmdaLQlVkA8FFhUX2hxsWqGVzXhTC-7Y3xD2xwRA9mQVNC3W9JAgc7FY7w2z2Gt3ry8EkJFtVlLALztf-r9-5bN__d3iWUyoj4RCVcRrWecvukIBlbV-IvPWK9t_u2tgm2dG6MDPdaGXxECPk6siE5jlkQ0pPDzSsWjLc-Xmuntq3]--></g></svg></template>
+<script>
+/* MODEL-START: pure model, also exercised by check_reference.py */
+function createModel(){
+  let rows=[{id:'r1',name:'同名资料',category:'A'},{id:'r2',name:'同名资料',category:'B'}],version=0,executions=0;
+  const completed=new Set();
+  return {
+    snapshot:()=>({rows:rows.map(r=>({...r})),version,executions}),
+    read:id=>{const row=rows.find(r=>r.id===id);return row?{...row}:null},
+    save(id,draft,token,fail){
+      if(completed.has(token))return {ok:false,error:'重复提交已拦截'};
+      const at=rows.findIndex(r=>r.id===id);
+      if(at<0)return {ok:false,error:'目标不存在，未替换记录'};
+      if(!draft.name.trim())return {ok:false,error:'名称必填'};
+      if(fail)return {ok:false,error:'模拟保存失败，草稿保留'};
+      rows[at]={id,name:draft.name.trim(),category:draft.category};completed.add(token);version++;executions++;
+      return {ok:true};
+    }
+  };
+}
+/* MODEL-END */
+const $=s=>document.querySelector(s), model=createModel(), stack=[], locks=new Map();
+let selected='RK-NOTE',outlined=false,serial=0;
+const escapeText=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const registry=[
+  {id:'RK-NOTE',name:'行内备注',source:'当前用户；页面 note 草稿',action:'输入仅更新原生 textarea，不提交记录',states:'DEFAULT',result:'切评审工具后输入与滚动保持',test:'输入长文本，滚至中段后切组件与描边'},
+  {id:'RK-LIST',name:'资料列表',source:'本地 fixture；rows[].id/name/category',action:'按稳定 ID 打开编辑层；缺失目标显示错误',states:'DEFAULT',result:'成功保存更新对应行；同名其他行不变',test:'编辑 r2，对照 r1 和数据版本'},
+  {id:'RK-EDITOR',name:'编辑表单',source:'model.read(id) 的独立草稿',action:'本地校验后保存；可模拟失败、打开子选择器',states:'EDITING',result:'成功关闭；失败留草稿；脏退出提示',test:'子层 Esc 后核对父草稿；退出选继续/放弃'}
+];
+const headings=['功能/组件名称','数据来源','功能交互逻辑','界面反馈与体验表现','组件样式','状态变更','数据流转与接口','埋点和日志','测试与验收条件','待确认项'];
+function renderDescription(){
+  const c=registry.find(x=>x.id===selected),sections=[
+    `组件：${c.id}\n名称：${c.name}\n页面：RK-01\n职责：${c.action}`,
+    c.source,c.action,c.result,'业务正文 14px；触控最小热区按移动端基线；说明 13px、表格 12px。',
+    `${c.states}；输入不写已保存记录；保存失败可重试，退出按脏数据规则。`,
+    '仅本地内存，不调用接口；写回使用稳定 id，成功使 version 增加。',
+    '本样例不设计业务埋点；保存执行次数仅用于本地动作连通核对。',c.test,'无新增业务待确认；真实浏览器行为尚未验收。'];
+  $('#description').innerHTML=sections.map((s,i)=>`<section><h3>${i+1}. ${headings[i]}</h3><p>${escapeText(s).replace(/\n/g,'<br>')}</p></section>`).join('')+
+    '<div class="wide"><table><thead><tr>'+['字段','类型','来源','时机','可编辑','默认','校验','权限','字典'].map(x=>`<th>${x}</th>`).join('')+'</tr></thead><tbody><tr><td>记录名称</td><td>string</td><td>本地 rows[].name</td><td>打开编辑时</td><td>是</td><td>记录原值</td><td>非空</td><td>样例无角色系统</td><td>无</td></tr></tbody></table></div>';
+  updateOutline();
+}
+function updateOutline(){
+  $('#page-state').textContent=document.querySelector('[data-component=RK-EDITOR]')?'EDITING':'DEFAULT';
+  document.querySelectorAll('[data-component]').forEach(el=>el.classList.toggle('outlined',outlined&&el.dataset.component===selected));
+  const shown=[...document.querySelectorAll('[data-component]')].some(el=>el.dataset.component===selected&&el.getClientRects().length);
+  $('#visibility').textContent=shown?'当前状态已展示':'该组件在当前状态下未展示';
+}
+function renderRows(){
+  $('#records').innerHTML=model.snapshot().rows.map(r=>`<article class="card"><h3>${escapeText(r.name)}</h3><p>编号 ${r.id} · 类别 ${escapeText(r.category)}</p><button data-act="edit" data-id="${r.id}">编辑 ${r.id}</button></article>`).join('');
+}
+function lock(el){
+  const entry=locks.get(el);
+  if(entry){entry.count++;return}
+  locks.set(el,{count:1,overflow:el.style.overflow,top:el.scrollTop,left:el.scrollLeft});el.style.overflow='hidden';
+}
+function unlock(el){
+  const entry=locks.get(el);if(!entry)return;
+  if(--entry.count)return;
+  el.style.overflow=entry.overflow;el.scrollTop=entry.top;el.scrollLeft=entry.left;locks.delete(el);
+}
+function syncInert(){
+  const review=stack.some(l=>l.scope==='viewport');$('#shell').inert=review;
+  $('#business').inert=stack.some(l=>l.scope==='business');
+  stack.forEach((l,i)=>l.element.inert=i!==stack.length-1);
+}
+function focusables(l){return [...l.element.querySelectorAll('button,input,select,textarea,[tabindex="0"]')].filter(x=>!x.disabled&&x.getClientRects().length)}
+function openLayer({title,content,scope='business',parent=null,onClose=null,canClose=true}){
+  const trigger=document.activeElement,element=document.createElement('div'),label=`layer-title-${++serial}`;
+  element.className='layer'+(scope==='viewport'?' viewport':'');
+  element.innerHTML=`<section class="panel" role="dialog" aria-modal="${scope==='viewport'}" aria-labelledby="${label}" tabindex="-1"><header class="panel-head"><h2 id="${label}">${escapeText(title)}</h2><button data-close>关闭</button></header><div class="panel-body"></div></section>`;
+  const l={element,scope,parent,trigger,onClose,canClose,lockTarget:scope==='viewport'?document.documentElement:$('#business')};
+  element.querySelector('.panel-body').append(content);
+  (scope==='viewport'?document.body:$('#phone')).append(element);lock(l.lockTarget);stack.push(l);syncInert();
+  element.querySelector('[data-close]').onclick=()=>requestClose(l);
+  element.addEventListener('click',e=>{if(e.target===element)requestClose(l)});
+  (focusables(l)[0]||element.querySelector('.panel')).focus();updateOutline();return l;
+}
+function closeLayer(l){
+  if(stack.at(-1)!==l)return;
+  stack.pop();l.element.remove();unlock(l.lockTarget);syncInert();
+  const target=l.trigger.isConnected&&!l.trigger.closest('[inert]')?l.trigger:(stack.at(-1)?.element.querySelector('button')||$('#component'));
+  target.focus({preventScroll:true});updateOutline();
+}
+function requestClose(l){if(stack.at(-1)!==l||!l.canClose)return;if(l.onClose)l.onClose();else closeLayer(l)}
+document.addEventListener('keydown',e=>{
+  const l=stack.at(-1);if(!l)return;
+  if(e.key==='Escape'){e.preventDefault();e.stopImmediatePropagation();requestClose(l);return}
+  // A business modal blocks its business host; outer review controls remain tools.
+  if(e.key==='Tab'&&(l.scope==='viewport'||l.element.contains(document.activeElement))){
+    const items=focusables(l),at=items.indexOf(document.activeElement);
+    if(!items.length){e.preventDefault();l.element.querySelector('.panel').focus()}
+    else if(e.shiftKey&&at<=0){e.preventDefault();items.at(-1).focus()}
+    else if(!e.shiftKey&&(at<0||at===items.length-1)){e.preventDefault();items[0].focus()}
+  }
+},true);
+function fragment(html){const t=document.createElement('template');t.innerHTML=html;return t.content}
+function edit(id){
+  if(stack.length)return;
+  const row=model.read(id);
+  if(!row){openLayer({title:'目标失效',content:fragment('<p class="error">记录不存在，未读取其他记录。请关闭后重试。</p>')});return}
+  const draft={...row},token=`save-${++serial}`;
+  const content=fragment('<div data-component="RK-EDITOR"><label>名称<input data-name></label><p>类别：<span data-category></span></p><button data-choice>选择类别（子层）</button><label><input type="checkbox" data-fail> 模拟保存失败</label><p data-error role="status" class="error"></p></div>');
+  const l=openLayer({title:`编辑 ${id}`,content,onClose:()=>{
+    if(draft.name===row.name&&draft.category===row.category){closeLayer(l);return}
+    const confirm=openLayer({title:'放弃未保存修改？',parent:l,content:fragment('<p>继续编辑会保留草稿。</p><button data-keep>继续编辑</button><button data-discard>放弃修改</button>')});
+    confirm.element.querySelector('[data-keep]').onclick=()=>closeLayer(confirm);
+    confirm.element.querySelector('[data-discard]').onclick=()=>{closeLayer(confirm);closeLayer(l)};
+  }});
+  const input=l.element.querySelector('[data-name]'),category=l.element.querySelector('[data-category]');input.value=draft.name;category.textContent=draft.category;
+  input.oninput=()=>draft.name=input.value;
+  const save=document.createElement('button');save.textContent='保存';l.element.querySelector('[data-close]').before(save);
+  save.onclick=()=>{
+    const result=model.save(id,draft,token,l.element.querySelector('[data-fail]').checked);
+    if(!result.ok){l.element.querySelector('[data-error]').textContent=result.error;return}
+    const before=$('#business').scrollTop;closeLayer(l);renderRows();$('#business').scrollTop=before;
+    // Replaced row buttons need a stable focus fallback for the same object.
+    $('#records').querySelector(`[data-id="${id}"]`)?.focus({preventScroll:true});
+    $('#status').textContent=`${id} 保存成功；版本 ${model.snapshot().version}，执行 ${model.snapshot().executions} 次。`;
+  };
+  l.element.querySelector('[data-choice]').onclick=()=>{
+    const child=openLayer({title:'选择类别',parent:l,content:fragment('<p>选择后回到父表单，关闭不修改。</p><button data-value="A">类别 A</button><button data-value="B">类别 B</button>')});
+    child.element.querySelectorAll('[data-value]').forEach(b=>b.onclick=()=>{draft.category=b.dataset.value;category.textContent=draft.category;closeLayer(child)});
+  };
+}
+$('#business').addEventListener('click',e=>{const b=e.target.closest('[data-act]');if(b?.dataset.act==='edit')edit(b.dataset.id)});
+$('#component').innerHTML=registry.map(c=>`<option value="${c.id}">${c.name}（${c.id}）</option>`).join('');
+$('#component').onchange=e=>{selected=e.target.value;renderDescription()};
+$('#outline').onclick=e=>{outlined=!outlined;e.currentTarget.setAttribute('aria-pressed',String(outlined));updateOutline()};
+$('#container-width').onchange=e=>{$('#host').style.width=e.target.value;$('#host').style.maxWidth='100%'};
+$('#snapshot').onclick=()=>$('#snapshot-output').textContent=JSON.stringify({page:'RK-01',note:$('#note').value,scroll:$('#business').scrollTop,...model.snapshot()},null,2);
+$('#long-content').innerHTML=Array.from({length:8},(_,i)=>`<p>长内容 ${i+1}：滚动后查看工具是否保留正文位置。</p>`).join('');
+const geometry=new ResizeObserver(()=>{const r=$('#phone').getBoundingClientRect();$('#geometry').textContent=`实测业务画布 ${r.width.toFixed(1)} × ${r.height.toFixed(1)} CSS px`});geometry.observe($('#phone'));
+$('#open-diagram').onclick=()=>{
+  const content=fragment('<label>缩放 <select data-zoom><option value="fit">适应宽度</option><option value="0.5">50%</option><option value="1" selected>100%</option><option value="2">200%</option></select></label><p class="note">文字太小时切回 100% 并局部滚动；本样例不设通用回退阈值。</p><div class="diagram-scroll"><div id="diagram-svg"></div></div><details><summary>PlantUML 图源</summary><pre data-source></pre></details>');
+  const l=openLayer({title:'FL-RK-01 资料保存',scope:'viewport',content}),box=l.element.querySelector('.diagram-scroll');
+  l.element.querySelector('#diagram-svg').append($('#diagram-template').content.cloneNode(true));
+  const svg=l.element.querySelector('svg');
+  const base=svg.viewBox.baseVal.width;
+  function resize(){const v=l.element.querySelector('[data-zoom]').value;svg.style.width=(v==='fit'?Math.min(base,box.clientWidth):base*Number(v))+'px'}
+  l.element.querySelector('[data-zoom]').onchange=resize;
+  const observer=new ResizeObserver(resize);observer.observe(box);
+  const oldClose=l.onClose;l.onClose=()=>{observer.disconnect();if(oldClose)oldClose();else closeLayer(l)};
+  l.element.querySelector('[data-source]').textContent=DIAGRAM_SOURCE;resize();
+};
+const DIAGRAM_SOURCE="@startuml\nskinparam monochrome true\nskinparam shadowing false\ntitle FL-RK-01 资料保存（局部示例）\n|用户|\nstart\n:修改资料草稿;\n|本地模拟系统|\nif (目标记录仍存在?) then (是)\n  if (校验通过且模拟成功?) then (是)\n    :按稳定 ID 写回一次;\n    :更新列表并关闭编辑层;\n    stop\n  else (否)\n    :显示错误并保留草稿;\n    :允许继续编辑或重试;\n    stop\n  endif\nelse (否)\n  :显示目标失效;\n  :禁止替换为其他记录;\n  stop\nendif\n@enduml\n";
+renderRows();renderDescription();
+</script>
+</html>
