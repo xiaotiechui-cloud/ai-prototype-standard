@@ -1,2 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Keep the supplied archived baseline byte-for-byte, including line endings.
+archive/*.md -text

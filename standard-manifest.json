@@ -1,0 +1,335 @@
+{
+  "rule_version": "V3.0",
+  "layout_revision": "modular-1",
+  "status": "user-confirmed-maintenance-draft",
+  "baseline": {
+    "path": "archive/AI原型图与组件级文档说明标准_V3.0.md",
+    "sha256": "d0c411cec047e0e2387a7a3c8f50f56cbbb7c8a2d4f88e6080ecf6a0ed4ba0ec",
+    "bytes": 191673,
+    "date": "2026-10-19"
+  },
+  "migration_date": "2026-10-20",
+  "section_order": [
+    "front",
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "30",
+    "31",
+    "32",
+    "33",
+    "34",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I"
+  ],
+  "modules": [
+    {
+      "id": "core",
+      "path": "standards/core.md",
+      "title": "全局边界、交付、同源与关卡",
+      "sections": [
+        "1",
+        "2",
+        "3",
+        "31"
+      ],
+      "requires": [],
+      "role": "normative"
+    },
+    {
+      "id": "workflow",
+      "path": "standards/workflow-and-model.md",
+      "title": "快速摘要、流水线与需求/状态建模",
+      "sections": [
+        "0",
+        "4",
+        "5",
+        "6"
+      ],
+      "requires": [
+        "core"
+      ],
+      "role": "normative"
+    },
+    {
+      "id": "ui",
+      "path": "standards/ui-and-components.md",
+      "title": "视觉、评审外壳、组件与模式库",
+      "sections": [
+        "7",
+        "8",
+        "9",
+        "14",
+        "15"
+      ],
+      "requires": [
+        "core"
+      ],
+      "role": "normative"
+    },
+    {
+      "id": "client",
+      "path": "standards/profiles/client.md",
+      "title": "APP / H5 / 小程序",
+      "sections": [
+        "10"
+      ],
+      "requires": [
+        "core"
+      ],
+      "role": "normative"
+    },
+    {
+      "id": "web",
+      "path": "standards/profiles/desktop-web.md",
+      "title": "桌面业务 Web",
+      "sections": [
+        "11"
+      ],
+      "requires": [
+        "client"
+      ],
+      "role": "normative"
+    },
+    {
+      "id": "admin",
+      "path": "standards/profiles/admin.md",
+      "title": "管理后台与配置引擎",
+      "sections": [
+        "12",
+        "16"
+      ],
+      "requires": [
+        "core"
+      ],
+      "role": "normative"
+    },
+    {
+      "id": "runtime",
+      "path": "standards/runtime-and-build.md",
+      "title": "交互运行时与单文件构建",
+      "sections": [
+        "13",
+        "17"
+      ],
+      "requires": [
+        "ui"
+      ],
+      "role": "normative"
+    },
+    {
+      "id": "reader",
+      "path": "standards/diagrams-and-reader.md",
+      "title": "图示与离线文档阅读器",
+      "sections": [
+        "18",
+        "19"
+      ],
+      "requires": [
+        "runtime"
+      ],
+      "role": "normative"
+    },
+    {
+      "id": "docs-ui",
+      "path": "standards/deliverables-ui.md",
+      "title": "00 / 01 / 03 交付规范",
+      "sections": [
+        "20",
+        "21",
+        "22"
+      ],
+      "requires": [
+        "core"
+      ],
+      "role": "normative"
+    },
+    {
+      "id": "docs-business",
+      "path": "standards/deliverables-business.md",
+      "title": "04 / 05 / 06 交付规范",
+      "sections": [
+        "23",
+        "24",
+        "25"
+      ],
+      "requires": [
+        "core"
+      ],
+      "role": "normative"
+    },
+    {
+      "id": "quality",
+      "path": "standards/quality-and-evidence.md",
+      "title": "07 / 08、验证与反模式",
+      "sections": [
+        "26",
+        "27",
+        "29",
+        "33"
+      ],
+      "requires": [
+        "core"
+      ],
+      "role": "normative"
+    },
+    {
+      "id": "change",
+      "path": "standards/decisions-and-change.md",
+      "title": "09、变更回归与版本兼容",
+      "sections": [
+        "28",
+        "30",
+        "34"
+      ],
+      "requires": [
+        "core"
+      ],
+      "role": "normative"
+    },
+    {
+      "id": "checklists",
+      "path": "standards/contracts-and-checklists.md",
+      "title": "状态/动作/数据契约与检查清单",
+      "sections": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "requires": [
+        "core"
+      ],
+      "role": "normative"
+    },
+    {
+      "id": "front",
+      "path": "reference/original-front-matter.md",
+      "title": "原单文件封面与阅读索引（历史）",
+      "sections": [
+        "front"
+      ],
+      "requires": [],
+      "role": "reference"
+    },
+    {
+      "id": "legacy-prompts",
+      "path": "reference/original-prompts.md",
+      "title": "原单文件提示词（历史兼容）",
+      "sections": [
+        "32"
+      ],
+      "requires": [],
+      "role": "reference"
+    },
+    {
+      "id": "examples",
+      "path": "reference/examples.md",
+      "title": "参考实现与贯通示例",
+      "sections": [
+        "H",
+        "I"
+      ],
+      "requires": [],
+      "role": "reference"
+    }
+  ],
+  "always": [
+    "core"
+  ],
+  "profiles": {
+    "client": [
+      "client"
+    ],
+    "web": [
+      "web"
+    ],
+    "admin": [
+      "admin"
+    ]
+  },
+  "stages": {
+    "model": [
+      "workflow",
+      "docs-business",
+      "change"
+    ],
+    "prototype": [
+      "workflow",
+      "ui",
+      "runtime",
+      "reader",
+      "docs-ui"
+    ],
+    "docs": [
+      "workflow",
+      "docs-ui",
+      "docs-business",
+      "quality",
+      "change"
+    ],
+    "verify": [
+      "quality",
+      "checklists"
+    ],
+    "change": [
+      "workflow",
+      "ui",
+      "runtime",
+      "reader",
+      "docs-ui",
+      "docs-business",
+      "quality",
+      "change",
+      "checklists"
+    ],
+    "full": [
+      "workflow",
+      "ui",
+      "runtime",
+      "reader",
+      "docs-ui",
+      "docs-business",
+      "quality",
+      "change",
+      "checklists"
+    ]
+  }
+}
