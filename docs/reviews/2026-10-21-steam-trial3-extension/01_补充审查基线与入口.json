@@ -1,0 +1,1501 @@
+{
+  "repository_commit": "cd12fa67271343fe067581eaf0d15b219571535e",
+  "method": "static-source-review",
+  "previous_inventory": "docs\\reviews\\2026-10-21-steam-trial3\\01_结构清单.json",
+  "completed_topics_excluded": [
+    "scrollbars",
+    "simulator-layout",
+    "drag-handle",
+    "empty-menu-group",
+    "desktop-shell-layout",
+    "overlay-geometry",
+    "generic-gray-ui"
+  ],
+  "browser_verification": "not_run",
+  "standard_hashes": {
+    "standards\\contracts-and-checklists.md": "5fc9f9cb8e55c1e3e05af390705695816e9fc139ee4055d2fed5b88ed6dd047c",
+    "standards\\core.md": "1baa09443c6c39d8f3496bdb6e3149b9fc4d54b61784957a8be2ecd1ac07f089",
+    "standards\\decisions-and-change.md": "2e213a0a2dbb5609e472c5bc67d70eac5e77c2a7885f85c5f13456437145371c",
+    "standards\\deliverables-business.md": "9ffe832016cb0109f49e51053a89f7fd0afe3488704d961ea769c570d40e583b",
+    "standards\\deliverables-ui.md": "bc03bbaee2b2a079e53ea19b04e8b05291224c8af121d58f6b54d25b3034ced8",
+    "standards\\diagrams-and-reader.md": "85a025338043a4d3b2351e11a257702a16f897306fb12ddd8f98b112d23b2d8c",
+    "standards\\profiles\\admin.md": "3e86b1e669d2670533192c34bf5dc1f389c685c672f5a40b274d3798f393bcd4",
+    "standards\\profiles\\client.md": "3b752c58ddbcd68a0379a5d5834b1cb8af2ed4d624954155618fb043c5aa7f43",
+    "standards\\profiles\\desktop-web.md": "23899a325fd91f03cccc8c51cdf68ebd05752a27bca8d222f75fdf746cdd6ce1",
+    "standards\\quality-and-evidence.md": "e4dc4748d3d48514fefa592c73e6251facbb99afd2885542ca50c7ecbf934d36",
+    "standards\\runtime-and-build.md": "4c85531a35bf490151ae7335d2cf5ded69a207482e80dbb563054d548792bfbf",
+    "standards\\ui-and-components.md": "db6385d10c424d30a11a68a262efe4143e94e1b1881a382a0f8bda6a47ec226a",
+    "standards\\workflow-and-model.md": "8d2ef444c086438b3d5eb186acec7474bc0b594a1976f6ce02e972f685eab6f8",
+    "standard-manifest.json": "57b6718ca7da97e17e76fc02045ebae4c3917fe8e69b1084c237e077ef750470"
+  },
+  "sources": {
+    "trial": {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑3.0\\Steam商城原型交付_V1.4\\02_低保真交互原型-试跑3.0.html",
+      "sha256": "c8dcc6bc8218d7b99ecdd5a2c358268e25848ac6dc9bafa948e53ab97e5fa762",
+      "functions": [
+        {
+          "name": "resetSession",
+          "line": 1504
+        },
+        {
+          "name": "platformName",
+          "line": 1552
+        },
+        {
+          "name": "realNameLabel",
+          "line": 1555
+        },
+        {
+          "name": "payLabel",
+          "line": 1558
+        },
+        {
+          "name": "deliveryLabel",
+          "line": 1561
+        },
+        {
+          "name": "notifyLabel",
+          "line": 1566
+        },
+        {
+          "name": "refundLabel",
+          "line": 1569
+        },
+        {
+          "name": "roleMenus",
+          "line": 1572
+        },
+        {
+          "name": "can",
+          "line": 1582
+        },
+        {
+          "name": "login",
+          "line": 1599
+        },
+        {
+          "name": "closeFirstEntry",
+          "line": 1603
+        },
+        {
+          "name": "sortProducts",
+          "line": 1606
+        },
+        {
+          "name": "searchProducts",
+          "line": 1618
+        },
+        {
+          "name": "discoverKeywords",
+          "line": 1624
+        },
+        {
+          "name": "hotProducts",
+          "line": 1627
+        },
+        {
+          "name": "activeAds",
+          "line": 1630
+        },
+        {
+          "name": "beginBuy",
+          "line": 1633
+        },
+        {
+          "name": "buyValidation",
+          "line": 1640
+        },
+        {
+          "name": "createOrRestoreOrder",
+          "line": 1661
+        },
+        {
+          "name": "markPaid",
+          "line": 1692
+        },
+        {
+          "name": "maskCode",
+          "line": 1729
+        },
+        {
+          "name": "ensureCodeRecord",
+          "line": 1732
+        },
+        {
+          "name": "ensureNotify",
+          "line": 1737
+        },
+        {
+          "name": "queryPay",
+          "line": 1742
+        },
+        {
+          "name": "clearTimer",
+          "line": 1762
+        },
+        {
+          "name": "setToast",
+          "line": 1768
+        },
+        {
+          "name": "takeToast",
+          "line": 1771
+        },
+        {
+          "name": "markGiftDone",
+          "line": 1776
+        },
+        {
+          "name": "reissueCode",
+          "line": 1787
+        },
+        {
+          "name": "retryNotify",
+          "line": 1802
+        },
+        {
+          "name": "auditRefund",
+          "line": 1815
+        },
+        {
+          "name": "executeRefund",
+          "line": 1832
+        },
+        {
+          "name": "appbar",
+          "line": 1851
+        },
+        {
+          "name": "tabbar",
+          "line": 1856
+        },
+        {
+          "name": "phoneShell",
+          "line": 1861
+        },
+        {
+          "name": "homeContent",
+          "line": 1870
+        },
+        {
+          "name": "renderAppHome",
+          "line": 1899
+        },
+        {
+          "name": "authNoticeOverlay",
+          "line": 1907
+        },
+        {
+          "name": "renderAppSearch",
+          "line": 1922
+        },
+        {
+          "name": "renderAppSearchResults",
+          "line": 1934
+        },
+        {
+          "name": "renderAppProduct",
+          "line": 1942
+        },
+        {
+          "name": "renderAppBuy",
+          "line": 1970
+        },
+        {
+          "name": "renderProductBackground",
+          "line": 1994
+        },
+        {
+          "name": "renderAppAuthNotice",
+          "line": 1997
+        },
+        {
+          "name": "renderAppAuthGuide",
+          "line": 2003
+        },
+        {
+          "name": "renderAppAgreement",
+          "line": 2017
+        },
+        {
+          "name": "renderAppAgreementNotice",
+          "line": 2031
+        },
+        {
+          "name": "renderAppPhone",
+          "line": 2039
+        },
+        {
+          "name": "renderAppCheckout",
+          "line": 2052
+        },
+        {
+          "name": "paySheet",
+          "line": 2078
+        },
+        {
+          "name": "renderAppPayret",
+          "line": 2086
+        },
+        {
+          "name": "renderAppResult",
+          "line": 2096
+        },
+        {
+          "name": "maskLink",
+          "line": 2129
+        },
+        {
+          "name": "renderAppOrders",
+          "line": 2133
+        },
+        {
+          "name": "renderAppOrderDetail",
+          "line": 2152
+        },
+        {
+          "name": "renderAppProfile",
+          "line": 2175
+        },
+        {
+          "name": "renderAppService",
+          "line": 2186
+        },
+        {
+          "name": "renderApp",
+          "line": 2197
+        },
+        {
+          "name": "webHeader",
+          "line": 2237
+        },
+        {
+          "name": "webFrame",
+          "line": 2241
+        },
+        {
+          "name": "webProductCard",
+          "line": 2244
+        },
+        {
+          "name": "renderWebHome",
+          "line": 2247
+        },
+        {
+          "name": "renderWebSearch",
+          "line": 2264
+        },
+        {
+          "name": "renderWebProduct",
+          "line": 2271
+        },
+        {
+          "name": "webBuyOverlay",
+          "line": 2283
+        },
+        {
+          "name": "renderWebCheckout",
+          "line": 2308
+        },
+        {
+          "name": "renderWebOrder",
+          "line": 2319
+        },
+        {
+          "name": "webOrderDrawer",
+          "line": 2340
+        },
+        {
+          "name": "renderWebResult",
+          "line": 2347
+        },
+        {
+          "name": "renderWebAgreement",
+          "line": 2356
+        },
+        {
+          "name": "renderWebService",
+          "line": 2362
+        },
+        {
+          "name": "renderWeb",
+          "line": 2369
+        },
+        {
+          "name": "rt",
+          "line": 2419
+        },
+        {
+          "name": "menuHtml",
+          "line": 2446
+        },
+        {
+          "name": "topbarHtml",
+          "line": 2464
+        },
+        {
+          "name": "stateArea",
+          "line": 2468
+        },
+        {
+          "name": "filterHtml",
+          "line": 2479
+        },
+        {
+          "name": "tabsHtml",
+          "line": 2489
+        },
+        {
+          "name": "tableHtml",
+          "line": 2501
+        },
+        {
+          "name": "opsHtml",
+          "line": 2507
+        },
+        {
+          "name": "pagerHtml",
+          "line": 2524
+        },
+        {
+          "name": "batchHtml",
+          "line": 2530
+        },
+        {
+          "name": "applyFilters",
+          "line": 2535
+        },
+        {
+          "name": "currentRows",
+          "line": 2550
+        },
+        {
+          "name": "renderList",
+          "line": 2557
+        },
+        {
+          "name": "metricsHtml",
+          "line": 2593
+        },
+        {
+          "name": "drawerHtml",
+          "line": 2601
+        },
+        {
+          "name": "productDrawer",
+          "line": 2784
+        },
+        {
+          "name": "orderDrawer",
+          "line": 2795
+        },
+        {
+          "name": "giftDrawer",
+          "line": 2805
+        },
+        {
+          "name": "codeDrawer",
+          "line": 2810
+        },
+        {
+          "name": "refundDrawer",
+          "line": 2814
+        },
+        {
+          "name": "notifyDrawer",
+          "line": 2819
+        },
+        {
+          "name": "auditDrawer",
+          "line": 2822
+        },
+        {
+          "name": "renderLogin",
+          "line": 2825
+        },
+        {
+          "name": "renderDash",
+          "line": 2830
+        },
+        {
+          "name": "renderHome",
+          "line": 2837
+        },
+        {
+          "name": "homeAdDrawer",
+          "line": 2848
+        },
+        {
+          "name": "renderSupplier",
+          "line": 2852
+        },
+        {
+          "name": "renderConfig",
+          "line": 2864
+        },
+        {
+          "name": "renderRbac",
+          "line": 2877
+        },
+        {
+          "name": "rbacDrawer",
+          "line": 2887
+        },
+        {
+          "name": "renderAdmin",
+          "line": 2891
+        },
+        {
+          "name": "admRt",
+          "line": 2905
+        },
+        {
+          "name": "admPageRows",
+          "line": 2908
+        },
+        {
+          "name": "resetBuyContext",
+          "line": 2959
+        },
+        {
+          "name": "setEnd",
+          "line": 2969
+        },
+        {
+          "name": "switchPlatform",
+          "line": 2984
+        },
+        {
+          "name": "defaultState",
+          "line": 3000
+        },
+        {
+          "name": "navigate",
+          "line": 3003
+        },
+        {
+          "name": "backTo",
+          "line": 3019
+        },
+        {
+          "name": "render",
+          "line": 3032
+        },
+        {
+          "name": "header",
+          "line": 3076
+        },
+        {
+          "name": "controls",
+          "line": 3083
+        },
+        {
+          "name": "identityControls",
+          "line": 3097
+        },
+        {
+          "name": "stateBar",
+          "line": 3117
+        },
+        {
+          "name": "nextStep",
+          "line": 3130
+        },
+        {
+          "name": "canvas",
+          "line": 3171
+        },
+        {
+          "name": "inspector",
+          "line": 3178
+        },
+        {
+          "name": "renderDocs",
+          "line": 3191
+        },
+        {
+          "name": "diagramsPanel",
+          "line": 3200
+        },
+        {
+          "name": "filesPanel",
+          "line": 3208
+        },
+        {
+          "name": "applyOutline",
+          "line": 3213
+        },
+        {
+          "name": "closeConfirm",
+          "line": 3219
+        },
+        {
+          "name": "openConfirm",
+          "line": 3225
+        },
+        {
+          "name": "closeConfirmEl",
+          "line": 3246
+        },
+        {
+          "name": "openReader",
+          "line": 3251
+        },
+        {
+          "name": "closeReader",
+          "line": 3262
+        },
+        {
+          "name": "renderReader",
+          "line": 3269
+        },
+        {
+          "name": "renderDoc",
+          "line": 3291
+        },
+        {
+          "name": "openDiagram",
+          "line": 3301
+        },
+        {
+          "name": "closeDiagram",
+          "line": 3308
+        },
+        {
+          "name": "renderDiagram",
+          "line": 3313
+        },
+        {
+          "name": "applyDiagramZoom",
+          "line": 3321
+        },
+        {
+          "name": "bindDynamic",
+          "line": 3342
+        },
+        {
+          "name": "handleRv",
+          "line": 3609
+        },
+        {
+          "name": "doSearch",
+          "line": 3657
+        },
+        {
+          "name": "handleAct",
+          "line": 3671
+        },
+        {
+          "name": "specsOfProduct",
+          "line": 4128
+        },
+        {
+          "name": "handleMaskClose",
+          "line": 4131
+        },
+        {
+          "name": "continueBuy",
+          "line": 4168
+        },
+        {
+          "name": "submitBuy",
+          "line": 4197
+        },
+        {
+          "name": "submitWebBuy",
+          "line": 4224
+        },
+        {
+          "name": "copy",
+          "line": 4275
+        },
+        {
+          "name": "admAction",
+          "line": 4293
+        },
+        {
+          "name": "closeAdmDrawer",
+          "line": 4700
+        },
+        {
+          "name": "navigateAdmin",
+          "line": 4725
+        },
+        {
+          "name": "nowText",
+          "line": 4732
+        },
+        {
+          "name": "readerBack",
+          "line": 4735
+        },
+        {
+          "name": "downloadDoc",
+          "line": 4747
+        },
+        {
+          "name": "showToast",
+          "line": 4761
+        },
+        {
+          "name": "init",
+          "line": 4769
+        }
+      ]
+    },
+    "final": {
+      "path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.0\\02_低保真交互原型-最终版本.html",
+      "sha256": "04bf9e76f416833e1ac84e97408b81cbceb043bb44dca4a0529f3c80f418765f",
+      "functions": [
+        {
+          "name": "resetSession",
+          "line": 1134
+        },
+        {
+          "name": "safeUrl",
+          "line": 1147
+        },
+        {
+          "name": "inlineMd",
+          "line": 1153
+        },
+        {
+          "name": "cellMd",
+          "line": 1162
+        },
+        {
+          "name": "splitTableRow",
+          "line": 1165
+        },
+        {
+          "name": "isTableSep",
+          "line": 1179
+        },
+        {
+          "name": "renderMd",
+          "line": 1187
+        },
+        {
+          "name": "closeLists",
+          "line": 1192
+        },
+        {
+          "name": "diagramSvg",
+          "line": 1290
+        },
+        {
+          "name": "renderDiagram",
+          "line": 1302
+        },
+        {
+          "name": "latestCode",
+          "line": 1388
+        },
+        {
+          "name": "deliverySynced",
+          "line": 1391
+        },
+        {
+          "name": "searchKwList",
+          "line": 1398
+        },
+        {
+          "name": "searchHotList",
+          "line": 1403
+        },
+        {
+          "name": "pushHistory",
+          "line": 1417
+        },
+        {
+          "name": "historyBlock",
+          "line": 1428
+        },
+        {
+          "name": "C",
+          "line": 1472
+        },
+        {
+          "name": "navBar",
+          "line": 1481
+        },
+        {
+          "name": "thumb",
+          "line": 1489
+        },
+        {
+          "name": "goodsCard",
+          "line": 1492
+        },
+        {
+          "name": "adBanner",
+          "line": 1505
+        },
+        {
+          "name": "sortBar",
+          "line": 1529
+        },
+        {
+          "name": "stateBlock",
+          "line": 1537
+        },
+        {
+          "name": "phoneShell",
+          "line": 1546
+        },
+        {
+          "name": "tabBar",
+          "line": 1552
+        },
+        {
+          "name": "modalMask",
+          "line": 1560
+        },
+        {
+          "name": "modalHead",
+          "line": 1563
+        },
+        {
+          "name": "stepChain",
+          "line": 1567
+        },
+        {
+          "name": "rHome",
+          "line": 1577
+        },
+        {
+          "name": "renderNoticeOverlay",
+          "line": 1619
+        },
+        {
+          "name": "rNotice",
+          "line": 1649
+        },
+        {
+          "name": "rSearchHome",
+          "line": 1663
+        },
+        {
+          "name": "rSearchResult",
+          "line": 1711
+        },
+        {
+          "name": "mediaItems",
+          "line": 1759
+        },
+        {
+          "name": "mediaCarousel",
+          "line": 1769
+        },
+        {
+          "name": "rProduct",
+          "line": 1795
+        },
+        {
+          "name": "renderPanel",
+          "line": 1883
+        },
+        {
+          "name": "rAuth",
+          "line": 2001
+        },
+        {
+          "name": "rAgreement",
+          "line": 2020
+        },
+        {
+          "name": "rPhone",
+          "line": 2052
+        },
+        {
+          "name": "rCheckout",
+          "line": 2077
+        },
+        {
+          "name": "rPayret",
+          "line": 2144
+        },
+        {
+          "name": "rResult",
+          "line": 2180
+        },
+        {
+          "name": "codeStatusText",
+          "line": 2237
+        },
+        {
+          "name": "giftStatusText",
+          "line": 2240
+        },
+        {
+          "name": "orderState",
+          "line": 2260
+        },
+        {
+          "name": "orderRows",
+          "line": 2264
+        },
+        {
+          "name": "rOrder",
+          "line": 2275
+        },
+        {
+          "name": "payText",
+          "line": 2322
+        },
+        {
+          "name": "payTag",
+          "line": 2323
+        },
+        {
+          "name": "deliverText",
+          "line": 2324
+        },
+        {
+          "name": "rOrderDetail",
+          "line": 2333
+        },
+        {
+          "name": "rMine",
+          "line": 2420
+        },
+        {
+          "name": "rService",
+          "line": 2478
+        },
+        {
+          "name": "rContainer",
+          "line": 2513
+        },
+        {
+          "name": "deskShell",
+          "line": 2531
+        },
+        {
+          "name": "webNav",
+          "line": 2550
+        },
+        {
+          "name": "navWebPlaceholder",
+          "line": 2576
+        },
+        {
+          "name": "webGoodsGrid",
+          "line": 2577
+        },
+        {
+          "name": "webPageFrame",
+          "line": 2588
+        },
+        {
+          "name": "rWebHome",
+          "line": 2598
+        },
+        {
+          "name": "rWebSearch",
+          "line": 2625
+        },
+        {
+          "name": "rWebProduct",
+          "line": 2673
+        },
+        {
+          "name": "webBuyPanel",
+          "line": 2762
+        },
+        {
+          "name": "payChannelName",
+          "line": 2773
+        },
+        {
+          "name": "payQrModal",
+          "line": 2774
+        },
+        {
+          "name": "rWebCheckout",
+          "line": 2809
+        },
+        {
+          "name": "rWebPayret",
+          "line": 2860
+        },
+        {
+          "name": "rWebResult",
+          "line": 2873
+        },
+        {
+          "name": "rWebOrder",
+          "line": 2917
+        },
+        {
+          "name": "rWebMine",
+          "line": 3031
+        },
+        {
+          "name": "mkOrders",
+          "line": 3113
+        },
+        {
+          "name": "admGoodsPrice",
+          "line": 3313
+        },
+        {
+          "name": "admGoodsSpecText",
+          "line": 3317
+        },
+        {
+          "name": "admGoodsWayText",
+          "line": 3318
+        },
+        {
+          "name": "admGoodsHasWay",
+          "line": 3319
+        },
+        {
+          "name": "admGoodsRegionText",
+          "line": 3320
+        },
+        {
+          "name": "admGoodsNoticeText",
+          "line": 3322
+        },
+        {
+          "name": "admGoodsSysText",
+          "line": 3323
+        },
+        {
+          "name": "admGoodsMediaText",
+          "line": 3328
+        },
+        {
+          "name": "admGoodsRows",
+          "line": 3335
+        },
+        {
+          "name": "admSearchRow",
+          "line": 3461
+        },
+        {
+          "name": "admRT",
+          "line": 3527
+        },
+        {
+          "name": "admResetRT",
+          "line": 3531
+        },
+        {
+          "name": "admQuery",
+          "line": 3539
+        },
+        {
+          "name": "admIsStale",
+          "line": 3540
+        },
+        {
+          "name": "admVal",
+          "line": 3541
+        },
+        {
+          "name": "admApplyFilters",
+          "line": 3546
+        },
+        {
+          "name": "admTabCounts",
+          "line": 3574
+        },
+        {
+          "name": "admFiltered",
+          "line": 3586
+        },
+        {
+          "name": "admHomeRow",
+          "line": 3599
+        },
+        {
+          "name": "admHomeDraft",
+          "line": 3605
+        },
+        {
+          "name": "admHomeBannerEditor",
+          "line": 3613
+        },
+        {
+          "name": "admHomeListEditor",
+          "line": 3667
+        },
+        {
+          "name": "admHomePicker",
+          "line": 3709
+        },
+        {
+          "name": "admGoodsDraft",
+          "line": 3764
+        },
+        {
+          "name": "admRegionPicker",
+          "line": 3785
+        },
+        {
+          "name": "admGoodsSysBlock",
+          "line": 3813
+        },
+        {
+          "name": "admGoodsMediaPreview",
+          "line": 3847
+        },
+        {
+          "name": "admGoodsEditor",
+          "line": 3881
+        },
+        {
+          "name": "block",
+          "line": 3918
+        },
+        {
+          "name": "admSrPicker",
+          "line": 4060
+        },
+        {
+          "name": "admSrPickerRows",
+          "line": 4077
+        },
+        {
+          "name": "admOrderUserCard",
+          "line": 4237
+        },
+        {
+          "name": "maskCode",
+          "line": 4255
+        },
+        {
+          "name": "admOrderRefundDrawer",
+          "line": 4262
+        },
+        {
+          "name": "admGiftBatchDrawer",
+          "line": 4361
+        },
+        {
+          "name": "genSupplierCode",
+          "line": 4380
+        },
+        {
+          "name": "admTplPreview",
+          "line": 4387
+        },
+        {
+          "name": "admNotifyTplList",
+          "line": 4394
+        },
+        {
+          "name": "admNotifyTplEditor",
+          "line": 4407
+        },
+        {
+          "name": "admNotifyTplOverlay",
+          "line": 4433
+        },
+        {
+          "name": "sanitizeAgreeHtml",
+          "line": 4452
+        },
+        {
+          "name": "bumpAgreeVersion",
+          "line": 4458
+        },
+        {
+          "name": "admAgreeViewer",
+          "line": 4462
+        },
+        {
+          "name": "admAgreeEditor",
+          "line": 4476
+        },
+        {
+          "name": "admRbacMenuName",
+          "line": 4496
+        },
+        {
+          "name": "admRbacAllMenuIds",
+          "line": 4500
+        },
+        {
+          "name": "admRbacMenusText",
+          "line": 4503
+        },
+        {
+          "name": "admRbacMenuGroups",
+          "line": 4510
+        },
+        {
+          "name": "admRbacRoleDrawer",
+          "line": 4524
+        },
+        {
+          "name": "admRbacAccountDrawer",
+          "line": 4537
+        },
+        {
+          "name": "agg",
+          "line": 5025
+        },
+        {
+          "name": "admIcon",
+          "line": 5082
+        },
+        {
+          "name": "admBadges",
+          "line": 5092
+        },
+        {
+          "name": "cnt",
+          "line": 5093
+        },
+        {
+          "name": "admSidebar",
+          "line": 5102
+        },
+        {
+          "name": "item",
+          "line": 5116
+        },
+        {
+          "name": "admTopbar",
+          "line": 5153
+        },
+        {
+          "name": "admConfirmBox",
+          "line": 5164
+        },
+        {
+          "name": "admToastBox",
+          "line": 5178
+        },
+        {
+          "name": "admWrap",
+          "line": 5184
+        },
+        {
+          "name": "admField",
+          "line": 5188
+        },
+        {
+          "name": "admFilters",
+          "line": 5205
+        },
+        {
+          "name": "admTabs",
+          "line": 5228
+        },
+        {
+          "name": "admTable",
+          "line": 5244
+        },
+        {
+          "name": "admPager",
+          "line": 5302
+        },
+        {
+          "name": "admMetrics",
+          "line": 5325
+        },
+        {
+          "name": "admMsg",
+          "line": 5333
+        },
+        {
+          "name": "admBatchBar",
+          "line": 5338
+        },
+        {
+          "name": "admDrawer",
+          "line": 5353
+        },
+        {
+          "name": "admEmpty",
+          "line": 5385
+        },
+        {
+          "name": "renderAdmin",
+          "line": 5401
+        },
+        {
+          "name": "renderLogin",
+          "line": 5452
+        },
+        {
+          "name": "renderServiceForm",
+          "line": 5468
+        },
+        {
+          "name": "currentPage",
+          "line": 5573
+        },
+        {
+          "name": "go",
+          "line": 5574
+        },
+        {
+          "name": "clearTransientState",
+          "line": 5592
+        },
+        {
+          "name": "setEnd",
+          "line": 5598
+        },
+        {
+          "name": "setState",
+          "line": 5608
+        },
+        {
+          "name": "admSyncScrollLock",
+          "line": 5624
+        },
+        {
+          "name": "renderAll",
+          "line": 5674
+        },
+        {
+          "name": "measuredCanvasW",
+          "line": 5724
+        },
+        {
+          "name": "syncDeskWidth",
+          "line": 5733
+        },
+        {
+          "name": "stateName",
+          "line": 5746
+        },
+        {
+          "name": "refreshStateSelect",
+          "line": 5751
+        },
+        {
+          "name": "stripRefs",
+          "line": 5770
+        },
+        {
+          "name": "collectReviewNotes",
+          "line": 5778
+        },
+        {
+          "name": "push",
+          "line": 5780
+        },
+        {
+          "name": "renderNotes",
+          "line": 5817
+        },
+        {
+          "name": "notesOf",
+          "line": 5820
+        },
+        {
+          "name": "notesHtml",
+          "line": 5823
+        },
+        {
+          "name": "renderStateSummary",
+          "line": 5829
+        },
+        {
+          "name": "nextHint",
+          "line": 5849
+        },
+        {
+          "name": "renderPicker",
+          "line": 5867
+        },
+        {
+          "name": "guessCompName",
+          "line": 5885
+        },
+        {
+          "name": "renderDoc",
+          "line": 5889
+        },
+        {
+          "name": "applySel",
+          "line": 5923
+        },
+        {
+          "name": "pickComp",
+          "line": 5928
+        },
+        {
+          "name": "admToast",
+          "line": 5937
+        },
+        {
+          "name": "flash",
+          "line": 5947
+        },
+        {
+          "name": "admApplyMenuFilter",
+          "line": 5963
+        },
+        {
+          "name": "admHomeRefreshPicker",
+          "line": 5986
+        },
+        {
+          "name": "bindAdmHomeDnD",
+          "line": 6007
+        },
+        {
+          "name": "rowOf",
+          "line": 6010
+        },
+        {
+          "name": "admRegionRefresh",
+          "line": 6064
+        },
+        {
+          "name": "bindAdmGoodsDnD",
+          "line": 6084
+        },
+        {
+          "name": "rowOf",
+          "line": 6087
+        },
+        {
+          "name": "bindAdmSearchDnD",
+          "line": 6132
+        },
+        {
+          "name": "srList",
+          "line": 6134
+        },
+        {
+          "name": "rowOf",
+          "line": 6137
+        },
+        {
+          "name": "admSrRefreshPicker",
+          "line": 6184
+        },
+        {
+          "name": "admOpenConfirm",
+          "line": 6200
+        },
+        {
+          "name": "admConfirmOk",
+          "line": 6223
+        },
+        {
+          "name": "admConfirmCancel",
+          "line": 6233
+        },
+        {
+          "name": "bindActs",
+          "line": 6240
+        },
+        {
+          "name": "admCommit",
+          "line": 6573
+        },
+        {
+          "name": "isWebEnd",
+          "line": 6606
+        },
+        {
+          "name": "stepPage",
+          "line": 6607
+        },
+        {
+          "name": "handleAct",
+          "line": 6608
+        },
+        {
+          "name": "doPlatformAuth",
+          "line": 6866
+        },
+        {
+          "name": "syncSimControls",
+          "line": 6900
+        },
+        {
+          "name": "doBuy",
+          "line": 6915
+        },
+        {
+          "name": "doVerifyAfterAgreement",
+          "line": 6957
+        },
+        {
+          "name": "resolvePayQuery",
+          "line": 6994
+        },
+        {
+          "name": "handleAdm",
+          "line": 7012
+        },
+        {
+          "name": "admModalValidate",
+          "line": 7624
+        },
+        {
+          "name": "admAction",
+          "line": 7640
+        },
+        {
+          "name": "diagKind",
+          "line": 7694
+        },
+        {
+          "name": "stopBannerTimer",
+          "line": 7702
+        },
+        {
+          "name": "startBannerTimer",
+          "line": 7703
+        },
+        {
+          "name": "bootDiagrams",
+          "line": 7717
+        },
+        {
+          "name": "applyDgmZoom",
+          "line": 7741
+        },
+        {
+          "name": "openDiagram",
+          "line": 7755
+        },
+        {
+          "name": "closeDiagram",
+          "line": 7771
+        },
+        {
+          "name": "bootReader",
+          "line": 7774
+        },
+        {
+          "name": "openDoc",
+          "line": 7790
+        },
+        {
+          "name": "buildToc",
+          "line": 7812
+        },
+        {
+          "name": "closeReader",
+          "line": 7842
+        },
+        {
+          "name": "downloadDoc",
+          "line": 7848
+        },
+        {
+          "name": "boot",
+          "line": 7858
+        },
+        {
+          "name": "refreshPageSelect",
+          "line": 7864
+        }
+      ]
+    }
+  }
+}

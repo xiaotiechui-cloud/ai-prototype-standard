@@ -1,0 +1,172 @@
+{
+  "method": "original-functions-in-node-vm-with-fixtures",
+  "browser_verification": "not_run",
+  "source_hashes": {
+    "trial": "c8dcc6bc8218d7b99ecdd5a2c358268e25848ac6dc9bafa948e53ab97e5fa762",
+    "final": "04bf9e76f416833e1ac84e97408b81cbceb043bb44dca4a0529f3c80f418765f"
+  },
+  "results": [
+    {
+      "id": "PROBE-01",
+      "source": "trial:1934;3657",
+      "scope": "isolated-function-or-original-statements",
+      "result_count": 0,
+      "rendered_example": true,
+      "observation": "empty result renderer selected demonstration product"
+    },
+    {
+      "id": "PROBE-02",
+      "source": "final:1711;1737",
+      "scope": "isolated-function-or-original-statements",
+      "matching_products": 0,
+      "rendered_example": true,
+      "observation": "no-match lookup fell back to GOODS sample"
+    },
+    {
+      "id": "PROBE-03",
+      "source": "final:1417",
+      "scope": "isolated-function-or-original-statements",
+      "history": [
+        "B",
+        "A"
+      ],
+      "observation": "original helper trims, deduplicates and moves submitted term to first position"
+    },
+    {
+      "id": "PROBE-04",
+      "source": "trial:1633",
+      "scope": "isolated-function-or-original-statements",
+      "after": {
+        "productId": "P-X",
+        "specId": "SP-A",
+        "friendLink": "",
+        "payChannel": "wechat",
+        "agreement": false,
+        "quantity": 1,
+        "error": ""
+      },
+      "observation": "reopening same product reset existing selections"
+    },
+    {
+      "id": "PROBE-05",
+      "source": "final:1891",
+      "scope": "isolated-function-or-original-statements",
+      "configured_price": 260,
+      "rendered_price": 140,
+      "observation": "price expression uses fixed increment instead of configured second-spec price"
+    },
+    {
+      "id": "PROBE-06",
+      "source": "trial:4655;4657",
+      "scope": "isolated-function-or-original-statements",
+      "record": {
+        "id": "AU-1",
+        "operator": "管理员-赵",
+        "action": "分配角色",
+        "object": "B",
+        "detail": "财务",
+        "before": "财务",
+        "after": "财务",
+        "at": "fixture-time"
+      },
+      "observation": "audit before equals new role because original assignment precedes snapshot"
+    },
+    {
+      "id": "PROBE-07",
+      "source": "trial:4327;4336;4338",
+      "scope": "isolated-function-or-original-statements",
+      "pending_callbacks": 2,
+      "second_request_loading_after_first_callback": false,
+      "observation": "mutable runtime references defeat stale-response comparison"
+    },
+    {
+      "id": "PROBE-08",
+      "source": "trial:4470;4478;1630",
+      "scope": "isolated-function-or-original-statements",
+      "active_ad_name_before_publish": "NEW",
+      "observation": "save-draft action mutated object read by client before publish"
+    },
+    {
+      "id": "PROBE-09",
+      "source": "trial:4500;4506",
+      "scope": "isolated-function-or-original-statements",
+      "action": "adm-gift-open",
+      "gift_status_after_open": "PROCESSING",
+      "batches": 1,
+      "observation": "explicit start-processing action creates a batch; label and confirmation are checked separately from read-only details"
+    },
+    {
+      "id": "PROBE-10",
+      "source": "final:3539;3540",
+      "scope": "isolated-function-or-original-statements",
+      "old_token": 1,
+      "current_token": 2,
+      "stale_rejected": true,
+      "observation": "immutable token rejects earlier request within one runtime generation"
+    },
+    {
+      "id": "PROBE-11",
+      "source": "trial:2153",
+      "scope": "isolated-function-or-original-statements",
+      "requested_id": "MISSING-B",
+      "selected_id": "A",
+      "observation": "unknown explicit order ID falls back to another order"
+    },
+    {
+      "id": "PROBE-12",
+      "source": "trial:1550;1551",
+      "scope": "isolated-function-or-original-statements",
+      "before": "OLD/OLD-SPEC",
+      "after": "NEW/NEW-SPEC",
+      "observation": "historical display reads current catalog rather than order snapshot"
+    },
+    {
+      "id": "PROBE-13",
+      "source": "final:3531;3539;3540",
+      "scope": "isolated-function-or-original-statements",
+      "old_token": 1,
+      "new_generation_token": 1,
+      "old_rejected": false,
+      "observation": "numeric token is reused after runtime reset; reset overlap needs generation isolation"
+    },
+    {
+      "id": "PROBE-14",
+      "source": "trial:4275;4284;4286",
+      "scope": "isolated-function-or-original-statements",
+      "copy_api_return": false,
+      "feedback": [
+        [
+          "已复制到剪贴板"
+        ]
+      ],
+      "observation": "legacy copy failure still reports copied successfully"
+    },
+    {
+      "id": "PROBE-15",
+      "source": "trial:4293;4649;4655",
+      "scope": "isolated-function-or-original-statements",
+      "role_after": "管理员",
+      "permission_checks": 0,
+      "observation": "original role-write branch does not recheck authorization; isolated internal action only"
+    },
+    {
+      "id": "PROBE-16",
+      "source": "trial:1832;4605",
+      "scope": "isolated-function-or-original-statements",
+      "initial": "REJECTED",
+      "after": "SUCCESS",
+      "audit_count": 2,
+      "observation": "refund helper overwrites rejected status and repeats success audit; no real channel execution in this probe"
+    },
+    {
+      "id": "PROBE-17",
+      "source": "trial:4374;4377",
+      "scope": "isolated-function-or-original-statements",
+      "page": 999,
+      "selection": [
+        "A"
+      ],
+      "observation": "page action accepts positive page without upper bound and retains previous selection"
+    }
+  ]
+}

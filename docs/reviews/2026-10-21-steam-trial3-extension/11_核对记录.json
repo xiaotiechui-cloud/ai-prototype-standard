@@ -1,0 +1,51 @@
+{
+  "checked_at": "2026-10-21T12:02:22.032944+08:00",
+  "repository_head": "cd12fa67271343fe067581eaf0d15b219571535e",
+  "observation_counts": {
+    "03_客户端与交易细节.md": 10,
+    "04_后台配置与数据联动.md": 8,
+    "05_查询异步与操作边界.md": 7,
+    "06_文档工具与交付一致性.md": 7
+  },
+  "candidate_groups": 8,
+  "browser_parent_scenarios": 32,
+  "browser_executed": 0,
+  "isolated_probes": 17,
+  "harness_errors": [],
+  "active_modules_and_manifest_unchanged": {
+    "standards\\contracts-and-checklists.md": true,
+    "standards\\core.md": true,
+    "standards\\decisions-and-change.md": true,
+    "standards\\deliverables-business.md": true,
+    "standards\\deliverables-ui.md": true,
+    "standards\\diagrams-and-reader.md": true,
+    "standards\\profiles\\admin.md": true,
+    "standards\\profiles\\client.md": true,
+    "standards\\profiles\\desktop-web.md": true,
+    "standards\\quality-and-evidence.md": true,
+    "standards\\runtime-and-build.md": true,
+    "standards\\ui-and-components.md": true,
+    "standards\\workflow-and-model.md": true,
+    "standard-manifest.json": true
+  },
+  "input_html_unchanged": {
+    "trial": true,
+    "final": true
+  },
+  "commands": [
+    {
+      "command": "D:\\Tools\\Python\\cpython-3.11.15-windows-x86_64-none\\python.exe tools/maintain.py verify",
+      "exit_code": 0,
+      "stdout": "PASS: archive SHA-256; 45 source sections; 16 modules; 10 stable rule IDs; dependency routes; 11 opt-in resources; 406 links; 9 starter templates\n",
+      "stderr": ""
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "warning: in the working copy of 'docs/reviews/2026-10-21-steam-trial3/00_阅读与摘要.md', LF will be replaced by CRLF the next time Git touches it\n"
+    }
+  ],
+  "review_consistency_errors": [],
+  "scope": "review-consistency-and-repository-maintenance-only; no browser or business acceptance"
+}

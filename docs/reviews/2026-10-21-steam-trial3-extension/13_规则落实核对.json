@@ -1,0 +1,125 @@
+{
+  "checked_at": "2026-10-21T12:28:04.522396+08:00",
+  "approval": {
+    "user_reply": "已审核",
+    "scope": "K01-K08 reviewed text and stated exceptions"
+  },
+  "repository_head": "cd12fa67271343fe067581eaf0d15b219571535e",
+  "working_tree_contains_uncommitted_changes": true,
+  "content_revision": "draft-20261021-trial3-detail",
+  "approved_clauses": {
+    "K01": {
+      "authority": "standards/deliverables-business.md",
+      "section": "24.5",
+      "approved_paragraph_present": true
+    },
+    "K02": {
+      "authority": "standards/core.md",
+      "section": "3.4",
+      "approved_paragraph_present": true
+    },
+    "K03": {
+      "authority": "standards/runtime-and-build.md",
+      "section": "13.5",
+      "approved_paragraph_present": true
+    },
+    "K04": {
+      "authority": "standards/profiles/admin.md",
+      "section": "12.11",
+      "approved_paragraph_present": true
+    },
+    "K05": {
+      "authority": "standards/runtime-and-build.md",
+      "section": "13.3",
+      "approved_paragraph_present": true
+    },
+    "K06": {
+      "authority": "standards/profiles/admin.md",
+      "section": "12.13",
+      "approved_paragraph_present": true
+    },
+    "K07": {
+      "authority": "standards/quality-and-evidence.md",
+      "section": "29.13",
+      "approved_paragraph_present": true
+    },
+    "K08": {
+      "authority": "standards/runtime-and-build.md",
+      "section": "13.6",
+      "approved_paragraph_present": true
+    }
+  },
+  "changed_activity_modules": [
+    "standards/core.md",
+    "standards/deliverables-business.md",
+    "standards/profiles/admin.md",
+    "standards/quality-and-evidence.md",
+    "standards/runtime-and-build.md"
+  ],
+  "current_module_and_manifest_sha256": {
+    "standards/contracts-and-checklists.md": "5fc9f9cb8e55c1e3e05af390705695816e9fc139ee4055d2fed5b88ed6dd047c",
+    "standards/core.md": "c141184fb586f00aef5f143f5042bf1c5694c8b2e4a25f993b5241444babe452",
+    "standards/decisions-and-change.md": "2e213a0a2dbb5609e472c5bc67d70eac5e77c2a7885f85c5f13456437145371c",
+    "standards/deliverables-business.md": "13537e56be60369f4e3dc6adb674cfc9019aa532851e74440f64f0088b88fb7a",
+    "standards/deliverables-ui.md": "bc03bbaee2b2a079e53ea19b04e8b05291224c8af121d58f6b54d25b3034ced8",
+    "standards/diagrams-and-reader.md": "85a025338043a4d3b2351e11a257702a16f897306fb12ddd8f98b112d23b2d8c",
+    "standards/profiles/admin.md": "031da5f396b2dbe182b9f672937c589a618f003b68bc0be98664d5a29485a74b",
+    "standards/profiles/client.md": "3b752c58ddbcd68a0379a5d5834b1cb8af2ed4d624954155618fb043c5aa7f43",
+    "standards/profiles/desktop-web.md": "23899a325fd91f03cccc8c51cdf68ebd05752a27bca8d222f75fdf746cdd6ce1",
+    "standards/quality-and-evidence.md": "481b1a3eedfb8deea0265eae9df83dbfb2f688631fab21dc9a39a6fd0754578b",
+    "standards/runtime-and-build.md": "bf00d19cc13794b613465667d22d7f3621994821c8622018d9fee20ea7812840",
+    "standards/ui-and-components.md": "db6385d10c424d30a11a68a262efe4143e94e1b1881a382a0f8bda6a47ec226a",
+    "standards/workflow-and-model.md": "8d2ef444c086438b3d5eb186acec7474bc0b594a1976f6ce02e972f685eab6f8",
+    "standard-manifest.json": "40a5162c094e2303c07f5ec02c0074c60f6fb259fdefaeaddaf2cd04bd6afc2b"
+  },
+  "manifest_except_content_revision_unchanged": true,
+  "chapter_anchor_and_rule_markers_unchanged": {
+    "standards/contracts-and-checklists.md": true,
+    "standards/core.md": true,
+    "standards/decisions-and-change.md": true,
+    "standards/deliverables-business.md": true,
+    "standards/deliverables-ui.md": true,
+    "standards/diagrams-and-reader.md": true,
+    "standards/profiles/admin.md": true,
+    "standards/profiles/client.md": true,
+    "standards/profiles/desktop-web.md": true,
+    "standards/quality-and-evidence.md": true,
+    "standards/runtime-and-build.md": true,
+    "standards/ui-and-components.md": true,
+    "standards/workflow-and-model.md": true
+  },
+  "input_html": {
+    "trial": {
+      "sha256": "c8dcc6bc8218d7b99ecdd5a2c358268e25848ac6dc9bafa948e53ab97e5fa762",
+      "unchanged": true
+    },
+    "final": {
+      "sha256": "04bf9e76f416833e1ac84e97408b81cbceb043bb44dca4a0529f3c80f418765f",
+      "unchanged": true
+    }
+  },
+  "method_matrix_row_counts": {
+    "ACT": 15,
+    "CTX": 12,
+    "SELF": 12
+  },
+  "browser_parent_scenarios": 32,
+  "browser_executed": 0,
+  "browser_unverified": 32,
+  "commands": [
+    {
+      "command": "D:\\Tools\\Python\\cpython-3.11.15-windows-x86_64-none\\python.exe tools/maintain.py verify",
+      "exit_code": 0,
+      "stdout": "PASS: archive SHA-256; 45 source sections; 16 modules; 10 stable rule IDs; dependency routes; 11 opt-in resources; 455 links; 9 starter templates\n",
+      "stderr": ""
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": " by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/acceptance/selftest.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/patterns/content-and-navigation.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/patterns/data-and-transactions.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/patterns/forms-and-layers.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/patterns/queries-and-async.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/reviews/2026-10-21-steam-trial3/00_阅读与摘要.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'standards/core.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'standards/deliverables-business.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'standards/profiles/admin.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'standards/quality-and-evidence.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'standards/runtime-and-build.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'templates/01_页面与状态说明.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'templates/03_组件级文档.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'templates/05_接口数据与权限说明.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'templates/07_测试用例.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'templates/08_验证记录与验收映射.md', LF will be replaced by CRLF the next time Git touches it\n"
+    }
+  ],
+  "errors": [],
+  "scope": "approved-text-placement-and-maintenance-integrity; no browser or PRD generation run"
+}

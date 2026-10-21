@@ -1,0 +1,1239 @@
+{
+  "method": "embedded-json-and-external-file-hashes",
+  "browser_verification": "not_run",
+  "versions": {
+    "trial": {
+      "component_assignment_line": 520,
+      "document_assignment_line": 522,
+      "diagram_assignment_line": 521,
+      "repeated_sections": [
+        {
+          "section": 1,
+          "max_exact_repetitions": 1,
+          "sample_ids": [
+            "COM-CLIENT-C01"
+          ],
+          "short_evidence": "组件ID：COM-CLIENT-C01 中文名称：搜索输入框 所属页面：APP-SEARCH-01、APP-SEARCH-02 需求来源：SEARCH-01、SEARCH-02 业务目的：统一客户端共享交互，保证跨页面一致 模式ID：PAT-INPUT-01 适用端：移动 H5 职责范围：输入、清空"
+        },
+        {
+          "section": 2,
+          "max_exact_repetitions": 4,
+          "sample_ids": [
+            "COM-CLIENT-C01",
+            "COM-CLIENT-C02",
+            "APP-SEARCH-02-C01",
+            "WEB-SEARCH-01-C01"
+          ],
+          "short_evidence": "| 字段/对象 | 类型与格式 | 来源及字段路径 | 获取/刷新时机 | 必填/可编辑 | 默认与空值 | 校验/过期 | 脱敏/权限 | | --- | --- | --- | --- | --- | --- | --- | --- | | 关键词 | string(1..40) | 用户输入；"
+        },
+        {
+          "section": 3,
+          "max_exact_repetitions": 1,
+          "sample_ids": [
+            "COM-CLIENT-C01"
+          ],
+          "short_evidence": "| 操作/触发 | 前置与校验 | 系统处理/接口 | 数据及状态变化 | 成功/失败去向 | 幂等、重复或取消规则 | | --- | --- | --- | --- | --- | --- | | 输入 | 输入框可编辑 | 只更新草稿，不整页重渲染 | 保存关键词草稿 | 输入法与焦点保持 |"
+        },
+        {
+          "section": 4,
+          "max_exact_repetitions": 1,
+          "sample_ids": [
+            "COM-CLIENT-C01"
+          ],
+          "short_evidence": "| 状态/场景 | 具体文案 | 展示位置/形式 | 可操作项 | 禁用项及提示原因 | 焦点/键盘/滚动/关闭 | 恢复或下一步 | | --- | --- | --- | --- | --- | --- | --- | | DEFAULT | 输入商品名称搜索 | 输入框占位 | 输入/清空/提"
+        },
+        {
+          "section": 5,
+          "max_exact_repetitions": 37,
+          "sample_ids": [
+            "COM-CLIENT-C01",
+            "COM-CLIENT-C02",
+            "COM-CLIENT-C03",
+            "COM-CLIENT-C04"
+          ],
+          "short_evidence": "矩形卡片/按钮；移动端主交互热区≥44×44 CSS 像素；白底、1px #c9cdd3 边框；主按钮深灰 #2f343b 白字；状态同时使用文字与颜色；长文案换行；不引入外部字体与图标。"
+        },
+        {
+          "section": 6,
+          "max_exact_repetitions": 1,
+          "sample_ids": [
+            "COM-CLIENT-C01"
+          ],
+          "short_evidence": "| 当前状态 | 触发事件 | 守卫条件 | 目标状态 | 界面变化 | 数据变化 | 禁止操作 | 关联 01/04 | | --- | --- | --- | --- | --- | --- | --- | --- | | DEFAULT | 输入 | — | EDITING | 显示清除按钮 "
+        },
+        {
+          "section": 7,
+          "max_exact_repetitions": 8,
+          "sample_ids": [
+            "COM-CLIENT-C09",
+            "ADM-COMMON-C03",
+            "ADM-COMMON-C04",
+            "ADM-COMMON-C05"
+          ],
+          "short_evidence": "随宿主页面 API。 触发前完成前端校验，服务端始终复核；超时/未知不推定成功；重复提交使用幂等键或请求版本；无接口时只做本地页面状态。"
+        },
+        {
+          "section": 8,
+          "max_exact_repetitions": 31,
+          "sample_ids": [
+            "ADM-COMMON-C01",
+            "ADM-COMMON-C02",
+            "ADM-COMMON-C03",
+            "ADM-COMMON-C04"
+          ],
+          "short_evidence": "业务埋点：不适用。依据本标准第 1.5 与第 25.1 节，管理后台不进行业务埋点设计，独立 06 仅包含客户端事件。"
+        },
+        {
+          "section": 9,
+          "max_exact_repetitions": 5,
+          "sample_ids": [
+            "ADM-COMMON-C01",
+            "ADM-COMMON-C02",
+            "ADM-LOGIN-01-C01",
+            "ADM-RBAC-01-C01"
+          ],
+          "short_evidence": "TC-ADM-007。 可判定行为包括：主路径成功、失败/超时、取消/返回、重复提交、权限拒绝、恢复后状态一致。未实际执行时不得写“已通过”。"
+        },
+        {
+          "section": 10,
+          "max_exact_repetitions": 49,
+          "sample_ids": [
+            "COM-CLIENT-C02",
+            "COM-CLIENT-C04",
+            "COM-CLIENT-C06",
+            "COM-CLIENT-C07"
+          ],
+          "short_evidence": "无。"
+        }
+      ],
+      "component_examples": [
+        {
+          "id": "COM-CLIENT-C01",
+          "name": "搜索输入框",
+          "section_count": 10
+        },
+        {
+          "id": "COM-CLIENT-C05",
+          "name": "排序/筛选栏",
+          "section_count": 10
+        },
+        {
+          "id": "ADM-PRODUCT-01-C01",
+          "name": "商品编辑表单",
+          "section_count": 10
+        }
+      ],
+      "documents": [
+        {
+          "file": "00_交付说明与变更记录.md",
+          "embedded_sha256_utf8": "785cf3a715c4f6d2bbe92bc510a448a561ed4f6e2bd6512325e0a3fc97859200",
+          "external_path": "D:\\模型汇总\\GitHub维护测试\\试跑3.0\\Steam商城原型交付_V1.4\\00_交付说明与变更记录.md",
+          "external_raw_sha256": "785cf3a715c4f6d2bbe92bc510a448a561ed4f6e2bd6512325e0a3fc97859200",
+          "equal_after_bom_newline_normalization": true,
+          "difference": null
+        },
+        {
+          "file": "01_页面与状态说明.md",
+          "embedded_sha256_utf8": "323aad56e38894d52e70fb6f1a5780d74ea649a2fc70008504d7eed3a0dbe5e6",
+          "external_path": "D:\\模型汇总\\GitHub维护测试\\试跑3.0\\Steam商城原型交付_V1.4\\01_页面与状态说明.md",
+          "external_raw_sha256": "323aad56e38894d52e70fb6f1a5780d74ea649a2fc70008504d7eed3a0dbe5e6",
+          "equal_after_bom_newline_normalization": true,
+          "difference": null
+        },
+        {
+          "file": "03_组件级文档.md",
+          "embedded_sha256_utf8": "563ad10423966cd38cc08fe57cd7d9193bfa3e58a95ad8f1bb5cd4e63de77e2d",
+          "external_path": "D:\\模型汇总\\GitHub维护测试\\试跑3.0\\Steam商城原型交付_V1.4\\03_组件级文档.md",
+          "external_raw_sha256": "563ad10423966cd38cc08fe57cd7d9193bfa3e58a95ad8f1bb5cd4e63de77e2d",
+          "equal_after_bom_newline_normalization": true,
+          "difference": null
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_sha256_utf8": "03e9ee57e24b8cd80a4291d05577c68b8d37c694788682023460221df24294dc",
+          "external_path": "D:\\模型汇总\\GitHub维护测试\\试跑3.0\\Steam商城原型交付_V1.4\\04_业务流程与异常规则.md",
+          "external_raw_sha256": "03e9ee57e24b8cd80a4291d05577c68b8d37c694788682023460221df24294dc",
+          "equal_after_bom_newline_normalization": true,
+          "difference": null
+        },
+        {
+          "file": "05_接口数据与权限说明.md",
+          "embedded_sha256_utf8": "3f7f360389d6ea41406ede36710ea6ebebad0a06aa45414660745f0b4990498e",
+          "external_path": "D:\\模型汇总\\GitHub维护测试\\试跑3.0\\Steam商城原型交付_V1.4\\05_接口数据与权限说明.md",
+          "external_raw_sha256": "3f7f360389d6ea41406ede36710ea6ebebad0a06aa45414660745f0b4990498e",
+          "equal_after_bom_newline_normalization": true,
+          "difference": null
+        },
+        {
+          "file": "06_埋点文档.md",
+          "embedded_sha256_utf8": "b9f39994f8dd9826fdb2d90742b916fdab05ee29677acab907411beeae712fbc",
+          "external_path": "D:\\模型汇总\\GitHub维护测试\\试跑3.0\\Steam商城原型交付_V1.4\\06_埋点文档.md",
+          "external_raw_sha256": "b9f39994f8dd9826fdb2d90742b916fdab05ee29677acab907411beeae712fbc",
+          "equal_after_bom_newline_normalization": true,
+          "difference": null
+        },
+        {
+          "file": "07_测试用例.md",
+          "embedded_sha256_utf8": "a978dd53374830344e170bed3513488c00e678df60a12812ec7189cb3e5ee68a",
+          "external_path": "D:\\模型汇总\\GitHub维护测试\\试跑3.0\\Steam商城原型交付_V1.4\\07_测试用例.md",
+          "external_raw_sha256": "a978dd53374830344e170bed3513488c00e678df60a12812ec7189cb3e5ee68a",
+          "equal_after_bom_newline_normalization": true,
+          "difference": null
+        },
+        {
+          "file": "08_验证记录与验收映射.md",
+          "embedded_sha256_utf8": "d209cfe86ae734902d3cedcd43e7773329ebded29f67604afb569304626ad47c",
+          "external_path": "D:\\模型汇总\\GitHub维护测试\\试跑3.0\\Steam商城原型交付_V1.4\\08_验证记录与验收映射.md",
+          "external_raw_sha256": "d209cfe86ae734902d3cedcd43e7773329ebded29f67604afb569304626ad47c",
+          "equal_after_bom_newline_normalization": true,
+          "difference": null
+        },
+        {
+          "file": "09_待确认事项与设计决策.md",
+          "embedded_sha256_utf8": "d0016c31dce5586240140fd46f8c4c4494d4a50b7de56c555649e9f2ff158865",
+          "external_path": "D:\\模型汇总\\GitHub维护测试\\试跑3.0\\Steam商城原型交付_V1.4\\09_待确认事项与设计决策.md",
+          "external_raw_sha256": "d0016c31dce5586240140fd46f8c4c4494d4a50b7de56c555649e9f2ff158865",
+          "equal_after_bom_newline_normalization": true,
+          "difference": null
+        },
+        {
+          "file": "Steam商城_PRD_V1.4.md",
+          "embedded_sha256_utf8": "0ab82b51be4263921cedf716f98851823138bf9afb1c78b3ee5d56c756778eff",
+          "external_path": "D:\\模型汇总\\GitHub维护测试\\试跑3.0\\Steam商城原型交付_V1.4\\Steam商城_PRD_V1.4.md",
+          "external_raw_sha256": null,
+          "equal_after_bom_newline_normalization": null,
+          "difference": null
+        }
+      ],
+      "claims": [
+        {
+          "topic": "search",
+          "file": "03_组件级文档.md",
+          "embedded_line": 51,
+          "short_evidence": "历史 | 进入结果页 | 提交中禁用 |"
+        },
+        {
+          "topic": "search",
+          "file": "03_组件级文档.md",
+          "embedded_line": 84,
+          "short_evidence": "历史不纳入首期。"
+        },
+        {
+          "topic": "search",
+          "file": "03_组件级文档.md",
+          "embedded_line": 181,
+          "short_evidence": "历史订单仍可查看 |"
+        },
+        {
+          "topic": "async",
+          "file": "05_接口数据与权限说明.md",
+          "embedded_line": 801,
+          "short_evidence": "迟到不覆盖新状态"
+        },
+        {
+          "topic": "verification",
+          "file": "08_验证记录与验收映射.md",
+          "embedded_line": 14,
+          "short_evidence": "未执行，不能据此宣称联调或测试通过。"
+        },
+        {
+          "topic": "verification",
+          "file": "08_验证记录与验收映射.md",
+          "embedded_line": 99,
+          "short_evidence": "未验证 / 不适用。浏览器探针是三视口共 235 项断言（1440:78 / 1920:78 / 390:79），不是 07 用例执行。"
+        },
+        {
+          "topic": "verification",
+          "file": "08_验证记录与验收映射.md",
+          "embedded_line": 101,
+          "short_evidence": "未验证范围 |"
+        }
+      ],
+      "plantuml_fence_mapping": [
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 53,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 110,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 157,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 204,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 250,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 289,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 320,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 359,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 393,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 435,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 473,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 511,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 548,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 587,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "05_接口数据与权限说明.md",
+          "embedded_line": 639,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "05_接口数据与权限说明.md",
+          "embedded_line": 681,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "05_接口数据与权限说明.md",
+          "embedded_line": 720,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "05_接口数据与权限说明.md",
+          "embedded_line": 759,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "05_接口数据与权限说明.md",
+          "embedded_line": 803,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "05_接口数据与权限说明.md",
+          "embedded_line": 843,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "05_接口数据与权限说明.md",
+          "embedded_line": 886,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "05_接口数据与权限说明.md",
+          "embedded_line": 921,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "05_接口数据与权限说明.md",
+          "embedded_line": 964,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "05_接口数据与权限说明.md",
+          "embedded_line": 1003,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "05_接口数据与权限说明.md",
+          "embedded_line": 1040,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "05_接口数据与权限说明.md",
+          "embedded_line": 1073,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "05_接口数据与权限说明.md",
+          "embedded_line": 1114,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "05_接口数据与权限说明.md",
+          "embedded_line": 1153,
+          "exact_trimmed_source_match": true
+        }
+      ],
+      "diagrams": [
+        {
+          "id": "FL-BUY-001",
+          "source_document": "04",
+          "source_sha256": "cfc38344f30667a9f61f067ab8d81ac2d410cd597b59cec1a9acf775a0103a6b",
+          "contains_svg": true
+        },
+        {
+          "id": "FL-AUTH-001",
+          "source_document": "04",
+          "source_sha256": "36d449601872ef96321b806bd57acca752083707430320093a83bca8da125b18",
+          "contains_svg": true
+        },
+        {
+          "id": "FL-PAY-001",
+          "source_document": "04",
+          "source_sha256": "a68e2347e0a9f8efdef6240891b7c5d4b73277564cafcd32f90ff6bdaa28ee48",
+          "contains_svg": true
+        },
+        {
+          "id": "FL-CODE-001",
+          "source_document": "04",
+          "source_sha256": "adcf5668f890f060aca5f406741ca7c5b8954cc44f51cecd754e2076c0742e4b",
+          "contains_svg": true
+        },
+        {
+          "id": "FL-GIFT-001",
+          "source_document": "04",
+          "source_sha256": "ae1f3b2dbf3238c6e9e90a61451b74554ec0b1d456875df9cbb6ec85aec07d52",
+          "contains_svg": true
+        },
+        {
+          "id": "FL-AFTER-001",
+          "source_document": "04",
+          "source_sha256": "a0ee74761697db1ff06fbe7853aca8b9f4c1a423f55698b2c15ad4a6d595760a",
+          "contains_svg": true
+        },
+        {
+          "id": "FL-REFUND-001",
+          "source_document": "04",
+          "source_sha256": "a7da36c2ba8b894a4267039c80f9145f5f0f8e46fbd68317817572212e3cd71b",
+          "contains_svg": true
+        },
+        {
+          "id": "FL-HOME-001",
+          "source_document": "04",
+          "source_sha256": "08edef48cdaf0851ddf64678b022a73db3e47c482eb8942d602268c817904a02",
+          "contains_svg": true
+        },
+        {
+          "id": "FL-NOTIFY-001",
+          "source_document": "04",
+          "source_sha256": "d316b61948a6cb3fff86abf3a970885bd0594651a168133cd8090c67ca5ad825",
+          "contains_svg": true
+        },
+        {
+          "id": "SM-ORDER-PAY",
+          "source_document": "04",
+          "source_sha256": "ab501d11b5e14593a6cac0c8df4a72ec0250103027dd189b131895ab99e5b209",
+          "contains_svg": true
+        },
+        {
+          "id": "SM-CODE",
+          "source_document": "04",
+          "source_sha256": "56a367153d3a4e53edfcc06f885d081c79e42b7738f8d8e33395774d12060fe0",
+          "contains_svg": true
+        },
+        {
+          "id": "SM-GIFT",
+          "source_document": "04",
+          "source_sha256": "cac6c2533205e73d0f110c124610adba0134dcccc33b746ace7766d637d5162b",
+          "contains_svg": true
+        },
+        {
+          "id": "SM-REFUND",
+          "source_document": "04",
+          "source_sha256": "67318858edb8b4764fade4e177c2a0b7034a3d8db25f35223870669bc52040f9",
+          "contains_svg": true
+        },
+        {
+          "id": "SM-NOTIFY",
+          "source_document": "04",
+          "source_sha256": "4244e5939ab34b8a75b82d7f3a279901a72f59154a1d4528d387f081ef14dc2f",
+          "contains_svg": true
+        },
+        {
+          "id": "SEQ-AUTH-001",
+          "source_document": "05",
+          "source_sha256": "c3839c8dc8943f3ee38643936ca0843fd1e9200720cb214fb30f25ab70e959e7",
+          "contains_svg": true
+        },
+        {
+          "id": "SEQ-AUTH-002",
+          "source_document": "05",
+          "source_sha256": "50129a366f12c8f13b1c7d3dc569e40f68becdc52e31b380e5bc92a4417eeaad",
+          "contains_svg": true
+        },
+        {
+          "id": "SEQ-BUY-001",
+          "source_document": "05",
+          "source_sha256": "aef62e1486262300d08ffbe7dccdbdb534992a85fcd9d7c37f3d36cb2a80e0c9",
+          "contains_svg": true
+        },
+        {
+          "id": "SEQ-PAY-001",
+          "source_document": "05",
+          "source_sha256": "da5ccfa7c674ed64f53ea9ca7755dc3d5d3e90ca71482aab5e448b76760c51a5",
+          "contains_svg": true
+        },
+        {
+          "id": "SEQ-PAY-002",
+          "source_document": "05",
+          "source_sha256": "d26688d452cb48a65f972c9adebfcd8cca851757842a153bce16294ba7b0090c",
+          "contains_svg": true
+        },
+        {
+          "id": "SEQ-CODE-001",
+          "source_document": "05",
+          "source_sha256": "598f31fc0daa8c111e20b7945dcb7a716216b86bfa03b4c9815e1481db6af49d",
+          "contains_svg": true
+        },
+        {
+          "id": "SEQ-GIFT-001",
+          "source_document": "05",
+          "source_sha256": "4255ff9f6828a7a4230ed865c2eb9caf849c8f50275e2b168813fb4faa32cdd8",
+          "contains_svg": true
+        },
+        {
+          "id": "SEQ-REFUND-001",
+          "source_document": "05",
+          "source_sha256": "d29d03268dee31217d97c4208a0b4d7b292b67bd23054be41f0251d8f9b7dfb4",
+          "contains_svg": true
+        },
+        {
+          "id": "SEQ-NOTIFY-001",
+          "source_document": "05",
+          "source_sha256": "9a9c5ec2b0cd4d210a486783656c7b303717aaeb8334d7c1476d7a403a18d0d4",
+          "contains_svg": true
+        },
+        {
+          "id": "SEQ-ADM-001",
+          "source_document": "05",
+          "source_sha256": "eae3835d0c05466596fd1eddf9f28f90e7176ab4da01d2aacf4530d53fc2ab8e",
+          "contains_svg": true
+        },
+        {
+          "id": "SEQ-ADM-002",
+          "source_document": "05",
+          "source_sha256": "9380834789db5261da9031383e6d1c747188aeedfe762fd574fcf8d1214f0627",
+          "contains_svg": true
+        },
+        {
+          "id": "SEQ-ORDER-001",
+          "source_document": "05",
+          "source_sha256": "4a87767785f769f0be4451e466f5ec2ef6c9b4e19c4a4f7746a02945a459b60a",
+          "contains_svg": true
+        },
+        {
+          "id": "SEQ-STOCK-001",
+          "source_document": "05",
+          "source_sha256": "54ed9ba013f9d08d782c7b985c58d299dd81a22f321e820dc6ff258341057357",
+          "contains_svg": true
+        },
+        {
+          "id": "SEQ-AFTER-001",
+          "source_document": "05",
+          "source_sha256": "f630ed4ebbc827c18904a6746803c536e244b1bfda86cb780847b74b9f54755c",
+          "contains_svg": true
+        }
+      ]
+    },
+    "final": {
+      "component_assignment_line": 7993,
+      "document_assignment_line": 7995,
+      "diagram_assignment_line": 7994,
+      "repeated_sections": [
+        {
+          "section": 1,
+          "max_exact_repetitions": 1,
+          "sample_ids": [
+            "COM-CLIENT-C01"
+          ],
+          "short_evidence": "COM-CLIENT-C01，搜索输入框 所属页面实例：APP-SEARCH-01-C01（搜索默认页）、APP-SEARCH-02-C01（搜索结果页，回填关键词） 需求来源 SEARCH-01、SEARCH-02、4.2 业务目的：让用户输入、清空并提交商品名称关键词，形成搜索入口，浏览阶段不要"
+        },
+        {
+          "section": 2,
+          "max_exact_repetitions": 1,
+          "sample_ids": [
+            "COM-CLIENT-C01"
+          ],
+          "short_evidence": "| 字段/对象 | 类型与格式 | 来源及字段路径 | 获取/刷新时机 | 必填/可编辑 | 默认与空值 | 校验/过期 | 脱敏/权限 | 字典引用 | | --- | --- | --- | --- | --- | --- | --- | --- | --- | | keyword | 字符串（"
+        },
+        {
+          "section": 3,
+          "max_exact_repetitions": 1,
+          "sample_ids": [
+            "COM-CLIENT-C01"
+          ],
+          "short_evidence": "| 操作/触发 | 前置与校验 | 系统处理/接口 | 数据及状态变化 | 成功/失败去向 | 幂等、重复或取消规则 | | --- | --- | --- | --- | --- | --- | | 聚焦输入 | 页面已渲染 | 本地更新控件值与焦点态 | DEFAULT→EDITING；显示清空"
+        },
+        {
+          "section": 4,
+          "max_exact_repetitions": 1,
+          "sample_ids": [
+            "COM-CLIENT-C01"
+          ],
+          "short_evidence": "| 状态/场景 | 具体文案 | 展示位置/形式 | 可操作项 | 禁用项及提示原因 | 焦点/键盘/滚动/关闭 | 恢复或下一步 | | --- | --- | --- | --- | --- | --- | --- | | 默认 | 占位\"输入商品名称搜索\" | 输入框内占位文字（#6b7280"
+        },
+        {
+          "section": 5,
+          "max_exact_repetitions": 1,
+          "sample_ids": [
+            "COM-CLIENT-C01"
+          ],
+          "short_evidence": "类型为单行输入框（PAT-INPUT-01），白底、1px #c9cdd3 边框、最小高44px，圆角按设计稿待定（低保真阶段为矩形；手机画布外框2px #8d939b属于评审外壳，不计入业务样式）。文字14px，主文字#20242a，占位#6b7280；聚焦态 outline 2px #52647"
+        },
+        {
+          "section": 6,
+          "max_exact_repetitions": 1,
+          "sample_ids": [
+            "COM-CLIENT-C01"
+          ],
+          "short_evidence": "| 当前状态 | 触发事件 | 守卫条件 | 目标状态 | 界面变化 | 数据变化 | 禁止操作 | 关联01/04 | | --- | --- | --- | --- | --- | --- | --- | --- | | APP-SEARCH-01::DEFAULT | 聚焦输入 | 控件可用 "
+        },
+        {
+          "section": 7,
+          "max_exact_repetitions": 1,
+          "sample_ids": [
+            "COM-CLIENT-C01"
+          ],
+          "short_evidence": "触发时机：用户提交关键词时调用 API-SEARCH-001（建议契约，GET /search/goods，参数 keyword 取自输入框去首尾空格后的快照；分页与排序由结果页 API-SEARCH-003 承接）。请求字段全部来自用户输入，不携带用户身份与敏感信息。响应到界面：提交成功后进入 A"
+        },
+        {
+          "section": 8,
+          "max_exact_repetitions": 2,
+          "sample_ids": [
+            "APP-PRODUCT-01-C10",
+            "WEB-PRODUCT-01-C10"
+          ],
+          "short_evidence": "无采集需求及依据：硬件配置为静态展示内容，无 PRD 分析需求；按标准 12.1 最小必要不采集。"
+        },
+        {
+          "section": 9,
+          "max_exact_repetitions": 1,
+          "sample_ids": [
+            "COM-CLIENT-C01"
+          ],
+          "short_evidence": "关联 TC-SEARCH-001（输入与清空）、TC-SEARCH-002（占位文案与焦点态）、TC-SEARCH-003（空关键词提交提示且不跳转）、TC-SEARCH-004（键盘提交与按钮一致、输入法组合阶段不误触发）、TC-SEARCH-005（返回恢复关键词）。另需覆盖：关键词前后空格、超"
+        },
+        {
+          "section": 10,
+          "max_exact_repetitions": 2,
+          "sample_ids": [
+            "APP-HOME-01-C09",
+            "APP-MINE-01-C06"
+          ],
+          "short_evidence": "同 COM-CLIENT-C14（图标形态、一级页面是否长期固定两项，TBD-03）。  ---"
+        }
+      ],
+      "component_examples": [
+        {
+          "id": "COM-CLIENT-C01",
+          "name": "搜索输入框",
+          "section_count": 10
+        },
+        {
+          "id": "COM-CLIENT-C05",
+          "name": "排序栏",
+          "section_count": 10
+        },
+        {
+          "id": "ADM-GOODS-01-C01",
+          "name": "商品表格",
+          "section_count": 10
+        }
+      ],
+      "documents": [
+        {
+          "file": "00_交付说明与变更记录.md",
+          "embedded_sha256_utf8": "52016bbaff08564f258ce60046a56b700bac4b1bb54003b426f0cb2be4131752",
+          "external_path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.0\\00_交付说明与变更记录.md",
+          "external_raw_sha256": "f9032f9641b594e3727dd03c6c69c39b23d1930d3e2f9e4d614c9f4396b6a219",
+          "equal_after_bom_newline_normalization": false,
+          "difference": {
+            "first_diff_embedded_line": 40,
+            "embedded_chars": 71179,
+            "external_chars": 73592,
+            "embedded_short": "0 条业务流程、6 个业务状态机、62 条异常规则、58 个接口契约（建议契约）、9 条时序图、45 个客户端埋点事件、293 条测试用例 | 见 01/04/05/06/07 |\n\n###",
+            "external_short": "1 条业务流程、6 个业务状态机、68 条异常规则、65 个接口编号（含 7 个 HIgame 上游接口；API-ADMIN-072 已废弃）、9 条时序图、45 个客户端埋点事件、296 "
+          }
+        },
+        {
+          "file": "01_页面与状态说明.md",
+          "embedded_sha256_utf8": "b1656fb199e05bd53cca026a63d20b88fd6ff03e4469df3a9142b8c453c74e14",
+          "external_path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.0\\01_页面与状态说明.md",
+          "external_raw_sha256": "6b2f55af866d97c569194b18c7b76f0d7c97b023e0ffa67397e145496e2e7e41",
+          "equal_after_bom_newline_normalization": false,
+          "difference": {
+            "first_diff_embedded_line": 100,
+            "embedded_chars": 74687,
+            "external_chars": 74800,
+            "embedded_short": " | 后台菜单 | 操作列「查看」弹窗、退款 | P0 | 完整 | FL-ADM-ORDER-001 | 端=ADM |\n| ADM-06 | ADM/运营 | ADM-GIFT-01 |",
+            "external_short": "；**详情展示上游 HIgame 发货信息；超时/未知/`pu006` 转人工核查/补录**（CHG-0090） | 后台菜单 | 操作列「查看」弹窗、退款、上游核查/补录 | P0 | 完"
+          }
+        },
+        {
+          "file": "03_组件级文档.md",
+          "embedded_sha256_utf8": "42c65d773fe2b151ef239f186951824a0eaa7d97a10e01c9c12025ea493470f1",
+          "external_path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.0\\03_组件级文档.md",
+          "external_raw_sha256": "489f6b66d5b8a245f27610149510a0a61fd4a53803bb2d690a7d853703862843",
+          "equal_after_bom_newline_normalization": false,
+          "difference": {
+            "first_diff_embedded_line": 10440,
+            "embedded_chars": 746805,
+            "external_chars": 747724,
+            "embedded_short": "不展示售后状态**（CHG-0078）；状态区按**支付／交付两维**展示，好友赠送另列「赠送处理」（CHG-0081）；全部为只读事实展示，敏感字段按权限与脱敏规则呈现。结构与通用交互复用",
+            "external_short": "新增上游 HIgame 发货信息区与「上游核查/补录」子流程（CHG-0090）**：超时/响应丢失/`pu006` 时人工登录上游后台按订单号查询，补录已出库 CDK 或记录未出库/处理中"
+          }
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_sha256_utf8": "ea5ddd61fb3406a7cfcc8e263664d40deb7209a3bb65d724e08c4db19136da48",
+          "external_path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.0\\04_业务流程与异常规则.md",
+          "external_raw_sha256": "1e1f6a69c3c6bb983b79cbdccc2ed7203222b0bbdae7f4e0b21226f4ca2234c0",
+          "equal_after_bom_newline_normalization": false,
+          "difference": {
+            "first_diff_embedded_line": 1220,
+            "embedded_chars": 123012,
+            "external_chars": 127538,
+            "embedded_short": "后台录入替代口令码，或**人工手动调用供应商 API 获取新码**（单次调用、**调用前二次确认**、调用记录写入服务端审计备份且不在后台展示，CHG-0082／0083）→ 校验关联订单及",
+            "external_short": "**运营登录 HIgame 后台按订单号查询并获取 CDK，再在后台手工录入替代口令码**（**不提供供应商 API 取码按钮，不重新调用 `extractcode`**，CHG-0091）"
+          }
+        },
+        {
+          "file": "05_接口数据与权限说明.md",
+          "embedded_sha256_utf8": "70ef41b612c6906dfc77e0fb04a706c879bd5fc602f6d2093d71f60b64ec2007",
+          "external_path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.0\\05_接口数据与权限说明.md",
+          "external_raw_sha256": "6ce79ee0c5a01cefb26ba8c1a1e01efca705975c3235fc07eac972d93569ee71",
+          "equal_after_bom_newline_normalization": false,
+          "difference": {
+            "first_diff_embedded_line": 139,
+            "embedded_chars": 183785,
+            "external_chars": 190111,
+            "embedded_short": " | ADM → 商城服务端（下游：供应商） | `POST /api/admin/v1/code-records/{record_id}/fetch-supplier` | ADM-COD",
+            "external_short": "（**已废弃**） | — | — | ADM-CODE-01-C02（当前不再使用） | — | **已废弃（CHG-0091）**：异常订单不能重新调用供应商接口；编号保留不复用 | —"
+          }
+        },
+        {
+          "file": "06_埋点文档.md",
+          "embedded_sha256_utf8": "ae1a7127ab2f984dbe707e6dee56cdd69407411e20f39cd858f47d87fca5655c",
+          "external_path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.0\\06_埋点文档.md",
+          "external_raw_sha256": "ae1a7127ab2f984dbe707e6dee56cdd69407411e20f39cd858f47d87fca5655c",
+          "equal_after_bom_newline_normalization": true,
+          "difference": null
+        },
+        {
+          "file": "07_测试用例.md",
+          "embedded_sha256_utf8": "8fd04a9f83338944378f34d12fa89de3e7b913e6bc5e8d2be3c1c20b46294c19",
+          "external_path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.0\\07_测试用例.md",
+          "external_raw_sha256": "eb00a4f20281bf76e55e89fde3a87fa0f63b55f2c49032019b70f2ece0f08e6d",
+          "equal_after_bom_newline_normalization": false,
+          "difference": {
+            "first_diff_embedded_line": 2022,
+            "embedded_chars": 124069,
+            "external_chars": 126295,
+            "embedded_short": "人工调用供应商 API 获取口令码**\n- 模块/依据：口令码交付·补发换码的供应商取码｜CHG-0082；ADM-CODE-01-C02、API-ADMIN-072、API-ADMIN-0",
+            "external_short": "补发/换码仅支持人工录入上游后台查询结果**\n- 模块/依据：口令码交付·补发换码的人工录入｜CHG-0091；ADM-CODE-01-C02、API-ADMIN-071 ｜ 优先级/类型/"
+          }
+        },
+        {
+          "file": "08_验证记录与验收映射.md",
+          "embedded_sha256_utf8": "96b66dcfbc89068d3283d0a72899b071e982a0ecfaa9bdef6d993e8456785379",
+          "external_path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.0\\08_验证记录与验收映射.md",
+          "external_raw_sha256": "3c62172805abf8ac0aa5992aec8573feae6afc3624c6034cba0aaf0b83f4e734",
+          "equal_after_bom_newline_normalization": false,
+          "difference": {
+            "first_diff_embedded_line": 29,
+            "embedded_chars": 175271,
+            "external_chars": 178730,
+            "embedded_short": "58 个接口契约（全部\"建议契约/待技术确认\"） | 客户端事件见 06 | TC-AUTH、TC-PAY、TC-CODE、TC-GIFT、TC-NOTIFY | 05 第2、6节；04 第",
+            "external_short": "65 个接口编号（含 7 个 HIgame 上游接口；API-ADMIN-072 已废弃；上游异常/幂等边界待确认） | 客户端事件见 06 | TC-AUTH、TC-PAY、TC-CODE"
+          }
+        },
+        {
+          "file": "09_待确认事项与设计决策.md",
+          "embedded_sha256_utf8": "1cb2947eea4a1d3a8049efa0d20327dee69894ebe261f9d77b0067b3c32e514b",
+          "external_path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.0\\09_待确认事项与设计决策.md",
+          "external_raw_sha256": "2be9dc5128a4f0f265c353dfabac5b72276e4b83f98b3340e41f2712e8c71c5e",
+          "equal_after_bom_newline_normalization": false,
+          "difference": {
+            "first_diff_embedded_line": 9,
+            "embedded_chars": 14878,
+            "external_chars": 17637,
+            "embedded_short": "15\n编写方式：AI辅助\n评审人与确认日期：\n\n> **状态口径（标准第15节）：** `待确认` / `已确认` / `已否决` / `已废弃`。**用户未回复不构成确认；\"建议采用\"不能",
+            "external_short": "21\n编写方式：AI辅助\n评审人与确认日期：\n\n> **状态口径（标准第15节）：** `待确认` / `已确认` / `已否决` / `已废弃`。**用户未回复不构成确认；\"建议采用\"不能"
+          }
+        }
+      ],
+      "claims": [
+        {
+          "topic": "search",
+          "file": "03_组件级文档.md",
+          "embedded_line": 59,
+          "short_evidence": "历史词由 C05 单独提供，不在输入框预填） | 提交前去首尾空格后非空；长度上限待确认（DEC-SEARCH-001） | 无敏感字段；不写入本地持久存储 | — |"
+        },
+        {
+          "topic": "search",
+          "file": "03_组件级文档.md",
+          "embedded_line": 85,
+          "short_evidence": "历史（C05）／搜索发现词复搜 | — | 光标定位到输入框（建议） | — |"
+        },
+        {
+          "topic": "search",
+          "file": "03_组件级文档.md",
+          "embedded_line": 105,
+          "short_evidence": "历史是否进入首期（SEARCH-05、TBD-15，当前按未启用处理）；③搜索默认页不回填后，关键词快照只需在结果页存续；结果页→详情→返回结果页仍保留关键词，回到搜索默认页"
+        },
+        {
+          "topic": "async",
+          "file": "05_接口数据与权限说明.md",
+          "embedded_line": 459,
+          "short_evidence": "迟到响应 | 迟到结果 | — | **不触发本页迁移**（旧回调作废） | 无 | — | TC-SEARCH-005 |"
+        },
+        {
+          "topic": "async",
+          "file": "05_接口数据与权限说明.md",
+          "embedded_line": 511,
+          "short_evidence": "迟到响应 | — | 以最后一次选择为准，旧回调作废 | 无 | — | TC-SEARCH-023 |"
+        },
+        {
+          "topic": "async",
+          "file": "05_接口数据与权限说明.md",
+          "embedded_line": 700,
+          "short_evidence": "迟到响应 | — | 以最后一次选择为准，旧回调作废 | 无 | — | TC-ORDER-024 |"
+        },
+        {
+          "topic": "verification",
+          "file": "08_验证记录与验收映射.md",
+          "embedded_line": 14,
+          "short_evidence": "未执行**。"
+        },
+        {
+          "topic": "verification",
+          "file": "08_验证记录与验收映射.md",
+          "embedded_line": 136,
+          "short_evidence": "未验证） | TBD-10 |"
+        },
+        {
+          "topic": "verification",
+          "file": "08_验证记录与验收映射.md",
+          "embedded_line": 157,
+          "short_evidence": "未执行 |"
+        }
+      ],
+      "plantuml_fence_mapping": [
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 122,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 204,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 280,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 341,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 398,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 488,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 536,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 611,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 692,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 758,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 827,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 910,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 972,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 1029,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 1092,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 1168,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 1222,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 1300,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 1358,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 1410,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 1486,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 1541,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 1592,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 1642,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 1686,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "04_业务流程与异常规则.md",
+          "embedded_line": 1736,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "05_接口数据与权限说明.md",
+          "embedded_line": 2055,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "05_接口数据与权限说明.md",
+          "embedded_line": 2139,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "05_接口数据与权限说明.md",
+          "embedded_line": 2253,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "05_接口数据与权限说明.md",
+          "embedded_line": 2330,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "05_接口数据与权限说明.md",
+          "embedded_line": 2408,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "05_接口数据与权限说明.md",
+          "embedded_line": 2477,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "05_接口数据与权限说明.md",
+          "embedded_line": 2554,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "05_接口数据与权限说明.md",
+          "embedded_line": 2618,
+          "exact_trimmed_source_match": true
+        },
+        {
+          "file": "05_接口数据与权限说明.md",
+          "embedded_line": 2682,
+          "exact_trimmed_source_match": true
+        }
+      ],
+      "diagrams": [
+        {
+          "id": "FL-BROWSE-001",
+          "source_document": "04",
+          "source_sha256": "11a647414dd769f07a2633505893a02592ed9810da7a29037b59485a7bc4de4d",
+          "contains_svg": true
+        },
+        {
+          "id": "FL-SEARCH-001",
+          "source_document": "04",
+          "source_sha256": "1a48cded2acc6aa27f4b871be3382343055b90841c4bfa76c1f3c9188fac5caf",
+          "contains_svg": true
+        },
+        {
+          "id": "FL-AUTH-001",
+          "source_document": "04",
+          "source_sha256": "b018c24997db1624cbc6366b508523863c4afbd2b412c775f0c6aebfcb889afb",
+          "contains_svg": true
+        },
+        {
+          "id": "FL-AUTH-002",
+          "source_document": "04",
+          "source_sha256": "d4968b88b723a94aa637053e1160f610d81ab5d82a3ac74f1c8ca46b5cc57229",
+          "contains_svg": true
+        },
+        {
+          "id": "FL-BUY-001",
+          "source_document": "04",
+          "source_sha256": "73d95910c246a788c495dfacc8a4f58f86e6f736732b271f5d533d77e5b89290",
+          "contains_svg": true
+        },
+        {
+          "id": "FL-PHONE-001",
+          "source_document": "04",
+          "source_sha256": "1bc58f53fb1dc318e334723a52a1654a0c0724ec4dc1732abdab0ec28b7930c5",
+          "contains_svg": true
+        },
+        {
+          "id": "FL-CHECKOUT-001",
+          "source_document": "04",
+          "source_sha256": "fd25099d964f8463ce5a41ab5f459c5aaa3ab41c52da33cad4af45dad559a28b",
+          "contains_svg": true
+        },
+        {
+          "id": "FL-PAY-001",
+          "source_document": "04",
+          "source_sha256": "453263cc2a161e14212fd4fad1bb8747dfdb8c1a5a09d110575c40d9288c2f59",
+          "contains_svg": true
+        },
+        {
+          "id": "FL-DELIVER-001",
+          "source_document": "04",
+          "source_sha256": "c94310f82ee6c0e1c8594d36d3228e16ed6be5d5d30c3160c6995c48bca08b4e",
+          "contains_svg": true
+        },
+        {
+          "id": "FL-DELIVER-002",
+          "source_document": "04",
+          "source_sha256": "0e062c982a044855440f2735b85aa37107755df8f6c5b00c894adb8a5ea38653",
+          "contains_svg": true
+        },
+        {
+          "id": "FL-ORDER-001",
+          "source_document": "04",
+          "source_sha256": "994fd7516c079484145afbccd5328e9a647967cabaf1165a4aefabf8faccd5ec",
+          "contains_svg": true
+        },
+        {
+          "id": "FL-SERVICE-001",
+          "source_document": "04",
+          "source_sha256": "4afacdc8f4dbbb07b84bb24c474b83c67d4e88812f52f783a5b576ba2695a159",
+          "contains_svg": true
+        },
+        {
+          "id": "FL-ADM-HOME-001",
+          "source_document": "04",
+          "source_sha256": "af295ceeb5c5cf602068fefcb644ad5a0ede394494bbe468310fe4d8668f1e85",
+          "contains_svg": true
+        },
+        {
+          "id": "FL-ADM-GOODS-001",
+          "source_document": "04",
+          "source_sha256": "8734a3c2c46ba3b938f757af44ed5990bdd9bdd861a8e7e74560205fd581c79f",
+          "contains_svg": true
+        },
+        {
+          "id": "FL-ADM-ORDER-001",
+          "source_document": "04",
+          "source_sha256": "207efe9b72eb9d2716031dc0c60a41557b6c2f1193e259e49f8eeb0848de7d82",
+          "contains_svg": true
+        },
+        {
+          "id": "FL-ADM-GIFT-001",
+          "source_document": "04",
+          "source_sha256": "42cd917cb01a673e130f8171cb31284ac8df2d482ae58e468e8c126a71889e6a",
+          "contains_svg": true
+        },
+        {
+          "id": "FL-ADM-CODE-001",
+          "source_document": "04",
+          "source_sha256": "26761bd3f6f33da289d5121f7235e9b3047cd1dd4bbb669700f7ba9fa4685d35",
+          "contains_svg": true
+        },
+        {
+          "id": "FL-ADM-REFUND-001",
+          "source_document": "04",
+          "source_sha256": "592cec7cbff02f58605dd6e79c6ddc190e92aed54d1401ba34c5ef16f265da12",
+          "contains_svg": true
+        },
+        {
+          "id": "FL-ADM-NOTIFY-001",
+          "source_document": "04",
+          "source_sha256": "923ae6ce7c8d01181dc9c7fdf361e0433048b9c41f14cc12139e089826332a1e",
+          "contains_svg": true
+        },
+        {
+          "id": "FL-ADM-AGREE-001",
+          "source_document": "04",
+          "source_sha256": "b607c0ad9760b20c76eaca13ba06ed3f1d827d94a3de4b86804c9f55ba861ac0",
+          "contains_svg": true
+        },
+        {
+          "id": "SM-PAY-001",
+          "source_document": "04",
+          "source_sha256": "689a4247f0f633864cd8e37e32bdd642d39116b1e990fc5d40c6d9f0616d8856",
+          "contains_svg": true
+        },
+        {
+          "id": "SM-CODE-001",
+          "source_document": "04",
+          "source_sha256": "e2848d4be8e294902c47fc060bece6a79a61a03795485dffac0dc9a7cabbb300",
+          "contains_svg": true
+        },
+        {
+          "id": "SM-GIFT-001",
+          "source_document": "04",
+          "source_sha256": "a4669f4f30e1bb495118e6a9f74fd3a3c65f8aa7ace5309ecfab77de6e6f65b8",
+          "contains_svg": true
+        },
+        {
+          "id": "SM-AFTER-001",
+          "source_document": "04",
+          "source_sha256": "a41b49921c557ff6c987195c37c376346448a4ec6aebc1a4574f750b0f869921",
+          "contains_svg": true
+        },
+        {
+          "id": "SM-REFUND-001",
+          "source_document": "04",
+          "source_sha256": "357446c1a1d4670de6ecc93fd77f40cdde1d5b2a5316c0ce4d0829ce035deba1",
+          "contains_svg": true
+        },
+        {
+          "id": "SM-NOTIFY-001",
+          "source_document": "04",
+          "source_sha256": "1d979eb5349efffaedf817d22b13f6ea5bd0b55a3a74610954a208999d84aea5",
+          "contains_svg": true
+        },
+        {
+          "id": "SEQ-AUTH-001",
+          "source_document": "05",
+          "source_sha256": "39c934905a18741d9f539a84220929a12933534878fcdd735e987bcedc5481ea",
+          "contains_svg": true
+        },
+        {
+          "id": "SEQ-BUY-001",
+          "source_document": "05",
+          "source_sha256": "5ba601ee260bb160158c2f27628f8e3400286c2d0c9c3ba9ea57418cf2b2d46b",
+          "contains_svg": true
+        },
+        {
+          "id": "SEQ-PAY-001",
+          "source_document": "05",
+          "source_sha256": "5aa885b47f0553e59c8770576ee793e2650877c0e748c5ebb3300244e8ca5ad0",
+          "contains_svg": true
+        },
+        {
+          "id": "SEQ-CODE-001",
+          "source_document": "05",
+          "source_sha256": "fa760fa764e0fe2f1fdf8303255f03b0d4a70752895cd3d5c8121d440328fb04",
+          "contains_svg": true
+        },
+        {
+          "id": "SEQ-GIFT-001",
+          "source_document": "05",
+          "source_sha256": "87b665e8f93220cff692f8678166d2e47751ce724484f4d0af085b96aeb82182",
+          "contains_svg": true
+        },
+        {
+          "id": "SEQ-NOTIFY-001",
+          "source_document": "05",
+          "source_sha256": "18bb5a338d4f78002d67a5d581a1ca2608486a101b17c1dcb0fc180db4ae4bf6",
+          "contains_svg": true
+        },
+        {
+          "id": "SEQ-ADM-001",
+          "source_document": "05",
+          "source_sha256": "ca7f02930cd5e31378cd82a2472277d060eb68e65fd590846ec1b1ead6dd72c3",
+          "contains_svg": true
+        },
+        {
+          "id": "SEQ-ADM-002",
+          "source_document": "05",
+          "source_sha256": "a40d95831ecf38344fae9c074cf31e07fef2690e2220bf5af0180f7f018030c6",
+          "contains_svg": true
+        },
+        {
+          "id": "SEQ-ADM-003",
+          "source_document": "05",
+          "source_sha256": "2d9a68f1f796cdbc4403acc599375f2df14d609b0201fff0a70b50bec3635c8b",
+          "contains_svg": true
+        }
+      ]
+    }
+  }
+}

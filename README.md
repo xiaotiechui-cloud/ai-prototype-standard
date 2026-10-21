@@ -2,11 +2,13 @@
 
 本仓库用于维护「已评审 PRD → 单文件离线 HTML + 9 份 Markdown」的生成规范。当前规则基线为 **V3.0**；用户已确认模块化维护及本轮澄清，维护结构为 **modular-1（未发布）**。
 
-当前内容修订为 `draft-20261021-trial3`：已落实用户对试跑 3.0 反馈方案的批准，尚未正式发布。完整内容见 [本轮方案与落实](docs/reviews/2026-10-21-steam-trial3/06_规范方案_待用户确认.md)。
+当前内容修订为 `draft-20261021-trial3-detail`：已落实用户对试跑3.0七主题方案及补充8组细节条款的确认，尚未正式发布。新增归口、适用边界与实际检查见[补充条款确认与落实](docs/reviews/2026-10-21-steam-trial3-extension/12_确认与落实.md)。
 
 本轮将AI自测/修复/回归及最终文件证据归入quality，并补齐画布滚动、模拟条件、后台人工排序、权限空分组、桌面布局、弹层宿主定位和灰度组件一致性规则；按能力加载 [模式细节](docs/patterns/README.md)，商城设计/订单标签留 [项目契约](reference/projects/steam-store.md)。长报告不进入默认装载。
 
 历史依据为 [试跑2.0全域差异](docs/reviews/2026-10-20-steam-trial2/00_阅读与确认.md) 及 [V2.2规则复核](docs/reviews/2026-10-20-cross-model-selftest/00_重新梳理与结论.md)。条款已确认不等于原型通过：60条浏览器用例、跨模型生成试验仍未执行，参考代码未晋级为浏览器验收通过。
+
+七主题之外的补充比较见[试跑3.0补充审查摘要](docs/reviews/2026-10-21-steam-trial3-extension/00_补充审查摘要.md)：32项细节观察、[8组已确认条款审阅记录](docs/reviews/2026-10-21-steam-trial3-extension/07_规则提炼与归口方案_待审.md)及32个未执行浏览器父场景。多数为既有规则执行细化，已归入活动规范并同步模板/按需方法；长报告不加入默认装载。
 
 ## 从这里开始
 
@@ -62,4 +64,4 @@ python tools/maintain.py bundle --name standard-complete
 
 ## 版本和同步
 
-日常修改由 Commit 记录；只有你确认之后才创建正式版本标签/Release。项目使用时固定一个已发布版本和 commit SHA；规则版本、模块化结构修订、内容维护稿与项目交付版本分开记录。已核实 origin 配置为 [GitHub 仓库](https://github.com/xiaotiechui-cloud/ai-prototype-standard)；本轮修改尚未提交或推送，远程配置本身不证明工作区内容已上传。
+日常修改由 Commit 记录；只有你确认之后才创建正式版本标签/Release。项目使用时固定一个已发布版本和 commit SHA；规则版本、模块化结构修订、内容维护稿与项目交付版本分开记录。已核实 origin 配置为 [GitHub 仓库](https://github.com/xiaotiechui-cloud/ai-prototype-standard)；七主题规则现已在本地提交 cd12fa6，本轮补充评审材料仍未提交/推送，未核实云端同步。
