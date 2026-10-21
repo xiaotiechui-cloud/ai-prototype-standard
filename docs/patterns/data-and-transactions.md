@@ -16,3 +16,5 @@
 本商城“已完成/已关闭”映射已明确，但只在 [商城项目契约](../../reference/projects/steam-store.md) 定义，不强迫其他业务采用同名状态。按 [quality29](../../standards/quality-and-evidence.md#s-29) 保存操作前后事实/审计、失败和影响回归证据。
 
 定向夹具：按[business24.5](../../standards/deliverables-business.md#s-24)测空/0/false/缺失与失败；按core3.4测非等差规格价和修改目录后的旧单；按admin12.13测有权开B后撤权/状态改变再提交，以及审计before与after确实不同。组合导出/建批次依runtime13.3单独核对产生物与写入范围，不由toast推断外部完成。
+
+有父子交易或批次时，再测A/B成员一项完成、另一项处理中/失败/取消、空批次与重复回执；父状态按core3.4声明的聚合条件更新，独立封批与交付完成分开核对。不得由聚合检查隐式增加全局原子提交。

@@ -1,0 +1,160 @@
+{
+  "status": "implementation-consistency-pass",
+  "approved_revision": "draft-20261021-trial4-detail",
+  "date": "2026-10-21",
+  "branch": "main",
+  "head": "7a89f54797282c8771b0e2137ff35fb87c5d04a5",
+  "worktree_changes_uncommitted": true,
+  "module_hashes": {
+    "standards/core.md": {
+      "baseline": "c141184fb586f00aef5f143f5042bf1c5694c8b2e4a25f993b5241444babe452",
+      "actual": "c48107fb1f6fe5ffad0298be029453d9f8dcb37bf7fbf75aa829c9ba8f23e8d6",
+      "changed": true
+    },
+    "standards/workflow-and-model.md": {
+      "baseline": "8d2ef444c086438b3d5eb186acec7474bc0b594a1976f6ce02e972f685eab6f8",
+      "actual": "8d2ef444c086438b3d5eb186acec7474bc0b594a1976f6ce02e972f685eab6f8",
+      "changed": false
+    },
+    "standards/ui-and-components.md": {
+      "baseline": "db6385d10c424d30a11a68a262efe4143e94e1b1881a382a0f8bda6a47ec226a",
+      "actual": "db6385d10c424d30a11a68a262efe4143e94e1b1881a382a0f8bda6a47ec226a",
+      "changed": false
+    },
+    "standards/profiles/client.md": {
+      "baseline": "3b752c58ddbcd68a0379a5d5834b1cb8af2ed4d624954155618fb043c5aa7f43",
+      "actual": "3b752c58ddbcd68a0379a5d5834b1cb8af2ed4d624954155618fb043c5aa7f43",
+      "changed": false
+    },
+    "standards/profiles/desktop-web.md": {
+      "baseline": "23899a325fd91f03cccc8c51cdf68ebd05752a27bca8d222f75fdf746cdd6ce1",
+      "actual": "23899a325fd91f03cccc8c51cdf68ebd05752a27bca8d222f75fdf746cdd6ce1",
+      "changed": false
+    },
+    "standards/profiles/admin.md": {
+      "baseline": "031da5f396b2dbe182b9f672937c589a618f003b68bc0be98664d5a29485a74b",
+      "actual": "031da5f396b2dbe182b9f672937c589a618f003b68bc0be98664d5a29485a74b",
+      "changed": false
+    },
+    "standards/runtime-and-build.md": {
+      "baseline": "bf00d19cc13794b613465667d22d7f3621994821c8622018d9fee20ea7812840",
+      "actual": "bf00d19cc13794b613465667d22d7f3621994821c8622018d9fee20ea7812840",
+      "changed": false
+    },
+    "standards/diagrams-and-reader.md": {
+      "baseline": "85a025338043a4d3b2351e11a257702a16f897306fb12ddd8f98b112d23b2d8c",
+      "actual": "85a025338043a4d3b2351e11a257702a16f897306fb12ddd8f98b112d23b2d8c",
+      "changed": false
+    },
+    "standards/deliverables-ui.md": {
+      "baseline": "bc03bbaee2b2a079e53ea19b04e8b05291224c8af121d58f6b54d25b3034ced8",
+      "actual": "bc03bbaee2b2a079e53ea19b04e8b05291224c8af121d58f6b54d25b3034ced8",
+      "changed": false
+    },
+    "standards/deliverables-business.md": {
+      "baseline": "13537e56be60369f4e3dc6adb674cfc9019aa532851e74440f64f0088b88fb7a",
+      "actual": "fce2b448128ab8ab85b23a78f9294d2366caf9caa3a719e51aeeb970e31ab36d",
+      "changed": true
+    },
+    "standards/quality-and-evidence.md": {
+      "baseline": "481b1a3eedfb8deea0265eae9df83dbfb2f688631fab21dc9a39a6fd0754578b",
+      "actual": "481b1a3eedfb8deea0265eae9df83dbfb2f688631fab21dc9a39a6fd0754578b",
+      "changed": false
+    },
+    "standards/decisions-and-change.md": {
+      "baseline": "2e213a0a2dbb5609e472c5bc67d70eac5e77c2a7885f85c5f13456437145371c",
+      "actual": "2e213a0a2dbb5609e472c5bc67d70eac5e77c2a7885f85c5f13456437145371c",
+      "changed": false
+    },
+    "standards/contracts-and-checklists.md": {
+      "baseline": "5fc9f9cb8e55c1e3e05af390705695816e9fc139ee4055d2fed5b88ed6dd047c",
+      "actual": "5fc9f9cb8e55c1e3e05af390705695816e9fc139ee4055d2fed5b88ed6dd047c",
+      "changed": false
+    },
+    "reference/original-front-matter.md": {
+      "baseline": "bd7dd98bbd12bc6317b53e0f6beec69674d7138c02976216b26c6d2af5e01182",
+      "actual": "bd7dd98bbd12bc6317b53e0f6beec69674d7138c02976216b26c6d2af5e01182",
+      "changed": false
+    },
+    "reference/original-prompts.md": {
+      "baseline": "1ba715f8203e3424d77282f1912ed4013a1218e6633ece0d86efcf1c1711988c",
+      "actual": "1ba715f8203e3424d77282f1912ed4013a1218e6633ece0d86efcf1c1711988c",
+      "changed": false
+    },
+    "reference/examples.md": {
+      "baseline": "a65af63209e30876bd91b179b16233ff412fa195b8b9d930b073aacefe89b0ee",
+      "actual": "a65af63209e30876bd91b179b16233ff412fa195b8b9d930b073aacefe89b0ee",
+      "changed": false
+    }
+  },
+  "manifest_sha256": "aa22b9a8a6554fb115b3d22ac80dc26ed350e76dd9bb8f0389165b53aa3572a1",
+  "manifest_only_change": "content_revision",
+  "input_hashes": {
+    "trial": {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\02_低保真交互原型.html",
+      "sha256": "f91cd067ee417aa34fed55b98ed43b88965831ac5542a195fbd393b956a8f133",
+      "bytes": 2464897,
+      "lines": 2864
+    },
+    "final": {
+      "path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.0\\02_低保真交互原型-最终版本.html",
+      "sha256": "04bf9e76f416833e1ac84e97408b81cbceb043bb44dca4a0529f3c80f418765f",
+      "bytes": 5930662,
+      "lines": 7997
+    }
+  },
+  "protected_file_counts": {
+    "archive": 1,
+    "prototype_inputs": 2,
+    "trial_external_md": 9,
+    "final_external_md": 9,
+    "provided_evidence": 43
+  },
+  "changed_modules": [
+    "standards/core.md",
+    "standards/deliverables-business.md"
+  ],
+  "protected": [
+    "archive",
+    "trial4 input",
+    "final input",
+    "provided _checks evidence"
+  ],
+  "checks": [
+    "approved core3.4 and business24.5 text present with exceptions",
+    "approved paragraphs and exceptions exactly match proposal; prior module text preserved",
+    "only the two intended normative modules changed",
+    "manifest changed only content_revision; routes, dependencies, resource registration unchanged",
+    "templates, patterns, acceptance actions and routing trigger synchronized",
+    "entry points, migration, changelog, review status and historical generator guards synchronized",
+    "historical review inputs and archive unchanged"
+  ],
+  "commands": [
+    {
+      "command": [
+        "python",
+        "tools/maintain.py",
+        "verify"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: archive SHA-256; 45 source sections; 16 modules; 10 stable rule IDs; dependency routes; 11 opt-in resources; 505 links; 9 starter templates",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "warning: in the working copy of 'docs/acceptance/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/acceptance/actions-and-results.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/patterns/data-and-transactions.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/patterns/forms-and-layers.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'standards/core.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'standards/deliverables-business.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'templates/03_组件级文档.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'templates/04_业务流程与异常规则.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'templates/05_接口数据与权限说明.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'templates/07_测试用例.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'templates/08_验证记录与验收映射.md', LF will be replaced by CRLF the next time Git touches it"
+    }
+  ],
+  "git_actions": "no commit/push/tag/release performed",
+  "not_verified": [
+    "browser behavior",
+    "prototype acceptance",
+    "production business semantics"
+  ]
+}

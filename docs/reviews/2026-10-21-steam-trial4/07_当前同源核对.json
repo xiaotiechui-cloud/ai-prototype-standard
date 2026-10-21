@@ -1,0 +1,121 @@
+{
+  "documents": [
+    {
+      "file": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\00_交付说明与变更记录.md",
+      "embedded_json_pointer": "/docs/0/md",
+      "html_line": 484,
+      "external_sha256": "db2fbc7326bbdd4bbc315a4db0d52dd7fb308060ce971e8d6339b72637daa750",
+      "embedded_utf8_sha256": "db2fbc7326bbdd4bbc315a4db0d52dd7fb308060ce971e8d6339b72637daa750",
+      "normalization": "strip BOM; CRLF/CR -> LF; no other whitespace changes",
+      "normalized_equal": true,
+      "first_difference_line": null,
+      "embedded_lines": 176,
+      "external_lines": 176
+    },
+    {
+      "file": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\01_页面与状态说明.md",
+      "embedded_json_pointer": "/docs/1/md",
+      "html_line": 484,
+      "external_sha256": "71513eb63e148aaad0ebc50c1bd825c18cca9a6c7c859fd651c468eb37ba2caf",
+      "embedded_utf8_sha256": "71513eb63e148aaad0ebc50c1bd825c18cca9a6c7c859fd651c468eb37ba2caf",
+      "normalization": "strip BOM; CRLF/CR -> LF; no other whitespace changes",
+      "normalized_equal": true,
+      "first_difference_line": null,
+      "embedded_lines": 822,
+      "external_lines": 822
+    },
+    {
+      "file": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\03_组件级文档.md",
+      "embedded_json_pointer": "/docs/2/md",
+      "html_line": 484,
+      "external_sha256": "1fa2ddbc1b64982aef013920aa001f3fb86a90d55a82a4e468f6c3c94a9ebf7a",
+      "embedded_utf8_sha256": "1fa2ddbc1b64982aef013920aa001f3fb86a90d55a82a4e468f6c3c94a9ebf7a",
+      "normalization": "strip BOM; CRLF/CR -> LF; no other whitespace changes",
+      "normalized_equal": true,
+      "first_difference_line": null,
+      "embedded_lines": 5594,
+      "external_lines": 5594
+    },
+    {
+      "file": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\04_业务流程与异常规则.md",
+      "embedded_json_pointer": "/docs/3/md",
+      "html_line": 484,
+      "external_sha256": "6559e4e5e395fafbb901c2a4ac1e6b7bd9b0f7fb20199ecc56f2062ea6d9b887",
+      "embedded_utf8_sha256": "6559e4e5e395fafbb901c2a4ac1e6b7bd9b0f7fb20199ecc56f2062ea6d9b887",
+      "normalization": "strip BOM; CRLF/CR -> LF; no other whitespace changes",
+      "normalized_equal": true,
+      "first_difference_line": null,
+      "embedded_lines": 316,
+      "external_lines": 316
+    },
+    {
+      "file": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\05_接口数据与权限说明.md",
+      "embedded_json_pointer": "/docs/4/md",
+      "html_line": 484,
+      "external_sha256": "dc13f381e2e9866ed050f386d125b36fbd1fcd5d59641638822a23dae7ddd13f",
+      "embedded_utf8_sha256": "dc13f381e2e9866ed050f386d125b36fbd1fcd5d59641638822a23dae7ddd13f",
+      "normalization": "strip BOM; CRLF/CR -> LF; no other whitespace changes",
+      "normalized_equal": true,
+      "first_difference_line": null,
+      "embedded_lines": 2157,
+      "external_lines": 2157
+    },
+    {
+      "file": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\06_埋点文档.md",
+      "embedded_json_pointer": "/docs/5/md",
+      "html_line": 484,
+      "external_sha256": "7ff5d5155930b2b9ad71d592ea05fe33c4f235bdcd5f67b58eb86e39bc439150",
+      "embedded_utf8_sha256": "7ff5d5155930b2b9ad71d592ea05fe33c4f235bdcd5f67b58eb86e39bc439150",
+      "normalization": "strip BOM; CRLF/CR -> LF; no other whitespace changes",
+      "normalized_equal": true,
+      "first_difference_line": null,
+      "embedded_lines": 163,
+      "external_lines": 163
+    },
+    {
+      "file": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\07_测试用例.md",
+      "embedded_json_pointer": "/docs/6/md",
+      "html_line": 484,
+      "external_sha256": "7097f01e86af9efebb2dc3f60933cdc407f55adc37d01a8e8c76c146212137b7",
+      "embedded_utf8_sha256": "7097f01e86af9efebb2dc3f60933cdc407f55adc37d01a8e8c76c146212137b7",
+      "normalization": "strip BOM; CRLF/CR -> LF; no other whitespace changes",
+      "normalized_equal": true,
+      "first_difference_line": null,
+      "embedded_lines": 1796,
+      "external_lines": 1796
+    },
+    {
+      "file": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\08_验证记录与验收映射.md",
+      "embedded_json_pointer": "/docs/7/md",
+      "html_line": 484,
+      "external_sha256": "00df9f1b1af8884385c13e3b33e5eeecfe2b587d1c37a54ad12dbb72aef4cab5",
+      "embedded_utf8_sha256": "00df9f1b1af8884385c13e3b33e5eeecfe2b587d1c37a54ad12dbb72aef4cab5",
+      "normalization": "strip BOM; CRLF/CR -> LF; no other whitespace changes",
+      "normalized_equal": true,
+      "first_difference_line": null,
+      "embedded_lines": 282,
+      "external_lines": 282
+    },
+    {
+      "file": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\09_待确认事项与设计决策.md",
+      "embedded_json_pointer": "/docs/8/md",
+      "html_line": 484,
+      "external_sha256": "27e9347c9fbb544d8e99b4d7554612f5a3507424e6673bc6e7b361c5f14d9e98",
+      "embedded_utf8_sha256": "27e9347c9fbb544d8e99b4d7554612f5a3507424e6673bc6e7b361c5f14d9e98",
+      "normalization": "strip BOM; CRLF/CR -> LF; no other whitespace changes",
+      "normalized_equal": true,
+      "first_difference_line": null,
+      "embedded_lines": 96,
+      "external_lines": 96
+    }
+  ],
+  "alternate_html": {
+    "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\02_低保真交互原型.html",
+    "sha256": "f91cd067ee417aa34fed55b98ed43b88965831ac5542a195fbd393b956a8f133",
+    "bytes": 2464897,
+    "selected": true,
+    "different_line_numbers": []
+  },
+  "authoritative_input": "user-confirmed current file",
+  "embedded_document_count": 9
+}

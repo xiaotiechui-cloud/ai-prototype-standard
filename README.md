@@ -2,7 +2,9 @@
 
 本仓库用于维护「已评审 PRD → 单文件离线 HTML + 9 份 Markdown」的生成规范。当前规则基线为 **V3.0**；用户已确认模块化维护及本轮澄清，维护结构为 **modular-1（未发布）**。
 
-当前内容修订为 `draft-20261021-trial3-detail`：已落实用户对试跑3.0七主题方案及补充8组细节条款的确认，尚未正式发布。新增归口、适用边界与实际检查见[补充条款确认与落实](docs/reviews/2026-10-21-steam-trial3-extension/12_确认与落实.md)。
+当前内容修订为 `draft-20261021-trial4-detail`：在已确认的试跑3.0七主题及补充8组细节条款基础上，落实试跑4.0的控件值解析、父子对象聚合两处澄清，尚未正式发布。归口、适用边界与实际检查见[本轮确认与落实](docs/reviews/2026-10-21-steam-trial4/22_确认与落实.md)。
+
+试跑4.0的[五批细节比较与规则提炼](docs/reviews/2026-10-21-steam-trial4/00_审查摘要.md)已完成分析：40项观察、33项局部函数夹具、24职责域映射；[两处澄清方案](docs/reviews/2026-10-21-steam-trial4/18_规则提炼与方案_待审.md)已获用户审核并落实到原权威章节、模板及按需方法。商城待查证业务范围仍由项目04/05/09明确。原型未改，提供方已有浏览器记录单独保留，本轮40个浏览器父场景未执行，不代表试跑验收通过。
 
 本轮将AI自测/修复/回归及最终文件证据归入quality，并补齐画布滚动、模拟条件、后台人工排序、权限空分组、桌面布局、弹层宿主定位和灰度组件一致性规则；按能力加载 [模式细节](docs/patterns/README.md)，商城设计/订单标签留 [项目契约](reference/projects/steam-store.md)。长报告不进入默认装载。
 
@@ -64,4 +66,4 @@ python tools/maintain.py bundle --name standard-complete
 
 ## 版本和同步
 
-日常修改由 Commit 记录；只有你确认之后才创建正式版本标签/Release。项目使用时固定一个已发布版本和 commit SHA；规则版本、模块化结构修订、内容维护稿与项目交付版本分开记录。已核实 origin 配置为 [GitHub 仓库](https://github.com/xiaotiechui-cloud/ai-prototype-standard)；七主题规则现已在本地提交 cd12fa6，本轮补充评审材料仍未提交/推送，未核实云端同步。
+日常修改由 Commit 记录；只有你确认之后才创建正式版本标签/Release。项目使用时固定一个已发布版本和 commit SHA；规则版本、模块化结构修订、内容维护稿与项目交付版本分开记录。仓库 origin 为 [GitHub 仓库](https://github.com/xiaotiechui-cloud/ai-prototype-standard)；本轮起始本地 main 为 7a89f54，本轮评审与规范落实修改尚未提交/推送，云端同步未核实，由用户自行操作。

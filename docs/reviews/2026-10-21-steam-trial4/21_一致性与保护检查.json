@@ -1,0 +1,106 @@
+{
+  "status": "review-consistency-pass",
+  "checks": [
+    "active modules, manifest, archive unchanged",
+    "current trial and final input hashes unchanged",
+    "nine current MD files unchanged and normalized same-source",
+    "provided evidence files unchanged since review inventory",
+    "40 unique findings, classifications, and current source line excerpts agree",
+    "33 original-function observations remain bound to current source; 6 syntax-only parses",
+    "24 semantic domains map T51/F41; 40 pending browser parent scenarios",
+    "final external MD hashes rechecked; one of nine matches embedded body"
+  ],
+  "current_input_sha256": "f91cd067ee417aa34fed55b98ed43b88965831ac5542a195fbd393b956a8f133",
+  "provided_generation_metadata": {
+    "evidence_path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+    "commit_as_reported": "7a89f54797282c8771b0e2137ff35fb87c5d04a5",
+    "prd_sha256_as_reported": "0ab82b51be4263921cedf716f98851823138bf9afb1c78b3ee5d56c756778eff",
+    "module_hashes_as_reported": [
+      {
+        "path": "standards/core.md",
+        "reported_sha256": "c141184fb586f00aef5f143f5042bf1c5694c8b2e4a25f993b5241444babe452",
+        "matches_current": true,
+        "evidence_line": 22
+      },
+      {
+        "path": "standards/workflow-and-model.md",
+        "reported_sha256": "8d2ef444c086438b3d5eb186acec7474bc0b594a1976f6ce02e972f685eab6f8",
+        "matches_current": true,
+        "evidence_line": 23
+      },
+      {
+        "path": "standards/ui-and-components.md",
+        "reported_sha256": "db6385d10c424d30a11a68a262efe4143e94e1b1881a382a0f8bda6a47ec226a",
+        "matches_current": true,
+        "evidence_line": 24
+      },
+      {
+        "path": "standards/runtime-and-build.md",
+        "reported_sha256": "bf00d19cc13794b613465667d22d7f3621994821c8622018d9fee20ea7812840",
+        "matches_current": true,
+        "evidence_line": 25
+      },
+      {
+        "path": "standards/diagrams-and-reader.md",
+        "reported_sha256": "85a025338043a4d3b2351e11a257702a16f897306fb12ddd8f98b112d23b2d8c",
+        "matches_current": true,
+        "evidence_line": 26
+      },
+      {
+        "path": "standards/deliverables-ui.md",
+        "reported_sha256": "bc03bbaee2b2a079e53ea19b04e8b05291224c8af121d58f6b54d25b3034ced8",
+        "matches_current": true,
+        "evidence_line": 27
+      },
+      {
+        "path": "standards/deliverables-business.md",
+        "reported_sha256": "13537e56be60369f4e3dc6adb674cfc9019aa532851e74440f64f0088b88fb7a",
+        "matches_current": true,
+        "evidence_line": 28
+      },
+      {
+        "path": "standards/quality-and-evidence.md",
+        "reported_sha256": "481b1a3eedfb8deea0265eae9df83dbfb2f688631fab21dc9a39a6fd0754578b",
+        "matches_current": true,
+        "evidence_line": 29
+      },
+      {
+        "path": "standards/decisions-and-change.md",
+        "reported_sha256": "2e213a0a2dbb5609e472c5bc67d70eac5e77c2a7885f85c5f13456437145371c",
+        "matches_current": true,
+        "evidence_line": 30
+      },
+      {
+        "path": "standards/contracts-and-checklists.md",
+        "reported_sha256": "5fc9f9cb8e55c1e3e05af390705695816e9fc139ee4055d2fed5b88ed6dd047c",
+        "matches_current": true,
+        "evidence_line": 31
+      },
+      {
+        "path": "standards/profiles/client.md",
+        "reported_sha256": "3b752c58ddbcd68a0379a5d5834b1cb8af2ed4d624954155618fb043c5aa7f43",
+        "matches_current": true,
+        "evidence_line": 32
+      },
+      {
+        "path": "standards/profiles/desktop-web.md",
+        "reported_sha256": "23899a325fd91f03cccc8c51cdf68ebd05752a27bca8d222f75fdf746cdd6ce1",
+        "matches_current": true,
+        "evidence_line": 33
+      },
+      {
+        "path": "standards/profiles/admin.md",
+        "reported_sha256": "031da5f396b2dbe182b9f672937c589a618f003b68bc0be98664d5a29485a74b",
+        "matches_current": true,
+        "evidence_line": 34
+      }
+    ],
+    "note": "Self-reported metadata is available and compared; original PRD/generating workspace not independently verified. This is not current HEAD backfilled as generation."
+  },
+  "not_verified": [
+    "real browser operation on current artifact by this review",
+    "complete state/entry/layout acceptance",
+    "real payment/supplier/platform/production permissions"
+  ],
+  "git_actions": "No commit/push/tag/release performed by this review"
+}

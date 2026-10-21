@@ -1,0 +1,1075 @@
+{
+  "input_sha256": "f91cd067ee417aa34fed55b98ed43b88965831ac5542a195fbd393b956a8f133",
+  "findings": [
+    {
+      "id": "A01",
+      "title": "搜索历史与新开搜索仍缺完整契约",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "line": 590,
+          "excerpt": "function freshSession(){"
+        },
+        {
+          "line": 1338,
+          "excerpt": "<div class=\"m-searchbar\"><div data-component=\"CL-SEARCH-01-C02\" style=\"flex:1;min-width:0\"><input id=\"searchInput\" data-search-input aria-label=\"搜索商品\" placeholder=\"输入商品名称搜索\" value=\"${esc(S.searchDraft)}\"></div>"
+        },
+        {
+          "line": 1715,
+          "excerpt": "S.searchDraft=v; S.searchKeyword=v; S.searchSort=\"recommend\"; S.searchLoaded=true; go(\"CL-SEARCH-02\",\"RESULTS\");"
+        }
+      ],
+      "final_comparison": "F有历史去重/置顶/管理/删除能力（F1417、1428、6650、6686、6694、6704）；默认搜索主动清空（F6634）。",
+      "observation": "T仅有搜索草稿/关键词/排序，提交不维护历史；默认页直接回显searchDraft。09的DEC-SEARCH-001把历史排除仍是待确认，不能当成用户已批准覆盖。",
+      "solution": "按client10.2补历史与默认页不回填；若确有原PRD冲突先保留冲突记录，不自行采纳裁剪。验收A/B/A、单删/清空、新开和返回分别检查。",
+      "authority": "client10.2；core1.3；runtime13.5",
+      "probes": [],
+      "browser_retested": false
+    },
+    {
+      "id": "A02",
+      "title": "无匹配结果不再回填演示商品",
+      "classification": "正向差异",
+      "priority": "P2",
+      "trial_evidence": [
+        {
+          "line": 1349,
+          "excerpt": "list=DB.products.filter(p=>p.name.includes(kw)||p.en_name.toLowerCase().includes(kw.toLowerCase()));"
+        },
+        {
+          "line": 1363,
+          "excerpt": "content=statusArea(\"CL-SEARCH-02\",\"07\",\"empty\",\"没有找到相关商品\",kw?`没有与“${kw}”匹配的结果，试试其他关键词。`:\"请输入关键词后搜索。\",\"返回搜索\",\"nav-search-default\");"
+        },
+        {
+          "line": 1850,
+          "excerpt": "if(kw) list=DB.products.filter(p=>p.name.includes(kw)||p.en_name.toLowerCase().includes(kw.toLowerCase()));"
+        }
+      ],
+      "final_comparison": "F无匹配时回填GOODS前几条（F1721、1737），属于反例。",
+      "observation": "T两端过滤后为空显示无结果，未见旧版本回填示例的分支；这是4.0的静态改善。",
+      "solution": "保留空结果行为；浏览器提交唯一无匹配词，并与失败/未取得/末页区分。不得从静态分支宣称全搜索通过。",
+      "authority": "business24.5；quality29.13",
+      "probes": [],
+      "browser_retested": false
+    },
+    {
+      "id": "A03",
+      "title": "销量排序使用库存，PC销量选项无排序分支",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "line": 1355,
+          "excerpt": "else if(S.searchSort===\"latest\") list=list&&list.slice().sort((a,b)=>String(b.updated_at).localeCompare(String(a.updated_at)));"
+        },
+        {
+          "line": 1356,
+          "excerpt": "else if(S.searchSort===\"sales\") list=list&&list.slice().sort((a,b)=>(b.stock||0)-(a.stock||0));"
+        },
+        {
+          "line": 1374,
+          "excerpt": "${C(\"CL-SEARCH-02-C04\",`<div class=\"sortbar\">${[[\"recommend\",\"推荐\"],[\"sales\",\"销量\"],[\"price_asc\",\"价格升序\"],[\"price_desc\",\"价格降序\"],[\"latest\",\"最新\"]].map(([k,l])=>`<button class=\"${S.searchSort===k?\"on\":\"\"}\" data-act=\""
+        }
+      ],
+      "final_comparison": "F的商品排序需按数据语义复核，不能以最终版存在控件证明口径成立；历史参数不推广。",
+      "observation": "T移动端按stock降序；PC展示销量按钮但只有价格/最新排序分支。03第1014行要求无统一口径不展示，09 DEC-HOME-002仍待确认。",
+      "solution": "未批准销量口径时移除/明确不可用，不以库存代替销量；确认后使用同源sales字段。夹具让销量与库存逆序，两端提交前后均核对。",
+      "authority": "admin12.4；client10.2；business24.5",
+      "probes": [],
+      "browser_retested": false
+    },
+    {
+      "id": "A04",
+      "title": "媒体选择已有稳定ID，但不能等同上传/播放能力",
+      "classification": "正向差异",
+      "priority": "P2",
+      "trial_evidence": [
+        {
+          "line": 1387,
+          "excerpt": "const main=media.find(m=>m.id===mid)||media[0];"
+        },
+        {
+          "line": 1390,
+          "excerpt": "${C(\"CL-PRODUCT-01-C02\",`<div class=\"m-section\"><div class=\"media-main\">${main?esc(p.name)+\" · \"+esc(main.label):\"暂无媒体，使用灰色占位\"}</div>${media.length>1?`<div class=\"media-thumbs\">${media.map(m=>`<button class=\"${"
+        },
+        {
+          "line": 1652,
+          "excerpt": "\"product-media\":function(el){ S.mediaId=el.dataset.media; render(); },"
+        }
+      ],
+      "final_comparison": "F按媒体序列切换（F1362、1759、1769、6742），是可保留职责。",
+      "observation": "T媒体缩略入口写mediaId并读取当前商品对应项，优于固定三个无动作占位；当前仍是文字/灰图占位。",
+      "solution": "以0/1/多项、删当前项/重排/切商品验证同一ID。媒体上传、视频和硬件资料属于本项目适用性，未批准视频不新增；硬件未落实列项目兼容缺口。",
+      "authority": "core3.4；runtime13.5；商城项目契约2",
+      "probes": [],
+      "browser_retested": false
+    },
+    {
+      "id": "A05",
+      "title": "后台宣称维护的详情资料缺少生产入口",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "line": 2301,
+          "excerpt": "title:\"商品管理\",sub:\"维护商品、规格、售价、交付类型、Steam 限制、须知与上下架。\","
+        },
+        {
+          "line": 2324,
+          "excerpt": "RENDERERS.adminProductEdit=function(page,state){"
+        },
+        {
+          "line": 2600,
+          "excerpt": "p.skus.forEach(s=>{s.price=p.price;s.delivery_type=p.delivery_type;});"
+        }
+      ],
+      "final_comparison": "F有媒体/规格配置入口，但消费端固定价差仍有错误（F3313与1891）。",
+      "observation": "T商品编辑仅名称、单一售价、类型、状态、库存、说明和须知；规格逐条、媒体、介绍、Steam限制缺编辑入口。静态预置内容能展示不等于配置闭环。",
+      "solution": "先按本项目范围逐字段列生产者/消费者；补已承诺入口或把不可维护项如实标只读/待接入。修改商品B第二规格及介绍，追到两端和新单。",
+      "authority": "core3.4；admin16；quality29.10",
+      "probes": [],
+      "browser_retested": false
+    },
+    {
+      "id": "A06",
+      "title": "显式失效对象仍会回退其他订单",
+      "classification": "执行错误",
+      "priority": "P0",
+      "trial_evidence": [
+        {
+          "line": 677,
+          "excerpt": "function currentOrder(){ return orderById(SESSION.activeOrderId) || orderById(SESSION.selectedOrderId) || DB.orders[0]; }"
+        },
+        {
+          "line": 1547,
+          "excerpt": "const o=orderById(S.selectedOrderId)||DB.orders[0];"
+        },
+        {
+          "line": 1950,
+          "excerpt": "const o=orderById(S.activeOrderId)||DB.orders[2]; const p=productById(o.product_id);"
+        }
+      ],
+      "final_comparison": "F部分恢复入口传稳定订单ID，客服仍MOCK_ORDER（F6619、6764、2490），不能整体继承。",
+      "observation": "T currentOrder、移动详情、PC确认/支付/结果存在首条或第三条回退；VM01失效ID返回OA。不存在与演示初始化被混用。",
+      "solution": "显式ID失效只报不存在/无权限，不换目标；新增模式独立。用A/B/MISSING分别从列表、支付返回、客服进入并比对数据。",
+      "authority": "admin12.6；runtime13.5",
+      "probes": [
+        "VM01"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "A07",
+      "title": "返回只恢复页面，未覆盖查询和滚动现场",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "line": 845,
+          "excerpt": "if(RV.pageId!==pageId) RV.history.push({pageId:RV.pageId,end:RV.end,state:RV.state});"
+        },
+        {
+          "line": 853,
+          "excerpt": "function back(){"
+        },
+        {
+          "line": 856,
+          "excerpt": "else { RV.pageId=h.pageId; RV.end=h.end; RV.state=h.state; }"
+        }
+      ],
+      "final_comparison": "F来源也只记部分字段（F5574、5581），不能证明完整恢复。",
+      "observation": "T历史只存pageId/end/state，render重建画布；搜索草稿、页码、位置和焦点没有对应导航快照，PC详情“返回商城”固定回首页。",
+      "solution": "按来源记录已提交条件、分页及位置，区分新开和返回。搜索中段→商品B→返回，核对对象、条件、位置及焦点；浏览器待测。",
+      "authority": "runtime13.5；client10.1；STD-RV-001",
+      "probes": [],
+      "browser_retested": false
+    },
+    {
+      "id": "A08",
+      "title": "组件选择改为局部更新说明区",
+      "classification": "正向差异",
+      "priority": "P2",
+      "trial_evidence": [
+        {
+          "line": 1037,
+          "excerpt": "else if(el.id===\"compSel\"){ RV.selectedComponent=el.value; renderComponentDoc(); applyOutline(); }"
+        },
+        {
+          "line": 1038,
+          "excerpt": "else if(el.id===\"outlineChk\"){ RV.outline=el.checked; applyOutline(); }"
+        }
+      ],
+      "final_comparison": "F pickComp局部更新说明（F5928～5933），可作为职责参考。",
+      "observation": "T组件选择调用renderComponentDoc/applyOutline，未调用整页render，是较合理的更新路径。",
+      "solution": "保留局部更新；仍需输入法、文字选区、业务中段滚动和父子弹层打开时逐项实测不变。不得仅凭无render认定所有快照均合格。",
+      "authority": "STD-RV-001",
+      "probes": [],
+      "browser_retested": false
+    },
+    {
+      "id": "B01",
+      "title": "个人订单集合未按平台或账号隔离",
+      "classification": "执行错误",
+      "priority": "P0",
+      "trial_evidence": [
+        {
+          "line": 590,
+          "excerpt": "function freshSession(){"
+        },
+        {
+          "line": 1524,
+          "excerpt": "let list=DB.orders.filter(o=>o.platform===S.platform||true);"
+        },
+        {
+          "line": 2003,
+          "excerpt": "let list=DB.orders.slice();"
+        }
+      ],
+      "final_comparison": "F多套演示订单不能证明真实归属；不能把固定样例当权限实现。",
+      "observation": "T移动集合过滤带||true；PC订单从DB.orders开始，订单记录缺账号身份。错误预设写“旧账号已清除”不代表真实数据已清。",
+      "solution": "保留平台与当前展示端分离，同时绑定账号/平台数据范围；游客/切账号/错账号B均不得见旧单或口令码。仅原型内存模拟也要真实执行同样守卫。",
+      "authority": "runtime13.5；admin12.13；商城项目契约5",
+      "probes": [],
+      "browser_retested": false
+    },
+    {
+      "id": "B02",
+      "title": "交易守卫仍不完整：下架与确认中旧单",
+      "classification": "执行错误",
+      "priority": "P0",
+      "trial_evidence": [
+        {
+          "line": 1620,
+          "excerpt": "function continueBuy(){"
+        },
+        {
+          "line": 1631,
+          "excerpt": "let o=DB.orders.find(x=>x.product_id===p.id && x.platform===S.platform && x.pay_status===\"待支付\");"
+        },
+        {
+          "line": 2054,
+          "excerpt": "function wbSubmit(){"
+        }
+      ],
+      "final_comparison": "F具备部分旧单恢复入口但不代表资格重验与所有守卫通过。",
+      "observation": "T两端提交仅查登录/实名/协议/手机/链接；未核对售卖、库存和稳定规格归属。只恢复待支付单，确认中订单可另建。VM12/13分别生成下架单和第二笔单。",
+      "solution": "提交与继续支付前重验资格/商品/规格/旧支付尝试；确认中先查同单。保留草稿不保留资格结论，服务端契约另留待联调。",
+      "authority": "runtime13.3/13.6；商城项目契约4",
+      "probes": [
+        "VM12",
+        "VM13",
+        "VM32"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "B03",
+      "title": "异步回调混用新会话与旧对象",
+      "classification": "执行错误",
+      "priority": "P0",
+      "trial_evidence": [
+        {
+          "line": 1620,
+          "excerpt": "function continueBuy(){"
+        },
+        {
+          "line": 1683,
+          "excerpt": "const res=S.payQueryResult;"
+        },
+        {
+          "line": 1965,
+          "excerpt": "if(st===\"WAITING\") body=`<div class=\"m-notice-card\">请使用${o.channel===\"alipay\"?\"支付宝\":\"微信\"}扫码支付</div><div class=\"pay-qr\"><span>二维码占位</span></div><div class=\"m-cardrow\"><span class=\"l\">订单号</span><span class=\"v mon"
+        }
+      ],
+      "final_comparison": "F普通token有隔离但重置重用有ABA风险（F3531、3539～3540）；不推广脆弱计数器。",
+      "observation": "VM09发起A后切B，回调创建product=A但sku=SB/platform=B/amount=260；VM10发起A的查询后切B，回调把B改已支付。不是仅少一个字段名。",
+      "solution": "发起时固定端/账号/对象/规格/金额/请求代次；离页、关闭、重置失效。真实入口覆盖慢A快B及A未回→重置→B→A回，不改B/loading/提示/导航。",
+      "authority": "runtime13.6",
+      "probes": [
+        "VM09",
+        "VM10"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "B04",
+      "title": "支付与交付仍被自动合并，PC还可复制样例码",
+      "classification": "执行错误",
+      "priority": "P0",
+      "trial_evidence": [
+        {
+          "line": 1500,
+          "excerpt": "card=C(\"CL-RESULT-01-C02\",`<div class=\"m-result\"><div class=\"tag\">支付成功 · 已交付</div><div class=\"big\">口令码已到账</div><div class=\"m-code\"><div class=\"mini\">最新口令码</div><div class=\"code\">${esc(o.code||\"STEAM-DEMO-XXXX-X"
+        },
+        {
+          "line": 1686,
+          "excerpt": "if(o.delivery_type===\"CODE\"){ o.delivery_status=\"已交付\"; o.code=o.code||\"STEAM-DEMO-\"+String(Math.random()).slice(2,6).toUpperCase()+\"-\"+String(Math.random()).slice(2,6).toUpperCase(); }"
+        },
+        {
+          "line": 1988,
+          "excerpt": "if(rs===\"DELIVERED\") card=`${C(\"WB-RESULT-01-C03\",`<div class=\"m-code\"><div class=\"mini\">最新口令码</div><div class=\"code\">${esc(o.code||\"STEAM-DEMO-XXXX-XXXX\")}</div><div style=\"margin-top:6px\">${btn(\"复制口令码\",{act:\""
+        }
+      ],
+      "final_comparison": "F查询已付直接DELIVERED（F6994～7009），也是反例。",
+      "observation": "T支付查询/扫码定时器直接发码并标已交付；PC结果DELIVERED无code时回填样例可复制。界面虽写“支付成功不等于交付”，动作未遵守。",
+      "solution": "支付查询只写支付事实，独立供应商/交付模拟结果驱动码与状态；缺码显示发码中/异常，不可复制演示码。分别测已付未交付、取码失败与GIFT。",
+      "authority": "STD-ACT-001；business24.5；商城项目契约4",
+      "probes": [
+        "VM11"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "B05",
+      "title": "明确未支付查询与重新查询未形成闭环",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "line": 1502,
+          "excerpt": "card=C(\"CL-RESULT-01-C02\",`<div class=\"m-result\"><div class=\"tag\">支付成功 · 发码中</div><div class=\"big\">正在发码</div><div class=\"mini\">供应商尚未返回口令码，页面不会伪造口令码。可稍后刷新或从“我的订单”查看。</div><div style=\"margin-top:8px\">${btn(\"刷新状态\""
+        },
+        {
+          "line": 1690,
+          "excerpt": "} else if(res===\"unpaid\"){"
+        },
+        {
+          "line": 1702,
+          "excerpt": "\"result-refresh\":function(){ flash(\"已刷新服务端交付状态\"); render(); },"
+        }
+      ],
+      "final_comparison": "F应按可信结果区分未支付/未知，不以用户选择写结果；旧已付捷径仍是反例。",
+      "observation": "T未支付分支跳回确认页却未同步原单确认中状态；wb-pay-query只改CONFIRMING且没有查询结果回调，部分“刷新”只提示已刷新。",
+      "solution": "模拟也须明确发起/返回/超时与可恢复动作；未知不变成未付，明确未付按允许迁移更新且防重复支付。检验数据与可用入口，不只toast。",
+      "authority": "runtime13.3/13.6；quality29.10",
+      "probes": [],
+      "browser_retested": false
+    },
+    {
+      "id": "B06",
+      "title": "协议子层关闭未回原须知，Esc会先命中移动处理器",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "line": 993,
+          "excerpt": "else if(kind===\"auth\") ACTIONS[\"auth-close\"] && ACTIONS[\"auth-close\"]();"
+        },
+        {
+          "line": 1051,
+          "excerpt": "else if(kind===\"auth\" && ACTIONS[\"auth-close\"]) ACTIONS[\"auth-close\"]();"
+        },
+        {
+          "line": 1672,
+          "excerpt": "\"agreement-view\":function(){ S.agreementOpen=true; S.agreementNoticeOpen=false; S.agreementFromNotice=true; render(); },"
+        }
+      ],
+      "final_comparison": "商城已批准须知→协议→回须知与Esc仅栈顶；不把最终版任意回商品实现当正确。",
+      "observation": "T记录agreementFromNotice但关闭不还原agreementNoticeOpen；VM24为false。公共Esc先按kind=auth/payret调用移动处理器，WEB分支靠后，需逐端复核错误出口。",
+      "solution": "按宿主端与真实栈顶解析统一关闭生命周期；保存父层、来源、滚动和触发焦点。分别测按钮/Esc/遮罩；一次只关闭一层。",
+      "authority": "STD-RT-001；商城项目契约3",
+      "probes": [
+        "VM23",
+        "VM24"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "B07",
+      "title": "协议同意只有全局布尔，不能证明同意当前版本",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "line": 594,
+          "excerpt": "agreementAccepted:false, friendLink:\"\", payChannel:\"wechat\","
+        },
+        {
+          "line": 1635,
+          "excerpt": "created_at:nowStamp(),friend_link:S.friendLink,channel:S.payChannel,agreement_version:DB.currentAgreement,"
+        },
+        {
+          "line": 1675,
+          "excerpt": "\"agreement-agree\":function(){ S.agreementAccepted=true; S.agreementNoticeOpen=false; flash(\"已记录协议同意（版本 \"+DB.currentAgreement+\"）\"); continueBuy(); },"
+        }
+      ],
+      "final_comparison": "F历史版本与前台固定文案曾不同源（F2020、2026、7303、7314），不继承。",
+      "observation": "T正文读取当前版本有改善，但同意仅置true；后台发新版本/换商品平台后仍复用，并在新单写最新版本。09 DEC-AGREEMENT-002说“按交易上下文”，实现未绑定。",
+      "solution": "项目明确同意作用域及版本变更策略，保存真实acceptedVersion/上下文；不得默认用户已同意未读新版。历史订单保留原版本，正式协议文字仍待专项确认。",
+      "authority": "core3.4；runtime13.5；项目04/05/09",
+      "probes": [],
+      "browser_retested": false
+    },
+    {
+      "id": "B08",
+      "title": "PC复合认证模拟的回执含义需要明确",
+      "classification": "实现歧义",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "line": 861,
+          "excerpt": "function setState(code){ RV.state=code; render(); }"
+        },
+        {
+          "line": 2083,
+          "excerpt": "\"wb-auth-success\":function(){"
+        },
+        {
+          "line": 2085,
+          "excerpt": "S.authStatus=\"verified_adult\"; S.webAuthKind=\"\"; flash(\"已模拟平台返回成功\");"
+        }
+      ],
+      "final_comparison": "最终版同样必须按登录/实名/成年独立条件核对；不以一张认证成功图替代。",
+      "observation": "VM14未登录未实名时auth-success一次改为已登录且成年；该动作也可能合法代表复合平台认证成功，不能仅因合并调用判错。缺口在回执范围与资格来源未明确；setState只改RV.state，一些结果预设未同步业务事实。移动未成年门禁VM32正确，不能代表PC。",
+      "solution": "声明登录、资格独立结果或明确可信复合回执；若仅登录成功不得推出成年。保留合法复合流程，补登录成功但资格未知/未成年夹具；预设与真实主链分开。",
+      "authority": "ui8；runtime13.3；quality29.10",
+      "probes": [
+        "VM14",
+        "VM32"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "C01",
+      "title": "首页草稿隔离改善，但失败发布仍直接生效",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "line": 2579,
+          "excerpt": "function saveHomeDraft(){ ADMIN.homeDraftSaved=true; admToast(\"首页草稿已保存，尚未发布\"); }"
+        },
+        {
+          "line": 2580,
+          "excerpt": "function publishHome(){"
+        },
+        {
+          "line": 2581,
+          "excerpt": "const before=DB.home.version; DB.home=clone(ADMIN.homeDraft); DB.home.version=\"home_v\"+(parseInt(String(DB.home.version).replace(/\\D/g,\"\"))+1||4); DB.home.published_at=nowStamp();"
+        }
+      ],
+      "final_comparison": "F采用直接保存契约（F7127～7158），并非所有模块都要加发布。",
+      "observation": "T草稿保存未改DB.home，VM07通过；发布正常VM29切换。publishHome不处理fail模拟，VM08在fail仍替换生效值并提示发布。",
+      "solution": "保留本模块草稿发布；定义发布失败原子性/恢复，别把所有模块改为相同方式。未发布、生效失败、成功逐端检查配置版本。",
+      "authority": "admin12.11；core3.4",
+      "probes": [
+        "VM07",
+        "VM08",
+        "VM29"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "C02",
+      "title": "普通商品保存会抹平独立规格价",
+      "classification": "执行错误",
+      "priority": "P0",
+      "trial_evidence": [
+        {
+          "line": 676,
+          "excerpt": "function currentSku(){ const p=currentProduct(); return (p.skus||[]).find(s=>s.id===SESSION.skuId) || (p.skus||[])[0]; }"
+        },
+        {
+          "line": 2589,
+          "excerpt": "function saveProduct(){"
+        },
+        {
+          "line": 2600,
+          "excerpt": "p.skus.forEach(s=>{s.price=p.price;s.delivery_type=p.delivery_type;});"
+        }
+      ],
+      "final_comparison": "F规格面板使用固定价差（F1891、1915），也不合格。",
+      "observation": "T前台currentSku读取独立价，VM30读158；后台即使只改名称仍给所有SKU写基础price，VM02得到98/98。订单保留amount/sku_id但列表与详情仍从当前productById取名称，改目录会改变旧单显示；前台读对不等于生产者与快照正确。",
+      "solution": "商品与规格分层维护，稳定子项ID；普通商品编辑不得覆盖未声明规格字段。按项目契约保存成交名称/规格描述快照，历史缺快照不伪造补齐。用98/158或100/260测改名、编辑第二规格、新旧订单全链。",
+      "authority": "core3.4",
+      "probes": [
+        "VM02",
+        "VM30"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "C03",
+      "title": "控件字符串0被当true，库存必填原因未校验",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "line": 2609,
+          "excerpt": "s.sku_id=f.sku_id||s.sku_id; s.supplier_sku=f.supplier_sku||s.supplier_sku; s.credential=f.credential?(\"****\"+String(f.credential).slice(-2)):s.credential; s.enabled=f.enabled!==undefined?!!f.enabled:s.enabled;"
+        },
+        {
+          "line": 2612,
+          "excerpt": "function saveStock(){"
+        },
+        {
+          "line": 2614,
+          "excerpt": "if(f.stock!==undefined) p.stock=Number(f.stock); if(f.sellable!==undefined) p.sale_status=f.sellable?\"ON\":(p.stock>0?\"ON\":\"SOLD_OUT\");"
+        }
+      ],
+      "final_comparison": "F的空值/数值同样按契约验证；不以不同控件外观推定类型正确。",
+      "observation": "DOM select写字符串；saveSupplier用!!f.enabled，saveStock用真值判断，\"0\"仍启用/可售。库存原因虽标必填却未拒空，负数/NaN等边界未完整校验。",
+      "solution": "在输入边界按声明类型解析枚举/布尔/数值，非法值拒绝并留草稿；强制字段空白不能静默保存。覆盖0/1/false/空/非法。",
+      "authority": "business24.5；admin12.11",
+      "probes": [
+        "VM04",
+        "VM05"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "C04",
+      "title": "新增供应商草稿提前写正式集合",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "line": 2351,
+          "excerpt": "headActions:btn(\"新增映射\",{act:\"adm-supplier-new\",cls:\"primary\"}),"
+        },
+        {
+          "line": 2352,
+          "excerpt": "drawer:(d,rt,page)=>{const r=DB.suppliers.find(x=>x.id===d.id)||DB.suppliers[0];return `<div class=\"adm-overlay\"${compAttr(page,\"ADM-SUPPLIER-01-C01\")} data-mask-close=\"adm-close-drawer\"><div class=\"adm-drawer\""
+        },
+        {
+          "line": 2362,
+          "excerpt": "drawer:(d,rt,page)=>{const p=productById(d.id)||DB.products[0];return `<div class=\"adm-overlay\"${compAttr(page,\"ADM-STOCK-01-C01\")} data-mask-close=\"adm-close-drawer\"><div class=\"adm-drawer\"><div class=\"d-head\""
+        }
+      ],
+      "final_comparison": "最终版查看/新增也按独立草稿核对，不继承演示预置记录为正确行为。",
+      "observation": "T点新增即DB.suppliers.push且未打开编辑；取消/关闭只清drawer。VM26在尚未保存时正式集合已多一条空映射。",
+      "solution": "用独立新增草稿，校验保存才写正式集合；取消不改列表/计数/配置/审计。以A/B两映射验证编辑对象失效不能转新增。",
+      "authority": "admin12.6/12.11；runtime13.5",
+      "probes": [
+        "VM26"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "C05",
+      "title": "审计before来自已修改引用",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "line": 2578,
+          "excerpt": "function writeAudit(action,object,before,after,reason){ DB.audit.unshift({id:uid(\"AUD\"),time:nowStamp(),actor:\"admin_demo\",action,object,before,after,reason:reason||\"\"}); }"
+        },
+        {
+          "line": 2603,
+          "excerpt": "writeAudit(old?\"商品保存\":\"商品新增\",id,old?old.name+\" / \"+old.price:\"—\",p.name+\" / \"+p.price,\"运营维护\");"
+        },
+        {
+          "line": 2621,
+          "excerpt": "writeAudit(\"客服配置保存\",\"service\",DB.service.wecom_id,DB.service.wecom_id,\"运营维护\"); admToast(\"客服配置已保存\");"
+        }
+      ],
+      "final_comparison": "F敏感动作也需真实原值/目标，存在记录不代表审计真实。",
+      "observation": "T saveProduct先原地修改old，再取old.name/price作before；VM03得到NEW/120。客服保存before与after都从修改后DB读取，部分动作使用占位旧值。",
+      "solution": "执行前冻结必要原值，成功后记录实际after/操作者/目标；拒绝不写业务事实。不要为所有普通浏览添加业务埋点。",
+      "authority": "admin12.13",
+      "probes": [
+        "VM03"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "C06",
+      "title": "人工排序未改拖拽，原上移还会反复交换",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "line": 2289,
+          "excerpt": "<div class=\"adm-table-wrap\" style=\"margin-bottom:12px\"><table class=\"adm-table\"><thead><tr><th style=\"width:46%\">广告标题</th><th style=\"width:18%\">站内目标</th><th style=\"width:10%\">排序</th><th style=\"width:10%\">启停</th"
+        },
+        {
+          "line": 2290,
+          "excerpt": "${rows.map(b=>`<tr><td><input data-home-banner-title=\"${b.index}\" value=\"${esc(b.title)}\" style=\"width:100%;height:36px;border:1px solid var(--line);border-radius:5px;padding:0 8px\" aria-label=\"广告标题\"></td><td><"
+        },
+        {
+          "line": 2745,
+          "excerpt": "\"adm-home-banner-up\":function(el){ const d=ADMIN.homeDraft; const i=parseInt(el.dataset.index,10); if(i>0){ const t=d.banners[i].sort; d.banners[i].sort=d.banners[i-1].sort; d.banners[i-1].sort=t; } ADMIN.homeD"
+        }
+      ],
+      "final_comparison": "最终版排序样式不高于用户已批准的拖拽规则；按人工展示顺序归类，查询排序不改拖拽。",
+      "observation": "T操作列仍上移/下移；未见drag/pointer拖拽入口。原数组不重排而按sort绘制，VM27同一B上移两次反而回原序。",
+      "solution": "操作列提供“排序”把手、插入位和键盘/触屏替代，稳定ID重排草稿、保存/发布生效；失败可恢复。不靠仅换按钮文字修复。",
+      "authority": "admin12.6；forms-and-layers",
+      "probes": [
+        "VM27"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "C07",
+      "title": "客服账号与文案已消费，服务时间仍固定说明",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "line": 1595,
+          "excerpt": "<div class=\"mini\">${esc(DB.service.fallback)}</div>"
+        },
+        {
+          "line": 2043,
+          "excerpt": "${C(\"WB-SERVICE-01-C02\",`<div class=\"web-buycard\" style=\"max-width:640px;position:static\"><h2 style=\"margin-top:0\">企业微信客服</h2><div class=\"mini\">${esc(DB.service.fallback)}</div><div class=\"m-cardrow\"><span clas"
+        },
+        {
+          "line": 2620,
+          "excerpt": "DB.service.wecom_id=f.wecom_id||DB.service.wecom_id; DB.service.wecom_link=f.wecom_link||DB.service.wecom_link; DB.service.hours=f.hours||\"\"; DB.service.fallback=f.fallback||DB.service.fallback;"
+        }
+      ],
+      "final_comparison": "F客服使用固定内容及MOCK_ORDER（F2478、2490、2493），不能推广。",
+      "observation": "T公共/订单客服已消费wecom_id/fallback并按serviceOrderId取单，比旧固定文案好；保存hours后前台仍说待运营确认；清空fallback用||吞掉，表单模型与回显也需复核。",
+      "solution": "逐字段追生产→消费，已确认服务时间才展示承诺；空允许则保留、必填则拒绝。公共入口不带旧单，订单B只带B。",
+      "authority": "core3.4；business24.5；runtime13.5",
+      "probes": [
+        "VM06"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "C08",
+      "title": "权限空分组已经过滤，但不能据此判鉴权通过",
+      "classification": "正向差异",
+      "priority": "P2",
+      "trial_evidence": [
+        {
+          "line": 2174,
+          "excerpt": "function menuHtml(){"
+        },
+        {
+          "line": 2179,
+          "excerpt": "}).filter(g=>g.items.length);"
+        },
+        {
+          "line": 2829,
+          "excerpt": "const groups=[[\"FL\",\"业务流程\"],[\"SM\",\"状态机\"],[\"SEQ\",\"时序\"]];"
+        }
+      ],
+      "final_comparison": "最终版与旧版空菜单表现不再作为依据；本项按当前已批准admin12.2核验。",
+      "observation": "T先过滤授权项再过滤空组，VM28无权时不渲染系统标题；有权时系统下有权限/审计项属于合理差异。",
+      "solution": "保留过滤；逐角色查空/非空、菜单搜索与折叠。执行前重验另见D01，不把隐藏组当权限边界。",
+      "authority": "admin12.2/12.13",
+      "probes": [
+        "VM28"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "D01",
+      "title": "敏感动作与确认回调缺执行时重验",
+      "classification": "执行错误",
+      "priority": "P0",
+      "trial_evidence": [
+        {
+          "line": 2670,
+          "excerpt": "function codeReplace(orderNo,kind){"
+        },
+        {
+          "line": 2679,
+          "excerpt": "function refundTransition(id,action){"
+        },
+        {
+          "line": 2709,
+          "excerpt": "\"adm-confirm-ok\":function(){ const c=ADMIN.confirm; if(!c){ render(); return; } ADMIN.confirm=null; c.onOk(); render(); },"
+        }
+      ],
+      "final_comparison": "F含NO_PERM文案不代表敏感动作全重验（F7012、7618、7640等旧报告）。",
+      "observation": "T全局分发直接调用handler；go无后台登录/权限拦截，多数helper只查对象存在。确认后切角色/目标状态变化仍可能写入；此为内存模拟缺口，不宣称线上提权。",
+      "solution": "执行前按当前账号/角色/范围/目标/状态校验，捕获确认对象身份；拒绝无业务写入。真实服务端鉴权仍是独立待联调项。",
+      "authority": "admin12.13；STD-ACT-001",
+      "probes": [
+        "VM16",
+        "VM25"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "D02",
+      "title": "退款拒绝态仍能直接执行成功",
+      "classification": "执行错误",
+      "priority": "P0",
+      "trial_evidence": [
+        {
+          "line": 2679,
+          "excerpt": "function refundTransition(id,action){"
+        },
+        {
+          "line": 2684,
+          "excerpt": "if(action===\"execute\"){ if(RV.sim===\"fail\"){ r.status=\"失败\"; admToast(\"退款执行失败，已保留记录\",\"err\"); } else { r.status=\"成功\"; admToast(\"退款成功（模拟资金结果）\"); } writeAudit(\"执行退款\",id,\"退款中\",r.status,reason); }"
+        }
+      ],
+      "final_comparison": "F分处理中及渠道结果（F7427～7445），仅为较好阶段设计，不等于真实回执已验证。",
+      "observation": "VM16已拒绝记录调用execute后变成功；无当前允许迁移守卫。正常模拟结果可存在，但不能绕过审核/幂等并宣称资金完成。",
+      "solution": "原型按状态机拒绝不允许迁移；退款中/未知/失败先核查，重复不重复执行。明确模拟回执，不要求接真实资金完成本轮设计审查。",
+      "authority": "admin12.13；runtime13.6；项目04/05",
+      "probes": [
+        "VM16"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "D03",
+      "title": "通知重试没有重查订单/交付与去重状态",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "line": 2687,
+          "excerpt": "function notifyRetry(id){"
+        },
+        {
+          "line": 2740,
+          "excerpt": "\"adm-notify-retry\":function(el){ admConfirm({title:\"授权重试站内信？\",body:\"重试前会校验订单与交付记录；不重新取码，不群发。\",obj:el.dataset.id,okText:\"重试\",onOk:()=>notifyRetry(el.dataset.id)}); },"
+        }
+      ],
+      "final_comparison": "F仅有通知记录和重试入口不能证明去重与实时内容已闭环。",
+      "observation": "T确认文案承诺校验，helper只找task后重试并写受理。VM17已经受理任务retry_count仍递增；未检查退款、旧码替换或当前账号。",
+      "solution": "按任务状态和交付快照决定重试/核查；内容过期不继续旧消息，受理不等于送达。真实平台回执不计作原型通过。",
+      "authority": "core3.4；admin12.13；STD-ACT-001",
+      "probes": [
+        "VM17"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "D04",
+      "title": "单项完成错误推进整个批次，开始处理缺守卫",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "line": 2652,
+          "excerpt": "function completeGift(orderNo){"
+        },
+        {
+          "line": 2656,
+          "excerpt": "o.delivery_status=\"已完成\"; if(o.batch_no){const b=DB.giftBatches.find(x=>x.batch_no===o.batch_no); if(b){b.status=\"已完成\";b.note=note;}}"
+        },
+        {
+          "line": 2659,
+          "excerpt": "function startGift(orderNo){"
+        }
+      ],
+      "final_comparison": "F区分导出/处理/完成（F7596～7602）但不能据此推断聚合规则已执行。",
+      "observation": "VM18批次A/B都处理中，仅完成A后批次已完成而B仍处理；VM25关闭订单仍可开始。项目批次有items成员，完成并非只改文案。",
+      "solution": "先明确父状态按成员汇总还是独立审批；本商城以逐项交付事实汇总，不提前宣称整体完成。部分失败列ID，重试只处理允许项。",
+      "authority": "admin12.8/12.11/12.13；项目批次契约",
+      "probes": [
+        "VM18",
+        "VM25"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "D05",
+      "title": "赠送导出只建批次，没有导出文件",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "line": 2644,
+          "excerpt": "function exportGiftOrders(ids){"
+        },
+        {
+          "line": 2650,
+          "excerpt": "admToast(\"已创建批次 \"+batch.batch_no+\"（导出不等于完成）\");"
+        },
+        {
+          "line": 2791,
+          "excerpt": "function downloadCSV(filename,headers,rows){"
+        }
+      ],
+      "final_comparison": "F明确模拟文件（F7596～7602）；模拟文件与真实导出均不可互相冒充。",
+      "observation": "T通用CSV确实建Blob并说已发起，较好；赠送导出helper只创建批次和关联，不调CSV或产生文件，VM19为0。允许组合动作但按钮/确认应写清副作用。",
+      "solution": "依批准契约实现“导出并建批次”或改为“创建批次（模拟）”；两种都不代表交付完成。核对产生物、所选ID、批次、取消和下载受阻反馈。",
+      "authority": "STD-ACT-001",
+      "probes": [
+        "VM19"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "D06",
+      "title": "审计日期与统计筛选未参与集合计算",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "line": 2514,
+          "excerpt": "filterFn:(a,c)=>(!c.order_no||String(a.object).includes(c.order_no))&&(!c.actor||a.actor.includes(c.actor)),"
+        },
+        {
+          "line": 2521,
+          "excerpt": "const metrics=[[\"订单量\",DB.stats.orders,\"笔\"],[\"实收\",money(DB.stats.revenue),\"不含退款\"],[\"退款额\",money(DB.stats.refund),\"已成功退款\"],[\"已交付\",DB.stats.delivered,\"笔 · 按交付结果\"]];"
+        },
+        {
+          "line": 2525,
+          "excerpt": "`<div class=\"adm-table-wrap\"${compAttr(page,\"ADM-COMMON-C05\")}><table class=\"adm-table\"><thead><tr><th style=\"width:22%\">平台</th><th style=\"width:22%\">订单量</th><th style=\"width:22%\">实收</th><th style=\"width:34%\">说"
+        }
+      ],
+      "final_comparison": "F统计集合也有混用风险（F5003～5046），不能仅按卡片多少比较。",
+      "observation": "T审计有起止日期控件但filterFn只查对象/人；统计筛选渲染却直接读取固定DB.stats，不随提交变化，业务变更后也未重算。全局指标可以保留，但不能伪装筛选结果。",
+      "solution": "声明每个列表/指标/导出的集合、时间字段、公式，所有可编辑筛选真实参与；固定演示要明确不可用。用不同日期/平台及退款状态对照预期。",
+      "authority": "admin12.4/12.5；core3.4；queries-and-async",
+      "probes": [],
+      "browser_retested": false
+    },
+    {
+      "id": "D07",
+      "title": "标注仅当前页却保留跨页选择",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "line": 2271,
+          "excerpt": "if(cfg.batch&&rt.sel.length) content+=`<div class=\"adm-batchbar\"${compAttr(page,\"ADM-COMMON-C08\")}><span>已选 ${rt.sel.length} 条（仅当前页）</span>${cfg.batchActions||\"\"}<button class=\"btn sm\" data-act=\"adm-clear-sel\">"
+        },
+        {
+          "line": 2703,
+          "excerpt": "\"adm-page\":function(el){ const rt=admRT(RV.pageId); const n=parseInt(el.dataset.pageNo,10); if(n>=1) rt.page=n; render(); },"
+        },
+        {
+          "line": 2705,
+          "excerpt": "\"adm-selall\":function(el){ const rt=admRT(RV.pageId); if(el.checked){ const rows=$$(\".adm-table tbody tr[data-rowid]\").map(x=>x.dataset.rowid); rt.sel=rows; } else rt.sel=[]; render(); },"
+        }
+      ],
+      "final_comparison": "F翻页清选择并检查页码上界（F7029～7035），是可用参考。",
+      "observation": "T adm-page只检查n>=1且不清sel；VM20翻页后OA仍选中，批量条却显示仅当前页。动作内无最大页保护不等于UI必能点999。",
+      "solution": "遵守当前页策略或明确批准跨页选择；翻页/筛选/页签/每页条数后核对范围、半选及批量目标。对象应有不同ID，勿只一页数据。",
+      "authority": "admin12.8；runtime13.7",
+      "probes": [
+        "VM20"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "D08",
+      "title": "本地同步查询可不造异步，故障预设与重试分开",
+      "classification": "合理替代",
+      "priority": "P2",
+      "trial_evidence": [
+        {
+          "line": 1066,
+          "excerpt": "const q=$('[data-act=\"adm-query\"]'); if(q){ e.preventDefault(); q.click(); }"
+        },
+        {
+          "line": 2231,
+          "excerpt": "return `<div class=\"adm-filters\"${compAttr(page,\"ADM-COMMON-C03\")}><div class=\"adm-filter-grid\">${fields}</div><div class=\"adm-filter-actions\">${btn(\"查询\",{act:\"adm-query\",cls:\"primary\"})}${btn(\"重置\",{act:\"adm-re"
+        },
+        {
+          "line": 2266,
+          "excerpt": "if(RV.sim===\"fail\"||rt.error) return adminShell(page,pageHead(cfg.title,cfg.sub,cfg.headActions||\"\")+filterBar(page,cfg.filters)+`<div class=\"adm-state\"${compAttr(page,\"ADM-COMMON-C11\")}><b>查询失败</b>请重试；失败时不会显示 "
+        }
+      ],
+      "final_comparison": "F普通请求有token流程但有重置边界风险，非整体优胜。",
+      "observation": "T通用列表从本地DB同步过滤，adm-query提交draft后重绘，不需要为了字段名合规添加请求token。VM21保持fail模拟后重试仍fail；这可属于故障持续，不能把注入的rt.error说成真实入口已复现的缺陷。支付查询无结果另见B05。",
+      "solution": "说明同步查询、故障模拟持续与恢复策略；真实存在的购买/支付定时器仍按B03隔离。验证真实重试可发起、条件保留、再次失败/成功可辨，不强迫重试自动转成功。",
+      "authority": "runtime13.6/13.7；admin12.4",
+      "probes": [
+        "VM21"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "E01",
+      "title": "9份主文档内外同源，较最终版改善",
+      "classification": "正向差异",
+      "priority": "P2",
+      "trial_evidence": [
+        {
+          "line": 484,
+          "excerpt": "DATA metadata/JSON pointers; embedded body not copied"
+        }
+      ],
+      "final_comparison": "F只有06内外一致，其余8份有差异（旧10_交付物局部核对.json）；本轮最终版HTML哈希未变。",
+      "observation": "当前T9份Markdown经仅BOM/换行规范化后全部一致；07 JSON保存外部原字节和内嵌UTF-8哈希。9份下载动作从DATA.docs原md建Blob。",
+      "solution": "保留构建同源；下载还要真实入口复测。字节相同不代表语义正确，E08单独检查；本项不替代交付物验收。",
+      "authority": "core3.4；reader19.5/19.7；quality29.13",
+      "probes": [],
+      "browser_retested": false
+    },
+    {
+      "id": "E02",
+      "title": "隐藏锚点会让组件覆盖检查出现假阳性",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "line": 767,
+          "excerpt": "function addRegistryAnchors(page, canvas){"
+        },
+        {
+          "line": 772,
+          "excerpt": "div.hidden=true; div.setAttribute(\"data-registry-anchor\",\"1\");"
+        },
+        {
+          "line": 773,
+          "excerpt": "div.innerHTML=missing.map(c=>`<span data-component=\"${esc(c.id)}\" data-component-anchor=\"1\"></span>`).join(\"\");"
+        }
+      ],
+      "final_comparison": "F有组件定位职责，但ID/十节/计数都不能证明实际组件可操作。",
+      "observation": "T把未出现的注册组件补为hidden span；check-all以DOM/锚点存在计0缺失。该方法可做元数据索引，却不能证明当前状态的真实组件已渲染。",
+      "solution": "按页面状态列必需/条件/不适用组件，分开元数据存在、真实可见/可达、处理器和结果证据；不得把hidden锚点计作动作入口覆盖。",
+      "authority": "quality29.10/29.13；STD-QA-001",
+      "probes": [],
+      "browser_retested": false
+    },
+    {
+      "id": "E03",
+      "title": "独立图示能缩放，阅读器仍把PlantUML当源码",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "line": 700,
+          "excerpt": "function mdToHtml(md){"
+        },
+        {
+          "line": 709,
+          "excerpt": "i++; out.push(`<pre><code data-lang=\"${esc(lang)}\">${esc(buf.join(\"\\n\"))}</code></pre>`); continue;"
+        },
+        {
+          "line": 962,
+          "excerpt": "function applyDiagramZoom(){"
+        }
+      ],
+      "final_comparison": "F Markdown围栏调用图示注册渲染（F1205～1207、7717～7771）；缩放仍须测实际尺寸。",
+      "observation": "T独立图示18张均有SVG且缩放函数改实际宽度；但mdToHtml对所有围栏输出pre/code，VM33未产生SVG，文档内不能按要求读图。",
+      "solution": "阅读器按源/图ID映射离线SVG，保留图源查看；核对ID前缀和源/SVG/表格语义。50/100/200测宽度及长图边界，数量减少不自动失败。",
+      "authority": "reader18.3/18.7/19.3/19.7",
+      "probes": [
+        "VM33"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "E04",
+      "title": "阅读历史只有文件名，文内MD链接被吞掉",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "line": 689,
+          "excerpt": "if(/^(https?:|#|mailto:)/i.test(url)) return `<a href=\"${url}\" target=\"_blank\" rel=\"noopener\">${text}</a>`;"
+        },
+        {
+          "line": 1074,
+          "excerpt": "const cur=RV.reader.file, hist=RV.reader.hist||[];"
+        },
+        {
+          "line": 1080,
+          "excerpt": "const prev=RV.reader.hist.pop(); RV.reader.file=prev; renderReader();"
+        }
+      ],
+      "final_comparison": "F保存阅读位置并生成目录（F7790～7846），但焦点仍需真实触发核验。",
+      "observation": "T历史只存file，切文档重建正文，未恢复A中段；inlineMd只保留http/#/mailto，相对MD链接退化文本。invalid file还默认首文档。",
+      "solution": "A→B→返回恢复位置/目录；MD内部跳转由阅读器处理、非法目标报错。保留下载原MD的正确职责，不擅自用浏览器外链代替。",
+      "authority": "reader19.4/19.6",
+      "probes": [],
+      "browser_retested": false
+    },
+    {
+      "id": "E05",
+      "title": "滚动条隐藏与画布宿主有改善，层栈仍不完整",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "line": 96,
+          "excerpt": ".phone-scroll{flex:1;min-height:0;overflow-y:auto;overflow-x:hidden;scrollbar-width:none;-ms-overflow-style:none;position:relative}"
+        },
+        {
+          "line": 203,
+          "excerpt": ".biz-overlay{position:absolute;inset:0;z-index:20;background:rgba(0,0,0,.34);display:flex;align-items:flex-end;justify-content:center;padding:0}"
+        },
+        {
+          "line": 261,
+          "excerpt": ".web-canvas .biz-overlay{padding:20px}"
+        }
+      ],
+      "final_comparison": "最终版布局只作本商城参考，旧截图和旧通过不作为本轮实测。",
+      "observation": "T有隐藏滑块、绝对定位业务层、WEB两栏与窄容器规则；提供截图也可见灰度布局。Esc找第一个overlay而非栈顶；业务层未见完整背景锁/恢复/Tab循环。当前浏览器打开被策略拒绝。",
+      "solution": "保留宿主定位和灰度外观，按真实栈顶/关闭出口落实STD-RT-001；窄矮容器测主动作可达、滚动不中断、不遮评审区。不能凭CSS说滑动条问题全部解决。",
+      "authority": "STD-RT-001；ui15.1/15.5",
+      "probes": [],
+      "browser_retested": false
+    },
+    {
+      "id": "E06",
+      "title": "复制失败仍提示成功",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "line": 875,
+          "excerpt": "function copyText(text, okMsg){"
+        },
+        {
+          "line": 878,
+          "excerpt": "navigator.clipboard.writeText(text).then(done).catch(()=>{ fallbackCopy(text); done(); });"
+        },
+        {
+          "line": 879,
+          "excerpt": "} else { fallbackCopy(text); done(); }"
+        }
+      ],
+      "final_comparison": "F空catch后提示成功（F6785～6790），是共同反例。",
+      "observation": "T Clipboard拒绝后尝试兼容复制，但无论兼容false/异常都会done；VM22失败桩仍见已复制。正常下载文案“已发起”则较准确。",
+      "solution": "fulfilled/明确true再说成功，失败给可选文本及手动路径；原型不必证明系统之外动作完成。覆盖拒绝/无API/false/异常/B对象。",
+      "authority": "STD-ACT-001",
+      "probes": [
+        "VM22"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "E07",
+      "title": "附带浏览器记录要按哈希和断言重新归属",
+      "classification": "证据缺口",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "line": 484,
+          "excerpt": "DATA metadata/JSON pointers; embedded body not copied"
+        }
+      ],
+      "final_comparison": "F自述验证同样不能直接算本轮通过；不能用最终版认可身份替代证据。",
+      "observation": "T提供86项浏览器结果、截图和封存说明，这是证据改善。当前封存文档与结构记录均已更新为本轮f91c哈希，汇总也已一致为86/86；早期不一致不能报为现存缺陷。现有正向断言未覆盖本轮对象隔离/状态守卫等反例，“锚点覆盖”另见E02。",
+      "solution": "保留提供方已有执行与当前版本声明，但不记作本轮复测，也不把86个局部断言当91条TC全部完成；按run/对象/步骤/预期补风险反例及变化后的回归，不能只更新哈希。",
+      "authority": "quality29.9～29.14",
+      "probes": [],
+      "browser_retested": false
+    },
+    {
+      "id": "E08",
+      "title": "同源文档仍含未批准裁剪和行为矛盾",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "line": 484,
+          "excerpt": "DATA metadata/JSON pointers; embedded body not copied"
+        }
+      ],
+      "final_comparison": "F组件十节齐全亦含搜索历史/规格等反例；组件数量不是质量标准。",
+      "observation": "T03称排序在提交前，结果页却有排序；09历史不纳入仍待确认；换码称保留旧记录，VM15只有覆盖当前code；统计/通知承诺也与动作不符。73个定义与70个被引用定义是不同口径，不直接判缺3个。",
+      "solution": "按已批准需求/项目覆盖→01/03/04/05→真实动作→07/08逐项校正。先解决含义冲突再重建同源；新增交付记录须有稳定身份/来源链，不以toast冒充事实。",
+      "authority": "quality29.13；core1.3/3.4",
+      "probes": [
+        "VM15"
+      ],
+      "browser_retested": false
+    }
+  ],
+  "classification_counts": {
+    "执行错误": 32,
+    "正向差异": 5,
+    "实现歧义": 1,
+    "合理替代": 1,
+    "证据缺口": 1
+  }
+}

@@ -7,7 +7,7 @@
 | 生成交付、自测计划、能力缺口或缺陷修复回归 | [AI自测](selftest.md) | STD-QA-001；STD-GATE-001 |
 | 改尺寸、排版、响应式或说明滚动 | [几何与阅读](layout-and-reading.md) | ui 7、8.4、9.3；reader 19 |
 | 改组件选择、描边、工具或父子弹层 | [上下文与层栈](context-and-layers.md) | STD-RV-001、STD-RT-001；ui 8.5/9.5 |
-| 改确认、保存、记录、上传、图示或数据联动 | [动作与结果](actions-and-results.md) | STD-ACT-001；admin 12.6；reader 18 |
+| 改确认、保存、字段解码、批次聚合、记录、上传、图示或数据联动 | [动作与结果](actions-and-results.md) | STD-ACT-001；business 24.5；core 3.4；admin 12.6；reader 18 |
 
 固定 PRD 哈希、规范 commit/模块哈希、人工覆盖决策、产物哈希及初始 fixture；运行记录增加浏览器版本、视口宽高、浏览器缩放、实际画布尺寸。本文中的 ID 是复用检查模板编号，项目应映射到自己的 TC/CHK，不替代唯一执行编号。
 

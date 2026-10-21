@@ -1,0 +1,415 @@
+{
+  "case_id": "steam-trial4-20261021",
+  "status": "candidate-unverified",
+  "scope": [
+    "CLIENT",
+    "WEB",
+    "ADM"
+  ],
+  "prd": {
+    "path_or_uri": null,
+    "version": "V1.4 (self-declared)",
+    "sha256": null
+  },
+  "standard": {
+    "rule_version": "V3.0",
+    "content_revision": "draft-20261021-trial3-detail",
+    "commit": null,
+    "module_hashes": []
+  },
+  "confirmed_overrides": [
+    {
+      "decision": "2026-10-21 user confirmed using current filename after input changed",
+      "scope": "analysis input only"
+    }
+  ],
+  "trial": {
+    "path_or_uri": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\02_低保真交互原型.html",
+    "sha256": "f91cd067ee417aa34fed55b98ed43b88965831ac5542a195fbd393b956a8f133"
+  },
+  "accepted_reference": {
+    "path_or_uri": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.0\\02_低保真交互原型-最终版本.html",
+    "sha256": "04bf9e76f416833e1ac84e97408b81cbceb043bb44dca4a0529f3c80f418765f",
+    "accepted_by": "User named final reference",
+    "acceptance_scope": "Reference for semantic comparison; not whole-code approval"
+  },
+  "conversation_or_decisions": [],
+  "differences": [
+    {
+      "id": "A01",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "client10.2；core1.3；runtime13.5",
+      "regression": [
+        "R4-A01"
+      ]
+    },
+    {
+      "id": "A02",
+      "classification": "正向差异",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "business24.5；quality29.13",
+      "regression": [
+        "R4-A02"
+      ]
+    },
+    {
+      "id": "A03",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "admin12.4；client10.2；business24.5",
+      "regression": [
+        "R4-A03"
+      ]
+    },
+    {
+      "id": "A04",
+      "classification": "正向差异",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "core3.4；runtime13.5；商城项目契约2",
+      "regression": [
+        "R4-A04"
+      ]
+    },
+    {
+      "id": "A05",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "core3.4；admin16；quality29.10",
+      "regression": [
+        "R4-A05"
+      ]
+    },
+    {
+      "id": "A06",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "admin12.6；runtime13.5",
+      "regression": [
+        "R4-A06"
+      ]
+    },
+    {
+      "id": "A07",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "runtime13.5；client10.1；STD-RV-001",
+      "regression": [
+        "R4-A07"
+      ]
+    },
+    {
+      "id": "A08",
+      "classification": "正向差异",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "STD-RV-001",
+      "regression": [
+        "R4-A08"
+      ]
+    },
+    {
+      "id": "B01",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "runtime13.5；admin12.13；商城项目契约5",
+      "regression": [
+        "R4-B01"
+      ]
+    },
+    {
+      "id": "B02",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "runtime13.3/13.6；商城项目契约4",
+      "regression": [
+        "R4-B02"
+      ]
+    },
+    {
+      "id": "B03",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "runtime13.6",
+      "regression": [
+        "R4-B03"
+      ]
+    },
+    {
+      "id": "B04",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "STD-ACT-001；business24.5；商城项目契约4",
+      "regression": [
+        "R4-B04"
+      ]
+    },
+    {
+      "id": "B05",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "runtime13.3/13.6；quality29.10",
+      "regression": [
+        "R4-B05"
+      ]
+    },
+    {
+      "id": "B06",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "STD-RT-001；商城项目契约3",
+      "regression": [
+        "R4-B06"
+      ]
+    },
+    {
+      "id": "B07",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "core3.4；runtime13.5；项目04/05/09",
+      "regression": [
+        "R4-B07"
+      ]
+    },
+    {
+      "id": "B08",
+      "classification": "实现歧义",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "ui8；runtime13.3；quality29.10",
+      "regression": [
+        "R4-B08"
+      ]
+    },
+    {
+      "id": "C01",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "admin12.11；core3.4",
+      "regression": [
+        "R4-C01"
+      ]
+    },
+    {
+      "id": "C02",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "core3.4",
+      "regression": [
+        "R4-C02"
+      ]
+    },
+    {
+      "id": "C03",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "business24.5；admin12.11",
+      "regression": [
+        "R4-C03"
+      ]
+    },
+    {
+      "id": "C04",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "admin12.6/12.11；runtime13.5",
+      "regression": [
+        "R4-C04"
+      ]
+    },
+    {
+      "id": "C05",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "admin12.13",
+      "regression": [
+        "R4-C05"
+      ]
+    },
+    {
+      "id": "C06",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "admin12.6；forms-and-layers",
+      "regression": [
+        "R4-C06"
+      ]
+    },
+    {
+      "id": "C07",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "core3.4；business24.5；runtime13.5",
+      "regression": [
+        "R4-C07"
+      ]
+    },
+    {
+      "id": "C08",
+      "classification": "正向差异",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "admin12.2/12.13",
+      "regression": [
+        "R4-C08"
+      ]
+    },
+    {
+      "id": "D01",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "admin12.13；STD-ACT-001",
+      "regression": [
+        "R4-D01"
+      ]
+    },
+    {
+      "id": "D02",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "admin12.13；runtime13.6；项目04/05",
+      "regression": [
+        "R4-D02"
+      ]
+    },
+    {
+      "id": "D03",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "core3.4；admin12.13；STD-ACT-001",
+      "regression": [
+        "R4-D03"
+      ]
+    },
+    {
+      "id": "D04",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "admin12.8/12.11/12.13；项目批次契约",
+      "regression": [
+        "R4-D04"
+      ]
+    },
+    {
+      "id": "D05",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "STD-ACT-001",
+      "regression": [
+        "R4-D05"
+      ]
+    },
+    {
+      "id": "D06",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "admin12.4/12.5；core3.4；queries-and-async",
+      "regression": [
+        "R4-D06"
+      ]
+    },
+    {
+      "id": "D07",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "admin12.8；runtime13.7",
+      "regression": [
+        "R4-D07"
+      ]
+    },
+    {
+      "id": "D08",
+      "classification": "合理替代",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "runtime13.6/13.7；admin12.4",
+      "regression": [
+        "R4-D08"
+      ]
+    },
+    {
+      "id": "E01",
+      "classification": "正向差异",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "core3.4；reader19.5/19.7；quality29.13",
+      "regression": [
+        "R4-E01"
+      ]
+    },
+    {
+      "id": "E02",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "quality29.10/29.13；STD-QA-001",
+      "regression": [
+        "R4-E02"
+      ]
+    },
+    {
+      "id": "E03",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "reader18.3/18.7/19.3/19.7",
+      "regression": [
+        "R4-E03"
+      ]
+    },
+    {
+      "id": "E04",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "reader19.4/19.6",
+      "regression": [
+        "R4-E04"
+      ]
+    },
+    {
+      "id": "E05",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "STD-RT-001；ui15.1/15.5",
+      "regression": [
+        "R4-E05"
+      ]
+    },
+    {
+      "id": "E06",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "STD-ACT-001",
+      "regression": [
+        "R4-E06"
+      ]
+    },
+    {
+      "id": "E07",
+      "classification": "证据缺口",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "quality29.9～29.14",
+      "regression": [
+        "R4-E07"
+      ]
+    },
+    {
+      "id": "E08",
+      "classification": "执行错误",
+      "final_decision": "review-only; no new active-rule approval",
+      "authority": "quality29.13；core1.3/3.4",
+      "regression": [
+        "R4-E08"
+      ]
+    }
+  ],
+  "evidence_locations": [
+    "05_当前基线.json",
+    "08_局部函数观察.json",
+    "09_随附证据归属核对.json",
+    "10_差异与规则映射.json"
+  ],
+  "unverified": [
+    "Independent generation baseline/PRD not established; self-reported metadata in supplied checks is evidence to reconcile, not current HEAD backfilled as generation.",
+    "Current-browser real-entry regression not executed.",
+    "No golden code promotion."
+  ],
+  "promotion_record": null,
+  "generation_baseline_as_reported": {
+    "source": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+    "note": "See 09 declarations; independently authenticated PRD/original generating workspace unavailable."
+  }
+}

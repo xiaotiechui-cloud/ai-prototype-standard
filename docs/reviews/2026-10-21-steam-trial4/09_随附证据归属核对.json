@@ -1,0 +1,1178 @@
+{
+  "current_input": {
+    "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\02_低保真交互原型.html",
+    "sha256": "f91cd067ee417aa34fed55b98ed43b88965831ac5542a195fbd393b956a8f133"
+  },
+  "files": [
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "sha256": "93e9e2a6391f5c13c27dd32217b7b282e75d4ddcac3693824181e79001f411b1",
+      "bytes": 13319
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check.txt",
+      "sha256": "be7021817db1c10412683578edb7f7b0a862af86e164f1d9fa9a71114dbf7c2c",
+      "bytes": 7550
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\check-all.txt",
+      "sha256": "e20faa65ef4303921164c9699880f811a4c065bd6160273c0708c237c72c8955",
+      "bytes": 347
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\check-structure.txt",
+      "sha256": "a199f9f02eac0479aa67f400d25d5d7f81e732159f76a3e7ac18a64b9b182d3a",
+      "bytes": 134
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\diagram-check.txt",
+      "sha256": "63ace5a64a9d24b6856202e57faff70b1a62a529b9ae03e2b9d2b6027074e593",
+      "bytes": 424
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+      "sha256": "b32e708f9981676ccae48d09fee3773b2000986f6f60a2d15f458bec6f07f9a0",
+      "bytes": 12179
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\downloads\\03_组件级文档.md",
+      "sha256": "1fa2ddbc1b64982aef013920aa001f3fb86a90d55a82a4e468f6c3c94a9ebf7a",
+      "bytes": 316232
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\00-initial-client-home.png",
+      "sha256": "eec4d7db5295e88704a3f91c046b97f6faf7c81c55d4cc725bbd10850562840d",
+      "bytes": 114954
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\01-client-notice.png",
+      "sha256": "eec4d7db5295e88704a3f91c046b97f6faf7c81c55d4cc725bbd10850562840d",
+      "bytes": 114954
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\02-client-auth.png",
+      "sha256": "58eec08ee496eb5fb4e7187625dcecf909dc8a086d3f038ac5935619f2e3275d",
+      "bytes": 113080
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\03-client-buy-panel.png",
+      "sha256": "2d167c2b3d7454eaab0a5bc582e28bb6cc0f3571de618df59676e10f558ba4fd",
+      "bytes": 116885
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\04-client-agreement-notice.png",
+      "sha256": "94f76190572f24c31a93f5a3b99078f4f9b9e02d355edfef5cef9b4fb2430831",
+      "bytes": 122174
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\05-client-phone.png",
+      "sha256": "11c4829cfd8c1417e23864c91580a33a567281829a36331ed16e477dc7879e90",
+      "bytes": 123571
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\06-client-checkout.png",
+      "sha256": "bd159a877aa3fc4db74b07949e22ee0a0a79cea7effa958e133241d43c623b3c",
+      "bytes": 110742
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\07-client-pay-return.png",
+      "sha256": "05a78a1648ac42b854de1ba36284a8120428ddc47252161380fa4e39131e7d65",
+      "bytes": 98431
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\08-client-result.png",
+      "sha256": "2c865d8a60b701ca5ccc3001120544e77a86f7a5f84197c5edc71bfad6c01483",
+      "bytes": 107939
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\09-client-search.png",
+      "sha256": "f2c2f004a9a1522e1dbc53e9d8ac8fcf158bd93476a7afc6d7bbb0cdbdac090c",
+      "bytes": 107174
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\10-client-order-detail.png",
+      "sha256": "5cd03a369516a5321650ffed735fd2fa31bedc55ce60a16ee60220bed6491503",
+      "bytes": 101449
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\11-web-home.png",
+      "sha256": "8d584d57ae97ad6beda02f1abcea15cb234fafd692117e3f484a77d5b7572ed2",
+      "bytes": 53765
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\12-web-product.png",
+      "sha256": "ef34406e879bc4088ab1494a3eb90fb8c762e378b2c851f24d912b0ce801645b",
+      "bytes": 58332
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\13-web-buy.png",
+      "sha256": "abaa9ef74d3bb5e2489241839a17abb8fc78e6a3e5f1bdfd600ab4b2a9f27148",
+      "bytes": 65877
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\14-web-order-drawer.png",
+      "sha256": "cbed7dcd5157e49dd1ab8fe1b5af80200b6331f235a7cedf5a781e2affec5e30",
+      "bytes": 66510
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\15-admin-home.png",
+      "sha256": "2c2dcc549018765a7b69e66f06a6acfa20e83f2fe9837135b5b7e859fc881cfd",
+      "bytes": 64537
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\16-admin-orders.png",
+      "sha256": "20110c46c582f5421d1364c656bf332262b2ed8451f72121f9e989fab2803437",
+      "bytes": 78802
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\17-admin-orders-tab.png",
+      "sha256": "260ea9d5d24fd3c036665e1d0a234081925a6258d3edf59a414d3b511449eb2f",
+      "bytes": 77658
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\18-admin-order-drawer.png",
+      "sha256": "1abbcf1e17d12acf7de7e87641a8265a582ab31f6537b5c1d0181a6c4134c8b0",
+      "bytes": 81472
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\19-admin-1920.png",
+      "sha256": "2a76bd9d34a63b957e274e7682cf1812ecc99d79790c086c9329b48ddb1f4d78",
+      "bytes": 97171
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\20-admin-1440.png",
+      "sha256": "579ec4bc84cc2f8247107834007c9bdc1397073b6a139dc36c1f0456cf1a6d38",
+      "bytes": 87262
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\21-client-after-publish.png",
+      "sha256": "a593eb1cffec08f776e8e49ff05fdfa8d9e16e08bf5b9931b822d8962a15d8b5",
+      "bytes": 104157
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\22-admin-refund.png",
+      "sha256": "fc680fed517c22a7424762fb2a940cc840746869da5515bb4ba2ff5bfa994800",
+      "bytes": 54194
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\23-admin-notify.png",
+      "sha256": "0c7a86edb3ecf4dc00addd047c9ced1b6a3ebc8a1cb00c2dbf81a0d78849c9ff",
+      "bytes": 62353
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\24-admin-gift.png",
+      "sha256": "4d424a07dd0304c98873ad774184cfe17262899443903495e3388ead97cbdacf",
+      "bytes": 75732
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\25-admin-code.png",
+      "sha256": "7591f2897b25d3a621a0dc84ce7006cd3a58dbeaee5497401444f11aa5acb562",
+      "bytes": 73174
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\26-admin-agreement.png",
+      "sha256": "63fbb7d1f6e259d22b9bcbb89f6d7953c99d1cce3ac67866244b89605c7e56b2",
+      "bytes": 66188
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\27-admin-rbac.png",
+      "sha256": "58ae1ec9082fd78a18b9baaa73a7157e4a901dbc6dd8b91ce910d166384a386f",
+      "bytes": 70108
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\28-admin-stats.png",
+      "sha256": "fb2b0e254d551aa217d1b27e1eeb1cf2532518e9008be5c6c2eaa5a8ecb494ae",
+      "bytes": 77975
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\29-reader.png",
+      "sha256": "20f3394f01136626effefcb9fbbf828837a4a7dfac064ae6689482f68b96d3b4",
+      "bytes": 108556
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\30-diagram.png",
+      "sha256": "6c6ebbdb2d99ffc2f0b6a10c5e551c996427580611338d9904cd62a29a6793ba",
+      "bytes": 79821
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\31-web-narrow.png",
+      "sha256": "1017aff9f3432da9808a7f5c9c93bfdbb3b72d80516996e34e5727430ee391b3",
+      "bytes": 55161
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\32-flow-order.png",
+      "sha256": "17d22192f8264dae0f9f124957abf39a0b17eaee6d50f6cacee09b9226153908",
+      "bytes": 74037
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\33-diagram-top.png",
+      "sha256": "9a311b0fd9937b44d96fc329043f66abab9637f79156344d7304bc74ea5e5fde",
+      "bytes": 62184
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\34-diagram-mid.png",
+      "sha256": "7f8c49c6d62a2486e3e4967d4b2328d89bb48141663de60b2103fbb5b42a761e",
+      "bytes": 59699
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\screenshots\\35-diagram-bottom.png",
+      "sha256": "9ae3dc194b636f036d835f5e5deef4a67f610df12d489a4ba1ca0da90c9af6a2",
+      "bytes": 72033
+    }
+  ],
+  "declarations": [
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 3,
+      "excerpt": "    \"browser\": \"Chrome/155.0.8059.84\","
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 4,
+      "excerpt": "    \"checks\": 86,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 5,
+      "excerpt": "    \"pass\": 86,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 12,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 17,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 22,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 27,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 32,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 37,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 42,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 47,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 52,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 57,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 62,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 67,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 72,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 77,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 82,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 87,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 92,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 97,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 102,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 107,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 112,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 117,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 122,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 127,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 132,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 137,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 142,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 147,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 152,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 157,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 162,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 167,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 172,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 177,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 182,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 187,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 192,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 197,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 202,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 207,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 212,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 217,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 222,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 227,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 232,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 237,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 242,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 247,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 252,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 257,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 262,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 267,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 272,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 277,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 282,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 287,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 292,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 297,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 302,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 307,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 312,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 317,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 322,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 327,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 332,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 337,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 342,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 347,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 352,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 357,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 362,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 367,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 372,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 377,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 382,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 387,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 392,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 397,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 402,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 407,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 412,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 417,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 422,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 427,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 432,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check-result.json",
+      "line": 437,
+      "excerpt": "      \"pass\": true,"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\browser-check.txt",
+      "line": 183,
+      "excerpt": "SUMMARY {\"browser\":\"Chrome/155.0.8059.84\",\"checks\":86,\"pass\":86,\"fail\":0,\"consoleErrors\":[]}"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\check-structure.txt",
+      "line": 1,
+      "excerpt": "02 sha256 f91cd067ee417aa34fed55b98ed43b88965831ac5542a195fbd393b956a8f133"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+      "line": 16,
+      "excerpt": "| PRD SHA-256 | `0ab82b51be4263921cedf716f98851823138bf9afb1c78b3ee5d56c756778eff` |"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+      "line": 22,
+      "excerpt": "| core | standards/core.md | `c141184fb586f00aef5f143f5042bf1c5694c8b2e4a25f993b5241444babe452` |"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+      "line": 23,
+      "excerpt": "| workflow | standards/workflow-and-model.md | `8d2ef444c086438b3d5eb186acec7474bc0b594a1976f6ce02e972f685eab6f8` |"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+      "line": 24,
+      "excerpt": "| ui | standards/ui-and-components.md | `db6385d10c424d30a11a68a262efe4143e94e1b1881a382a0f8bda6a47ec226a` |"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+      "line": 25,
+      "excerpt": "| runtime | standards/runtime-and-build.md | `bf00d19cc13794b613465667d22d7f3621994821c8622018d9fee20ea7812840` |"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+      "line": 26,
+      "excerpt": "| reader | standards/diagrams-and-reader.md | `85a025338043a4d3b2351e11a257702a16f897306fb12ddd8f98b112d23b2d8c` |"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+      "line": 27,
+      "excerpt": "| docs-ui | standards/deliverables-ui.md | `bc03bbaee2b2a079e53ea19b04e8b05291224c8af121d58f6b54d25b3034ced8` |"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+      "line": 28,
+      "excerpt": "| docs-business | standards/deliverables-business.md | `13537e56be60369f4e3dc6adb674cfc9019aa532851e74440f64f0088b88fb7a` |"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+      "line": 29,
+      "excerpt": "| quality | standards/quality-and-evidence.md | `481b1a3eedfb8deea0265eae9df83dbfb2f688631fab21dc9a39a6fd0754578b` |"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+      "line": 30,
+      "excerpt": "| change | standards/decisions-and-change.md | `2e213a0a2dbb5609e472c5bc67d70eac5e77c2a7885f85c5f13456437145371c` |"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+      "line": 31,
+      "excerpt": "| checklists | standards/contracts-and-checklists.md | `5fc9f9cb8e55c1e3e05af390705695816e9fc139ee4055d2fed5b88ed6dd047c` |"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+      "line": 32,
+      "excerpt": "| client | standards/profiles/client.md | `3b752c58ddbcd68a0379a5d5834b1cb8af2ed4d624954155618fb043c5aa7f43` |"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+      "line": 33,
+      "excerpt": "| web | standards/profiles/desktop-web.md | `23899a325fd91f03cccc8c51cdf68ebd05752a27bca8d222f75fdf746cdd6ce1` |"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+      "line": 34,
+      "excerpt": "| admin | standards/profiles/admin.md | `031da5f396b2dbe182b9f672937c589a618f003b68bc0be98664d5a29485a74b` |"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+      "line": 36,
+      "excerpt": "辅助读取：`docs/patterns/README.md`、`content-and-navigation.md`、`forms-and-layers.md`、`data-and-transactions.md`、`queries-and-async.md`；`docs/acceptance/README.md`、`selftest.md`；`docs/RULE-INDEX.md`、`docs/CHAPTER-INDEX.md`；`reference/projects/steam-store.md`（SHA-256 `69480fcf6718a91a9fdbcb62116c6cc9407b8"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+      "line": 42,
+      "excerpt": "| 00_交付说明与变更记录.md | `db2fbc7326bbdd4bbc315a4db0d52dd7fb308060ce971e8d6339b72637daa750` | 13,523 |"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+      "line": 43,
+      "excerpt": "| 01_页面与状态说明.md | `71513eb63e148aaad0ebc50c1bd825c18cca9a6c7c859fd651c468eb37ba2caf` | 229,640 |"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+      "line": 44,
+      "excerpt": "| 02_低保真交互原型.html | `f91cd067ee417aa34fed55b98ed43b88965831ac5542a195fbd393b956a8f133` | 2,464,897 |"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+      "line": 45,
+      "excerpt": "| 03_组件级文档.md | `1fa2ddbc1b64982aef013920aa001f3fb86a90d55a82a4e468f6c3c94a9ebf7a` | 316,232 |"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+      "line": 46,
+      "excerpt": "| 04_业务流程与异常规则.md | `6559e4e5e395fafbb901c2a4ac1e6b7bd9b0f7fb20199ecc56f2062ea6d9b887` | 40,499 |"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+      "line": 47,
+      "excerpt": "| 05_接口数据与权限说明.md | `dc13f381e2e9866ed050f386d125b36fbd1fcd5d59641638822a23dae7ddd13f` | 152,391 |"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+      "line": 48,
+      "excerpt": "| 06_埋点文档.md | `7ff5d5155930b2b9ad71d592ea05fe33c4f235bdcd5f67b58eb86e39bc439150` | 16,349 |"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+      "line": 49,
+      "excerpt": "| 07_测试用例.md | `7097f01e86af9efebb2dc3f60933cdc407f55adc37d01a8e8c76c146212137b7` | 91,903 |"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+      "line": 50,
+      "excerpt": "| 08_验证记录与验收映射.md | `00df9f1b1af8884385c13e3b33e5eeecfe2b587d1c37a54ad12dbb72aef4cab5` | 67,250 |"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+      "line": 51,
+      "excerpt": "| 09_待确认事项与设计决策.md | `27e9347c9fbb544d8e99b4d7554612f5a3507424e6673bc6e7b361c5f14d9e98` | 14,482 |"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+      "line": 130,
+      "excerpt": "downloads/03_组件级文档.md  SHA-256 1fa2ddbc1b64982aef013920aa001f3fb86a90d55a82a4e468f6c3c94a9ebf7a"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+      "line": 131,
+      "excerpt": "03_组件级文档.md            SHA-256 1fa2ddbc1b64982aef013920aa001f3fb86a90d55a82a4e468f6c3c94a9ebf7a"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\_checks\\验证证据_2026-10-21.md",
+      "line": 194,
+      "excerpt": "失败记录与修复前状态保留在本证据与 `browser-check.txt` 的历史输出中；最终回归 86/86 通过。"
+    }
+  ],
+  "browser_summary_as_provided": {
+    "browser": "Chrome/155.0.8059.84",
+    "checks": 86,
+    "pass": 86,
+    "fail": 0,
+    "consoleErrors": []
+  },
+  "assertions": [
+    {
+      "name": "CLIENT initial page",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT phone 320x610",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT first-entry notice visible",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT certified notice shows 知道了",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT notice mask close",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT notice content click does not close",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT notice 前往认证 opens auth",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT auth success closes overlay",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT product detail opened",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT buy bar visible",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT bottom buy button >=44px",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT buy panel opens",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT buy requires login",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT agreement notice after login",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT phone guide after agreement",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT checkout after bind",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT pay return page",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT pay return asks user",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT result after paid query",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT result shows code/delivery",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT pay return unpaid goes to checkout",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT pay unknown stays confirming",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT search results opened",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT search results have cards",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT price sort ascending",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT orders page",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT orders rows > 0",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT order detail opened",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT notice close X",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT gift result shows waiting",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT minor purchase blocked",
+      "claimed_pass": true
+    },
+    {
+      "name": "CLIENT unknown qualification blocked",
+      "claimed_pass": true
+    },
+    {
+      "name": "WEB home opened",
+      "claimed_pass": true
+    },
+    {
+      "name": "WEB canvas wide",
+      "claimed_pass": true
+    },
+    {
+      "name": "WEB search results",
+      "claimed_pass": true
+    },
+    {
+      "name": "WEB product detail two columns",
+      "claimed_pass": true
+    },
+    {
+      "name": "WEB buy modal opens",
+      "claimed_pass": true
+    },
+    {
+      "name": "WEB order table 7 columns",
+      "claimed_pass": true
+    },
+    {
+      "name": "WEB order drawer opens",
+      "claimed_pass": true
+    },
+    {
+      "name": "WEB pay waiting shows QR placeholder",
+      "claimed_pass": true
+    },
+    {
+      "name": "WEB pay confirming text",
+      "claimed_pass": true
+    },
+    {
+      "name": "WEB pay success text",
+      "claimed_pass": true
+    },
+    {
+      "name": "WEB pay return two options",
+      "claimed_pass": true
+    },
+    {
+      "name": "WEB narrow detail single column",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM login page",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM login success",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM menu collapses to 64",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM menu search filters",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM orders page",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM orders rows > 0",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM confirm cancel leaves data",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM filter reduces rows",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM paid tab filters",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM order drawer opens",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM drawer shows order no",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM drawer A/B different records",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM 1920 no horizontal table scroll",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM 1440 no horizontal table scroll",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM narrow menu collapses",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM product save success",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM product price updated",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM product save failure keeps draft",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM historical order snapshot unchanged",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM publish confirm shown",
+      "claimed_pass": true
+    },
+    {
+      "name": "Config publish reaches client home",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM refund confirm shown",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM refund status changed",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM notify retry updates status",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM gift export creates batch",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM code replace confirm shown",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM code replace updates record",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM agreement publish confirm shown",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM agreement new version",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM rbac permission matrix",
+      "claimed_pass": true
+    },
+    {
+      "name": "ADM stats metrics/table",
+      "claimed_pass": true
+    },
+    {
+      "name": "Flow entries grouped and sorted",
+      "claimed_pass": true
+    },
+    {
+      "name": "Reader opens",
+      "claimed_pass": true
+    },
+    {
+      "name": "Reader shows component doc",
+      "claimed_pass": true
+    },
+    {
+      "name": "Reader switches document",
+      "claimed_pass": true
+    },
+    {
+      "name": "Reader download matches MD source",
+      "claimed_pass": true
+    },
+    {
+      "name": "Reader Esc closes",
+      "claimed_pass": true
+    },
+    {
+      "name": "Reader close restores focus",
+      "claimed_pass": true
+    },
+    {
+      "name": "Diagram opens with SVG",
+      "claimed_pass": true
+    },
+    {
+      "name": "Diagram source toggle",
+      "claimed_pass": true
+    },
+    {
+      "name": "Diagram zoom changes size",
+      "claimed_pass": true
+    },
+    {
+      "name": "Browser console errors = 0",
+      "claimed_pass": true
+    }
+  ],
+  "our_browser_retest": {
+    "executed": false,
+    "reason": "Browser URL security gate denied file protocol; no workaround attempted"
+  },
+  "disposition": "Supplied historical execution data retained; exact run/artifact and assertion strength require reconciliation. Not counted as this review execution."
+}

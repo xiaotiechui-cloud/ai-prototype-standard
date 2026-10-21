@@ -1,0 +1,547 @@
+{
+  "input": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+  "sha256": "f91cd067ee417aa34fed55b98ed43b88965831ac5542a195fbd393b956a8f133",
+  "node": "v24.15.0",
+  "method": "Selected original functions with explicit isolated fixtures; no full app/browser execution.",
+  "limitations": [
+    "Failed contract_met is a local fixture observation, not a browser reproduction. Positive fixtures do not establish whole-feature pass.",
+    "VM21 diagnoses retry fixture persistence; a real network retry is not simulated.",
+    "VM19 confirms no CSV function call/artifact in this helper; business choice of combined batch export still requires review."
+  ],
+  "syntax": [
+    {
+      "index": 1,
+      "parsed": true
+    },
+    {
+      "index": 2,
+      "parsed": true
+    },
+    {
+      "index": 3,
+      "parsed": true
+    },
+    {
+      "index": 4,
+      "parsed": true
+    },
+    {
+      "index": 5,
+      "parsed": true
+    },
+    {
+      "index": 6,
+      "parsed": true
+    }
+  ],
+  "records": [
+    {
+      "id": "VM01",
+      "method": "original-function-isolated-fixture",
+      "entry": "currentOrder",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 677,
+        "end": 677
+      },
+      "observation": "missing order must not select another order",
+      "actual": "OA",
+      "expected": null,
+      "contract_met": false
+    },
+    {
+      "id": "VM02",
+      "method": "original-function-isolated-fixture",
+      "entry": "saveProduct",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 2589,
+        "end": 2605
+      },
+      "observation": "independent SKU prices survive name-only product save",
+      "actual": [
+        98,
+        98
+      ],
+      "expected": [
+        98,
+        158
+      ],
+      "contract_met": false
+    },
+    {
+      "id": "VM03",
+      "method": "original-function-isolated-fixture",
+      "entry": "saveProduct",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 2589,
+        "end": 2605
+      },
+      "observation": "audit captures pre-write values",
+      "actual": "NEW / 120",
+      "expected": "OLD / 98",
+      "contract_met": false
+    },
+    {
+      "id": "VM04",
+      "method": "original-function-isolated-fixture",
+      "entry": "saveSupplier",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 2606,
+        "end": 2611
+      },
+      "observation": "select option 0 decodes to false",
+      "actual": true,
+      "expected": false,
+      "contract_met": false
+    },
+    {
+      "id": "VM05",
+      "method": "original-function-isolated-fixture",
+      "entry": "saveStock",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 2612,
+        "end": 2617
+      },
+      "observation": "not-sellable selection must not remain ON",
+      "actual": true,
+      "expected": false,
+      "contract_met": false
+    },
+    {
+      "id": "VM06",
+      "method": "original-function-isolated-fixture",
+      "entry": "saveService",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 2618,
+        "end": 2622
+      },
+      "observation": "legally empty optional fallback stays empty",
+      "actual": "OLD",
+      "expected": "",
+      "contract_met": false
+    },
+    {
+      "id": "VM07",
+      "method": "original-function-isolated-fixture",
+      "entry": "saveHomeDraft",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 2579,
+        "end": 2579
+      },
+      "observation": "saving home draft does not publish",
+      "actual": [],
+      "expected": [],
+      "contract_met": true
+    },
+    {
+      "id": "VM08",
+      "method": "original-function-isolated-fixture",
+      "entry": "publishHome",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 2580,
+        "end": 2584
+      },
+      "observation": "simulated failed publish leaves live configuration unchanged",
+      "actual": [
+        {
+          "title": "NEW"
+        }
+      ],
+      "expected": [],
+      "contract_met": false
+    },
+    {
+      "id": "VM09",
+      "method": "original-function-isolated-fixture",
+      "entry": "continueBuy",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 1620,
+        "end": 1642
+      },
+      "observation": "creation uses immutable original product/SKU/platform",
+      "actual": [
+        "A",
+        "SB",
+        "B",
+        260
+      ],
+      "expected": [
+        "A",
+        "SA1",
+        "A",
+        98
+      ],
+      "contract_met": false
+    },
+    {
+      "id": "VM10",
+      "method": "original-function-isolated-fixture",
+      "entry": "payret-choice",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 1680,
+        "end": 1694
+      },
+      "observation": "late query does not mutate newly selected order B",
+      "actual": "已支付",
+      "expected": "待支付",
+      "contract_met": false
+    },
+    {
+      "id": "VM11",
+      "method": "original-function-isolated-fixture",
+      "entry": "payret-choice",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 1680,
+        "end": 1694
+      },
+      "observation": "paid query alone does not issue a code",
+      "actual": "已交付",
+      "expected": "未启动",
+      "contract_met": false
+    },
+    {
+      "id": "VM12",
+      "method": "original-function-isolated-fixture",
+      "entry": "wbSubmit",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 2054,
+        "end": 2069
+      },
+      "observation": "off-sale product cannot create order",
+      "actual": 1,
+      "expected": 0,
+      "contract_met": false
+    },
+    {
+      "id": "VM13",
+      "method": "original-function-isolated-fixture",
+      "entry": "wbSubmit",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 2054,
+        "end": 2069
+      },
+      "observation": "confirming old payment is resolved before new order",
+      "actual": 2,
+      "expected": 1,
+      "contract_met": false
+    },
+    {
+      "id": "VM14",
+      "method": "original-function-isolated-fixture",
+      "entry": "wb-auth-success",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 2083,
+        "end": 2087
+      },
+      "observation": "login result does not imply adult verification",
+      "actual": "verified_adult",
+      "expected": "unverified",
+      "contract_met": null,
+      "interpretation": "Auth-success may explicitly represent a combined login+adult callback; this fixture alone cannot prove that combination is forbidden. Clarify the simulated return contract."
+    },
+    {
+      "id": "VM15",
+      "method": "original-function-isolated-fixture",
+      "entry": "codeReplace",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 2670,
+        "end": 2678
+      },
+      "observation": "replacement preserves an identifiable old/new delivery record",
+      "actual": false,
+      "expected": true,
+      "contract_met": false
+    },
+    {
+      "id": "VM16",
+      "method": "original-function-isolated-fixture",
+      "entry": "refundTransition",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 2679,
+        "end": 2686
+      },
+      "observation": "rejected refund cannot execute directly",
+      "actual": "成功",
+      "expected": "已拒绝",
+      "contract_met": false
+    },
+    {
+      "id": "VM17",
+      "method": "original-function-isolated-fixture",
+      "entry": "notifyRetry",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 2687,
+        "end": 2691
+      },
+      "observation": "accepted notification cannot blindly retry",
+      "actual": 2,
+      "expected": 1,
+      "contract_met": false
+    },
+    {
+      "id": "VM18",
+      "method": "original-function-isolated-fixture",
+      "entry": "completeGift",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 2652,
+        "end": 2658
+      },
+      "observation": "batch is not completed while another member is processing",
+      "actual": "已完成",
+      "expected": "处理中",
+      "contract_met": false
+    },
+    {
+      "id": "VM19",
+      "method": "original-function-isolated-fixture",
+      "entry": "exportGiftOrders",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 2644,
+        "end": 2651
+      },
+      "observation": "export entry produces declared file or explicitly simulated artifact",
+      "actual": 0,
+      "expected": 1,
+      "contract_met": false
+    },
+    {
+      "id": "VM20",
+      "method": "original-function-isolated-fixture",
+      "entry": "adm-page",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 2703,
+        "end": 2703
+      },
+      "observation": "current-page selection cleared on paging",
+      "actual": [
+        "OA"
+      ],
+      "expected": [],
+      "contract_met": false
+    },
+    {
+      "id": "VM21",
+      "method": "original-function-isolated-fixture",
+      "entry": "adm-refresh",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 2701,
+        "end": 2701
+      },
+      "observation": "retry exits persistent simulated error for new attempt",
+      "actual": [
+        "fail",
+        "error"
+      ],
+      "expected": [
+        "ok",
+        null
+      ],
+      "contract_met": null,
+      "interpretation": "A persistent fail simulator may legitimately keep retry failing. This injected rt.error is not established as reachable; clarify recovery policy rather than requiring retry to force success."
+    },
+    {
+      "id": "VM22",
+      "method": "original-function-isolated-fixture",
+      "entry": "copyText",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 875,
+        "end": 880
+      },
+      "observation": "failed compatibility copy cannot show success",
+      "actual": true,
+      "expected": false,
+      "contract_met": false
+    },
+    {
+      "id": "VM23",
+      "method": "original-function-isolated-fixture",
+      "entry": "agreement-view",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 1672,
+        "end": 1672
+      },
+      "observation": "opening agreement records parent notice",
+      "actual": true,
+      "expected": true,
+      "contract_met": true
+    },
+    {
+      "id": "VM24",
+      "method": "original-function-isolated-fixture",
+      "entry": "agreement-close",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 1673,
+        "end": 1673
+      },
+      "observation": "closing child restores original notice layer",
+      "actual": false,
+      "expected": true,
+      "contract_met": false
+    },
+    {
+      "id": "VM25",
+      "method": "original-function-isolated-fixture",
+      "entry": "startGift",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 2659,
+        "end": 2663
+      },
+      "observation": "closed/unpaid gift cannot start processing",
+      "actual": "处理中",
+      "expected": "待处理",
+      "contract_met": false
+    },
+    {
+      "id": "VM26",
+      "method": "original-function-isolated-fixture",
+      "entry": "adm-supplier-new",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 2718,
+        "end": 2718
+      },
+      "observation": "new draft is not persisted before save",
+      "actual": 1,
+      "expected": 0,
+      "contract_met": false
+    },
+    {
+      "id": "VM27",
+      "method": "original-function-isolated-fixture",
+      "entry": "adm-home-banner-up",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 2745,
+        "end": 2745
+      },
+      "observation": "moving same item upwards twice does not undo first move",
+      "actual": [
+        "A",
+        "B"
+      ],
+      "expected": [
+        "B",
+        "A"
+      ],
+      "contract_met": false
+    },
+    {
+      "id": "VM28",
+      "method": "original-function-isolated-fixture",
+      "entry": "menuHtml",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 2174,
+        "end": 2189
+      },
+      "observation": "empty unauthorized group is hidden",
+      "actual": false,
+      "expected": false,
+      "contract_met": true
+    },
+    {
+      "id": "VM29",
+      "method": "original-function-isolated-fixture",
+      "entry": "publishHome",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 2580,
+        "end": 2584
+      },
+      "observation": "successful publish switches live config",
+      "actual": [
+        "NEW"
+      ],
+      "expected": [
+        "NEW"
+      ],
+      "contract_met": true
+    },
+    {
+      "id": "VM30",
+      "method": "original-function-isolated-fixture",
+      "entry": "currentSku",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 676,
+        "end": 676
+      },
+      "observation": "SKU selection reads configured independent price",
+      "actual": 158,
+      "expected": 158,
+      "contract_met": true
+    },
+    {
+      "id": "VM31",
+      "method": "original-function-isolated-fixture",
+      "entry": "wb-pay-close",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 2095,
+        "end": 2095
+      },
+      "observation": "closing scan layer does not cancel payment",
+      "actual": "确认中",
+      "expected": "确认中",
+      "contract_met": true
+    },
+    {
+      "id": "VM32",
+      "method": "original-function-isolated-fixture",
+      "entry": "continueBuy",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 1620,
+        "end": 1642
+      },
+      "observation": "minor gate blocks order creation",
+      "actual": [
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0
+      ],
+      "contract_met": true
+    },
+    {
+      "id": "VM33",
+      "method": "original-function-isolated-fixture",
+      "entry": "mdToHtml",
+      "source": {
+        "path": "D:/模型汇总/GitHub维护测试/试跑4.0/项目原型交付_V1.0/02_低保真交互原型.html",
+        "line": 700,
+        "end": 738
+      },
+      "observation": "PlantUML fence maps to registered offline SVG",
+      "actual": false,
+      "expected": true,
+      "contract_met": false
+    }
+  ]
+}

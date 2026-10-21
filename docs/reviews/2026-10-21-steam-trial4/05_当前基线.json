@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-21",
+  "head": "7a89f54797282c8771b0e2137ff35fb87c5d04a5",
+  "content_revision": "draft-20261021-trial3-detail",
+  "generation_rule_commit": null,
+  "generation_note": "Generating commit, PRD hash and 13 module hashes are self-reported in supplied _checks evidence; see 21 consistency record. Original generating workspace/PRD not independently verified; review HEAD is not backfilled as generation baseline.",
+  "manifest_sha256": "40a5162c094e2303c07f5ec02c0074c60f6fb259fdefaeaddaf2cd04bd6afc2b",
+  "modules": {
+    "standards/core.md": "c141184fb586f00aef5f143f5042bf1c5694c8b2e4a25f993b5241444babe452",
+    "standards/workflow-and-model.md": "8d2ef444c086438b3d5eb186acec7474bc0b594a1976f6ce02e972f685eab6f8",
+    "standards/ui-and-components.md": "db6385d10c424d30a11a68a262efe4143e94e1b1881a382a0f8bda6a47ec226a",
+    "standards/profiles/client.md": "3b752c58ddbcd68a0379a5d5834b1cb8af2ed4d624954155618fb043c5aa7f43",
+    "standards/profiles/desktop-web.md": "23899a325fd91f03cccc8c51cdf68ebd05752a27bca8d222f75fdf746cdd6ce1",
+    "standards/profiles/admin.md": "031da5f396b2dbe182b9f672937c589a618f003b68bc0be98664d5a29485a74b",
+    "standards/runtime-and-build.md": "bf00d19cc13794b613465667d22d7f3621994821c8622018d9fee20ea7812840",
+    "standards/diagrams-and-reader.md": "85a025338043a4d3b2351e11a257702a16f897306fb12ddd8f98b112d23b2d8c",
+    "standards/deliverables-ui.md": "bc03bbaee2b2a079e53ea19b04e8b05291224c8af121d58f6b54d25b3034ced8",
+    "standards/deliverables-business.md": "13537e56be60369f4e3dc6adb674cfc9019aa532851e74440f64f0088b88fb7a",
+    "standards/quality-and-evidence.md": "481b1a3eedfb8deea0265eae9df83dbfb2f688631fab21dc9a39a6fd0754578b",
+    "standards/decisions-and-change.md": "2e213a0a2dbb5609e472c5bc67d70eac5e77c2a7885f85c5f13456437145371c",
+    "standards/contracts-and-checklists.md": "5fc9f9cb8e55c1e3e05af390705695816e9fc139ee4055d2fed5b88ed6dd047c",
+    "reference/original-front-matter.md": "bd7dd98bbd12bc6317b53e0f6beec69674d7138c02976216b26c6d2af5e01182",
+    "reference/original-prompts.md": "1ba715f8203e3424d77282f1912ed4013a1218e6633ece0d86efcf1c1711988c",
+    "reference/examples.md": "a65af63209e30876bd91b179b16233ff412fa195b8b9d930b073aacefe89b0ee"
+  },
+  "archive": {
+    "archive\\AI原型图与组件级文档说明标准_V3.0.md": "d0c411cec047e0e2387a7a3c8f50f56cbbb7c8a2d4f88e6080ecf6a0ed4ba0ec"
+  },
+  "inputs": {
+    "trial": {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑4.0\\项目原型交付_V1.0\\02_低保真交互原型.html",
+      "sha256": "f91cd067ee417aa34fed55b98ed43b88965831ac5542a195fbd393b956a8f133",
+      "bytes": 2464897,
+      "lines": 2864
+    },
+    "final": {
+      "path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.0\\02_低保真交互原型-最终版本.html",
+      "sha256": "04bf9e76f416833e1ac84e97408b81cbceb043bb44dca4a0529f3c80f418765f",
+      "bytes": 5930662,
+      "lines": 7997
+    }
+  },
+  "capabilities": {
+    "static": "available",
+    "node_vm": "planned; isolated fixtures, not browser evidence",
+    "browser": "not yet executed"
+  },
+  "scope": "compare and prepare review documents; no prototype edits or active-rule semantic changes"
+}
