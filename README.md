@@ -2,9 +2,9 @@
 
 本仓库用于维护「已评审 PRD → 单文件离线 HTML + 9 份 Markdown」的生成规范。当前规则基线为 **V3.0**；用户已确认模块化维护及本轮澄清，维护结构为 **modular-1（未发布）**。
 
-当前内容修订为 `draft-20261020-selftest`：已在Q1～Q7基础上落实用户本轮1～8确认，尚未正式发布。完整内容见 [本轮确认与落实](docs/reviews/2026-10-20-cross-model-selftest/04_确认与落实.md)。
+当前内容修订为 `draft-20261021-trial3`：已落实用户对试跑 3.0 反馈方案的批准，尚未正式发布。完整内容见 [本轮方案与落实](docs/reviews/2026-10-21-steam-trial3/06_规范方案_待用户确认.md)。
 
-本轮将AI自测/修复/回归及最终文件证据归入quality，修正灰度、菜单、列预算、确认范围、等价实现和业务外链；按能力加载 [模式细节](docs/patterns/README.md)，商城设计/订单标签留 [项目契约](reference/projects/steam-store.md)。长报告不进入默认装载。
+本轮将AI自测/修复/回归及最终文件证据归入quality，并补齐画布滚动、模拟条件、后台人工排序、权限空分组、桌面布局、弹层宿主定位和灰度组件一致性规则；按能力加载 [模式细节](docs/patterns/README.md)，商城设计/订单标签留 [项目契约](reference/projects/steam-store.md)。长报告不进入默认装载。
 
 历史依据为 [试跑2.0全域差异](docs/reviews/2026-10-20-steam-trial2/00_阅读与确认.md) 及 [V2.2规则复核](docs/reviews/2026-10-20-cross-model-selftest/00_重新梳理与结论.md)。条款已确认不等于原型通过：60条浏览器用例、跨模型生成试验仍未执行，参考代码未晋级为浏览器验收通过。
 

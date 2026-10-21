@@ -1,0 +1,2696 @@
+{
+  "review_date": "2026-10-21",
+  "method": "static_source_and_embedded_data_only",
+  "browser_tests": "not_run_static_review_only",
+  "limits": [
+    "No screenshot/computed-style/click/scroll/browser verification",
+    "Embedded historical CHK claims were not re-executed",
+    "External PRD and independent MD files not supplied for this review"
+  ],
+  "trial": {
+    "path": "D:\\模型汇总\\GitHub维护测试\\试跑3.0\\Steam商城原型交付_V1.4\\02_低保真交互原型-试跑3.0.html",
+    "sha256": "c8dcc6bc8218d7b99ecdd5a2c358268e25848ac6dc9bafa948e53ab97e5fa762",
+    "bytes": 1753912,
+    "lines": 4808,
+    "title": "Steam 商品商城 — 低保真交互原型 V1.4-D4",
+    "declared_meta": {
+      "project": "Steam 商品商城",
+      "prdName": "Steam商城首期产品需求文档",
+      "prdVersion": "V1.4",
+      "prdDate": "2026-10-15",
+      "prdStatus": "待评审",
+      "deliverVersion": "V1.4-D4",
+      "batch": "BATCH-2026-10-20-05",
+      "standard": "V3.0 / modular-1",
+      "contentRevision": "draft-20261020-selftest",
+      "standardCommit": "d97ab80bed01f9247b76f4f01b4243deaeb158b0",
+      "manifestHash": "b8e081305f6a8d033221c210dcf003a1f7a26800d094e9597ebc333fda2e5f4c",
+      "prdHash": "0ab82b51be4263921cedf716f98851823138bf9afb1c78b3ee5d56c756778eff",
+      "loadedModules": "core, workflow, ui, client, web, admin, runtime, reader, docs-ui, docs-business, quality, change, checklists; support: patterns(4), acceptance(4), project-steam, golden-records",
+      "status": "设计评审稿",
+      "updated": "2026-10-20",
+      "deliveryDir": "Steam商城原型交付_V1.4"
+    },
+    "registered_pages": 38,
+    "pages_by_end": {
+      "APP": 17,
+      "WEB": 8,
+      "ADM": 13
+    },
+    "registered_page_states": 166,
+    "pages": [
+      {
+        "id": "APP-HOME-01",
+        "end": "APP",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "暂无商品"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "FIRST_ENTRY",
+            "首次进入提醒"
+          ]
+        ]
+      },
+      {
+        "id": "APP-SEARCH-01",
+        "end": "APP",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "EDITING",
+            "输入中"
+          ],
+          [
+            "EMPTY",
+            "推荐内容为空"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ]
+        ]
+      },
+      {
+        "id": "APP-SEARCH-02",
+        "end": "APP",
+        "states": [
+          [
+            "RESULTS",
+            "有结果"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "无结果"
+          ],
+          [
+            "ERROR",
+            "请求失败"
+          ],
+          [
+            "END",
+            "已到末页"
+          ]
+        ]
+      },
+      {
+        "id": "APP-PRODUCT-01",
+        "end": "APP",
+        "states": [
+          [
+            "DEFAULT",
+            "可售"
+          ],
+          [
+            "UNAVAILABLE",
+            "下架/售罄"
+          ],
+          [
+            "EXPIRED",
+            "价格或信息变化"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "PENDING_ORDER",
+            "订单处理中"
+          ]
+        ]
+      },
+      {
+        "id": "APP-BUY-01",
+        "end": "APP",
+        "states": [
+          [
+            "OPEN",
+            "已打开"
+          ],
+          [
+            "VALIDATION_ERROR",
+            "校验失败"
+          ],
+          [
+            "SUBMITTING",
+            "提交中"
+          ]
+        ]
+      },
+      {
+        "id": "APP-AUTH-01",
+        "end": "APP",
+        "states": [
+          [
+            "VERIFIED_ADULT",
+            "已实名成年"
+          ],
+          [
+            "VERIFIED_MINOR",
+            "已实名未成年"
+          ],
+          [
+            "UNVERIFIED",
+            "未实名"
+          ],
+          [
+            "UNKNOWN",
+            "状态未知"
+          ],
+          [
+            "CLOSED",
+            "已关闭"
+          ]
+        ]
+      },
+      {
+        "id": "APP-AUTH-02",
+        "end": "APP",
+        "states": [
+          [
+            "LOGIN",
+            "未登录"
+          ],
+          [
+            "UNVERIFIED",
+            "未实名"
+          ],
+          [
+            "MINOR",
+            "未成年"
+          ],
+          [
+            "FAILED",
+            "核验失败"
+          ],
+          [
+            "LAUNCHING",
+            "平台处理中"
+          ]
+        ]
+      },
+      {
+        "id": "APP-AGREEMENT-01",
+        "end": "APP",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "STALE",
+            "版本已更新"
+          ]
+        ]
+      },
+      {
+        "id": "APP-AGREEMENT-02",
+        "end": "APP",
+        "states": [
+          [
+            "SHOWN",
+            "已展示"
+          ],
+          [
+            "SUBMITTING",
+            "确认中"
+          ]
+        ]
+      },
+      {
+        "id": "APP-PHONE-01",
+        "end": "APP",
+        "states": [
+          [
+            "UNBOUND",
+            "未绑定"
+          ],
+          [
+            "BINDING",
+            "绑定中"
+          ],
+          [
+            "FAILED",
+            "绑定失败"
+          ],
+          [
+            "UNKNOWN",
+            "结果未知"
+          ]
+        ]
+      },
+      {
+        "id": "APP-CHECKOUT-01",
+        "end": "APP",
+        "states": [
+          [
+            "DEFAULT",
+            "待支付"
+          ],
+          [
+            "EXPIRED",
+            "订单失效"
+          ],
+          [
+            "SUBMITTING",
+            "提交中"
+          ],
+          [
+            "ERROR",
+            "支付发起失败"
+          ]
+        ]
+      },
+      {
+        "id": "APP-PAYRET-01",
+        "end": "APP",
+        "states": [
+          [
+            "SHOWN",
+            "待确认"
+          ],
+          [
+            "QUERYING",
+            "查询中"
+          ],
+          [
+            "TIMEOUT",
+            "查询无结论"
+          ]
+        ]
+      },
+      {
+        "id": "APP-RESULT-01",
+        "end": "APP",
+        "states": [
+          [
+            "CODE_DELIVERED",
+            "口令码已交付"
+          ],
+          [
+            "ISSUING",
+            "发码中"
+          ],
+          [
+            "CODE_EXCEPTION",
+            "交付异常"
+          ],
+          [
+            "GIFT_PENDING",
+            "赠送待处理"
+          ],
+          [
+            "GIFT_DONE",
+            "赠送已完成"
+          ],
+          [
+            "CONFIRMING",
+            "支付确认中"
+          ],
+          [
+            "QUERY_ERROR",
+            "结果查询失败"
+          ]
+        ]
+      },
+      {
+        "id": "APP-ORDER-01",
+        "end": "APP",
+        "states": [
+          [
+            "RESULTS",
+            "有订单"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "暂无订单"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "SESSION_EXPIRED",
+            "会话失效"
+          ]
+        ]
+      },
+      {
+        "id": "APP-ORDER-02",
+        "end": "APP",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "ISSUING",
+            "交付处理中"
+          ],
+          [
+            "EXCEPTION",
+            "交付异常"
+          ],
+          [
+            "REPLACED",
+            "已补发/换码"
+          ],
+          [
+            "SESSION_EXPIRED",
+            "会话失效"
+          ]
+        ]
+      },
+      {
+        "id": "APP-PROFILE-01",
+        "end": "APP",
+        "states": [
+          [
+            "LOGGED_IN",
+            "已登录"
+          ],
+          [
+            "GUEST",
+            "未登录"
+          ],
+          [
+            "UNKNOWN",
+            "资格状态未知"
+          ]
+        ]
+      },
+      {
+        "id": "APP-SERVICE-01",
+        "end": "APP",
+        "states": [
+          [
+            "WITH_ORDER",
+            "带订单号"
+          ],
+          [
+            "NO_ORDER",
+            "不带订单号"
+          ],
+          [
+            "FALLBACK",
+            "无法唤起"
+          ]
+        ]
+      },
+      {
+        "id": "WEB-HOME-01",
+        "end": "WEB",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "暂无商品"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ]
+        ]
+      },
+      {
+        "id": "WEB-SEARCH-01",
+        "end": "WEB",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "RESULTS",
+            "有结果"
+          ],
+          [
+            "EMPTY",
+            "无结果"
+          ],
+          [
+            "ERROR",
+            "请求失败"
+          ]
+        ]
+      },
+      {
+        "id": "WEB-PRODUCT-01",
+        "end": "WEB",
+        "states": [
+          [
+            "DEFAULT",
+            "可售"
+          ],
+          [
+            "UNAVAILABLE",
+            "下架/售罄"
+          ],
+          [
+            "PENDING_ORDER",
+            "订单处理中"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ]
+        ]
+      },
+      {
+        "id": "WEB-CHECKOUT-01",
+        "end": "WEB",
+        "states": [
+          [
+            "DEFAULT",
+            "待支付"
+          ],
+          [
+            "QR_PENDING",
+            "待扫码"
+          ],
+          [
+            "QR_CONFIRMING",
+            "确认中"
+          ],
+          [
+            "QR_SUCCESS",
+            "支付成功"
+          ],
+          [
+            "EXPIRED",
+            "订单失效"
+          ],
+          [
+            "ERROR",
+            "支付异常"
+          ]
+        ]
+      },
+      {
+        "id": "WEB-ORDER-01",
+        "end": "WEB",
+        "states": [
+          [
+            "RESULTS",
+            "有订单"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "暂无订单"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "SESSION_EXPIRED",
+            "会话失效"
+          ]
+        ]
+      },
+      {
+        "id": "WEB-RESULT-01",
+        "end": "WEB",
+        "states": [
+          [
+            "CODE_DELIVERED",
+            "口令码已交付"
+          ],
+          [
+            "ISSUING",
+            "发码中"
+          ],
+          [
+            "CODE_EXCEPTION",
+            "交付异常"
+          ],
+          [
+            "GIFT_PENDING",
+            "赠送待处理"
+          ],
+          [
+            "CONFIRMING",
+            "支付确认中"
+          ]
+        ]
+      },
+      {
+        "id": "WEB-AGREEMENT-01",
+        "end": "WEB",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ]
+        ]
+      },
+      {
+        "id": "WEB-SERVICE-01",
+        "end": "WEB",
+        "states": [
+          [
+            "WITH_ORDER",
+            "携带订单号"
+          ],
+          [
+            "NO_ORDER",
+            "未携带订单号"
+          ],
+          [
+            "FALLBACK",
+            "无法唤起备用"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-LOGIN-01",
+        "end": "ADM",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "ERROR",
+            "账号或密码错误"
+          ],
+          [
+            "LOCKED",
+            "账号锁定"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-DASH-01",
+        "end": "ADM",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-HOME-01",
+        "end": "ADM",
+        "states": [
+          [
+            "DEFAULT",
+            "已发布"
+          ],
+          [
+            "EDITING",
+            "编辑中"
+          ],
+          [
+            "VALIDATION_ERROR",
+            "校验失败"
+          ],
+          [
+            "SAVING",
+            "保存中"
+          ],
+          [
+            "ERROR",
+            "保存失败"
+          ],
+          [
+            "NO_PERM",
+            "无权限"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-PRODUCT-01",
+        "end": "ADM",
+        "states": [
+          [
+            "DEFAULT",
+            "有数据"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "ERROR",
+            "查询失败"
+          ],
+          [
+            "NO_PERM",
+            "无权限"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-SUPPLIER-01",
+        "end": "ADM",
+        "states": [
+          [
+            "DEFAULT",
+            "有数据"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "ERROR",
+            "查询失败"
+          ],
+          [
+            "NO_PERM",
+            "无权限"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-ORDER-01",
+        "end": "ADM",
+        "states": [
+          [
+            "DEFAULT",
+            "有数据"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "ERROR",
+            "查询失败"
+          ],
+          [
+            "NO_PERM",
+            "无权限"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-GIFT-01",
+        "end": "ADM",
+        "states": [
+          [
+            "DEFAULT",
+            "有数据"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "ERROR",
+            "查询失败"
+          ],
+          [
+            "NO_PERM",
+            "无权限"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-CODE-01",
+        "end": "ADM",
+        "states": [
+          [
+            "DEFAULT",
+            "有数据"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "ERROR",
+            "查询失败"
+          ],
+          [
+            "NO_PERM",
+            "无权限"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-REFUND-01",
+        "end": "ADM",
+        "states": [
+          [
+            "DEFAULT",
+            "有数据"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "ERROR",
+            "查询失败"
+          ],
+          [
+            "NO_PERM",
+            "无权限"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-CONFIG-01",
+        "end": "ADM",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "EDITING",
+            "编辑中"
+          ],
+          [
+            "VALIDATION_ERROR",
+            "校验失败"
+          ],
+          [
+            "SAVING",
+            "保存中"
+          ],
+          [
+            "ERROR",
+            "保存失败"
+          ],
+          [
+            "NO_PERM",
+            "无权限"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-NOTIFY-01",
+        "end": "ADM",
+        "states": [
+          [
+            "DEFAULT",
+            "有数据"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "ERROR",
+            "查询失败"
+          ],
+          [
+            "NO_PERM",
+            "无权限"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-RBAC-01",
+        "end": "ADM",
+        "states": [
+          [
+            "DEFAULT",
+            "有数据"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "ERROR",
+            "查询失败"
+          ],
+          [
+            "NO_PERM",
+            "无权限"
+          ],
+          [
+            "DRAWER",
+            "权限弹窗"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-AUDIT-01",
+        "end": "ADM",
+        "states": [
+          [
+            "DEFAULT",
+            "有数据"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "ERROR",
+            "查询失败"
+          ],
+          [
+            "NO_PERM",
+            "无权限"
+          ]
+        ]
+      }
+    ],
+    "registered_component_instances": 143,
+    "component_definitions": 79,
+    "definitions_with_ten_sections": 79,
+    "section_repetition": [
+      {
+        "section": 1,
+        "max_exact_repetitions": 1,
+        "example": "组件ID：COM-CLIENT-C01\n中文名称：搜索输入框\n所属页面：APP-SEARCH-01、APP-SEARCH-02\n需求来源：SEARCH-01、SEARCH-02\n业务目的：统一客户端共享交互，保证跨页面一致\n模式ID：PAT-INPUT-01\n适用端：移动 H5\n职责范围：输入、清空、提交、焦点与校验\n不承担：不承担其他组件职责、不写入未确认的业务规则"
+      },
+      {
+        "section": 2,
+        "max_exact_repetitions": 4,
+        "example": "| 字段/对象 | 类型与格式 | 来源及字段路径 | 获取/刷新时机 | 必填/可编辑 | 默认与空值 | 校验/过期 | 脱敏/权限 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| 关键词 | string(1..40) | 用户输入；搜索框值 | 输入/提交 | 提交时必填 | 空 | 去首尾空格；空不查询 | 公开 |\n| 关键词快照 | string | 搜索提交时的参数；query.keyword | 提"
+      },
+      {
+        "section": 3,
+        "max_exact_repetitions": 1,
+        "example": "| 操作/触发 | 前置与校验 | 系统处理/接口 | 数据及状态变化 | 成功/失败去向 | 幂等、重复或取消规则 |\n| --- | --- | --- | --- | --- | --- |\n| 输入 | 输入框可编辑 | 只更新草稿，不整页重渲染 | 保存关键词草稿 | 输入法与焦点保持 | 连续输入不重复提交 |\n| 清空 | 有输入值 | 清空输入并聚焦 | 关键词草稿清空 | 显示占位文案 | 不触发搜索 |\n| 提交 | 关键词非空 | 提交搜索；空值不查询 "
+      },
+      {
+        "section": 4,
+        "max_exact_repetitions": 1,
+        "example": "| 状态/场景 | 具体文案 | 展示位置/形式 | 可操作项 | 禁用项及提示原因 | 焦点/键盘/滚动/关闭 | 恢复或下一步 |\n| --- | --- | --- | --- | --- | --- | --- |\n| DEFAULT | 输入商品名称搜索 | 输入框占位 | 输入/清空/提交 | 无 | 获得焦点显示焦点环 | — |\n| INVALID | 请输入商品名称 | 输入框下方 | 继续输入 | 提交 | 保留输入 | 修正后消失 |"
+      },
+      {
+        "section": 5,
+        "max_exact_repetitions": 37,
+        "example": "矩形卡片/按钮；移动端主交互热区≥44×44 CSS 像素；白底、1px #c9cdd3 边框；主按钮深灰 #2f343b 白字；状态同时使用文字与颜色；长文案换行；不引入外部字体与图标。"
+      },
+      {
+        "section": 6,
+        "max_exact_repetitions": 1,
+        "example": "| 当前状态 | 触发事件 | 守卫条件 | 目标状态 | 界面变化 | 数据变化 | 禁止操作 | 关联 01/04 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| DEFAULT | 输入 | — | EDITING | 显示清除按钮 | 保存草稿 | — | 01 状态矩阵 |\n| EDITING | 提交 | 关键词非空 | RESULTS | 进入结果页 | 写快照 | 空关键词禁止 | SEARCH-01"
+      },
+      {
+        "section": 7,
+        "max_exact_repetitions": 8,
+        "example": "随宿主页面 API。 触发前完成前端校验，服务端始终复核；超时/未知不推定成功；重复提交使用幂等键或请求版本；无接口时只做本地页面状态。"
+      },
+      {
+        "section": 8,
+        "max_exact_repetitions": 31,
+        "example": "业务埋点：不适用。依据本标准第 1.5 与第 25.1 节，管理后台不进行业务埋点设计，独立 06 仅包含客户端事件。"
+      },
+      {
+        "section": 9,
+        "max_exact_repetitions": 5,
+        "example": "TC-ADM-007。 可判定行为包括：主路径成功、失败/超时、取消/返回、重复提交、权限拒绝、恢复后状态一致。未实际执行时不得写“已通过”。"
+      },
+      {
+        "section": 10,
+        "max_exact_repetitions": 49,
+        "example": "无。"
+      }
+    ],
+    "embedded_documents": [
+      {
+        "file": "00_交付说明与变更记录.md",
+        "chars": 8472,
+        "sha256_utf8": "785cf3a715c4f6d2bbe92bc510a448a561ed4f6e2bd6512325e0a3fc97859200"
+      },
+      {
+        "file": "01_页面与状态说明.md",
+        "chars": 81229,
+        "sha256_utf8": "323aad56e38894d52e70fb6f1a5780d74ea649a2fc70008504d7eed3a0dbe5e6"
+      },
+      {
+        "file": "03_组件级文档.md",
+        "chars": 160486,
+        "sha256_utf8": "563ad10423966cd38cc08fe57cd7d9193bfa3e58a95ad8f1bb5cd4e63de77e2d"
+      },
+      {
+        "file": "04_业务流程与异常规则.md",
+        "chars": 23528,
+        "sha256_utf8": "03e9ee57e24b8cd80a4291d05577c68b8d37c694788682023460221df24294dc"
+      },
+      {
+        "file": "05_接口数据与权限说明.md",
+        "chars": 43851,
+        "sha256_utf8": "3f7f360389d6ea41406ede36710ea6ebebad0a06aa45414660745f0b4990498e"
+      },
+      {
+        "file": "06_埋点文档.md",
+        "chars": 7020,
+        "sha256_utf8": "b9f39994f8dd9826fdb2d90742b916fdab05ee29677acab907411beeae712fbc"
+      },
+      {
+        "file": "07_测试用例.md",
+        "chars": 34543,
+        "sha256_utf8": "a978dd53374830344e170bed3513488c00e678df60a12812ec7189cb3e5ee68a"
+      },
+      {
+        "file": "08_验证记录与验收映射.md",
+        "chars": 22331,
+        "sha256_utf8": "d209cfe86ae734902d3cedcd43e7773329ebded29f67604afb569304626ad47c"
+      },
+      {
+        "file": "09_待确认事项与设计决策.md",
+        "chars": 5728,
+        "sha256_utf8": "d0016c31dce5586240140fd46f8c4c4494d4a50b7de56c555649e9f2ff158865"
+      },
+      {
+        "file": "Steam商城_PRD_V1.4.md",
+        "chars": 27044,
+        "sha256_utf8": "0ab82b51be4263921cedf716f98851823138bf9afb1c78b3ee5d56c756778eff"
+      }
+    ],
+    "diagrams_count": 28,
+    "diagrams_by_type": {
+      "FL": 9,
+      "SM": 5,
+      "SEQ": 14
+    },
+    "diagram_entries": [
+      {
+        "id": "FL-BUY-001",
+        "width": 447,
+        "height": 1019,
+        "source_sha256": "cfc38344f30667a9f61f067ab8d81ac2d410cd597b59cec1a9acf775a0103a6b"
+      },
+      {
+        "id": "FL-AUTH-001",
+        "width": 432,
+        "height": 680,
+        "source_sha256": "36d449601872ef96321b806bd57acca752083707430320093a83bca8da125b18"
+      },
+      {
+        "id": "FL-PAY-001",
+        "width": 578,
+        "height": 513,
+        "source_sha256": "a68e2347e0a9f8efdef6240891b7c5d4b73277564cafcd32f90ff6bdaa28ee48"
+      },
+      {
+        "id": "FL-CODE-001",
+        "width": 377,
+        "height": 769,
+        "source_sha256": "adcf5668f890f060aca5f406741ca7c5b8954cc44f51cecd754e2076c0742e4b"
+      },
+      {
+        "id": "FL-GIFT-001",
+        "width": 226,
+        "height": 593,
+        "source_sha256": "ae1f3b2dbf3238c6e9e90a61451b74554ec0b1d456875df9cbb6ec85aec07d52"
+      },
+      {
+        "id": "FL-AFTER-001",
+        "width": 174,
+        "height": 473,
+        "source_sha256": "a0ee74761697db1ff06fbe7853aca8b9f4c1a423f55698b2c15ad4a6d595760a"
+      },
+      {
+        "id": "FL-REFUND-001",
+        "width": 360,
+        "height": 546,
+        "source_sha256": "a7da36c2ba8b894a4267039c80f9145f5f0f8e46fbd68317817572212e3cd71b"
+      },
+      {
+        "id": "FL-HOME-001",
+        "width": 286,
+        "height": 482,
+        "source_sha256": "08edef48cdaf0851ddf64678b022a73db3e47c482eb8942d602268c817904a02"
+      },
+      {
+        "id": "FL-NOTIFY-001",
+        "width": 250,
+        "height": 482,
+        "source_sha256": "d316b61948a6cb3fff86abf3a970885bd0594651a168133cd8090c67ca5ad825"
+      },
+      {
+        "id": "SM-ORDER-PAY",
+        "width": 432,
+        "height": 291,
+        "source_sha256": "ab501d11b5e14593a6cac0c8df4a72ec0250103027dd189b131895ab99e5b209"
+      },
+      {
+        "id": "SM-CODE",
+        "width": 338,
+        "height": 410,
+        "source_sha256": "56a367153d3a4e53edfcc06f885d081c79e42b7738f8d8e33395774d12060fe0"
+      },
+      {
+        "id": "SM-GIFT",
+        "width": 191,
+        "height": 410,
+        "source_sha256": "cac6c2533205e73d0f110c124610adba0134dcccc33b746ace7766d637d5162b"
+      },
+      {
+        "id": "SM-REFUND",
+        "width": 246,
+        "height": 291,
+        "source_sha256": "67318858edb8b4764fade4e177c2a0b7034a3d8db25f35223870669bc52040f9"
+      },
+      {
+        "id": "SM-NOTIFY",
+        "width": 318,
+        "height": 291,
+        "source_sha256": "4244e5939ab34b8a75b82d7f3a279901a72f59154a1d4528d387f081ef14dc2f"
+      },
+      {
+        "id": "SEQ-AUTH-001",
+        "width": 500,
+        "height": 533,
+        "source_sha256": "c3839c8dc8943f3ee38643936ca0843fd1e9200720cb214fb30f25ab70e959e7"
+      },
+      {
+        "id": "SEQ-AUTH-002",
+        "width": 380,
+        "height": 394,
+        "source_sha256": "50129a366f12c8f13b1c7d3dc569e40f68becdc52e31b380e5bc92a4417eeaad"
+      },
+      {
+        "id": "SEQ-BUY-001",
+        "width": 352,
+        "height": 433,
+        "source_sha256": "aef62e1486262300d08ffbe7dccdbdb534992a85fcd9d7c37f3d36cb2a80e0c9"
+      },
+      {
+        "id": "SEQ-PAY-001",
+        "width": 366,
+        "height": 536,
+        "source_sha256": "da5ccfa7c674ed64f53ea9ca7755dc3d5d3e90ca71482aab5e448b76760c51a5"
+      },
+      {
+        "id": "SEQ-PAY-002",
+        "width": 393,
+        "height": 450,
+        "source_sha256": "d26688d452cb48a65f972c9adebfcd8cca851757842a153bce16294ba7b0090c"
+      },
+      {
+        "id": "SEQ-CODE-001",
+        "width": 357,
+        "height": 514,
+        "source_sha256": "598f31fc0daa8c111e20b7945dcb7a716216b86bfa03b4c9815e1481db6af49d"
+      },
+      {
+        "id": "SEQ-GIFT-001",
+        "width": 322,
+        "height": 340,
+        "source_sha256": "4255ff9f6828a7a4230ed865c2eb9caf849c8f50275e2b168813fb4faa32cdd8"
+      },
+      {
+        "id": "SEQ-REFUND-001",
+        "width": 326,
+        "height": 501,
+        "source_sha256": "d29d03268dee31217d97c4208a0b4d7b292b67bd23054be41f0251d8f9b7dfb4"
+      },
+      {
+        "id": "SEQ-NOTIFY-001",
+        "width": 370,
+        "height": 407,
+        "source_sha256": "9a9c5ec2b0cd4d210a486783656c7b303717aaeb8334d7c1476d7a403a18d0d4"
+      },
+      {
+        "id": "SEQ-ADM-001",
+        "width": 348,
+        "height": 389,
+        "source_sha256": "eae3835d0c05466596fd1eddf9f28f90e7176ab4da01d2aacf4530d53fc2ab8e"
+      },
+      {
+        "id": "SEQ-ADM-002",
+        "width": 229,
+        "height": 308,
+        "source_sha256": "9380834789db5261da9031383e6d1c747188aeedfe762fd574fcf8d1214f0627"
+      },
+      {
+        "id": "SEQ-ORDER-001",
+        "width": 432,
+        "height": 457,
+        "source_sha256": "4a87767785f769f0be4451e466f5ec2ef6c9b4e19c4a4f7746a02945a459b60a"
+      },
+      {
+        "id": "SEQ-STOCK-001",
+        "width": 370,
+        "height": 446,
+        "source_sha256": "54ed9ba013f9d08d782c7b985c58d299dd81a22f321e820dc6ff258341057357"
+      },
+      {
+        "id": "SEQ-AFTER-001",
+        "width": 761,
+        "height": 529,
+        "source_sha256": "f630ed4ebbc827c18904a6746803c536e244b1bfda86cb780847b74b9f54755c"
+      }
+    ],
+    "plantuml_fences": 28,
+    "unmatched_fences": [],
+    "syntax_checks": [
+      {
+        "index": 0,
+        "html_line": 519,
+        "exit_code": 0,
+        "diagnostic": ""
+      },
+      {
+        "index": 1,
+        "html_line": 523,
+        "exit_code": 0,
+        "diagnostic": ""
+      },
+      {
+        "index": 2,
+        "html_line": 530,
+        "exit_code": 0,
+        "diagnostic": ""
+      }
+    ],
+    "anchors": {
+      "shell_spaced": {
+        "line": 25,
+        "excerpt": ".shell { max-width: 1480px; margin: 0 auto; padding: 16px; display: flex; flex-direction: column; gap: 12px; container-type: inline-size; }"
+      },
+      "phone_spaced": {
+        "line": 53,
+        "excerpt": ".phone { width: 320px; min-height: 610px; border: 2px solid #242424; border-radius: 22px; background: #fff; overflow: hidden; display: flex; flex-direction: column; }"
+      },
+      "app_body": {
+        "line": 61,
+        "excerpt": ".appbody { flex: 1; overflow-y: auto; overflow-x: hidden; background: #f7f7f7; padding-bottom: 8px; }"
+      },
+      "review_scroller": {
+        "line": 406,
+        "excerpt": ".component-inspector-body { min-width: 0; }"
+      },
+      "fixed_table_font": {
+        "line": 409,
+        "excerpt": ".docsec table { width: 100%; border-collapse: collapse; margin: 4px 0 8px; font-size: 12px; table-layout: fixed; }"
+      },
+      "review_render": {
+        "line": 3032,
+        "excerpt": "  function render() {"
+      },
+      "component_switch": {
+        "line": 3361,
+        "excerpt": "    const comp = $(\"#rv-comp\");"
+      },
+      "actual_handler": {
+        "line": 3671,
+        "excerpt": "  function handleAct(act, ds) {"
+      },
+      "diagram_render": {
+        "line": 3313,
+        "excerpt": "  function renderDiagram() {"
+      },
+      "outline_outside": {
+        "line": 470,
+        "excerpt": ".outlined { outline: 2px dashed var(--focus); outline-offset: 2px; }"
+      },
+      "reader_three_columns": {
+        "line": 455,
+        "excerpt": ".reader-body-wrap { display: grid; grid-template-columns: 190px minmax(0, 1fr); min-height: 0; flex: 1; }"
+      },
+      "picker_registry": {
+        "line": 3055,
+        "excerpt": "      const list = compsOfPage(RV.pageId);"
+      },
+      "drawer_missing_fallback": {
+        "line": 2602,
+        "excerpt": "    const row = cfg.rows().find((x) => x.id === r.drawerId) || cfg.rows()[0];"
+      },
+      "global_toast": {
+        "line": 4761,
+        "excerpt": "  function showToast(msg, kind) {"
+      },
+      "phone_overlay": {
+        "line": 218,
+        "excerpt": ".app-mask { position: absolute; inset: 0; background: rgba(20,22,26,.45); display: flex; align-items: flex-end; justify-content: center; z-index: 30; }"
+      },
+      "sort_touch": {
+        "line": 85,
+        "excerpt": ".sortbar button { white-space: nowrap; border: 0; background: transparent; color: var(--muted); font-size: 12px; padding: 5px 7px; border-radius: 3px; min-height: 30px; }"
+      },
+      "gradient_art": {
+        "line": 99,
+        "excerpt": ".art-star { background: #d9d9d9; }"
+      },
+      "mobile_ad": {
+        "line": 1880,
+        "excerpt": "    const adBlock = C(\"APP-HOME-01-C01\", `"
+      },
+      "reader_close": {
+        "line": 3262,
+        "excerpt": "  function closeReader() {"
+      },
+      "component_docs": {
+        "line": 520,
+        "excerpt": "window.COMP_DOCS = {\"COM-CLIENT-C01\":{\"id\":\"COM-CLIENT-C01\",\"name\":\"搜索输入框\",\"sections\":[\"组件ID：COM-CLIENT-C01\\n中文名称：搜索输入框\\n所属页面：APP-SEARCH-01、APP-SEARCH-02\\n需求来源：SEARCH-01、SEARCH-02\\n业务目的：统一客户端共享交互，保证跨页面一致\\n模式ID：PAT-INPUT-01\\n适用端：移动 H5\\n职责范围：输入、清空、提交、焦点与校验\\n不承担：不承担其他组件职责、不写入未确认的业务规则\",\"| 字段/对象 | 类型与格式 | 来源及字段路径 | 获取/刷新时机 | 必填/可编辑 | 默认与空值 | 校验/过期 | 脱敏/权限 |\\n| --- | --- | --- | --- | --- | --- | --- | --- |\\n| 关键词 | string(1..40) | 用户输入；搜索框值 | 输入/提交 | 提交时必填 | 空 | 去首尾空格；空不查询 | 公开 |\\n| 关键词快照 | string | 搜索提交时的参数；query.keyword | 提交后 | 是 | — | 结果页只读展示 | 公开 |\\n| 结果数量/分页游标 | number/string | 搜索服务；result.to"
+      },
+      "diagrams": {
+        "line": 521,
+        "excerpt": "window.DIAGRAMS = [{\"id\":\"FL-BUY-001\",\"title\":\"购买主流程\",\"from\":\"04\",\"src\":\"@startuml\\nskinparam defaultFontName \\\"Microsoft YaHei\\\"\\n|购买用户|\\nstart\\n:确认商品与规格;\\n:点击购买并支付;\\n|商城服务端|\\nif (已登录?) then (否)\\n  |平台|\\n  :平台登录;\\n  |商城服务端|\\nelse (是)\\nendif\\nif (已实名且成年?) then (否)\\n  :引导实名/拦截未成年/核验失败;\\n  stop\\nelse (是)\\nendif\\nif (已同意购买协议?) then (否)\\n  :展示购买须知并确认;\\nelse (是)\\nendif\\nif (已绑定手机号?) then (否)\\n  :引导绑定并重查;\\nelse (是)\\nendif\\n:校验商品/价格/好友链接;\\n:创建或恢复订单;\\n|购买用户|\\n:确认订单并支付;\\nstop\\n@enduml\",\"svg\":\"\\u003csvg xmlns=\\\"http://www.w3.org/2000/svg\\\" xmlns:xlink=\\\"http://www.w3.org/1999/xlink\\\" contentStyleType=\\\""
+      },
+      "docs": {
+        "line": 522,
+        "excerpt": "window.DOCS = [{\"file\":\"00_交付说明与变更记录.md\",\"md\":\"# 00_交付说明与变更记录\\n\\n| 项 | 内容 |\\n| --- | --- |\\n| 文档版本 / 交付批次 | V1.4-D4 / BATCH-2026-10-20-05 |\\n| 适用 PRD 版本及来源章节 | Steam商城首期产品需求文档 V1.4（2026-10-15，待评审） |\\n| 适用端、模块与本轮范围 | APP（移动 H5，平台 A/B/C 入口）、WEB（PC 平台 C 内嵌浏览器）、ADM（运营后台）；首期范围见本文 |\\n| 文档状态 | 设计评审稿（不等于业务/技术已批准） |\\n| 关联文件 | 00～09 全部交付文件；02 为唯一可操作原型 |\\n| 更新时间 | 2026-10-20 |\\n| 编写方式 | AI 辅助 |\\n| 评审人与确认日期 | （留空） |\\n\\n> 规则基线：V3.0 / modular-1 / draft-20261020-selftest。原型中的支付、实名、手机号、供应商取码与站内信均为模拟；真实联调未执行，不能据此宣称联调或测试通过。\\n\\n## 1. 项目与需求基线\\n\\n| 项 | 内容 |\\n| --- | --- |\\n| 项目 | Steam 商品商城首期：同一家公司销售、收款、售后和开票，三个入口"
+      }
+    },
+    "static_tokens": {
+      "container_queries": 1,
+      "dgzoom_property_declarations": 0,
+      "dgzoom_css_consumers": 0,
+      "handleAction_calls": 0,
+      "handleAction_function_definitions": 0,
+      "handleAction_assignments": 0
+    }
+  },
+  "final": {
+    "path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.0\\02_低保真交互原型-最终版本.html",
+    "sha256": "04bf9e76f416833e1ac84e97408b81cbceb043bb44dca4a0529f3c80f418765f",
+    "bytes": 5930662,
+    "lines": 7997,
+    "title": "Steam商城首期 低保真交互原型 V1.0",
+    "declared_meta": null,
+    "registered_pages": 41,
+    "pages_by_end": {
+      "APP": 17,
+      "WEB": 8,
+      "ADM": 16
+    },
+    "registered_page_states": 152,
+    "pages": [
+      {
+        "id": "APP-HOME-01",
+        "end": "APP",
+        "states": [
+          [
+            "RESULTS",
+            "默认（有商品）"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "无配置"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "NOTICE",
+            "叠加首次进入实名提醒"
+          ]
+        ]
+      },
+      {
+        "id": "APP-NOTICE-01",
+        "end": "APP",
+        "states": [
+          [
+            "UNVERIFIED",
+            "未实名（前往认证）"
+          ],
+          [
+            "VERIFIED",
+            "已实名（知道了）"
+          ],
+          [
+            "MINOR",
+            "已实名未成年"
+          ],
+          [
+            "UNKNOWN",
+            "未登录/状态未知（待评审）"
+          ]
+        ]
+      },
+      {
+        "id": "APP-SEARCH-01",
+        "end": "APP",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "EDITING",
+            "输入中"
+          ],
+          [
+            "EMPTY",
+            "内容为空"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ]
+        ]
+      },
+      {
+        "id": "APP-SEARCH-02",
+        "end": "APP",
+        "states": [
+          [
+            "RESULTS",
+            "有结果"
+          ],
+          [
+            "LOADING",
+            "查询中"
+          ],
+          [
+            "EMPTY",
+            "无结果"
+          ],
+          [
+            "ERROR",
+            "请求失败"
+          ],
+          [
+            "END",
+            "已到末页"
+          ]
+        ]
+      },
+      {
+        "id": "APP-PRODUCT-01",
+        "end": "APP",
+        "states": [
+          [
+            "DEFAULT",
+            "可售"
+          ],
+          [
+            "PARTIAL",
+            "资料部分缺失"
+          ],
+          [
+            "UNAVAILABLE",
+            "已下架/售罄"
+          ],
+          [
+            "PENDING_ORDER",
+            "订单处理中"
+          ],
+          [
+            "EXPANDED",
+            "介绍展开"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "PANEL",
+            "叠加购买面板"
+          ]
+        ]
+      },
+      {
+        "id": "APP-PANEL-01",
+        "end": "APP",
+        "states": [
+          [
+            "PANEL",
+            "面板打开"
+          ],
+          [
+            "PANEL_AGREE",
+            "叠加购买须知弹窗"
+          ],
+          [
+            "CDK_HELP",
+            "叠加 CDK 购买说明弹层"
+          ]
+        ]
+      },
+      {
+        "id": "APP-AUTH-01",
+        "end": "APP",
+        "states": [
+          [
+            "SHOWN",
+            "弹层展示"
+          ]
+        ]
+      },
+      {
+        "id": "APP-AGREEMENT-01",
+        "end": "APP",
+        "states": [
+          [
+            "DEFAULT",
+            "正文"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "STALE",
+            "版本已更新"
+          ]
+        ]
+      },
+      {
+        "id": "APP-PHONE-01",
+        "end": "APP",
+        "states": [
+          [
+            "SHOWN",
+            "弹层展示"
+          ],
+          [
+            "UNAVAILABLE",
+            "平台暂无绑定能力"
+          ]
+        ]
+      },
+      {
+        "id": "APP-CHECKOUT-01",
+        "end": "APP",
+        "states": [
+          [
+            "DEFAULT",
+            "待支付"
+          ],
+          [
+            "SHOWN",
+            "展示倒计时"
+          ],
+          [
+            "READONLY",
+            "已付款只读"
+          ],
+          [
+            "EXPIRED",
+            "价格变化"
+          ],
+          [
+            "SUBMITTING",
+            "提交中"
+          ],
+          [
+            "ERROR",
+            "读取失败"
+          ]
+        ]
+      },
+      {
+        "id": "APP-PAYRET-01",
+        "end": "APP",
+        "states": [
+          [
+            "SHOWN",
+            "询问弹窗"
+          ],
+          [
+            "QUERYING",
+            "查询中"
+          ],
+          [
+            "TIMEOUT",
+            "查询无结论"
+          ]
+        ]
+      },
+      {
+        "id": "APP-RESULT-01",
+        "end": "APP",
+        "states": [
+          [
+            "DELIVERED",
+            "口令码已交付"
+          ],
+          [
+            "ISSUING",
+            "发码中"
+          ],
+          [
+            "EXCEPTION",
+            "交付异常"
+          ],
+          [
+            "PAY_CONFIRMING",
+            "支付确认中"
+          ],
+          [
+            "GIFT_PENDING",
+            "赠送待处理"
+          ],
+          [
+            "GIFT_PROCESSING",
+            "赠送处理中"
+          ],
+          [
+            "GIFT_DONE",
+            "赠送已完成"
+          ],
+          [
+            "GIFT_EXCEPTION",
+            "赠送异常"
+          ],
+          [
+            "ERROR",
+            "读取失败"
+          ]
+        ]
+      },
+      {
+        "id": "APP-ORDER-01",
+        "end": "APP",
+        "states": [
+          [
+            "RESULTS",
+            "有订单"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "无订单"
+          ],
+          [
+            "ERROR",
+            "请求失败"
+          ],
+          [
+            "SESSION_EXPIRED",
+            "登录失效"
+          ]
+        ]
+      },
+      {
+        "id": "APP-ORDER-02",
+        "end": "APP",
+        "states": [
+          [
+            "DEFAULT",
+            "已交付"
+          ],
+          [
+            "CODE_ISSUING",
+            "发码中"
+          ],
+          [
+            "CODE_EXCEPTION",
+            "交付异常"
+          ],
+          [
+            "REPLACED",
+            "已换码"
+          ],
+          [
+            "GIFT",
+            "赠送待处理"
+          ],
+          [
+            "ERROR",
+            "读取失败"
+          ]
+        ]
+      },
+      {
+        "id": "APP-MINE-01",
+        "end": "APP",
+        "states": [
+          [
+            "LOGGED_IN",
+            "已登录"
+          ],
+          [
+            "GUEST",
+            "未登录"
+          ],
+          [
+            "UNKNOWN",
+            "状态未知"
+          ]
+        ]
+      },
+      {
+        "id": "APP-SERVICE-01",
+        "end": "APP",
+        "states": [
+          [
+            "WITH_ORDER",
+            "带订单号"
+          ],
+          [
+            "NO_ORDER",
+            "不带订单号"
+          ],
+          [
+            "FALLBACK",
+            "无法唤起"
+          ]
+        ]
+      },
+      {
+        "id": "APP-CONTAINER-01",
+        "end": "APP",
+        "states": [
+          [
+            "EXTERNAL",
+            "外部容器"
+          ]
+        ]
+      },
+      {
+        "id": "WEB-HOME-01",
+        "end": "WEB",
+        "states": [
+          [
+            "RESULTS",
+            "默认"
+          ],
+          [
+            "EMPTY",
+            "无配置"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ]
+        ]
+      },
+      {
+        "id": "WEB-SEARCH-01",
+        "end": "WEB",
+        "states": [
+          [
+            "DEFAULT",
+            "默认态"
+          ],
+          [
+            "RESULTS",
+            "有结果"
+          ],
+          [
+            "EMPTY",
+            "无结果"
+          ],
+          [
+            "ERROR",
+            "请求失败"
+          ]
+        ]
+      },
+      {
+        "id": "WEB-PRODUCT-01",
+        "end": "WEB",
+        "states": [
+          [
+            "DEFAULT",
+            "可售"
+          ],
+          [
+            "EXPANDED",
+            "介绍展开"
+          ],
+          [
+            "UNAVAILABLE",
+            "已下架"
+          ],
+          [
+            "PENDING_ORDER",
+            "订单处理中"
+          ]
+        ]
+      },
+      {
+        "id": "WEB-CHECKOUT-01",
+        "end": "WEB",
+        "states": [
+          [
+            "DEFAULT",
+            "待支付"
+          ],
+          [
+            "QR_WAIT",
+            "收银台·待扫码"
+          ],
+          [
+            "QR_CONFIRMING",
+            "收银台·支付确认中"
+          ],
+          [
+            "QR_SUCCESS",
+            "收银台·支付成功"
+          ],
+          [
+            "SUBMITTING",
+            "提交中"
+          ],
+          [
+            "ERROR",
+            "读取失败"
+          ]
+        ]
+      },
+      {
+        "id": "WEB-PAYRET-01",
+        "end": "WEB",
+        "states": [
+          [
+            "SHOWN",
+            "询问弹窗"
+          ],
+          [
+            "QUERYING",
+            "查询中"
+          ]
+        ]
+      },
+      {
+        "id": "WEB-RESULT-01",
+        "end": "WEB",
+        "states": [
+          [
+            "DELIVERED",
+            "已交付"
+          ],
+          [
+            "ISSUING",
+            "发码中"
+          ],
+          [
+            "EXCEPTION",
+            "交付异常"
+          ],
+          [
+            "GIFT_PENDING",
+            "赠送待处理"
+          ],
+          [
+            "ERROR",
+            "读取失败"
+          ]
+        ]
+      },
+      {
+        "id": "WEB-ORDER-01",
+        "end": "WEB",
+        "states": [
+          [
+            "RESULTS",
+            "有订单"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "ERROR",
+            "请求失败"
+          ],
+          [
+            "SESSION_EXPIRED",
+            "登录失效"
+          ],
+          [
+            "DRAWER",
+            "详情抽屉"
+          ]
+        ]
+      },
+      {
+        "id": "WEB-MINE-01",
+        "end": "WEB",
+        "states": [
+          [
+            "LOGGED_IN",
+            "已登录"
+          ],
+          [
+            "GUEST",
+            "未登录"
+          ],
+          [
+            "UNKNOWN",
+            "状态未知"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-LOGIN-01",
+        "end": "ADM",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "ERROR",
+            "登录失败"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-HOME-01",
+        "end": "ADM",
+        "states": [
+          [
+            "RESULTS",
+            "有记录"
+          ],
+          [
+            "EMPTY",
+            "无数据（异常）"
+          ],
+          [
+            "ERROR",
+            "读取失败"
+          ],
+          [
+            "DRAWER",
+            "编辑抽屉"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-GOODS-01",
+        "end": "ADM",
+        "states": [
+          [
+            "RESULTS",
+            "有记录"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "ERROR",
+            "查询失败"
+          ],
+          [
+            "DRAWER",
+            "编辑抽屉"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-STOCK-01",
+        "end": "ADM",
+        "states": [
+          [
+            "RESULTS",
+            "有记录"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "DRAWER",
+            "同步记录"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-SEARCH-01",
+        "end": "ADM",
+        "states": [
+          [
+            "RESULTS",
+            "有记录"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "DRAWER",
+            "新增/编辑弹窗"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-ORDER-01",
+        "end": "ADM",
+        "states": [
+          [
+            "RESULTS",
+            "有记录"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "ERROR",
+            "查询失败"
+          ],
+          [
+            "LOADING",
+            "查询中"
+          ],
+          [
+            "NO_PERM",
+            "无权限"
+          ],
+          [
+            "DRAWER",
+            "详情抽屉"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-GIFT-01",
+        "end": "ADM",
+        "states": [
+          [
+            "RESULTS",
+            "好友赠送订单列表"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "DRAWER",
+            "赠送订单详情"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-CODE-01",
+        "end": "ADM",
+        "states": [
+          [
+            "RESULTS",
+            "有记录"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "NO_PERM",
+            "无查码权限"
+          ],
+          [
+            "DRAWER",
+            "补发换码抽屉"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-NOTIFY-01",
+        "end": "ADM",
+        "states": [
+          [
+            "RESULTS",
+            "有记录"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "DRAWER",
+            "通知详情"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-REFUND-01",
+        "end": "ADM",
+        "states": [
+          [
+            "RESULTS",
+            "有记录"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "DRAWER",
+            "审核抽屉"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-PAYCHK-01",
+        "end": "ADM",
+        "states": [
+          [
+            "RESULTS",
+            "有记录"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "DRAWER",
+            "核查记录"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-AGREE-01",
+        "end": "ADM",
+        "states": [
+          [
+            "RESULTS",
+            "有记录"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "DRAWER",
+            "版本编辑"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-SERVICE-01",
+        "end": "ADM",
+        "states": [
+          [
+            "DEFAULT",
+            "表单"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-RBAC-01",
+        "end": "ADM",
+        "states": [
+          [
+            "RESULTS",
+            "账号列表"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "DRAWER",
+            "授权配置"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-AUDIT-01",
+        "end": "ADM",
+        "states": [
+          [
+            "RESULTS",
+            "有记录"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "DRAWER",
+            "记录详情"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-STAT-01",
+        "end": "ADM",
+        "states": [
+          [
+            "RESULTS",
+            "有记录"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ]
+        ]
+      }
+    ],
+    "registered_component_instances": null,
+    "component_definitions": 192,
+    "definitions_with_ten_sections": 192,
+    "section_repetition": [
+      {
+        "section": 1,
+        "max_exact_repetitions": 1,
+        "example": "COM-CLIENT-C01，搜索输入框\n所属页面实例：APP-SEARCH-01-C01（搜索默认页）、APP-SEARCH-02-C01（搜索结果页，回填关键词）\n需求来源 SEARCH-01、SEARCH-02、4.2\n业务目的：让用户输入、清空并提交商品名称关键词，形成搜索入口，浏览阶段不要求登录（PRD 4.2 末段）\n模式ID：PAT-INPUT-01（普通输入框，含清空/焦点/提交）\n适用端：APP（平台A、B）、WEB\n职责范围：仅负责关键词的输入、清空与提交"
+      },
+      {
+        "section": 2,
+        "max_exact_repetitions": 1,
+        "example": "| 字段/对象 | 类型与格式 | 来源及字段路径 | 获取/刷新时机 | 必填/可编辑 | 默认与空值 | 校验/过期 | 脱敏/权限 | 字典引用 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| keyword | 字符串（UTF-8） | 用户输入（客户端控件值） | 输入/编辑时实时；提交时取快照 | 提交必填；可编辑 | 默认空字符串；不回填关键词（历史词由 C05 单独提供，不在输入框预填） "
+      },
+      {
+        "section": 3,
+        "max_exact_repetitions": 1,
+        "example": "| 操作/触发 | 前置与校验 | 系统处理/接口 | 数据及状态变化 | 成功/失败去向 | 幂等、重复或取消规则 |\n| --- | --- | --- | --- | --- | --- |\n| 聚焦输入 | 页面已渲染 | 本地更新控件值与焦点态 | DEFAULT→EDITING；显示清空按钮 | 停留本页 | 无请求，无重复问题 |\n| 点击清空 | 输入内容非空 | 本地清空控件值，保持焦点 | EDITING→EDITING（空值）；清空按钮隐藏 | 停留本页"
+      },
+      {
+        "section": 4,
+        "max_exact_repetitions": 1,
+        "example": "| 状态/场景 | 具体文案 | 展示位置/形式 | 可操作项 | 禁用项及提示原因 | 焦点/键盘/滚动/关闭 | 恢复或下一步 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 默认 | 占位\"输入商品名称搜索\" | 输入框内占位文字（#6b7280） | 输入、聚焦 | — | 点击获焦，键盘自动唤起 | 输入后显示清空按钮 |\n| 输入中 | 无额外文案 | 输入框内实时显示 | 输入、清空、提交 | — | 组合输入阶段"
+      },
+      {
+        "section": 5,
+        "max_exact_repetitions": 1,
+        "example": "类型为单行输入框（PAT-INPUT-01），白底、1px #c9cdd3 边框、最小高44px，圆角按设计稿待定（低保真阶段为矩形；手机画布外框2px #8d939b属于评审外壳，不计入业务样式）。文字14px，主文字#20242a，占位#6b7280；聚焦态 outline 2px #526477（offset 2px，键盘可见焦点）；错误态2px #a33b3b红边并配行内文字，不单独用颜色表达错误。清空按钮与提交入口触控热区均≥44×44 CSS像素。长关键词超出时输"
+      },
+      {
+        "section": 6,
+        "max_exact_repetitions": 1,
+        "example": "| 当前状态 | 触发事件 | 守卫条件 | 目标状态 | 界面变化 | 数据变化 | 禁止操作 | 关联01/04 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| APP-SEARCH-01::DEFAULT | 聚焦输入 | 控件可用 | APP-SEARCH-01::EDITING | 光标/键盘唤起，清空按钮出现 | keyword 本地草稿开始记录 | — | 01-6.2.1、ACT-001 |\n| AP"
+      },
+      {
+        "section": 7,
+        "max_exact_repetitions": 1,
+        "example": "触发时机：用户提交关键词时调用 API-SEARCH-001（建议契约，GET /search/goods，参数 keyword 取自输入框去首尾空格后的快照；分页与排序由结果页 API-SEARCH-003 承接）。请求字段全部来自用户输入，不携带用户身份与敏感信息。响应到界面：提交成功后进入 APP-SEARCH-02，由结果卡片列表（COM-CLIENT-C06）渲染 items；本组件不直接渲染结果。错误映射：网络失败/超时→EX-SEARCH-002，跳转后页面进入"
+      },
+      {
+        "section": 8,
+        "max_exact_repetitions": 2,
+        "example": "无采集需求及依据：硬件配置为静态展示内容，无 PRD 分析需求；按标准 12.1 最小必要不采集。"
+      },
+      {
+        "section": 9,
+        "max_exact_repetitions": 1,
+        "example": "关联 TC-SEARCH-001（输入与清空）、TC-SEARCH-002（占位文案与焦点态）、TC-SEARCH-003（空关键词提交提示且不跳转）、TC-SEARCH-004（键盘提交与按钮一致、输入法组合阶段不误触发）、TC-SEARCH-005（返回恢复关键词）。另需覆盖：关键词前后空格、超长关键词（上限待确认前按不截断处理）、连续提交去重、提交中离开页面后回调作废、切换账号后不残留关键词。以上覆盖正常/边界/重复/状态恢复；权限类用例不适用（免登录组件）。当前无实测"
+      },
+      {
+        "section": 10,
+        "max_exact_repetitions": 2,
+        "example": "同 COM-CLIENT-C14（图标形态、一级页面是否长期固定两项，TBD-03）。\n\n---"
+      }
+    ],
+    "embedded_documents": [
+      {
+        "file": "00_交付说明与变更记录.md",
+        "chars": 71179,
+        "sha256_utf8": "52016bbaff08564f258ce60046a56b700bac4b1bb54003b426f0cb2be4131752"
+      },
+      {
+        "file": "01_页面与状态说明.md",
+        "chars": 74687,
+        "sha256_utf8": "b1656fb199e05bd53cca026a63d20b88fd6ff03e4469df3a9142b8c453c74e14"
+      },
+      {
+        "file": "03_组件级文档.md",
+        "chars": 746805,
+        "sha256_utf8": "42c65d773fe2b151ef239f186951824a0eaa7d97a10e01c9c12025ea493470f1"
+      },
+      {
+        "file": "04_业务流程与异常规则.md",
+        "chars": 123012,
+        "sha256_utf8": "ea5ddd61fb3406a7cfcc8e263664d40deb7209a3bb65d724e08c4db19136da48"
+      },
+      {
+        "file": "05_接口数据与权限说明.md",
+        "chars": 183785,
+        "sha256_utf8": "70ef41b612c6906dfc77e0fb04a706c879bd5fc602f6d2093d71f60b64ec2007"
+      },
+      {
+        "file": "06_埋点文档.md",
+        "chars": 60701,
+        "sha256_utf8": "ae1a7127ab2f984dbe707e6dee56cdd69407411e20f39cd858f47d87fca5655c"
+      },
+      {
+        "file": "07_测试用例.md",
+        "chars": 124069,
+        "sha256_utf8": "8fd04a9f83338944378f34d12fa89de3e7b913e6bc5e8d2be3c1c20b46294c19"
+      },
+      {
+        "file": "08_验证记录与验收映射.md",
+        "chars": 175271,
+        "sha256_utf8": "96b66dcfbc89068d3283d0a72899b071e982a0ecfaa9bdef6d993e8456785379"
+      },
+      {
+        "file": "09_待确认事项与设计决策.md",
+        "chars": 14878,
+        "sha256_utf8": "1cb2947eea4a1d3a8049efa0d20327dee69894ebe261f9d77b0067b3c32e514b"
+      }
+    ],
+    "diagrams_count": 35,
+    "diagrams_by_type": {
+      "FL": 20,
+      "SM": 6,
+      "SEQ": 9
+    },
+    "diagram_entries": [
+      {
+        "id": "FL-BROWSE-001",
+        "width": 1286,
+        "height": 1232,
+        "source_sha256": "11a647414dd769f07a2633505893a02592ed9810da7a29037b59485a7bc4de4d"
+      },
+      {
+        "id": "FL-SEARCH-001",
+        "width": 1774,
+        "height": 912,
+        "source_sha256": "1a48cded2acc6aa27f4b871be3382343055b90841c4bfa76c1f3c9188fac5caf"
+      },
+      {
+        "id": "FL-AUTH-001",
+        "width": 1178,
+        "height": 834,
+        "source_sha256": "b018c24997db1624cbc6366b508523863c4afbd2b412c775f0c6aebfcb889afb"
+      },
+      {
+        "id": "FL-AUTH-002",
+        "width": 1106,
+        "height": 961,
+        "source_sha256": "d4968b88b723a94aa637053e1160f610d81ab5d82a3ac74f1c8ca46b5cc57229"
+      },
+      {
+        "id": "FL-BUY-001",
+        "width": 1203,
+        "height": 1309,
+        "source_sha256": "73d95910c246a788c495dfacc8a4f58f86e6f736732b271f5d533d77e5b89290"
+      },
+      {
+        "id": "FL-PHONE-001",
+        "width": 914,
+        "height": 707,
+        "source_sha256": "1bc58f53fb1dc318e334723a52a1654a0c0724ec4dc1732abdab0ec28b7930c5"
+      },
+      {
+        "id": "FL-CHECKOUT-001",
+        "width": 2262,
+        "height": 977,
+        "source_sha256": "fd25099d964f8463ce5a41ab5f459c5aaa3ab41c52da33cad4af45dad559a28b"
+      },
+      {
+        "id": "FL-PAY-001",
+        "width": 2838,
+        "height": 691,
+        "source_sha256": "453263cc2a161e14212fd4fad1bb8747dfdb8c1a5a09d110575c40d9288c2f59"
+      },
+      {
+        "id": "FL-DELIVER-001",
+        "width": 1356,
+        "height": 1118,
+        "source_sha256": "c94310f82ee6c0e1c8594d36d3228e16ed6be5d5d30c3160c6995c48bca08b4e"
+      },
+      {
+        "id": "FL-DELIVER-002",
+        "width": 1374,
+        "height": 1467,
+        "source_sha256": "0e062c982a044855440f2735b85aa37107755df8f6c5b00c894adb8a5ea38653"
+      },
+      {
+        "id": "FL-ORDER-001",
+        "width": 2023,
+        "height": 994,
+        "source_sha256": "994fd7516c079484145afbccd5328e9a647967cabaf1165a4aefabf8faccd5ec"
+      },
+      {
+        "id": "FL-SERVICE-001",
+        "width": 942,
+        "height": 1213,
+        "source_sha256": "4afacdc8f4dbbb07b84bb24c474b83c67d4e88812f52f783a5b576ba2695a159"
+      },
+      {
+        "id": "FL-ADM-HOME-001",
+        "width": 1020,
+        "height": 1023,
+        "source_sha256": "af295ceeb5c5cf602068fefcb644ad5a0ede394494bbe468310fe4d8668f1e85"
+      },
+      {
+        "id": "FL-ADM-GOODS-001",
+        "width": 1020,
+        "height": 1245,
+        "source_sha256": "8734a3c2c46ba3b938f757af44ed5990bdd9bdd861a8e7e74560205fd581c79f"
+      },
+      {
+        "id": "FL-ADM-ORDER-001",
+        "width": 1553,
+        "height": 1039,
+        "source_sha256": "207efe9b72eb9d2716031dc0c60a41557b6c2f1193e259e49f8eeb0848de7d82"
+      },
+      {
+        "id": "FL-ADM-GIFT-001",
+        "width": 1007,
+        "height": 991,
+        "source_sha256": "42cd917cb01a673e130f8171cb31284ac8df2d482ae58e468e8c126a71889e6a"
+      },
+      {
+        "id": "FL-ADM-CODE-001",
+        "width": 1337,
+        "height": 1327,
+        "source_sha256": "26761bd3f6f33da289d5121f7235e9b3047cd1dd4bbb669700f7ba9fa4685d35"
+      },
+      {
+        "id": "FL-ADM-REFUND-001",
+        "width": 1159,
+        "height": 991,
+        "source_sha256": "592cec7cbff02f58605dd6e79c6ddc190e92aed54d1401ba34c5ef16f265da12"
+      },
+      {
+        "id": "FL-ADM-NOTIFY-001",
+        "width": 1293,
+        "height": 769,
+        "source_sha256": "923ae6ce7c8d01181dc9c7fdf361e0433048b9c41f14cc12139e089826332a1e"
+      },
+      {
+        "id": "FL-ADM-AGREE-001",
+        "width": 841,
+        "height": 975,
+        "source_sha256": "b607c0ad9760b20c76eaca13ba06ed3f1d827d94a3de4b86804c9f55ba861ac0"
+      },
+      {
+        "id": "SM-PAY-001",
+        "width": 919,
+        "height": 548,
+        "source_sha256": "689a4247f0f633864cd8e37e32bdd642d39116b1e990fc5d40c6d9f0616d8856"
+      },
+      {
+        "id": "SM-CODE-001",
+        "width": 490,
+        "height": 557,
+        "source_sha256": "e2848d4be8e294902c47fc060bece6a79a61a03795485dffac0dc9a7cabbb300"
+      },
+      {
+        "id": "SM-GIFT-001",
+        "width": 725,
+        "height": 548,
+        "source_sha256": "a4669f4f30e1bb495118e6a9f74fd3a3c65f8aa7ace5309ecfab77de6e6f65b8"
+      },
+      {
+        "id": "SM-AFTER-001",
+        "width": 522,
+        "height": 421,
+        "source_sha256": "a41b49921c557ff6c987195c37c376346448a4ec6aebc1a4574f750b0f869921"
+      },
+      {
+        "id": "SM-REFUND-001",
+        "width": 758,
+        "height": 421,
+        "source_sha256": "357446c1a1d4670de6ecc93fd77f40cdde1d5b2a5316c0ce4d0829ce035deba1"
+      },
+      {
+        "id": "SM-NOTIFY-001",
+        "width": 824,
+        "height": 557,
+        "source_sha256": "1d979eb5349efffaedf817d22b13f6ea5bd0b55a3a74610954a208999d84aea5"
+      },
+      {
+        "id": "SEQ-AUTH-001",
+        "width": 875,
+        "height": 1499,
+        "source_sha256": "39c934905a18741d9f539a84220929a12933534878fcdd735e987bcedc5481ea"
+      },
+      {
+        "id": "SEQ-BUY-001",
+        "width": 859,
+        "height": 2120,
+        "source_sha256": "5ba601ee260bb160158c2f27628f8e3400286c2d0c9c3ba9ea57418cf2b2d46b"
+      },
+      {
+        "id": "SEQ-PAY-001",
+        "width": 935,
+        "height": 1311,
+        "source_sha256": "5aa885b47f0553e59c8770576ee793e2650877c0e748c5ebb3300244e8ca5ad0"
+      },
+      {
+        "id": "SEQ-CODE-001",
+        "width": 1006,
+        "height": 1426,
+        "source_sha256": "fa760fa764e0fe2f1fdf8303255f03b0d4a70752895cd3d5c8121d440328fb04"
+      },
+      {
+        "id": "SEQ-GIFT-001",
+        "width": 1273,
+        "height": 1121,
+        "source_sha256": "87b665e8f93220cff692f8678166d2e47751ce724484f4d0af085b96aeb82182"
+      },
+      {
+        "id": "SEQ-NOTIFY-001",
+        "width": 1124,
+        "height": 1334,
+        "source_sha256": "18bb5a338d4f78002d67a5d581a1ca2608486a101b17c1dcb0fc180db4ae4bf6"
+      },
+      {
+        "id": "SEQ-ADM-001",
+        "width": 563,
+        "height": 1108,
+        "source_sha256": "ca7f02930cd5e31378cd82a2472277d060eb68e65fd590846ec1b1ead6dd72c3"
+      },
+      {
+        "id": "SEQ-ADM-002",
+        "width": 1124,
+        "height": 1024,
+        "source_sha256": "a40d95831ecf38344fae9c074cf31e07fef2690e2220bf5af0180f7f018030c6"
+      },
+      {
+        "id": "SEQ-ADM-003",
+        "width": 1030,
+        "height": 1416,
+        "source_sha256": "2d9a68f1f796cdbc4403acc599375f2df14d609b0201fff0a70b50bec3635c8b"
+      }
+    ],
+    "plantuml_fences": 35,
+    "unmatched_fences": [],
+    "syntax_checks": [
+      {
+        "index": 0,
+        "html_line": 1079,
+        "exit_code": 0,
+        "diagnostic": ""
+      },
+      {
+        "index": 1,
+        "html_line": 1309,
+        "exit_code": 0,
+        "diagnostic": ""
+      },
+      {
+        "index": 2,
+        "html_line": 2048,
+        "exit_code": 0,
+        "diagnostic": ""
+      },
+      {
+        "index": 3,
+        "html_line": 2525,
+        "exit_code": 0,
+        "diagnostic": ""
+      },
+      {
+        "index": 4,
+        "html_line": 3081,
+        "exit_code": 0,
+        "diagnostic": ""
+      },
+      {
+        "index": 5,
+        "html_line": 3522,
+        "exit_code": 0,
+        "diagnostic": ""
+      },
+      {
+        "index": 6,
+        "html_line": 4355,
+        "exit_code": 0,
+        "diagnostic": ""
+      },
+      {
+        "index": 7,
+        "html_line": 5057,
+        "exit_code": 0,
+        "diagnostic": ""
+      },
+      {
+        "index": 8,
+        "html_line": 5490,
+        "exit_code": 0,
+        "diagnostic": ""
+      },
+      {
+        "index": 9,
+        "html_line": 7993,
+        "exit_code": 0,
+        "diagnostic": ""
+      },
+      {
+        "index": 10,
+        "html_line": 7994,
+        "exit_code": 0,
+        "diagnostic": ""
+      },
+      {
+        "index": 11,
+        "html_line": 7995,
+        "exit_code": 0,
+        "diagnostic": ""
+      }
+    ],
+    "anchors": {
+      "shell": {
+        "line": 26,
+        "excerpt": ".shell{max-width:1440px;margin:auto;padding:24px;container-type:inline-size;container-name:shell}"
+      },
+      "phone": {
+        "line": 132,
+        "excerpt": ".phone{width:min(320px,100%);min-height:610px;margin:auto;padding:14px;"
+      },
+      "phone_body": {
+        "line": 137,
+        "excerpt": ".phone-body{max-height:640px;overflow-y:auto;overflow-x:hidden;padding-right:2px;flex:1 1 auto;min-height:0}"
+      },
+      "actual_handler": {
+        "line": 6609,
+        "excerpt": "function handleAct(act, t, e) {"
+      },
+      "diagram_zoom": {
+        "line": 7741,
+        "excerpt": "function applyDgmZoom() {"
+      },
+      "outline_inside": {
+        "line": 724,
+        "excerpt": "body.outline-on [data-component].rv-sel{position:relative;outline:2px dashed #526477;outline-offset:-2px}"
+      },
+      "reader_toc_top": {
+        "line": 842,
+        "excerpt": ".reader-toc{display:flex;flex-wrap:wrap;gap:6px;flex:none;border-bottom:1px solid var(--line);"
+      },
+      "modal_scroll_lock": {
+        "line": 5624,
+        "excerpt": "function admSyncScrollLock() {"
+      },
+      "review_notes": {
+        "line": 5778,
+        "excerpt": "function collectReviewNotes(host, page) {"
+      },
+      "picker_dom": {
+        "line": 5867,
+        "excerpt": "function renderPicker(p) {"
+      },
+      "drawer_exact_record": {
+        "line": 5353,
+        "excerpt": "function admDrawer(cfg, rt, rows) {"
+      },
+      "business_toast": {
+        "line": 5937,
+        "excerpt": "function admToast(msg, kind) {"
+      },
+      "ad_click": {
+        "line": 1505,
+        "excerpt": "function adBanner(cid, opts) {"
+      },
+      "media_preview": {
+        "line": 3847,
+        "excerpt": "function admGoodsMediaPreview(rt, d) {"
+      },
+      "esc_handler": {
+        "line": 6563,
+        "excerpt": "    if (e.key !== 'Escape') return;"
+      },
+      "reader_close": {
+        "line": 7842,
+        "excerpt": "function closeReader() {"
+      },
+      "final_pages": {
+        "line": 5495,
+        "excerpt": "const PAGES = ["
+      },
+      "component_docs": {
+        "line": 5568,
+        "excerpt": "const compDoc = id => (window.COMP_DOCS && window.COMP_DOCS[id]) || null;"
+      },
+      "diagrams": {
+        "line": 1292,
+        "excerpt": "  const list = window.DIAGRAMS || [];"
+      },
+      "docs": {
+        "line": 7775,
+        "excerpt": "  var docs = window.DOCS || [];"
+      }
+    },
+    "static_tokens": {
+      "container_queries": 6,
+      "dgzoom_property_declarations": 0,
+      "dgzoom_css_consumers": 0,
+      "handleAction_calls": 0,
+      "handleAction_function_definitions": 0,
+      "handleAction_assignments": 0
+    }
+  }
+}
