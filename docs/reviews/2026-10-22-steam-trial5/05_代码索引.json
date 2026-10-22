@@ -1,0 +1,1604 @@
+{
+  "functions": [
+    {
+      "name": "freshSession",
+      "line": 667
+    },
+    {
+      "name": "initAdminState",
+      "line": 692
+    },
+    {
+      "name": "$",
+      "line": 703
+    },
+    {
+      "name": "$$",
+      "line": 704
+    },
+    {
+      "name": "clone",
+      "line": 705
+    },
+    {
+      "name": "esc",
+      "line": 706
+    },
+    {
+      "name": "money",
+      "line": 707
+    },
+    {
+      "name": "pad",
+      "line": 708
+    },
+    {
+      "name": "nowStamp",
+      "line": 709
+    },
+    {
+      "name": "uid",
+      "line": 710
+    },
+    {
+      "name": "icon",
+      "line": 711
+    },
+    {
+      "name": "C",
+      "line": 737
+    },
+    {
+      "name": "btn",
+      "line": 741
+    },
+    {
+      "name": "iconBtn",
+      "line": 749
+    },
+    {
+      "name": "pageById",
+      "line": 753
+    },
+    {
+      "name": "productById",
+      "line": 754
+    },
+    {
+      "name": "orderById",
+      "line": 755
+    },
+    {
+      "name": "currentProduct",
+      "line": 756
+    },
+    {
+      "name": "currentSku",
+      "line": 757
+    },
+    {
+      "name": "currentOrder",
+      "line": 758
+    },
+    {
+      "name": "refundOf",
+      "line": 759
+    },
+    {
+      "name": "orderDisplayStatus",
+      "line": 760
+    },
+    {
+      "name": "orderDisplayGroup",
+      "line": 771
+    },
+    {
+      "name": "isPendingOrder",
+      "line": 780
+    },
+    {
+      "name": "stateName",
+      "line": 781
+    },
+    {
+      "name": "isAdminRole",
+      "line": 782
+    },
+    {
+      "name": "inlineMd",
+      "line": 785
+    },
+    {
+      "name": "splitCells",
+      "line": 797
+    },
+    {
+      "name": "mdToHtml",
+      "line": 803
+    },
+    {
+      "name": "currentPage",
+      "line": 847
+    },
+    {
+      "name": "render",
+      "line": 848
+    },
+    {
+      "name": "addRegistryAnchors",
+      "line": 870
+    },
+    {
+      "name": "renderStatus",
+      "line": 880
+    },
+    {
+      "name": "updateControls",
+      "line": 898
+    },
+    {
+      "name": "renderDocsPane",
+      "line": 917
+    },
+    {
+      "name": "renderComponentDoc",
+      "line": 928
+    },
+    {
+      "name": "applyOutline",
+      "line": 939
+    },
+    {
+      "name": "go",
+      "line": 946
+    },
+    {
+      "name": "back",
+      "line": 956
+    },
+    {
+      "name": "setState",
+      "line": 964
+    },
+    {
+      "name": "setEnd",
+      "line": 965
+    },
+    {
+      "name": "flash",
+      "line": 972
+    },
+    {
+      "name": "copyText",
+      "line": 978
+    },
+    {
+      "name": "fallbackCopy",
+      "line": 984
+    },
+    {
+      "name": "openReader",
+      "line": 990
+    },
+    {
+      "name": "renderReader",
+      "line": 995
+    },
+    {
+      "name": "closeReader",
+      "line": 1025
+    },
+    {
+      "name": "openDiagram",
+      "line": 1030
+    },
+    {
+      "name": "renderDiagram",
+      "line": 1036
+    },
+    {
+      "name": "applyDiagramZoom",
+      "line": 1065
+    },
+    {
+      "name": "closeDiagram",
+      "line": 1081
+    },
+    {
+      "name": "admRT",
+      "line": 1201
+    },
+    {
+      "name": "mTop",
+      "line": 1223
+    },
+    {
+      "name": "tabbar",
+      "line": 1232
+    },
+    {
+      "name": "tabbarFor",
+      "line": 1238
+    },
+    {
+      "name": "statusArea",
+      "line": 1244
+    },
+    {
+      "name": "productCard",
+      "line": 1248
+    },
+    {
+      "name": "productGrid",
+      "line": 1258
+    },
+    {
+      "name": "realNameLabel",
+      "line": 1261
+    },
+    {
+      "name": "overlay",
+      "line": 1264
+    },
+    {
+      "name": "compAttr",
+      "line": 1269
+    },
+    {
+      "name": "modalHead",
+      "line": 1270
+    },
+    {
+      "name": "noticeOverlay",
+      "line": 1275
+    },
+    {
+      "name": "noticeStateForPage",
+      "line": 1298
+    },
+    {
+      "name": "authOverlay",
+      "line": 1304
+    },
+    {
+      "name": "agreementOverlay",
+      "line": 1335
+    },
+    {
+      "name": "agreementNoticeOverlay",
+      "line": 1346
+    },
+    {
+      "name": "phoneOverlay",
+      "line": 1358
+    },
+    {
+      "name": "phoneBindPage",
+      "line": 1372
+    },
+    {
+      "name": "payretOverlay",
+      "line": 1390
+    },
+    {
+      "name": "homeBase",
+      "line": 1413
+    },
+    {
+      "name": "productBase",
+      "line": 1506
+    },
+    {
+      "name": "buyOverlay",
+      "line": 1542
+    },
+    {
+      "name": "resultState",
+      "line": 1610
+    },
+    {
+      "name": "tabOf",
+      "line": 1654
+    },
+    {
+      "name": "closeOverlays",
+      "line": 1753
+    },
+    {
+      "name": "pageTo",
+      "line": 1754
+    },
+    {
+      "name": "continueBuy",
+      "line": 1755
+    },
+    {
+      "name": "setPageState",
+      "line": 1904
+    },
+    {
+      "name": "webTop",
+      "line": 1979
+    },
+    {
+      "name": "wCard",
+      "line": 1991
+    },
+    {
+      "name": "wGrid",
+      "line": 1998
+    },
+    {
+      "name": "wStatus",
+      "line": 2001
+    },
+    {
+      "name": "wBanner",
+      "line": 2005
+    },
+    {
+      "name": "wbBuyOverlay",
+      "line": 2082
+    },
+    {
+      "name": "webOrdersBase",
+      "line": 2193
+    },
+    {
+      "name": "wbSubmit",
+      "line": 2248
+    },
+    {
+      "name": "compByDef",
+      "line": 2364
+    },
+    {
+      "name": "compAttr",
+      "line": 2365
+    },
+    {
+      "name": "emptyRT",
+      "line": 2368
+    },
+    {
+      "name": "admRT",
+      "line": 2369
+    },
+    {
+      "name": "perm",
+      "line": 2371
+    },
+    {
+      "name": "rolePerms",
+      "line": 2372
+    },
+    {
+      "name": "hasPerm",
+      "line": 2373
+    },
+    {
+      "name": "menuVisible",
+      "line": 2374
+    },
+    {
+      "name": "menuHtml",
+      "line": 2380
+    },
+    {
+      "name": "adminShell",
+      "line": 2396
+    },
+    {
+      "name": "pageHead",
+      "line": 2415
+    },
+    {
+      "name": "confirmOverlay",
+      "line": 2418
+    },
+    {
+      "name": "admToast",
+      "line": 2425
+    },
+    {
+      "name": "admConfirm",
+      "line": 2426
+    },
+    {
+      "name": "filterBar",
+      "line": 2428
+    },
+    {
+      "name": "tabsBar",
+      "line": 2439
+    },
+    {
+      "name": "metricsBar",
+      "line": 2443
+    },
+    {
+      "name": "tableHtml",
+      "line": 2446
+    },
+    {
+      "name": "pagerHtml",
+      "line": 2454
+    },
+    {
+      "name": "pageSlice",
+      "line": 2458
+    },
+    {
+      "name": "listPage",
+      "line": 2460
+    },
+    {
+      "name": "orderTabField",
+      "line": 2486
+    },
+    {
+      "name": "productStatus",
+      "line": 2487
+    },
+    {
+      "name": "orderDetailHtml",
+      "line": 2583
+    },
+    {
+      "name": "writeAudit",
+      "line": 2810
+    },
+    {
+      "name": "saveHomeDraft",
+      "line": 2811
+    },
+    {
+      "name": "publishHome",
+      "line": 2812
+    },
+    {
+      "name": "productDraftFromForm",
+      "line": 2817
+    },
+    {
+      "name": "saveProduct",
+      "line": 2821
+    },
+    {
+      "name": "saveSupplier",
+      "line": 2844
+    },
+    {
+      "name": "saveStock",
+      "line": 2850
+    },
+    {
+      "name": "saveService",
+      "line": 2856
+    },
+    {
+      "name": "saveRbac",
+      "line": 2861
+    },
+    {
+      "name": "saveAgreement",
+      "line": 2868
+    },
+    {
+      "name": "saveSearch",
+      "line": 2874
+    },
+    {
+      "name": "giftBatchForOrder",
+      "line": 2878
+    },
+    {
+      "name": "recomputeBatch",
+      "line": 2882
+    },
+    {
+      "name": "exportGiftOrders",
+      "line": 2896
+    },
+    {
+      "name": "completeGift",
+      "line": 2904
+    },
+    {
+      "name": "startGift",
+      "line": 2912
+    },
+    {
+      "name": "exceptionGift",
+      "line": 2917
+    },
+    {
+      "name": "codeReplace",
+      "line": 2923
+    },
+    {
+      "name": "ensureNotify",
+      "line": 2932
+    },
+    {
+      "name": "refundTransition",
+      "line": 2937
+    },
+    {
+      "name": "notifyRetry",
+      "line": 2957
+    },
+    {
+      "name": "downloadCSV",
+      "line": 3098
+    },
+    {
+      "name": "fillStaticControls",
+      "line": 3114
+    },
+    {
+      "name": "fillFlows",
+      "line": 3134
+    },
+    {
+      "name": "fillDocs",
+      "line": 3144
+    },
+    {
+      "name": "init",
+      "line": 3160
+    }
+  ],
+  "lines": [
+    {
+      "line": 493,
+      "length": 25,
+      "head": "const now = \"2026-10-21\";"
+    },
+    {
+      "line": 494,
+      "length": 12,
+      "head": "const DB = {"
+    },
+    {
+      "line": 684,
+      "length": 29,
+      "head": "let SESSION = freshSession();"
+    },
+    {
+      "line": 685,
+      "length": 95,
+      "head": "const RV = {end:\"CLIENT\", pageId:\"CL-HOME-01\", state:\"DEFAULT\", sim:\"ok\", selectedComponent:\"\","
+    },
+    {
+      "line": 688,
+      "length": 94,
+      "head": "const ADMIN = {menuCollapsed:false, menuQuery:\"\", groupOpen:{}, rt:{}, toast:\"\", toastKind:\"\","
+    },
+    {
+      "line": 844,
+      "length": 21,
+      "head": "const RENDERERS = {};"
+    },
+    {
+      "line": 845,
+      "length": 19,
+      "head": "const ACTIONS = {};"
+    },
+    {
+      "line": 1175,
+      "length": 46,
+      "head": "  \"reader-close\":function(){ closeReader(); },"
+    },
+    {
+      "line": 1176,
+      "length": 29,
+      "head": "  \"reader-open\":function(el){"
+    },
+    {
+      "line": 1182,
+      "length": 27,
+      "head": "  \"reader-back\":function(){"
+    },
+    {
+      "line": 1186,
+      "length": 31,
+      "head": "  \"reader-download\":function(){"
+    },
+    {
+      "line": 1193,
+      "length": 124,
+      "head": "  \"reader-toc\":function(el){ const t=document.getElementById(el.dataset.target); if(t) t.scrollIntoView({block:\"start\"})"
+    },
+    {
+      "line": 1194,
+      "length": 48,
+      "head": "  \"diagram-close\":function(){ closeDiagram(); },"
+    },
+    {
+      "line": 1195,
+      "length": 114,
+      "head": "  \"diagram-zoom\":function(el){ if(RV.diagram){ RV.diagram.zoom=Number(el.dataset.zoom)||100; renderDiagram(); } },"
+    },
+    {
+      "line": 1196,
+      "length": 84,
+      "head": "  \"diagram-fit\":function(){ if(RV.diagram){ RV.diagram.zoom=0; renderDiagram(); } },"
+    },
+    {
+      "line": 1197,
+      "length": 113,
+      "head": "  \"diagram-source\":function(){ if(RV.diagram){ RV.diagram.showSource=!RV.diagram.showSource; renderDiagram(); } }"
+    },
+    {
+      "line": 1220,
+      "length": 238,
+      "head": "const H=window.helpers, {esc,money,icon,btn,iconBtn,C,clone,flash,copyText,go,back,render,currentProduct,currentSku,curr"
+    },
+    {
+      "line": 1221,
+      "length": 103,
+      "head": "const S=window.SESSION, RV=window.RV, DB=window.DB, ACTIONS=window.ACTIONS, RENDERERS=window.RENDERERS;"
+    },
+    {
+      "line": 1653,
+      "length": 123,
+      "head": "const TAB_LABEL={all:\"全部\",pending:\"待支付\",confirming:\"支付确认中\",paid_pending:\"已支付待交付\",delivered:\"已交付\",refund:\"退款\",closed:\"已关闭"
+    },
+    {
+      "line": 1779,
+      "length": 35,
+      "head": "  \"nav-back\":function(){ back(); },"
+    },
+    {
+      "line": 1780,
+      "length": 62,
+      "head": "  \"nav-home\":function(){ closeOverlays(); go(\"CL-HOME-01\"); },"
+    },
+    {
+      "line": 1781,
+      "length": 68,
+      "head": "  \"nav-profile\":function(){ closeOverlays(); go(\"CL-PROFILE-01\"); },"
+    },
+    {
+      "line": 1782,
+      "length": 65,
+      "head": "  \"nav-orders\":function(){ closeOverlays(); go(\"CL-ORDER-01\"); },"
+    },
+    {
+      "line": 1783,
+      "length": 100,
+      "head": "  \"nav-service\":function(){ S.serviceOrderId=\"\"; closeOverlays(); go(\"CL-SERVICE-01\",\"NO_ORDER\"); },"
+    },
+    {
+      "line": 1784,
+      "length": 66,
+      "head": "  \"nav-search\":function(){ closeOverlays(); go(\"CL-SEARCH-01\"); },"
+    },
+    {
+      "line": 1785,
+      "length": 57,
+      "head": "  \"nav-search-default\":function(){ go(\"CL-SEARCH-01\"); },"
+    },
+    {
+      "line": 1786,
+      "length": 211,
+      "head": "  \"product-open\":function(el){ S.productId=el.dataset.product; S.skuId=(currentProduct().skus[0]||{}).id||\"\"; S.mediaId="
+    },
+    {
+      "line": 1787,
+      "length": 72,
+      "head": "  \"product-media\":function(el){ S.mediaId=el.dataset.media; render(); },"
+    },
+    {
+      "line": 1788,
+      "length": 67,
+      "head": "  \"product-expand\":function(){ S.expanded=!S.expanded; render(); },"
+    },
+    {
+      "line": 1789,
+      "length": 138,
+      "head": "  \"product-pending\":function(el){ S.activeOrderId=el.dataset.order; S.selectedOrderId=el.dataset.order; go(\"CL-CHECKOUT-"
+    },
+    {
+      "line": 1790,
+      "length": 73,
+      "head": "  \"buy-open\":function(){ S.buyPanelOpen=true; S.buyError=\"\"; render(); },"
+    },
+    {
+      "line": 1791,
+      "length": 176,
+      "head": "  \"buy-close\":function(){ if(RV.pageId===\"CL-PRODUCT-02\"){ S.buyPanelOpen=false; pageTo(\"CL-PRODUCT-01\",\"DEFAULT\"); } el"
+    },
+    {
+      "line": 1792,
+      "length": 62,
+      "head": "  \"buy-sku\":function(el){ S.skuId=el.dataset.sku; render(); },"
+    },
+    {
+      "line": 1793,
+      "length": 71,
+      "head": "  \"buy-pay\":function(el){ S.payChannel=el.dataset.channel; render(); },"
+    },
+    {
+      "line": 1794,
+      "length": 44,
+      "head": "  \"buy-submit\":function(){ continueBuy(); },"
+    },
+    {
+      "line": 1795,
+      "length": 103,
+      "head": "  \"notice-close\":function(el){ S.noticeOpen=false; S.noticeSeen=true; S.noticeClosed=true; render(); },"
+    },
+    {
+      "line": 1796,
+      "length": 154,
+      "head": "  \"notice-verify\":function(){ S.noticeOpen=false; S.noticeSeen=true; S.authContext=\"notice\"; S.authOverlay=\"UNVERIFIED\";"
+    },
+    {
+      "line": 1797,
+      "length": 149,
+      "head": "  \"auth-close\":function(){ S.authOverlay=null; if(RV.pageId===\"CL-AUTH-01\"){ S.buyPanelOpen=true; pageTo(\"CL-PRODUCT-02\""
+    },
+    {
+      "line": 1798,
+      "length": 29,
+      "head": "  \"auth-action\":function(el){"
+    },
+    {
+      "line": 1807,
+      "length": 122,
+      "head": "  \"agreement-view\":function(){ S.agreementOpen=true; S.agreementNoticeOpen=false; S.agreementFromNotice=true; render(); "
+    },
+    {
+      "line": 1808,
+      "length": 191,
+      "head": "  \"agreement-close\":function(){ S.agreementOpen=false; if(RV.pageId===\"CL-AGREEMENT-01\"){ S.agreementFromNotice=false; S"
+    },
+    {
+      "line": 1809,
+      "length": 200,
+      "head": "  \"agreement-notice-close\":function(){ S.agreementNoticeOpen=false; if(RV.pageId===\"CL-AGREEMENT-02\"){ S.buyPanelOpen=tr"
+    },
+    {
+      "line": 1810,
+      "length": 150,
+      "head": "  \"agreement-agree\":function(){ S.agreementAccepted=true; S.agreementNoticeOpen=false; flash(\"已记录协议同意（版本 \"+DB.currentAgr"
+    },
+    {
+      "line": 1811,
+      "length": 152,
+      "head": "  \"phone-close\":function(){ S.phoneOverlay=null; if(RV.pageId===\"CL-PHONE-01\"){ S.buyPanelOpen=true; pageTo(\"CL-PRODUCT-"
+    },
+    {
+      "line": 1812,
+      "length": 135,
+      "head": "  \"phone-bind\":function(){ S.phoneBound=true; S.phoneBindingMode=\"platform\"; S.phoneOverlay=null; flash(\"已模拟平台绑定成功\"); co"
+    },
+    {
+      "line": 1813,
+      "length": 160,
+      "head": "  \"phone-store-bind\":function(){ S.phoneOverlay=null; S.phoneBindOpen=true; S.phoneBindState=\"DEFAULT\"; S.phoneBindError"
+    },
+    {
+      "line": 1814,
+      "length": 31,
+      "head": "  \"phone-code-send\":function(){"
+    },
+    {
+      "line": 1828,
+      "length": 33,
+      "head": "  \"phone-bind-submit\":function(){"
+    },
+    {
+      "line": 1844,
+      "length": 82,
+      "head": "  \"payret-open\":function(){ S.payReturnOpen=true; S.payQueryState=\"\"; render(); },"
+    },
+    {
+      "line": 1845,
+      "length": 84,
+      "head": "  \"payret-close\":function(){ S.payReturnOpen=false; S.payQueryState=\"\"; render(); },"
+    },
+    {
+      "line": 1846,
+      "length": 31,
+      "head": "  \"payret-choice\":function(el){"
+    },
+    {
+      "line": 1861,
+      "length": 28,
+      "head": "  \"checkout-pay\":function(){"
+    },
+    {
+      "line": 1865,
+      "length": 64,
+      "head": "  \"checkout-rebuy\":function(){ go(\"CL-PRODUCT-01\",\"DEFAULT\"); },"
+    },
+    {
+      "line": 1866,
+      "length": 115,
+      "head": "  \"result-order\":function(el){ S.selectedOrderId=el.dataset.order; closeOverlays(); go(\"CL-ORDER-02\",\"DEFAULT\"); },"
+    },
+    {
+      "line": 1867,
+      "length": 121,
+      "head": "  \"result-service\":function(el){ S.serviceOrderId=el.dataset.order; closeOverlays(); go(\"CL-SERVICE-01\",\"WITH_ORDER\"); }"
+    },
+    {
+      "line": 1868,
+      "length": 64,
+      "head": "  \"result-refresh\":function(){ flash(\"已刷新服务端交付状态\"); render(); },"
+    },
+    {
+      "line": 1869,
+      "length": 137,
+      "head": "  \"result-query\":function(){ S.payQueryState=\"QUERYING\"; render(); setTimeout(function(){ S.payQueryState=\"TIMEOUT\"; ren"
+    },
+    {
+      "line": 1870,
+      "length": 52,
+      "head": "  \"retry-home\":function(){ RV.sim=\"ok\"; render(); },"
+    },
+    {
+      "line": 1871,
+      "length": 54,
+      "head": "  \"retry-search\":function(){ RV.sim=\"ok\"; render(); },"
+    },
+    {
+      "line": 1872,
+      "length": 62,
+      "head": "  \"retry-search-results\":function(){ RV.sim=\"ok\"; render(); },"
+    },
+    {
+      "line": 1873,
+      "length": 55,
+      "head": "  \"retry-product\":function(){ RV.sim=\"ok\"; render(); },"
+    },
+    {
+      "line": 1874,
+      "length": 56,
+      "head": "  \"retry-checkout\":function(){ RV.sim=\"ok\"; render(); },"
+    },
+    {
+      "line": 1875,
+      "length": 54,
+      "head": "  \"retry-orders\":function(){ RV.sim=\"ok\"; render(); },"
+    },
+    {
+      "line": 1876,
+      "length": 54,
+      "head": "  \"retry-result\":function(){ RV.sim=\"ok\"; render(); },"
+    },
+    {
+      "line": 1877,
+      "length": 29,
+      "head": "  \"search-submit\":function(){"
+    },
+    {
+      "line": 1883,
+      "length": 135,
+      "head": "  \"search-keyword\":function(el){ S.searchDraft=el.dataset.keyword; S.searchKeyword=el.dataset.keyword; go(\"CL-SEARCH-02\""
+    },
+    {
+      "line": 1884,
+      "length": 72,
+      "head": "  \"search-sort\":function(el){ S.searchSort=el.dataset.sort; render(); },"
+    },
+    {
+      "line": 1885,
+      "length": 71,
+      "head": "  \"search-load-more\":function(){ setPageState(\"CL-SEARCH-02\",\"END\"); },"
+    },
+    {
+      "line": 1886,
+      "length": 67,
+      "head": "  \"order-tab\":function(el){ S.orderTab=el.dataset.tab; render(); },"
+    },
+    {
+      "line": 1887,
+      "length": 96,
+      "head": "  \"order-open\":function(el){ S.selectedOrderId=el.dataset.order; go(\"CL-ORDER-02\",\"DEFAULT\"); },"
+    },
+    {
+      "line": 1888,
+      "length": 103,
+      "head": "  \"order-service\":function(el){ S.serviceOrderId=el.dataset.order; go(\"CL-SERVICE-01\",\"WITH_ORDER\"); },"
+    },
+    {
+      "line": 1889,
+      "length": 66,
+      "head": "  \"copy-code\":function(el){ copyText(el.dataset.code,\"口令码已复制\"); },"
+    },
+    {
+      "line": 1890,
+      "length": 68,
+      "head": "  \"copy-order\":function(el){ copyText(el.dataset.order,\"订单号已复制\"); },"
+    },
+    {
+      "line": 1891,
+      "length": 63,
+      "head": "  \"copy-text\":function(el){ copyText(el.dataset.text,\"已复制\"); },"
+    },
+    {
+      "line": 1892,
+      "length": 109,
+      "head": "  \"service-copy\":function(el){ copyText(el.dataset.text,el.dataset.type===\"order_no\"?\"订单号已复制\":\"客服微信号已复制\"); },"
+    },
+    {
+      "line": 1893,
+      "length": 63,
+      "head": "  \"service-open\":function(){ go(\"CL-SERVICE-01\",\"FALLBACK\"); },"
+    },
+    {
+      "line": 1894,
+      "length": 146,
+      "head": "  \"profile-login\":function(){ S.loggedIn=true; S.authStatus=S.authStatus===\"unknown\"?\"verified_adult\":S.authStatus; flas"
+    },
+    {
+      "line": 1895,
+      "length": 210,
+      "head": "  \"profile-auth\":function(){ S.authContext=\"profile\"; S.authOverlay=S.authStatus===\"verified_minor\"?\"MINOR\":S.authStatus"
+    },
+    {
+      "line": 1896,
+      "length": 91,
+      "head": "  \"profile-phone\":function(){ S.phoneOverlay=S.phoneBound?\"UNBOUND\":\"UNBOUND\"; render(); },"
+    },
+    {
+      "line": 1897,
+      "length": 105,
+      "head": "  \"session-relogin\":function(){ S.loggedIn=true; flash(\"已模拟重新登录，按新账号加载\"); go(\"CL-ORDER-01\",\"RESULTS\"); },"
+    },
+    {
+      "line": 1898,
+      "length": 51,
+      "head": "  \"container-back\":function(){ flash(\"已模拟返回平台\"); },"
+    },
+    {
+      "line": 1899,
+      "length": 93,
+      "head": "  \"home-banner-prev\":function(){ S.bannerIndex=Math.max(0,(S.bannerIndex||0)-1); render(); },"
+    },
+    {
+      "line": 1900,
+      "length": 139,
+      "head": "  \"home-banner-next\":function(){ S.bannerIndex=Math.min((DB.home.banners.filter(b=>b.enabled).length-1),(S.bannerIndex||"
+    },
+    {
+      "line": 1901,
+      "length": 94,
+      "head": "  \"home-banner-dot\":function(el){ S.bannerIndex=parseInt(el.dataset.index,10)||0; render(); },"
+    },
+    {
+      "line": 1902,
+      "length": 138,
+      "head": "  \"quick-nav\":function(el){ const t=el.dataset.target; if(t) go(t,t===\"CL-ORDER-01\"?\"RESULTS\":t===\"CL-SERVICE-01\"?\"NO_OR"
+    },
+    {
+      "line": 1976,
+      "length": 209,
+      "head": "const H=window.helpers, {esc,money,icon,btn,iconBtn,C,go,back,render,currentProduct,currentSku,productById,orderById,now"
+    },
+    {
+      "line": 1977,
+      "length": 103,
+      "head": "const S=window.SESSION, RV=window.RV, DB=window.DB, ACTIONS=window.ACTIONS, RENDERERS=window.RENDERERS;"
+    },
+    {
+      "line": 2265,
+      "length": 146,
+      "head": "  \"wb-nav\":function(el){ go(el.dataset.page,el.dataset.page===\"WB-ORDER-01\"?\"RESULTS\":el.dataset.page===\"WB-PROFILE-01\"?"
+    },
+    {
+      "line": 2266,
+      "length": 54,
+      "head": "  \"wb-home\":function(){ go(\"WB-HOME-01\",\"DEFAULT\"); },"
+    },
+    {
+      "line": 2267,
+      "length": 57,
+      "head": "  \"wb-orders\":function(){ go(\"WB-ORDER-01\",\"RESULTS\"); },"
+    },
+    {
+      "line": 2268,
+      "length": 89,
+      "head": "  \"wb-service-public\":function(){ S.serviceOrderId=\"\"; go(\"WB-SERVICE-01\",\"NO_ORDER\"); },"
+    },
+    {
+      "line": 2269,
+      "length": 106,
+      "head": "  \"wb-service-order\":function(el){ S.serviceOrderId=el.dataset.order; go(\"WB-SERVICE-01\",\"WITH_ORDER\"); },"
+    },
+    {
+      "line": 2270,
+      "length": 191,
+      "head": "  \"wb-product\":function(el){ S.productId=el.dataset.product; S.skuId=(currentProduct().skus[0]||{}).id||\"\"; S.mediaId=(c"
+    },
+    {
+      "line": 2271,
+      "length": 67,
+      "head": "  \"wb-media\":function(el){ S.mediaId=el.dataset.media; render(); },"
+    },
+    {
+      "line": 2272,
+      "length": 74,
+      "head": "  \"wb-buy-open\":function(){ S.webBuyOpen=true; S.buyError=\"\"; render(); },"
+    },
+    {
+      "line": 2273,
+      "length": 76,
+      "head": "  \"wb-buy-close\":function(){ S.webBuyOpen=false; S.buyError=\"\"; render(); },"
+    },
+    {
+      "line": 2274,
+      "length": 65,
+      "head": "  \"wb-buy-sku\":function(el){ S.skuId=el.dataset.sku; render(); },"
+    },
+    {
+      "line": 2275,
+      "length": 74,
+      "head": "  \"wb-buy-pay\":function(el){ S.payChannel=el.dataset.channel; render(); },"
+    },
+    {
+      "line": 2276,
+      "length": 44,
+      "head": "  \"wb-buy-submit\":function(){ wbSubmit(); },"
+    },
+    {
+      "line": 2277,
+      "length": 31,
+      "head": "  \"wb-auth-success\":function(){"
+    },
+    {
+      "line": 2282,
+      "length": 82,
+      "head": "  \"wb-auth-cancel\":function(){ S.webAuthKind=\"\"; go(\"WB-PRODUCT-01\",\"DEFAULT\"); },"
+    },
+    {
+      "line": 2283,
+      "length": 69,
+      "head": "  \"wb-agreement-open\":function(){ go(\"WB-AGREEMENT-01\",\"DEFAULT\"); },"
+    },
+    {
+      "line": 2284,
+      "length": 93,
+      "head": "  \"wb-agreement-agree\":function(){ S.agreementAccepted=true; flash(\"已记录协议同意\"); wbSubmit(); },"
+    },
+    {
+      "line": 2285,
+      "length": 132,
+      "head": "  \"wb-phone-bind\":function(){ S.phoneBound=true; S.phoneBindingMode=\"platform\"; S.webAuthKind=\"\"; flash(\"已模拟平台绑定成功\"); wb"
+    },
+    {
+      "line": 2286,
+      "length": 134,
+      "head": "  \"wb-phone-store-bind\":function(){ S.webAuthKind=\"\"; S.phoneBindState=\"DEFAULT\"; S.phoneBindError=\"\"; go(\"WB-PHONE-01\","
+    },
+    {
+      "line": 2287,
+      "length": 36,
+      "head": "  \"wb-phone-bind-submit\":function(){"
+    },
+    {
+      "line": 2298,
+      "length": 156,
+      "head": "  \"wb-checkout-pay\":function(){ const o=orderById(S.activeOrderId)||DB.orders[2]; o.pay_status=\"确认中\"; S.webPayState=\"WAI"
+    },
+    {
+      "line": 2299,
+      "length": 404,
+      "head": "  \"wb-pay-scan\":function(){ S.webPayState=\"CONFIRMING\"; go(\"WB-PAY-01\",\"CONFIRMING\"); setTimeout(function(){ if(RV.pageI"
+    },
+    {
+      "line": 2300,
+      "length": 89,
+      "head": "  \"wb-pay-query\":function(){ S.webPayState=\"CONFIRMING\"; go(\"WB-PAY-01\",\"CONFIRMING\"); },"
+    },
+    {
+      "line": 2301,
+      "length": 87,
+      "head": "  \"wb-pay-close\":function(){ S.webPayState=\"CLOSED\"; go(\"WB-CHECKOUT-01\",\"DEFAULT\"); },"
+    },
+    {
+      "line": 2302,
+      "length": 185,
+      "head": "  \"wb-pay-result\":function(){ const o=orderById(S.activeOrderId)||DB.orders[2]; S.webResultOrderId=o.order_no; go(\"WB-RE"
+    },
+    {
+      "line": 2303,
+      "length": 34,
+      "head": "  \"wb-payret-choice\":function(el){"
+    },
+    {
+      "line": 2312,
+      "length": 86,
+      "head": "  \"wb-payret-close\":function(){ S.payQueryState=\"\"; go(\"WB-CHECKOUT-01\",\"DEFAULT\"); },"
+    },
+    {
+      "line": 2313,
+      "length": 64,
+      "head": "  \"wb-result-refresh\":function(){ flash(\"已刷新交付状态\"); render(); },"
+    },
+    {
+      "line": 2314,
+      "length": 70,
+      "head": "  \"wb-order-tab\":function(el){ S.orderTab=el.dataset.tab; render(); },"
+    },
+    {
+      "line": 2315,
+      "length": 99,
+      "head": "  \"wb-order-open\":function(el){ S.selectedOrderId=el.dataset.order; go(\"WB-ORDER-02\",\"DEFAULT\"); },"
+    },
+    {
+      "line": 2316,
+      "length": 63,
+      "head": "  \"wb-drawer-close\":function(){ go(\"WB-ORDER-01\",\"RESULTS\"); },"
+    },
+    {
+      "line": 2317,
+      "length": 80,
+      "head": "  \"wb-profile-login\":function(){ S.loggedIn=true; flash(\"已模拟平台登录\"); render(); },"
+    },
+    {
+      "line": 2318,
+      "length": 201,
+      "head": "  \"wb-search-submit\":function(){ const i=document.getElementById(\"webSearchInput\"); const v=i?i.value.trim():\" \"; if(!v)"
+    },
+    {
+      "line": 2319,
+      "length": 104,
+      "head": "  \"wb-search-keyword\":function(el){ S.searchKeyword=el.dataset.keyword; go(\"WB-SEARCH-01\",\"RESULTS\"); },"
+    },
+    {
+      "line": 2320,
+      "length": 84,
+      "head": "  \"wb-search-clear\":function(){ S.searchKeyword=\"\"; go(\"WB-SEARCH-01\",\"DEFAULT\"); },"
+    },
+    {
+      "line": 2321,
+      "length": 68,
+      "head": "  \"wb-sort\":function(el){ S.searchSort=el.dataset.sort; render(); },"
+    },
+    {
+      "line": 2322,
+      "length": 133,
+      "head": "  \"wb-pending\":function(el){ S.activeOrderId=el.dataset.order; S.selectedOrderId=el.dataset.order; go(\"WB-CHECKOUT-01\",\""
+    },
+    {
+      "line": 2323,
+      "length": 50,
+      "head": "  \"wb-retry\":function(){ RV.sim=\"ok\"; render(); },"
+    },
+    {
+      "line": 2324,
+      "length": 61,
+      "head": "  \"wb-copy\":function(el){ copyText(el.dataset.text,\"已复制\"); },"
+    },
+    {
+      "line": 2325,
+      "length": 33,
+      "head": "  \"wb-back\":function(){ back(); }"
+    },
+    {
+      "line": 2334,
+      "length": 192,
+      "head": "const H=window.helpers, {esc,money,icon,btn,iconBtn,C,go,back,render,productById,orderById,nowStamp,uid,flash,copyText,c"
+    },
+    {
+      "line": 2335,
+      "length": 123,
+      "head": "const S=window.SESSION, RV=window.RV, DB=window.DB, ADMIN=window.ADMIN, ACTIONS=window.ACTIONS, RENDERERS=window.RENDERE"
+    },
+    {
+      "line": 2340,
+      "length": 12,
+      "head": "const MENU=["
+    },
+    {
+      "line": 2363,
+      "length": 84,
+      "head": "const MENU_PARENT={\"ADM-PRODUCT-02\":\"ADM-PRODUCT-01\",\"ADM-ORDER-02\":\"ADM-ORDER-01\"};"
+    },
+    {
+      "line": 2366,
+      "length": 223,
+      "head": "const PERM_LABEL={home:\"首页配置\",product:\"商品\",supplier:\"供应商\",stock:\"库存\",wallet:\"钱包余额\",order:\"订单\",gift:\"赠送\",code:\"查码/补发\",ref"
+    },
+    {
+      "line": 2964,
+      "length": 162,
+      "head": "  \"adm-menu\":function(el){ const id=el.dataset.page; if(!menuVisible(id)){ admToast(\"无权限访问该模块\",\"err\"); return; } go(id,i"
+    },
+    {
+      "line": 2965,
+      "length": 113,
+      "head": "  \"adm-group\":function(el){ const g=el.dataset.group; ADMIN.groupOpen[g]=ADMIN.groupOpen[g]===false; render(); },"
+    },
+    {
+      "line": 2966,
+      "length": 83,
+      "head": "  \"adm-collapse\":function(){ ADMIN.menuCollapsed=!ADMIN.menuCollapsed; render(); },"
+    },
+    {
+      "line": 2967,
+      "length": 82,
+      "head": "  \"adm-logout\":function(){ S.adminLoggedIn=false; go(\"ADM-LOGIN-01\",\"DEFAULT\"); },"
+    },
+    {
+      "line": 2968,
+      "length": 375,
+      "head": "  \"adm-login\":function(){ const a=document.querySelector(\"#admAccount\"),p=document.querySelector(\"#admPassword\"); if(!a|"
+    },
+    {
+      "line": 2969,
+      "length": 117,
+      "head": "  \"adm-query\":function(){ const rt=admRT(RV.pageId); rt.committed=clone(rt.draft); rt.page=1; rt.sel=[]; render(); },"
+    },
+    {
+      "line": 2970,
+      "length": 130,
+      "head": "  \"adm-reset\":function(){ const rt=admRT(RV.pageId); rt.draft={}; rt.committed={}; rt.page=1; rt.tab=\"全部\"; rt.sel=[]; re"
+    },
+    {
+      "line": 2971,
+      "length": 78,
+      "head": "  \"adm-refresh\":function(){ const rt=admRT(RV.pageId); rt.page=1; render(); },"
+    },
+    {
+      "line": 2972,
+      "length": 110,
+      "head": "  \"adm-tab\":function(el){ const rt=admRT(RV.pageId); rt.tab=el.dataset.tab; rt.page=1; rt.sel=[]; render(); },"
+    },
+    {
+      "line": 2973,
+      "length": 126,
+      "head": "  \"adm-page\":function(el){ const rt=admRT(RV.pageId); const n=parseInt(el.dataset.pageNo,10); if(n>=1) rt.page=n; render"
+    },
+    {
+      "line": 2974,
+      "length": 190,
+      "head": "  \"adm-sel\":function(el){ const rt=admRT(RV.pageId); const id=el.dataset.rowid; if(el.checked){ if(!rt.sel.includes(id))"
+    },
+    {
+      "line": 2975,
+      "length": 189,
+      "head": "  \"adm-selall\":function(el){ const rt=admRT(RV.pageId); if(el.checked){ const rows=$$(\".adm-table tbody tr[data-rowid]\")"
+    },
+    {
+      "line": 2976,
+      "length": 67,
+      "head": "  \"adm-clear-sel\":function(){ admRT(RV.pageId).sel=[]; render(); },"
+    },
+    {
+      "line": 2977,
+      "length": 88,
+      "head": "  \"adm-close-drawer\":function(){ const rt=admRT(RV.pageId); rt.drawer=null; render(); },"
+    },
+    {
+      "line": 2978,
+      "length": 67,
+      "head": "  \"adm-confirm-cancel\":function(){ ADMIN.confirm=null; render(); },"
+    },
+    {
+      "line": 2979,
+      "length": 124,
+      "head": "  \"adm-confirm-ok\":function(){ const c=ADMIN.confirm; if(!c){ render(); return; } ADMIN.confirm=null; c.onOk(); render()"
+    },
+    {
+      "line": 2980,
+      "length": 62,
+      "head": "  \"adm-copy\":function(el){ copyText(el.dataset.text,\"已复制\"); },"
+    },
+    {
+      "line": 2981,
+      "length": 64,
+      "head": "  \"adm-back-orders\":function(){ go(\"ADM-ORDER-01\",\"RESULTS\"); },"
+    },
+    {
+      "line": 2982,
+      "length": 382,
+      "head": "  \"adm-product-new\":function(){ S.adminProductId=\"\"; ADMIN.productDraft={id:\"\",name:\"\",en_name:\"\",price:0,supply_price:0"
+    },
+    {
+      "line": 2983,
+      "length": 280,
+      "head": "  \"adm-product-edit\":function(el){ S.adminProductId=el.dataset.id; const p=productById(el.dataset.id); ADMIN.productDraf"
+    },
+    {
+      "line": 2984,
+      "length": 33,
+      "head": "  \"adm-product-steam\":function(){"
+    },
+    {
+      "line": 2992,
+      "length": 92,
+      "head": "  \"adm-product-cancel\":function(){ ADMIN.productError=\"\"; go(\"ADM-PRODUCT-01\",\"RESULTS\"); },"
+    },
+    {
+      "line": 2993,
+      "length": 50,
+      "head": "  \"adm-product-save\":function(){ saveProduct(); },"
+    },
+    {
+      "line": 2994,
+      "length": 240,
+      "head": "  \"adm-product-toggle\":function(el){ const p=productById(el.dataset.id); if(!p) return; const before=p.sale_status; p.sa"
+    },
+    {
+      "line": 2995,
+      "length": 181,
+      "head": "  \"adm-products-export\":function(){ downloadCSV(\"products.csv\",[\"商品ID\",\"名称\",\"类型\",\"价格\",\"库存\",\"状态\"],DB.products.map(p=>[p.i"
+    },
+    {
+      "line": 2996,
+      "length": 198,
+      "head": "  \"adm-supplier-new\":function(){ S.adminSupplierId=uid(\"MAP\"); DB.suppliers.push({id:S.adminSupplierId,sku_id:\"\",supplie"
+    },
+    {
+      "line": 2997,
+      "length": 276,
+      "head": "  \"adm-supplier-edit\":function(el){ S.adminSupplierId=el.dataset.id; const s=DB.suppliers.find(x=>x.id===el.dataset.id);"
+    },
+    {
+      "line": 2998,
+      "length": 52,
+      "head": "  \"adm-supplier-save\":function(){ saveSupplier(); },"
+    },
+    {
+      "line": 2999,
+      "length": 241,
+      "head": "  \"adm-supplier-test\":function(el){ admConfirm({title:\"测试供应商连接？\",body:\"将发起一次只读连接测试，不采购、不扣款。\",obj:el.dataset.id,okText:\"测"
+    },
+    {
+      "line": 3000,
+      "length": 229,
+      "head": "  \"adm-stock-edit\":function(el){ S.adminStockId=el.dataset.id; const p=productById(el.dataset.id); const rt=admRT(\"ADM-S"
+    },
+    {
+      "line": 3001,
+      "length": 46,
+      "head": "  \"adm-stock-save\":function(){ saveStock(); },"
+    },
+    {
+      "line": 3002,
+      "length": 174,
+      "head": "  \"adm-order-view\":function(el){ S.adminOrderId=el.dataset.order; const o=orderById(el.dataset.order); const rt=admRT(\"A"
+    },
+    {
+      "line": 3003,
+      "length": 33,
+      "head": "  \"adm-orders-export\":function(){"
+    },
+    {
+      "line": 3011,
+      "length": 185,
+      "head": "  \"adm-gift-export\":function(){ const rt=admRT(\"ADM-GIFT-01\"); exportGiftOrders(rt.sel.filter(id=>{const o=orderById(id)"
+    },
+    {
+      "line": 3012,
+      "length": 153,
+      "head": "  \"adm-gift-export-pending\":function(){ exportGiftOrders(DB.orders.filter(o=>o.delivery_type===\"GIFT\"&&o.delivery_status"
+    },
+    {
+      "line": 3013,
+      "length": 130,
+      "head": "  \"adm-gift-open\":function(el){ const rt=admRT(\"ADM-GIFT-01\"); rt.drawer={id:el.dataset.order}; rt.form.gift_note=\"\"; re"
+    },
+    {
+      "line": 3014,
+      "length": 170,
+      "head": "  \"adm-gift-start\":function(el){ admConfirm({title:\"开始处理该赠送订单？\",body:\"状态将变为处理中；导出批次本身不代表完成。\",obj:el.dataset.order,okText"
+    },
+    {
+      "line": 3015,
+      "length": 263,
+      "head": "  \"adm-gift-complete\":function(el){ const rt=admRT(\"ADM-GIFT-01\"); if(!rt.form.gift_note){ admToast(\"请先填写完成依据\",\"err\"); r"
+    },
+    {
+      "line": 3016,
+      "length": 190,
+      "head": "  \"adm-gift-exception\":function(el){ admConfirm({title:\"记录赠送异常？\",body:\"将记录异常原因，不会修改付款时锁定好友链接。\",obj:el.dataset.order,okTe"
+    },
+    {
+      "line": 3017,
+      "length": 146,
+      "head": "  \"adm-code-open\":function(el){ const rt=admRT(\"ADM-CODE-01\"); rt.drawer={id:el.dataset.order}; rt.form={code_reason:\"\","
+    },
+    {
+      "line": 3018,
+      "length": 181,
+      "head": "  \"adm-code-reissue\":function(el){ admConfirm({title:\"补发口令码？\",body:\"将新增交付记录并关联旧记录；操作会记入审计。\",obj:el.dataset.order,okText:"
+    },
+    {
+      "line": 3019,
+      "length": 192,
+      "head": "  \"adm-code-replace\":function(el){ admConfirm({title:\"换码？\",body:\"将新增交付记录并关联旧记录；旧码是否失效以供应商结果为准，不凭换码推定。\",obj:el.dataset.or"
+    },
+    {
+      "line": 3020,
+      "length": 135,
+      "head": "  \"adm-refund-open\":function(el){ const rt=admRT(\"ADM-REFUND-01\"); rt.drawer={id:el.dataset.id}; rt.form.refund_reason=\""
+    },
+    {
+      "line": 3021,
+      "length": 183,
+      "head": "  \"adm-refund-approve\":function(el){ admConfirm({title:\"审核通过退款？\",body:\"将通过审核并进入退款中；资金成功以渠道结果为准。\",obj:el.dataset.id,okTex"
+    },
+    {
+      "line": 3022,
+      "length": 171,
+      "head": "  \"adm-refund-reject\":function(el){ admConfirm({title:\"拒绝退款？\",body:\"将记录拒绝原因，不执行资金操作。\",obj:el.dataset.id,okText:\"拒绝\",onOk"
+    },
+    {
+      "line": 3023,
+      "length": 204,
+      "head": "  \"adm-refund-execute\":function(el){ admConfirm({title:\"执行退款？\",body:\"将调用支付渠道退款；不得仅改后台状态为成功。失败可重试并留痕。\",obj:el.dataset.id,"
+    },
+    {
+      "line": 3024,
+      "length": 109,
+      "head": "  \"adm-notify-open\":function(el){ const rt=admRT(\"ADM-NOTIFY-01\"); rt.drawer={id:el.dataset.id}; render(); },"
+    },
+    {
+      "line": 3025,
+      "length": 167,
+      "head": "  \"adm-notify-retry\":function(el){ admConfirm({title:\"授权重试站内信？\",body:\"重试前会校验订单与交付记录；不重新取码，不群发。\",obj:el.dataset.id,okText"
+    },
+    {
+      "line": 3026,
+      "length": 49,
+      "head": "  \"adm-home-save\":function(){ saveHomeDraft(); },"
+    },
+    {
+      "line": 3027,
+      "length": 116,
+      "head": "  \"adm-home-reset\":function(){ ADMIN.homeDraft=clone(DB.home); ADMIN.homeDraftSaved=false; admToast(\"已恢复为已发布版本\"); },"
+    },
+    {
+      "line": 3028,
+      "length": 177,
+      "head": "  \"adm-home-publish\":function(){ admConfirm({title:\"发布首页配置？\",body:\"发布后将生成新的生效版本，三端读取新配置。草稿才会生效。\",obj:DB.home.version,okT"
+    },
+    {
+      "line": 3029,
+      "length": 206,
+      "head": "  \"adm-home-banner-add\":function(){ const d=ADMIN.homeDraft; d.banners.push({id:uid(\"BN\"),title:\"新广告位\",target:\"P001\",ena"
+    },
+    {
+      "line": 3030,
+      "length": 241,
+      "head": "  \"adm-home-banner-up\":function(el){ const d=ADMIN.homeDraft; const i=parseInt(el.dataset.index,10); if(i>0){ const t=d."
+    },
+    {
+      "line": 3031,
+      "length": 260,
+      "head": "  \"adm-home-banner-down\":function(el){ const d=ADMIN.homeDraft; const i=parseInt(el.dataset.index,10); if(i<d.banners.le"
+    },
+    {
+      "line": 3032,
+      "length": 306,
+      "head": "  \"adm-home-banner-delete\":function(el){ const d=ADMIN.homeDraft; const i=parseInt(el.dataset.index,10); const b=d.banne"
+    },
+    {
+      "line": 3033,
+      "length": 171,
+      "head": "  \"adm-home-recommend-remove\":function(el){ const d=ADMIN.homeDraft; d.recommend_ids=d.recommend_ids.filter(x=>x!==el.da"
+    },
+    {
+      "line": 3034,
+      "length": 275,
+      "head": "  \"adm-home-recommend-add\":function(){ const d=ADMIN.homeDraft; const p=DB.products.find(x=>x.sale_status===\"ON\"&&!d.rec"
+    },
+    {
+      "line": 3035,
+      "length": 50,
+      "head": "  \"adm-service-save\":function(){ saveService(); },"
+    },
+    {
+      "line": 3036,
+      "length": 134,
+      "head": "  \"adm-rbac-edit\":function(el){ S.adminRbacId=el.dataset.id; const rt=admRT(\"ADM-RBAC-01\"); rt.drawer={id:el.dataset.id}"
+    },
+    {
+      "line": 3037,
+      "length": 44,
+      "head": "  \"adm-rbac-save\":function(){ saveRbac(); },"
+    },
+    {
+      "line": 3038,
+      "length": 211,
+      "head": "  \"adm-agreement-open\":function(el){ const rt=admRT(\"ADM-AGREEMENT-01\"); const a=DB.agreements.find(x=>x.version===el.da"
+    },
+    {
+      "line": 3039,
+      "length": 170,
+      "head": "  \"adm-agreement-new\":function(){ const rt=admRT(\"ADM-AGREEMENT-01\"); rt.drawer={id:DB.currentAgreement}; rt.form.agreem"
+    },
+    {
+      "line": 3040,
+      "length": 159,
+      "head": "  \"adm-agreement-publish\":function(){ admConfirm({title:\"发布协议新版本？\",body:\"发布即生成版本与生效时间，无草稿；历史版本只读。\",obj:DB.currentAgreeme"
+    },
+    {
+      "line": 3041,
+      "length": 48,
+      "head": "  \"adm-search-save\":function(){ saveSearch(); },"
+    },
+    {
+      "line": 3042,
+      "length": 284,
+      "head": "  \"adm-search-keyword-add\":function(){ const i=$(\"#newKeyword\"); const v=i?i.value.trim():\"\"; if(!v){ admToast(\"请输入关键词\","
+    },
+    {
+      "line": 3043,
+      "length": 121,
+      "head": "  \"adm-search-keyword-del\":function(el){ ADMIN.searchDraft.keywords.splice(parseInt(el.dataset.index,10),1); render(); }"
+    },
+    {
+      "line": 3044,
+      "length": 167,
+      "head": "  \"adm-search-keyword-up\":function(el){ const i=parseInt(el.dataset.index,10); if(i>0){ const a=ADMIN.searchDraft.keywor"
+    },
+    {
+      "line": 3045,
+      "length": 178,
+      "head": "  \"adm-search-keyword-down\":function(el){ const i=parseInt(el.dataset.index,10); const a=ADMIN.searchDraft.keywords; if("
+    },
+    {
+      "line": 3046,
+      "length": 185,
+      "head": "  \"adm-search-hot-add\":function(){ const s=$(\"#newHot\"); if(!s) return; if(!ADMIN.searchDraft.hot_ids.includes(s.value))"
+    },
+    {
+      "line": 3047,
+      "length": 131,
+      "head": "  \"adm-search-hot-del\":function(el){ ADMIN.searchDraft.hot_ids=ADMIN.searchDraft.hot_ids.filter(x=>x!==el.dataset.id); r"
+    },
+    {
+      "line": 3048,
+      "length": 116,
+      "head": "  \"adm-paycheck-open\":function(el){ const rt=admRT(\"ADM-PAYCHECK-01\"); rt.drawer={id:el.dataset.order}; render(); },"
+    },
+    {
+      "line": 3049,
+      "length": 164,
+      "head": "  \"adm-paycheck-query\":function(el){ if(RV.sim===\"timeout\"||RV.sim===\"fail\"){ admToast(\"查询超时/未知：保持核查，不判已付/未付\",\"err\"); } "
+    },
+    {
+      "line": 3050,
+      "length": 38,
+      "head": "  \"adm-paycheck-recover\":function(el){"
+    },
+    {
+      "line": 3058,
+      "length": 37,
+      "head": "  \"adm-paycheck-refund\":function(el){"
+    },
+    {
+      "line": 3067,
+      "length": 191,
+      "head": "  \"adm-wallet-query\":function(){ DB.wallet.queried_at=nowStamp(); if(RV.sim===\"fail\"||RV.sim===\"timeout\"){ admToast(\"余额查"
+    },
+    {
+      "line": 3068,
+      "length": 31,
+      "head": "  \"adm-wallet-save\":function(){"
+    },
+    {
+      "line": 3073,
+      "length": 178,
+      "head": "  \"adm-audit-export\":function(){ downloadCSV(\"audit.csv\",[\"时间\",\"操作人\",\"动作\",\"对象\",\"变更前\",\"变更后\",\"原因\"],DB.audit.map(a=>[a.time"
+    },
+    {
+      "line": 3111,
+      "length": 71,
+      "head": "const H=window.helpers, {esc,go,render,flash,openReader,openDiagram}=H;"
+    },
+    {
+      "line": 3112,
+      "length": 99,
+      "head": "const S=window.SESSION, RV=window.RV, DATA=window.DATA, ACTIONS=window.ACTIONS, ADMIN=window.ADMIN;"
+    }
+  ]
+}

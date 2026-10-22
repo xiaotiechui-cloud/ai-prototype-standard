@@ -1,0 +1,569 @@
+{
+  "input_sha256": "8ddde074aac86f247e4060f62cc3dc9637a4020703044ec87192df6e273900e2",
+  "browser_executed": 0,
+  "scenarios": [
+    {
+      "id": "R5-A01",
+      "findings": [
+        "A01"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "从WEB商品发起未绑定流程，发送/输入验证码并提交；保留商品、SKU和来源，进入WEB结算；移动同路径回归。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [
+        "VM34"
+      ],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-A02",
+      "findings": [
+        "A02"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "A发送后改B、切账号/平台、重新发送及迟到响应；旧资格不能认证新目标。有效期和次数按DEC-PHONE-002确认，不预设数值。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [
+        "VM35"
+      ],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-A03",
+      "findings": [
+        "A03"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "分别用不存在商品/订单ID和删除后旧入口，确认无其他记录详情或副作用；空集合不报未捕获错误。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [
+        "VM01",
+        "VM43"
+      ],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-A04",
+      "findings": [
+        "A04"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "A请求未回→改B→B返回→A返回；再做关闭/重开与重置；检查订单字段、loading、提示、导航。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [
+        "VM09",
+        "VM10"
+      ],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-A05",
+      "findings": [
+        "A05"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "下架、售罄、未成年、确认中、不同规格分别从真实购买入口触发；不得错误复用或重复建单。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [
+        "VM12",
+        "VM13",
+        "VM32"
+      ],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-A06",
+      "findings": [
+        "A06"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "已支付+交付失败/处理中不能显示可复制成功码；关闭重开不取消支付；同回执重放不重复交付。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [
+        "VM11",
+        "VM31"
+      ],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-A07",
+      "findings": [
+        "A07"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "两端从须知开协议，按钮/Esc各关闭一次；只关栈顶，返回父层，底层草稿不变。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [
+        "VM23",
+        "VM24"
+      ],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-A08",
+      "findings": [
+        "A08"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "已同意旧版本→发布新版本→再次购买按契约确认；登录成功但实名未知、未成年分别测试。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-A09",
+      "findings": [
+        "A09"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "准备库存多但销量少、库存少但销量多的两条商品；按销量应遵循销量。无匹配保持空态；PC同类入口独立验证。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-B01",
+      "findings": [
+        "B01"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "分别保存、取消、失败发布、成功发布；三端读同一生效版本，未发布内容不泄漏。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [
+        "VM07",
+        "VM08",
+        "VM29"
+      ],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-B02",
+      "findings": [
+        "B02"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "编辑A未保存→新增→输入B→取消→重开A/B；新建不携带A旧值，取消无写入。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [
+        "VM40"
+      ],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-B03",
+      "findings": [
+        "B03"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "空串、空格、0、小数、负数、非法字符、低于底价/等于底价逐项验证；失败不写正式值。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [
+        "VM38",
+        "VM42"
+      ],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-B04",
+      "findings": [
+        "B04"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "两规格98/158，仅改名称保存；独立模型必须保留；统一模型按已批准契约同步并清楚说明。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [
+        "VM02",
+        "VM30"
+      ],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-B05",
+      "findings": [
+        "B05"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "真实select选择启用/停用、可售/不可售，保存后重开和前台消费均正确；未知值拒绝。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [
+        "VM04",
+        "VM05"
+      ],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-B06",
+      "findings": [
+        "B06"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "同时改客服号并清空必填fallback，显示字段错误且正式配置不变；合法可空字段另验证清空。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [
+        "VM06"
+      ],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-B07",
+      "findings": [
+        "B07"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "新增→取消/返回不增加正式记录；保存成功只新增一条；失败草稿可重试。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [
+        "VM26"
+      ],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-B08",
+      "findings": [
+        "B08"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "OLD/98改NEW/120，核对记录前后值、对象、操作者与失败无成功审计。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [
+        "VM03"
+      ],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-B09",
+      "findings": [
+        "B09"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "拖拽首尾/中间、取消、重复拖同项、保存重开；不可编辑行与触控/键盘替代按适用范围检查。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [
+        "VM27"
+      ],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-B10",
+      "findings": [
+        "B10"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "不同权限角色切换，空组不出现；有任一可访问子项时组可见且可进入。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [
+        "VM28"
+      ],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-C01",
+      "findings": [
+        "C01"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "打开编辑/确认后撤销权限再提交；越权不改对象、不产生成功审计；绕旧入口也拒绝。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-C02",
+      "findings": [
+        "C02"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "拒绝/已成功/处理中/合法待执行分别触发，非法态无副作用，回调重放不重复退款。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [
+        "VM16"
+      ],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-C03",
+      "findings": [
+        "C03"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "已受理、发送失败、内容变更及重复点击分别验证；不重复发已受理任务。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [
+        "VM17"
+      ],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-C04",
+      "findings": [
+        "C04"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "全待处理、处理中混合、全成功、成功+失败、全失败、成员缺失；关闭/未支付禁止处理。不同项目聚合标签不强制统一。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [
+        "VM18",
+        "VM36",
+        "VM25"
+      ],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-C05",
+      "findings": [
+        "C05"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "重复点击、重复选择同成员、部分交叠成员；旧批成员与新批关系不静默矛盾。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [
+        "VM37"
+      ],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-C06",
+      "findings": [
+        "C06"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "从筛选/勾选范围导出，核对内容、数量、编码、范围和失败反馈；下载落盘另记录。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [
+        "VM19"
+      ],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-C07",
+      "findings": [
+        "C07"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "初码→替换→重开记录，能追溯旧新关系且不重复交付；失败保留原有效码。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [
+        "VM15"
+      ],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-C08",
+      "findings": [
+        "C08"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "第一页选A→第二页选B→执行；当前页模式只能作用B，筛选/页大小变化也处理失效选择。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [
+        "VM20"
+      ],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-D01",
+      "findings": [
+        "D01"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "宽浏览器+窄画布/说明展开，长弹窗、320移动画布、键盘/触控滚动；记录viewport、画布、缩放及截图。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-D02",
+      "findings": [
+        "D02"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "打开含当前已注册PlantUML的MD正文，验证SVG及缩放；未匹配图源不能伪装已渲染。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [
+        "VM44"
+      ],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-D03",
+      "findings": [
+        "D03"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "A中部链接B→再C→返回两次，文档、位置和锚点正确；无效链接有明确反馈。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-D04",
+      "findings": [
+        "D04"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "Clipboard拒绝、execCommand=false/异常、成功分别验证提示与可手动复制内容。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [
+        "VM22"
+      ],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-D05",
+      "findings": [
+        "D05"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "删除/隐藏一个实际组件后检查应暴露缺口；允许条件组件登记适用状态，不要求所有状态同时可见。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-D06",
+      "findings": [
+        "D06"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "有/无SteamID、失败、重复拉取与手工改值分别测试；只有元信息变化时文案不得称资料已填充。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [
+        "VM41"
+      ],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-E01",
+      "findings": [
+        "E01"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "09决策/05字段枚举/04流程/实现同语义；每次重建封存9份MD与HTML摘要。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-E02",
+      "findings": [
+        "E02"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "记录测试输入文件SHA、环境、断言与截图映射；展示型断言不冒充完整操作；更名不影响相同字节身份。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-E03",
+      "findings": [
+        "E03"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "核对PRD V1.5 SHA与D-15/SEARCH-04/PHONE-05等出处，回填项目覆盖；确认前标自述而非用户已批准。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-E04",
+      "findings": [
+        "E04"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "成功后再失败，旧余额明确标记；用户能辨别结果来自哪次成功请求。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [
+        "VM39"
+      ],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    },
+    {
+      "id": "R5-E05",
+      "findings": [
+        "E05"
+      ],
+      "fixture": "依08局部夹具（如有）及项目PRD建立真实入口数据；含至少两条不同ID记录，具体账号/版本按契约补齐。",
+      "procedure_and_expected": "平台A/B及同平台账号U1/U2切换，列表/计数/详情/动作一致；不把固定单账号样例称为鉴权验证。",
+      "method": "real-browser-entry-required",
+      "status": "未执行",
+      "local_observations": [],
+      "scope": "父场景须展开成功/失败/边界子例；局部VM不得回填浏览器通过。",
+      "evidence": null
+    }
+  ]
+}

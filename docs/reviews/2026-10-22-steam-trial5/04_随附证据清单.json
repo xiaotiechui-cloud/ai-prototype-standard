@@ -1,0 +1,125 @@
+{
+  "files": [
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\_checks\\browser-check-v15-result.json",
+      "sha256": "485823cf8188a3fe0d0b1ee1133332455bd565db2bb9a43094f0926b776b73d5",
+      "bytes": 10058
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\_checks\\browser-check-v15.txt",
+      "sha256": "cb2ae51071e222c1b62562c04030bc82437b6c3308612a99da60b07037e8758f",
+      "bytes": 6929
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\_checks\\build.txt",
+      "sha256": "c06c907d4fb057afa4764b5018573fb7702f9a38c3c6bec0197355975d96ed07",
+      "bytes": 257
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\_checks\\check-all.txt",
+      "sha256": "8750547042b7e337218ec954d4d33b7fd0368ee27ad09bfc25098605ff8358a9",
+      "bytes": 347
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\_checks\\check-structure.txt",
+      "sha256": "62f133e940f094566fb8f794082e30d84bae11f8437cd14cbec015b3a50bc4b9",
+      "bytes": 134
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\_checks\\验证证据_2026-10-21.md",
+      "sha256": "bb2444463787a2247f4b2f731b1d66225be6e0fb4a8ac4b49cc3b7310440dcb6",
+      "bytes": 7430
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\_checks\\screenshots\\v15-01-client-notice.png",
+      "sha256": "e82af48a71999714fd8c5f66d52fc69485333034e1448b793c3d8a5390045c74",
+      "bytes": 115100
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\_checks\\screenshots\\v15-02-client-phone-guide.png",
+      "sha256": "05875386777dd589d2784acacee59905f8ea3bee96815cf6411e70650c0c9474",
+      "bytes": 117756
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\_checks\\screenshots\\v15-03-client-checkout.png",
+      "sha256": "e4c266d86179201d575f3991b0c8e0982e538e4738f3fed4092ecf0f9bcbabcb",
+      "bytes": 119870
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\_checks\\screenshots\\v15-04-client-order-refund.png",
+      "sha256": "642cbe9a43ff09c77137bec0ab60f83bb23e871a80296121887a60fe6fc3b491",
+      "bytes": 116456
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\_checks\\screenshots\\v15-05-client-pending.png",
+      "sha256": "cc13ca11b8791636c1132459a580e65ed1aa0292cb192ad1499323dc34d3831f",
+      "bytes": 111465
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\_checks\\screenshots\\v15-06-client-order-tabs.png",
+      "sha256": "7bec02b2cb981453c7b700378f016747132fff7d8ee1824a0ff35813fc50617e",
+      "bytes": 112269
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\_checks\\screenshots\\v15-07-web-phone-bind.png",
+      "sha256": "4aa6dfbf0415018c2e2c67bf45d5b9565c443da3d29c1c122978d62552113f81",
+      "bytes": 76807
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\_checks\\screenshots\\v15-08-web-orders.png",
+      "sha256": "4358c3a97e1da4e4beb8094565e1796ca1553bf8a6d77789a1fe8fbe7fa0ccea",
+      "bytes": 78158
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\_checks\\screenshots\\v15-08b-web-narrow.png",
+      "sha256": "67fa8a0510054f0bc61fcb7dd23a8dcc115c4c93edba18d1aafce37815a61c21",
+      "bytes": 63471
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\_checks\\screenshots\\v15-09-admin-menu.png",
+      "sha256": "61812c050f4e6fc31081eaecd969900732770ac86fcd14e377609a783d5f19c7",
+      "bytes": 63785
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\_checks\\screenshots\\v15-10-admin-wallet.png",
+      "sha256": "438f33472c7c6cd490afb3cd7577163cbd88f4382a2635b467d97c300e29bc7a",
+      "bytes": 85541
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\_checks\\screenshots\\v15-11-admin-product-edit.png",
+      "sha256": "b3c110c4d37c6dc329bf458d679481957d878af05df5646ef513091997a85c8f",
+      "bytes": 60355
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\_checks\\screenshots\\v15-12-admin-gift-batch.png",
+      "sha256": "d50412eca29d5151fac16360d730540b19552c1ec44c2ca53642c7c383278deb",
+      "bytes": 87057
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\_checks\\screenshots\\v15-13-admin-orders.png",
+      "sha256": "daf5bc98a0b0087638b2cd7be32bece49466d50531b1fc7109b200af09da2a48",
+      "bytes": 85923
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\_checks\\screenshots\\v15-14-admin-paycheck.png",
+      "sha256": "a32d44fe174129efbbd0095258ca3af8d84e6d889b091d4ab388a8ff3369e82b",
+      "bytes": 76990
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\_checks\\screenshots\\v15-15-admin-notify.png",
+      "sha256": "8f0a0cb5ac99af5b5ec9145cae15f540de2722330a3f5949fc8445a168097bcf",
+      "bytes": 73206
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\_checks\\screenshots\\v15-16-diagram-phone.png",
+      "sha256": "3c79cc2ae87821eac15d9204de3605bfc11e4cdc4285b32076dd31b184997203",
+      "bytes": 85479
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\_checks\\screenshots\\v15-17-admin-1920.png",
+      "sha256": "c40c59020dd588e729270be82a9e198ab4932f2d18c6de54381a0cb4ea54dc7f",
+      "bytes": 97062
+    }
+  ],
+  "identity": "supplied by artifact provider; not executed or endorsed by this review"
+}

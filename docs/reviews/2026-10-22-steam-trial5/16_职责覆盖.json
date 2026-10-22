@@ -1,0 +1,300 @@
+{
+  "domains": [
+    {
+      "responsibility": "首页/内容配置",
+      "trial_pages": [
+        "CL-HOME-01",
+        "WB-HOME-01",
+        "ADM-HOME-01"
+      ],
+      "final_pages": [
+        "APP-HOME-01",
+        "WEB-HOME-01",
+        "ADM-HOME-01"
+      ],
+      "coverage": "页面职责映射；非状态/行为通过。详情可在独立页、抽屉或面板实现。"
+    },
+    {
+      "responsibility": "搜索/结果/历史",
+      "trial_pages": [
+        "CL-SEARCH-01",
+        "CL-SEARCH-02",
+        "WB-SEARCH-01",
+        "ADM-SEARCH-01"
+      ],
+      "final_pages": [
+        "APP-SEARCH-01",
+        "APP-SEARCH-02",
+        "WEB-SEARCH-01",
+        "ADM-SEARCH-01"
+      ],
+      "coverage": "页面职责映射；非状态/行为通过。详情可在独立页、抽屉或面板实现。"
+    },
+    {
+      "responsibility": "商品资料/规格/媒体",
+      "trial_pages": [
+        "CL-PRODUCT-01",
+        "CL-PRODUCT-02",
+        "WB-PRODUCT-01",
+        "ADM-PRODUCT-01",
+        "ADM-PRODUCT-02"
+      ],
+      "final_pages": [
+        "APP-PRODUCT-01",
+        "WEB-PRODUCT-01",
+        "ADM-GOODS-01"
+      ],
+      "coverage": "页面职责映射；非状态/行为通过。详情可在独立页、抽屉或面板实现。"
+    },
+    {
+      "responsibility": "购买面板",
+      "trial_pages": [
+        "WB-BUY-01"
+      ],
+      "final_pages": [
+        "APP-PANEL-01"
+      ],
+      "coverage": "页面职责映射；非状态/行为通过。详情可在独立页、抽屉或面板实现。"
+    },
+    {
+      "responsibility": "首次提醒",
+      "trial_pages": [
+        "CL-NOTICE-01"
+      ],
+      "final_pages": [
+        "APP-NOTICE-01"
+      ],
+      "coverage": "页面职责映射；非状态/行为通过。详情可在独立页、抽屉或面板实现。"
+    },
+    {
+      "responsibility": "登录/实名/成年",
+      "trial_pages": [
+        "CL-AUTH-01",
+        "WB-AUTH-01"
+      ],
+      "final_pages": [
+        "APP-AUTH-01"
+      ],
+      "coverage": "页面职责映射；非状态/行为通过。详情可在独立页、抽屉或面板实现。"
+    },
+    {
+      "responsibility": "协议/须知",
+      "trial_pages": [
+        "CL-AGREEMENT-01",
+        "CL-AGREEMENT-02",
+        "WB-AGREEMENT-01",
+        "ADM-AGREEMENT-01"
+      ],
+      "final_pages": [
+        "APP-AGREEMENT-01",
+        "ADM-AGREE-01"
+      ],
+      "coverage": "页面职责映射；非状态/行为通过。详情可在独立页、抽屉或面板实现。"
+    },
+    {
+      "responsibility": "手机号",
+      "trial_pages": [
+        "CL-PHONE-01",
+        "CL-PHONE-02",
+        "WB-PHONE-01"
+      ],
+      "final_pages": [
+        "APP-PHONE-01"
+      ],
+      "coverage": "页面职责映射；非状态/行为通过。详情可在独立页、抽屉或面板实现。"
+    },
+    {
+      "responsibility": "确认订单",
+      "trial_pages": [
+        "CL-CHECKOUT-01",
+        "WB-CHECKOUT-01"
+      ],
+      "final_pages": [
+        "APP-CHECKOUT-01",
+        "WEB-CHECKOUT-01"
+      ],
+      "coverage": "页面职责映射；非状态/行为通过。详情可在独立页、抽屉或面板实现。"
+    },
+    {
+      "responsibility": "支付/返回查询",
+      "trial_pages": [
+        "CL-PAYRET-01",
+        "WB-PAY-01",
+        "WB-PAYRET-01"
+      ],
+      "final_pages": [
+        "APP-PAYRET-01",
+        "WEB-PAYRET-01"
+      ],
+      "coverage": "页面职责映射；非状态/行为通过。详情可在独立页、抽屉或面板实现。"
+    },
+    {
+      "responsibility": "支付交付结果",
+      "trial_pages": [
+        "CL-RESULT-01",
+        "WB-RESULT-01"
+      ],
+      "final_pages": [
+        "APP-RESULT-01",
+        "WEB-RESULT-01"
+      ],
+      "coverage": "页面职责映射；非状态/行为通过。详情可在独立页、抽屉或面板实现。"
+    },
+    {
+      "responsibility": "订单/归属/快照",
+      "trial_pages": [
+        "CL-ORDER-01",
+        "CL-ORDER-02",
+        "WB-ORDER-01",
+        "WB-ORDER-02",
+        "ADM-ORDER-01",
+        "ADM-ORDER-02"
+      ],
+      "final_pages": [
+        "APP-ORDER-01",
+        "APP-ORDER-02",
+        "WEB-ORDER-01",
+        "ADM-ORDER-01"
+      ],
+      "coverage": "页面职责映射；非状态/行为通过。详情可在独立页、抽屉或面板实现。"
+    },
+    {
+      "responsibility": "我的/账号",
+      "trial_pages": [
+        "CL-PROFILE-01",
+        "WB-PROFILE-01"
+      ],
+      "final_pages": [
+        "APP-MINE-01",
+        "WEB-MINE-01"
+      ],
+      "coverage": "页面职责映射；非状态/行为通过。详情可在独立页、抽屉或面板实现。"
+    },
+    {
+      "responsibility": "客服/来源",
+      "trial_pages": [
+        "CL-SERVICE-01",
+        "WB-SERVICE-01",
+        "ADM-SERVICE-01"
+      ],
+      "final_pages": [
+        "APP-SERVICE-01",
+        "ADM-SERVICE-01"
+      ],
+      "coverage": "页面职责映射；非状态/行为通过。详情可在独立页、抽屉或面板实现。"
+    },
+    {
+      "responsibility": "容器异常",
+      "trial_pages": [
+        "CL-CONTAINER-01"
+      ],
+      "final_pages": [
+        "APP-CONTAINER-01"
+      ],
+      "coverage": "页面职责映射；非状态/行为通过。详情可在独立页、抽屉或面板实现。"
+    },
+    {
+      "responsibility": "后台登录",
+      "trial_pages": [
+        "ADM-LOGIN-01"
+      ],
+      "final_pages": [
+        "ADM-LOGIN-01"
+      ],
+      "coverage": "页面职责映射；非状态/行为通过。详情可在独立页、抽屉或面板实现。"
+    },
+    {
+      "responsibility": "库存",
+      "trial_pages": [
+        "ADM-STOCK-01"
+      ],
+      "final_pages": [
+        "ADM-STOCK-01"
+      ],
+      "coverage": "页面职责映射；非状态/行为通过。详情可在独立页、抽屉或面板实现。"
+    },
+    {
+      "responsibility": "赠送/批次",
+      "trial_pages": [
+        "ADM-GIFT-01"
+      ],
+      "final_pages": [
+        "ADM-GIFT-01"
+      ],
+      "coverage": "页面职责映射；非状态/行为通过。详情可在独立页、抽屉或面板实现。"
+    },
+    {
+      "responsibility": "口令码/换码",
+      "trial_pages": [
+        "ADM-CODE-01"
+      ],
+      "final_pages": [
+        "ADM-CODE-01"
+      ],
+      "coverage": "页面职责映射；非状态/行为通过。详情可在独立页、抽屉或面板实现。"
+    },
+    {
+      "responsibility": "退款",
+      "trial_pages": [
+        "ADM-REFUND-01"
+      ],
+      "final_pages": [
+        "ADM-REFUND-01"
+      ],
+      "coverage": "页面职责映射；非状态/行为通过。详情可在独立页、抽屉或面板实现。"
+    },
+    {
+      "responsibility": "后台权限",
+      "trial_pages": [
+        "ADM-RBAC-01"
+      ],
+      "final_pages": [
+        "ADM-RBAC-01"
+      ],
+      "coverage": "页面职责映射；非状态/行为通过。详情可在独立页、抽屉或面板实现。"
+    },
+    {
+      "responsibility": "审计",
+      "trial_pages": [
+        "ADM-AUDIT-01"
+      ],
+      "final_pages": [
+        "ADM-AUDIT-01"
+      ],
+      "coverage": "页面职责映射；非状态/行为通过。详情可在独立页、抽屉或面板实现。"
+    },
+    {
+      "responsibility": "统计",
+      "trial_pages": [],
+      "final_pages": [
+        "ADM-STAT-01"
+      ],
+      "coverage": "页面职责映射；非状态/行为通过。详情可在独立页、抽屉或面板实现。",
+      "decision": "试跑5无独立统计页；先核PRD范围，不以最终版页面存在强制补齐。"
+    },
+    {
+      "responsibility": "支付核查/通知/供应商",
+      "trial_pages": [
+        "ADM-SUPPLIER-01",
+        "ADM-PAYCHECK-01",
+        "ADM-NOTIFY-01"
+      ],
+      "final_pages": [
+        "ADM-NOTIFY-01",
+        "ADM-PAYCHK-01"
+      ],
+      "coverage": "页面职责映射；非状态/行为通过。详情可在独立页、抽屉或面板实现。"
+    },
+    {
+      "responsibility": "供应商钱包",
+      "trial_pages": [
+        "ADM-WALLET-01"
+      ],
+      "final_pages": [],
+      "coverage": "新增职责；项目适用性待原PRD核对。"
+    }
+  ],
+  "trial_pages_covered": 53,
+  "final_pages_covered": 41,
+  "scope": "映射所有注册页面；不声称穷尽233状态和254组件的动态执行。"
+}

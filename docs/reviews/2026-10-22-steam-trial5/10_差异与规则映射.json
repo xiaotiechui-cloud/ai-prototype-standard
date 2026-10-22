@@ -1,0 +1,1083 @@
+{
+  "input_sha256": "8ddde074aac86f247e4060f62cc3dc9637a4020703044ec87192df6e273900e2",
+  "findings": [
+    {
+      "id": "A01",
+      "title": "PC绑定按钮误接移动端动作",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2134
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 1828
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 1775
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2287
+        }
+      ],
+      "final_comparison": "手机号职责参考APP-PHONE-01；WEB新增兜底页不要求与最终版页数一致。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "WB-PHONE-01渲染phone-bind-submit，未接已定义的wb-phone-bind-submit；原移动处理函数成功后跳CL-CHECKOUT-01。VM34复现导航目标，但没有执行真实浏览器点击。",
+      "authority": "core3.3；runtime13.3/13.5；STD-ACT-001",
+      "solution": "绑定正确的WEB入口或使用携带端与来源的共享动作；成功恢复WEB购买现场。",
+      "acceptance": "从WEB商品发起未绑定流程，发送/输入验证码并提交；保留商品、SKU和来源，进入WEB结算；移动同路径回归。",
+      "probes": [
+        "VM34"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "A02",
+      "title": "验证码通过状态未绑定发送目标",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 1118
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 1814
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 1833
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\05_接口数据与权限说明.md",
+          "line": 2466
+        }
+      ],
+      "final_comparison": "手机号属于本轮新增兜底实现；不把最终版固定模拟当真实短信契约。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "发送仅留下全局phoneCodeSent；号码A发送后改号码B仍可通过模拟验证码。05文档另声明sms_send_id与目标字段。该问题限于离线资格模拟，不是已证实的短信服务漏洞。",
+      "authority": "runtime13.5/13.6；core3.3",
+      "solution": "发送上下文关联目标号码、账号/来源及请求身份；变更后按项目契约失效或重验。保留模拟标识。",
+      "acceptance": "A发送后改B、切账号/平台、重新发送及迟到响应；旧资格不能认证新目标。有效期和次数按DEC-PHONE-002确认，不预设数值。",
+      "probes": [
+        "VM35"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "A03",
+      "title": "显式失效对象静默回退首条",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 756
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 758
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2202
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2298
+        }
+      ],
+      "final_comparison": "F部分恢复入口传稳定订单ID，客服仍MOCK_ORDER（F6619、6764、2490），不能整体继承。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "商品、订单及WEB详情/支付存在首条或固定下标回退；失效ID可转为操作另一条记录。",
+      "authority": "admin12.6；runtime13.5",
+      "solution": "区分初次默认选择与显式无效ID，后者显示失效并停止写入/复制/支付。",
+      "acceptance": "分别用不存在商品/订单ID和删除后旧入口，确认无其他记录详情或副作用；空集合不报未捕获错误。",
+      "probes": [
+        "VM01",
+        "VM43"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "A04",
+      "title": "异步建单和支付查询串用当前对象",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 1755
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 1775
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 1846
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 1852
+        }
+      ],
+      "final_comparison": "F普通token有隔离但重置重用有ABA风险（F3531、3539～3540）；不推广脆弱计数器。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "建单混合请求发起时商品与回调时SKU/平台；查询期间切订单，迟到回调写入新订单。",
+      "authority": "runtime13.6",
+      "solution": "固定不可变操作身份；离页、重置、换端/对象令旧请求失效，拒绝旧回调的写入与导航。",
+      "acceptance": "A请求未回→改B→B返回→A返回；再做关闭/重开与重置；检查订单字段、loading、提示、导航。",
+      "probes": [
+        "VM09",
+        "VM10"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "A05",
+      "title": "建单缺销售资格与旧支付状态守卫",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 1755
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2248
+        }
+      ],
+      "final_comparison": "F具备部分旧单恢复入口但不代表资格重验与所有守卫通过。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "未成年阻断局部符合；WEB下架商品仍建单，确认中旧单未先处置又新建。同商品/平台待支付匹配还需按购买意图检查规格与账号。",
+      "authority": "runtime13.5；business23.4/24.4",
+      "solution": "执行前重读商品可售、库存和资格，按已批准幂等键处理待支付/确认中订单。",
+      "acceptance": "下架、售罄、未成年、确认中、不同规格分别从真实购买入口触发；不得错误复用或重复建单。",
+      "probes": [
+        "VM12",
+        "VM13",
+        "VM32"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "A06",
+      "title": "支付成功直接生成交付码",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 1846
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 1852
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2299
+        }
+      ],
+      "final_comparison": "F查询已付直接DELIVERED（F6994～7009），也是反例。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "查询/扫码成功直接改为已交付并写DEMO码，混合支付与供应商交付事实；关闭扫码层不取消订单的局部行为符合。",
+      "authority": "business23.4/24.4；core3.4",
+      "solution": "支付结果与取码/赠送结果分开，分别模拟成功、失败、未知与重试；交付码须来自声明的交付结果。",
+      "acceptance": "已支付+交付失败/处理中不能显示可复制成功码；关闭重开不取消支付；同回执重放不重复交付。",
+      "probes": [
+        "VM11",
+        "VM31"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "A07",
+      "title": "协议返回与Esc缺正确层栈",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 1807
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 1808
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 1145
+        }
+      ],
+      "final_comparison": "商城已批准须知→协议→回须知与Esc仅栈顶；不把最终版任意回商品实现当正确。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "打开协议已记录来自须知，但关闭未还原须知；Esc按kind先进入移动处理器，WEB分支可能不可达。",
+      "authority": "runtime13.8；STD-RT-001",
+      "solution": "按宿主与栈顶管理子层；关闭协议恢复父须知，保留购买上下文与焦点。",
+      "acceptance": "两端从须知开协议，按钮/Esc各关闭一次；只关栈顶，返回父层，底层草稿不变。",
+      "probes": [
+        "VM23",
+        "VM24"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "A08",
+      "title": "协议同意缺版本，复合认证需声明回执",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 1758
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2277
+        }
+      ],
+      "final_comparison": "F历史版本与前台固定文案曾不同源（F2020、2026、7303、7314），不继承。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "协议接受用全局布尔，不能证明同意当前版本。WEB认证同时设登录和成年是否属于获准复合回执，本轮未定，不将它另算缺陷。",
+      "authority": "core3.4；runtime13.5",
+      "solution": "协议同意关联账号/适用版本；复合认证明确回执字段和模拟边界。",
+      "acceptance": "已同意旧版本→发布新版本→再次购买按契约确认；登录成功但实名未知、未成年分别测试。",
+      "probes": [],
+      "browser_retested": false
+    },
+    {
+      "id": "A09",
+      "title": "搜索空态改善，但销量按库存排序",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 1480
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 1487
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 1498
+        }
+      ],
+      "final_comparison": "F的商品排序需按数据语义复核，不能以最终版存在控件证明口径成立；历史参数不推广。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "客户端销量选项实际以stock排序，数据语义与标签不符；无匹配已显示真实空态，不再填演示商品。最终版无匹配回填样例（F1721、1737）是反例，不继承。媒体选择已有稳定mediaId（T1510、1787），不据此宣称上传/播放能力通过。",
+      "authority": "core3.4；client10.2；runtime13.3",
+      "solution": "销量使用声明的销量字段与统计范围；若本轮不具备销量，明确不支持或按获准范围调整入口，不借库存冒充。保留真实空态与稳定媒体选择。",
+      "acceptance": "准备库存多但销量少、库存少但销量多的两条商品；按销量应遵循销量。无匹配保持空态；PC同类入口独立验证。",
+      "probes": [],
+      "browser_retested": false
+    },
+    {
+      "id": "B01",
+      "title": "首页草稿隔离改善，失败发布仍写生效配置",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2811
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2812
+        }
+      ],
+      "final_comparison": "F采用直接保存契约（F7127～7158），并非所有模块都要加发布。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "保存草稿不生效、成功发布生效均局部符合；RV.sim=fail时仍发布。最终版直接保存可作为另一生效契约，不强制所有后台加发布。",
+      "authority": "admin12.11；core3.4",
+      "solution": "失败发布保留线上配置与可重试草稿，成功才切换版本。",
+      "acceptance": "分别保存、取消、失败发布、成功发布；三端读同一生效版本，未发布内容不泄漏。",
+      "probes": [
+        "VM07",
+        "VM08",
+        "VM29"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "B02",
+      "title": "新增商品混入上一条编辑草稿",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2817
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2982
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2983
+        }
+      ],
+      "final_comparison": "最终版查看/新增也按独立草稿核对，不继承演示预置记录为正确行为。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "新增只赋ADMIN.productDraft，未清页面rt.draft；表单合并时旧草稿覆盖新空值。",
+      "authority": "runtime13.5；admin12.6",
+      "solution": "为对象/新增会话分配草稿身份，进入新增按契约初始化。",
+      "acceptance": "编辑A未保存→新增→输入B→取消→重开A/B；新建不携带A旧值，取消无写入。",
+      "probes": [
+        "VM40"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "B03",
+      "title": "底价校验改善，空白售价被转换为0",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2825
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2828
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2829
+        }
+      ],
+      "final_comparison": "F的空值/数值同样按契约验证；不以不同控件外观推定类型正确。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "低于供货/最低价被拒绝；空白必填售价经Number转换为0并保存。合法0与未填写不等价。",
+      "authority": "business24.5",
+      "solution": "先做必填与词法解析再做有限数值、精度、值域和底价校验。",
+      "acceptance": "空串、空格、0、小数、负数、非法字符、低于底价/等于底价逐项验证；失败不写正式值。",
+      "probes": [
+        "VM38",
+        "VM42"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "B04",
+      "title": "商品保存覆盖所有规格价格",
+      "classification": "项目特例待核",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2838
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\05_接口数据与权限说明.md",
+          "line": 2416
+        }
+      ],
+      "final_comparison": "F规格面板使用固定价差（F1891、1915），也不合格。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "当前规格读取支持独立价，保存却全部写商品价。05登记SKU.price为读写字段，但未取得原PRD确认统一价还是独立价；VM02只证明覆盖行为。",
+      "authority": "core3.4；business24.5",
+      "solution": "先确定价格模型：独立价保留每SKU值；统一价须明确来源与维护范围，不保留误导性的独立编辑语义。",
+      "acceptance": "两规格98/158，仅改名称保存；独立模型必须保留；统一模型按已批准契约同步并清楚说明。",
+      "probes": [
+        "VM02",
+        "VM30"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "B05",
+      "title": "停用与不可售的字符串0被当真值",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2568
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2847
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2852
+        }
+      ],
+      "final_comparison": "F的空值/数值同样按契约验证；不以不同控件外观推定类型正确。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "选项value=\"0\"经布尔转换/真值判断成启用或保持ON；上轮已批准类型解码仍未落实。",
+      "authority": "business24.5",
+      "solution": "按控件契约显式解码枚举，拒绝未知值，不用!!或字符串真值代替业务布尔。",
+      "acceptance": "真实select选择启用/停用、可售/不可售，保存后重开和前台消费均正确；未知值拒绝。",
+      "probes": [
+        "VM04",
+        "VM05"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "B06",
+      "title": "必填客服兜底空白未拒绝且部分保存",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2856
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2858
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\05_接口数据与权限说明.md",
+          "line": 898
+        }
+      ],
+      "final_comparison": "F的空值/数值同样按契约验证；不以不同控件外观推定类型正确。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "05表明fallback必填；空白时保留旧fallback却提交其他字段并提示成功。不能沿用旧轮“该字段可清空”的前提。",
+      "authority": "business24.5；runtime13.5",
+      "solution": "依当前字段契约拒绝非法空值并保留草稿；检查通过后按声明原子性提交。",
+      "acceptance": "同时改客服号并清空必填fallback，显示字段错误且正式配置不变；合法可空字段另验证清空。",
+      "probes": [
+        "VM06"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "B07",
+      "title": "新增供应商草稿提前写正式集合",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2996
+        }
+      ],
+      "final_comparison": "最终版查看/新增也按独立草稿核对，不继承演示预置记录为正确行为。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "新增动作立即push供应商并称草稿，未保存已影响正式集合。",
+      "authority": "runtime13.5；admin12.11",
+      "solution": "新增保留独立草稿；保存成功后才提交正式集合。",
+      "acceptance": "新增→取消/返回不增加正式记录；保存成功只新增一条；失败草稿可重试。",
+      "probes": [
+        "VM26"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "B08",
+      "title": "审计before取自已被修改的对象",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2833
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2841
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2859
+        }
+      ],
+      "final_comparison": "F敏感动作也需真实原值/目标，存在记录不代表审计真实。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "商品old引用与写入对象相同，写后再取before，导致变更前显示新值；客服保存也直接同值前后。",
+      "authority": "admin12.13",
+      "solution": "提交前保存不可变原值，成功后形成真实前后差异与目标。",
+      "acceptance": "OLD/98改NEW/120，核对记录前后值、对象、操作者与失败无成功审计。",
+      "probes": [
+        "VM03"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "B09",
+      "title": "人工顺序仍用上下移，重复操作可反弹",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2492
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2497
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 3030
+        }
+      ],
+      "final_comparison": "最终版排序样式不高于用户已批准的拖拽规则；按人工展示顺序归类，查询排序不改拖拽。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "未实现用户已确认的排序把手拖拽；列表先绑定原数组index后按sort展示，两次对同一项上移交换回原顺序，VM27夹具符合该index绑定方式。最终版有draggable，不代表其把手等细节全通过。",
+      "authority": "admin12.6",
+      "solution": "通用人工顺序使用操作栏“排序”把手；稳定ID更新序列，声明保存/生效与取消。查询价格/销量排序保留业务排序。",
+      "acceptance": "拖拽首尾/中间、取消、重复拖同项、保存重开；不可编辑行与触控/键盘替代按适用范围检查。",
+      "probes": [
+        "VM27"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "B10",
+      "title": "权限空菜单过滤已改善",
+      "classification": "正向差异",
+      "priority": "P2",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2380
+        }
+      ],
+      "final_comparison": "最终版与旧版空菜单表现不再作为依据；本项按当前已批准admin12.2核验。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "过滤后没有可见子项的分组不渲染，空“系统”菜单问题局部已修复。菜单隐藏不证明动作权限重验。",
+      "authority": "admin12.2/12.13",
+      "solution": "保留当前过滤行为；执行鉴权由C01单独验收。",
+      "acceptance": "不同权限角色切换，空组不出现；有任一可访问子项时组可见且可进入。",
+      "probes": [
+        "VM28"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "C01",
+      "title": "敏感动作缺执行时授权重验",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2821
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2904
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2937
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2957
+        }
+      ],
+      "final_comparison": "F含NO_PERM文案不代表敏感动作全重验（F7012、7618、7640等旧报告）。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "所查保存/赠送/退款/通知执行函数未调用权限守卫；局部夹具hasPerm=false仍能执行。是否另有真实入口保护需要浏览器确认，不推断生产服务端漏洞。",
+      "authority": "admin12.13；runtime13.3",
+      "solution": "动作执行及确认重放时重新校验权限、对象和状态；UI隐藏之外保持统一拒绝结果。",
+      "acceptance": "打开编辑/确认后撤销权限再提交；越权不改对象、不产生成功审计；绕旧入口也拒绝。",
+      "probes": [],
+      "browser_retested": false
+    },
+    {
+      "id": "C02",
+      "title": "拒绝态退款仍能执行成功",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2937
+        }
+      ],
+      "final_comparison": "F分处理中及渠道结果（F7427～7445），仅为较好阶段设计，不等于真实回执已验证。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "原函数直接执行已拒绝退款并推进结果，缺合法前置态。",
+      "authority": "business23.4/24.4",
+      "solution": "以当前状态机守卫退款执行；发起、处理中与渠道结果分开。",
+      "acceptance": "拒绝/已成功/处理中/合法待执行分别触发，非法态无副作用，回调重放不重复退款。",
+      "probes": [
+        "VM16"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "C03",
+      "title": "已受理通知仍可盲目重试",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2957
+        }
+      ],
+      "final_comparison": "F仅有通知记录和重试入口不能证明去重与实时内容已闭环。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "平台已受理的通知仍增长重试次数；执行函数未先核对当前任务与允许重试状态。",
+      "authority": "business24.4；runtime13.3",
+      "solution": "执行前核对任务去重键与最新业务内容；仅允许声明的重试状态。",
+      "acceptance": "已受理、发送失败、内容变更及重复点击分别验证；不重复发已受理任务。",
+      "probes": [
+        "VM17"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "C04",
+      "title": "批次成员聚合改善，但全失败误标部分成功",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2882
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2889
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2904
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2912
+        }
+      ],
+      "final_comparison": "F区分导出/处理/完成（F7596～7602）但不能据此推断聚合规则已执行。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "一单完成、另一单处理中时父批次保持处理中，已修好；全成员处理异常却进入部分成功分支。开始处理对关闭/未支付订单也缺守卫。",
+      "authority": "core3.4；business23.4",
+      "solution": "按项目状态字典建立聚合真值表；零成功不能称部分成功；执行前确认订单可履约。",
+      "acceptance": "全待处理、处理中混合、全成功、成功+失败、全失败、成员缺失；关闭/未支付禁止处理。不同项目聚合标签不强制统一。",
+      "probes": [
+        "VM18",
+        "VM36",
+        "VM25"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "C05",
+      "title": "重复导出生成重叠批次",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2896
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2898
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2900
+        }
+      ],
+      "final_comparison": "F区分导出/处理/完成（F7596～7602）但不能据此推断聚合规则已执行。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "同一待处理订单连续导出创建两个批次，order.batch_no被覆盖，旧批次成员保留；04的N-GIFT-004要求重复导出识别。",
+      "authority": "core3.4；business24.4",
+      "solution": "区分重下载与新建批次，依据稳定成员与导出意图识别重复；允许重批时显式记录关系。",
+      "acceptance": "重复点击、重复选择同成员、部分交叠成员；旧批成员与新批关系不静默矛盾。",
+      "probes": [
+        "VM37"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "C06",
+      "title": "赠送导出只建批次，没有文件或模拟产物",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2896
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2902
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 3011
+        }
+      ],
+      "final_comparison": "F明确模拟文件（F7596～7602）；模拟文件与真实导出均不可互相冒充。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "导出函数仅修改批次并提示创建批次，未调用下载。不能以创建记录代替承诺的导出结果。",
+      "authority": "runtime13.3；STD-ACT-001",
+      "solution": "提供正确文件/可审阅模拟产物，或明确该入口仅建批；文件成功与批次状态分开。",
+      "acceptance": "从筛选/勾选范围导出，核对内容、数量、编码、范围和失败反馈；下载落盘另记录。",
+      "probes": [
+        "VM19"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "C07",
+      "title": "换码覆盖旧值，缺新旧关联记录",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2923
+        }
+      ],
+      "final_comparison": "F查询已付直接DELIVERED（F6994～7009），也是反例。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "代码覆盖o.code，提示称新旧关联却未保存可定位旧码记录。",
+      "authority": "core3.4；runtime13.3；admin12.13",
+      "solution": "记录每次交付/替换的身份、旧新关系、原因与权限；前台展示有效码。",
+      "acceptance": "初码→替换→重开记录，能追溯旧新关系且不重复交付；失败保留原有效码。",
+      "probes": [
+        "VM15"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "C08",
+      "title": "声明仅当前页选择却跨页保留",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2477
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2973
+        }
+      ],
+      "final_comparison": "F翻页清选择并检查页码上界（F7029～7035），是可用参考。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "翻页只改page，未清sel；批量动作可能带上未显示页的记录。",
+      "authority": "admin12.8",
+      "solution": "按当前页契约清选择；若业务确需跨页，显式声明范围与数量，另作项目决策。",
+      "acceptance": "第一页选A→第二页选B→执行；当前页模式只能作用B，筛选/页大小变化也处理失效选择。",
+      "probes": [
+        "VM20"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "D01",
+      "title": "滚动隐藏与画布弹层宿主改善，视觉待测",
+      "classification": "正向差异",
+      "priority": "P2",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 96
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 203
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 247
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 388
+        }
+      ],
+      "final_comparison": "最终版布局只作本商城参考，旧截图和旧通过不作为本轮实测。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "静态样式已有手机隐藏装饰滑块、画布absolute弹层和PC双栏；响应式使用viewport媒体查询，仍需验证宽浏览器内窄画布。不能从CSS推定真机无滚动条或全部居中。",
+      "authority": "ui7/8/9；desktop-web15",
+      "solution": "保留局部滚动能力；以实际画布验证弹层中心、正文可达和PC降栏。",
+      "acceptance": "宽浏览器+窄画布/说明展开，长弹窗、320移动画布、键盘/触控滚动；记录viewport、画布、缩放及截图。",
+      "probes": [],
+      "browser_retested": false
+    },
+    {
+      "id": "D02",
+      "title": "内嵌阅读器的PlantUML仍输出源码",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 803
+        }
+      ],
+      "final_comparison": "F Markdown围栏调用图示注册渲染（F1205～1207、7717～7771）；缩放仍须测实际尺寸。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "当前注册图源送入原mdToHtml仍只得pre/code；独立图示页能看SVG不等于MD围栏已渲染图。",
+      "authority": "reader18/19",
+      "solution": "阅读器围栏解析映射已注册离线图；未注册来源明确降级及缺口。",
+      "acceptance": "打开含当前已注册PlantUML的MD正文，验证SVG及缩放；未匹配图源不能伪装已渲染。",
+      "probes": [
+        "VM44"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "D03",
+      "title": "MD相对链接被吞，返回丢阅读位置",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 791
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 793
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 1179
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 1184
+        }
+      ],
+      "final_comparison": "F保存阅读位置并生成目录（F7790～7846），但焦点仍需真实触发核验。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "相对MD链接变纯文本；历史只保存文件名，缺滚动/定位恢复。",
+      "authority": "reader19",
+      "solution": "文内MD链接进入内置阅读器，按文档/锚点保存返回位置与必要焦点。",
+      "acceptance": "A中部链接B→再C→返回两次，文档、位置和锚点正确；无效链接有明确反馈。",
+      "probes": [],
+      "browser_retested": false
+    },
+    {
+      "id": "D04",
+      "title": "复制失败仍提示已复制",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 978
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 984
+        }
+      ],
+      "final_comparison": "F空catch后提示成功（F6785～6790），是共同反例。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "兼容复制返回false/异常仍走成功提示，最终版也有共同反例。",
+      "authority": "runtime13.3",
+      "solution": "传播真实复制结果；失败提示并提供手动选择，不虚构成功。",
+      "acceptance": "Clipboard拒绝、execCommand=false/异常、成功分别验证提示与可手动复制内容。",
+      "probes": [
+        "VM22"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "D05",
+      "title": "隐藏补锚点不能证明组件覆盖",
+      "classification": "执行错误",
+      "priority": "P1",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 870
+        }
+      ],
+      "final_comparison": "F有组件定位职责，但ID/十节/计数都不能证明实际组件可操作。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "注册组件未出现时自动补hidden span，querySelector存在不等于真实状态下可见可交互。",
+      "authority": "quality26.4/29.10；STD-QA-001",
+      "solution": "覆盖检查区分注册、实际渲染、可见性、可操作性和文档绑定；缺失留失败。",
+      "acceptance": "删除/隐藏一个实际组件后检查应暴露缺口；允许条件组件登记适用状态，不要求所有状态同时可见。",
+      "probes": [],
+      "browser_retested": false
+    },
+    {
+      "id": "D06",
+      "title": "Steam资料辅助反馈大于可见结果",
+      "classification": "条款适用待核",
+      "priority": "P2",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2988
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2989
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2990
+        }
+      ],
+      "final_comparison": "F有媒体/规格配置入口，但消费端固定价差仍有错误（F3313与1891）。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "预览宣称名称/介绍/截图等，动作只改content_source/content_status并提示已填充草稿。VM41未见description/media更新；离线可模拟，但不要求连接真实Steam接口。",
+      "authority": "runtime13.3；core3.4",
+      "solution": "明确是元信息占位还是模拟资料；若声称填充，至少展示对应字段结果并保留手工覆盖。",
+      "acceptance": "有/无SteamID、失败、重复拉取与手工改值分别测试；只有元信息变化时文案不得称资料已填充。",
+      "probes": [
+        "VM41"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "E01",
+      "title": "9份MD内外同源，但语义仍有冲突",
+      "classification": "正向差异",
+      "priority": "P2",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\05_接口数据与权限说明.md",
+          "line": 2441
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\05_接口数据与权限说明.md",
+          "line": 2493
+        }
+      ],
+      "final_comparison": "F只有06内外一致，其余8份有差异（旧10_交付物局部核对.json）；本轮最终版HTML哈希未变。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "本轮9/9外部与内嵌MD仅规范化BOM/换行后相同；这是同源改善，不证明正文正确。05 GIFT_BATCH.status字段表缺部分成功，而枚举字典包含，需统一。最终版九份外部MD本轮哈希与历史匹配，可沿用历史1/9同源统计（07记录）。",
+      "authority": "docs-business；quality29.13",
+      "solution": "保留单源生成；字段表、枚举、状态图与实现使用同一获准契约。",
+      "acceptance": "09决策/05字段枚举/04流程/实现同语义；每次重建封存9份MD与HTML摘要。",
+      "probes": [],
+      "browser_retested": false
+    },
+    {
+      "id": "E02",
+      "title": "提供方证据匹配主文件，hash字段实际是DOM长度",
+      "classification": "执行错误",
+      "priority": "P2",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\_checks\\验证证据_2026-10-21.md",
+          "line": 6
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\_work\\browser_check_v15.js",
+          "line": 226
+        }
+      ],
+      "final_comparison": "F自述验证同样不能直接算本轮通过；不能用最终版认可身份替代证据。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "提供方主HTML SHA匹配；浏览器结果46条自述通过未由本轮重跑。_work/browser_check_v15.js:226的hash取innerHTML.length=1913472，不能当文件SHA；WEB覆盖页渲染但没有绑定提交闭环。932分母应为233个页面状态组合×4，不能再乘53。",
+      "authority": "quality29.9/29.10/29.13",
+      "solution": "分开文件SHA、运行时摘要和计数；断言逐条绑定输入与能力边界。保留现有证据为提供方旁证，不全部否定。",
+      "acceptance": "记录测试输入文件SHA、环境、断言与截图映射；展示型断言不冒充完整操作；更名不影响相同字节身份。",
+      "probes": [],
+      "browser_retested": false
+    },
+    {
+      "id": "E03",
+      "title": "范围决策发生变化，不能照搬上轮裁剪结论",
+      "classification": "项目特例待核",
+      "priority": "P2",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\01_页面与状态说明.md",
+          "line": 42
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\04_业务流程与异常规则.md",
+          "line": 406
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\05_接口数据与权限说明.md",
+          "line": 386
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\09_待确认事项与设计决策.md",
+          "line": 38
+        }
+      ],
+      "final_comparison": "F有历史去重/置顶/管理/删除能力（F1417、1428、6650、6686、6694、6704）；默认搜索主动清空（F6634）。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "09 DEC-SEARCH-001现自述已确认，排除历史/联想；05另写待评审。01/04写短信不在本轮，与新交易验证码能力冲突。新增钱包、移除统计均先核原PRD；不能按最终版少一页机械补功能。",
+      "authority": "core1.3；change；quality29.9",
+      "solution": "区分交易验证码、交付通知短信与营销短信；统一决策状态并取得PRD/确认依据。不要把项目排除升级为通用删除搜索历史。",
+      "acceptance": "核对PRD V1.5 SHA与D-15/SEARCH-04/PHONE-05等出处，回填项目覆盖；确认前标自述而非用户已批准。",
+      "probes": [],
+      "browser_retested": false
+    },
+    {
+      "id": "E04",
+      "title": "钱包失败仍更新时间，字段含义待定",
+      "classification": "条款适用待核",
+      "priority": "P2",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2713
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 3067
+        }
+      ],
+      "final_comparison": "本轮新增ADM-WALLET-01；最终版无独立钱包页，不能据此判新增错误。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "失败保留余额但更新“最近查询”时间；若为尝试时间可以成立，若为结果有效时间会误导。VM39不判确定失败。",
+      "authority": "core3.4；runtime13.3",
+      "solution": "明确时间语义，必要时分别展示本次查询失败和上次成功结果时间；不要求所有项目新增固定字段。",
+      "acceptance": "成功后再失败，旧余额明确标记；用户能辨别结果来自哪次成功请求。",
+      "probes": [
+        "VM39"
+      ],
+      "browser_retested": false
+    },
+    {
+      "id": "E05",
+      "title": "WEB订单已按平台过滤，账号隔离证据不足",
+      "classification": "正向差异",
+      "priority": "P2",
+      "trial_evidence": [
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2196
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2198
+        },
+        {
+          "path": "D:\\模型汇总\\GitHub维护测试\\试跑5.0\\项目原型交付_V1.1\\02_低保真交互原型-试跑5.0.html",
+          "line": 2202
+        }
+      ],
+      "final_comparison": "F多套演示订单不能证明真实归属；不能把固定样例当权限实现。",
+      "final_evidence_source": "SHA匹配后复用trial4最终版定位缓存；不继承试跑4结论或浏览器通过",
+      "observation": "当前WEB列表已经filter平台，不能继承上轮“未按平台过滤”的结论；本轮未证明同平台多账号隔离。抽屉失效ID回退见A03。",
+      "authority": "core3.3；runtime13.5",
+      "solution": "保留平台过滤，按项目账号模型补同平台双账号夹具；纯单账号模拟可声明边界。",
+      "acceptance": "平台A/B及同平台账号U1/U2切换，列表/计数/详情/动作一致；不把固定单账号样例称为鉴权验证。",
+      "probes": [],
+      "browser_retested": false
+    }
+  ],
+  "count_meaning": "条目包括改善、执行错误和待核；不是独立缺陷总数。局部观察不是浏览器验收。"
+}
