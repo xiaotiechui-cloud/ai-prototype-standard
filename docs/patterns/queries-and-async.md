@@ -1,5 +1,7 @@
 # 查询与异步：执行细节
 
+按 ui 14.4/15.6 补齐适用加载/空/失败/未知/末端、分页边界、批量范围/部分失败、指标口径与导出实际产物；失败不当零，未知不伪造终态。用“查询→排序/分页→B详情→返回”及“慢 A→新 B→A 迟到”连续检查当前快照/稳定 ID/计数/选择，按[动作矩阵](../acceptance/actions-and-results.md)映射 TC，实际结果写 08。
+
 读取 [模式入口](README.md)；权威为 [admin12](../../standards/profiles/admin.md#s-12)、[runtime13.5/13.6](../../standards/runtime-and-build.md#s-13)和 [quality29](../../standards/quality-and-evidence.md#s-29)。本文件只辅助执行，不另定义准出阈值。
 
 | 能力 | 契约要点 | 回归夹具与断言 |

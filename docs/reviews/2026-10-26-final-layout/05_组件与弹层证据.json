@@ -1,0 +1,4316 @@
+{
+  "source": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.0\\02_低保真交互原型-最终版本.html",
+  "sha256": "04bf9e76f416833e1ac84e97408b81cbceb043bb44dca4a0529f3c80f418765f",
+  "cached_executable_scripts_verified": 9,
+  "doc_count": 192,
+  "selected_doc_contracts": 22,
+  "family_memberships_nonexclusive": {
+    "forms-and-choice": 24,
+    "data-and-actions": 62,
+    "navigation": 14,
+    "feedback-and-state": 22,
+    "project-composition": 50,
+    "layers": 25,
+    "media-and-content": 8
+  },
+  "components": [
+    {
+      "id": "COM-CLIENT-C01",
+      "name": "搜索输入框",
+      "families_by_name_only": [
+        "forms-and-choice"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> COM-CLIENT-C01",
+      "review": "selected contract excerpts inspected; not full semantic or runtime acceptance",
+      "short_contract_evidence": [
+        {
+          "section": 3,
+          "title": "功能交互逻辑",
+          "excerpt": "| 操作/触发 | 前置与校验 | 系统处理/接口 | 数据及状态变化 | 成功/失败去向 | 幂等、重复或取消规则 |\n| --- | --- | --- | --- | --- | --- |\n| 聚焦输入 | 页面已渲染 | 本地更新控件值与焦点态 | DEFAULT→EDITING；显示清空按钮 | 停留本页 | 无请求，无重复问题 |\n| 点击清空 | 输入内容非空 | 本地清空控件值，保持焦点 | EDITING→EDITING（空值）；清空按钮隐藏 | 停留本页",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 4,
+          "title": "界面反馈与体验表现",
+          "excerpt": "| 状态/场景 | 具体文案 | 展示位置/形式 | 可操作项 | 禁用项及提示原因 | 焦点/键盘/滚动/关闭 | 恢复或下一步 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 默认 | 占位\"输入商品名称搜索\" | 输入框内占位文字（#6b7280） | 输入、聚焦 | — | 点击获焦，键盘自动唤起 | 输入后显示清空按钮 |\n| 输入中 | 无额外文案 | 输入框内实时显示 | 输入、清空、提交 | — | 组合输入阶段",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 5,
+          "title": "组件样式",
+          "excerpt": "类型为单行输入框（PAT-INPUT-01），白底、1px #c9cdd3 边框、最小高44px，圆角按设计稿待定（低保真阶段为矩形；手机画布外框2px #8d939b属于评审外壳，不计入业务样式）。文字14px，主文字#20242a，占位#6b7280；聚焦态 outline 2px #526477（offset 2px，键盘可见焦点）；错误态2px #a33b3b红边并配行内文字，不单独用颜色表达错误。清空按钮与提交入口触控热区均≥44×44 CSS像素。长关键词超出时输",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 6,
+          "title": "状态变更",
+          "excerpt": "| 当前状态 | 触发事件 | 守卫条件 | 目标状态 | 界面变化 | 数据变化 | 禁止操作 | 关联01/04 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| APP-SEARCH-01::DEFAULT | 聚焦输入 | 控件可用 | APP-SEARCH-01::EDITING | 光标/键盘唤起，清空按钮出现 | keyword 本地草稿开始记录 | — | 01-6.2.1、ACT-001 |\n| AP",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 9,
+          "title": "测试与验收条件",
+          "excerpt": "关联 TC-SEARCH-001（输入与清空）、TC-SEARCH-002（占位文案与焦点态）、TC-SEARCH-003（空关键词提交提示且不跳转）、TC-SEARCH-004（键盘提交与按钮一致、输入法组合阶段不误触发）、TC-SEARCH-005（返回恢复关键词）。另需覆盖：关键词前后空格、超长关键词（上限待确认前按不截断处理）、连续提交去重、提交中离开页面后回调作废、切换账号后不残留关键词。以上覆盖正常/边界/重复/状态恢复；权限类用例不适用（免登录组件）。当前无实测",
+          "evidence_level": "embedded document intent; not observed outcome"
+        }
+      ]
+    },
+    {
+      "id": "COM-CLIENT-C02",
+      "name": "搜索提交动作",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> COM-CLIENT-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "COM-CLIENT-C03",
+      "name": "商品卡片",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> COM-CLIENT-C03",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "COM-CLIENT-C04",
+      "name": "商品卡片列表容器",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> COM-CLIENT-C04",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "COM-CLIENT-C05",
+      "name": "排序栏",
+      "families_by_name_only": [
+        "forms-and-choice"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> COM-CLIENT-C05",
+      "review": "selected contract excerpts inspected; not full semantic or runtime acceptance",
+      "short_contract_evidence": [
+        {
+          "section": 3,
+          "title": "功能交互逻辑",
+          "excerpt": "| 操作/触发 | 前置与校验 | 系统处理/接口 | 数据及状态变化 | 成功/失败去向 | 幂等、重复或取消规则 |\n| --- | --- | --- | --- | --- | --- |\n| 点击排序项 | 目标项已启用；非当前选中项 | 携带 sort_type 请求列表（API-HOME-002 / API-SEARCH-003），重置到第一页 | 选中态更新；列表进入加载 | 成功→新列表；失败→保留旧列表+行内提示 | 请求中忽略重复点击；点击当前项不重复请",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 4,
+          "title": "界面反馈与体验表现",
+          "excerpt": "| 状态/场景 | 具体文案 | 展示位置/形式 | 可操作项 | 禁用项及提示原因 | 焦点/键盘/滚动/关闭 | 恢复或下一步 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 默认 | \"默认推荐 / 销量 / 价格升序 / 价格降序 / 最新上架\"（文案以设计稿与运营配置为准） | 列表上方横向排列，超宽换行 | 点击切换 | — | 键盘可聚焦，Enter/Space切换 | — |\n| 切换中 | 选中项显示处理中态（",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 5,
+          "title": "组件样式",
+          "excerpt": "状态与筛选按钮样式（标准第7.2节）：可换行矩形，未选白底+1px #c9cdd3灰边、选中深灰#2f343b底白字；不使用胶囊样式；按钮最小高44px；**间距分端控制：手机画布内 4px、PC 侧 8px**；**手机画布在 320px 设计宽度下 5 个排序项必须单行放下**——按钮已按 44×44 触控下限取最小，宽度只能从间隙里让：5 个按钮合计 232px、4 个 4px 间隙共 248px，画布内可用宽度 260px；窄于设计宽度（手机画布 <248px，约合评",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 6,
+          "title": "状态变更",
+          "excerpt": "| 当前状态 | 触发事件 | 守卫条件 | 目标状态 | 界面变化 | 数据变化 | 禁止操作 | 关联01/04 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| DEFAULT | 点击排序项 | 目标项启用且≠当前项 | LOADING | 选中态转移；列表加载中 | sort_type更新；列表请求发出 | 请求中禁止再次切换 | 01-6.4 ACT-002 |\n| LOADING | 请求成功 | — |",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 9,
+          "title": "测试与验收条件",
+          "excerpt": "关联 TC-HOME-020（排序切换刷新列表）、TC-HOME-021（排序切换失败保留原列表）、TC-HOME-022（排序项不含\"最高折扣\"，价格排序结果与列表一致）、TC-SEARCH-020（结果页复用首页排序）。另需覆盖：请求中重复点击去重、点击当前项不请求、空列表时排序栏隐藏、返回列表恢复已选排序、条件下失效提示。边界/异常/重复/恢复覆盖；销量口径未确认前相关预期以\"待评审\"标注，不写死结论。未执行实测。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        }
+      ]
+    },
+    {
+      "id": "COM-CLIENT-C06",
+      "name": "商品卡片列表（首页/搜索结果复用）",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> COM-CLIENT-C06",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "COM-CLIENT-C07",
+      "name": "客服入口",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> COM-CLIENT-C07",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "COM-CLIENT-C08",
+      "name": "顶部标题栏",
+      "families_by_name_only": [
+        "navigation"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> COM-CLIENT-C08",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "COM-CLIENT-C09",
+      "name": "加载/空/失败状态区与继续加载",
+      "families_by_name_only": [
+        "feedback-and-state"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> COM-CLIENT-C09",
+      "review": "selected contract excerpts inspected; not full semantic or runtime acceptance",
+      "short_contract_evidence": [
+        {
+          "section": 3,
+          "title": "功能交互逻辑",
+          "excerpt": "| 操作/触发 | 前置与校验 | 系统处理/接口 | 数据及状态变化 | 成功/失败去向 | 幂等、重复或取消规则 |\n| --- | --- | --- | --- | --- | --- |\n| 首屏请求进行中 | 页面已渲染 | 展示加载中（骨架/文案） | LOADING | 成功→RESULTS/EMPTY；失败→ERROR | 不重复请求 |\n| 空数据返回 | 请求成功且为空 | 按实例展示空态与下一步 | EMPTY | 用户重试/修改条件/离开 | — |",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 4,
+          "title": "界面反馈与体验表现（实例文案）",
+          "excerpt": "| 状态/场景 | 具体文案 | 展示位置/形式 | 可操作项 | 禁用项及提示原因 | 焦点/键盘/滚动/关闭 | 恢复或下一步 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 加载中 | \"加载中…\" | 内容区居中/骨架块 | — | 筛选与排序暂不可用（避免基于旧数据操作） | 滚动保持 | 有数据→RESULTS |\n| 首页空（无配置/无商品） | \"暂无商品，请稍后再来\" | 列表区虚线边框空态 | 重试 | — ",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 5,
+          "title": "组件样式",
+          "excerpt": "空态采用虚线边框卡片（标准第7.2节）并给出原因与下一步；加载态可用骨架块或文案（低保真阶段用\"加载中…\"文案+占位块）；失败态文案+重试按钮（主按钮深灰白字，最小高44px）；继续加载区位于列表底部，高度≥44px，触控热区≥44×44 CSS像素。错误文案不展示内部错误码与堆栈；不使用Toast替代关键失败反馈（标准7.3 弹窗/提示）。长文案换行展示；底部加载区与安全区/底部操作栏不重叠。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 6,
+          "title": "状态变更",
+          "excerpt": "| 当前状态 | 触发事件 | 守卫条件 | 目标状态 | 界面变化 | 数据变化 | 禁止操作 | 关联01/04 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| LOADING | 请求成功有数据 | — | RESULTS | 渲染内容 | 写入数据 | — | 01-6.2.1 |\n| LOADING | 请求成功空数据 | — | EMPTY | 空态 | 无 | — | HOME-04 |\n| LOADI",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 9,
+          "title": "测试与验收条件",
+          "excerpt": "关联 TC-HOME-030～034（首页加载/空/失败/继续加载）、TC-SEARCH-021～024（结果空态/失败/继续加载）、TC-ORDER-050（订单列表继续加载与失败恢复）。另需覆盖：失败后重试使用原条件（不丢失筛选与关键词）、重试防重复、退出页面后迟到响应不刷新、末页不再触发请求、底部失败不清空已加载内容。覆盖正常/异常/边界/重复/恢复。未执行实测。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        }
+      ]
+    },
+    {
+      "id": "COM-CLIENT-C10",
+      "name": "商品明细卡",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> COM-CLIENT-C10",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "COM-CLIENT-C11",
+      "name": "状态筛选页签",
+      "families_by_name_only": [
+        "forms-and-choice",
+        "feedback-and-state"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> COM-CLIENT-C11",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "COM-CLIENT-C12",
+      "name": "订单卡片列表",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> COM-CLIENT-C12",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "COM-CLIENT-C13",
+      "name": "登录失效引导",
+      "families_by_name_only": [
+        "feedback-and-state"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> COM-CLIENT-C13",
+      "review": "selected contract excerpts inspected; not full semantic or runtime acceptance",
+      "short_contract_evidence": [
+        {
+          "section": 3,
+          "title": "功能交互逻辑",
+          "excerpt": "| 操作/触发 | 前置与校验 | 系统处理/接口 | 数据及状态变化 | 成功/失败去向 | 幂等、重复或取消规则 |\n| --- | --- | --- | --- | --- | --- |\n| 个人数据请求返回会话失效 | 页面处于个人数据区（订单/口令码/资格） | 立刻停止使用已返回数据；清除旧商城会话、订单缓存、待支付上下文、协议勾选及敏感数据（PRD 3.3） | 区域替换为引导；进入 SESSION_EXPIRED | 停留，等待用户操作 | 旧回调作废，迟",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 4,
+          "title": "界面反馈与体验表现",
+          "excerpt": "| 状态/场景 | 具体文案 | 展示位置/形式 | 可操作项 | 禁用项及提示原因 | 焦点/键盘/滚动/关闭 | 恢复或下一步 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 会话失效 | \"登录已失效，请重新登录后查看订单\" | 个人数据区域整块替换（保留页面其他公开结构） | 重新登录 | 订单内容全部隐藏（原因=无有效会话，防止泄露他人订单） | 焦点移至引导区主按钮 | 登录后恢复当前页面 |\n| 登录中 | \"正在",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 5,
+          "title": "组件样式",
+          "excerpt": "引导区为居中区块（虚线边框空态风格或卡片式），文案14px主文字+辅助说明12～13px；主按钮深灰白字、最小高44px，热区≥44×44 CSS像素；不使用弹窗强制登录（浏览不受限，PRD 3.2/3.1）；引导区不遮挡页面导航与返回；长文案换行展示。WEB 实例居中于列表区，不改变桌面布局其它列。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 6,
+          "title": "状态变更",
+          "excerpt": "| 当前状态 | 触发事件 | 守卫条件 | 目标状态 | 界面变化 | 数据变化 | 禁止操作 | 关联01/04 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| RESULTS | 接口返回会话失效 | 明确为登录失效信号 | SESSION_EXPIRED | 数据区替换为引导 | 清除旧会话/订单缓存/待支付上下文/协议勾选/敏感数据 | 禁止继续展示旧账号内容 | 01-6.3、EX-AUTH-003 |\n",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 9,
+          "title": "测试与验收条件",
+          "excerpt": "关联 TC-ORDER-040（登录失效引导与重查，01 已登记）、TC-ORDER-049（登录失效缓存清理与迟到回调）。另需覆盖：失效后立即不展示旧账号任何订单或口令码（AC-05）；登录成功后按新账号重查且不沿用旧草稿；登录取消后仍可浏览；多次失效不产生连续弹窗/重复请求；迟到响应不把页面跳回成功态（AC-18）。覆盖异常/权限/竞态/恢复。未执行实测。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        }
+      ]
+    },
+    {
+      "id": "COM-CLIENT-C14",
+      "name": "底部标签栏",
+      "families_by_name_only": [
+        "navigation"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> COM-CLIENT-C14",
+      "review": "selected contract excerpts inspected; not full semantic or runtime acceptance",
+      "short_contract_evidence": [
+        {
+          "section": 3,
+          "title": "功能交互逻辑",
+          "excerpt": "| 操作/触发 | 前置与校验 | 系统处理/接口 | 数据及状态变化 | 成功/失败去向 | 幂等、重复或取消规则 |\n| --- | --- | --- | --- | --- | --- |\n| 点击「商城」 | 无；免登录 | 本地路由 → APP-HOME-01 | 页面切换，不写入业务数据 | 已在商城首页时点击不重复入栈 | 目标不变时重复点击无副作用 |\n| 点击「我的」 | 无；免登录 | 本地路由 → APP-MINE-01（未登录时页面内展示登录引导） ",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 4,
+          "title": "界面反馈与体验表现",
+          "excerpt": "| 状态/场景 | 具体文案 | 展示位置/形式 | 可操作项 | 禁用项及提示原因 | 焦点/键盘/滚动/关闭 | 恢复或下一步 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 默认 | 「商城」「我的」 | 手机画布底部固定，通栏两等分，图标在上、文字在下 | 两个标签 | 无 | 标签栏**不随内容滚动**；弹层遮罩覆盖于其上 | 切换到对应一级页面 |\n| 当前项 | 当前标签主色加粗，并带底部高亮 | 同上 | 同默认",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 5,
+          "title": "组件样式",
+          "excerpt": "通栏固定在手机画布底部、白底、上边 1px #c9cdd3 分隔、底部圆角与画布一致；高 52px（不含安全区），两个标签等宽；图标位 20×20（**图标为线框占位，不做图形臆造**，正式图标待设计），文字 11px；非当前项用 #6b7280，当前项用主色加粗；整块热区≥44×44，两个标签之间不设分隔线。标签栏位于滚动容器之外，滚动内容不遮挡它；弹层（购买须知、实名提醒等）遮罩覆盖整块标签栏，弹层展示期间不可切换一级页面。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 6,
+          "title": "状态变更",
+          "excerpt": "| 当前状态 | 触发事件 | 守卫条件 | 目标状态 | 界面变化 | 数据变化 | 禁止操作 | 关联01/04 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| MALL（商城） | 点击「我的」 | 无 | MINE（我的） | 标签栏高亮切换，页面整体切换 | 无 | — | 01 导航关系；FL-BROWSE-001 |\n| MINE（我的） | 点击「商城」 | 无 | MALL（商城） | 同上 | 无",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 9,
+          "title": "测试与验收条件",
+          "excerpt": "验证：标签栏**只在两个一级页面出现**，二级页面（商品详情、搜索、结算、订单、结果页等）不出现；两个标签均可点击且落点正确；当前项高亮与 aria-current 一致；标签栏不随内容滚动；弹层展示期间不可切换；未登录点击「我的」进入页面内的登录引导而非空页。关联 TC-HOME-002（入口可达性）、TC-DELIVERY-002（一级页面结构）。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        }
+      ]
+    },
+    {
+      "id": "APP-HOME-01-C01",
+      "name": "顶部标题栏",
+      "families_by_name_only": [
+        "navigation"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-HOME-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-HOME-01-C02",
+      "name": "搜索入口",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-HOME-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-HOME-01-C04",
+      "name": "广告位",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-HOME-01-C04",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-HOME-01-C06",
+      "name": "排序与筛选栏（共享）",
+      "families_by_name_only": [
+        "forms-and-choice"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-HOME-01-C06",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-HOME-01-C07",
+      "name": "商品卡片列表（共享）",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-HOME-01-C07",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-HOME-01-C08",
+      "name": "加载与失败状态区（共享）",
+      "families_by_name_only": [
+        "feedback-and-state"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-HOME-01-C08",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-HOME-01-C09",
+      "name": "底部标签栏",
+      "families_by_name_only": [
+        "navigation"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-HOME-01-C09",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-NOTICE-01-C01",
+      "name": "提醒弹层容器",
+      "families_by_name_only": [
+        "layers",
+        "feedback-and-state"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-NOTICE-01-C01",
+      "review": "selected contract excerpts inspected; not full semantic or runtime acceptance",
+      "short_contract_evidence": [
+        {
+          "section": 3,
+          "title": "功能交互逻辑",
+          "excerpt": "| 操作/触发 | 前置与校验 | 系统处理/接口 | 数据及状态变化 | 成功/失败去向 | 幂等、重复或取消规则 |\n| --- | --- | --- | --- | --- | --- |\n| 首页首次加载完成 | 无已提醒记录；实名状态可得 | 展示弹层；焦点移入弹层；阻止背景滚动 | SHOW；写入提醒展示记录（策略待评审） | 等待用户操作 | 首屏仅展示一次，不重复叠加 |\n| 点击弹窗外遮罩 | 任意状态 | 关闭弹层，停留当前页面 | HIDE | 停留首",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 4,
+          "title": "界面反馈与体验表现",
+          "excerpt": "| 状态/场景 | 具体文案 | 展示位置/形式 | 可操作项 | 禁用项及提示原因 | 焦点/键盘/滚动/关闭 | 恢复或下一步 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 弹层展示 | 无容器文案（业务文案见C02） | 屏幕中部弹层，右上角关闭按钮，半透明遮罩 | 主按钮（C03）、右上角关闭（C04）、点击遮罩 | 无奖励按钮、无会员/权益内容（AUTH-06） | 焦点进入弹层主按钮；背景不可滚动；Esc/返回键等",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 5,
+          "title": "组件样式",
+          "excerpt": "弹层为居中卡片（移动端可16px顶角圆角以区分覆盖层，标准7.2）；卡片白底+1px #c9cdd3；宽度约为画布内容宽减两侧外边距（具体尺寸TBD-03）；遮罩半透明深色、不遮挡弹层内容；关闭按钮热区≥44×44 CSS像素；文案区与按钮区纵向排列，主按钮最小高44px。弹层不遮挡后仍可点透（遮罩接收点击即关闭）；长文案换行时弹层高度自适应，不出现内容被裁切。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 6,
+          "title": "状态变更",
+          "excerpt": "| 当前状态 | 触发事件 | 守卫条件 | 目标状态 | 界面变化 | 数据变化 | 禁止操作 | 关联01/04 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| HIDDEN | 首页首次加载完成 | 无已提醒记录且状态可得 | SHOWN | 弹层出现 | 写入展示记录（策略待评审） | 不强制登录 | 01-6.2.1 APP-NOTICE-01::* |\n| SHOWN | 点击遮罩/关闭按钮 | 任意 |",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 9,
+          "title": "测试与验收条件",
+          "excerpt": "关联 TC-AUTH-021（已实名显示\"知道了\"）、TC-AUTH-022（未实名显示\"前往认证\"）、TC-AUTH-023（右上角关闭与遮罩关闭、点击内容区不误关）、TC-AUTH-024（状态未知不展示状态相关提醒）、TC-AUTH-026（首次提醒频次策略声明项）。另需覆盖：无奖励元素（AC-19）；不因展示提醒强制登录；背景滚动与焦点管理。覆盖正常/异常/边界。未执行实测。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        }
+      ]
+    },
+    {
+      "id": "APP-NOTICE-01-C02",
+      "name": "提醒文案区",
+      "families_by_name_only": [
+        "feedback-and-state",
+        "media-and-content"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-NOTICE-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-NOTICE-01-C03",
+      "name": "主按钮",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-NOTICE-01-C03",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-NOTICE-01-C04",
+      "name": "右上角关闭按钮",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-NOTICE-01-C04",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-SEARCH-01-C01",
+      "name": "搜索输入框（共享）",
+      "families_by_name_only": [
+        "forms-and-choice"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-SEARCH-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-SEARCH-01-C02",
+      "name": "搜索发现区",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-SEARCH-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-SEARCH-01-C03",
+      "name": "热门商品区",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-SEARCH-01-C03",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-SEARCH-01-C04",
+      "name": "联想建议列表",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-SEARCH-01-C04",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-SEARCH-01-C05",
+      "name": "搜索历史",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-SEARCH-01-C05",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-SEARCH-02-C01",
+      "name": "搜索输入框（共享，回填关键词）",
+      "families_by_name_only": [
+        "forms-and-choice"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-SEARCH-02-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-SEARCH-02-C03",
+      "name": "结果卡片列表（共享）",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-SEARCH-02-C03",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-SEARCH-02-C04",
+      "name": "继续加载/分页（共享）",
+      "families_by_name_only": [
+        "feedback-and-state",
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-SEARCH-02-C04",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-PRODUCT-01-C01",
+      "name": "详情顶部导航",
+      "families_by_name_only": [
+        "navigation"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-PRODUCT-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-PRODUCT-01-C02",
+      "name": "商品媒体区（图片 / 视频轮播）",
+      "families_by_name_only": [
+        "media-and-content"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-PRODUCT-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-PRODUCT-01-C03",
+      "name": "名称价格区",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-PRODUCT-01-C03",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-PRODUCT-01-C06",
+      "name": "商品须知（可展开）",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-PRODUCT-01-C06",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-PRODUCT-01-C07",
+      "name": "底部操作栏",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-PRODUCT-01-C07",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-PRODUCT-01-C08",
+      "name": "未支付订单提示条",
+      "families_by_name_only": [
+        "feedback-and-state"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-PRODUCT-01-C08",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-PRODUCT-01-C09",
+      "name": "游戏介绍",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-PRODUCT-01-C09",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-PRODUCT-01-C10",
+      "name": "硬件配置",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-PRODUCT-01-C10",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-PANEL-01-C01",
+      "name": "面板容器",
+      "families_by_name_only": [
+        "layers"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-PANEL-01-C01",
+      "review": "selected contract excerpts inspected; not full semantic or runtime acceptance",
+      "short_contract_evidence": [
+        {
+          "section": 3,
+          "title": "功能交互逻辑",
+          "excerpt": "| 操作/触发 | 前置与校验 | 系统处理/接口 | 数据及状态变化 | 成功/失败去向 | 幂等、重复或取消规则 |\n| --- | --- | --- | --- | --- | --- |\n| 详情页点击「立即购买」 | 商品可售（GOODS::ON_SALE）且当前账号无有效未支付订单（否则按钮为「订单处理中」） | 本地打开面板，读取或复用 API-PRODUCT-001 摘要 | panel_state=OPEN，写入 source_page 与默认规格 | 成",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 4,
+          "title": "界面反馈与体验表现",
+          "excerpt": "| 状态/场景 | 具体文案 | 展示位置/形式 | 可操作项 | 禁用项及提示原因 | 焦点/键盘/滚动/关闭 | 恢复或下一步 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 面板打开（APP-PANEL-01::OPEN） | 标题「选择商品信息」；面板顶部商品图与名称 | 底部弹层，自下而上出现，顶部 16px 圆角；遮罩为深色半透明 | 规格、支付方式、协议勾选、好友链接（赠送）、关闭、「购买并支付 ¥金额」 | 无 ",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 5,
+          "title": "组件样式",
+          "excerpt": "底部弹层，宽度与移动画布等宽（320px 画布下为满宽），面板高度按内容自适应且最高不超过可视区约 85%，内容区纵向滚动、底部操作区常驻不滚动；面板背景 #ffffff，顶部左右圆角 16px 以区分覆盖层（标准第7.2节弹层基线）。遮罩使用 #20242a、透明度约 45%，仅在开启时显示。关闭按钮位于面板右上角，热区不小于 44×44 CSS像素，图标为纯装饰、按钮本体承载点击。内容区内边距 14px，分组之间 16px 间距，分组标题 14px 常规字重、正文 14p",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 6,
+          "title": "状态变更",
+          "excerpt": "| 当前状态 | 触发事件 | 守卫条件 | 目标状态 | 界面变化 | 数据变化 | 禁止操作 | 关联01/04 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| 详情 DEFAULT（面板未打开） | 点击「立即购买」 | 商品可售且无有效未支付订单 | APP-PANEL-01::OPEN | 面板自下而上出现，背景遮罩 | 写入 source_page、默认规格 | 「订单处理中」态不得打开新购面板 | 01",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 9,
+          "title": "测试与验收条件",
+          "excerpt": "打开与关闭、遮罩与返回键、校验中不可关闭、关闭后现场保留、商品信息失败重试、价格变化回包等行为可判定；关联 TC-PRODUCT-101（免登录打开与关闭返回）、TC-PRODUCT-111（价格变化/不可售）。真机需验证键盘弹起时底部按钮不被遮挡、容器返回手势与面板关闭语义一致，模拟环境不能替代。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        }
+      ]
+    },
+    {
+      "id": "APP-PANEL-01-C02",
+      "name": "商品与金额区",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-PANEL-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-PANEL-01-C03",
+      "name": "规格选择",
+      "families_by_name_only": [
+        "forms-and-choice"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-PANEL-01-C03",
+      "review": "selected contract excerpts inspected; not full semantic or runtime acceptance",
+      "short_contract_evidence": [
+        {
+          "section": 3,
+          "title": "功能交互逻辑",
+          "excerpt": "| 操作/触发 | 前置与校验 | 系统处理/接口 | 数据及状态变化 | 成功/失败去向 | 幂等、重复或取消规则 |\n| --- | --- | --- | --- | --- | --- |\n| 点击某规格标签 | 该规格可售 | 本地切换选中；必要时请求 API-PRODUCT-001 取该规格价格 | 价格（C02）、交付方式与适用限制（C05）、好友链接区显隐（C06）联动 | 成功：进入 APP-PANEL-01::CHANGED；失败：保留原规格并提示「价格获",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 4,
+          "title": "界面反馈与体验表现",
+          "excerpt": "| 状态/场景 | 具体文案 | 展示位置/形式 | 可操作项 | 禁用项及提示原因 | 焦点/键盘/滚动/关闭 | 恢复或下一步 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 默认（DEFAULT） | 分组标题「选择版本」；选中标签深灰白字，未选白底灰边 | 横向可换行矩形标签，间距 8px | 点击各可售规格 | 不可售规格标签置灰 | 键盘焦点可在标签间移动，选中项可读 | 切换后金额与交付方式即时更新 |\n| 已切换",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 5,
+          "title": "组件样式",
+          "excerpt": "版本行列表（纵向堆叠，间距 6px）。每行：单选圆点 14px + 版本名 13px/500 + 价格 13px（右对齐）+ 第二行说明（左侧缩进 22px、11px 辅助色）「仅支持 Steam 国区账号激活」+ 问号入口。行最小高 54px、内边距 8px、1px 边框 #c9cdd3 白底；选中行 2px 主色边框 + 浅底 #eef2f7，圆点变实心。**问号入口的可视圆圈为 16px，但热区扩到 44×44**（负外边距抵消，不改变行高）——16px 的小图标在移动",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 6,
+          "title": "状态变更",
+          "excerpt": "| 当前状态 | 触发事件 | 守卫条件 | 目标状态 | 界面变化 | 数据变化 | 禁止操作 | 关联01/04 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| DEFAULT | 点击可售规格 | 标签可售 | CHANGED | 选中态切换、金额与交付方式联动 | 当前 spec_id 更新 | 提交中不可切换 | ACT-005；01 6.2 |\n| CHANGED | 再点击其他可售规格 | 同上 | C",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 9,
+          "title": "测试与验收条件",
+          "excerpt": "覆盖切换联动（金额、交付方式、适用限制、好友链接显隐）、不可售规格禁用与提示、连续快速切换以最后一次为准、提交中禁止切换、服务端判定不可售后的 EXPIRED（TC-PRODUCT-102）。交付方式必须来自商品真实配置，不允许口令码与好友赠送混作同一能力（PRD 4.4）。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        }
+      ]
+    },
+    {
+      "id": "APP-PANEL-01-C05",
+      "name": "发货方式与适用限制",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-PANEL-01-C05",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-PANEL-01-C06",
+      "name": "好友链接输入",
+      "families_by_name_only": [
+        "forms-and-choice"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-PANEL-01-C06",
+      "review": "selected contract excerpts inspected; not full semantic or runtime acceptance",
+      "short_contract_evidence": [
+        {
+          "section": 3,
+          "title": "功能交互逻辑",
+          "excerpt": "| 操作/触发 | 前置与校验 | 系统处理/接口 | 数据及状态变化 | 成功/失败去向 | 幂等、重复或取消规则 |\n| --- | --- | --- | --- | --- | --- |\n| 切换到好友赠送规格 | 交付类型=GIFT | 展示输入框、「付款后不可修改」提示与格式说明 | C06 可见、state=EMPTY | 用户可输入 | 切换回 CODE 规格时隐藏但保留草稿 |\n| 输入内容 | 无 | 本地保存草稿；输入过程中不做逐字符报错 | 草稿更新",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 4,
+          "title": "界面反馈与体验表现",
+          "excerpt": "| 状态/场景 | 具体文案 | 展示位置/形式 | 可操作项 | 禁用项及提示原因 | 焦点/键盘/滚动/关闭 | 恢复或下一步 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 空（EMPTY） | 标签「Steam 好友链接（必填）」；占位提示「请粘贴您的 Steam 好友链接」；辅助说明「仅填写 Steam 好友链接；付款后不可修改」 | 输入框＋标签行，位于交付方式区下方 | 输入、粘贴、清空 | 无 | 点击输入框唤起",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 5,
+          "title": "组件样式",
+          "excerpt": "常规输入框：白底、1px #c9cdd3 边框、最小高 44px、内边距 10×12px、圆角 4px、14px 字号，占位文字 #6b7280；聚焦时描边 #526477（2px），错误时 2px #a33b3b 边框并配文字说明（标准第7.2节输入框基线）。标签 12～14px，必填标识以文字「（必填）」表达，不只依赖红色星号。辅助说明「付款后不可修改」使用辅助色，与输入框间距 6px。单一字段、不采集昵称、账号等额外资料；输入框宽度撑满面板内容区，长链接在框内横向滚动显",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 6,
+          "title": "状态变更",
+          "excerpt": "| 当前状态 | 触发事件 | 守卫条件 | 目标状态 | 界面变化 | 数据变化 | 禁止操作 | 关联01/04 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| EMPTY | 输入内容 | 交付类型=GIFT | EDITING | 边框默认态 | 草稿更新 | 不即时报错 | ACT-006 |\n| EDITING | 失焦且格式合法 | — | VALID | 无错误提示 | state=VALID | —",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 9,
+          "title": "测试与验收条件",
+          "excerpt": "覆盖空值必填、格式非法、格式合法、组合输入法不误触发、口令码商品不要求填写、付款后只读且前后台普通编辑均不可修改、已发起支付时修改被拦截（TC-PRODUCT-104、TC-CHECKOUT-102）。格式正确不等于必能赠送的说明须存在（CHECKOUT-08）；无供应商验证能力时不得承诺必然成功。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        }
+      ]
+    },
+    {
+      "id": "APP-PANEL-01-C07",
+      "name": "支付方式选择",
+      "families_by_name_only": [
+        "forms-and-choice"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-PANEL-01-C07",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-PANEL-01-C08",
+      "name": "协议勾选",
+      "families_by_name_only": [
+        "forms-and-choice"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-PANEL-01-C08",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-PANEL-01-C09",
+      "name": "最终购买按钮",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-PANEL-01-C09",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-PANEL-01-C10",
+      "name": "购买须知弹窗",
+      "families_by_name_only": [
+        "layers"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-PANEL-01-C10",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-PANEL-01-C11",
+      "name": "CDK 商品购买说明弹层",
+      "families_by_name_only": [
+        "layers",
+        "media-and-content"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-PANEL-01-C11",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-AUTH-01-C01",
+      "name": "说明弹层容器",
+      "families_by_name_only": [
+        "layers",
+        "media-and-content"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-AUTH-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-AUTH-01-C02",
+      "name": "实名说明文案",
+      "families_by_name_only": [
+        "media-and-content"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-AUTH-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-AUTH-01-C03",
+      "name": "暂不认证按钮",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-AUTH-01-C03",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-AUTH-01-C04",
+      "name": "去认证按钮",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-AUTH-01-C04",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-AGREEMENT-01-C01",
+      "name": "协议页导航",
+      "families_by_name_only": [
+        "navigation"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-AGREEMENT-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-AGREEMENT-01-C02",
+      "name": "协议正文",
+      "families_by_name_only": [
+        "layers"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-AGREEMENT-01-C02",
+      "review": "selected contract excerpts inspected; not full semantic or runtime acceptance",
+      "short_contract_evidence": [
+        {
+          "section": 3,
+          "title": "功能交互逻辑",
+          "excerpt": "| 操作/触发 | 前置与校验 | 系统处理/接口 | 数据及状态变化 | 成功/失败去向 | 幂等、重复或取消规则 |\n| --- | --- | --- | --- | --- | --- |\n| 进入页面 | 无（免登录） | 调用 API-AGREE-002 加载正文与版本 | 正文渲染，state=DEFAULT | 成功：展示全文；失败：正文区 ERROR 并提供重试（EX-AGREE-001） | 重复进入每次重新加载，取最新生效版本 |\n| 正文较长 | — ",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 4,
+          "title": "界面反馈与体验表现",
+          "excerpt": "| 状态/场景 | 具体文案 | 展示位置/形式 | 可操作项 | 禁用项及提示原因 | 焦点/键盘/滚动/关闭 | 恢复或下一步 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 加载中（LOADING） | 「协议加载中…」 | 正文区居中提示 | 无 | 无 | 导航仍可返回 | 加载完成后渲染 |\n| 默认（DEFAULT） | 顶部信息行「版本：V1.2　生效日期：2026-10-15」；正文分章展示（商品适用范围、交付",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 5,
+          "title": "组件样式",
+          "excerpt": "白底、正文 14px、行高 1.7、#20242a；章节标题 15～16px 字重 500，段间距 12px；版本与生效日期以 12px #6b7280 展示在正文顶部信息行，与正文间 16px 间距。正文区左右内边距 14px，与顶部导航之间无重叠；长段落自动换行，不出现横向滚动。滚动条为局部滚动，不连带导航；页面内不做分页。正文中不得内嵌推广、奖励或竞品条款内容（AGREEMENT-01、3.3）。弱网时可先展示骨架屏文字，不展示空壳。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 6,
+          "title": "状态变更",
+          "excerpt": "| 当前状态 | 触发事件 | 守卫条件 | 目标状态 | 界面变化 | 数据变化 | 禁止操作 | 关联01/04 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| LOADING | 加载成功 | 正文非空 | DEFAULT | 渲染全文与版本行 | 无 | 无 | AGREEMENT-01 |\n| LOADING | 加载失败或超时 | — | ERROR | 失败占位 | 无 | 不展示空正文伪装成功 | E",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 9,
+          "title": "测试与验收条件",
+          "excerpt": "覆盖正文加载、版本与生效日期展示、加载失败重试、长文滚动、版本更新提示、返回保留来源现场（TC-AGREE-101、TC-AGREE-102、TC-AGREE-103、TC-AGREE-104）。协议正文必须可完整阅读，不得截断或仅展示摘要。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        }
+      ]
+    },
+    {
+      "id": "APP-AGREEMENT-01-C03",
+      "name": "底部操作",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-AGREEMENT-01-C03",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-PHONE-01-C01",
+      "name": "弹层容器",
+      "families_by_name_only": [
+        "layers"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-PHONE-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-PHONE-01-C02",
+      "name": "提示文案",
+      "families_by_name_only": [
+        "feedback-and-state",
+        "media-and-content"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-PHONE-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-PHONE-01-C03",
+      "name": "去绑定按钮",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-PHONE-01-C03",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-PHONE-01-C04",
+      "name": "无法唤起备用提示",
+      "families_by_name_only": [
+        "feedback-and-state"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-PHONE-01-C04",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-CHECKOUT-01-C01",
+      "name": "顶部导航",
+      "families_by_name_only": [
+        "navigation"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-CHECKOUT-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-CHECKOUT-01-C02",
+      "name": "订单信息区",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-CHECKOUT-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-CHECKOUT-01-C03",
+      "name": "商品明细卡（共享实例）",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-CHECKOUT-01-C03",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-CHECKOUT-01-C04",
+      "name": "好友链接（可改，付款前）",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-CHECKOUT-01-C04",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-CHECKOUT-01-C05",
+      "name": "支付方式选择",
+      "families_by_name_only": [
+        "forms-and-choice"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-CHECKOUT-01-C05",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-CHECKOUT-01-C06",
+      "name": "价格明细",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-CHECKOUT-01-C06",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-CHECKOUT-01-C07",
+      "name": "协议勾选",
+      "families_by_name_only": [
+        "forms-and-choice"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-CHECKOUT-01-C07",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-CHECKOUT-01-C08",
+      "name": "底部合计与继续支付",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-CHECKOUT-01-C08",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-CHECKOUT-01-C09",
+      "name": "倒计时（条件展示）",
+      "families_by_name_only": [
+        "feedback-and-state"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-CHECKOUT-01-C09",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-PAYRET-01-C01",
+      "name": "询问弹窗容器",
+      "families_by_name_only": [
+        "layers"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-PAYRET-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-PAYRET-01-C02",
+      "name": "询问文案",
+      "families_by_name_only": [
+        "media-and-content"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-PAYRET-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-PAYRET-01-C03",
+      "name": "未支付按钮",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-PAYRET-01-C03",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-PAYRET-01-C04",
+      "name": "已支付按钮",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-PAYRET-01-C04",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-PAYRET-01-C05",
+      "name": "查询中反馈",
+      "families_by_name_only": [
+        "feedback-and-state"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-PAYRET-01-C05",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-RESULT-01-C01",
+      "name": "结果页导航",
+      "families_by_name_only": [
+        "navigation"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-RESULT-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-RESULT-01-C02",
+      "name": "结果摘要区",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-RESULT-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-RESULT-01-C03",
+      "name": "口令码交付区",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-RESULT-01-C03",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-RESULT-01-C04",
+      "name": "好友赠送交付区",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-RESULT-01-C04",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-RESULT-01-C05",
+      "name": "查看订单与客服入口",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-RESULT-01-C05",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-ORDER-01-C01",
+      "name": "顶部导航",
+      "families_by_name_only": [
+        "navigation"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-ORDER-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-ORDER-01-C02",
+      "name": "状态筛选页签",
+      "families_by_name_only": [
+        "forms-and-choice",
+        "feedback-and-state"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-ORDER-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-ORDER-01-C03",
+      "name": "订单卡片列表",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-ORDER-01-C03",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-ORDER-01-C04",
+      "name": "分页/加载更多",
+      "families_by_name_only": [
+        "feedback-and-state",
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-ORDER-01-C04",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-ORDER-01-C05",
+      "name": "登录失效引导",
+      "families_by_name_only": [
+        "feedback-and-state"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-ORDER-01-C05",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-ORDER-02-C01",
+      "name": "详情顶部导航",
+      "families_by_name_only": [
+        "navigation"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-ORDER-02-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-ORDER-02-C02",
+      "name": "状态区分区",
+      "families_by_name_only": [
+        "feedback-and-state"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-ORDER-02-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-ORDER-02-C03",
+      "name": "商品快照区",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-ORDER-02-C03",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-ORDER-02-C04",
+      "name": "口令码区",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-ORDER-02-C04",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-ORDER-02-C05",
+      "name": "好友赠送区",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-ORDER-02-C05",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-ORDER-02-C06",
+      "name": "售后记录区",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-ORDER-02-C06",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-ORDER-02-C07",
+      "name": "底部操作栏",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-ORDER-02-C07",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-MINE-01-C01",
+      "name": "账号信息区",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-MINE-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-MINE-01-C02",
+      "name": "资格状态区",
+      "families_by_name_only": [
+        "layers",
+        "feedback-and-state"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-MINE-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-MINE-01-C03",
+      "name": "我的订单区",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-MINE-01-C03",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-MINE-01-C04",
+      "name": "客服入口",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-MINE-01-C04",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-MINE-01-C05",
+      "name": "协议与关于",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-MINE-01-C05",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-MINE-01-C06",
+      "name": "底部标签栏",
+      "families_by_name_only": [
+        "navigation"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-MINE-01-C06",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-SERVICE-01-C01",
+      "name": "客服引导区",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-SERVICE-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-SERVICE-01-C02",
+      "name": "复制订单号",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-SERVICE-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-SERVICE-01-C03",
+      "name": "企业微信唤起/二维码",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-SERVICE-01-C03",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-SERVICE-01-C04",
+      "name": "备用提示",
+      "families_by_name_only": [
+        "feedback-and-state"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-SERVICE-01-C04",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-CONTAINER-01-C01",
+      "name": "容器异常提示区",
+      "families_by_name_only": [
+        "feedback-and-state"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-CONTAINER-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "APP-CONTAINER-01-C02",
+      "name": "操作按钮",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> APP-CONTAINER-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-HOME-01-C01",
+      "name": "顶部导航条",
+      "families_by_name_only": [
+        "navigation"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-HOME-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-HOME-01-C02",
+      "name": "广告位（宽屏）",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-HOME-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-HOME-01-C03",
+      "name": "排序栏",
+      "families_by_name_only": [
+        "forms-and-choice"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-HOME-01-C03",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-HOME-01-C04",
+      "name": "商品网格（多列）",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-HOME-01-C04",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-SEARCH-01-C01",
+      "name": "搜索输入框",
+      "families_by_name_only": [
+        "forms-and-choice"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-SEARCH-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-SEARCH-01-C02",
+      "name": "搜索发现区（宽屏）",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-SEARCH-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-SEARCH-01-C03",
+      "name": "热门商品区（宽屏）",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-SEARCH-01-C03",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-SEARCH-01-C04",
+      "name": "结果网格",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-SEARCH-01-C04",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-SEARCH-01-C05",
+      "name": "分页控件",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-SEARCH-01-C05",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-SEARCH-01-C06",
+      "name": "搜索历史（宽屏）",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-SEARCH-01-C06",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-PRODUCT-01-C01",
+      "name": "详情顶部导航",
+      "families_by_name_only": [
+        "navigation"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-PRODUCT-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-PRODUCT-01-C02",
+      "name": "媒体图集（分栏左）",
+      "families_by_name_only": [
+        "media-and-content"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-PRODUCT-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-PRODUCT-01-C03",
+      "name": "名称价格区（分栏右）",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-PRODUCT-01-C03",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-PRODUCT-01-C06",
+      "name": "商品须知",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-PRODUCT-01-C06",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-PRODUCT-01-C07",
+      "name": "右侧购买卡",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-PRODUCT-01-C07",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-PRODUCT-01-C08",
+      "name": "购买面板（居中弹层）",
+      "families_by_name_only": [
+        "layers"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-PRODUCT-01-C08",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-PRODUCT-01-C09",
+      "name": "游戏介绍（PC）",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-PRODUCT-01-C09",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-PRODUCT-01-C10",
+      "name": "硬件配置",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-PRODUCT-01-C10",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-CHECKOUT-01-C01",
+      "name": "商品明细卡",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-CHECKOUT-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-CHECKOUT-01-C02",
+      "name": "好友链接",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-CHECKOUT-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-CHECKOUT-01-C03",
+      "name": "支付方式选择",
+      "families_by_name_only": [
+        "forms-and-choice"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-CHECKOUT-01-C03",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-CHECKOUT-01-C04",
+      "name": "价格明细",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-CHECKOUT-01-C04",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-CHECKOUT-01-C05",
+      "name": "协议勾选",
+      "families_by_name_only": [
+        "forms-and-choice"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-CHECKOUT-01-C05",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-CHECKOUT-01-C06",
+      "name": "右侧结算栏",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-CHECKOUT-01-C06",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-CHECKOUT-01-C07",
+      "name": "收银台扫码弹窗",
+      "families_by_name_only": [
+        "layers"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-CHECKOUT-01-C07",
+      "review": "selected contract excerpts inspected; not full semantic or runtime acceptance",
+      "short_contract_evidence": [
+        {
+          "section": 3,
+          "title": "功能交互逻辑",
+          "excerpt": "| 操作/触发 | 前置与校验 | 系统处理/接口 | 数据及状态变化 | 成功/失败去向 | 幂等、重复或取消规则 |\n| --- | --- | --- | --- | --- | --- |\n| 点击结算栏「继续支付」 | 协议已勾选、支付方式已选 | 无接口；打开收银台弹窗 | 页面进入 QR_WAIT | 成功→弹窗展示二维码 | 重复点击不叠加弹窗 |\n| 用户完成扫码付款 | 待扫码态 | 无接口；等待渠道回调或主动查询（API-PAY-002） | 页面进入 ",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 4,
+          "title": "界面反馈与体验表现",
+          "excerpt": "| 状态/场景 | 具体文案 | 展示位置/形式 | 可操作项 | 禁用项及提示原因 | 焦点/键盘/滚动/关闭 | 恢复或下一步 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 待扫码（QR_WAIT） | 「收银台 · 扫码支付」＋「请使用所选支付方式扫描上方二维码完成付款」，**不显示支付方式名称、不提供切换入口** | 居中弹窗，含三步进度条与二维码占位 | 模拟扫码、取消 | — | 打开后焦点进入弹窗；Esc 与右上",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 5,
+          "title": "组件样式",
+          "excerpt": "居中弹窗最大宽度 600px、最大高度 82%，白底、1px #c9cdd3 边框；二维码为 176×176 占位块（本原型不加载外部图片，正式实现替换为真实二维码）；三步进度条为小号描边标签，当前步深灰填充、已完成步用成功色描边；支付成功用 56px 成功色圆形对勾，不使用大面积色块；弹窗内按钮沿用 36px 基线（PC 侧指针操作）。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 6,
+          "title": "状态变更",
+          "excerpt": "| 当前状态 | 触发事件 | 守卫条件 | 目标状态 | 界面变化 | 数据变化 | 禁止操作 | 关联01/04 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| （关闭） | 点击继续支付 | 协议已勾选 | QR_WAIT | 弹窗出现 | 取收银台参数 | — | 01-6.4 |\n| QR_WAIT | 用户完成扫码付款 | — | QR_CONFIRMING | 进入确认中提示 | 发起支付结果查询 | ",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 9,
+          "title": "测试与验收条件",
+          "excerpt": "关联 TC-PAY-030～TC-PAY-036（按所选支付方式出码且弹窗内不展示支付方式、扫码后进入确认中、确认成功、确认未支付回落、取消、支付成功后可在订单管理复制口令码）。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        }
+      ]
+    },
+    {
+      "id": "WEB-PAYRET-01-C01",
+      "name": "居中询问弹窗",
+      "families_by_name_only": [
+        "layers"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-PAYRET-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-PAYRET-01-C02",
+      "name": "查询中反馈",
+      "families_by_name_only": [
+        "feedback-and-state"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-PAYRET-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-RESULT-01-C01",
+      "name": "结果摘要区",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-RESULT-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-RESULT-01-C02",
+      "name": "口令码交付区",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-RESULT-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-RESULT-01-C03",
+      "name": "好友赠送交付区",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-RESULT-01-C03",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-RESULT-01-C04",
+      "name": "查看订单与客服",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-RESULT-01-C04",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-ORDER-01-C01",
+      "name": "筛选区",
+      "families_by_name_only": [
+        "forms-and-choice"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-ORDER-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-ORDER-01-C02",
+      "name": "订单表格/列表",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-ORDER-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-ORDER-01-C03",
+      "name": "订单详情抽屉",
+      "families_by_name_only": [
+        "layers"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-ORDER-01-C03",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-ORDER-01-C04",
+      "name": "分页控件",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-ORDER-01-C04",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-MINE-01-C01",
+      "name": "账号信息区",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-MINE-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-MINE-01-C02",
+      "name": "资格状态区",
+      "families_by_name_only": [
+        "layers",
+        "feedback-and-state"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-MINE-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-MINE-01-C03",
+      "name": "我的订单区",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-MINE-01-C03",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-MINE-01-C04",
+      "name": "客服入口",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-MINE-01-C04",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "WEB-MINE-01-C05",
+      "name": "协议与关于",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> WEB-MINE-01-C05",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-COMMON-C01",
+      "name": "后台左侧业务菜单",
+      "families_by_name_only": [
+        "navigation"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-COMMON-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-COMMON-C02",
+      "name": "顶部账号与操作栏",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-COMMON-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-COMMON-C03",
+      "name": "筛选区（共享，含高级筛选）",
+      "families_by_name_only": [
+        "forms-and-choice"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-COMMON-C03",
+      "review": "selected contract excerpts inspected; not full semantic or runtime acceptance",
+      "short_contract_evidence": [
+        {
+          "section": 3,
+          "title": "功能交互逻辑",
+          "excerpt": "| 操作/触发 | 前置与校验 | 系统处理/接口 | 数据及状态变化 | 成功/失败去向 | 幂等、重复或取消规则 |\n| --- | --- | --- | --- | --- | --- |\n| 输入/选择条件 | — | 仅更新草稿，不请求接口 | 草稿变化，列表不变 | — | 输入法组合阶段不触发提交 |\n| 点击\"查询\"或按 Enter（输入框内） | 草稿校验通过（区间起≤止；去除文本首尾空格） | 保存已提交条件快照→进入加载→调用本页列表接口（如 API-",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 4,
+          "title": "界面反馈与体验表现",
+          "excerpt": "| 状态/场景 | 具体文案 | 展示位置/形式 | 可操作项 | 禁用项及提示原因 | 焦点/键盘/滚动/关闭 | 恢复或下一步 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 默认 | 各标签名（如\"订单号\"\"来源平台\"） | 工作区顶部网格，3列自适应换行；操作行含\"查询\"\"重置\"\"展开高级筛选\" | 全部可用 | — | Enter 等价点击\"查询\"；焦点可见 | — |\n| 区间非法 | \"开始时间不能晚于结束时间\" ",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 5,
+          "title": "组件样式",
+          "excerpt": "位于工作区内容区（内边距 20px）顶部，`grid` 三列自适应，条件不足一屏时随宽度换行；输入、选择器最小高 40px，白底 1px 灰边，矩形；标签及辅助文字 12～13px、正文 14px。\"查询\"为深灰主按钮、白字，\"重置\"为白底灰边次按钮；\"展开高级筛选/收起\"为文字按钮并附当前状态。各页实例字段见第2节，均为真实参与查询的字段，不放置无效果占位控件。1440px/1920px 下筛选区不产生横向滚动、不挤压主列表；窄屏下条件区按优先级换行折叠，主列表保持可读（标",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 6,
+          "title": "状态变更",
+          "excerpt": "| 当前状态 | 触发事件 | 守卫条件 | 目标状态 | 界面变化 | 数据变化 | 禁止操作 | 关联01/04 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| DEFAULT/EDITING | 点击查询/Enter | 草稿校验通过 | LOADING | 查询按钮禁用、列表显示查询中 | 生成已提交快照，页码回1，行选择清空 | 加载中再次提交 | 01 第6.4节 ACT-019 |\n| LOADING ",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 9,
+          "title": "测试与验收条件",
+          "excerpt": "验收要点：草稿与已提交分离；点击查询或 Enter 才提交且统一去除首尾空格；非法区间就地报错不提交；高级条件展开收起保留草稿与已提交值、每个字段真实参与过滤（可验证）；无匹配为 EMPTY 且条件保留；失败为 ERROR 保留条件并给重试；重置清空条件/错误/选中/页码并恢复默认页签与数据范围、旧回调作废；刷新保留已提交上下文。关联 TC-ADM-003；重置与迟到响应另验 TC-ADM-009、TC-ADM-012。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        }
+      ]
+    },
+    {
+      "id": "ADM-COMMON-C04",
+      "name": "状态页签（共享）",
+      "families_by_name_only": [
+        "feedback-and-state"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-COMMON-C04",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-COMMON-C05",
+      "name": "数据表格（共享）",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-COMMON-C05",
+      "review": "selected contract excerpts inspected; not full semantic or runtime acceptance",
+      "short_contract_evidence": [
+        {
+          "section": 3,
+          "title": "功能交互逻辑",
+          "excerpt": "| 操作/触发 | 前置与校验 | 系统处理/接口 | 数据及状态变化 | 成功/失败去向 | 幂等、重复或取消规则 |\n| --- | --- | --- | --- | --- | --- |\n| 点击操作列入口按钮（「编辑」/「查看」） | 记录存在 | 按**该行**记录唯一键打开详情/编辑弹窗（C07 或页面弹窗） | 弹窗进入 OPEN；列表数据不变 | 读取成功→展示该记录；不存在→提示并刷新列表 | **数据行本身点击无反应**（CHG-0066）；连续点击不",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 4,
+          "title": "界面反馈与体验表现",
+          "excerpt": "| 状态/场景 | 具体文案 | 展示位置/形式 | 可操作项 | 禁用项及提示原因 | 焦点/键盘/滚动/关闭 | 恢复或下一步 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 默认 | 字段名＋模拟数据 | 白底卡片内真实 HTML 表格，表头灰底 | 排序、行点击、行内操作 | — | 键盘 Tab 至行内按钮；表头可聚焦 | — |\n| 加载中 | \"查询中…\" | 表格区保留表头，行区单行提示 | 重置可点 | 排序与",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 5,
+          "title": "组件样式",
+          "excerpt": "真实 HTML 表格，`table-layout:fixed`＋各列宽度按字段优先级分配，`overflow-wrap:anywhere` 换行，表头 12px 灰底（#f5f6f7），单元格 11px×12px 内边距、底边线；金额右对齐并保留两位小数，时间统一 `YYYY-MM-DD HH:mm`（模拟值），状态列以中文状态词为主、辅以少量语义色（成功 #356b4d／提醒 #8a641e／错误 #a33b3b）。操作列位置稳定，行内辅助按钮最小高可 34px，主操作 4",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 6,
+          "title": "状态变更",
+          "excerpt": "| 当前状态 | 触发事件 | 守卫条件 | 目标状态 | 界面变化 | 数据变化 | 禁止操作 | 关联01/04 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| RESULTS | 点击可排序表头 | 列在白名单 | LOADING→RESULTS（新顺序） | 表头排序标记切换 | 顺序更新、页码回1 | 保留旧顺序混淆新排序 | 7.6.3 第7条 |\n| RESULTS | 点击操作列入口按钮 | 记录存在",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 9,
+          "title": "测试与验收条件",
+          "excerpt": "验收要点：默认展示多条可验证筛选、状态、详情与分页的脱敏模拟记录；表头、字段名、状态文本与操作列完整；排序真实改变记录并回第1页；行点击按记录ID打开正确详情；空/失败/无权限走 C11 且不残留旧行；1440px/1920px 下整页、画布与主列表无必须拖动的底部横向滚动条（允许个别条件无结果以验证空态）。关联 TC-ADM-005；分页边界见 TC-ADM-006，详情另见 TC-ADM-007。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        }
+      ]
+    },
+    {
+      "id": "ADM-COMMON-C06",
+      "name": "分页（共享）",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-COMMON-C06",
+      "review": "selected contract excerpts inspected; not full semantic or runtime acceptance",
+      "short_contract_evidence": [
+        {
+          "section": 3,
+          "title": "功能交互逻辑",
+          "excerpt": "| 操作/触发 | 前置与校验 | 系统处理/接口 | 数据及状态变化 | 成功/失败去向 | 幂等、重复或取消规则 |\n| --- | --- | --- | --- | --- | --- |\n| 点击页码/上一页/下一页 | 目标页在有效范围 | 以当前已提交条件＋新 page 请求列表 | 实际显示对应记录；行选择清空（策略见 C08） | 成功→RESULTS；失败→C11 保留条件 | 加载中重复点击忽略；快速翻页以最后一次为准 |\n| 切换每页条数 | — | ",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 4,
+          "title": "界面反馈与体验表现",
+          "excerpt": "| 状态/场景 | 具体文案 | 展示位置/形式 | 可操作项 | 禁用项及提示原因 | 焦点/键盘/滚动/关闭 | 恢复或下一步 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 多页 | \"共 23 条　第 1/3 页\"＋页码、上一页、下一页、每页条数 | 表格下方右侧一行 | 翻页、改每页条数 | 首/末页对应翻页按钮禁用（灰态可见） | Tab 可达，Enter 触发；焦点保持 | — |\n| 单页（不足10条） | \"共",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 5,
+          "title": "组件样式",
+          "excerpt": "位于数据表格下方，右对齐单行；页码与翻页为矩形按钮（最小高 40px，紧凑场景可 34px），当前页深灰底白字，禁用态灰底(#c9cdd3)、文字提示禁用原因；\"每页 10/20/50 条\"为选择器。辅助文字 12～13px。1440px/1920px 下与工作区同宽、不产生横向滚动；窄屏自动换行且不遮挡表格最后一行。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 6,
+          "title": "状态变更",
+          "excerpt": "| 当前状态 | 触发事件 | 守卫条件 | 目标状态 | 界面变化 | 数据变化 | 禁止操作 | 关联01/04 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| FIRST（第1页） | 点击下一页 | pages≥2 | MID/LAST＋RESULTS | 页码高亮迁移 | 取第2页记录；行选择清空 | 在第1页点\"上一页\" | 7.6.3 第7条 |\n| LAST（末页） | 点击下一页 | — | 保持 ",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 9,
+          "title": "测试与验收条件",
+          "excerpt": "验收要点：翻页与每页条数实际改变显示记录与页码/总数；查询或排序后回第1页；不足一页时禁用无效翻页且不出现第2页；末页\"下一页\"禁用；快速翻页迟到响应不覆盖新页；空结果显示\"共 0 条\"。关联 TC-ADM-006。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        }
+      ]
+    },
+    {
+      "id": "ADM-COMMON-C07",
+      "name": "详情/编辑弹窗（共享）",
+      "families_by_name_only": [
+        "layers"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-COMMON-C07",
+      "review": "selected contract excerpts inspected; not full semantic or runtime acceptance",
+      "short_contract_evidence": [
+        {
+          "section": 3,
+          "title": "功能交互逻辑",
+          "excerpt": "| 操作/触发 | 前置与校验 | 系统处理/接口 | 数据及状态变化 | 成功/失败去向 | 幂等、重复或取消规则 |\n| --- | --- | --- | --- | --- | --- |\n| 点击操作列「查看」/「编辑」按钮 | 记录存在且具备查看权限 | 取**被点击那一行**的 record_id→打开弹窗→进入 LOADING→请求详情接口 | 弹窗 OPEN；原列表查询、页码、滚动位置保持 | 成功→展示该记录；失败→弹窗内 ERROR 可重试 | 快速连续",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 4,
+          "title": "界面反馈与体验表现",
+          "excerpt": "| 状态/场景 | 具体文案 | 展示位置/形式 | 可操作项 | 禁用项及提示原因 | 焦点/键盘/滚动/关闭 | 恢复或下一步 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 打开加载 | \"加载中…\" | 弹窗内容区（标题＝业务名＋记录标识） | 关闭 | 内容暂不可操作 | 焦点进入弹窗并限制在弹窗内；Esc 关闭 | 加载完成展示详情 |\n| 提交成功 | \"配置已保存成功！\"（按动作取词，如\"已完成确认！\"\"审核已通",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 5,
+          "title": "组件样式",
+          "excerpt": "**居中弹窗**，只读详情页宽约 560～680px，编辑类（PAT-DRAWER-02）按内容给到 **min(920px, 100%)**，高度上限 86vh 且不超过工作区；白底、1px 灰线描边，顶部标题栏（业务名＋记录ID＋主操作＋✕）固定，内容区纵向滚动且滚动独立于背景列表。弹窗外为浅灰半透明遮罩（rgba(32,36,42,.44)），点击遮罩在只读态关闭弹窗。层级：编辑弹窗 70 ＜ 叠加弹层（如商品选择）80 ＜ 二次确认 88 ＜ 浮层提示 90，因此弹窗",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 6,
+          "title": "状态变更",
+          "excerpt": "| 当前状态 | 触发事件 | 守卫条件 | 目标状态 | 界面变化 | 数据变化 | 禁止操作 | 关联01/04 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| CLOSED | 点击操作列「查看」/「编辑」 | 记录存在 | LOADING→OPEN | 弹窗出现，遮罩覆盖工作区 | 请求该记录详情 | 打开时改变列表条件 | 01 第6.4节 ACT-021 |\n| OPEN | 点击关闭/✕/Esc/遮罩 ",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 9,
+          "title": "测试与验收条件",
+          "excerpt": "验收要点：**数据行本身点击无任何反应**，只能通过操作列按钮进入；按被点击记录ID读取数据，不同记录打开不同详情（不少于两条不同记录对照验证，不能总打开第一条）；关闭弹窗恢复查询条件、页码、滚动与触发按钮焦点且不重置列表；**保存／提交与关闭按钮只出现在右上角一处**，正文里找不到按钮行；**提交类动作成功后弹窗关闭并回到列表**，失败留在弹窗内说明原因；就地动作不关闭弹窗；两类反馈都在工作区内以浮层提示可见（弹窗打开时列表顶部的行内提示被遮罩盖住，不作为反馈位置）；**弹",
+          "evidence_level": "embedded document intent; not observed outcome"
+        }
+      ]
+    },
+    {
+      "id": "ADM-COMMON-C08",
+      "name": "行选择与批量操作（共享）",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-COMMON-C08",
+      "review": "selected contract excerpts inspected; not full semantic or runtime acceptance",
+      "short_contract_evidence": [
+        {
+          "section": 3,
+          "title": "功能交互逻辑",
+          "excerpt": "| 操作/触发 | 前置与校验 | 系统处理/接口 | 数据及状态变化 | 成功/失败去向 | 幂等、重复或取消规则 |\n| --- | --- | --- | --- | --- | --- |\n| 勾选行/表头全选 | 记录在当前结果集 | 更新选择集合与计数；部分选中时表头显示半选 | 批量按钮启用/禁用切换 | — | 重复勾选幂等；全选作用于**当前页** |\n| 切换页码/每页条数/条件/页签/重置 | — | 清空选择（本轮策略：仅当前页选择，不跨页保留） | ",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 4,
+          "title": "界面反馈与体验表现",
+          "excerpt": "| 状态/场景 | 具体文案 | 展示位置/形式 | 可操作项 | 禁用项及提示原因 | 焦点/键盘/滚动/关闭 | 恢复或下一步 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 未选择 | \"请先选择记录\"（悬停禁用按钮可见） | 表格上方批量条 | 勾选行 | 批量按钮禁用（原因＝未选择） | 表头复选框可 Tab 聚焦 | 勾选后启用 |\n| 已选择 | \"已选 3 条　清空选择\" | 表格上方批量条 | 执行批量、清空 ",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 5,
+          "title": "组件样式",
+          "excerpt": "表格最左为复选框列（宽约 36px，含表头全选框与半选态 aria-checked=\"mixed\"）；选择后在表格上方出现批量操作条（\"已选 N 条｜批量导出｜清空选择\"），操作条与表格同宽、不遮挡表头；批量按钮矩形、最小高 40px，禁用态灰底并保留可见原因。计数与提示文字 12～13px。删除/不可逆动作不使用红色大面积块，仅语义色文字。1440px/1920px 下操作条不换行挤压表格；窄屏优先保留选择与执行入口，次要说明折叠。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 6,
+          "title": "状态变更",
+          "excerpt": "| 当前状态 | 触发事件 | 守卫条件 | 目标状态 | 界面变化 | 数据变化 | 禁止操作 | 关联01/04 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| NONE（未选择） | 勾选行/全选 | 记录在当前结果集 | SELECTED | 计数与半选态更新 | 选择集合写入 | 批量按钮可用 | 7.6.2 行选择与批量 |\n| SELECTED | 点击批量按钮 | 有权限、已选≥1 | CONFIRM",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 9,
+          "title": "测试与验收条件",
+          "excerpt": "验收要点：选择计数、全选与半选正确；批量按钮禁用与原因可见；查询/翻页/重置后选择被清空；二次确认展示影响范围；执行结果可验证（成功/失败/部分失败），部分失败可识别具体订单且不重复执行已成功项；无权限时前端与后端均拒绝。关联 TC-ADM-008。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        }
+      ]
+    },
+    {
+      "id": "ADM-COMMON-C09",
+      "name": "导出动作（共享）",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-COMMON-C09",
+      "review": "selected contract excerpts inspected; not full semantic or runtime acceptance",
+      "short_contract_evidence": [
+        {
+          "section": 3,
+          "title": "功能交互逻辑",
+          "excerpt": "| 操作/触发 | 前置与校验 | 系统处理/接口 | 数据及状态变化 | 成功/失败去向 | 幂等、重复或取消规则 |\n| --- | --- | --- | --- | --- | --- |\n| 点击\"导出\" | 具备导出权限且范围有效 | 二次确认（范围、字段说明、不含敏感字段）→提交导出接口 | IDLE→CONFIRM→RUNNING→DONE | 成功→生成任务/文件（原型为模拟文件）；失败→ERROR 保留范围可重试 | 执行中禁用；重复导出按第7节提示 |\n",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 4,
+          "title": "界面反馈与体验表现",
+          "excerpt": "| 状态/场景 | 具体文案 | 展示位置/形式 | 可操作项 | 禁用项及提示原因 | 焦点/键盘/滚动/关闭 | 恢复或下一步 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 无权限 | \"当前账号无导出权限，请联系管理员\" | 导出按钮禁用＋悬停提示 | 联系管理员 | 禁止导出 | 焦点在按钮 | 授权后重试 |\n| 二次确认 | \"导出范围：当前查询条件（预计 23 条，模拟）；字段不含手机号等敏感信息，且导出不代表交",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 5,
+          "title": "组件样式",
+          "excerpt": "导出入口为按钮或批量操作条内的动作（见 C08），矩形、最小高 40px；结果以列表下方结果条/弹窗内提示呈现，含任务标识、条数、时间、操作人；不使用浮动 Toast 承载\"失败或部分失败\"等需要留存的信息（标准 7.3：不以 Toast 替代关键决策与结果）。语义色文字区分成功/失败。原型中的\"文件\"为模拟下载（不生成真实业务文件）。1440px/1920px 下结果区不撑宽页面。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 6,
+          "title": "状态变更",
+          "excerpt": "| 当前状态 | 触发事件 | 守卫条件 | 目标状态 | 界面变化 | 数据变化 | 禁止操作 | 关联01/04 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| IDLE | 点击导出 | 有权限、范围有效 | CONFIRM | 二次确认弹窗 | 无 | 跳过确认 | PAT-EXPORT-01 |\n| CONFIRM | 确认 | — | RUNNING | 入口禁用、进度提示 | 创建导出任务（记录操作人）",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 9,
+          "title": "测试与验收条件",
+          "excerpt": "验收要点：无导出权限时前端禁用且服务端拒绝；二次确认展示范围、字段与\"不含敏感字段\"说明；导出成功生成可验证的任务结果并记录操作人；失败可重试且不生成空文件；部分失败可识别具体订单；导出不改变订单业务状态（导出不等于完成）；统计报表导出不在本轮呈现。关联 TC-ADM-008；权限断言另见 TC-ADM-055。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        }
+      ]
+    },
+    {
+      "id": "ADM-COMMON-C10",
+      "name": "指标汇总卡（共享）",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-COMMON-C10",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-COMMON-C11",
+      "name": "空态/错误/无权限区（共享）",
+      "families_by_name_only": [
+        "forms-and-choice"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-COMMON-C11",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-LOGIN-01-C01",
+      "name": "登录表单",
+      "families_by_name_only": [
+        "forms-and-choice"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-LOGIN-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-LOGIN-01-C02",
+      "name": "登录按钮",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-LOGIN-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-HOME-01-C01",
+      "name": "首页组件列表",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-HOME-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-HOME-01-C02",
+      "name": "组件编辑弹窗",
+      "families_by_name_only": [
+        "layers"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-HOME-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-HOME-01-C03",
+      "name": "保存与发布",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-HOME-01-C03",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-GOODS-01-C01",
+      "name": "商品表格",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-GOODS-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-GOODS-01-C02",
+      "name": "商品编辑弹窗",
+      "families_by_name_only": [
+        "layers"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-GOODS-01-C02",
+      "review": "selected contract excerpts inspected; not full semantic or runtime acceptance",
+      "short_contract_evidence": [
+        {
+          "section": 3,
+          "title": "功能交互逻辑",
+          "excerpt": "| 操作/触发 | 前置与校验 | 系统处理/接口 | 数据及状态变化 | 成功/失败去向 | 幂等、重复或取消规则 |\n| --- | --- | --- | --- | --- | --- |\n| 打开弹窗 | 记录存在 | 按 goods_id 载入详情 | DRAFT | 失败→弹窗内重试 | 每次重新读取 |\n| 编辑字段/规格 | — | 仅草稿变化 | 未保存标记出现 | — | — |\n| 点击保存 | 必填、价格与唯一性校验通过 | SAVING→API-A",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 4,
+          "title": "界面反馈与体验表现",
+          "excerpt": "| 状态/场景 | 具体文案 | 展示位置/形式 | 可操作项 | 禁用项及提示原因 | 焦点/键盘/滚动/关闭 | 恢复或下一步 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 打开加载 | \"加载中…\" | 弹窗内容区 | 关闭 | — | 焦点进入弹窗 | 载入后编辑 |\n| 校验失败 | \"请填写可激活地区\"\"售价必须大于 0 且最多两位小数\"\"规格名不能重复\" | 字段下方就地文字 | 修改 | 保存被阻止 | 焦点移",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 5,
+          "title": "组件样式",
+          "excerpt": "复用 C07 弹窗视觉基线（右侧、宽约 520～640px，内容可放宽至 720px 容纳规格表）；分组：基础信息／规格与价格／交付类型／Steam 限制／购买须知。规格表为小型真实表格（规格名、售价、删除行按钮——本轮不提供\"删除已有规格\"，未登记能力不实现，仅可新增与改价）。标签 12～13px，控件最小高 40px，必填文字标记，错误就地呈现。底部固定\"保存\"（主）与\"取消\"（次）。长文本域内滚动，关闭按钮与 Esc 可达。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 6,
+          "title": "状态变更",
+          "excerpt": "| 当前状态 | 触发事件 | 守卫条件 | 目标状态 | 界面变化 | 数据变化 | 禁止操作 | 关联01/04 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| CLOSED | 点击操作列「编辑」 | 记录存在 | LOADING→DRAFT | 弹窗出现，遮罩覆盖工作区 | 载入该商品 | 用第一条替代所点记录 | PAT-DRAWER-02 |\n| DRAFT | 点击保存且校验失败 | — | VALID",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 9,
+          "title": "测试与验收条件",
+          "excerpt": "验收要点：按 goods_id 载入正确商品（至少两条对照）；必填/价格/规格唯一性校验就地提示；保存后列表同步且**历史订单成交快照不被覆盖**（对照下单前后订单快照）；保存失败草稿保留；未保存关闭需确认。关联 TC-ADM-021、TC-ADM-023。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        }
+      ]
+    },
+    {
+      "id": "ADM-GOODS-01-C03",
+      "name": "上下架动作",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-GOODS-01-C03",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-STOCK-01-C01",
+      "name": "库存表格",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-STOCK-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-STOCK-01-C02",
+      "name": "同步记录与手动同步",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-STOCK-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-ORDER-01-C01",
+      "name": "订单表格",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-ORDER-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-ORDER-01-C02",
+      "name": "订单详情弹窗",
+      "families_by_name_only": [
+        "layers"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-ORDER-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-GIFT-01-C01",
+      "name": "好友赠送订单列表",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-GIFT-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-GIFT-01-C03",
+      "name": "导出与批次动作",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-GIFT-01-C03",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-CODE-01-C01",
+      "name": "交付记录表格",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-CODE-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-CODE-01-C02",
+      "name": "补发换码弹窗",
+      "families_by_name_only": [
+        "layers"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-CODE-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-REFUND-01-C01",
+      "name": "退款表格",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-REFUND-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-REFUND-01-C02",
+      "name": "审核弹窗",
+      "families_by_name_only": [
+        "layers"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-REFUND-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-SERVICE-01-C01",
+      "name": "客服配置表单",
+      "families_by_name_only": [
+        "forms-and-choice"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-SERVICE-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-RBAC-01-C01",
+      "name": "角色表格",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-RBAC-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-RBAC-01-C02",
+      "name": "权限矩阵",
+      "families_by_name_only": [
+        "forms-and-choice"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-RBAC-01-C02",
+      "review": "selected contract excerpts inspected; not full semantic or runtime acceptance",
+      "short_contract_evidence": [
+        {
+          "section": 3,
+          "title": "功能交互逻辑",
+          "excerpt": "| 操作/触发 | 前置与校验 | 系统处理/接口 | 数据及状态变化 | 成功/失败去向 | 幂等、重复或取消规则 |\n| --- | --- | --- | --- | --- | --- |\n| 勾选/取消权限 | 具备「系统配置」权限 | 本地草稿更新 | 草稿变化，未保存不生效 | — | 草稿可反复调整 |\n| 点击「保存」 | 至少一项变化 | 调用 API-ADMIN-100（保存权限）；整体提交六项状态 | 角色权限更新并即时生效；受影响账号下次请求按新权限",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 4,
+          "title": "界面反馈与体验表现",
+          "excerpt": "| 状态/场景 | 具体文案 | 展示位置/形式 | 可操作项 | 禁用项及提示原因 | 焦点/键盘/滚动/关闭 | 恢复或下一步 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 默认 | 「查询」「查码」「导出」「补发」「退款」「系统配置」六列勾选行 | 矩阵表（行=角色或权限项，选中角色上下文内展示） | 勾选、保存、重置 | — | 勾选控件可用键盘（空格）操作，焦点可见 | 保存 |\n| 敏感项变更确认 | 「将授予「{",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 5,
+          "title": "组件样式",
+          "excerpt": "后台权限矩阵使用真实表格式布局：表头为六类权限，行可为角色（单角色上下文）或权限项（多角色对照，设计建议：行=权限项、列=角色，便于横向对照，窄宽时切换为单角色勾选视图）。勾选框为原生控件并带文字标签；敏感权限行附小字说明；保存/重置按钮矩形、最小高 40px。遵守 7.6.1：1440/1920 无必须拖动的底部横向滚动条（列数固定为 7 列内，自适应即可）；不使用无法交互的假勾选图元，所有勾选必须影响保存结果。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 6,
+          "title": "状态变更",
+          "excerpt": "| 当前状态 | 触发事件 | 守卫条件 | 目标状态 | 界面变化 | 数据变化 | 禁止操作 | 关联01/04 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| DEFAULT（已加载） | 勾选变化 | — | EDITING（草稿） | 保存按钮启用 | 本地草稿 | 未保存不改变权限 | 01：ADM-RBAC-01::DEFAULT |\n| EDITING | 点击保存 | 具备权限；无并发冲突 | SA",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 9,
+          "title": "测试与验收条件",
+          "excerpt": "关联 TC-ADM-101（矩阵保存即时生效；取消勾选后对应动作入口与直链均被服务端拒绝，AC-17）、TC-ADM-102（未授权人员不能查码、导出、退款或改处理结果）、TC-ADM-103（并发冲突与草稿保留）。验收要点：六类权限与 ADM-10 一一对应；不存在任意跳转或直接修改付款结果的权限项（9.2）。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        }
+      ]
+    },
+    {
+      "id": "ADM-RBAC-01-C03",
+      "name": "账号表格与授权弹窗",
+      "families_by_name_only": [
+        "layers",
+        "forms-and-choice",
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-RBAC-01-C03",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-AUDIT-01-C01",
+      "name": "操作记录表格",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-AUDIT-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-AUDIT-01-C02",
+      "name": "记录详情弹窗",
+      "families_by_name_only": [
+        "layers"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-AUDIT-01-C02",
+      "review": "selected contract excerpts inspected; not full semantic or runtime acceptance",
+      "short_contract_evidence": [
+        {
+          "section": 3,
+          "title": "功能交互逻辑",
+          "excerpt": "| 操作/触发 | 前置与校验 | 系统处理/接口 | 数据及状态变化 | 成功/失败去向 | 幂等、重复或取消规则 |\n| --- | --- | --- | --- | --- | --- |\n| 打开详情 | 具备审计查看权限；记录存在 | 调用 API-ADMIN-110（详情） | 只读展示 | 记录不存在→提示并刷新（EX-ADM-014） | 按被点击记录 ID 读取，不能总打开第一条 |\n| 点击关联订单 | 具备订单查询权限 | 打开 ADM-ORDER-0",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 4,
+          "title": "界面反馈与体验表现",
+          "excerpt": "| 状态/场景 | 具体文案 | 展示位置/形式 | 可操作项 | 禁用项及提示原因 | 焦点/键盘/滚动/关闭 | 恢复或下一步 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 默认 | 「操作前 / 操作后」对照区块＋基本信息 | 弹窗分区 | 跳转关联对象、关闭 | 禁用：编辑（审计不可变） | 焦点进入弹窗首个可聚焦元素；Esc 关闭 | 关闭回列表 |\n| 记录不存在 | 「该记录已不存在或已归档，请刷新列表」 | 弹",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 5,
+          "title": "组件样式",
+          "excerpt": "右侧弹窗（宽约 460～560px）分区：基本信息、操作前后对照（两列键值表）、原因/备注、关联对象（可点击列表）；只读文本使用普通字号，脱敏值保持等宽；无编辑控件、无保存按钮。遵守 7.6.1：弹窗不引起整页横向滚动，长键值换行；关闭行为符合 7.6.2；键盘可遍历关联链接，焦点可见。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 6,
+          "title": "状态变更",
+          "excerpt": "| 当前状态 | 触发事件 | 守卫条件 | 目标状态 | 界面变化 | 数据变化 | 禁止操作 | 关联01/04 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| CLOSED | 点击记录行 | 记录存在且有权 | OPEN | 弹窗展示 | 只读加载 | 禁止在弹窗内修改记录 | 01：ADM-AUDIT-01::OPEN |\n| OPEN | 点击关联对象 | 具备对应模块权限 | OPEN（跳转或叠加导航）",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 9,
+          "title": "测试与验收条件",
+          "excerpt": "关联 TC-ADM-111（详情内容完整、按记录 ID 展示而非第一条）、TC-ADM-112（脱敏与不可编辑；关闭恢复列表上下文）。验收要点：前后结果与人员、时间、原因完整（ADM-11）；完整口令码不出现（CODE-08）；焦点与滚动恢复（8.7 详情关闭项）。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        }
+      ]
+    },
+    {
+      "id": "ADM-STAT-01-C01",
+      "name": "时间范围与统计口径",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-STAT-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-STAT-01-C02",
+      "name": "统计表格",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-STAT-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-AGREE-01-C01",
+      "name": "协议版本表格",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-AGREE-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-AGREE-01-C02",
+      "name": "协议编辑与发布",
+      "families_by_name_only": [
+        "project-composition"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-AGREE-01-C02",
+      "review": "selected contract excerpts inspected; not full semantic or runtime acceptance",
+      "short_contract_evidence": [
+        {
+          "section": 3,
+          "title": "功能交互逻辑",
+          "excerpt": "| 操作/触发 | 前置与校验 | 系统处理/接口 | 数据及状态变化 | 成功/失败去向 | 幂等、重复或取消规则 |\n| --- | --- | --- | --- | --- | --- |\n| 打开编辑 | 新建版本或草稿状态 | 读取草稿/空白 | 无变化 | 已发布版本不可编辑（C01 规则） | 每次按版本 ID |\n| 保存草稿 | 具备权限 | 调用 API-ADMIN-131（保存草稿） | 草稿写入，不生效 | 失败→保留本地内容 | 草稿保存幂等=版本",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 4,
+          "title": "界面反馈与体验表现",
+          "excerpt": "| 状态/场景 | 具体文案 | 展示位置/形式 | 可操作项 | 禁用项及提示原因 | 焦点/键盘/滚动/关闭 | 恢复或下一步 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 默认 | 「版本号」「正文」「生效时间」「变更说明」 | 表单页/大弹窗 | 保存草稿、预览、发布、取消 | — | 焦点在版本号 | 编辑 |\n| 正文为空 | 「协议正文不能为空」 | 正文区就近错误 | 填写 | 禁用：发布 | 焦点到正文区 |",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 5,
+          "title": "组件样式",
+          "excerpt": "表单＋长文本编辑区（低保真为多行文本域，字号 14px、行高 1.6～1.9，长文在编辑区内纵向滚动不裁切），字段标签左置、必填标记、错误就近；发布按钮为高影响主操作（深灰白字、最小高 40px），发布采用二次确认弹层（PAT-ACTION-03）。遵守 7.6.1：表单在 1440/1920 无横向滚动；编辑器与预览分区可切换；不使用静态文本冒充已发布状态。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 6,
+          "title": "状态变更",
+          "excerpt": "| 当前状态 | 触发事件 | 守卫条件 | 目标状态 | 界面变化 | 数据变化 | 禁止操作 | 关联01/04 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| 空白/草稿 | 输入内容 | — | DRAFT | 校验更新 | 本地/服务端草稿 | 未发布不生效 | 01：ADM-AGREE-01::DRAFT |\n| DRAFT | 保存草稿 | 具备权限 | DRAFT（已保存） | 提示已保存 | 草稿写",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 9,
+          "title": "测试与验收条件",
+          "excerpt": "关联 TC-ADM-131（编辑校验、草稿与发布流程）、TC-ADM-132（发布后前台展示新版本，历史订单仍追溯原版本）。验收要点：发布内容与服务端快照一致；发布不可无确认；订单关联协议版本与确认时间完整（AGREEMENT-03、CHECKOUT-05）。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        }
+      ]
+    },
+    {
+      "id": "ADM-SEARCH-01-C01",
+      "name": "关键词配置表格",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-SEARCH-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-SEARCH-01-C02",
+      "name": "推荐商品配置表格",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-SEARCH-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-PAYCHK-01-C01",
+      "name": "支付尝试表格",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-PAYCHK-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-PAYCHK-01-C02",
+      "name": "核查记录弹窗",
+      "families_by_name_only": [
+        "layers"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-PAYCHK-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-NOTIFY-01-C01",
+      "name": "通知任务表格",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-NOTIFY-01-C01",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-NOTIFY-01-C02",
+      "name": "重试动作",
+      "families_by_name_only": [
+        "data-and-actions"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-NOTIFY-01-C02",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-NOTIFY-01-C03",
+      "name": "通知详情弹窗",
+      "families_by_name_only": [
+        "layers"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-NOTIFY-01-C03",
+      "review": "metadata only; name grouping is not semantic verification"
+    },
+    {
+      "id": "ADM-NOTIFY-01-C04",
+      "name": "通知模板管理弹层",
+      "families_by_name_only": [
+        "layers"
+      ],
+      "section_count": 10,
+      "doc_locator": "final-COMP_DOCS.json -> ADM-NOTIFY-01-C04",
+      "review": "selected contract excerpts inspected; not full semantic or runtime acceptance",
+      "short_contract_evidence": [
+        {
+          "section": 3,
+          "title": "功能交互逻辑",
+          "excerpt": "| 操作/触发 | 前置与校验 | 系统处理/接口 | 数据及状态变化 | 成功/失败去向 | 幂等、重复或取消规则 |\n| --- | --- | --- | --- | --- | --- |\n| 点击页签右侧「模板管理」 | 具备模板查看权限 | 打开模板管理弹层，加载模板列表（API-ADMIN-162） | 弹层 LIST；列表显示当前模板 | 失败→弹层内错误并保留入口 | 打开不修改任何模板 |\n| 点击某模板「编辑」 | 具备模板编辑权限 | 读取模板详情到草",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 4,
+          "title": "界面反馈与体验表现",
+          "excerpt": "| 状态/场景 | 具体文案 | 展示位置/形式 | 可操作项 | 禁用项及提示原因 | 焦点/键盘/滚动/关闭 | 恢复或下一步 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 模板列表 | 「通知模板管理」＋「共 N 个模板」 | 覆盖层弹窗（列表 5 列） | 编辑、关闭 | — | 焦点进入弹窗；Esc 关闭 | 选择模板编辑 |\n| 编辑态 | 「编辑通知模板 · 模板名」＋名称/状态/标题/正文/预览 | 覆盖层弹窗",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 5,
+          "title": "组件样式",
+          "excerpt": "覆盖在通知记录页上的独立弹层（`adm-mask stacked`），宽度约 820px、高度不超过画布；列表 5 列（模板、场景/渠道、版本/状态、最近更新、操作），长ID换行不截断；编辑态为「只读基础信息＋表单」；正文使用多行文本域，预览为浅灰卡片；按钮矩形、最小高 40px；关闭为文字按钮「关闭」；打开期间背景页面滚动锁定；不引入高饱和色。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 6,
+          "title": "状态变更",
+          "excerpt": "| 当前状态 | 触发事件 | 守卫条件 | 目标状态 | 界面变化 | 数据变化 | 禁止操作 | 关联01/04 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| CLOSED | 点击「模板管理」 | 有查看权限 | LIST | 弹层出现，显示模板列表 | 只读加载 | — | CHG-0088 |\n| LIST | 点击「编辑」 | 有编辑权限 | EDIT | 显示编辑表单与预览 | 生成草稿，不写线上 |",
+          "evidence_level": "embedded document intent; not observed outcome"
+        },
+        {
+          "section": 9,
+          "title": "测试与验收条件",
+          "excerpt": "关联 TC-ADM-270。验收要点：通知记录为单页签「通知记录列表」，状态可通过高级筛选；「模板管理」可打开列表并编辑；名称/标题/正文必填，使用完整口令码变量被拒绝；保存生成新版本且历史通知保留原版本快照；不提供发送/群发入口（ADM-16）。",
+          "evidence_level": "embedded document intent; not observed outcome"
+        }
+      ]
+    }
+  ],
+  "function_locators": [
+    {
+      "function": "navBar",
+      "script": 1,
+      "source_line": 1481,
+      "sidecar_line": 173,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "stateBlock",
+      "script": 1,
+      "source_line": 1537,
+      "sidecar_line": 229,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "tabBar",
+      "script": 1,
+      "source_line": 1552,
+      "sidecar_line": 244,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "modalMask",
+      "script": 1,
+      "source_line": 1560,
+      "sidecar_line": 252,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "modalHead",
+      "script": 1,
+      "source_line": 1563,
+      "sidecar_line": 255,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "mediaCarousel",
+      "script": 1,
+      "source_line": 1769,
+      "sidecar_line": 461,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "renderPanel",
+      "script": 1,
+      "source_line": 1883,
+      "sidecar_line": 575,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "rAuth",
+      "script": 1,
+      "source_line": 2001,
+      "sidecar_line": 693,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "rAgreement",
+      "script": 1,
+      "source_line": 2020,
+      "sidecar_line": 712,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "deskShell",
+      "script": 3,
+      "source_line": 2531,
+      "sidecar_line": 7,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "webNav",
+      "script": 3,
+      "source_line": 2550,
+      "sidecar_line": 26,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "payQrModal",
+      "script": 3,
+      "source_line": 2774,
+      "sidecar_line": 250,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "admHomePicker",
+      "script": 5,
+      "source_line": 3709,
+      "sidecar_line": 188,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "admRegionPicker",
+      "script": 5,
+      "source_line": 3785,
+      "sidecar_line": 264,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "admGoodsEditor",
+      "script": 5,
+      "source_line": 3881,
+      "sidecar_line": 360,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "admSrPicker",
+      "script": 5,
+      "source_line": 4060,
+      "sidecar_line": 539,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "admOrderRefundDrawer",
+      "script": 5,
+      "source_line": 4262,
+      "sidecar_line": 741,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "admNotifyTplOverlay",
+      "script": 6,
+      "source_line": 4433,
+      "sidecar_line": 79,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "admAgreeViewer",
+      "script": 6,
+      "source_line": 4462,
+      "sidecar_line": 108,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "admAgreeEditor",
+      "script": 6,
+      "source_line": 4476,
+      "sidecar_line": 122,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "admConfirmBox",
+      "script": 7,
+      "source_line": 5164,
+      "sidecar_line": 108,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "admToastBox",
+      "script": 7,
+      "source_line": 5178,
+      "sidecar_line": 122,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "admField",
+      "script": 7,
+      "source_line": 5188,
+      "sidecar_line": 132,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "admFilters",
+      "script": 7,
+      "source_line": 5205,
+      "sidecar_line": 149,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "admTabs",
+      "script": 7,
+      "source_line": 5228,
+      "sidecar_line": 172,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "admTable",
+      "script": 7,
+      "source_line": 5244,
+      "sidecar_line": 188,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "admPager",
+      "script": 7,
+      "source_line": 5302,
+      "sidecar_line": 246,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "admBatchBar",
+      "script": 7,
+      "source_line": 5338,
+      "sidecar_line": 282,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "admDrawer",
+      "script": 7,
+      "source_line": 5353,
+      "sidecar_line": 297,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "go",
+      "script": 8,
+      "source_line": 5574,
+      "sidecar_line": 85,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "admSyncScrollLock",
+      "script": 8,
+      "source_line": 5624,
+      "sidecar_line": 135,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "bindAdmHomeDnD",
+      "script": 8,
+      "source_line": 6007,
+      "sidecar_line": 518,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "bindAdmGoodsDnD",
+      "script": 8,
+      "source_line": 6085,
+      "sidecar_line": 596,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "bindAdmSearchDnD",
+      "script": 8,
+      "source_line": 6132,
+      "sidecar_line": 643,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "admOpenConfirm",
+      "script": 8,
+      "source_line": 6200,
+      "sidecar_line": 711,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "admConfirmOk",
+      "script": 8,
+      "source_line": 6223,
+      "sidecar_line": 734,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "admConfirmCancel",
+      "script": 8,
+      "source_line": 6233,
+      "sidecar_line": 744,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "bindActs",
+      "script": 8,
+      "source_line": 6241,
+      "sidecar_line": 752,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "doBuy",
+      "script": 8,
+      "source_line": 6915,
+      "sidecar_line": 1426,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "resolvePayQuery",
+      "script": 8,
+      "source_line": 6994,
+      "sidecar_line": 1505,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "admModalValidate",
+      "script": 8,
+      "source_line": 7624,
+      "sidecar_line": 2135,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "stopBannerTimer",
+      "script": 8,
+      "source_line": 7702,
+      "sidecar_line": 2213,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "startBannerTimer",
+      "script": 8,
+      "source_line": 7703,
+      "sidecar_line": 2214,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "openDiagram",
+      "script": 8,
+      "source_line": 7755,
+      "sidecar_line": 2266,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "closeDiagram",
+      "script": 8,
+      "source_line": 7771,
+      "sidecar_line": 2282,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "openDoc",
+      "script": 8,
+      "source_line": 7790,
+      "sidecar_line": 2301,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "closeReader",
+      "script": 8,
+      "source_line": 7842,
+      "sidecar_line": 2353,
+      "evidence_level": "static function locator; behavior unverified"
+    },
+    {
+      "function": "downloadDoc",
+      "script": 8,
+      "source_line": 7848,
+      "sidecar_line": 2359,
+      "evidence_level": "static function locator; behavior unverified"
+    }
+  ],
+  "component_style_rules": [
+    {
+      "selector": ".phone-body,.desk-body,.modal,.picker,.thumbrow,.admin-sidebar,.rv-layout>.admin-main",
+      "source_line": 142,
+      "declarations": {
+        "scrollbar-width": "none",
+        "-ms-overflow-style": "none"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".phone-body::-webkit-scrollbar,.desk-body::-webkit-scrollbar,.modal::-webkit-scrollbar, .picker::-webkit-scrollbar,.thumbrow::-webkit-scrollbar,.admin-sidebar::-webkit-scrollbar, .rv-layout>.admin-main::-webkit-scrollbar",
+      "source_line": 144,
+      "declarations": {
+        "width": "0",
+        "height": "0",
+        "display": "none"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".phone-body .btn",
+      "source_line": 150,
+      "declarations": {
+        "padding": "9px 10px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".tabbar",
+      "source_line": 158,
+      "declarations": {
+        "display": "grid",
+        "grid-template-columns": "repeat(2,minmax(0,1fr))",
+        "border-top": "1px solid var(--line)",
+        "background": "#fff",
+        "margin": "8px -14px 0",
+        "border-radius": "0 0 20px 20px",
+        "flex": "none",
+        "position": "relative",
+        "z-index": "3"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".tabbar button",
+      "source_line": 161,
+      "declarations": {
+        "display": "flex",
+        "flex-direction": "column",
+        "align-items": "center",
+        "justify-content": "center",
+        "gap": "3px",
+        "border": "0",
+        "background": "none",
+        "min-height": "52px",
+        "color": "var(--muted)",
+        "font-size": "11px",
+        "line-height": "1.2",
+        "cursor": "pointer"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".tabbar .tb-ico",
+      "source_line": 163,
+      "declarations": {
+        "width": "20px",
+        "height": "20px",
+        "border": "1px solid var(--line)",
+        "background": "#eef0f2",
+        "display": "block"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".tabbar button[aria-current=\"page\"]",
+      "source_line": 164,
+      "declarations": {
+        "color": "var(--primary)",
+        "font-weight": "600"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".tabbar button[aria-current=\"page\"] .tb-ico",
+      "source_line": 165,
+      "declarations": {
+        "border-color": "var(--primary)",
+        "background": "#e7edf6"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".carousel",
+      "source_line": 169,
+      "declarations": {
+        "position": "relative"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".carousel-stage",
+      "source_line": 170,
+      "declarations": {
+        "position": "relative",
+        "height": "150px",
+        "display": "flex",
+        "align-items": "center",
+        "justify-content": "center",
+        "background": "#e4e6e9",
+        "border": "1px solid #d6d9dd",
+        "color": "#6b7280",
+        "font-size": "12px",
+        "overflow": "hidden"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".carousel-stage .play",
+      "source_line": 172,
+      "declarations": {
+        "width": "34px",
+        "height": "34px",
+        "border": "1px solid #8d939b",
+        "border-radius": "50%",
+        "background": "#fff",
+        "display": "flex",
+        "align-items": "center",
+        "justify-content": "center",
+        "font-size": "13px",
+        "color": "#4b5563",
+        "margin-right": "8px",
+        "flex": "none"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".carousel-stage .media-label",
+      "source_line": 174,
+      "declarations": {
+        "display": "flex",
+        "align-items": "center",
+        "justify-content": "center",
+        "min-width": "0",
+        "padding": "0 8px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".sec-head .sort .tag",
+      "source_line": 269,
+      "declarations": {
+        "min-height": "36px",
+        "padding": "6px 10px",
+        "margin": "0"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".segbar>.tag",
+      "source_line": 295,
+      "declarations": {
+        "flex": "none",
+        "min-width": "44px",
+        "justify-content": "center"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".adm-toast",
+      "source_line": 374,
+      "declarations": {
+        "position": "fixed",
+        "left": "50%",
+        "top": "20px",
+        "transform": "translateX(-50%)",
+        "z-index": "90",
+        "max-width": "min(620px,92vw)",
+        "background": "#20242a",
+        "color": "#fff",
+        "font-size": "13px",
+        "line-height": "1.65",
+        "padding": "11px 18px",
+        "box-shadow": "0 6px 20px rgba(0,0,0,.22)",
+        "border-radius": "4px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".adm-toast.err",
+      "source_line": 377,
+      "declarations": {
+        "background": "var(--error)"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".admin-canvas .btn-link",
+      "source_line": 394,
+      "declarations": {
+        "border": "0",
+        "background": "transparent",
+        "padding": "0",
+        "font": "inherit",
+        "color": "#1f5fbf",
+        "cursor": "pointer",
+        "text-align": "left"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".admin-canvas .btn-link:hover",
+      "source_line": 395,
+      "declarations": {
+        "text-decoration": "underline"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".admin-canvas .btn-link.ellip",
+      "source_line": 396,
+      "declarations": {
+        "max-width": "100%"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".admin-canvas .btn-link:focus-visible",
+      "source_line": 397,
+      "declarations": {
+        "outline": "2px solid #20242a",
+        "outline-offset": "2px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".hm-bot .gd.empty",
+      "source_line": 461,
+      "declarations": {
+        "color": "var(--error)"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".adm-mask",
+      "source_line": 488,
+      "declarations": {
+        "position": "fixed",
+        "inset": "0",
+        "background": "rgba(32,36,42,.44)",
+        "display": "none",
+        "align-items": "center",
+        "justify-content": "center",
+        "z-index": "70",
+        "padding": "20px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".adm-mask.stacked",
+      "source_line": 490,
+      "declarations": {
+        "z-index": "80"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".adm-mask.top",
+      "source_line": 491,
+      "declarations": {
+        "z-index": "88"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".adm-mask.on",
+      "source_line": 492,
+      "declarations": {
+        "display": "flex"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".adm-dlg",
+      "source_line": 493,
+      "declarations": {
+        "width": "min(560px,100%)",
+        "max-height": "82vh",
+        "background": "#fff",
+        "border": "1px solid #8d939b",
+        "display": "flex",
+        "flex-direction": "column"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".adm-dlg .dt",
+      "source_line": 494,
+      "declarations": {
+        "display": "flex",
+        "align-items": "center",
+        "gap": "10px",
+        "padding": "10px 12px",
+        "border-bottom": "1px solid var(--line)",
+        "background": "#fafbfc"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".adm-dlg .db",
+      "source_line": 495,
+      "declarations": {
+        "padding": "10px 12px",
+        "overflow": "auto",
+        "flex": "1",
+        "min-height": "0"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".adm-dlg .df",
+      "source_line": 496,
+      "declarations": {
+        "display": "flex",
+        "gap": "8px",
+        "justify-content": "flex-end",
+        "padding": "10px 12px",
+        "border-top": "1px solid var(--line)"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".adm-dlg.confirm",
+      "source_line": 498,
+      "declarations": {
+        "width": "min(400px,100%)"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".adm-dlg.confirm .db",
+      "source_line": 499,
+      "declarations": {
+        "font-size": "13px",
+        "line-height": "1.7"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".adm-dlg.confirm .db .obj",
+      "source_line": 500,
+      "declarations": {
+        "margin-top": "6px",
+        "color": "var(--muted)",
+        "font-size": "12px",
+        "word-break": "break-all"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".adm-dlg.form",
+      "source_line": 503,
+      "declarations": {
+        "width": "min(920px,100%)",
+        "max-height": "86vh"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".adm-dlg.form .db",
+      "source_line": 504,
+      "declarations": {
+        "padding": "14px 16px",
+        "font-size": "13px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".adm-dlg.form .db>:first-child",
+      "source_line": 505,
+      "declarations": {
+        "margin-top": "0"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".adm-dlg.form .db>:last-child",
+      "source_line": 506,
+      "declarations": {
+        "margin-bottom": "0"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".adm-dlg .dt .strong",
+      "source_line": 509,
+      "declarations": {
+        "min-width": "0",
+        "overflow": "hidden",
+        "text-overflow": "ellipsis",
+        "white-space": "nowrap"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".adm-dlg .dt .acts",
+      "source_line": 510,
+      "declarations": {
+        "margin-left": "auto",
+        "display": "flex",
+        "gap": "8px",
+        "align-items": "center",
+        "flex": "none",
+        "flex-wrap": "wrap",
+        "justify-content": "flex-end"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".gd-sys-q .inp",
+      "source_line": 539,
+      "declarations": {
+        "flex": "1",
+        "min-width": "0",
+        "min-height": "38px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".gd-up .btn",
+      "source_line": 576,
+      "declarations": {
+        "white-space": "nowrap"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".adm-dlg .db",
+      "source_line": 588,
+      "declarations": {
+        "overscroll-behavior": "contain"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".tag",
+      "source_line": 635,
+      "declarations": {
+        "display": "inline-block",
+        "border": "1px solid var(--line)",
+        "background": "#fff",
+        "font-size": "11px",
+        "padding": "3px 6px",
+        "margin": "0 4px 4px 0",
+        "white-space": "normal",
+        "overflow-wrap": "anywhere",
+        "max-width": "100%",
+        "vertical-align": "top"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".tag.on",
+      "source_line": 637,
+      "declarations": {
+        "background": "var(--primary)",
+        "color": "#fff",
+        "border-color": "var(--primary)"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".tag.warn",
+      "source_line": 638,
+      "declarations": {
+        "border-color": "var(--warn)",
+        "color": "var(--warn)"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".tag.err",
+      "source_line": 639,
+      "declarations": {
+        "border-color": "var(--error)",
+        "color": "var(--error)"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".tag.ok",
+      "source_line": 640,
+      "declarations": {
+        "border-color": "var(--success)",
+        "color": "var(--success)"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".btn",
+      "source_line": 648,
+      "declarations": {
+        "min-height": "44px",
+        "border": "1px solid var(--line)",
+        "background": "#fff",
+        "padding": "10px 14px",
+        "border-radius": "0",
+        "display": "inline-flex",
+        "align-items": "center",
+        "justify-content": "center",
+        "gap": "6px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".btn.primary",
+      "source_line": 649,
+      "declarations": {
+        "background": "var(--primary)",
+        "color": "#fff",
+        "border-color": "var(--primary)"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".btn.wide",
+      "source_line": 650,
+      "declarations": {
+        "width": "100%"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".btn.sm",
+      "source_line": 651,
+      "declarations": {
+        "min-height": "36px",
+        "padding": "6px 10px",
+        "font-size": "12px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".btn-row",
+      "source_line": 652,
+      "declarations": {
+        "display": "flex",
+        "gap": "10px",
+        "flex-wrap": "wrap"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".inp",
+      "source_line": 653,
+      "declarations": {
+        "width": "100%",
+        "min-height": "44px",
+        "border": "1px solid var(--line)",
+        "background": "#fff",
+        "padding": "10px",
+        "border-radius": "0"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".inp.err",
+      "source_line": 654,
+      "declarations": {
+        "border": "2px solid var(--error)"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".inp:disabled,.inp[readonly]",
+      "source_line": 655,
+      "declarations": {
+        "background": "var(--soft)",
+        "color": "#666b72"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".lbl",
+      "source_line": 656,
+      "declarations": {
+        "font-size": "12px",
+        "color": "var(--muted)",
+        "display": "block",
+        "margin-bottom": "3px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".empty",
+      "source_line": 676,
+      "declarations": {
+        "border": "1px dashed var(--line)",
+        "background": "#fff",
+        "padding": "18px",
+        "text-align": "center",
+        "color": "var(--muted)",
+        "font-size": "12px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".empty .t",
+      "source_line": 677,
+      "declarations": {
+        "color": "var(--ink)",
+        "font-size": "13px",
+        "display": "block",
+        "margin-bottom": "4px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".modal-mask",
+      "source_line": 680,
+      "declarations": {
+        "position": "absolute",
+        "inset": "0",
+        "background": "rgba(32,36,42,.45)",
+        "border-radius": "20px",
+        "display": "flex",
+        "align-items": "center",
+        "justify-content": "center",
+        "padding": "12px",
+        "z-index": "5"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".modal-mask.bottom",
+      "source_line": 682,
+      "declarations": {
+        "align-items": "flex-end",
+        "padding": "0"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".modal",
+      "source_line": 683,
+      "declarations": {
+        "background": "#fff",
+        "border": "1px solid var(--line)",
+        "border-radius": "16px 16px 0 0",
+        "width": "100%",
+        "max-height": "88%",
+        "overflow": "auto",
+        "padding": "14px",
+        "position": "relative"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".modal.center",
+      "source_line": 684,
+      "declarations": {
+        "border-radius": "16px",
+        "max-height": "80%"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".modal .x",
+      "source_line": 685,
+      "declarations": {
+        "position": "absolute",
+        "top": "6px",
+        "right": "6px",
+        "min-width": "40px",
+        "min-height": "40px",
+        "border": "1px solid var(--line)",
+        "background": "#fff",
+        "font-size": "16px",
+        "line-height": "1"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".desk .modal-mask",
+      "source_line": 686,
+      "declarations": {
+        "border-radius": "6px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".desk .modal",
+      "source_line": 687,
+      "declarations": {
+        "border-radius": "16px",
+        "max-width": "420px",
+        "margin": "auto"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".desk .modal.dlg",
+      "source_line": 691,
+      "declarations": {
+        "max-width": "600px",
+        "max-height": "82%",
+        "width": "100%"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".desk .modal-mask.center",
+      "source_line": 692,
+      "declarations": {
+        "z-index": "6"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".kv",
+      "source_line": 697,
+      "declarations": {
+        "display": "flex",
+        "gap": "8px",
+        "font-size": "12px",
+        "padding": "3px 0"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".kv .k",
+      "source_line": 698,
+      "declarations": {
+        "color": "var(--muted)",
+        "flex": "none",
+        "min-width": "60px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".kv .v",
+      "source_line": 699,
+      "declarations": {
+        "min-width": "0",
+        "overflow-wrap": "anywhere"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": "button.tag",
+      "source_line": 708,
+      "declarations": {
+        "min-height": "28px",
+        "padding": "4px 8px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".phone button.tag,.phone .btn.sm,.phone .x",
+      "source_line": 709,
+      "declarations": {
+        "min-height": "44px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".phone span.tag[role=\"button\"]",
+      "source_line": 713,
+      "declarations": {
+        "display": "inline-flex",
+        "align-items": "center",
+        "justify-content": "center"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".desk-body button.tag",
+      "source_line": 714,
+      "declarations": {
+        "min-height": "36px",
+        "padding": "6px 10px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".admin-canvas button.tag",
+      "source_line": 715,
+      "declarations": {
+        "min-height": "40px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".dgm-list",
+      "source_line": 783,
+      "declarations": {
+        "display": "grid",
+        "grid-template-columns": "repeat(auto-fill,minmax(300px,1fr))",
+        "gap": "6px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".dgm-item",
+      "source_line": 784,
+      "declarations": {
+        "display": "flex",
+        "align-items": "center",
+        "gap": "8px",
+        "border": "1px solid var(--line)",
+        "background": "#fff",
+        "padding": "7px 9px",
+        "text-align": "left",
+        "min-height": "40px",
+        "font-size": "12.5px",
+        "overflow-wrap": "anywhere"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".dgm-item:hover",
+      "source_line": 786,
+      "declarations": {
+        "background": "#f5f6f7"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".dgm-item .tag",
+      "source_line": 787,
+      "declarations": {
+        "margin": "0",
+        "flex": "none",
+        "font-size": "11px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".dgm-item .grow",
+      "source_line": 788,
+      "declarations": {
+        "min-width": "0"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".dgm-empty",
+      "source_line": 789,
+      "declarations": {
+        "border": "1px dashed var(--line)",
+        "background": "#fff",
+        "padding": "14px",
+        "color": "var(--muted)",
+        "font-size": "12.5px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".dgm-mask",
+      "source_line": 791,
+      "declarations": {
+        "position": "fixed",
+        "inset": "0",
+        "background": "rgba(32,36,42,.5)",
+        "z-index": "60",
+        "display": "none",
+        "padding": "20px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".dgm-mask.on",
+      "source_line": 792,
+      "declarations": {
+        "display": "block"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".dgm-dialog",
+      "source_line": 793,
+      "declarations": {
+        "background": "#fff",
+        "border": "1px solid var(--line)",
+        "max-width": "1180px",
+        "height": "100%",
+        "margin": "auto",
+        "display": "flex",
+        "flex-direction": "column",
+        "overflow": "hidden"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".dgm-dialog .dt",
+      "source_line": 795,
+      "declarations": {
+        "display": "flex",
+        "gap": "8px",
+        "align-items": "center",
+        "flex-wrap": "wrap",
+        "padding": "8px 12px",
+        "border-bottom": "1px solid var(--line)",
+        "flex": "none"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".dgm-dialog .dt .t",
+      "source_line": 796,
+      "declarations": {
+        "font-size": "13px",
+        "font-weight": "500",
+        "min-width": "0",
+        "overflow-wrap": "anywhere"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".dgm-dialog .dt button",
+      "source_line": 797,
+      "declarations": {
+        "min-height": "36px",
+        "padding": "6px 10px",
+        "border": "1px solid var(--line)",
+        "background": "#fff",
+        "font-size": "12px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".dgm-dialog .db",
+      "source_line": 798,
+      "declarations": {
+        "overflow": "auto",
+        "padding": "14px",
+        "flex": "1",
+        "min-height": "0",
+        "background": "#fff"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".dgm-dialog .db svg",
+      "source_line": 799,
+      "declarations": {
+        "display": "block",
+        "max-width": "100%",
+        "height": "auto"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".dgm-dialog .puml-fig svg",
+      "source_line": 801,
+      "declarations": {
+        "max-width": "none",
+        "height": "auto"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".dgm-zoom",
+      "source_line": 802,
+      "declarations": {
+        "display": "flex",
+        "align-items": "center",
+        "gap": "6px",
+        "font-size": "12px",
+        "color": "var(--muted)"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".dgm-zoom select",
+      "source_line": 803,
+      "declarations": {
+        "min-height": "36px",
+        "padding": "6px 8px",
+        "border": "1px solid var(--line)",
+        "background": "#fff",
+        "font-size": "12px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".dgm-mask",
+      "source_line": 804,
+      "declarations": {
+        "padding": "8px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".dgm-list",
+      "source_line": 804,
+      "declarations": {
+        "grid-template-columns": "minmax(0,1fr)"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".reader-mask",
+      "source_line": 825,
+      "declarations": {
+        "position": "fixed",
+        "inset": "0",
+        "background": "rgba(32,36,42,.5)",
+        "z-index": "50",
+        "display": "none",
+        "padding": "20px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".reader-mask.on",
+      "source_line": 826,
+      "declarations": {
+        "display": "block"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".reader",
+      "source_line": 827,
+      "declarations": {
+        "background": "#fff",
+        "border": "1px solid var(--line)",
+        "max-width": "1180px",
+        "height": "100%",
+        "margin": "auto",
+        "display": "grid",
+        "grid-template-columns": "250px minmax(0,1fr)",
+        "grid-template-rows": "minmax(0,1fr)",
+        "overflow": "hidden"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".reader-nav",
+      "source_line": 829,
+      "declarations": {
+        "border-right": "1px solid var(--line)",
+        "display": "flex",
+        "flex-direction": "column",
+        "min-width": "0",
+        "min-height": "0",
+        "background": "#fafbfc"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".reader-nav .rh",
+      "source_line": 830,
+      "declarations": {
+        "padding": "10px",
+        "border-bottom": "1px solid var(--line)",
+        "font-size": "12px",
+        "color": "var(--muted)",
+        "flex": "none"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".reader-nav .list",
+      "source_line": 831,
+      "declarations": {
+        "overflow": "auto",
+        "padding": "6px",
+        "flex": "1",
+        "min-height": "0"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".reader-nav .list button",
+      "source_line": 832,
+      "declarations": {
+        "display": "block",
+        "width": "100%",
+        "text-align": "left",
+        "background": "#fff",
+        "border": "1px solid var(--line)",
+        "padding": "7px 9px",
+        "margin-bottom": "5px",
+        "min-height": "38px",
+        "font-size": "12px",
+        "overflow-wrap": "anywhere"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".reader-nav .list button[aria-pressed=\"true\"]",
+      "source_line": 834,
+      "declarations": {
+        "background": "var(--primary)",
+        "color": "#fff",
+        "border-color": "var(--primary)"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".reader-nav .narrow",
+      "source_line": 835,
+      "declarations": {
+        "display": "none",
+        "padding": "8px",
+        "flex": "none"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".reader-main",
+      "source_line": 836,
+      "declarations": {
+        "display": "flex",
+        "flex-direction": "column",
+        "min-width": "0",
+        "min-height": "0",
+        "height": "100%",
+        "overflow": "hidden"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".reader-tools",
+      "source_line": 837,
+      "declarations": {
+        "border-bottom": "1px solid var(--line)",
+        "padding": "8px 12px",
+        "display": "flex",
+        "gap": "8px",
+        "flex-wrap": "wrap",
+        "align-items": "center",
+        "background": "#fff",
+        "flex": "none"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".reader-tools .t",
+      "source_line": 838,
+      "declarations": {
+        "font-size": "13px",
+        "font-weight": "500",
+        "min-width": "0",
+        "overflow-wrap": "anywhere"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".reader-tools button",
+      "source_line": 839,
+      "declarations": {
+        "min-height": "36px",
+        "padding": "6px 10px",
+        "border": "1px solid var(--line)",
+        "background": "#fff",
+        "font-size": "12px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".reader-body",
+      "source_line": 841,
+      "declarations": {
+        "display": "flex",
+        "flex-direction": "column",
+        "flex": "1",
+        "min-height": "0",
+        "overflow": "hidden"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".reader-toc",
+      "source_line": 842,
+      "declarations": {
+        "display": "flex",
+        "flex-wrap": "wrap",
+        "gap": "6px",
+        "flex": "none",
+        "border-bottom": "1px solid var(--line)",
+        "padding": "10px 22px",
+        "background": "#fafbfc",
+        "max-height": "118px",
+        "overflow": "auto"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".reader-toc .toc-h",
+      "source_line": 844,
+      "declarations": {
+        "font-size": "12px",
+        "color": "var(--muted)",
+        "width": "100%",
+        "margin-bottom": "2px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".reader-toc a",
+      "source_line": 845,
+      "declarations": {
+        "font-size": "12px",
+        "padding": "4px 8px",
+        "border": "1px solid var(--line)",
+        "background": "#fff",
+        "color": "#334f6b",
+        "text-decoration": "none",
+        "overflow-wrap": "anywhere",
+        "max-width": "100%"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".reader-toc a:hover",
+      "source_line": 847,
+      "declarations": {
+        "background": "#eef0f2"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".reader-doc",
+      "source_line": 848,
+      "declarations": {
+        "overflow": "auto",
+        "padding": "16px 22px",
+        "min-width": "0",
+        "min-height": "0",
+        "position": "relative",
+        "scroll-behavior": "smooth",
+        "flex": "1"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".reader-empty",
+      "source_line": 849,
+      "declarations": {
+        "border": "1px dashed var(--line)",
+        "padding": "14px",
+        "color": "var(--muted)",
+        "font-size": "13px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".reader",
+      "source_line": 875,
+      "declarations": {
+        "grid-template-columns": "minmax(0,1fr)"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".reader-nav",
+      "source_line": 876,
+      "declarations": {
+        "border-right": "0",
+        "border-bottom": "1px solid var(--line)"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".reader-nav .list",
+      "source_line": 877,
+      "declarations": {
+        "display": "none"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".reader-nav .narrow",
+      "source_line": 878,
+      "declarations": {
+        "display": "block"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".reader-toc",
+      "source_line": 879,
+      "declarations": {
+        "padding": "8px 14px",
+        "max-height": "96px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".reader-doc",
+      "source_line": 880,
+      "declarations": {
+        "padding": "14px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".reader-mask",
+      "source_line": 881,
+      "declarations": {
+        "padding": "8px"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    },
+    {
+      "selector": ".rv-head,.rv-toolbar,.rv-side,.reader-mask",
+      "source_line": 883,
+      "declarations": {
+        "display": "none!important"
+      },
+      "evidence_level": "static declaration; cascade and geometry unverified"
+    }
+  ],
+  "limits": [
+    "No full HTML, script, or embedded document copied here.",
+    "Metadata classification is not full coverage or acceptance.",
+    "Short excerpts record source intent, including contradictions; do not automatically promote to standards.",
+    "Browser file access was rejected; no alternative access attempted."
+  ]
+}

@@ -1,0 +1,1047 @@
+{
+  "source": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.0\\02_低保真交互原型-最终版本.html",
+  "bytes": 5930662,
+  "sha256": "04bf9e76f416833e1ac84e97408b81cbceb043bb44dca4a0529f3c80f418765f",
+  "cached_css_matches_source": true,
+  "style_blocks": 1,
+  "script_blocks": 12,
+  "static_tag_counts": {
+    "html": 1,
+    "head": 1,
+    "meta": 2,
+    "title": 1,
+    "style": 1,
+    "body": 1,
+    "div": 42,
+    "header": 1,
+    "h1": 1,
+    "strong": 1,
+    "b": 2,
+    "label": 10,
+    "select": 10,
+    "option": 19,
+    "button": 11,
+    "span": 17,
+    "small": 1,
+    "section": 3,
+    "aside": 1,
+    "details": 1,
+    "summary": 1,
+    "pre": 1,
+    "nav": 2,
+    "script": 12
+  },
+  "static_ids_only": [
+    {
+      "id": "reviewShell",
+      "line": 899
+    },
+    {
+      "id": "fEnd",
+      "line": 915
+    },
+    {
+      "id": "fPage",
+      "line": 918
+    },
+    {
+      "id": "fState",
+      "line": 921
+    },
+    {
+      "id": "fSim",
+      "line": 924
+    },
+    {
+      "id": "btnFlow",
+      "line": 931
+    },
+    {
+      "id": "btnReset",
+      "line": 932
+    },
+    {
+      "id": "btnOutline",
+      "line": 934
+    },
+    {
+      "id": "btnDiagrams",
+      "line": 935
+    },
+    {
+      "id": "btnReader",
+      "line": 936
+    },
+    {
+      "id": "simLogin",
+      "line": 943
+    },
+    {
+      "id": "simReal",
+      "line": 949
+    },
+    {
+      "id": "simPhone",
+      "line": 957
+    },
+    {
+      "id": "btnSimOk",
+      "line": 963
+    },
+    {
+      "id": "simHint",
+      "line": 965
+    },
+    {
+      "id": "adminHost",
+      "line": 968
+    },
+    {
+      "id": "secState",
+      "line": 974
+    },
+    {
+      "id": "stateSummary",
+      "line": 976
+    },
+    {
+      "id": "canvasTitle",
+      "line": 980
+    },
+    {
+      "id": "canvasNote",
+      "line": 981
+    },
+    {
+      "id": "canvasWrap",
+      "line": 983
+    },
+    {
+      "id": "canvas",
+      "line": 984
+    },
+    {
+      "id": "flash",
+      "line": 989
+    },
+    {
+      "id": "secPicker",
+      "line": 990
+    },
+    {
+      "id": "compCount",
+      "line": 991
+    },
+    {
+      "id": "compPicker",
+      "line": 994
+    },
+    {
+      "id": "secDoc",
+      "line": 997
+    },
+    {
+      "id": "compDocTitle",
+      "line": 998
+    },
+    {
+      "id": "compDoc",
+      "line": 999
+    },
+    {
+      "id": "diagramArea",
+      "line": 1006
+    },
+    {
+      "id": "diagramSummary",
+      "line": 1009
+    },
+    {
+      "id": "diagramBody",
+      "line": 1011
+    },
+    {
+      "id": "readerEntry",
+      "line": 1015
+    },
+    {
+      "id": "readerEntryList",
+      "line": 1018
+    },
+    {
+      "id": "readerEntryNote",
+      "line": 1019
+    },
+    {
+      "id": "dgmMask",
+      "line": 1025
+    },
+    {
+      "id": "dgmTitle",
+      "line": 1028
+    },
+    {
+      "id": "dgmMeta",
+      "line": 1029
+    },
+    {
+      "id": "dgmZoom",
+      "line": 1032
+    },
+    {
+      "id": "dgmSrc",
+      "line": 1041
+    },
+    {
+      "id": "dgmClose",
+      "line": 1042
+    },
+    {
+      "id": "dgmBody",
+      "line": 1045
+    },
+    {
+      "id": "dgmSrcBox",
+      "line": 1046
+    },
+    {
+      "id": "dgmSrcPre",
+      "line": 1046
+    },
+    {
+      "id": "readerMask",
+      "line": 1051
+    },
+    {
+      "id": "readerSelect",
+      "line": 1057
+    },
+    {
+      "id": "readerList",
+      "line": 1059
+    },
+    {
+      "id": "readerTitle",
+      "line": 1063
+    },
+    {
+      "id": "readerMeta",
+      "line": 1064
+    },
+    {
+      "id": "readerBack",
+      "line": 1066
+    },
+    {
+      "id": "readerDownload",
+      "line": 1067
+    },
+    {
+      "id": "readerClose",
+      "line": 1068
+    },
+    {
+      "id": "readerToc",
+      "line": 1072
+    },
+    {
+      "id": "readerDoc",
+      "line": 1073
+    },
+    {
+      "id": "data-component-docs",
+      "line": 7993
+    },
+    {
+      "id": "data-diagrams",
+      "line": 7994
+    },
+    {
+      "id": "data-docs",
+      "line": 7995
+    }
+  ],
+  "embedded_counts_reused": {
+    "COMP_DOCS": {
+      "line": 7993,
+      "type": "dict",
+      "len": 192
+    },
+    "DIAGRAMS": {
+      "line": 7994,
+      "type": "list",
+      "len": 35
+    },
+    "DOCS": {
+      "line": 7995,
+      "type": "list",
+      "len": 9
+    }
+  },
+  "limitations": [
+    "Static tags omit dynamically rendered pages.",
+    "Selectors may be overridden by inline styles or scripts.",
+    "Declaration locations are not computed styles.",
+    "Browser local-file access was rejected; no workaround attempted."
+  ],
+  "selected_rules_in_source_order": [
+    {
+      "selector": ":root",
+      "source_line": 11,
+      "declarations": {
+        "--bg": "#f3f4f6",
+        "--panel": "#fff",
+        "--ink": "#20242a",
+        "--muted": "#6b7280",
+        "--line": "#c9cdd3",
+        "--primary": "#2f343b",
+        "--error": "#a33b3b",
+        "--success": "#356b4d",
+        "--warn": "#8a641e",
+        "--soft": "#e8eaed",
+        "--head": "#f5f6f7"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".shell",
+      "source_line": 26,
+      "declarations": {
+        "max-width": "1440px",
+        "margin": "auto",
+        "padding": "24px",
+        "container-type": "inline-size",
+        "container-name": "shell"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".rv-layout",
+      "source_line": 63,
+      "declarations": {
+        "display": "grid",
+        "grid-template-columns": "minmax(0,384px) minmax(0,1fr)",
+        "gap": "24px",
+        "align-items": "start"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".panel",
+      "source_line": 77,
+      "declarations": {
+        "min-width": "0",
+        "background": "var(--panel)",
+        "border": "1px solid var(--line)",
+        "padding": "16px"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".rv-layout",
+      "source_line": 118,
+      "declarations": {
+        "grid-template-columns": "minmax(0,1fr)"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".shell",
+      "source_line": 124,
+      "declarations": {
+        "padding": "14px"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".phone",
+      "source_line": 132,
+      "declarations": {
+        "width": "min(320px,100%)",
+        "min-height": "610px",
+        "margin": "auto",
+        "padding": "14px",
+        "border": "2px solid #8d939b",
+        "border-radius": "22px",
+        "background": "#fbfbfb",
+        "position": "relative",
+        "display": "flex",
+        "flex-direction": "column"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".phone .notch",
+      "source_line": 136,
+      "declarations": {
+        "width": "72px",
+        "height": "6px",
+        "background": "#c9cdd3",
+        "border-radius": "3px",
+        "margin": "0 auto 10px",
+        "flex": "none"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".phone-body .card",
+      "source_line": 148,
+      "declarations": {
+        "padding": "9px",
+        "margin-bottom": "8px"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".desk-body",
+      "source_line": 231,
+      "declarations": {
+        "padding": "14px",
+        "max-height": "760px",
+        "overflow": "auto",
+        "container-type": "inline-size",
+        "container-name": "desk"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".page-head",
+      "source_line": 245,
+      "declarations": {
+        "flex-wrap": "nowrap"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".desk-container",
+      "source_line": 257,
+      "declarations": {
+        "max-width": "1200px",
+        "margin": "0 auto",
+        "min-width": "0"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".page-head",
+      "source_line": 260,
+      "declarations": {
+        "display": "flex",
+        "align-items": "baseline",
+        "gap": "10px",
+        "flex-wrap": "wrap",
+        "margin": "14px 0 10px",
+        "min-width": "0"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".sec-head",
+      "source_line": 265,
+      "declarations": {
+        "display": "flex",
+        "align-items": "center",
+        "gap": "10px",
+        "flex-wrap": "wrap",
+        "margin": "14px 0 10px",
+        "min-width": "0"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".admin-canvas",
+      "source_line": 313,
+      "declarations": {
+        "width": "100%",
+        "min-width": "0",
+        "display": "grid",
+        "grid-template-columns": "220px minmax(0,1fr)",
+        "background": "#fbfbfb",
+        "border": "2px solid #8d939b",
+        "border-radius": "8px",
+        "overflow": "hidden"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".admin-content",
+      "source_line": 371,
+      "declarations": {
+        "padding": "16px 18px",
+        "min-width": "0"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".admin-filter-grid",
+      "source_line": 380,
+      "declarations": {
+        "display": "grid",
+        "grid-template-columns": "repeat(3,minmax(0,1fr))",
+        "gap": "10px",
+        "margin-bottom": "12px"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".admin-filter-grid .fld",
+      "source_line": 381,
+      "declarations": {
+        "display": "flex",
+        "flex-direction": "column",
+        "gap": "4px",
+        "min-width": "0"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".admin-canvas .mini,.mini",
+      "source_line": 385,
+      "declarations": {
+        "min-height": "34px",
+        "padding": "4px 8px",
+        "font-size": "12px"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".admin-canvas",
+      "source_line": 420,
+      "declarations": {
+        "grid-template-columns": "200px minmax(0,1fr)"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".adm-dlg",
+      "source_line": 493,
+      "declarations": {
+        "width": "min(560px,100%)",
+        "max-height": "82vh",
+        "background": "#fff",
+        "border": "1px solid #8d939b",
+        "display": "flex",
+        "flex-direction": "column"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".adm-dlg.confirm",
+      "source_line": 498,
+      "declarations": {
+        "width": "min(400px,100%)"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".adm-dlg.form",
+      "source_line": 503,
+      "declarations": {
+        "width": "min(920px,100%)",
+        "max-height": "86vh"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".adm-dlg .dt .acts",
+      "source_line": 510,
+      "declarations": {
+        "margin-left": "auto",
+        "display": "flex",
+        "gap": "8px",
+        "align-items": "center",
+        "flex": "none",
+        "flex-wrap": "wrap",
+        "justify-content": "flex-end"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".admin-canvas table.admin-table tr.row-open>td",
+      "source_line": 592,
+      "declarations": {
+        "background": "#f2f5f8"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".admin-canvas table.admin-table tr.row-open>td:first-child",
+      "source_line": 593,
+      "declarations": {
+        "box-shadow": "inset 3px 0 0 #2f343b"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".card",
+      "source_line": 615,
+      "declarations": {
+        "border": "1px solid var(--line)",
+        "background": "#fff",
+        "padding": "10px",
+        "margin-bottom": "10px",
+        "min-width": "0"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".row",
+      "source_line": 617,
+      "declarations": {
+        "display": "flex",
+        "align-items": "center",
+        "gap": "8px",
+        "min-width": "0"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".col",
+      "source_line": 619,
+      "declarations": {
+        "display": "flex",
+        "flex-direction": "column",
+        "gap": "6px",
+        "min-width": "0"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".btn",
+      "source_line": 648,
+      "declarations": {
+        "min-height": "44px",
+        "border": "1px solid var(--line)",
+        "background": "#fff",
+        "padding": "10px 14px",
+        "border-radius": "0",
+        "display": "inline-flex",
+        "align-items": "center",
+        "justify-content": "center",
+        "gap": "6px"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".inp",
+      "source_line": 653,
+      "declarations": {
+        "width": "100%",
+        "min-height": "44px",
+        "border": "1px solid var(--line)",
+        "background": "#fff",
+        "padding": "10px",
+        "border-radius": "0"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".lbl",
+      "source_line": 656,
+      "declarations": {
+        "font-size": "12px",
+        "color": "var(--muted)",
+        "display": "block",
+        "margin-bottom": "3px"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".hint",
+      "source_line": 659,
+      "declarations": {
+        "font-size": "12px",
+        "color": "var(--muted)",
+        "margin-top": "4px"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".goods-card .nm",
+      "source_line": 663,
+      "declarations": {
+        "font-size": "12px",
+        "line-height": "1.45",
+        "display": "-webkit-box",
+        "-webkit-line-clamp": "2",
+        "-webkit-box-orient": "vertical",
+        "overflow": "hidden"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".grid2",
+      "source_line": 664,
+      "declarations": {
+        "display": "grid",
+        "grid-template-columns": "1fr 1fr",
+        "gap": "10px"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".grid-auto",
+      "source_line": 669,
+      "declarations": {
+        "display": "grid",
+        "grid-template-columns": "repeat(auto-fill,minmax(300px,1fr))",
+        "gap": "12px"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".split2",
+      "source_line": 671,
+      "declarations": {
+        "display": "grid",
+        "gap": "16px",
+        "align-items": "start",
+        "grid-template-columns": "minmax(0,1.15fr) minmax(0,1fr)"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".split2.pay",
+      "source_line": 672,
+      "declarations": {
+        "grid-template-columns": "minmax(0,1.35fr) minmax(260px,1fr)"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".modal",
+      "source_line": 683,
+      "declarations": {
+        "background": "#fff",
+        "border": "1px solid var(--line)",
+        "border-radius": "16px 16px 0 0",
+        "width": "100%",
+        "max-height": "88%",
+        "overflow": "auto",
+        "padding": "14px",
+        "position": "relative"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".modal.center",
+      "source_line": 684,
+      "declarations": {
+        "border-radius": "16px",
+        "max-height": "80%"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".desk .modal.dlg",
+      "source_line": 691,
+      "declarations": {
+        "max-width": "600px",
+        "max-height": "82%",
+        "width": "100%"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".reader",
+      "source_line": 827,
+      "declarations": {
+        "background": "#fff",
+        "border": "1px solid var(--line)",
+        "max-width": "1180px",
+        "height": "100%",
+        "margin": "auto",
+        "display": "grid",
+        "grid-template-columns": "250px minmax(0,1fr)",
+        "grid-template-rows": "minmax(0,1fr)",
+        "overflow": "hidden"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".reader-doc",
+      "source_line": 848,
+      "declarations": {
+        "overflow": "auto",
+        "padding": "16px 22px",
+        "min-width": "0",
+        "min-height": "0",
+        "position": "relative",
+        "scroll-behavior": "smooth",
+        "flex": "1"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".md-p",
+      "source_line": 854,
+      "declarations": {
+        "margin": "7px 0",
+        "font-size": "14px",
+        "line-height": "1.8"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".md-tbl-wrap",
+      "source_line": 858,
+      "declarations": {
+        "overflow-x": "auto",
+        "max-width": "100%",
+        "margin": "10px 0"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".md-tbl-wrap",
+      "source_line": 866,
+      "declarations": {
+        "overflow-x": "visible"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".reader",
+      "source_line": 875,
+      "declarations": {
+        "grid-template-columns": "minmax(0,1fr)"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    },
+    {
+      "selector": ".reader-doc",
+      "source_line": 880,
+      "declarations": {
+        "padding": "14px"
+      },
+      "status": "static declaration; order retained; computed style unverified"
+    }
+  ],
+  "frequent_declarations": [
+    {
+      "property": "font-size",
+      "value": "12px",
+      "occurrences": 73
+    },
+    {
+      "property": "gap",
+      "value": "8px",
+      "occurrences": 30
+    },
+    {
+      "property": "font-size",
+      "value": "13px",
+      "occurrences": 28
+    },
+    {
+      "property": "font-size",
+      "value": "11px",
+      "occurrences": 27
+    },
+    {
+      "property": "gap",
+      "value": "6px",
+      "occurrences": 23
+    },
+    {
+      "property": "padding",
+      "value": "0",
+      "occurrences": 17
+    },
+    {
+      "property": "font-size",
+      "value": "12.5px",
+      "occurrences": 17
+    },
+    {
+      "property": "gap",
+      "value": "10px",
+      "occurrences": 14
+    },
+    {
+      "property": "min-height",
+      "value": "40px",
+      "occurrences": 12
+    },
+    {
+      "property": "min-height",
+      "value": "0",
+      "occurrences": 11
+    },
+    {
+      "property": "padding",
+      "value": "10px",
+      "occurrences": 11
+    },
+    {
+      "property": "padding",
+      "value": "14px",
+      "occurrences": 10
+    },
+    {
+      "property": "padding",
+      "value": "8px",
+      "occurrences": 10
+    },
+    {
+      "property": "min-height",
+      "value": "44px",
+      "occurrences": 10
+    },
+    {
+      "property": "font-size",
+      "value": "14px",
+      "occurrences": 9
+    },
+    {
+      "property": "gap",
+      "value": "4px",
+      "occurrences": 8
+    },
+    {
+      "property": "padding",
+      "value": "8px 10px",
+      "occurrences": 8
+    },
+    {
+      "property": "padding",
+      "value": "6px 10px",
+      "occurrences": 8
+    },
+    {
+      "property": "border-radius",
+      "value": "0",
+      "occurrences": 7
+    },
+    {
+      "property": "min-height",
+      "value": "38px",
+      "occurrences": 7
+    },
+    {
+      "property": "border-radius",
+      "value": "50%",
+      "occurrences": 6
+    },
+    {
+      "property": "min-height",
+      "value": "36px",
+      "occurrences": 6
+    },
+    {
+      "property": "padding",
+      "value": "10px 12px",
+      "occurrences": 5
+    },
+    {
+      "property": "min-height",
+      "value": "auto",
+      "occurrences": 5
+    },
+    {
+      "property": "border-radius",
+      "value": "4px",
+      "occurrences": 4
+    },
+    {
+      "property": "padding",
+      "value": "0 2px",
+      "occurrences": 4
+    },
+    {
+      "property": "font-size",
+      "value": "16px",
+      "occurrences": 4
+    },
+    {
+      "property": "min-height",
+      "value": "30px",
+      "occurrences": 4
+    },
+    {
+      "property": "font-size",
+      "value": "20px",
+      "occurrences": 3
+    },
+    {
+      "property": "border-radius",
+      "value": "8px",
+      "occurrences": 3
+    },
+    {
+      "property": "padding",
+      "value": "8px 12px",
+      "occurrences": 3
+    },
+    {
+      "property": "font-size",
+      "value": "15px",
+      "occurrences": 3
+    },
+    {
+      "property": "min-height",
+      "value": "34px",
+      "occurrences": 3
+    },
+    {
+      "property": "gap",
+      "value": "12px",
+      "occurrences": 3
+    },
+    {
+      "property": "padding",
+      "value": "4px 8px",
+      "occurrences": 3
+    },
+    {
+      "property": "padding",
+      "value": "2px 6px",
+      "occurrences": 3
+    },
+    {
+      "property": "padding",
+      "value": "20px",
+      "occurrences": 3
+    },
+    {
+      "property": "padding",
+      "value": "6px 8px",
+      "occurrences": 3
+    },
+    {
+      "property": "padding",
+      "value": "24px",
+      "occurrences": 2
+    },
+    {
+      "property": "padding",
+      "value": "16px",
+      "occurrences": 2
+    },
+    {
+      "property": "gap",
+      "value": "18px",
+      "occurrences": 2
+    },
+    {
+      "property": "padding",
+      "value": "0 8px",
+      "occurrences": 2
+    },
+    {
+      "property": "padding",
+      "value": "8px 0",
+      "occurrences": 2
+    },
+    {
+      "property": "padding",
+      "value": "0 4px",
+      "occurrences": 2
+    },
+    {
+      "property": "gap",
+      "value": "2px",
+      "occurrences": 2
+    }
+  ]
+}

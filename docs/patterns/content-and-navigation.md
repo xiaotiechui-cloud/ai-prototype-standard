@@ -1,5 +1,7 @@
 # 内容与导航：执行细节
 
+按 ui 7.4/15.2/15.6，先固定角色顺序、最小可读宽、预算与收拢条件，再用长内容/完整动作验证；导航/页签/筛选职责分开。媒体准备 0/1/多项及失败、长文全文/收起锚点、轮播暂停/重计时/清理、时间线未知与可信倒计时；不推广商城比例或时长。结果核对数据与当前稳定对象，图示须实际渲染/缩放，复制/下载须核对产物；适用连续路径见[动作矩阵](../acceptance/actions-and-results.md)。
+
 读取 [模式入口](README.md)；权威为 [client10](../../standards/profiles/client.md#s-10)、[web11](../../standards/profiles/desktop-web.md#s-11)、[ui15](../../standards/ui-and-components.md#s-15)、[reader18/19](../../standards/diagrams-and-reader.md#s-18)。本文件不是已执行结果。
 
 | 能力 | 实现前填写的契约 | 真实入口回归 |
