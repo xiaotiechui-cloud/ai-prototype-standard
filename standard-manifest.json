@@ -1,7 +1,7 @@
 {
   "rule_version": "V3.0",
   "layout_revision": "modular-1",
-  "content_revision": "draft-20261026-trial9-rules",
+  "content_revision": "draft-20261026-trial9-shell",
   "status": "user-confirmed-maintenance-draft",
   "baseline": {
     "path": "archive/AI原型图与组件级文档说明标准_V3.0.md",
