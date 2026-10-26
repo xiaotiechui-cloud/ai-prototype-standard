@@ -1,7 +1,7 @@
 {
   "rule_version": "V3.0",
   "layout_revision": "modular-1",
-  "content_revision": "draft-20261026-trial9-shell",
+  "content_revision": "draft-20261026-navigation",
   "status": "user-confirmed-maintenance-draft",
   "baseline": {
     "path": "archive/AI原型图与组件级文档说明标准_V3.0.md",
@@ -305,7 +305,7 @@
     },
     {
       "id": "acceptance-actions",
-      "title": "动作、记录与图示验收方法",
+      "title": "动作、入口职责、记录与图示验收方法",
       "paths": [
         "docs/acceptance/README.md",
         "docs/acceptance/actions-and-results.md"

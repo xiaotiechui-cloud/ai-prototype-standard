@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-26",
+  "content_revision": "draft-20261026-navigation",
+  "scope": "Repository/static maintenance checks only; no project/browser execution",
+  "repositories": {
+    "ai-prototype-standard": {
+      "head_unchanged": "f2f8e10ecdb3d11e8063a5191798eb557bdde3a9",
+      "manifest_routes_and_dependencies_unchanged": true,
+      "stable_markers_and_explicit_anchors_unchanged": true,
+      "marker_count": 51,
+      "utf8_nul_replacement_whitespace_checks": "passed",
+      "checked_paths": [
+        "AI-START.md",
+        "CHANGELOG.md",
+        "README.md",
+        "docs/MIGRATION-REPORT.md",
+        "docs/REVIEW.md",
+        "docs/acceptance/README.md",
+        "docs/acceptance/actions-and-results.md",
+        "docs/patterns/content-and-navigation.md",
+        "docs/reviews/2026-10-26-navigation-governance/00_通用条款_待审.md",
+        "docs/reviews/2026-10-26-navigation-governance/01_确认与落实.md",
+        "docs/reviews/2026-10-26-navigation-governance/02_维护专项检查.json",
+        "standard-manifest.json",
+        "standards/core.md",
+        "standards/deliverables-ui.md",
+        "standards/profiles/admin.md",
+        "standards/profiles/client.md",
+        "standards/profiles/desktop-web.md",
+        "standards/ui-and-components.md",
+        "standards/workflow-and-model.md",
+        "templates/01_页面与状态说明.md"
+      ]
+    },
+    "ai-prototype-acceptance-standard": {
+      "head_unchanged": "b37068de11c9d465838978c7ffb6099156aaf24c",
+      "manifest_routes_and_dependencies_unchanged": true,
+      "stable_markers_and_explicit_anchors_unchanged": true,
+      "marker_count": 10,
+      "utf8_nul_replacement_whitespace_checks": "passed",
+      "checked_paths": [
+        "AI-START.md",
+        "CHANGELOG.md",
+        "README.md",
+        "acceptance-manifest.json",
+        "docs/BUG-CHECKLIST.md",
+        "docs/INITIAL-REVIEW.md",
+        "docs/RULE-INDEX.md",
+        "docs/SOURCE-MAP.md",
+        "docs/WORKFLOW.md",
+        "docs/generation-baseline.json",
+        "standards/gates-and-retest.md",
+        "standards/interaction-and-data.md",
+        "standards/semantic-and-development.md",
+        "templates/08_验证记录与验收映射.md",
+        "templates/验收结论.md",
+        "templates/验收计划.md"
+      ]
+    }
+  },
+  "archive_bytes_unchanged": true,
+  "current_generation_snapshot_bytes_match": true,
+  "historical_generation_reference_preserved": true,
+  "project_trial_performed": false,
+  "result": "passed"
+}
