@@ -1,0 +1,40 @@
+@startuml
+!pragma layout smetana
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName "Microsoft YaHei"
+hide empty description
+state "开始" as START
+state "退款触发（系统闭集/用户特殊申请）" as N1
+state "◇ 判断退款类型" as N2
+state "系统自动创建退款任务" as N3
+state "客服记录、运营审核、财务执行" as N4
+state "执行原路退款" as N5
+state "◇ 判断资金结果" as N6
+state "退款成功并通知" as N7
+state "退款失败进入异常队列" as N8
+state "财务/运营重试（复用原任务标识）" as N9
+state "结果未知：保持退款中" as N10
+state "继续查询渠道结果" as N11
+state "暂停/取消未完成交付" as N12
+state "退款完成且不重复交付" as N13
+START --> N1
+N1 --> N12
+N12 --> N2
+N2 --> N3 : 系统异常闭集
+N2 --> N4 : 用户特殊退款
+N3 --> N5
+N4 --> N5
+N5 --> N6
+N6 --> N7 : 成功
+N6 --> N8 : 明确失败
+N6 --> N10 : 未知
+N10 --> N11
+N8 --> N9 : 重试
+N9 --> N5
+N7 --> N13
+N7 --> [*]
+N8 --> [*]
+N11 --> [*]
+N13 --> [*]
+@enduml

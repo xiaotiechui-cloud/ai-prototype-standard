@@ -1,0 +1,18 @@
+@startuml
+!pragma layout smetana
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName "Microsoft YaHei"
+participant "用户" as 用户
+participant "商城服务端" as 商城服务端
+participant "运营后台" as 运营后台
+participant "运营人员" as 运营人员
+用户 -> 商城服务端 : 支付成功，提交好友链接快照
+商城服务端 -> 用户 : 结果页展示待处理/工作时段
+运营后台 -> 运营人员 : 导出待处理批次
+运营人员 -> 运营后台 : 开始处理并记录批次
+运营人员 -> 用户 : Steam 好友赠送（站外）
+note over 用户 : 异步
+运营人员 -> 运营后台 : 填写完成依据并标记完成
+运营后台 -> 商城服务端 : 同步订单交付状态
+@enduml

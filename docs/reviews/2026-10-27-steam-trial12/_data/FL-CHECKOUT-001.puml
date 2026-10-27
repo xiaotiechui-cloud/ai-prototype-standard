@@ -1,0 +1,60 @@
+@startuml
+!pragma layout smetana
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName "Microsoft YaHei"
+hide empty description
+state "开始" as START
+state "确认商品与资料并点击购买" as N1
+state "◇ 是否已登录" as N2
+state "唤起所属平台登录" as N3
+state "◇ 实名及成年核验" as N4
+state "平台实名承接并返回重查" as N5
+state "停止交易并提示（未实名/未成年/核验失败）" as N6
+state "◇ 是否同意购买协议" as N7
+state "购买须知与协议确认" as N8
+state "◇ 是否已绑定手机号" as N9
+state "平台优先/商城兜底绑定手机" as N10
+state "◇ 商品已发布且价格合规" as N11
+state "停止交易并提示（下架/组合/价格不合规）" as N12
+state "◇ 库存与供应商余额校验" as N13
+state "停止交易并提示（售罄/余额不足）" as N14
+state "创建或恢复唯一有效订单" as N15
+state "唤起微信或支付宝" as N16
+state "服务端查询支付结果" as N17
+state "进入支付与交付结果页" as N18
+state "◇ 支付结果是否已支付" as N19
+state "确认订单继续支付" as N20
+state "保持支付确认中/进入核查" as N21
+START --> N1
+N1 --> N2
+N2 --> N3 : 未登录
+N2 --> N4 : 已登录
+N3 --> N4 : 登录成功
+N4 --> N5 : 未实名/未知
+N5 --> N4 : 返回重查
+N4 --> N6 : 未成年/核验失败
+N4 --> N7 : 已实名成年
+N7 --> N8 : 未同意
+N8 --> N9 : 同意
+N7 --> N9 : 已同意
+N9 --> N10 : 未绑定
+N10 --> N4 : 成功返回重查
+N9 --> N11 : 已绑定
+N11 --> N12 : 不通过
+N11 --> N13 : 通过
+N13 --> N14 : 售罄/余额不足/查询失败
+N13 --> N15 : 通过/库存未知且提示风险
+N15 --> N16
+N16 --> N17
+N17 --> N19
+N19 --> N18 : 已支付
+N19 --> N20 : 明确未支付且订单有效
+N19 --> N21 : 结果未知
+N6 --> [*]
+N12 --> [*]
+N14 --> [*]
+N18 --> [*]
+N20 --> [*]
+N21 --> [*]
+@enduml

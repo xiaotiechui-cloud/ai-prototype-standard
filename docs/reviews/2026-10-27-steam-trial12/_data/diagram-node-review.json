@@ -1,0 +1,471 @@
+[
+  {
+    "id": "FL-ADMIN-PUBLISH-001",
+    "source_file": "_data/FL-ADMIN-PUBLISH-001.puml",
+    "svg_file": "_data/FL-ADMIN-PUBLISH-001.svg",
+    "explicit_states": 11,
+    "edges_in_supported_syntax": 13,
+    "isolated_explicit_states": [],
+    "declared_state_labels_not_found_in_svg": [],
+    "svg_text_count": 14,
+    "repeated_svg_text": {},
+    "decision_glyph_labels": [
+      {
+        "id": "N5",
+        "label": "◇ 零售价 ≥ max(供货价, 最低零售价)",
+        "line": 12
+      }
+    ],
+    "svg_has_node_identity_attributes": false,
+    "geometry_status": "Browser text bbox / transforms / clipping not measured"
+  },
+  {
+    "id": "FL-AGREEMENT-001",
+    "source_file": "_data/FL-AGREEMENT-001.puml",
+    "svg_file": "_data/FL-AGREEMENT-001.svg",
+    "explicit_states": 8,
+    "edges_in_supported_syntax": 10,
+    "isolated_explicit_states": [],
+    "declared_state_labels_not_found_in_svg": [],
+    "svg_text_count": 13,
+    "repeated_svg_text": {},
+    "decision_glyph_labels": [
+      {
+        "id": "N2",
+        "label": "◇ 是否标记实质性变更",
+        "line": 9
+      }
+    ],
+    "svg_has_node_identity_attributes": false,
+    "geometry_status": "Browser text bbox / transforms / clipping not measured"
+  },
+  {
+    "id": "FL-CHECKOUT-001",
+    "source_file": "_data/FL-CHECKOUT-001.puml",
+    "svg_file": "_data/FL-CHECKOUT-001.svg",
+    "explicit_states": 22,
+    "edges_in_supported_syntax": 31,
+    "isolated_explicit_states": [],
+    "declared_state_labels_not_found_in_svg": [],
+    "svg_text_count": 42,
+    "repeated_svg_text": {},
+    "decision_glyph_labels": [
+      {
+        "id": "N2",
+        "label": "◇ 是否已登录",
+        "line": 9
+      },
+      {
+        "id": "N4",
+        "label": "◇ 实名及成年核验",
+        "line": 11
+      },
+      {
+        "id": "N7",
+        "label": "◇ 是否同意购买协议",
+        "line": 14
+      },
+      {
+        "id": "N9",
+        "label": "◇ 是否已绑定手机号",
+        "line": 16
+      },
+      {
+        "id": "N11",
+        "label": "◇ 商品已发布且价格合规",
+        "line": 18
+      },
+      {
+        "id": "N13",
+        "label": "◇ 库存与供应商余额校验",
+        "line": 20
+      },
+      {
+        "id": "N19",
+        "label": "◇ 支付结果是否已支付",
+        "line": 26
+      }
+    ],
+    "svg_has_node_identity_attributes": false,
+    "geometry_status": "Browser text bbox / transforms / clipping not measured"
+  },
+  {
+    "id": "FL-CODE-001",
+    "source_file": "_data/FL-CODE-001.puml",
+    "svg_file": "_data/FL-CODE-001.svg",
+    "explicit_states": 16,
+    "edges_in_supported_syntax": 22,
+    "isolated_explicit_states": [],
+    "declared_state_labels_not_found_in_svg": [],
+    "svg_text_count": 27,
+    "repeated_svg_text": {},
+    "decision_glyph_labels": [
+      {
+        "id": "N3",
+        "label": "◇ 判断供应商业务 code",
+        "line": 10
+      },
+      {
+        "id": "N7",
+        "label": "◇ 识别错误类型",
+        "line": 14
+      },
+      {
+        "id": "N11",
+        "label": "◇ 是否已超 24 小时或确认无法履约",
+        "line": 18
+      }
+    ],
+    "svg_has_node_identity_attributes": false,
+    "geometry_status": "Browser text bbox / transforms / clipping not measured"
+  },
+  {
+    "id": "FL-GIFT-001",
+    "source_file": "_data/FL-GIFT-001.puml",
+    "svg_file": "_data/FL-GIFT-001.svg",
+    "explicit_states": 11,
+    "edges_in_supported_syntax": 14,
+    "isolated_explicit_states": [],
+    "declared_state_labels_not_found_in_svg": [],
+    "svg_text_count": 16,
+    "repeated_svg_text": {},
+    "decision_glyph_labels": [
+      {
+        "id": "N5",
+        "label": "◇ 核实好友已收到游戏",
+        "line": 12
+      }
+    ],
+    "svg_has_node_identity_attributes": false,
+    "geometry_status": "Browser text bbox / transforms / clipping not measured"
+  },
+  {
+    "id": "FL-PAY-001",
+    "source_file": "_data/FL-PAY-001.puml",
+    "svg_file": "_data/FL-PAY-001.svg",
+    "explicit_states": 16,
+    "edges_in_supported_syntax": 24,
+    "isolated_explicit_states": [],
+    "declared_state_labels_not_found_in_svg": [],
+    "svg_text_count": 28,
+    "repeated_svg_text": {},
+    "decision_glyph_labels": [
+      {
+        "id": "N3",
+        "label": "◇ 判断支付结果",
+        "line": 10
+      },
+      {
+        "id": "N10",
+        "label": "◇ 晚到款确认已支付",
+        "line": 17
+      },
+      {
+        "id": "N14",
+        "label": "◇ 30 分钟到期查询",
+        "line": 21
+      }
+    ],
+    "svg_has_node_identity_attributes": false,
+    "geometry_status": "Browser text bbox / transforms / clipping not measured"
+  },
+  {
+    "id": "FL-REFUND-001",
+    "source_file": "_data/FL-REFUND-001.puml",
+    "svg_file": "_data/FL-REFUND-001.svg",
+    "explicit_states": 14,
+    "edges_in_supported_syntax": 19,
+    "isolated_explicit_states": [],
+    "declared_state_labels_not_found_in_svg": [],
+    "svg_text_count": 20,
+    "repeated_svg_text": {},
+    "decision_glyph_labels": [
+      {
+        "id": "N2",
+        "label": "◇ 判断退款类型",
+        "line": 9
+      },
+      {
+        "id": "N6",
+        "label": "◇ 判断资金结果",
+        "line": 13
+      }
+    ],
+    "svg_has_node_identity_attributes": false,
+    "geometry_status": "Browser text bbox / transforms / clipping not measured"
+  },
+  {
+    "id": "SEQ-CODE-001",
+    "source_file": "_data/SEQ-CODE-001.puml",
+    "svg_file": "_data/SEQ-CODE-001.svg",
+    "explicit_states": 0,
+    "edges_in_supported_syntax": 0,
+    "isolated_explicit_states": [],
+    "declared_state_labels_not_found_in_svg": [],
+    "svg_text_count": 17,
+    "repeated_svg_text": {
+      "商城服务端": 2,
+      "供应商 extractcode": 2,
+      "供应商日志": 2,
+      "交付记录": 2,
+      "站内信": 2
+    },
+    "decision_glyph_labels": [],
+    "svg_has_node_identity_attributes": false,
+    "geometry_status": "Browser text bbox / transforms / clipping not measured"
+  },
+  {
+    "id": "SEQ-GIFT-001",
+    "source_file": "_data/SEQ-GIFT-001.puml",
+    "svg_file": "_data/SEQ-GIFT-001.svg",
+    "explicit_states": 0,
+    "edges_in_supported_syntax": 0,
+    "isolated_explicit_states": [],
+    "declared_state_labels_not_found_in_svg": [],
+    "svg_text_count": 16,
+    "repeated_svg_text": {
+      "用户": 2,
+      "商城服务端": 2,
+      "运营后台": 2,
+      "运营人员": 2
+    },
+    "decision_glyph_labels": [],
+    "svg_has_node_identity_attributes": false,
+    "geometry_status": "Browser text bbox / transforms / clipping not measured"
+  },
+  {
+    "id": "SEQ-NOTIFY-001",
+    "source_file": "_data/SEQ-NOTIFY-001.puml",
+    "svg_file": "_data/SEQ-NOTIFY-001.svg",
+    "explicit_states": 0,
+    "edges_in_supported_syntax": 0,
+    "isolated_explicit_states": [],
+    "declared_state_labels_not_found_in_svg": [],
+    "svg_text_count": 18,
+    "repeated_svg_text": {
+      "商城服务端": 2,
+      "平台站内信": 2,
+      "用户": 2,
+      "通知记录": 2,
+      "异步": 4
+    },
+    "decision_glyph_labels": [],
+    "svg_has_node_identity_attributes": false,
+    "geometry_status": "Browser text bbox / transforms / clipping not measured"
+  },
+  {
+    "id": "SEQ-PAY-001",
+    "source_file": "_data/SEQ-PAY-001.puml",
+    "svg_file": "_data/SEQ-PAY-001.svg",
+    "explicit_states": 0,
+    "edges_in_supported_syntax": 0,
+    "isolated_explicit_states": [],
+    "declared_state_labels_not_found_in_svg": [],
+    "svg_text_count": 20,
+    "repeated_svg_text": {
+      "用户": 2,
+      "商城H5": 2,
+      "商城服务端": 2,
+      "支付渠道": 2,
+      "订单服务": 2
+    },
+    "decision_glyph_labels": [],
+    "svg_has_node_identity_attributes": false,
+    "geometry_status": "Browser text bbox / transforms / clipping not measured"
+  },
+  {
+    "id": "SEQ-PAYCHECK-001",
+    "source_file": "_data/SEQ-PAYCHECK-001.puml",
+    "svg_file": "_data/SEQ-PAYCHECK-001.svg",
+    "explicit_states": 0,
+    "edges_in_supported_syntax": 0,
+    "isolated_explicit_states": [],
+    "declared_state_labels_not_found_in_svg": [],
+    "svg_text_count": 15,
+    "repeated_svg_text": {
+      "支付/财务": 2,
+      "支付核查": 2,
+      "支付渠道": 2,
+      "订单服务": 2,
+      "退款服务": 2
+    },
+    "decision_glyph_labels": [],
+    "svg_has_node_identity_attributes": false,
+    "geometry_status": "Browser text bbox / transforms / clipping not measured"
+  },
+  {
+    "id": "SEQ-REFUND-001",
+    "source_file": "_data/SEQ-REFUND-001.puml",
+    "svg_file": "_data/SEQ-REFUND-001.svg",
+    "explicit_states": 0,
+    "edges_in_supported_syntax": 0,
+    "isolated_explicit_states": [],
+    "declared_state_labels_not_found_in_svg": [],
+    "svg_text_count": 18,
+    "repeated_svg_text": {
+      "系统/财务": 2,
+      "退款服务": 2,
+      "支付渠道": 2,
+      "退款单": 2,
+      "通知": 2,
+      "异步": 2
+    },
+    "decision_glyph_labels": [],
+    "svg_has_node_identity_attributes": false,
+    "geometry_status": "Browser text bbox / transforms / clipping not measured"
+  },
+  {
+    "id": "SM-CODE-001",
+    "source_file": "_data/SM-CODE-001.puml",
+    "svg_file": "_data/SM-CODE-001.svg",
+    "explicit_states": 5,
+    "edges_in_supported_syntax": 6,
+    "isolated_explicit_states": [
+      {
+        "id": "INIT",
+        "label": "未启动",
+        "line": 7
+      }
+    ],
+    "declared_state_labels_not_found_in_svg": [],
+    "svg_text_count": 11,
+    "repeated_svg_text": {
+      "未启动": 2
+    },
+    "decision_glyph_labels": [],
+    "svg_has_node_identity_attributes": false,
+    "geometry_status": "Browser text bbox / transforms / clipping not measured"
+  },
+  {
+    "id": "SM-GIFT-001",
+    "source_file": "_data/SM-GIFT-001.puml",
+    "svg_file": "_data/SM-GIFT-001.svg",
+    "explicit_states": 5,
+    "edges_in_supported_syntax": 5,
+    "isolated_explicit_states": [
+      {
+        "id": "INIT",
+        "label": "待处理",
+        "line": 7
+      }
+    ],
+    "declared_state_labels_not_found_in_svg": [],
+    "svg_text_count": 10,
+    "repeated_svg_text": {
+      "待处理": 2
+    },
+    "decision_glyph_labels": [],
+    "svg_has_node_identity_attributes": false,
+    "geometry_status": "Browser text bbox / transforms / clipping not measured"
+  },
+  {
+    "id": "SM-NOTIFY-001",
+    "source_file": "_data/SM-NOTIFY-001.puml",
+    "svg_file": "_data/SM-NOTIFY-001.svg",
+    "explicit_states": 5,
+    "edges_in_supported_syntax": 5,
+    "isolated_explicit_states": [
+      {
+        "id": "INIT",
+        "label": "待发送",
+        "line": 7
+      }
+    ],
+    "declared_state_labels_not_found_in_svg": [],
+    "svg_text_count": 10,
+    "repeated_svg_text": {
+      "待发送": 2
+    },
+    "decision_glyph_labels": [],
+    "svg_has_node_identity_attributes": false,
+    "geometry_status": "Browser text bbox / transforms / clipping not measured"
+  },
+  {
+    "id": "SM-PAY-001",
+    "source_file": "_data/SM-PAY-001.puml",
+    "svg_file": "_data/SM-PAY-001.svg",
+    "explicit_states": 5,
+    "edges_in_supported_syntax": 8,
+    "isolated_explicit_states": [
+      {
+        "id": "INIT",
+        "label": "待支付",
+        "line": 7
+      }
+    ],
+    "declared_state_labels_not_found_in_svg": [],
+    "svg_text_count": 13,
+    "repeated_svg_text": {
+      "待支付": 2
+    },
+    "decision_glyph_labels": [],
+    "svg_has_node_identity_attributes": false,
+    "geometry_status": "Browser text bbox / transforms / clipping not measured"
+  },
+  {
+    "id": "SM-PAYCHECK-001",
+    "source_file": "_data/SM-PAYCHECK-001.puml",
+    "svg_file": "_data/SM-PAYCHECK-001.svg",
+    "explicit_states": 4,
+    "edges_in_supported_syntax": 5,
+    "isolated_explicit_states": [
+      {
+        "id": "INIT",
+        "label": "待核查",
+        "line": 7
+      }
+    ],
+    "declared_state_labels_not_found_in_svg": [],
+    "svg_text_count": 9,
+    "repeated_svg_text": {
+      "待核查": 2
+    },
+    "decision_glyph_labels": [],
+    "svg_has_node_identity_attributes": false,
+    "geometry_status": "Browser text bbox / transforms / clipping not measured"
+  },
+  {
+    "id": "SM-PRODUCT-001",
+    "source_file": "_data/SM-PRODUCT-001.puml",
+    "svg_file": "_data/SM-PRODUCT-001.svg",
+    "explicit_states": 6,
+    "edges_in_supported_syntax": 6,
+    "isolated_explicit_states": [
+      {
+        "id": "INIT",
+        "label": "未选品",
+        "line": 7
+      }
+    ],
+    "declared_state_labels_not_found_in_svg": [],
+    "svg_text_count": 12,
+    "repeated_svg_text": {
+      "未选品": 2
+    },
+    "decision_glyph_labels": [],
+    "svg_has_node_identity_attributes": false,
+    "geometry_status": "Browser text bbox / transforms / clipping not measured"
+  },
+  {
+    "id": "SM-REFUND-001",
+    "source_file": "_data/SM-REFUND-001.puml",
+    "svg_file": "_data/SM-REFUND-001.svg",
+    "explicit_states": 5,
+    "edges_in_supported_syntax": 5,
+    "isolated_explicit_states": [
+      {
+        "id": "INIT",
+        "label": "待处理",
+        "line": 7
+      }
+    ],
+    "declared_state_labels_not_found_in_svg": [],
+    "svg_text_count": 10,
+    "repeated_svg_text": {
+      "待处理": 2
+    },
+    "decision_glyph_labels": [],
+    "svg_has_node_identity_attributes": false,
+    "geometry_status": "Browser text bbox / transforms / clipping not measured"
+  }
+]

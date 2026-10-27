@@ -1,0 +1,16 @@
+@startuml
+!pragma layout smetana
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName "Microsoft YaHei"
+hide empty description
+state "待核查" as INIT
+state "待核查" as S1
+state "核查中" as S2
+S1 --> S2 : 开始核查 [有权限]
+state "已定性" as S3
+S2 --> S3 : 渠道证据确认已支付 [可信凭证]
+S2 --> S3 : 渠道证据确认未支付 [可信凭证且订单过期]
+S2 --> S2 : 仍无法确认 [无证据]
+S2 --> S2 : 升级处理 [超过内部时限]
+@enduml

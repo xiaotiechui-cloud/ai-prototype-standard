@@ -1,0 +1,64 @@
+{
+  "html_sha256": "39ac76b81bb1e58252af09f931fdd5cd9e113987f8b0c9e1328eabca78c315fe",
+  "html_bytes": 1778852,
+  "normalized_document_parity": [
+    {
+      "file": "00_交付说明与变更记录.md",
+      "same_normalized_text": true,
+      "external_normalized_sha256": "b2605beefa1f8a940a02d4f9f7a1ab2f91558724ea06178a86129b2b0d04d6b7",
+      "embedded_normalized_sha256": "b2605beefa1f8a940a02d4f9f7a1ab2f91558724ea06178a86129b2b0d04d6b7"
+    },
+    {
+      "file": "01_页面与状态说明.md",
+      "same_normalized_text": true,
+      "external_normalized_sha256": "1cd6ce64537f6b3b4e58c66adb7e876c21cec2748c7557280004027f99c66004",
+      "embedded_normalized_sha256": "1cd6ce64537f6b3b4e58c66adb7e876c21cec2748c7557280004027f99c66004"
+    },
+    {
+      "file": "03_组件级文档.md",
+      "same_normalized_text": true,
+      "external_normalized_sha256": "a78c308f2fb01dbc28f54492f4aa07561431b92f3e2a284dec33d3e52429694f",
+      "embedded_normalized_sha256": "a78c308f2fb01dbc28f54492f4aa07561431b92f3e2a284dec33d3e52429694f"
+    },
+    {
+      "file": "04_业务流程与异常规则.md",
+      "same_normalized_text": true,
+      "external_normalized_sha256": "d36ec69759036307a9d16f3cb4f1cf8035c4e1b7012777865c832b9151e6859c",
+      "embedded_normalized_sha256": "d36ec69759036307a9d16f3cb4f1cf8035c4e1b7012777865c832b9151e6859c"
+    },
+    {
+      "file": "05_接口数据与权限说明.md",
+      "same_normalized_text": true,
+      "external_normalized_sha256": "6e512dd74fea2b78fe79ad48a41a7e4e8a27f93b2bd3f9c9654ced609d477992",
+      "embedded_normalized_sha256": "6e512dd74fea2b78fe79ad48a41a7e4e8a27f93b2bd3f9c9654ced609d477992"
+    },
+    {
+      "file": "06_埋点文档.md",
+      "same_normalized_text": true,
+      "external_normalized_sha256": "149e029a16ade72a9c4b95087dc1ae95f39a3fbdb9f281cb0fb227973d49a3ab",
+      "embedded_normalized_sha256": "149e029a16ade72a9c4b95087dc1ae95f39a3fbdb9f281cb0fb227973d49a3ab"
+    },
+    {
+      "file": "07_测试用例.md",
+      "same_normalized_text": true,
+      "external_normalized_sha256": "31b61bb4a413bbaa9f32447338abb7710ec9459220b80e9c1f6d40bbcd9d2982",
+      "embedded_normalized_sha256": "31b61bb4a413bbaa9f32447338abb7710ec9459220b80e9c1f6d40bbcd9d2982"
+    },
+    {
+      "file": "08_验证记录与验收映射.md",
+      "same_normalized_text": true,
+      "external_normalized_sha256": "7d65162d55dd128c89797fdfc60eb24695428d39c6e94a3ffa0538826768657c",
+      "embedded_normalized_sha256": "7d65162d55dd128c89797fdfc60eb24695428d39c6e94a3ffa0538826768657c"
+    },
+    {
+      "file": "09_待确认事项与设计决策.md",
+      "same_normalized_text": true,
+      "external_normalized_sha256": "c3a4b4f77cf4b5ebb30c889001348f1f469ab3161770ea4df3b1fa9877d3c92f",
+      "embedded_normalized_sha256": "c3a4b4f77cf4b5ebb30c889001348f1f469ab3161770ea4df3b1fa9877d3c92f"
+    }
+  ],
+  "script_sidecar_line_1_html_line": 409,
+  "css_sidecar_line_1_html_line": 7,
+  "current_inventory_unchanged": true,
+  "final_unchanged": true
+}

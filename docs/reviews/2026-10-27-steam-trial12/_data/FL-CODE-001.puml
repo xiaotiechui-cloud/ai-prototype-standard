@@ -1,0 +1,45 @@
+@startuml
+!pragma layout smetana
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName "Microsoft YaHei"
+hide empty description
+state "开始" as START
+state "支付已由服务端确认" as N1
+state "调用 extractcode（gnum=1，orderid 幂等）" as N2
+state "◇ 判断供应商业务 code" as N3
+state "保存口令码与交付记录" as N4
+state "创建站内信通知任务" as N5
+state "结果页/订单可查收口令码" as N6
+state "◇ 识别错误类型" as N7
+state "查询 RequestlogList / BuyOrderList" as N8
+state "已成功：按查询结果展示" as N9
+state "24 小时内复用同一 orderid 重试" as N10
+state "◇ 是否已超 24 小时或确认无法履约" as N11
+state "生成系统异常退款任务/转客服" as N12
+state "退款或人工处理" as N13
+state "修复 APPID/签名配置后重试" as N14
+state "交付异常/待人工处理" as N15
+START --> N1
+N1 --> N2
+N2 --> N3
+N3 --> N4 : 00000
+N4 --> N5
+N5 --> N6
+N3 --> N7 : 其他 code
+N7 --> N8 : pu006/超时/结果不明
+N8 --> N9 : 已成功
+N8 --> N10 : 未成功且未超窗
+N7 --> N10 : pu004/pu005/余额不足
+N7 --> N14 : pu002/pu003
+N14 --> N2 : 配置修复后
+N10 --> N11
+N11 --> N12 : 超窗/无法履约
+N11 --> N10 : 仍可重试
+N12 --> N13
+N10 --> N15 : 重试仍失败且待人工
+N6 --> [*]
+N9 --> [*]
+N13 --> [*]
+N15 --> [*]
+@enduml

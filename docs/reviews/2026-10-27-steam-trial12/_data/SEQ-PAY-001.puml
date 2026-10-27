@@ -1,0 +1,21 @@
+@startuml
+!pragma layout smetana
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName "Microsoft YaHei"
+participant "用户" as 用户
+participant "商城H5" as 商城H5
+participant "商城服务端" as 商城服务端
+participant "支付渠道" as 支付渠道
+participant "订单服务" as 订单服务
+用户 -> 商城H5 : 点击购买并支付
+商城H5 -> 商城服务端 : 提交购买校验（资格/商品/余额/订单并存）
+商城服务端 -> 订单服务 : 创建或恢复订单
+商城服务端 -> 支付渠道 : 发起微信/支付宝支付
+支付渠道 -> 商城H5 : 支付返回/取消/未知
+note over 商城H5 : 异步
+商城H5 -> 商城服务端 : 查询支付结果
+商城服务端 -> 支付渠道 : 渠道查询/接收异步通知
+商城服务端 -> 商城H5 : 返回已支付/未支付/确认中
+商城服务端 -> 订单服务 : 更新支付事实并触发交付
+@enduml

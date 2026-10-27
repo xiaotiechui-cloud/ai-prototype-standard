@@ -1,0 +1,18 @@
+@startuml
+!pragma layout smetana
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName "Microsoft YaHei"
+participant "商城服务端" as 商城服务端
+participant "供应商 extractcode" as 供应商_extractcode
+participant "供应商日志" as 供应商日志
+participant "交付记录" as 交付记录
+participant "站内信" as 站内信
+商城服务端 -> 供应商_extractcode : extractcode（gid,gnum=1,ordermoney,orderid,sign）
+供应商_extractcode -> 商城服务端 : code=00000 或 pu002～pu006
+商城服务端 -> 交付记录 : 保存口令码/失败码/24h 截止
+商城服务端 -> 供应商日志 : 查询 RequestlogList/BuyOrderList（结果不明/pu006）
+商城服务端 -> 供应商_extractcode : 同一 orderid 重试（≤24h）
+商城服务端 -> 站内信 : 创建口令码到账通知任务
+note over 站内信 : 异步
+@enduml

@@ -1,0 +1,19 @@
+@startuml
+!pragma layout smetana
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName "Microsoft YaHei"
+hide empty description
+state "未选品" as INIT
+state "未选品" as S1
+state "已选品" as S2
+S1 --> S2 : 运营选品 [候选 platform=steam/status=1]
+state "待审核" as S3
+S2 --> S3 : 补齐内容/定价 [内容完整且价格合规]
+state "已发布" as S4
+S3 --> S4 : 审核通过并发布 [有发布权限]
+S2 --> S2 : 价格不合规/内容缺失 [校验失败]
+state "已下架" as S5
+S4 --> S5 : 供应商下架/价格不合规 [同步或运营操作]
+S5 --> S4 : 调价/恢复供应并重新发布 [校验通过]
+@enduml

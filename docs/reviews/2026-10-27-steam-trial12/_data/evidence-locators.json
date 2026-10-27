@@ -1,0 +1,161 @@
+{
+  "variant": [
+    {
+      "file": "_data/trial-script-1.js",
+      "line": 755,
+      "excerpt": "  const buyCard = C('WEB-DETAIL-01-C04', `<div class=\"small muted\">当前商品</div><h3 style=\"margin:4px 0\">${esc(p.name)}</h3><div class=\"price lg mt8\">${money(currentPrice(p))}</div><div class=\"small muted\">数量固定 1 · 价格按订单快照保价</div><div class=\"m"
+    }
+  ],
+  "variant_wrapper": [
+    {
+      "file": "_data/trial-script-1.js",
+      "line": 73,
+      "excerpt": "function C(id, inner, variant = '', tag = 'div', cls = '') {"
+    }
+  ],
+  "variant_style": [
+    {
+      "file": "_data/trial.css",
+      "line": 92,
+      "excerpt": ".web-buy-card{position:sticky;top:80px;background:#fff;border:1px solid var(--line);padding:16px}"
+    }
+  ],
+  "host": [
+    {
+      "file": "_data/trial.css",
+      "line": 260,
+      "excerpt": ".web .overlay{position:fixed;inset:0;padding:16px;align-items:center}"
+    }
+  ],
+  "host_height": [
+    {
+      "file": "_data/trial.css",
+      "line": 261,
+      "excerpt": ".web .overlay .sheet{max-width:600px;max-height:80vh;border-radius:0}"
+    }
+  ],
+  "buy_background": [
+    {
+      "file": "_data/trial-script-1.js",
+      "line": 760,
+      "excerpt": "  const body = webBackdrop('商品详情上下文', '购买面板（弹层）', '背景仅作占位；真实购买从详情页购买卡打开。');"
+    }
+  ],
+  "buy_close": [
+    {
+      "file": "_data/trial-script-1.js",
+      "line": 858,
+      "excerpt": "reg('close-buy', () => { navigate(RV.end === 'WEB' ? 'WEB-DETAIL-01' : 'APP-DETAIL-01'); });"
+    }
+  ],
+  "navigation": [
+    {
+      "file": "_data/trial-script-1.js",
+      "line": 256,
+      "excerpt": "function navigate(pageId, state) {"
+    }
+  ],
+  "back": [
+    {
+      "file": "_data/trial-script-1.js",
+      "line": 269,
+      "excerpt": "function back() {"
+    }
+  ],
+  "numeric_sort": [
+    {
+      "file": "_data/trial-script-1.js",
+      "line": 1280,
+      "excerpt": "  const form = C('ADM-HOME-01-C03', `<div class=\"card\"><h3>广告位</h3>${[['首页顶部广告', 'home://product/P-1001', '启用'], ['赠送服务说明', 'home://service', '启用']].map(([t, target, st], i) => `<div class=\"adm-filters\" style=\"margin-bottom:8px\"><div class="
+    }
+  ],
+  "up_sort": [
+    {
+      "file": "_data/trial-script-1.js",
+      "line": 1306,
+      "excerpt": "    <div class=\"card\"><h3>热门商品</h3><table class=\"adm-table\"><thead><tr><th>商品</th><th>排序</th><th>状态</th><th>操作</th></tr></thead><tbody>${DATA.hotProducts.map((id, i) => { const p = DATA.productById(id); return `<tr><td>${esc(p.name)}</td><t"
+    }
+  ],
+  "home_draft": [
+    {
+      "file": "_data/trial-script-1.js",
+      "line": 1445,
+      "excerpt": "reg('adm-home-draft', () => showToast('草稿已保存，尚未生效'));"
+    }
+  ],
+  "home_preview": [
+    {
+      "file": "_data/trial-script-1.js",
+      "line": 1446,
+      "excerpt": "reg('adm-home-preview', () => showToast('预览已打开（模拟）：三端共用同一配置'));"
+    }
+  ],
+  "home_publish": [
+    {
+      "file": "_data/trial-script-1.js",
+      "line": 1448,
+      "excerpt": "reg('adm-do-home-publish', () => { showToast('首页配置已发布，三端同时生效'); });"
+    }
+  ],
+  "instance_owner": [
+    {
+      "file": "_data/trial-script-1.js",
+      "line": 371,
+      "excerpt": "    ${appTop({ id: 'APP-HOME-01-C08', title: 'Steam商城', sub: '官方服务 · 自动发码 · 人工赠送', backBtn: false, right: serviceBtn('APP-HOME-01-C07') })}"
+    },
+    {
+      "file": "_data/trial-script-1.js",
+      "line": 388,
+      "excerpt": "  return appTop({ id: pageId + '-C08', title: '搜索商品', sub: '', right: serviceBtn('APP-HOME-01-C07') })"
+    }
+  ],
+  "canvas_replacement": [
+    {
+      "file": "_data/trial-script-1.js",
+      "line": 1611,
+      "excerpt": "  canvas.innerHTML = html;"
+    }
+  ],
+  "review_selector": [
+    {
+      "file": "_data/trial-script-1.js",
+      "line": 1722,
+      "excerpt": "  $('#compSel')?.addEventListener('change', e => { RV.selectedComponent = e.target.value; renderAll(); });"
+    }
+  ],
+  "review_outline": [
+    {
+      "file": "_data/trial-script-1.js",
+      "line": 1723,
+      "excerpt": "  $('#outlineBtn')?.addEventListener('click', () => { RV.outline = !RV.outline; $('#outlineBtn').setAttribute('aria-pressed', String(RV.outline)); renderAll(); });"
+    }
+  ],
+  "quick_contract": [
+    {
+      "file": "_data/03_组件级文档.md",
+      "line": 1188,
+      "excerpt": "移动端广告 4:2 灰块、圆角 0；快捷导航四列，图标 24px；区块间距 16px；桌面广告通栏、商品多列；全部灰度占位。  "
+    }
+  ],
+  "sort_contract": [
+    {
+      "file": "_data/03_组件级文档.md",
+      "line": 4159,
+      "excerpt": "配置分组卡片；字段标签 12px；输入高 40px；排序使用拖拽手柄 + 上下移动按钮；发布/保存右上角；预览为独立弹窗。  "
+    }
+  ],
+  "quick_override": [
+    {
+      "file": "_data/09_待确认事项与设计决策.md",
+      "line": 116,
+      "excerpt": "| 首页快捷导航 | 竞品含钱包/领券/购物车/会员 | 仅我的订单/客服/搜索/全部商品 | PRD §2.3 明确不做；禁止补未建设入口 | 02/08 |"
+    }
+  ],
+  "profile_contract": [
+    {
+      "file": "_data/01_页面与状态说明.md",
+      "line": 198,
+      "excerpt": "| WEB-DETAIL-01 | WEB-DETAIL-01-C04 | 桌面购买卡 | 详情右侧吸顶购买卡，金额与状态操作。 | PAT-CARD-01 | desktop-sticky | 是 | 见 05 与 03 第 2/7 节 | DEFAULT/EXPANDED/ORDER_PENDING/SOLD_OUT/UNAVAILABLE/ERROR | data-component=\"WEB-DETAIL-01-C04\" data-variant=\"desktop-s"
+    }
+  ]
+}

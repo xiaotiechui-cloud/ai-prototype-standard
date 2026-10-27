@@ -1,0 +1,8347 @@
+{
+  "method": "Static source and producer evidence; no independent browser run",
+  "inputs": [
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑12.0\\Steam商城首期原型交付_V1.6.0\\00_交付说明与变更记录.md",
+      "bytes": 17245,
+      "sha256": "f1929feddf339db5db5370abc8989510c7da6b93c07a9c9e6e8c985d83d21c3a",
+      "utf8": true,
+      "replacement_character_count": 0,
+      "lines": 204
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑12.0\\Steam商城首期原型交付_V1.6.0\\01_页面与状态说明.md",
+      "bytes": 225691,
+      "sha256": "9858c66cf339de206e01c0b8cc7f22c8e63bef281054245b17da2f4de2eb1cc9",
+      "utf8": true,
+      "replacement_character_count": 0,
+      "lines": 1066
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑12.0\\Steam商城首期原型交付_V1.6.0\\02_低保真交互原型.html",
+      "bytes": 1778852,
+      "sha256": "39ac76b81bb1e58252af09f931fdd5cd9e113987f8b0c9e1328eabca78c315fe",
+      "utf8": true,
+      "replacement_character_count": 0,
+      "lines": 2236
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑12.0\\Steam商城首期原型交付_V1.6.0\\03_组件级文档.md",
+      "bytes": 377965,
+      "sha256": "c8eb4df6dac3930d687d182138eac8a8dfd9493cdb098bca516c6600e12744d0",
+      "utf8": true,
+      "replacement_character_count": 0,
+      "lines": 5420
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑12.0\\Steam商城首期原型交付_V1.6.0\\04_业务流程与异常规则.md",
+      "bytes": 71328,
+      "sha256": "12770fa84a911dbd89796a22dea2414fd1becf26d677d19318289046215e7dfb",
+      "utf8": true,
+      "replacement_character_count": 0,
+      "lines": 1030
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑12.0\\Steam商城首期原型交付_V1.6.0\\05_接口数据与权限说明.md",
+      "bytes": 54275,
+      "sha256": "24e2849083e5f638ab32ec54c813f434d1c3d93a07ff86d30728b2482708a866",
+      "utf8": true,
+      "replacement_character_count": 0,
+      "lines": 572
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑12.0\\Steam商城首期原型交付_V1.6.0\\06_埋点文档.md",
+      "bytes": 11721,
+      "sha256": "149e029a16ade72a9c4b95087dc1ae95f39a3fbdb9f281cb0fb227973d49a3ab",
+      "utf8": true,
+      "replacement_character_count": 0,
+      "lines": 120
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑12.0\\Steam商城首期原型交付_V1.6.0\\07_测试用例.md",
+      "bytes": 77523,
+      "sha256": "97646749d4e0564c24b78335cf5e754239fb7cb784e9fda33ae05f805646fd3a",
+      "utf8": true,
+      "replacement_character_count": 0,
+      "lines": 1564
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑12.0\\Steam商城首期原型交付_V1.6.0\\08_验证记录与验收映射.md",
+      "bytes": 19281,
+      "sha256": "0553b0865b0e5993bfdc4e40fd947c63f7884b6ea887753caf935a0a2fe942a0",
+      "utf8": true,
+      "replacement_character_count": 0,
+      "lines": 138
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑12.0\\Steam商城首期原型交付_V1.6.0\\09_待确认事项与设计决策.md",
+      "bytes": 14212,
+      "sha256": "c3a4b4f77cf4b5ebb30c889001348f1f469ab3161770ea4df3b1fa9877d3c92f",
+      "utf8": true,
+      "replacement_character_count": 0,
+      "lines": 121
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑12.0\\Steam商城首期原型交付_V1.6.0\\_checks\\build-report.json",
+      "bytes": 1269,
+      "sha256": "eb1e3541948c4872f25151e6aa58e138aa7c102e6eae8e57d08282c9cd452c3f",
+      "utf8": true,
+      "replacement_character_count": 0,
+      "lines": 46
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑12.0\\Steam商城首期原型交付_V1.6.0\\_checks\\coverage.json",
+      "bytes": 166,
+      "sha256": "f47611a75fda013a275d9fcc7a62aa12316607727e438f6a1098268748f02b21",
+      "utf8": true,
+      "replacement_character_count": 0,
+      "lines": 10
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑12.0\\Steam商城首期原型交付_V1.6.0\\_checks\\final-hashes.json",
+      "bytes": 6308,
+      "sha256": "3ecfe279dd9b65ab2e023f558eb078ae27a1514e1bdc7b71c34416e98796114e",
+      "utf8": true,
+      "replacement_character_count": 0,
+      "lines": 211
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑12.0\\Steam商城首期原型交付_V1.6.0\\_checks\\screenshots\\01-app-home.png",
+      "bytes": 129763,
+      "sha256": "7d139ad51d7335152f5d65153495608a2334fc830b57825beba2399ba9ca8762"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑12.0\\Steam商城首期原型交付_V1.6.0\\_checks\\screenshots\\02-buy-notice.png",
+      "bytes": 130603,
+      "sha256": "0962f0c76a5f1eedab63c0fd400f490120c21dcf03b3e19e33ad51277c68477e"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑12.0\\Steam商城首期原型交付_V1.6.0\\_checks\\screenshots\\03-app-result.png",
+      "bytes": 123001,
+      "sha256": "a1abef3a7f215b74ba113ba09000428bb6e6103b003d557af50278233a416036"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑12.0\\Steam商城首期原型交付_V1.6.0\\_checks\\screenshots\\04-web-detail.png",
+      "bytes": 65642,
+      "sha256": "788dc19e4171d59998642f3e04955a47768676b5e5c510bd884565664a55d3d9"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑12.0\\Steam商城首期原型交付_V1.6.0\\_checks\\screenshots\\05-admin-order.png",
+      "bytes": 98660,
+      "sha256": "ca28189e0da4d042508b9ecbfb970bf012b0b7d61a946cfcaf387322b3b53749"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑12.0\\Steam商城首期原型交付_V1.6.0\\_checks\\screenshots\\06-reader.png",
+      "bytes": 130726,
+      "sha256": "c659f296e20854175c860612951ccc248b50db8d7150dc5cbfb3603cb67fff8d"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑12.0\\Steam商城首期原型交付_V1.6.0\\_checks\\screenshots\\07-diagram.png",
+      "bytes": 102207,
+      "sha256": "79dbcd6adf64814531a92f6867e6934ed812647f25dab3d98bcf4f3dec66931d"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑12.0\\Steam商城首期原型交付_V1.6.0\\_checks\\screenshots\\08-doc-downloads.png",
+      "bytes": 54697,
+      "sha256": "092eaf6d5562ae13b6ebdbad3bc5e2e2acaafd6554440fd4f9bb82222700afa5"
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑12.0\\Steam商城首期原型交付_V1.6.0\\_checks\\ui-profile.json",
+      "bytes": 1741,
+      "sha256": "310b3a4c7651b8bb0f5ec04a0d3d4ad4c5e7406262cdf5f0269b53363bf61dbc",
+      "utf8": true,
+      "replacement_character_count": 0,
+      "lines": 22
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑12.0\\Steam商城首期原型交付_V1.6.0\\_checks\\verification-extended.json",
+      "bytes": 12378,
+      "sha256": "7f7ce61c73605201290d302357d01d8eb5907fd3f96cff8e8e4915ca1c07b22c",
+      "utf8": true,
+      "replacement_character_count": 0,
+      "lines": 586
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑12.0\\Steam商城首期原型交付_V1.6.0\\_checks\\verification.json",
+      "bytes": 38445,
+      "sha256": "4e907abb708f0ce1699a6ea809ec5578348474c67e92fc63d329b9b6a738fdde",
+      "utf8": true,
+      "replacement_character_count": 0,
+      "lines": 1944
+    },
+    {
+      "path": "D:\\模型汇总\\GitHub维护测试\\试跑12.0\\Steam商城首期原型交付_V1.6.0\\_checks\\验证证据_2026-10-27.md",
+      "bytes": 7738,
+      "sha256": "8e8ced17a8b51479fa7abe333ad400fafbee6cc96fd288aca0d6cea7ff98b9c3",
+      "utf8": true,
+      "replacement_character_count": 0,
+      "lines": 144
+    }
+  ],
+  "final": {
+    "path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.0\\02_低保真交互原型-最终版本.html",
+    "sha256": "04bf9e76f416833e1ac84e97408b81cbceb043bb44dca4a0529f3c80f418765f",
+    "bytes": 5930662,
+    "lines": 7997,
+    "title": "Steam商城首期 低保真交互原型 V1.0",
+    "declared_meta": null,
+    "registered_pages": 41,
+    "pages_by_end": {
+      "APP": 17,
+      "WEB": 8,
+      "ADM": 16
+    },
+    "registered_page_states": 152,
+    "pages": [
+      {
+        "id": "APP-HOME-01",
+        "end": "APP",
+        "states": [
+          [
+            "RESULTS",
+            "默认（有商品）"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "无配置"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "NOTICE",
+            "叠加首次进入实名提醒"
+          ]
+        ]
+      },
+      {
+        "id": "APP-NOTICE-01",
+        "end": "APP",
+        "states": [
+          [
+            "UNVERIFIED",
+            "未实名（前往认证）"
+          ],
+          [
+            "VERIFIED",
+            "已实名（知道了）"
+          ],
+          [
+            "MINOR",
+            "已实名未成年"
+          ],
+          [
+            "UNKNOWN",
+            "未登录/状态未知（待评审）"
+          ]
+        ]
+      },
+      {
+        "id": "APP-SEARCH-01",
+        "end": "APP",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "EDITING",
+            "输入中"
+          ],
+          [
+            "EMPTY",
+            "内容为空"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ]
+        ]
+      },
+      {
+        "id": "APP-SEARCH-02",
+        "end": "APP",
+        "states": [
+          [
+            "RESULTS",
+            "有结果"
+          ],
+          [
+            "LOADING",
+            "查询中"
+          ],
+          [
+            "EMPTY",
+            "无结果"
+          ],
+          [
+            "ERROR",
+            "请求失败"
+          ],
+          [
+            "END",
+            "已到末页"
+          ]
+        ]
+      },
+      {
+        "id": "APP-PRODUCT-01",
+        "end": "APP",
+        "states": [
+          [
+            "DEFAULT",
+            "可售"
+          ],
+          [
+            "PARTIAL",
+            "资料部分缺失"
+          ],
+          [
+            "UNAVAILABLE",
+            "已下架/售罄"
+          ],
+          [
+            "PENDING_ORDER",
+            "订单处理中"
+          ],
+          [
+            "EXPANDED",
+            "介绍展开"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "PANEL",
+            "叠加购买面板"
+          ]
+        ]
+      },
+      {
+        "id": "APP-PANEL-01",
+        "end": "APP",
+        "states": [
+          [
+            "PANEL",
+            "面板打开"
+          ],
+          [
+            "PANEL_AGREE",
+            "叠加购买须知弹窗"
+          ],
+          [
+            "CDK_HELP",
+            "叠加 CDK 购买说明弹层"
+          ]
+        ]
+      },
+      {
+        "id": "APP-AUTH-01",
+        "end": "APP",
+        "states": [
+          [
+            "SHOWN",
+            "弹层展示"
+          ]
+        ]
+      },
+      {
+        "id": "APP-AGREEMENT-01",
+        "end": "APP",
+        "states": [
+          [
+            "DEFAULT",
+            "正文"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "STALE",
+            "版本已更新"
+          ]
+        ]
+      },
+      {
+        "id": "APP-PHONE-01",
+        "end": "APP",
+        "states": [
+          [
+            "SHOWN",
+            "弹层展示"
+          ],
+          [
+            "UNAVAILABLE",
+            "平台暂无绑定能力"
+          ]
+        ]
+      },
+      {
+        "id": "APP-CHECKOUT-01",
+        "end": "APP",
+        "states": [
+          [
+            "DEFAULT",
+            "待支付"
+          ],
+          [
+            "SHOWN",
+            "展示倒计时"
+          ],
+          [
+            "READONLY",
+            "已付款只读"
+          ],
+          [
+            "EXPIRED",
+            "价格变化"
+          ],
+          [
+            "SUBMITTING",
+            "提交中"
+          ],
+          [
+            "ERROR",
+            "读取失败"
+          ]
+        ]
+      },
+      {
+        "id": "APP-PAYRET-01",
+        "end": "APP",
+        "states": [
+          [
+            "SHOWN",
+            "询问弹窗"
+          ],
+          [
+            "QUERYING",
+            "查询中"
+          ],
+          [
+            "TIMEOUT",
+            "查询无结论"
+          ]
+        ]
+      },
+      {
+        "id": "APP-RESULT-01",
+        "end": "APP",
+        "states": [
+          [
+            "DELIVERED",
+            "口令码已交付"
+          ],
+          [
+            "ISSUING",
+            "发码中"
+          ],
+          [
+            "EXCEPTION",
+            "交付异常"
+          ],
+          [
+            "PAY_CONFIRMING",
+            "支付确认中"
+          ],
+          [
+            "GIFT_PENDING",
+            "赠送待处理"
+          ],
+          [
+            "GIFT_PROCESSING",
+            "赠送处理中"
+          ],
+          [
+            "GIFT_DONE",
+            "赠送已完成"
+          ],
+          [
+            "GIFT_EXCEPTION",
+            "赠送异常"
+          ],
+          [
+            "ERROR",
+            "读取失败"
+          ]
+        ]
+      },
+      {
+        "id": "APP-ORDER-01",
+        "end": "APP",
+        "states": [
+          [
+            "RESULTS",
+            "有订单"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "无订单"
+          ],
+          [
+            "ERROR",
+            "请求失败"
+          ],
+          [
+            "SESSION_EXPIRED",
+            "登录失效"
+          ]
+        ]
+      },
+      {
+        "id": "APP-ORDER-02",
+        "end": "APP",
+        "states": [
+          [
+            "DEFAULT",
+            "已交付"
+          ],
+          [
+            "CODE_ISSUING",
+            "发码中"
+          ],
+          [
+            "CODE_EXCEPTION",
+            "交付异常"
+          ],
+          [
+            "REPLACED",
+            "已换码"
+          ],
+          [
+            "GIFT",
+            "赠送待处理"
+          ],
+          [
+            "ERROR",
+            "读取失败"
+          ]
+        ]
+      },
+      {
+        "id": "APP-MINE-01",
+        "end": "APP",
+        "states": [
+          [
+            "LOGGED_IN",
+            "已登录"
+          ],
+          [
+            "GUEST",
+            "未登录"
+          ],
+          [
+            "UNKNOWN",
+            "状态未知"
+          ]
+        ]
+      },
+      {
+        "id": "APP-SERVICE-01",
+        "end": "APP",
+        "states": [
+          [
+            "WITH_ORDER",
+            "带订单号"
+          ],
+          [
+            "NO_ORDER",
+            "不带订单号"
+          ],
+          [
+            "FALLBACK",
+            "无法唤起"
+          ]
+        ]
+      },
+      {
+        "id": "APP-CONTAINER-01",
+        "end": "APP",
+        "states": [
+          [
+            "EXTERNAL",
+            "外部容器"
+          ]
+        ]
+      },
+      {
+        "id": "WEB-HOME-01",
+        "end": "WEB",
+        "states": [
+          [
+            "RESULTS",
+            "默认"
+          ],
+          [
+            "EMPTY",
+            "无配置"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ]
+        ]
+      },
+      {
+        "id": "WEB-SEARCH-01",
+        "end": "WEB",
+        "states": [
+          [
+            "DEFAULT",
+            "默认态"
+          ],
+          [
+            "RESULTS",
+            "有结果"
+          ],
+          [
+            "EMPTY",
+            "无结果"
+          ],
+          [
+            "ERROR",
+            "请求失败"
+          ]
+        ]
+      },
+      {
+        "id": "WEB-PRODUCT-01",
+        "end": "WEB",
+        "states": [
+          [
+            "DEFAULT",
+            "可售"
+          ],
+          [
+            "EXPANDED",
+            "介绍展开"
+          ],
+          [
+            "UNAVAILABLE",
+            "已下架"
+          ],
+          [
+            "PENDING_ORDER",
+            "订单处理中"
+          ]
+        ]
+      },
+      {
+        "id": "WEB-CHECKOUT-01",
+        "end": "WEB",
+        "states": [
+          [
+            "DEFAULT",
+            "待支付"
+          ],
+          [
+            "QR_WAIT",
+            "收银台·待扫码"
+          ],
+          [
+            "QR_CONFIRMING",
+            "收银台·支付确认中"
+          ],
+          [
+            "QR_SUCCESS",
+            "收银台·支付成功"
+          ],
+          [
+            "SUBMITTING",
+            "提交中"
+          ],
+          [
+            "ERROR",
+            "读取失败"
+          ]
+        ]
+      },
+      {
+        "id": "WEB-PAYRET-01",
+        "end": "WEB",
+        "states": [
+          [
+            "SHOWN",
+            "询问弹窗"
+          ],
+          [
+            "QUERYING",
+            "查询中"
+          ]
+        ]
+      },
+      {
+        "id": "WEB-RESULT-01",
+        "end": "WEB",
+        "states": [
+          [
+            "DELIVERED",
+            "已交付"
+          ],
+          [
+            "ISSUING",
+            "发码中"
+          ],
+          [
+            "EXCEPTION",
+            "交付异常"
+          ],
+          [
+            "GIFT_PENDING",
+            "赠送待处理"
+          ],
+          [
+            "ERROR",
+            "读取失败"
+          ]
+        ]
+      },
+      {
+        "id": "WEB-ORDER-01",
+        "end": "WEB",
+        "states": [
+          [
+            "RESULTS",
+            "有订单"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "ERROR",
+            "请求失败"
+          ],
+          [
+            "SESSION_EXPIRED",
+            "登录失效"
+          ],
+          [
+            "DRAWER",
+            "详情抽屉"
+          ]
+        ]
+      },
+      {
+        "id": "WEB-MINE-01",
+        "end": "WEB",
+        "states": [
+          [
+            "LOGGED_IN",
+            "已登录"
+          ],
+          [
+            "GUEST",
+            "未登录"
+          ],
+          [
+            "UNKNOWN",
+            "状态未知"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-LOGIN-01",
+        "end": "ADM",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "ERROR",
+            "登录失败"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-HOME-01",
+        "end": "ADM",
+        "states": [
+          [
+            "RESULTS",
+            "有记录"
+          ],
+          [
+            "EMPTY",
+            "无数据（异常）"
+          ],
+          [
+            "ERROR",
+            "读取失败"
+          ],
+          [
+            "DRAWER",
+            "编辑抽屉"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-GOODS-01",
+        "end": "ADM",
+        "states": [
+          [
+            "RESULTS",
+            "有记录"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "ERROR",
+            "查询失败"
+          ],
+          [
+            "DRAWER",
+            "编辑抽屉"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-STOCK-01",
+        "end": "ADM",
+        "states": [
+          [
+            "RESULTS",
+            "有记录"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "DRAWER",
+            "同步记录"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-SEARCH-01",
+        "end": "ADM",
+        "states": [
+          [
+            "RESULTS",
+            "有记录"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "DRAWER",
+            "新增/编辑弹窗"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-ORDER-01",
+        "end": "ADM",
+        "states": [
+          [
+            "RESULTS",
+            "有记录"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "ERROR",
+            "查询失败"
+          ],
+          [
+            "LOADING",
+            "查询中"
+          ],
+          [
+            "NO_PERM",
+            "无权限"
+          ],
+          [
+            "DRAWER",
+            "详情抽屉"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-GIFT-01",
+        "end": "ADM",
+        "states": [
+          [
+            "RESULTS",
+            "好友赠送订单列表"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "DRAWER",
+            "赠送订单详情"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-CODE-01",
+        "end": "ADM",
+        "states": [
+          [
+            "RESULTS",
+            "有记录"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "NO_PERM",
+            "无查码权限"
+          ],
+          [
+            "DRAWER",
+            "补发换码抽屉"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-NOTIFY-01",
+        "end": "ADM",
+        "states": [
+          [
+            "RESULTS",
+            "有记录"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "DRAWER",
+            "通知详情"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-REFUND-01",
+        "end": "ADM",
+        "states": [
+          [
+            "RESULTS",
+            "有记录"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "DRAWER",
+            "审核抽屉"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-PAYCHK-01",
+        "end": "ADM",
+        "states": [
+          [
+            "RESULTS",
+            "有记录"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "DRAWER",
+            "核查记录"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-AGREE-01",
+        "end": "ADM",
+        "states": [
+          [
+            "RESULTS",
+            "有记录"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "DRAWER",
+            "版本编辑"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-SERVICE-01",
+        "end": "ADM",
+        "states": [
+          [
+            "DEFAULT",
+            "表单"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-RBAC-01",
+        "end": "ADM",
+        "states": [
+          [
+            "RESULTS",
+            "账号列表"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "DRAWER",
+            "授权配置"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-AUDIT-01",
+        "end": "ADM",
+        "states": [
+          [
+            "RESULTS",
+            "有记录"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ],
+          [
+            "DRAWER",
+            "记录详情"
+          ]
+        ]
+      },
+      {
+        "id": "ADM-STAT-01",
+        "end": "ADM",
+        "states": [
+          [
+            "RESULTS",
+            "有记录"
+          ],
+          [
+            "EMPTY",
+            "无匹配"
+          ]
+        ]
+      }
+    ],
+    "registered_component_instances": null,
+    "component_definitions": 192,
+    "definitions_with_ten_sections": 192,
+    "section_repetition": [
+      {
+        "section": 1,
+        "max_exact_repetitions": 1,
+        "example": "COM-CLIENT-C01，搜索输入框\n所属页面实例：APP-SEARCH-01-C01（搜索默认页）、APP-SEARCH-02-C01（搜索结果页，回填关键词）\n需求来源 SEARCH-01、SEARCH-02、4.2\n业务目的：让用户输入、清空并提交商品名称关键词，形成搜索入口，浏览阶段不要求登录（PRD 4.2 末段）\n模式ID：PAT-INPUT-01（普通输入框，含清空/焦点/提交）\n适用端：APP（平台A、B）、WEB\n职责范围：仅负责关键词的输入、清空与提交"
+      },
+      {
+        "section": 2,
+        "max_exact_repetitions": 1,
+        "example": "| 字段/对象 | 类型与格式 | 来源及字段路径 | 获取/刷新时机 | 必填/可编辑 | 默认与空值 | 校验/过期 | 脱敏/权限 | 字典引用 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| keyword | 字符串（UTF-8） | 用户输入（客户端控件值） | 输入/编辑时实时；提交时取快照 | 提交必填；可编辑 | 默认空字符串；不回填关键词（历史词由 C05 单独提供，不在输入框预填） "
+      },
+      {
+        "section": 3,
+        "max_exact_repetitions": 1,
+        "example": "| 操作/触发 | 前置与校验 | 系统处理/接口 | 数据及状态变化 | 成功/失败去向 | 幂等、重复或取消规则 |\n| --- | --- | --- | --- | --- | --- |\n| 聚焦输入 | 页面已渲染 | 本地更新控件值与焦点态 | DEFAULT→EDITING；显示清空按钮 | 停留本页 | 无请求，无重复问题 |\n| 点击清空 | 输入内容非空 | 本地清空控件值，保持焦点 | EDITING→EDITING（空值）；清空按钮隐藏 | 停留本页"
+      },
+      {
+        "section": 4,
+        "max_exact_repetitions": 1,
+        "example": "| 状态/场景 | 具体文案 | 展示位置/形式 | 可操作项 | 禁用项及提示原因 | 焦点/键盘/滚动/关闭 | 恢复或下一步 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 默认 | 占位\"输入商品名称搜索\" | 输入框内占位文字（#6b7280） | 输入、聚焦 | — | 点击获焦，键盘自动唤起 | 输入后显示清空按钮 |\n| 输入中 | 无额外文案 | 输入框内实时显示 | 输入、清空、提交 | — | 组合输入阶段"
+      },
+      {
+        "section": 5,
+        "max_exact_repetitions": 1,
+        "example": "类型为单行输入框（PAT-INPUT-01），白底、1px #c9cdd3 边框、最小高44px，圆角按设计稿待定（低保真阶段为矩形；手机画布外框2px #8d939b属于评审外壳，不计入业务样式）。文字14px，主文字#20242a，占位#6b7280；聚焦态 outline 2px #526477（offset 2px，键盘可见焦点）；错误态2px #a33b3b红边并配行内文字，不单独用颜色表达错误。清空按钮与提交入口触控热区均≥44×44 CSS像素。长关键词超出时输"
+      },
+      {
+        "section": 6,
+        "max_exact_repetitions": 1,
+        "example": "| 当前状态 | 触发事件 | 守卫条件 | 目标状态 | 界面变化 | 数据变化 | 禁止操作 | 关联01/04 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| APP-SEARCH-01::DEFAULT | 聚焦输入 | 控件可用 | APP-SEARCH-01::EDITING | 光标/键盘唤起，清空按钮出现 | keyword 本地草稿开始记录 | — | 01-6.2.1、ACT-001 |\n| AP"
+      },
+      {
+        "section": 7,
+        "max_exact_repetitions": 1,
+        "example": "触发时机：用户提交关键词时调用 API-SEARCH-001（建议契约，GET /search/goods，参数 keyword 取自输入框去首尾空格后的快照；分页与排序由结果页 API-SEARCH-003 承接）。请求字段全部来自用户输入，不携带用户身份与敏感信息。响应到界面：提交成功后进入 APP-SEARCH-02，由结果卡片列表（COM-CLIENT-C06）渲染 items；本组件不直接渲染结果。错误映射：网络失败/超时→EX-SEARCH-002，跳转后页面进入"
+      },
+      {
+        "section": 8,
+        "max_exact_repetitions": 2,
+        "example": "无采集需求及依据：硬件配置为静态展示内容，无 PRD 分析需求；按标准 12.1 最小必要不采集。"
+      },
+      {
+        "section": 9,
+        "max_exact_repetitions": 1,
+        "example": "关联 TC-SEARCH-001（输入与清空）、TC-SEARCH-002（占位文案与焦点态）、TC-SEARCH-003（空关键词提交提示且不跳转）、TC-SEARCH-004（键盘提交与按钮一致、输入法组合阶段不误触发）、TC-SEARCH-005（返回恢复关键词）。另需覆盖：关键词前后空格、超长关键词（上限待确认前按不截断处理）、连续提交去重、提交中离开页面后回调作废、切换账号后不残留关键词。以上覆盖正常/边界/重复/状态恢复；权限类用例不适用（免登录组件）。当前无实测"
+      },
+      {
+        "section": 10,
+        "max_exact_repetitions": 2,
+        "example": "同 COM-CLIENT-C14（图标形态、一级页面是否长期固定两项，TBD-03）。\n\n---"
+      }
+    ],
+    "embedded_documents": [
+      {
+        "file": "00_交付说明与变更记录.md",
+        "chars": 71179,
+        "sha256_utf8": "52016bbaff08564f258ce60046a56b700bac4b1bb54003b426f0cb2be4131752"
+      },
+      {
+        "file": "01_页面与状态说明.md",
+        "chars": 74687,
+        "sha256_utf8": "b1656fb199e05bd53cca026a63d20b88fd6ff03e4469df3a9142b8c453c74e14"
+      },
+      {
+        "file": "03_组件级文档.md",
+        "chars": 746805,
+        "sha256_utf8": "42c65d773fe2b151ef239f186951824a0eaa7d97a10e01c9c12025ea493470f1"
+      },
+      {
+        "file": "04_业务流程与异常规则.md",
+        "chars": 123012,
+        "sha256_utf8": "ea5ddd61fb3406a7cfcc8e263664d40deb7209a3bb65d724e08c4db19136da48"
+      },
+      {
+        "file": "05_接口数据与权限说明.md",
+        "chars": 183785,
+        "sha256_utf8": "70ef41b612c6906dfc77e0fb04a706c879bd5fc602f6d2093d71f60b64ec2007"
+      },
+      {
+        "file": "06_埋点文档.md",
+        "chars": 60701,
+        "sha256_utf8": "ae1a7127ab2f984dbe707e6dee56cdd69407411e20f39cd858f47d87fca5655c"
+      },
+      {
+        "file": "07_测试用例.md",
+        "chars": 124069,
+        "sha256_utf8": "8fd04a9f83338944378f34d12fa89de3e7b913e6bc5e8d2be3c1c20b46294c19"
+      },
+      {
+        "file": "08_验证记录与验收映射.md",
+        "chars": 175271,
+        "sha256_utf8": "96b66dcfbc89068d3283d0a72899b071e982a0ecfaa9bdef6d993e8456785379"
+      },
+      {
+        "file": "09_待确认事项与设计决策.md",
+        "chars": 14878,
+        "sha256_utf8": "1cb2947eea4a1d3a8049efa0d20327dee69894ebe261f9d77b0067b3c32e514b"
+      }
+    ],
+    "diagrams_count": 35,
+    "diagrams_by_type": {
+      "FL": 20,
+      "SM": 6,
+      "SEQ": 9
+    },
+    "diagram_entries": [
+      {
+        "id": "FL-BROWSE-001",
+        "width": 1286,
+        "height": 1232,
+        "source_sha256": "11a647414dd769f07a2633505893a02592ed9810da7a29037b59485a7bc4de4d"
+      },
+      {
+        "id": "FL-SEARCH-001",
+        "width": 1774,
+        "height": 912,
+        "source_sha256": "1a48cded2acc6aa27f4b871be3382343055b90841c4bfa76c1f3c9188fac5caf"
+      },
+      {
+        "id": "FL-AUTH-001",
+        "width": 1178,
+        "height": 834,
+        "source_sha256": "b018c24997db1624cbc6366b508523863c4afbd2b412c775f0c6aebfcb889afb"
+      },
+      {
+        "id": "FL-AUTH-002",
+        "width": 1106,
+        "height": 961,
+        "source_sha256": "d4968b88b723a94aa637053e1160f610d81ab5d82a3ac74f1c8ca46b5cc57229"
+      },
+      {
+        "id": "FL-BUY-001",
+        "width": 1203,
+        "height": 1309,
+        "source_sha256": "73d95910c246a788c495dfacc8a4f58f86e6f736732b271f5d533d77e5b89290"
+      },
+      {
+        "id": "FL-PHONE-001",
+        "width": 914,
+        "height": 707,
+        "source_sha256": "1bc58f53fb1dc318e334723a52a1654a0c0724ec4dc1732abdab0ec28b7930c5"
+      },
+      {
+        "id": "FL-CHECKOUT-001",
+        "width": 2262,
+        "height": 977,
+        "source_sha256": "fd25099d964f8463ce5a41ab5f459c5aaa3ab41c52da33cad4af45dad559a28b"
+      },
+      {
+        "id": "FL-PAY-001",
+        "width": 2838,
+        "height": 691,
+        "source_sha256": "453263cc2a161e14212fd4fad1bb8747dfdb8c1a5a09d110575c40d9288c2f59"
+      },
+      {
+        "id": "FL-DELIVER-001",
+        "width": 1356,
+        "height": 1118,
+        "source_sha256": "c94310f82ee6c0e1c8594d36d3228e16ed6be5d5d30c3160c6995c48bca08b4e"
+      },
+      {
+        "id": "FL-DELIVER-002",
+        "width": 1374,
+        "height": 1467,
+        "source_sha256": "0e062c982a044855440f2735b85aa37107755df8f6c5b00c894adb8a5ea38653"
+      },
+      {
+        "id": "FL-ORDER-001",
+        "width": 2023,
+        "height": 994,
+        "source_sha256": "994fd7516c079484145afbccd5328e9a647967cabaf1165a4aefabf8faccd5ec"
+      },
+      {
+        "id": "FL-SERVICE-001",
+        "width": 942,
+        "height": 1213,
+        "source_sha256": "4afacdc8f4dbbb07b84bb24c474b83c67d4e88812f52f783a5b576ba2695a159"
+      },
+      {
+        "id": "FL-ADM-HOME-001",
+        "width": 1020,
+        "height": 1023,
+        "source_sha256": "af295ceeb5c5cf602068fefcb644ad5a0ede394494bbe468310fe4d8668f1e85"
+      },
+      {
+        "id": "FL-ADM-GOODS-001",
+        "width": 1020,
+        "height": 1245,
+        "source_sha256": "8734a3c2c46ba3b938f757af44ed5990bdd9bdd861a8e7e74560205fd581c79f"
+      },
+      {
+        "id": "FL-ADM-ORDER-001",
+        "width": 1553,
+        "height": 1039,
+        "source_sha256": "207efe9b72eb9d2716031dc0c60a41557b6c2f1193e259e49f8eeb0848de7d82"
+      },
+      {
+        "id": "FL-ADM-GIFT-001",
+        "width": 1007,
+        "height": 991,
+        "source_sha256": "42cd917cb01a673e130f8171cb31284ac8df2d482ae58e468e8c126a71889e6a"
+      },
+      {
+        "id": "FL-ADM-CODE-001",
+        "width": 1337,
+        "height": 1327,
+        "source_sha256": "26761bd3f6f33da289d5121f7235e9b3047cd1dd4bbb669700f7ba9fa4685d35"
+      },
+      {
+        "id": "FL-ADM-REFUND-001",
+        "width": 1159,
+        "height": 991,
+        "source_sha256": "592cec7cbff02f58605dd6e79c6ddc190e92aed54d1401ba34c5ef16f265da12"
+      },
+      {
+        "id": "FL-ADM-NOTIFY-001",
+        "width": 1293,
+        "height": 769,
+        "source_sha256": "923ae6ce7c8d01181dc9c7fdf361e0433048b9c41f14cc12139e089826332a1e"
+      },
+      {
+        "id": "FL-ADM-AGREE-001",
+        "width": 841,
+        "height": 975,
+        "source_sha256": "b607c0ad9760b20c76eaca13ba06ed3f1d827d94a3de4b86804c9f55ba861ac0"
+      },
+      {
+        "id": "SM-PAY-001",
+        "width": 919,
+        "height": 548,
+        "source_sha256": "689a4247f0f633864cd8e37e32bdd642d39116b1e990fc5d40c6d9f0616d8856"
+      },
+      {
+        "id": "SM-CODE-001",
+        "width": 490,
+        "height": 557,
+        "source_sha256": "e2848d4be8e294902c47fc060bece6a79a61a03795485dffac0dc9a7cabbb300"
+      },
+      {
+        "id": "SM-GIFT-001",
+        "width": 725,
+        "height": 548,
+        "source_sha256": "a4669f4f30e1bb495118e6a9f74fd3a3c65f8aa7ace5309ecfab77de6e6f65b8"
+      },
+      {
+        "id": "SM-AFTER-001",
+        "width": 522,
+        "height": 421,
+        "source_sha256": "a41b49921c557ff6c987195c37c376346448a4ec6aebc1a4574f750b0f869921"
+      },
+      {
+        "id": "SM-REFUND-001",
+        "width": 758,
+        "height": 421,
+        "source_sha256": "357446c1a1d4670de6ecc93fd77f40cdde1d5b2a5316c0ce4d0829ce035deba1"
+      },
+      {
+        "id": "SM-NOTIFY-001",
+        "width": 824,
+        "height": 557,
+        "source_sha256": "1d979eb5349efffaedf817d22b13f6ea5bd0b55a3a74610954a208999d84aea5"
+      },
+      {
+        "id": "SEQ-AUTH-001",
+        "width": 875,
+        "height": 1499,
+        "source_sha256": "39c934905a18741d9f539a84220929a12933534878fcdd735e987bcedc5481ea"
+      },
+      {
+        "id": "SEQ-BUY-001",
+        "width": 859,
+        "height": 2120,
+        "source_sha256": "5ba601ee260bb160158c2f27628f8e3400286c2d0c9c3ba9ea57418cf2b2d46b"
+      },
+      {
+        "id": "SEQ-PAY-001",
+        "width": 935,
+        "height": 1311,
+        "source_sha256": "5aa885b47f0553e59c8770576ee793e2650877c0e748c5ebb3300244e8ca5ad0"
+      },
+      {
+        "id": "SEQ-CODE-001",
+        "width": 1006,
+        "height": 1426,
+        "source_sha256": "fa760fa764e0fe2f1fdf8303255f03b0d4a70752895cd3d5c8121d440328fb04"
+      },
+      {
+        "id": "SEQ-GIFT-001",
+        "width": 1273,
+        "height": 1121,
+        "source_sha256": "87b665e8f93220cff692f8678166d2e47751ce724484f4d0af085b96aeb82182"
+      },
+      {
+        "id": "SEQ-NOTIFY-001",
+        "width": 1124,
+        "height": 1334,
+        "source_sha256": "18bb5a338d4f78002d67a5d581a1ca2608486a101b17c1dcb0fc180db4ae4bf6"
+      },
+      {
+        "id": "SEQ-ADM-001",
+        "width": 563,
+        "height": 1108,
+        "source_sha256": "ca7f02930cd5e31378cd82a2472277d060eb68e65fd590846ec1b1ead6dd72c3"
+      },
+      {
+        "id": "SEQ-ADM-002",
+        "width": 1124,
+        "height": 1024,
+        "source_sha256": "a40d95831ecf38344fae9c074cf31e07fef2690e2220bf5af0180f7f018030c6"
+      },
+      {
+        "id": "SEQ-ADM-003",
+        "width": 1030,
+        "height": 1416,
+        "source_sha256": "2d9a68f1f796cdbc4403acc599375f2df14d609b0201fff0a70b50bec3635c8b"
+      }
+    ],
+    "plantuml_fences": 35,
+    "unmatched_fences": [],
+    "syntax_checks": [
+      {
+        "index": 0,
+        "html_line": 1079,
+        "exit_code": 0,
+        "diagnostic": ""
+      },
+      {
+        "index": 1,
+        "html_line": 1309,
+        "exit_code": 0,
+        "diagnostic": ""
+      },
+      {
+        "index": 2,
+        "html_line": 2048,
+        "exit_code": 0,
+        "diagnostic": ""
+      },
+      {
+        "index": 3,
+        "html_line": 2525,
+        "exit_code": 0,
+        "diagnostic": ""
+      },
+      {
+        "index": 4,
+        "html_line": 3081,
+        "exit_code": 0,
+        "diagnostic": ""
+      },
+      {
+        "index": 5,
+        "html_line": 3522,
+        "exit_code": 0,
+        "diagnostic": ""
+      },
+      {
+        "index": 6,
+        "html_line": 4355,
+        "exit_code": 0,
+        "diagnostic": ""
+      },
+      {
+        "index": 7,
+        "html_line": 5057,
+        "exit_code": 0,
+        "diagnostic": ""
+      },
+      {
+        "index": 8,
+        "html_line": 5490,
+        "exit_code": 0,
+        "diagnostic": ""
+      },
+      {
+        "index": 9,
+        "html_line": 7993,
+        "exit_code": 0,
+        "diagnostic": ""
+      },
+      {
+        "index": 10,
+        "html_line": 7994,
+        "exit_code": 0,
+        "diagnostic": ""
+      },
+      {
+        "index": 11,
+        "html_line": 7995,
+        "exit_code": 0,
+        "diagnostic": ""
+      }
+    ],
+    "anchors": {
+      "shell": {
+        "line": 26,
+        "excerpt": ".shell{max-width:1440px;margin:auto;padding:24px;container-type:inline-size;container-name:shell}"
+      },
+      "phone": {
+        "line": 132,
+        "excerpt": ".phone{width:min(320px,100%);min-height:610px;margin:auto;padding:14px;"
+      },
+      "phone_body": {
+        "line": 137,
+        "excerpt": ".phone-body{max-height:640px;overflow-y:auto;overflow-x:hidden;padding-right:2px;flex:1 1 auto;min-height:0}"
+      },
+      "actual_handler": {
+        "line": 6609,
+        "excerpt": "function handleAct(act, t, e) {"
+      },
+      "diagram_zoom": {
+        "line": 7741,
+        "excerpt": "function applyDgmZoom() {"
+      },
+      "outline_inside": {
+        "line": 724,
+        "excerpt": "body.outline-on [data-component].rv-sel{position:relative;outline:2px dashed #526477;outline-offset:-2px}"
+      },
+      "reader_toc_top": {
+        "line": 842,
+        "excerpt": ".reader-toc{display:flex;flex-wrap:wrap;gap:6px;flex:none;border-bottom:1px solid var(--line);"
+      },
+      "modal_scroll_lock": {
+        "line": 5624,
+        "excerpt": "function admSyncScrollLock() {"
+      },
+      "review_notes": {
+        "line": 5778,
+        "excerpt": "function collectReviewNotes(host, page) {"
+      },
+      "picker_dom": {
+        "line": 5867,
+        "excerpt": "function renderPicker(p) {"
+      },
+      "drawer_exact_record": {
+        "line": 5353,
+        "excerpt": "function admDrawer(cfg, rt, rows) {"
+      },
+      "business_toast": {
+        "line": 5937,
+        "excerpt": "function admToast(msg, kind) {"
+      },
+      "ad_click": {
+        "line": 1505,
+        "excerpt": "function adBanner(cid, opts) {"
+      },
+      "media_preview": {
+        "line": 3847,
+        "excerpt": "function admGoodsMediaPreview(rt, d) {"
+      },
+      "esc_handler": {
+        "line": 6563,
+        "excerpt": "    if (e.key !== 'Escape') return;"
+      },
+      "reader_close": {
+        "line": 7842,
+        "excerpt": "function closeReader() {"
+      },
+      "final_pages": {
+        "line": 5495,
+        "excerpt": "const PAGES = ["
+      },
+      "component_docs": {
+        "line": 5568,
+        "excerpt": "const compDoc = id => (window.COMP_DOCS && window.COMP_DOCS[id]) || null;"
+      },
+      "diagrams": {
+        "line": 1292,
+        "excerpt": "  const list = window.DIAGRAMS || [];"
+      },
+      "docs": {
+        "line": 7775,
+        "excerpt": "  var docs = window.DOCS || [];"
+      }
+    },
+    "static_tokens": {
+      "container_queries": 6,
+      "dgzoom_property_declarations": 0,
+      "dgzoom_css_consumers": 0,
+      "handleAction_calls": 0,
+      "handleAction_function_definitions": 0,
+      "handleAction_assignments": 0
+    }
+  },
+  "trial": {
+    "pages": [
+      {
+        "id": "APP-HOME-01",
+        "end": "APP",
+        "name": "首页",
+        "purpose": "展示已发布商品、广告、快捷入口与订单入口，支持免登录浏览。",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "空数据"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "OFFLINE",
+            "离线"
+          ]
+        ],
+        "req": "HOME-01～08、BR-013/014、D-21",
+        "priority": "P0",
+        "entry": "平台入口进入",
+        "exit": "商品详情/搜索/我的订单/客服",
+        "flows": [
+          "FL-CHECKOUT-001"
+        ],
+        "note": ""
+      },
+      {
+        "id": "APP-AUTH-01",
+        "end": "APP",
+        "name": "首次实名提醒（弹层）",
+        "purpose": "仅在平台返回可信实名状态时展示一次实名提醒。",
+        "states": [
+          [
+            "SHOWN_KNOWN",
+            "已实名提示"
+          ],
+          [
+            "SHOWN_UNVERIFIED",
+            "未实名提示"
+          ],
+          [
+            "HIDDEN_UNKNOWN",
+            "未登录/未知不展示"
+          ],
+          [
+            "CLOSED",
+            "已关闭"
+          ]
+        ],
+        "req": "AUTH-06～08、D-28、AC-19/39/72",
+        "priority": "P0",
+        "entry": "首次进入首页",
+        "exit": "关闭/前往认证",
+        "flows": [
+          "FL-CHECKOUT-001"
+        ],
+        "note": ""
+      },
+      {
+        "id": "APP-SEARCH-01",
+        "end": "APP",
+        "name": "搜索默认页",
+        "purpose": "输入关键词，展示搜索发现与热门商品。",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "EDITING",
+            "编辑中"
+          ],
+          [
+            "VALIDATION_ERROR",
+            "校验失败"
+          ],
+          [
+            "EMPTY",
+            "空数据"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ]
+        ],
+        "req": "SEARCH-01～06、D-15、AC-51",
+        "priority": "P0",
+        "entry": "首页搜索",
+        "exit": "搜索结果/商品详情/首页",
+        "flows": [],
+        "note": ""
+      },
+      {
+        "id": "APP-SEARCH-02",
+        "end": "APP",
+        "name": "搜索结果页",
+        "purpose": "展示当前查询快照与可排序结果列表。",
+        "states": [
+          [
+            "RESULTS",
+            "有结果"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "无结果"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "END",
+            "末页"
+          ]
+        ],
+        "req": "SEARCH-02/03/06、AC-01",
+        "priority": "P0",
+        "entry": "搜索提交/关键词点击",
+        "exit": "商品详情/搜索默认页",
+        "flows": [],
+        "note": ""
+      },
+      {
+        "id": "APP-DETAIL-01",
+        "end": "APP",
+        "name": "商品详情",
+        "purpose": "展示商品媒体、价格、交付方式、限制与购买入口。",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "EXPANDED",
+            "长文展开"
+          ],
+          [
+            "ORDER_PENDING",
+            "订单处理中"
+          ],
+          [
+            "SOLD_OUT",
+            "售罄"
+          ],
+          [
+            "UNAVAILABLE",
+            "不可售"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ]
+        ],
+        "req": "PRODUCT-01～12、PENDING、AC-29/66",
+        "priority": "P0",
+        "entry": "首页/搜索/订单",
+        "exit": "购买面板/搜索/客服/返回",
+        "flows": [
+          "FL-CHECKOUT-001"
+        ],
+        "note": ""
+      },
+      {
+        "id": "APP-BUY-01",
+        "end": "APP",
+        "name": "购买面板（弹层）",
+        "purpose": "核对规格、交付方式、好友链接、支付方式与协议后发起购买。",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "VALIDATION_ERROR",
+            "校验失败"
+          ],
+          [
+            "SUBMITTING",
+            "提交中"
+          ],
+          [
+            "LOGIN_REQUIRED",
+            "需要登录"
+          ],
+          [
+            "REALNAME_REQUIRED",
+            "需要实名"
+          ],
+          [
+            "MINOR_BLOCKED",
+            "未成年拦截"
+          ],
+          [
+            "PHONE_REQUIRED",
+            "需要绑定手机"
+          ],
+          [
+            "BALANCE_LOW",
+            "余额不足"
+          ],
+          [
+            "STOCK_UNKNOWN",
+            "库存未知风险"
+          ],
+          [
+            "NOTICE",
+            "购买须知子层"
+          ]
+        ],
+        "req": "PRODUCT-07～12、CHECKOUT、§5.1、AC-20/22/23/41/44/65/66",
+        "priority": "P0",
+        "entry": "详情立即购买",
+        "exit": "确认订单/支付/关闭回详情",
+        "flows": [
+          "FL-CHECKOUT-001"
+        ],
+        "note": ""
+      },
+      {
+        "id": "APP-AGREEMENT-01",
+        "end": "APP",
+        "name": "购买协议",
+        "purpose": "查看协议正文、版本与生效说明，支持返回购买现场。",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "SUBSTANTIVE",
+            "实质性变更"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ]
+        ],
+        "req": "AGREEMENT-01～05、D-26、AC-22/70",
+        "priority": "P0",
+        "entry": "购买面板/确认订单/结果页",
+        "exit": "返回来源页面",
+        "flows": [
+          "FL-AGREEMENT-001"
+        ],
+        "note": ""
+      },
+      {
+        "id": "APP-REALNAME-01",
+        "end": "APP",
+        "name": "平台实名承接（弹层）",
+        "purpose": "说明实名与成年要求，调起平台实名能力并返回重查。",
+        "states": [
+          [
+            "SHOWN",
+            "展示"
+          ],
+          [
+            "LAUNCHING",
+            "唤起中"
+          ],
+          [
+            "UNAVAILABLE",
+            "平台不可用"
+          ],
+          [
+            "SUCCESS",
+            "认证返回"
+          ],
+          [
+            "FAILED",
+            "认证失败"
+          ]
+        ],
+        "req": "AUTH-02/03/09/10、AC-03/24",
+        "priority": "P0",
+        "entry": "首次提醒/购买校验",
+        "exit": "返回购买现场",
+        "flows": [
+          "FL-CHECKOUT-001"
+        ],
+        "note": ""
+      },
+      {
+        "id": "APP-PHONE-01",
+        "end": "APP",
+        "name": "手机号绑定",
+        "purpose": "平台无绑定能力时，使用手机号与短信验证码完成交易绑定。",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "VALIDATION_ERROR",
+            "校验失败"
+          ],
+          [
+            "SUBMITTING",
+            "提交中"
+          ],
+          [
+            "SUCCESS",
+            "成功"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "CANCELLED",
+            "已取消"
+          ]
+        ],
+        "req": "PHONE-01～06、D-05、AC-23/44",
+        "priority": "P0",
+        "entry": "购买校验未绑定手机",
+        "exit": "返回购买现场",
+        "flows": [
+          "FL-CHECKOUT-001"
+        ],
+        "note": ""
+      },
+      {
+        "id": "APP-CHECKOUT-01",
+        "end": "APP",
+        "name": "确认订单",
+        "purpose": "承接未支付恢复与继续支付，展示订单快照、协议与支付入口。",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "EXPIRED",
+            "数据过期"
+          ],
+          [
+            "SUBMITTING",
+            "提交中"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "RECONFIRM",
+            "需重新确认协议"
+          ]
+        ],
+        "req": "CHECKOUT-01～10、BR-002/003、AC-27/42/45/70",
+        "priority": "P0",
+        "entry": "购买创建/订单列表继续支付",
+        "exit": "支付/结果页/商品详情",
+        "flows": [
+          "FL-CHECKOUT-001"
+        ],
+        "note": ""
+      },
+      {
+        "id": "APP-PAYRET-01",
+        "end": "APP",
+        "name": "支付返回确认（弹层）",
+        "purpose": "支付返回后询问用户操作情况，但只以服务端查询结果为准。",
+        "states": [
+          [
+            "ASK",
+            "询问"
+          ],
+          [
+            "QUERYING",
+            "查询中"
+          ],
+          [
+            "TIMEOUT",
+            "超时未决"
+          ],
+          [
+            "PAID",
+            "已支付"
+          ],
+          [
+            "UNPAID",
+            "明确未支付"
+          ]
+        ],
+        "req": "PAY-07～10、AC-25/26",
+        "priority": "P0",
+        "entry": "支付唤起返回/结果页重查",
+        "exit": "结果页/确认订单/保持确认中",
+        "flows": [
+          "FL-PAY-001"
+        ],
+        "note": ""
+      },
+      {
+        "id": "APP-RESULT-01",
+        "end": "APP",
+        "name": "支付与交付结果",
+        "purpose": "分别展示支付、交付、退款事实，按交付类型给出下一步。",
+        "states": [
+          [
+            "CODE_ISSUING",
+            "发码中"
+          ],
+          [
+            "CODE_DELIVERED",
+            "口令码已交付"
+          ],
+          [
+            "GIFT_PENDING",
+            "赠送待处理"
+          ],
+          [
+            "DELIVERY_EXCEPTION",
+            "交付异常"
+          ],
+          [
+            "REFUNDING",
+            "退款中"
+          ],
+          [
+            "REFUNDED",
+            "已退款"
+          ],
+          [
+            "REFUND_FAILED",
+            "退款失败"
+          ],
+          [
+            "CONFIRMING",
+            "支付确认中"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ]
+        ],
+        "req": "RESULT-01～05、§5.9、AC-28/30/59/69",
+        "priority": "P0",
+        "entry": "支付返回/订单进入",
+        "exit": "订单详情/客服/重新购买",
+        "flows": [
+          "FL-CODE-001",
+          "FL-GIFT-001",
+          "FL-REFUND-001"
+        ],
+        "note": ""
+      },
+      {
+        "id": "APP-ORDER-01",
+        "end": "APP",
+        "name": "我的订单",
+        "purpose": "按状态筛选并查看当前账号订单。",
+        "states": [
+          [
+            "RESULTS",
+            "有结果"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "空数据"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "SESSION_EXPIRED",
+            "会话失效"
+          ]
+        ],
+        "req": "ORDER-01～07、§5.9、AC-18/29",
+        "priority": "P0",
+        "entry": "我的/首页订单入口",
+        "exit": "订单详情/继续支付/客服",
+        "flows": [],
+        "note": ""
+      },
+      {
+        "id": "APP-ORDER-02",
+        "end": "APP",
+        "name": "订单详情",
+        "purpose": "展示订单快照、支付、交付、退款与售后记录。",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "CODE_DELIVERED",
+            "口令码已交付"
+          ],
+          [
+            "GIFT_PENDING",
+            "赠送处理中"
+          ],
+          [
+            "DELIVERY_EXCEPTION",
+            "交付异常"
+          ],
+          [
+            "REFUND_FAILED",
+            "退款失败"
+          ],
+          [
+            "CONFIRMING",
+            "支付确认中"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ]
+        ],
+        "req": "ORDER-03/04/05/06/07、AC-10/12/18",
+        "priority": "P0",
+        "entry": "订单列表/站内信跳转",
+        "exit": "继续支付/结果页/客服/返回",
+        "flows": [
+          "FL-CODE-001"
+        ],
+        "note": ""
+      },
+      {
+        "id": "APP-PROFILE-01",
+        "end": "APP",
+        "name": "我的",
+        "purpose": "展示账号、实名与手机号状态、订单与客服入口。",
+        "states": [
+          [
+            "LOGGED_IN",
+            "已登录"
+          ],
+          [
+            "GUEST",
+            "未登录"
+          ],
+          [
+            "UNKNOWN",
+            "状态未知"
+          ]
+        ],
+        "req": "ORDER-01、AUTH-06、AC-01/72",
+        "priority": "P0",
+        "entry": "底部导航",
+        "exit": "订单/客服/实名/绑定",
+        "flows": [],
+        "note": ""
+      },
+      {
+        "id": "APP-SERVICE-01",
+        "end": "APP",
+        "name": "企业微信客服",
+        "purpose": "提供客服联系方式、订单号复制与无法唤起时的备用说明。",
+        "states": [
+          [
+            "WITH_ORDER",
+            "带订单"
+          ],
+          [
+            "NO_ORDER",
+            "不带订单"
+          ],
+          [
+            "FALLBACK",
+            "无法唤起"
+          ]
+        ],
+        "req": "SERVICE、ORDER-07、AC-15",
+        "priority": "P0",
+        "entry": "首页/详情/订单/结果",
+        "exit": "返回来源",
+        "flows": [],
+        "note": ""
+      },
+      {
+        "id": "WEB-HOME-01",
+        "end": "WEB",
+        "name": "首页",
+        "purpose": "PC 宽屏首页，展示同一套已发布商品与配置。",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "空数据"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ]
+        ],
+        "req": "HOME-01～08、AC-01/57",
+        "priority": "P0",
+        "entry": "C 端入口",
+        "exit": "详情/搜索/订单/客服",
+        "flows": [
+          "FL-CHECKOUT-001"
+        ],
+        "note": ""
+      },
+      {
+        "id": "WEB-AUTH-01",
+        "end": "WEB",
+        "name": "首次实名提醒（弹层）",
+        "purpose": "PC 入口首次进入时的可信实名提醒。",
+        "states": [
+          [
+            "SHOWN_KNOWN",
+            "已实名提示"
+          ],
+          [
+            "SHOWN_UNVERIFIED",
+            "未实名提示"
+          ],
+          [
+            "HIDDEN_UNKNOWN",
+            "未登录/未知不展示"
+          ],
+          [
+            "CLOSED",
+            "已关闭"
+          ]
+        ],
+        "req": "AUTH-06～08、D-28",
+        "priority": "P0",
+        "entry": "首次进入首页",
+        "exit": "关闭/前往认证",
+        "flows": [],
+        "note": ""
+      },
+      {
+        "id": "WEB-SEARCH-01",
+        "end": "WEB",
+        "name": "搜索默认页",
+        "purpose": "PC 搜索默认态与发现内容。",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "EDITING",
+            "编辑中"
+          ],
+          [
+            "VALIDATION_ERROR",
+            "校验失败"
+          ],
+          [
+            "EMPTY",
+            "空数据"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ]
+        ],
+        "req": "SEARCH-01～06、AC-51",
+        "priority": "P0",
+        "entry": "顶栏搜索",
+        "exit": "结果/详情/首页",
+        "flows": [],
+        "note": ""
+      },
+      {
+        "id": "WEB-SEARCH-02",
+        "end": "WEB",
+        "name": "搜索结果页",
+        "purpose": "PC 结果列表与排序。",
+        "states": [
+          [
+            "RESULTS",
+            "有结果"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "无结果"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "END",
+            "末页"
+          ]
+        ],
+        "req": "SEARCH-02/03/06、AC-01",
+        "priority": "P0",
+        "entry": "搜索提交",
+        "exit": "详情/搜索默认页",
+        "flows": [],
+        "note": ""
+      },
+      {
+        "id": "WEB-DETAIL-01",
+        "end": "WEB",
+        "name": "商品详情",
+        "purpose": "PC 左媒体右购买卡的商品详情。",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "EXPANDED",
+            "长文展开"
+          ],
+          [
+            "ORDER_PENDING",
+            "订单处理中"
+          ],
+          [
+            "SOLD_OUT",
+            "售罄"
+          ],
+          [
+            "UNAVAILABLE",
+            "不可售"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ]
+        ],
+        "req": "PRODUCT-01～12、AC-57",
+        "priority": "P0",
+        "entry": "首页/搜索",
+        "exit": "购买面板/搜索/客服",
+        "flows": [
+          "FL-CHECKOUT-001"
+        ],
+        "note": ""
+      },
+      {
+        "id": "WEB-BUY-01",
+        "end": "WEB",
+        "name": "购买面板（弹层）",
+        "purpose": "PC 居中购买面板，字段与移动端同源。",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "VALIDATION_ERROR",
+            "校验失败"
+          ],
+          [
+            "SUBMITTING",
+            "提交中"
+          ],
+          [
+            "LOGIN_REQUIRED",
+            "需要登录"
+          ],
+          [
+            "REALNAME_REQUIRED",
+            "需要实名"
+          ],
+          [
+            "MINOR_BLOCKED",
+            "未成年拦截"
+          ],
+          [
+            "PHONE_REQUIRED",
+            "需要绑定手机"
+          ],
+          [
+            "BALANCE_LOW",
+            "余额不足"
+          ],
+          [
+            "STOCK_UNKNOWN",
+            "库存未知风险"
+          ],
+          [
+            "NOTICE",
+            "购买须知子层"
+          ]
+        ],
+        "req": "PRODUCT-07～12、CHECKOUT、AC-20/22/23/41/44/65/66",
+        "priority": "P0",
+        "entry": "桌面购买卡",
+        "exit": "确认订单/扫码支付/关闭回详情",
+        "flows": [
+          "FL-CHECKOUT-001"
+        ],
+        "note": ""
+      },
+      {
+        "id": "WEB-AGREEMENT-01",
+        "end": "WEB",
+        "name": "购买协议",
+        "purpose": "PC 容器内查看协议并返回。",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "SUBSTANTIVE",
+            "实质性变更"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ]
+        ],
+        "req": "AGREEMENT-01～05、AC-70",
+        "priority": "P0",
+        "entry": "购买面板/确认订单",
+        "exit": "返回来源",
+        "flows": [
+          "FL-AGREEMENT-001"
+        ],
+        "note": ""
+      },
+      {
+        "id": "WEB-REALNAME-01",
+        "end": "WEB",
+        "name": "平台实名承接（弹层）",
+        "purpose": "PC 容器内调起平台实名的说明层。",
+        "states": [
+          [
+            "SHOWN",
+            "展示"
+          ],
+          [
+            "LAUNCHING",
+            "唤起中"
+          ],
+          [
+            "UNAVAILABLE",
+            "平台不可用"
+          ],
+          [
+            "SUCCESS",
+            "认证返回"
+          ],
+          [
+            "FAILED",
+            "认证失败"
+          ]
+        ],
+        "req": "AUTH-02/03/09/10、AC-03/24",
+        "priority": "P0",
+        "entry": "首次提醒/购买校验",
+        "exit": "返回购买现场",
+        "flows": [
+          "FL-CHECKOUT-001"
+        ],
+        "note": ""
+      },
+      {
+        "id": "WEB-PHONE-01",
+        "end": "WEB",
+        "name": "手机号绑定",
+        "purpose": "PC 容器内完成手机号兜底绑定。",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "VALIDATION_ERROR",
+            "校验失败"
+          ],
+          [
+            "SUBMITTING",
+            "提交中"
+          ],
+          [
+            "SUCCESS",
+            "成功"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "CANCELLED",
+            "已取消"
+          ]
+        ],
+        "req": "PHONE-01～06、AC-23/44",
+        "priority": "P0",
+        "entry": "购买校验未绑定手机",
+        "exit": "返回购买现场",
+        "flows": [
+          "FL-CHECKOUT-001"
+        ],
+        "note": ""
+      },
+      {
+        "id": "WEB-CHECKOUT-01",
+        "end": "WEB",
+        "name": "确认订单",
+        "purpose": "PC 左明细右结算，继续支付前重验可售性。",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "EXPIRED",
+            "数据过期"
+          ],
+          [
+            "SUBMITTING",
+            "提交中"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "RECONFIRM",
+            "需重新确认协议"
+          ]
+        ],
+        "req": "CHECKOUT-01～10、AC-27/42/45/70",
+        "priority": "P0",
+        "entry": "购买创建/订单继续支付",
+        "exit": "扫码支付/结果页",
+        "flows": [
+          "FL-CHECKOUT-001"
+        ],
+        "note": ""
+      },
+      {
+        "id": "WEB-PAYSCAN-01",
+        "end": "WEB",
+        "name": "扫码支付（弹层）",
+        "purpose": "PC 收银台扫码三态：待扫码、确认中、支付成功。",
+        "states": [
+          [
+            "WAITING",
+            "待扫码"
+          ],
+          [
+            "CONFIRMING",
+            "确认中"
+          ],
+          [
+            "PAID",
+            "支付成功"
+          ],
+          [
+            "TIMEOUT",
+            "超时未决"
+          ]
+        ],
+        "req": "PAY-01～05、§11.5、AC-57",
+        "priority": "P0",
+        "entry": "确认订单继续支付",
+        "exit": "结果页/订单页",
+        "flows": [
+          "FL-PAY-001"
+        ],
+        "note": ""
+      },
+      {
+        "id": "WEB-PAYRET-01",
+        "end": "WEB",
+        "name": "支付返回确认（弹层）",
+        "purpose": "PC 支付返回后的双选项查询。",
+        "states": [
+          [
+            "ASK",
+            "询问"
+          ],
+          [
+            "QUERYING",
+            "查询中"
+          ],
+          [
+            "TIMEOUT",
+            "超时未决"
+          ],
+          [
+            "PAID",
+            "已支付"
+          ],
+          [
+            "UNPAID",
+            "明确未支付"
+          ]
+        ],
+        "req": "PAY-07～10、AC-25/26",
+        "priority": "P0",
+        "entry": "支付返回",
+        "exit": "结果页/确认订单/保持确认中",
+        "flows": [
+          "FL-PAY-001"
+        ],
+        "note": ""
+      },
+      {
+        "id": "WEB-RESULT-01",
+        "end": "WEB",
+        "name": "支付与交付结果",
+        "purpose": "PC 结果页展示支付、交付、退款事实。",
+        "states": [
+          [
+            "CODE_ISSUING",
+            "发码中"
+          ],
+          [
+            "CODE_DELIVERED",
+            "口令码已交付"
+          ],
+          [
+            "GIFT_PENDING",
+            "赠送待处理"
+          ],
+          [
+            "DELIVERY_EXCEPTION",
+            "交付异常"
+          ],
+          [
+            "REFUNDING",
+            "退款中"
+          ],
+          [
+            "REFUNDED",
+            "已退款"
+          ],
+          [
+            "REFUND_FAILED",
+            "退款失败"
+          ],
+          [
+            "CONFIRMING",
+            "支付确认中"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ]
+        ],
+        "req": "RESULT-01～05、AC-28/59/69",
+        "priority": "P0",
+        "entry": "支付返回/订单进入",
+        "exit": "订单详情/客服",
+        "flows": [
+          "FL-CODE-001",
+          "FL-GIFT-001",
+          "FL-REFUND-001"
+        ],
+        "note": ""
+      },
+      {
+        "id": "WEB-ORDER-01",
+        "end": "WEB",
+        "name": "我的订单",
+        "purpose": "PC 订单表格与状态筛选。",
+        "states": [
+          [
+            "RESULTS",
+            "有结果"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "空数据"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "SESSION_EXPIRED",
+            "会话失效"
+          ]
+        ],
+        "req": "ORDER-01～07、AC-18/29",
+        "priority": "P0",
+        "entry": "顶栏我的/订单",
+        "exit": "订单详情/继续支付",
+        "flows": [],
+        "note": ""
+      },
+      {
+        "id": "WEB-ORDER-02",
+        "end": "WEB",
+        "name": "订单详情",
+        "purpose": "PC 订单详情与交付记录。",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "CODE_DELIVERED",
+            "口令码已交付"
+          ],
+          [
+            "GIFT_PENDING",
+            "赠送处理中"
+          ],
+          [
+            "DELIVERY_EXCEPTION",
+            "交付异常"
+          ],
+          [
+            "REFUND_FAILED",
+            "退款失败"
+          ],
+          [
+            "CONFIRMING",
+            "支付确认中"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ]
+        ],
+        "req": "ORDER-03～07、AC-10/12/18",
+        "priority": "P0",
+        "entry": "订单表查看",
+        "exit": "继续支付/客服/返回",
+        "flows": [
+          "FL-CODE-001"
+        ],
+        "note": ""
+      },
+      {
+        "id": "WEB-PROFILE-01",
+        "end": "WEB",
+        "name": "我的",
+        "purpose": "PC 个人中心与资格状态。",
+        "states": [
+          [
+            "LOGGED_IN",
+            "已登录"
+          ],
+          [
+            "GUEST",
+            "未登录"
+          ],
+          [
+            "UNKNOWN",
+            "状态未知"
+          ]
+        ],
+        "req": "ORDER-01、AC-72",
+        "priority": "P0",
+        "entry": "顶栏用户区",
+        "exit": "订单/客服/实名/绑定",
+        "flows": [],
+        "note": ""
+      },
+      {
+        "id": "WEB-SERVICE-01",
+        "end": "WEB",
+        "name": "企业微信客服",
+        "purpose": "PC 客服入口与备用路径。",
+        "states": [
+          [
+            "WITH_ORDER",
+            "带订单"
+          ],
+          [
+            "NO_ORDER",
+            "不带订单"
+          ],
+          [
+            "FALLBACK",
+            "无法唤起"
+          ]
+        ],
+        "req": "SERVICE、AC-15/57",
+        "priority": "P0",
+        "entry": "首页/详情/订单",
+        "exit": "返回来源",
+        "flows": [],
+        "note": ""
+      },
+      {
+        "id": "ADM-LOGIN-01",
+        "end": "ADM",
+        "name": "后台登录",
+        "purpose": "账号登录与错误/锁定反馈。",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "LOCKED",
+            "已锁定"
+          ],
+          [
+            "SUBMITTING",
+            "提交中"
+          ]
+        ],
+        "req": "§9、§9.4",
+        "priority": "P1",
+        "entry": "后台地址",
+        "exit": "工作台",
+        "flows": [],
+        "note": ""
+      },
+      {
+        "id": "ADM-HOME-01",
+        "end": "ADM",
+        "name": "首页管理",
+        "purpose": "维护广告、快捷导航与推荐配置，草稿预览后发布。",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "EDITING",
+            "编辑中"
+          ],
+          [
+            "VALIDATION_ERROR",
+            "校验失败"
+          ],
+          [
+            "SUBMITTING",
+            "提交中"
+          ],
+          [
+            "SUCCESS",
+            "成功"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "NO_PERM",
+            "无权限"
+          ]
+        ],
+        "req": "ADM-01、HOME-04、AC-58",
+        "priority": "P1",
+        "entry": "后台菜单",
+        "exit": "预览/发布",
+        "flows": [],
+        "note": ""
+      },
+      {
+        "id": "ADM-PRODUCT-01",
+        "end": "ADM",
+        "name": "选品与商品管理",
+        "purpose": "从供应商候选目录选品、补内容、定价并发布。",
+        "states": [
+          [
+            "RESULTS",
+            "有结果"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "空数据"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "NO_PERM",
+            "无权限"
+          ]
+        ],
+        "req": "ADM-02/03、D-21、AC-61/62/53",
+        "priority": "P0",
+        "entry": "后台菜单",
+        "exit": "选品/编辑/发布",
+        "flows": [],
+        "note": ""
+      },
+      {
+        "id": "ADM-SUPPLIER-01",
+        "end": "ADM",
+        "name": "供应商管理",
+        "purpose": "维护供应商凭据、gid 映射与组合商品白名单。",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "EDITING",
+            "编辑中"
+          ],
+          [
+            "VALIDATION_ERROR",
+            "校验失败"
+          ],
+          [
+            "SUBMITTING",
+            "提交中"
+          ],
+          [
+            "SUCCESS",
+            "成功"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "NO_PERM",
+            "无权限"
+          ]
+        ],
+        "req": "ADM-03、§9.6、AC-62",
+        "priority": "P1",
+        "entry": "后台菜单",
+        "exit": "保存配置",
+        "flows": [],
+        "note": ""
+      },
+      {
+        "id": "ADM-STOCK-01",
+        "end": "ADM",
+        "name": "库存查看",
+        "purpose": "查看供应商库存缓存、同步时间与新鲜度。",
+        "states": [
+          [
+            "RESULTS",
+            "有结果"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "空数据"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "NO_PERM",
+            "无权限"
+          ]
+        ],
+        "req": "ADM-04、PRODUCT-11、AC-66",
+        "priority": "P1",
+        "entry": "后台菜单",
+        "exit": "同步/查看",
+        "flows": [],
+        "note": ""
+      },
+      {
+        "id": "ADM-ORDER-01",
+        "end": "ADM",
+        "name": "订单管理",
+        "purpose": "查询订单、查看支付/交付/退款明细，按权限导出。",
+        "states": [
+          [
+            "RESULTS",
+            "有结果"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "空数据"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "NO_PERM",
+            "无权限"
+          ]
+        ],
+        "req": "ADM-05、§9.5、AC-50",
+        "priority": "P0",
+        "entry": "后台菜单",
+        "exit": "详情/导出/支付核查",
+        "flows": [],
+        "note": ""
+      },
+      {
+        "id": "ADM-GIFT-01",
+        "end": "ADM",
+        "name": "好友赠送",
+        "purpose": "待处理队列、批次导出、开始处理、完成确认与异常记录。",
+        "states": [
+          [
+            "RESULTS",
+            "有结果"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "空数据"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "NO_PERM",
+            "无权限"
+          ]
+        ],
+        "req": "ADM-06、GIFT-01～06、AC-13/14/71",
+        "priority": "P1",
+        "entry": "后台菜单",
+        "exit": "导出批次/处理完成",
+        "flows": [],
+        "note": ""
+      },
+      {
+        "id": "ADM-CODE-01",
+        "end": "ADM",
+        "name": "口令码交付",
+        "purpose": "查看自动交付记录、处理失败与人工补发换码。",
+        "states": [
+          [
+            "RESULTS",
+            "有结果"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "空数据"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "NO_PERM",
+            "无权限"
+          ]
+        ],
+        "req": "ADM-07、CODE-01～08、AC-11/12/55",
+        "priority": "P0",
+        "entry": "后台菜单",
+        "exit": "重试/补发/换码/转退款",
+        "flows": [],
+        "note": ""
+      },
+      {
+        "id": "ADM-REFUND-01",
+        "end": "ADM",
+        "name": "退款管理",
+        "purpose": "系统异常退款、特殊退款审核、执行、失败重试。",
+        "states": [
+          [
+            "RESULTS",
+            "有结果"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "空数据"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "NO_PERM",
+            "无权限"
+          ]
+        ],
+        "req": "ADM-08、§8.3/8.5、AC-16/48/69",
+        "priority": "P0",
+        "entry": "后台菜单",
+        "exit": "审核/执行/重试",
+        "flows": [],
+        "note": ""
+      },
+      {
+        "id": "ADM-SERVICE-01",
+        "end": "ADM",
+        "name": "客服配置",
+        "purpose": "维护企业微信联系方式、引导文案与服务时间。",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "EDITING",
+            "编辑中"
+          ],
+          [
+            "VALIDATION_ERROR",
+            "校验失败"
+          ],
+          [
+            "SUBMITTING",
+            "提交中"
+          ],
+          [
+            "SUCCESS",
+            "成功"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "NO_PERM",
+            "无权限"
+          ]
+        ],
+        "req": "ADM-09、SERVICE、AC-15",
+        "priority": "P1",
+        "entry": "后台菜单",
+        "exit": "保存即生效",
+        "flows": [],
+        "note": ""
+      },
+      {
+        "id": "ADM-RBAC-01",
+        "end": "ADM",
+        "name": "权限管理",
+        "purpose": "账号/角色、菜单权限与敏感动作授权，含单人退款。",
+        "states": [
+          [
+            "RESULTS",
+            "有结果"
+          ],
+          [
+            "EMPTY",
+            "空数据"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "NO_PERM",
+            "无权限"
+          ],
+          [
+            "DRAWER",
+            "弹层"
+          ]
+        ],
+        "req": "ADM-10/11、§9.4、AC-17/73",
+        "priority": "P0",
+        "entry": "后台菜单",
+        "exit": "授权/保存",
+        "flows": [],
+        "note": ""
+      },
+      {
+        "id": "ADM-AUDIT-01",
+        "end": "ADM",
+        "name": "操作记录",
+        "purpose": "按订单、操作人、动作和时间追踪敏感操作。",
+        "states": [
+          [
+            "RESULTS",
+            "有结果"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "空数据"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "NO_PERM",
+            "无权限"
+          ]
+        ],
+        "req": "ADM-11、§9.2、AC-17",
+        "priority": "P1",
+        "entry": "后台菜单",
+        "exit": "查看详情",
+        "flows": [],
+        "note": ""
+      },
+      {
+        "id": "ADM-AGREEMENT-01",
+        "end": "ADM",
+        "name": "协议管理",
+        "purpose": "编辑协议、标记实质性变更、预览与发布新版本。",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "EDITING",
+            "编辑中"
+          ],
+          [
+            "VALIDATION_ERROR",
+            "校验失败"
+          ],
+          [
+            "SUBMITTING",
+            "提交中"
+          ],
+          [
+            "SUCCESS",
+            "成功"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "NO_PERM",
+            "无权限"
+          ]
+        ],
+        "req": "ADM-13、AGREEMENT-04/05、AC-58/70",
+        "priority": "P0",
+        "entry": "后台菜单",
+        "exit": "发布新版本",
+        "flows": [],
+        "note": ""
+      },
+      {
+        "id": "ADM-SEARCH-01",
+        "end": "ADM",
+        "name": "搜索推荐",
+        "purpose": "配置搜索发现关键词与热门商品，保存即生效。",
+        "states": [
+          [
+            "DEFAULT",
+            "默认"
+          ],
+          [
+            "EDITING",
+            "编辑中"
+          ],
+          [
+            "VALIDATION_ERROR",
+            "校验失败"
+          ],
+          [
+            "SUBMITTING",
+            "提交中"
+          ],
+          [
+            "SUCCESS",
+            "成功"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "NO_PERM",
+            "无权限"
+          ]
+        ],
+        "req": "ADM-14、SEARCH-04、AC-51",
+        "priority": "P1",
+        "entry": "后台菜单",
+        "exit": "保存即生效",
+        "flows": [],
+        "note": ""
+      },
+      {
+        "id": "ADM-PAYCHECK-01",
+        "end": "ADM",
+        "name": "支付核查",
+        "purpose": "查看确认中订单与查询记录，只凭渠道证据定性。",
+        "states": [
+          [
+            "RESULTS",
+            "有结果"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "空数据"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "NO_PERM",
+            "无权限"
+          ]
+        ],
+        "req": "ADM-15、PAY-13、§5.10、AC-67",
+        "priority": "P0",
+        "entry": "后台菜单/订单转核查",
+        "exit": "确认已支付/确认未支付",
+        "flows": [],
+        "note": ""
+      },
+      {
+        "id": "ADM-NOTIFY-01",
+        "end": "ADM",
+        "name": "通知记录",
+        "purpose": "查看发码/退款站内信任务，授权重试并留痕。",
+        "states": [
+          [
+            "RESULTS",
+            "有结果"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "空数据"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "NO_PERM",
+            "无权限"
+          ]
+        ],
+        "req": "ADM-16、NOTIFY-01～10、AC-33～37/49",
+        "priority": "P1",
+        "entry": "后台菜单",
+        "exit": "查询/重试",
+        "flows": [],
+        "note": ""
+      },
+      {
+        "id": "ADM-WALLET-01",
+        "end": "ADM",
+        "name": "钱包余额",
+        "purpose": "查看供应商钱包总额/可用/冻结，设置阈值并记录充值。",
+        "states": [
+          [
+            "RESULTS",
+            "有结果"
+          ],
+          [
+            "LOADING",
+            "加载中"
+          ],
+          [
+            "EMPTY",
+            "空数据"
+          ],
+          [
+            "ERROR",
+            "加载失败"
+          ],
+          [
+            "NO_PERM",
+            "无权限"
+          ],
+          [
+            "EDITING",
+            "编辑中"
+          ],
+          [
+            "SUCCESS",
+            "成功"
+          ]
+        ],
+        "req": "ADM-17、§9.7、AC-56",
+        "priority": "P1",
+        "entry": "后台菜单",
+        "exit": "设置阈值/记录充值",
+        "flows": [],
+        "note": ""
+      }
+    ],
+    "instances": [
+      {
+        "id": "APP-HOME-01-C08",
+        "page": "APP-HOME-01",
+        "def": "COM-CLIENT-C08",
+        "name": "顶部标题栏",
+        "region": "header",
+        "mode": "PAT-NAV-01",
+        "variant": "mobile-default",
+        "states": [
+          "DEFAULT",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "OFFLINE"
+        ]
+      },
+      {
+        "id": "APP-HOME-01-C01",
+        "page": "APP-HOME-01",
+        "def": "CL-HOME-C01",
+        "name": "首页内容区",
+        "region": "main",
+        "mode": "PAT-CAROUSEL-01",
+        "variant": "mobile-home",
+        "states": [
+          "DEFAULT",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "OFFLINE"
+        ]
+      },
+      {
+        "id": "APP-HOME-01-C06",
+        "page": "APP-HOME-01",
+        "def": "COM-CLIENT-C06",
+        "name": "商品卡片列表",
+        "region": "feed",
+        "mode": "PAT-LIST-01",
+        "variant": "mobile-grid",
+        "states": [
+          "DEFAULT",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "OFFLINE"
+        ]
+      },
+      {
+        "id": "APP-HOME-01-C15",
+        "page": "APP-HOME-01",
+        "def": "COM-CLIENT-C03",
+        "name": "商品卡片",
+        "region": "feed",
+        "mode": "PAT-CARD-01",
+        "variant": "mobile-card",
+        "states": [
+          "DEFAULT",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "OFFLINE"
+        ]
+      },
+      {
+        "id": "APP-HOME-01-C07",
+        "page": "APP-HOME-01",
+        "def": "COM-CLIENT-C07",
+        "name": "客服入口",
+        "region": "header",
+        "mode": "PAT-EXTERNAL-01",
+        "variant": "mobile-icon",
+        "states": [
+          "DEFAULT",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "OFFLINE"
+        ]
+      },
+      {
+        "id": "APP-HOME-01-C09",
+        "page": "APP-HOME-01",
+        "def": "COM-CLIENT-C09",
+        "name": "加载/空/失败状态区",
+        "region": "feed",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "inline",
+        "states": [
+          "DEFAULT",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "OFFLINE"
+        ]
+      },
+      {
+        "id": "APP-HOME-01-C16",
+        "page": "APP-HOME-01",
+        "def": "CL-AUTH-C01",
+        "name": "首次实名提醒弹层",
+        "region": "overlay",
+        "mode": "PAT-MODAL-01",
+        "variant": "mobile-center",
+        "states": [
+          "DEFAULT",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "OFFLINE"
+        ]
+      },
+      {
+        "id": "APP-HOME-01-C14",
+        "page": "APP-HOME-01",
+        "def": "COM-CLIENT-C14",
+        "name": "底部标签栏",
+        "region": "tabbar",
+        "mode": "PAT-NAV-02",
+        "variant": "mobile-three",
+        "states": [
+          "DEFAULT",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "OFFLINE"
+        ]
+      },
+      {
+        "id": "APP-AUTH-01-C01",
+        "page": "APP-AUTH-01",
+        "def": "CL-AUTH-C01",
+        "name": "首次实名提醒弹层",
+        "region": "overlay",
+        "mode": "PAT-MODAL-01",
+        "variant": "mobile-center",
+        "states": [
+          "SHOWN_KNOWN",
+          "SHOWN_UNVERIFIED",
+          "HIDDEN_UNKNOWN",
+          "CLOSED"
+        ]
+      },
+      {
+        "id": "APP-SEARCH-01-C08",
+        "page": "APP-SEARCH-01",
+        "def": "COM-CLIENT-C08",
+        "name": "顶部标题栏",
+        "region": "header",
+        "mode": "PAT-NAV-01",
+        "variant": "mobile-search",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "EMPTY",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "APP-SEARCH-01-C01",
+        "page": "APP-SEARCH-01",
+        "def": "COM-CLIENT-C01",
+        "name": "搜索输入框",
+        "region": "search",
+        "mode": "PAT-INPUT-01",
+        "variant": "mobile-search",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "EMPTY",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "APP-SEARCH-01-C02",
+        "page": "APP-SEARCH-01",
+        "def": "COM-CLIENT-C02",
+        "name": "搜索提交动作",
+        "region": "search",
+        "mode": "PAT-ACTION-01",
+        "variant": "mobile-inline",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "EMPTY",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "APP-SEARCH-01-C03",
+        "page": "APP-SEARCH-01",
+        "def": "CL-SEARCH-C01",
+        "name": "搜索发现与热门区",
+        "region": "main",
+        "mode": "PAT-LIST-02",
+        "variant": "mobile-default",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "EMPTY",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "APP-SEARCH-01-C09",
+        "page": "APP-SEARCH-01",
+        "def": "COM-CLIENT-C09",
+        "name": "加载/空/失败状态区",
+        "region": "main",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "inline",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "EMPTY",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "APP-SEARCH-02-C08",
+        "page": "APP-SEARCH-02",
+        "def": "COM-CLIENT-C08",
+        "name": "顶部标题栏",
+        "region": "header",
+        "mode": "PAT-NAV-01",
+        "variant": "mobile-search",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "END"
+        ]
+      },
+      {
+        "id": "APP-SEARCH-02-C01",
+        "page": "APP-SEARCH-02",
+        "def": "COM-CLIENT-C01",
+        "name": "搜索输入框",
+        "region": "search",
+        "mode": "PAT-INPUT-01",
+        "variant": "mobile-search",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "END"
+        ]
+      },
+      {
+        "id": "APP-SEARCH-02-C02",
+        "page": "APP-SEARCH-02",
+        "def": "COM-CLIENT-C02",
+        "name": "搜索提交动作",
+        "region": "search",
+        "mode": "PAT-ACTION-01",
+        "variant": "mobile-inline",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "END"
+        ]
+      },
+      {
+        "id": "APP-SEARCH-02-C05",
+        "page": "APP-SEARCH-02",
+        "def": "COM-CLIENT-C05",
+        "name": "排序/筛选栏",
+        "region": "toolbar",
+        "mode": "PAT-FILTER-01",
+        "variant": "mobile-scroll",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "END"
+        ]
+      },
+      {
+        "id": "APP-SEARCH-02-C06",
+        "page": "APP-SEARCH-02",
+        "def": "COM-CLIENT-C06",
+        "name": "商品卡片列表",
+        "region": "results",
+        "mode": "PAT-LIST-01",
+        "variant": "mobile-grid",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "END"
+        ]
+      },
+      {
+        "id": "APP-SEARCH-02-C15",
+        "page": "APP-SEARCH-02",
+        "def": "COM-CLIENT-C03",
+        "name": "商品卡片",
+        "region": "results",
+        "mode": "PAT-CARD-01",
+        "variant": "mobile-card",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "END"
+        ]
+      },
+      {
+        "id": "APP-SEARCH-02-C09",
+        "page": "APP-SEARCH-02",
+        "def": "COM-CLIENT-C09",
+        "name": "加载/空/失败状态区",
+        "region": "results",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "inline",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "END"
+        ]
+      },
+      {
+        "id": "APP-DETAIL-01-C08",
+        "page": "APP-DETAIL-01",
+        "def": "COM-CLIENT-C08",
+        "name": "顶部标题栏",
+        "region": "header",
+        "mode": "PAT-NAV-01",
+        "variant": "mobile-detail",
+        "states": [
+          "DEFAULT",
+          "EXPANDED",
+          "ORDER_PENDING",
+          "SOLD_OUT",
+          "UNAVAILABLE",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "APP-DETAIL-01-C01",
+        "page": "APP-DETAIL-01",
+        "def": "CL-DETAIL-C01",
+        "name": "商品媒体图集",
+        "region": "media",
+        "mode": "PAT-GALLERY-01",
+        "variant": "mobile-4x3",
+        "states": [
+          "DEFAULT",
+          "EXPANDED",
+          "ORDER_PENDING",
+          "SOLD_OUT",
+          "UNAVAILABLE",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "APP-DETAIL-01-C02",
+        "page": "APP-DETAIL-01",
+        "def": "CL-DETAIL-C02",
+        "name": "商品信息与购买状态",
+        "region": "main",
+        "mode": "PAT-CARD-02",
+        "variant": "mobile-stack",
+        "states": [
+          "DEFAULT",
+          "EXPANDED",
+          "ORDER_PENDING",
+          "SOLD_OUT",
+          "UNAVAILABLE",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "APP-DETAIL-01-C03",
+        "page": "APP-DETAIL-01",
+        "def": "COM-CLIENT-C07",
+        "name": "客服入口",
+        "region": "header",
+        "mode": "PAT-EXTERNAL-01",
+        "variant": "mobile-icon",
+        "states": [
+          "DEFAULT",
+          "EXPANDED",
+          "ORDER_PENDING",
+          "SOLD_OUT",
+          "UNAVAILABLE",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "APP-DETAIL-01-C04",
+        "page": "APP-DETAIL-01",
+        "def": "CL-DETAIL-C03",
+        "name": "底部购买操作栏",
+        "region": "bottombar",
+        "mode": "PAT-ACTION-02",
+        "variant": "mobile-sticky",
+        "states": [
+          "DEFAULT",
+          "EXPANDED",
+          "ORDER_PENDING",
+          "SOLD_OUT",
+          "UNAVAILABLE",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "APP-BUY-01-C01",
+        "page": "APP-BUY-01",
+        "def": "CL-BUY-C01",
+        "name": "购买面板",
+        "region": "overlay",
+        "mode": "PAT-MODAL-02",
+        "variant": "mobile-bottom",
+        "states": [
+          "DEFAULT",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "LOGIN_REQUIRED",
+          "REALNAME_REQUIRED",
+          "MINOR_BLOCKED",
+          "PHONE_REQUIRED",
+          "BALANCE_LOW",
+          "STOCK_UNKNOWN",
+          "NOTICE"
+        ]
+      },
+      {
+        "id": "APP-BUY-01-C02",
+        "page": "APP-BUY-01",
+        "def": "COM-CLIENT-C10",
+        "name": "商品明细卡",
+        "region": "overlay",
+        "mode": "PAT-CARD-01",
+        "variant": "compact",
+        "states": [
+          "DEFAULT",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "LOGIN_REQUIRED",
+          "REALNAME_REQUIRED",
+          "MINOR_BLOCKED",
+          "PHONE_REQUIRED",
+          "BALANCE_LOW",
+          "STOCK_UNKNOWN",
+          "NOTICE"
+        ]
+      },
+      {
+        "id": "APP-BUY-01-C03",
+        "page": "APP-BUY-01",
+        "def": "CL-BUY-C02",
+        "name": "购买须知弹窗",
+        "region": "overlay",
+        "mode": "PAT-MODAL-03",
+        "variant": "mobile-center",
+        "states": [
+          "DEFAULT",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "LOGIN_REQUIRED",
+          "REALNAME_REQUIRED",
+          "MINOR_BLOCKED",
+          "PHONE_REQUIRED",
+          "BALANCE_LOW",
+          "STOCK_UNKNOWN",
+          "NOTICE"
+        ]
+      },
+      {
+        "id": "APP-AGREEMENT-01-C01",
+        "page": "APP-AGREEMENT-01",
+        "def": "COM-CLIENT-C08",
+        "name": "顶部标题栏",
+        "region": "header",
+        "mode": "PAT-NAV-01",
+        "variant": "mobile-back",
+        "states": [
+          "DEFAULT",
+          "SUBSTANTIVE",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "APP-AGREEMENT-01-C02",
+        "page": "APP-AGREEMENT-01",
+        "def": "CL-AGREEMENT-C01",
+        "name": "协议正文与版本",
+        "region": "main",
+        "mode": "PAT-CARD-01",
+        "variant": "long-text",
+        "states": [
+          "DEFAULT",
+          "SUBSTANTIVE",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "APP-AGREEMENT-01-C03",
+        "page": "APP-AGREEMENT-01",
+        "def": "COM-CLIENT-C09",
+        "name": "加载/空/失败状态区",
+        "region": "main",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "inline",
+        "states": [
+          "DEFAULT",
+          "SUBSTANTIVE",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "APP-REALNAME-01-C01",
+        "page": "APP-REALNAME-01",
+        "def": "CL-AUTH-C02",
+        "name": "平台实名承接层",
+        "region": "overlay",
+        "mode": "PAT-MODAL-01",
+        "variant": "mobile-center",
+        "states": [
+          "SHOWN",
+          "LAUNCHING",
+          "UNAVAILABLE",
+          "SUCCESS",
+          "FAILED"
+        ]
+      },
+      {
+        "id": "APP-PHONE-01-C01",
+        "page": "APP-PHONE-01",
+        "def": "COM-CLIENT-C08",
+        "name": "顶部标题栏",
+        "region": "header",
+        "mode": "PAT-NAV-01",
+        "variant": "mobile-back",
+        "states": [
+          "DEFAULT",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "SUCCESS",
+          "ERROR",
+          "CANCELLED"
+        ]
+      },
+      {
+        "id": "APP-PHONE-01-C02",
+        "page": "APP-PHONE-01",
+        "def": "CL-PHONE-C01",
+        "name": "手机号绑定表单",
+        "region": "main",
+        "mode": "PAT-INPUT-03",
+        "variant": "mobile-form",
+        "states": [
+          "DEFAULT",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "SUCCESS",
+          "ERROR",
+          "CANCELLED"
+        ]
+      },
+      {
+        "id": "APP-PHONE-01-C03",
+        "page": "APP-PHONE-01",
+        "def": "COM-CLIENT-C09",
+        "name": "加载/空/失败状态区",
+        "region": "main",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "inline",
+        "states": [
+          "DEFAULT",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "SUCCESS",
+          "ERROR",
+          "CANCELLED"
+        ]
+      },
+      {
+        "id": "APP-CHECKOUT-01-C01",
+        "page": "APP-CHECKOUT-01",
+        "def": "COM-CLIENT-C08",
+        "name": "顶部标题栏",
+        "region": "header",
+        "mode": "PAT-NAV-01",
+        "variant": "mobile-back",
+        "states": [
+          "DEFAULT",
+          "EXPIRED",
+          "SUBMITTING",
+          "ERROR",
+          "RECONFIRM"
+        ]
+      },
+      {
+        "id": "APP-CHECKOUT-01-C02",
+        "page": "APP-CHECKOUT-01",
+        "def": "CL-CHECKOUT-C01",
+        "name": "订单明细与金额区",
+        "region": "main",
+        "mode": "PAT-CARD-01",
+        "variant": "mobile-checkout",
+        "states": [
+          "DEFAULT",
+          "EXPIRED",
+          "SUBMITTING",
+          "ERROR",
+          "RECONFIRM"
+        ]
+      },
+      {
+        "id": "APP-CHECKOUT-01-C03",
+        "page": "APP-CHECKOUT-01",
+        "def": "CL-CHECKOUT-C02",
+        "name": "协议与继续支付栏",
+        "region": "bottombar",
+        "mode": "PAT-ACTION-02",
+        "variant": "mobile-sticky",
+        "states": [
+          "DEFAULT",
+          "EXPIRED",
+          "SUBMITTING",
+          "ERROR",
+          "RECONFIRM"
+        ]
+      },
+      {
+        "id": "APP-CHECKOUT-01-C04",
+        "page": "APP-CHECKOUT-01",
+        "def": "COM-CLIENT-C09",
+        "name": "加载/空/失败状态区",
+        "region": "main",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "inline",
+        "states": [
+          "DEFAULT",
+          "EXPIRED",
+          "SUBMITTING",
+          "ERROR",
+          "RECONFIRM"
+        ]
+      },
+      {
+        "id": "APP-PAYRET-01-C01",
+        "page": "APP-PAYRET-01",
+        "def": "CL-PAY-C01",
+        "name": "支付返回确认弹窗",
+        "region": "overlay",
+        "mode": "PAT-MODAL-03",
+        "variant": "mobile-center",
+        "states": [
+          "ASK",
+          "QUERYING",
+          "TIMEOUT",
+          "PAID",
+          "UNPAID"
+        ]
+      },
+      {
+        "id": "APP-RESULT-01-C01",
+        "page": "APP-RESULT-01",
+        "def": "COM-CLIENT-C08",
+        "name": "顶部标题栏",
+        "region": "header",
+        "mode": "PAT-NAV-01",
+        "variant": "mobile-back",
+        "states": [
+          "CODE_ISSUING",
+          "CODE_DELIVERED",
+          "GIFT_PENDING",
+          "DELIVERY_EXCEPTION",
+          "REFUNDING",
+          "REFUNDED",
+          "REFUND_FAILED",
+          "CONFIRMING",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "APP-RESULT-01-C02",
+        "page": "APP-RESULT-01",
+        "def": "CL-RESULT-C01",
+        "name": "结果状态与交付区",
+        "region": "main",
+        "mode": "PAT-CARD-02",
+        "variant": "mobile-result",
+        "states": [
+          "CODE_ISSUING",
+          "CODE_DELIVERED",
+          "GIFT_PENDING",
+          "DELIVERY_EXCEPTION",
+          "REFUNDING",
+          "REFUNDED",
+          "REFUND_FAILED",
+          "CONFIRMING",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "APP-RESULT-01-C03",
+        "page": "APP-RESULT-01",
+        "def": "COM-CLIENT-C07",
+        "name": "客服入口",
+        "region": "main",
+        "mode": "PAT-EXTERNAL-01",
+        "variant": "mobile-inline",
+        "states": [
+          "CODE_ISSUING",
+          "CODE_DELIVERED",
+          "GIFT_PENDING",
+          "DELIVERY_EXCEPTION",
+          "REFUNDING",
+          "REFUNDED",
+          "REFUND_FAILED",
+          "CONFIRMING",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "APP-RESULT-01-C04",
+        "page": "APP-RESULT-01",
+        "def": "COM-CLIENT-C09",
+        "name": "加载/空/失败状态区",
+        "region": "main",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "inline",
+        "states": [
+          "CODE_ISSUING",
+          "CODE_DELIVERED",
+          "GIFT_PENDING",
+          "DELIVERY_EXCEPTION",
+          "REFUNDING",
+          "REFUNDED",
+          "REFUND_FAILED",
+          "CONFIRMING",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "APP-ORDER-01-C01",
+        "page": "APP-ORDER-01",
+        "def": "COM-CLIENT-C08",
+        "name": "顶部标题栏",
+        "region": "header",
+        "mode": "PAT-NAV-01",
+        "variant": "mobile-tabs",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "SESSION_EXPIRED"
+        ]
+      },
+      {
+        "id": "APP-ORDER-01-C02",
+        "page": "APP-ORDER-01",
+        "def": "COM-CLIENT-C11",
+        "name": "状态筛选页签",
+        "region": "tabs",
+        "mode": "PAT-FILTER-02",
+        "variant": "mobile-scroll",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "SESSION_EXPIRED"
+        ]
+      },
+      {
+        "id": "APP-ORDER-01-C03",
+        "page": "APP-ORDER-01",
+        "def": "COM-CLIENT-C12",
+        "name": "订单卡片列表",
+        "region": "main",
+        "mode": "PAT-LIST-03",
+        "variant": "mobile-cards",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "SESSION_EXPIRED"
+        ]
+      },
+      {
+        "id": "APP-ORDER-01-C04",
+        "page": "APP-ORDER-01",
+        "def": "COM-CLIENT-C09",
+        "name": "加载/空/失败状态区",
+        "region": "main",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "inline",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "SESSION_EXPIRED"
+        ]
+      },
+      {
+        "id": "APP-ORDER-01-C05",
+        "page": "APP-ORDER-01",
+        "def": "COM-CLIENT-C14",
+        "name": "底部标签栏",
+        "region": "tabbar",
+        "mode": "PAT-NAV-02",
+        "variant": "mobile-three",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "SESSION_EXPIRED"
+        ]
+      },
+      {
+        "id": "APP-ORDER-01-C06",
+        "page": "APP-ORDER-01",
+        "def": "COM-CLIENT-C13",
+        "name": "登录失效引导",
+        "region": "main",
+        "mode": "PAT-FEEDBACK-02",
+        "variant": "mobile",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "SESSION_EXPIRED"
+        ]
+      },
+      {
+        "id": "APP-ORDER-02-C01",
+        "page": "APP-ORDER-02",
+        "def": "COM-CLIENT-C08",
+        "name": "顶部标题栏",
+        "region": "header",
+        "mode": "PAT-NAV-01",
+        "variant": "mobile-back",
+        "states": [
+          "DEFAULT",
+          "CODE_DELIVERED",
+          "GIFT_PENDING",
+          "DELIVERY_EXCEPTION",
+          "REFUND_FAILED",
+          "CONFIRMING",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "APP-ORDER-02-C02",
+        "page": "APP-ORDER-02",
+        "def": "CL-ORDER-C01",
+        "name": "订单详情区",
+        "region": "main",
+        "mode": "PAT-CARD-01",
+        "variant": "mobile-detail",
+        "states": [
+          "DEFAULT",
+          "CODE_DELIVERED",
+          "GIFT_PENDING",
+          "DELIVERY_EXCEPTION",
+          "REFUND_FAILED",
+          "CONFIRMING",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "APP-ORDER-02-C03",
+        "page": "APP-ORDER-02",
+        "def": "CL-ORDER-C02",
+        "name": "订单操作记录时间线",
+        "region": "main",
+        "mode": "PAT-TIMELINE-01",
+        "variant": "compact",
+        "states": [
+          "DEFAULT",
+          "CODE_DELIVERED",
+          "GIFT_PENDING",
+          "DELIVERY_EXCEPTION",
+          "REFUND_FAILED",
+          "CONFIRMING",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "APP-ORDER-02-C04",
+        "page": "APP-ORDER-02",
+        "def": "COM-CLIENT-C07",
+        "name": "客服入口",
+        "region": "main",
+        "mode": "PAT-EXTERNAL-01",
+        "variant": "mobile-inline",
+        "states": [
+          "DEFAULT",
+          "CODE_DELIVERED",
+          "GIFT_PENDING",
+          "DELIVERY_EXCEPTION",
+          "REFUND_FAILED",
+          "CONFIRMING",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "APP-ORDER-02-C05",
+        "page": "APP-ORDER-02",
+        "def": "COM-CLIENT-C09",
+        "name": "加载/空/失败状态区",
+        "region": "main",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "inline",
+        "states": [
+          "DEFAULT",
+          "CODE_DELIVERED",
+          "GIFT_PENDING",
+          "DELIVERY_EXCEPTION",
+          "REFUND_FAILED",
+          "CONFIRMING",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "APP-PROFILE-01-C01",
+        "page": "APP-PROFILE-01",
+        "def": "COM-CLIENT-C08",
+        "name": "顶部标题栏",
+        "region": "header",
+        "mode": "PAT-NAV-01",
+        "variant": "mobile-no-back",
+        "states": [
+          "LOGGED_IN",
+          "GUEST",
+          "UNKNOWN"
+        ]
+      },
+      {
+        "id": "APP-PROFILE-01-C02",
+        "page": "APP-PROFILE-01",
+        "def": "CL-PROFILE-C01",
+        "name": "个人中心区",
+        "region": "main",
+        "mode": "PAT-CARD-03",
+        "variant": "mobile-profile",
+        "states": [
+          "LOGGED_IN",
+          "GUEST",
+          "UNKNOWN"
+        ]
+      },
+      {
+        "id": "APP-PROFILE-01-C03",
+        "page": "APP-PROFILE-01",
+        "def": "COM-CLIENT-C07",
+        "name": "客服入口",
+        "region": "main",
+        "mode": "PAT-EXTERNAL-01",
+        "variant": "mobile-inline",
+        "states": [
+          "LOGGED_IN",
+          "GUEST",
+          "UNKNOWN"
+        ]
+      },
+      {
+        "id": "APP-PROFILE-01-C04",
+        "page": "APP-PROFILE-01",
+        "def": "COM-CLIENT-C14",
+        "name": "底部标签栏",
+        "region": "tabbar",
+        "mode": "PAT-NAV-02",
+        "variant": "mobile-three",
+        "states": [
+          "LOGGED_IN",
+          "GUEST",
+          "UNKNOWN"
+        ]
+      },
+      {
+        "id": "APP-SERVICE-01-C01",
+        "page": "APP-SERVICE-01",
+        "def": "COM-CLIENT-C08",
+        "name": "顶部标题栏",
+        "region": "header",
+        "mode": "PAT-NAV-01",
+        "variant": "mobile-back",
+        "states": [
+          "WITH_ORDER",
+          "NO_ORDER",
+          "FALLBACK"
+        ]
+      },
+      {
+        "id": "APP-SERVICE-01-C02",
+        "page": "APP-SERVICE-01",
+        "def": "CL-SERVICE-C01",
+        "name": "客服联系区",
+        "region": "main",
+        "mode": "PAT-EXTERNAL-01",
+        "variant": "mobile-card",
+        "states": [
+          "WITH_ORDER",
+          "NO_ORDER",
+          "FALLBACK"
+        ]
+      },
+      {
+        "id": "WEB-HOME-01-C01",
+        "page": "WEB-HOME-01",
+        "def": "CL-WEB-C01",
+        "name": "桌面顶栏",
+        "region": "header",
+        "mode": "PAT-NAV-03",
+        "variant": "desktop-default",
+        "states": [
+          "DEFAULT",
+          "LOADING",
+          "EMPTY",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "WEB-HOME-01-C02",
+        "page": "WEB-HOME-01",
+        "def": "CL-HOME-C01",
+        "name": "首页内容区",
+        "region": "main",
+        "mode": "PAT-CAROUSEL-01",
+        "variant": "desktop-home",
+        "states": [
+          "DEFAULT",
+          "LOADING",
+          "EMPTY",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "WEB-HOME-01-C03",
+        "page": "WEB-HOME-01",
+        "def": "COM-CLIENT-C06",
+        "name": "商品卡片列表",
+        "region": "feed",
+        "mode": "PAT-LIST-01",
+        "variant": "desktop-grid",
+        "states": [
+          "DEFAULT",
+          "LOADING",
+          "EMPTY",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "WEB-HOME-01-C15",
+        "page": "WEB-HOME-01",
+        "def": "COM-CLIENT-C03",
+        "name": "商品卡片",
+        "region": "feed",
+        "mode": "PAT-CARD-01",
+        "variant": "desktop-card",
+        "states": [
+          "DEFAULT",
+          "LOADING",
+          "EMPTY",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "WEB-HOME-01-C04",
+        "page": "WEB-HOME-01",
+        "def": "COM-CLIENT-C09",
+        "name": "加载/空/失败状态区",
+        "region": "feed",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "inline",
+        "states": [
+          "DEFAULT",
+          "LOADING",
+          "EMPTY",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "WEB-AUTH-01-C01",
+        "page": "WEB-AUTH-01",
+        "def": "CL-AUTH-C01",
+        "name": "首次实名提醒弹层",
+        "region": "overlay",
+        "mode": "PAT-MODAL-01",
+        "variant": "desktop-center",
+        "states": [
+          "SHOWN_KNOWN",
+          "SHOWN_UNVERIFIED",
+          "HIDDEN_UNKNOWN",
+          "CLOSED"
+        ]
+      },
+      {
+        "id": "WEB-SEARCH-01-C01",
+        "page": "WEB-SEARCH-01",
+        "def": "CL-WEB-C01",
+        "name": "桌面顶栏",
+        "region": "header",
+        "mode": "PAT-NAV-03",
+        "variant": "desktop-search",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "EMPTY",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "WEB-SEARCH-01-C02",
+        "page": "WEB-SEARCH-01",
+        "def": "COM-CLIENT-C01",
+        "name": "搜索输入框",
+        "region": "search",
+        "mode": "PAT-INPUT-01",
+        "variant": "desktop-search",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "EMPTY",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "WEB-SEARCH-01-C03",
+        "page": "WEB-SEARCH-01",
+        "def": "COM-CLIENT-C02",
+        "name": "搜索提交动作",
+        "region": "search",
+        "mode": "PAT-ACTION-01",
+        "variant": "desktop-inline",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "EMPTY",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "WEB-SEARCH-01-C04",
+        "page": "WEB-SEARCH-01",
+        "def": "CL-SEARCH-C01",
+        "name": "搜索发现与热门区",
+        "region": "main",
+        "mode": "PAT-LIST-02",
+        "variant": "desktop-two-col",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "EMPTY",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "WEB-SEARCH-01-C05",
+        "page": "WEB-SEARCH-01",
+        "def": "COM-CLIENT-C09",
+        "name": "加载/空/失败状态区",
+        "region": "main",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "inline",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "EMPTY",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "WEB-SEARCH-02-C01",
+        "page": "WEB-SEARCH-02",
+        "def": "CL-WEB-C01",
+        "name": "桌面顶栏",
+        "region": "header",
+        "mode": "PAT-NAV-03",
+        "variant": "desktop-search",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "END"
+        ]
+      },
+      {
+        "id": "WEB-SEARCH-02-C02",
+        "page": "WEB-SEARCH-02",
+        "def": "COM-CLIENT-C01",
+        "name": "搜索输入框",
+        "region": "search",
+        "mode": "PAT-INPUT-01",
+        "variant": "desktop-search",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "END"
+        ]
+      },
+      {
+        "id": "WEB-SEARCH-02-C03",
+        "page": "WEB-SEARCH-02",
+        "def": "COM-CLIENT-C02",
+        "name": "搜索提交动作",
+        "region": "search",
+        "mode": "PAT-ACTION-01",
+        "variant": "desktop-inline",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "END"
+        ]
+      },
+      {
+        "id": "WEB-SEARCH-02-C04",
+        "page": "WEB-SEARCH-02",
+        "def": "COM-CLIENT-C05",
+        "name": "排序/筛选栏",
+        "region": "toolbar",
+        "mode": "PAT-FILTER-01",
+        "variant": "desktop-row",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "END"
+        ]
+      },
+      {
+        "id": "WEB-SEARCH-02-C05",
+        "page": "WEB-SEARCH-02",
+        "def": "COM-CLIENT-C06",
+        "name": "商品卡片列表",
+        "region": "results",
+        "mode": "PAT-LIST-01",
+        "variant": "desktop-grid",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "END"
+        ]
+      },
+      {
+        "id": "WEB-SEARCH-02-C15",
+        "page": "WEB-SEARCH-02",
+        "def": "COM-CLIENT-C03",
+        "name": "商品卡片",
+        "region": "results",
+        "mode": "PAT-CARD-01",
+        "variant": "desktop-card",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "END"
+        ]
+      },
+      {
+        "id": "WEB-SEARCH-02-C06",
+        "page": "WEB-SEARCH-02",
+        "def": "COM-CLIENT-C09",
+        "name": "加载/空/失败状态区",
+        "region": "results",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "inline",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "END"
+        ]
+      },
+      {
+        "id": "WEB-DETAIL-01-C01",
+        "page": "WEB-DETAIL-01",
+        "def": "CL-WEB-C01",
+        "name": "桌面顶栏",
+        "region": "header",
+        "mode": "PAT-NAV-03",
+        "variant": "desktop-default",
+        "states": [
+          "DEFAULT",
+          "EXPANDED",
+          "ORDER_PENDING",
+          "SOLD_OUT",
+          "UNAVAILABLE",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "WEB-DETAIL-01-C02",
+        "page": "WEB-DETAIL-01",
+        "def": "CL-DETAIL-C01",
+        "name": "商品媒体图集",
+        "region": "left",
+        "mode": "PAT-GALLERY-01",
+        "variant": "desktop-hero",
+        "states": [
+          "DEFAULT",
+          "EXPANDED",
+          "ORDER_PENDING",
+          "SOLD_OUT",
+          "UNAVAILABLE",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "WEB-DETAIL-01-C03",
+        "page": "WEB-DETAIL-01",
+        "def": "CL-DETAIL-C02",
+        "name": "商品信息与购买状态",
+        "region": "left",
+        "mode": "PAT-CARD-02",
+        "variant": "desktop-stack",
+        "states": [
+          "DEFAULT",
+          "EXPANDED",
+          "ORDER_PENDING",
+          "SOLD_OUT",
+          "UNAVAILABLE",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "WEB-DETAIL-01-C04",
+        "page": "WEB-DETAIL-01",
+        "def": "CL-WEB-C02",
+        "name": "桌面购买卡",
+        "region": "right",
+        "mode": "PAT-CARD-01",
+        "variant": "desktop-sticky",
+        "states": [
+          "DEFAULT",
+          "EXPANDED",
+          "ORDER_PENDING",
+          "SOLD_OUT",
+          "UNAVAILABLE",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "WEB-DETAIL-01-C05",
+        "page": "WEB-DETAIL-01",
+        "def": "COM-CLIENT-C07",
+        "name": "客服入口",
+        "region": "left",
+        "mode": "PAT-EXTERNAL-01",
+        "variant": "desktop-inline",
+        "states": [
+          "DEFAULT",
+          "EXPANDED",
+          "ORDER_PENDING",
+          "SOLD_OUT",
+          "UNAVAILABLE",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "WEB-BUY-01-C01",
+        "page": "WEB-BUY-01",
+        "def": "CL-BUY-C01",
+        "name": "购买面板",
+        "region": "overlay",
+        "mode": "PAT-MODAL-02",
+        "variant": "desktop-center",
+        "states": [
+          "DEFAULT",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "LOGIN_REQUIRED",
+          "REALNAME_REQUIRED",
+          "MINOR_BLOCKED",
+          "PHONE_REQUIRED",
+          "BALANCE_LOW",
+          "STOCK_UNKNOWN",
+          "NOTICE"
+        ]
+      },
+      {
+        "id": "WEB-BUY-01-C02",
+        "page": "WEB-BUY-01",
+        "def": "COM-CLIENT-C10",
+        "name": "商品明细卡",
+        "region": "overlay",
+        "mode": "PAT-CARD-01",
+        "variant": "compact",
+        "states": [
+          "DEFAULT",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "LOGIN_REQUIRED",
+          "REALNAME_REQUIRED",
+          "MINOR_BLOCKED",
+          "PHONE_REQUIRED",
+          "BALANCE_LOW",
+          "STOCK_UNKNOWN",
+          "NOTICE"
+        ]
+      },
+      {
+        "id": "WEB-BUY-01-C03",
+        "page": "WEB-BUY-01",
+        "def": "CL-BUY-C02",
+        "name": "购买须知弹窗",
+        "region": "overlay",
+        "mode": "PAT-MODAL-03",
+        "variant": "desktop-center",
+        "states": [
+          "DEFAULT",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "LOGIN_REQUIRED",
+          "REALNAME_REQUIRED",
+          "MINOR_BLOCKED",
+          "PHONE_REQUIRED",
+          "BALANCE_LOW",
+          "STOCK_UNKNOWN",
+          "NOTICE"
+        ]
+      },
+      {
+        "id": "WEB-AGREEMENT-01-C01",
+        "page": "WEB-AGREEMENT-01",
+        "def": "CL-WEB-C01",
+        "name": "桌面顶栏",
+        "region": "header",
+        "mode": "PAT-NAV-03",
+        "variant": "desktop-default",
+        "states": [
+          "DEFAULT",
+          "SUBSTANTIVE",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "WEB-AGREEMENT-01-C02",
+        "page": "WEB-AGREEMENT-01",
+        "def": "CL-AGREEMENT-C01",
+        "name": "协议正文与版本",
+        "region": "main",
+        "mode": "PAT-CARD-01",
+        "variant": "desktop-reading",
+        "states": [
+          "DEFAULT",
+          "SUBSTANTIVE",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "WEB-AGREEMENT-01-C03",
+        "page": "WEB-AGREEMENT-01",
+        "def": "COM-CLIENT-C09",
+        "name": "加载/空/失败状态区",
+        "region": "main",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "inline",
+        "states": [
+          "DEFAULT",
+          "SUBSTANTIVE",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "WEB-REALNAME-01-C01",
+        "page": "WEB-REALNAME-01",
+        "def": "CL-AUTH-C02",
+        "name": "平台实名承接层",
+        "region": "overlay",
+        "mode": "PAT-MODAL-01",
+        "variant": "desktop-center",
+        "states": [
+          "SHOWN",
+          "LAUNCHING",
+          "UNAVAILABLE",
+          "SUCCESS",
+          "FAILED"
+        ]
+      },
+      {
+        "id": "WEB-PHONE-01-C01",
+        "page": "WEB-PHONE-01",
+        "def": "CL-WEB-C01",
+        "name": "桌面顶栏",
+        "region": "header",
+        "mode": "PAT-NAV-03",
+        "variant": "desktop-default",
+        "states": [
+          "DEFAULT",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "SUCCESS",
+          "ERROR",
+          "CANCELLED"
+        ]
+      },
+      {
+        "id": "WEB-PHONE-01-C02",
+        "page": "WEB-PHONE-01",
+        "def": "CL-PHONE-C01",
+        "name": "手机号绑定表单",
+        "region": "main",
+        "mode": "PAT-INPUT-03",
+        "variant": "desktop-form",
+        "states": [
+          "DEFAULT",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "SUCCESS",
+          "ERROR",
+          "CANCELLED"
+        ]
+      },
+      {
+        "id": "WEB-PHONE-01-C03",
+        "page": "WEB-PHONE-01",
+        "def": "COM-CLIENT-C09",
+        "name": "加载/空/失败状态区",
+        "region": "main",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "inline",
+        "states": [
+          "DEFAULT",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "SUCCESS",
+          "ERROR",
+          "CANCELLED"
+        ]
+      },
+      {
+        "id": "WEB-CHECKOUT-01-C01",
+        "page": "WEB-CHECKOUT-01",
+        "def": "CL-WEB-C01",
+        "name": "桌面顶栏",
+        "region": "header",
+        "mode": "PAT-NAV-03",
+        "variant": "desktop-default",
+        "states": [
+          "DEFAULT",
+          "EXPIRED",
+          "SUBMITTING",
+          "ERROR",
+          "RECONFIRM"
+        ]
+      },
+      {
+        "id": "WEB-CHECKOUT-01-C02",
+        "page": "WEB-CHECKOUT-01",
+        "def": "CL-CHECKOUT-C01",
+        "name": "订单明细与金额区",
+        "region": "left",
+        "mode": "PAT-CARD-01",
+        "variant": "desktop-checkout",
+        "states": [
+          "DEFAULT",
+          "EXPIRED",
+          "SUBMITTING",
+          "ERROR",
+          "RECONFIRM"
+        ]
+      },
+      {
+        "id": "WEB-CHECKOUT-01-C03",
+        "page": "WEB-CHECKOUT-01",
+        "def": "CL-WEB-C04",
+        "name": "桌面结算栏",
+        "region": "right",
+        "mode": "PAT-ACTION-02",
+        "variant": "desktop-summary",
+        "states": [
+          "DEFAULT",
+          "EXPIRED",
+          "SUBMITTING",
+          "ERROR",
+          "RECONFIRM"
+        ]
+      },
+      {
+        "id": "WEB-CHECKOUT-01-C04",
+        "page": "WEB-CHECKOUT-01",
+        "def": "COM-CLIENT-C09",
+        "name": "加载/空/失败状态区",
+        "region": "main",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "inline",
+        "states": [
+          "DEFAULT",
+          "EXPIRED",
+          "SUBMITTING",
+          "ERROR",
+          "RECONFIRM"
+        ]
+      },
+      {
+        "id": "WEB-PAYSCAN-01-C01",
+        "page": "WEB-PAYSCAN-01",
+        "def": "CL-PAY-C02",
+        "name": "扫码支付面板",
+        "region": "overlay",
+        "mode": "PAT-MODAL-02",
+        "variant": "desktop-qr",
+        "states": [
+          "WAITING",
+          "CONFIRMING",
+          "PAID",
+          "TIMEOUT"
+        ]
+      },
+      {
+        "id": "WEB-PAYRET-01-C01",
+        "page": "WEB-PAYRET-01",
+        "def": "CL-PAY-C01",
+        "name": "支付返回确认弹窗",
+        "region": "overlay",
+        "mode": "PAT-MODAL-03",
+        "variant": "desktop-center",
+        "states": [
+          "ASK",
+          "QUERYING",
+          "TIMEOUT",
+          "PAID",
+          "UNPAID"
+        ]
+      },
+      {
+        "id": "WEB-RESULT-01-C01",
+        "page": "WEB-RESULT-01",
+        "def": "CL-WEB-C01",
+        "name": "桌面顶栏",
+        "region": "header",
+        "mode": "PAT-NAV-03",
+        "variant": "desktop-default",
+        "states": [
+          "CODE_ISSUING",
+          "CODE_DELIVERED",
+          "GIFT_PENDING",
+          "DELIVERY_EXCEPTION",
+          "REFUNDING",
+          "REFUNDED",
+          "REFUND_FAILED",
+          "CONFIRMING",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "WEB-RESULT-01-C02",
+        "page": "WEB-RESULT-01",
+        "def": "CL-RESULT-C01",
+        "name": "结果状态与交付区",
+        "region": "main",
+        "mode": "PAT-CARD-02",
+        "variant": "desktop-result",
+        "states": [
+          "CODE_ISSUING",
+          "CODE_DELIVERED",
+          "GIFT_PENDING",
+          "DELIVERY_EXCEPTION",
+          "REFUNDING",
+          "REFUNDED",
+          "REFUND_FAILED",
+          "CONFIRMING",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "WEB-RESULT-01-C03",
+        "page": "WEB-RESULT-01",
+        "def": "COM-CLIENT-C07",
+        "name": "客服入口",
+        "region": "main",
+        "mode": "PAT-EXTERNAL-01",
+        "variant": "desktop-inline",
+        "states": [
+          "CODE_ISSUING",
+          "CODE_DELIVERED",
+          "GIFT_PENDING",
+          "DELIVERY_EXCEPTION",
+          "REFUNDING",
+          "REFUNDED",
+          "REFUND_FAILED",
+          "CONFIRMING",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "WEB-RESULT-01-C04",
+        "page": "WEB-RESULT-01",
+        "def": "COM-CLIENT-C09",
+        "name": "加载/空/失败状态区",
+        "region": "main",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "inline",
+        "states": [
+          "CODE_ISSUING",
+          "CODE_DELIVERED",
+          "GIFT_PENDING",
+          "DELIVERY_EXCEPTION",
+          "REFUNDING",
+          "REFUNDED",
+          "REFUND_FAILED",
+          "CONFIRMING",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "WEB-ORDER-01-C01",
+        "page": "WEB-ORDER-01",
+        "def": "CL-WEB-C01",
+        "name": "桌面顶栏",
+        "region": "header",
+        "mode": "PAT-NAV-03",
+        "variant": "desktop-default",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "SESSION_EXPIRED"
+        ]
+      },
+      {
+        "id": "WEB-ORDER-01-C02",
+        "page": "WEB-ORDER-01",
+        "def": "COM-CLIENT-C11",
+        "name": "状态筛选页签",
+        "region": "tabs",
+        "mode": "PAT-FILTER-02",
+        "variant": "desktop-row",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "SESSION_EXPIRED"
+        ]
+      },
+      {
+        "id": "WEB-ORDER-01-C03",
+        "page": "WEB-ORDER-01",
+        "def": "CL-WEB-C03",
+        "name": "桌面订单表",
+        "region": "main",
+        "mode": "PAT-TABLE-01",
+        "variant": "desktop-orders",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "SESSION_EXPIRED"
+        ]
+      },
+      {
+        "id": "WEB-ORDER-01-C05",
+        "page": "WEB-ORDER-01",
+        "def": "COM-CLIENT-C13",
+        "name": "登录失效引导",
+        "region": "main",
+        "mode": "PAT-FEEDBACK-02",
+        "variant": "desktop",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "SESSION_EXPIRED"
+        ]
+      },
+      {
+        "id": "WEB-ORDER-01-C04",
+        "page": "WEB-ORDER-01",
+        "def": "COM-CLIENT-C09",
+        "name": "加载/空/失败状态区",
+        "region": "main",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "inline",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "SESSION_EXPIRED"
+        ]
+      },
+      {
+        "id": "WEB-ORDER-02-C01",
+        "page": "WEB-ORDER-02",
+        "def": "CL-WEB-C01",
+        "name": "桌面顶栏",
+        "region": "header",
+        "mode": "PAT-NAV-03",
+        "variant": "desktop-default",
+        "states": [
+          "DEFAULT",
+          "CODE_DELIVERED",
+          "GIFT_PENDING",
+          "DELIVERY_EXCEPTION",
+          "REFUND_FAILED",
+          "CONFIRMING",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "WEB-ORDER-02-C02",
+        "page": "WEB-ORDER-02",
+        "def": "CL-ORDER-C01",
+        "name": "订单详情区",
+        "region": "main",
+        "mode": "PAT-CARD-01",
+        "variant": "desktop-detail",
+        "states": [
+          "DEFAULT",
+          "CODE_DELIVERED",
+          "GIFT_PENDING",
+          "DELIVERY_EXCEPTION",
+          "REFUND_FAILED",
+          "CONFIRMING",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "WEB-ORDER-02-C03",
+        "page": "WEB-ORDER-02",
+        "def": "CL-ORDER-C02",
+        "name": "订单操作记录时间线",
+        "region": "main",
+        "mode": "PAT-TIMELINE-01",
+        "variant": "compact",
+        "states": [
+          "DEFAULT",
+          "CODE_DELIVERED",
+          "GIFT_PENDING",
+          "DELIVERY_EXCEPTION",
+          "REFUND_FAILED",
+          "CONFIRMING",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "WEB-ORDER-02-C04",
+        "page": "WEB-ORDER-02",
+        "def": "COM-CLIENT-C07",
+        "name": "客服入口",
+        "region": "main",
+        "mode": "PAT-EXTERNAL-01",
+        "variant": "desktop-inline",
+        "states": [
+          "DEFAULT",
+          "CODE_DELIVERED",
+          "GIFT_PENDING",
+          "DELIVERY_EXCEPTION",
+          "REFUND_FAILED",
+          "CONFIRMING",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "WEB-PROFILE-01-C01",
+        "page": "WEB-PROFILE-01",
+        "def": "CL-WEB-C01",
+        "name": "桌面顶栏",
+        "region": "header",
+        "mode": "PAT-NAV-03",
+        "variant": "desktop-default",
+        "states": [
+          "LOGGED_IN",
+          "GUEST",
+          "UNKNOWN"
+        ]
+      },
+      {
+        "id": "WEB-PROFILE-01-C02",
+        "page": "WEB-PROFILE-01",
+        "def": "CL-PROFILE-C01",
+        "name": "个人中心区",
+        "region": "main",
+        "mode": "PAT-CARD-03",
+        "variant": "desktop-profile",
+        "states": [
+          "LOGGED_IN",
+          "GUEST",
+          "UNKNOWN"
+        ]
+      },
+      {
+        "id": "WEB-PROFILE-01-C03",
+        "page": "WEB-PROFILE-01",
+        "def": "COM-CLIENT-C07",
+        "name": "客服入口",
+        "region": "main",
+        "mode": "PAT-EXTERNAL-01",
+        "variant": "desktop-inline",
+        "states": [
+          "LOGGED_IN",
+          "GUEST",
+          "UNKNOWN"
+        ]
+      },
+      {
+        "id": "WEB-SERVICE-01-C01",
+        "page": "WEB-SERVICE-01",
+        "def": "CL-WEB-C01",
+        "name": "桌面顶栏",
+        "region": "header",
+        "mode": "PAT-NAV-03",
+        "variant": "desktop-default",
+        "states": [
+          "WITH_ORDER",
+          "NO_ORDER",
+          "FALLBACK"
+        ]
+      },
+      {
+        "id": "WEB-SERVICE-01-C02",
+        "page": "WEB-SERVICE-01",
+        "def": "CL-SERVICE-C01",
+        "name": "客服联系区",
+        "region": "main",
+        "mode": "PAT-EXTERNAL-01",
+        "variant": "desktop-card",
+        "states": [
+          "WITH_ORDER",
+          "NO_ORDER",
+          "FALLBACK"
+        ]
+      },
+      {
+        "id": "ADM-LOGIN-01-C01",
+        "page": "ADM-LOGIN-01",
+        "def": "ADM-LOGIN-C01",
+        "name": "登录表单",
+        "region": "main",
+        "mode": "PAT-INPUT-03",
+        "variant": "admin-login",
+        "states": [
+          "DEFAULT",
+          "ERROR",
+          "LOCKED",
+          "SUBMITTING"
+        ]
+      },
+      {
+        "id": "ADM-HOME-01-C01",
+        "page": "ADM-HOME-01",
+        "def": "ADM-COMMON-C01",
+        "name": "左侧业务菜单",
+        "region": "nav",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "SUCCESS",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-HOME-01-C02",
+        "page": "ADM-HOME-01",
+        "def": "ADM-COMMON-C02",
+        "name": "顶部账号栏",
+        "region": "header",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "SUCCESS",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-HOME-01-C03",
+        "page": "ADM-HOME-01",
+        "def": "ADM-HOME-C01",
+        "name": "首页配置表单",
+        "region": "main",
+        "mode": "PAT-INPUT-03",
+        "variant": "admin-config",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "SUCCESS",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-HOME-01-C04",
+        "page": "ADM-HOME-01",
+        "def": "ADM-COMMON-C11",
+        "name": "空态/错误/无权限区",
+        "region": "main",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "admin",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "SUCCESS",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-PRODUCT-01-C01",
+        "page": "ADM-PRODUCT-01",
+        "def": "ADM-COMMON-C01",
+        "name": "左侧业务菜单",
+        "region": "nav",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-PRODUCT-01-C02",
+        "page": "ADM-PRODUCT-01",
+        "def": "ADM-COMMON-C02",
+        "name": "顶部账号栏",
+        "region": "header",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-PRODUCT-01-C03",
+        "page": "ADM-PRODUCT-01",
+        "def": "ADM-COMMON-C03",
+        "name": "筛选区",
+        "region": "filters",
+        "mode": "PAT-FILTER-03",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-PRODUCT-01-C04",
+        "page": "ADM-PRODUCT-01",
+        "def": "ADM-COMMON-C04",
+        "name": "状态页签",
+        "region": "tabs",
+        "mode": "PAT-FILTER-02",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-PRODUCT-01-C05",
+        "page": "ADM-PRODUCT-01",
+        "def": "ADM-COMMON-C05",
+        "name": "数据表格",
+        "region": "table",
+        "mode": "PAT-TABLE-02",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-PRODUCT-01-C06",
+        "page": "ADM-PRODUCT-01",
+        "def": "ADM-COMMON-C06",
+        "name": "分页",
+        "region": "pagination",
+        "mode": "PAT-PAGE-02",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-PRODUCT-01-C07",
+        "page": "ADM-PRODUCT-01",
+        "def": "ADM-PRODUCT-C01",
+        "name": "商品选品编辑表单",
+        "region": "drawer",
+        "mode": "PAT-DRAWER-02",
+        "variant": "admin-edit",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-PRODUCT-01-C08",
+        "page": "ADM-PRODUCT-01",
+        "def": "ADM-COMMON-C09",
+        "name": "导出动作",
+        "region": "toolbar",
+        "mode": "PAT-EXPORT-01",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-PRODUCT-01-C09",
+        "page": "ADM-PRODUCT-01",
+        "def": "ADM-COMMON-C11",
+        "name": "空态/错误/无权限区",
+        "region": "table",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-SUPPLIER-01-C01",
+        "page": "ADM-SUPPLIER-01",
+        "def": "ADM-COMMON-C01",
+        "name": "左侧业务菜单",
+        "region": "nav",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "SUCCESS",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-SUPPLIER-01-C02",
+        "page": "ADM-SUPPLIER-01",
+        "def": "ADM-COMMON-C02",
+        "name": "顶部账号栏",
+        "region": "header",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "SUCCESS",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-SUPPLIER-01-C03",
+        "page": "ADM-SUPPLIER-01",
+        "def": "ADM-SUPPLIER-C01",
+        "name": "供应商配置表单",
+        "region": "main",
+        "mode": "PAT-INPUT-03",
+        "variant": "admin-config",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "SUCCESS",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-SUPPLIER-01-C04",
+        "page": "ADM-SUPPLIER-01",
+        "def": "ADM-COMMON-C11",
+        "name": "空态/错误/无权限区",
+        "region": "main",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "admin",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "SUCCESS",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-STOCK-01-C01",
+        "page": "ADM-STOCK-01",
+        "def": "ADM-COMMON-C01",
+        "name": "左侧业务菜单",
+        "region": "nav",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-STOCK-01-C02",
+        "page": "ADM-STOCK-01",
+        "def": "ADM-COMMON-C02",
+        "name": "顶部账号栏",
+        "region": "header",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-STOCK-01-C03",
+        "page": "ADM-STOCK-01",
+        "def": "ADM-COMMON-C03",
+        "name": "筛选区",
+        "region": "filters",
+        "mode": "PAT-FILTER-03",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-STOCK-01-C04",
+        "page": "ADM-STOCK-01",
+        "def": "ADM-STOCK-C01",
+        "name": "库存新鲜度摘要",
+        "region": "metrics",
+        "mode": "PAT-CARD-04",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-STOCK-01-C05",
+        "page": "ADM-STOCK-01",
+        "def": "ADM-COMMON-C05",
+        "name": "数据表格",
+        "region": "table",
+        "mode": "PAT-TABLE-02",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-STOCK-01-C06",
+        "page": "ADM-STOCK-01",
+        "def": "ADM-COMMON-C06",
+        "name": "分页",
+        "region": "pagination",
+        "mode": "PAT-PAGE-02",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-STOCK-01-C07",
+        "page": "ADM-STOCK-01",
+        "def": "ADM-COMMON-C11",
+        "name": "空态/错误/无权限区",
+        "region": "table",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-ORDER-01-C01",
+        "page": "ADM-ORDER-01",
+        "def": "ADM-COMMON-C01",
+        "name": "左侧业务菜单",
+        "region": "nav",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-ORDER-01-C02",
+        "page": "ADM-ORDER-01",
+        "def": "ADM-COMMON-C02",
+        "name": "顶部账号栏",
+        "region": "header",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-ORDER-01-C03",
+        "page": "ADM-ORDER-01",
+        "def": "ADM-COMMON-C03",
+        "name": "筛选区",
+        "region": "filters",
+        "mode": "PAT-FILTER-03",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-ORDER-01-C04",
+        "page": "ADM-ORDER-01",
+        "def": "ADM-COMMON-C04",
+        "name": "状态页签",
+        "region": "tabs",
+        "mode": "PAT-FILTER-02",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-ORDER-01-C05",
+        "page": "ADM-ORDER-01",
+        "def": "ADM-COMMON-C05",
+        "name": "数据表格",
+        "region": "table",
+        "mode": "PAT-TABLE-02",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-ORDER-01-C06",
+        "page": "ADM-ORDER-01",
+        "def": "ADM-COMMON-C06",
+        "name": "分页",
+        "region": "pagination",
+        "mode": "PAT-PAGE-02",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-ORDER-01-C07",
+        "page": "ADM-ORDER-01",
+        "def": "ADM-ORDER-C01",
+        "name": "订单详情区",
+        "region": "drawer",
+        "mode": "PAT-DRAWER-01",
+        "variant": "admin-detail",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-ORDER-01-C08",
+        "page": "ADM-ORDER-01",
+        "def": "ADM-COMMON-C09",
+        "name": "导出动作",
+        "region": "toolbar",
+        "mode": "PAT-EXPORT-01",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-ORDER-01-C09",
+        "page": "ADM-ORDER-01",
+        "def": "ADM-COMMON-C11",
+        "name": "空态/错误/无权限区",
+        "region": "table",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-GIFT-01-C01",
+        "page": "ADM-GIFT-01",
+        "def": "ADM-COMMON-C01",
+        "name": "左侧业务菜单",
+        "region": "nav",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-GIFT-01-C02",
+        "page": "ADM-GIFT-01",
+        "def": "ADM-COMMON-C02",
+        "name": "顶部账号栏",
+        "region": "header",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-GIFT-01-C03",
+        "page": "ADM-GIFT-01",
+        "def": "ADM-COMMON-C03",
+        "name": "筛选区",
+        "region": "filters",
+        "mode": "PAT-FILTER-03",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-GIFT-01-C04",
+        "page": "ADM-GIFT-01",
+        "def": "ADM-COMMON-C04",
+        "name": "状态页签",
+        "region": "tabs",
+        "mode": "PAT-FILTER-02",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-GIFT-01-C05",
+        "page": "ADM-GIFT-01",
+        "def": "ADM-COMMON-C05",
+        "name": "数据表格",
+        "region": "table",
+        "mode": "PAT-TABLE-02",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-GIFT-01-C06",
+        "page": "ADM-GIFT-01",
+        "def": "ADM-COMMON-C06",
+        "name": "分页",
+        "region": "pagination",
+        "mode": "PAT-PAGE-02",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-GIFT-01-C07",
+        "page": "ADM-GIFT-01",
+        "def": "ADM-COMMON-C08",
+        "name": "行选择与批量",
+        "region": "table",
+        "mode": "PAT-BATCH-01",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-GIFT-01-C08",
+        "page": "ADM-GIFT-01",
+        "def": "ADM-GIFT-C01",
+        "name": "赠送批次处理面板",
+        "region": "drawer",
+        "mode": "PAT-DRAWER-02",
+        "variant": "admin-process",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-GIFT-01-C09",
+        "page": "ADM-GIFT-01",
+        "def": "ADM-COMMON-C11",
+        "name": "空态/错误/无权限区",
+        "region": "table",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-CODE-01-C01",
+        "page": "ADM-CODE-01",
+        "def": "ADM-COMMON-C01",
+        "name": "左侧业务菜单",
+        "region": "nav",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-CODE-01-C02",
+        "page": "ADM-CODE-01",
+        "def": "ADM-COMMON-C02",
+        "name": "顶部账号栏",
+        "region": "header",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-CODE-01-C03",
+        "page": "ADM-CODE-01",
+        "def": "ADM-COMMON-C03",
+        "name": "筛选区",
+        "region": "filters",
+        "mode": "PAT-FILTER-03",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-CODE-01-C04",
+        "page": "ADM-CODE-01",
+        "def": "ADM-COMMON-C04",
+        "name": "状态页签",
+        "region": "tabs",
+        "mode": "PAT-FILTER-02",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-CODE-01-C05",
+        "page": "ADM-CODE-01",
+        "def": "ADM-COMMON-C05",
+        "name": "数据表格",
+        "region": "table",
+        "mode": "PAT-TABLE-02",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-CODE-01-C06",
+        "page": "ADM-CODE-01",
+        "def": "ADM-COMMON-C06",
+        "name": "分页",
+        "region": "pagination",
+        "mode": "PAT-PAGE-02",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-CODE-01-C07",
+        "page": "ADM-CODE-01",
+        "def": "ADM-CODE-C01",
+        "name": "口令码处理面板",
+        "region": "drawer",
+        "mode": "PAT-DRAWER-02",
+        "variant": "admin-process",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-CODE-01-C08",
+        "page": "ADM-CODE-01",
+        "def": "ADM-COMMON-C11",
+        "name": "空态/错误/无权限区",
+        "region": "table",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-REFUND-01-C01",
+        "page": "ADM-REFUND-01",
+        "def": "ADM-COMMON-C01",
+        "name": "左侧业务菜单",
+        "region": "nav",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-REFUND-01-C02",
+        "page": "ADM-REFUND-01",
+        "def": "ADM-COMMON-C02",
+        "name": "顶部账号栏",
+        "region": "header",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-REFUND-01-C03",
+        "page": "ADM-REFUND-01",
+        "def": "ADM-COMMON-C03",
+        "name": "筛选区",
+        "region": "filters",
+        "mode": "PAT-FILTER-03",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-REFUND-01-C04",
+        "page": "ADM-REFUND-01",
+        "def": "ADM-COMMON-C04",
+        "name": "状态页签",
+        "region": "tabs",
+        "mode": "PAT-FILTER-02",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-REFUND-01-C05",
+        "page": "ADM-REFUND-01",
+        "def": "ADM-COMMON-C05",
+        "name": "数据表格",
+        "region": "table",
+        "mode": "PAT-TABLE-02",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-REFUND-01-C06",
+        "page": "ADM-REFUND-01",
+        "def": "ADM-COMMON-C06",
+        "name": "分页",
+        "region": "pagination",
+        "mode": "PAT-PAGE-02",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-REFUND-01-C07",
+        "page": "ADM-REFUND-01",
+        "def": "ADM-REFUND-C01",
+        "name": "退款审核面板",
+        "region": "drawer",
+        "mode": "PAT-DRAWER-02",
+        "variant": "admin-approve",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-REFUND-01-C08",
+        "page": "ADM-REFUND-01",
+        "def": "ADM-COMMON-C11",
+        "name": "空态/错误/无权限区",
+        "region": "table",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-SERVICE-01-C01",
+        "page": "ADM-SERVICE-01",
+        "def": "ADM-COMMON-C01",
+        "name": "左侧业务菜单",
+        "region": "nav",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "SUCCESS",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-SERVICE-01-C02",
+        "page": "ADM-SERVICE-01",
+        "def": "ADM-COMMON-C02",
+        "name": "顶部账号栏",
+        "region": "header",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "SUCCESS",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-SERVICE-01-C03",
+        "page": "ADM-SERVICE-01",
+        "def": "ADM-SERVICE-C01",
+        "name": "客服配置表单",
+        "region": "main",
+        "mode": "PAT-INPUT-03",
+        "variant": "admin-config",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "SUCCESS",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-SERVICE-01-C04",
+        "page": "ADM-SERVICE-01",
+        "def": "ADM-COMMON-C11",
+        "name": "空态/错误/无权限区",
+        "region": "main",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "admin",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "SUCCESS",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-RBAC-01-C01",
+        "page": "ADM-RBAC-01",
+        "def": "ADM-COMMON-C01",
+        "name": "左侧业务菜单",
+        "region": "nav",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM",
+          "DRAWER"
+        ]
+      },
+      {
+        "id": "ADM-RBAC-01-C02",
+        "page": "ADM-RBAC-01",
+        "def": "ADM-COMMON-C02",
+        "name": "顶部账号栏",
+        "region": "header",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM",
+          "DRAWER"
+        ]
+      },
+      {
+        "id": "ADM-RBAC-01-C03",
+        "page": "ADM-RBAC-01",
+        "def": "ADM-COMMON-C04",
+        "name": "状态页签",
+        "region": "tabs",
+        "mode": "PAT-FILTER-02",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM",
+          "DRAWER"
+        ]
+      },
+      {
+        "id": "ADM-RBAC-01-C04",
+        "page": "ADM-RBAC-01",
+        "def": "ADM-COMMON-C05",
+        "name": "数据表格",
+        "region": "table",
+        "mode": "PAT-TABLE-02",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM",
+          "DRAWER"
+        ]
+      },
+      {
+        "id": "ADM-RBAC-01-C05",
+        "page": "ADM-RBAC-01",
+        "def": "ADM-RBAC-C01",
+        "name": "角色权限矩阵",
+        "region": "drawer",
+        "mode": "PAT-DRAWER-02",
+        "variant": "admin-rbac",
+        "states": [
+          "RESULTS",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM",
+          "DRAWER"
+        ]
+      },
+      {
+        "id": "ADM-RBAC-01-C06",
+        "page": "ADM-RBAC-01",
+        "def": "ADM-COMMON-C11",
+        "name": "空态/错误/无权限区",
+        "region": "table",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM",
+          "DRAWER"
+        ]
+      },
+      {
+        "id": "ADM-AUDIT-01-C01",
+        "page": "ADM-AUDIT-01",
+        "def": "ADM-COMMON-C01",
+        "name": "左侧业务菜单",
+        "region": "nav",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-AUDIT-01-C02",
+        "page": "ADM-AUDIT-01",
+        "def": "ADM-COMMON-C02",
+        "name": "顶部账号栏",
+        "region": "header",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-AUDIT-01-C03",
+        "page": "ADM-AUDIT-01",
+        "def": "ADM-COMMON-C03",
+        "name": "筛选区",
+        "region": "filters",
+        "mode": "PAT-FILTER-03",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-AUDIT-01-C04",
+        "page": "ADM-AUDIT-01",
+        "def": "ADM-COMMON-C05",
+        "name": "数据表格",
+        "region": "table",
+        "mode": "PAT-TABLE-02",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-AUDIT-01-C05",
+        "page": "ADM-AUDIT-01",
+        "def": "ADM-COMMON-C06",
+        "name": "分页",
+        "region": "pagination",
+        "mode": "PAT-PAGE-02",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-AUDIT-01-C06",
+        "page": "ADM-AUDIT-01",
+        "def": "ADM-AUDIT-C01",
+        "name": "操作记录详情",
+        "region": "drawer",
+        "mode": "PAT-DRAWER-01",
+        "variant": "admin-detail",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-AUDIT-01-C07",
+        "page": "ADM-AUDIT-01",
+        "def": "ADM-COMMON-C11",
+        "name": "空态/错误/无权限区",
+        "region": "table",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-AGREEMENT-01-C01",
+        "page": "ADM-AGREEMENT-01",
+        "def": "ADM-COMMON-C01",
+        "name": "左侧业务菜单",
+        "region": "nav",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "SUCCESS",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-AGREEMENT-01-C02",
+        "page": "ADM-AGREEMENT-01",
+        "def": "ADM-COMMON-C02",
+        "name": "顶部账号栏",
+        "region": "header",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "SUCCESS",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-AGREEMENT-01-C03",
+        "page": "ADM-AGREEMENT-01",
+        "def": "ADM-AGREEMENT-C01",
+        "name": "协议编辑与发布",
+        "region": "main",
+        "mode": "PAT-INPUT-03",
+        "variant": "admin-editor",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "SUCCESS",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-AGREEMENT-01-C04",
+        "page": "ADM-AGREEMENT-01",
+        "def": "ADM-COMMON-C11",
+        "name": "空态/错误/无权限区",
+        "region": "main",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "admin",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "SUCCESS",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-SEARCH-01-C01",
+        "page": "ADM-SEARCH-01",
+        "def": "ADM-COMMON-C01",
+        "name": "左侧业务菜单",
+        "region": "nav",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "SUCCESS",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-SEARCH-01-C02",
+        "page": "ADM-SEARCH-01",
+        "def": "ADM-COMMON-C02",
+        "name": "顶部账号栏",
+        "region": "header",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "SUCCESS",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-SEARCH-01-C03",
+        "page": "ADM-SEARCH-01",
+        "def": "ADM-SEARCH-C01",
+        "name": "搜索推荐配置",
+        "region": "main",
+        "mode": "PAT-INPUT-03",
+        "variant": "admin-config",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "SUCCESS",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-SEARCH-01-C04",
+        "page": "ADM-SEARCH-01",
+        "def": "ADM-COMMON-C11",
+        "name": "空态/错误/无权限区",
+        "region": "main",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "admin",
+        "states": [
+          "DEFAULT",
+          "EDITING",
+          "VALIDATION_ERROR",
+          "SUBMITTING",
+          "SUCCESS",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-PAYCHECK-01-C01",
+        "page": "ADM-PAYCHECK-01",
+        "def": "ADM-COMMON-C01",
+        "name": "左侧业务菜单",
+        "region": "nav",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-PAYCHECK-01-C02",
+        "page": "ADM-PAYCHECK-01",
+        "def": "ADM-COMMON-C02",
+        "name": "顶部账号栏",
+        "region": "header",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-PAYCHECK-01-C03",
+        "page": "ADM-PAYCHECK-01",
+        "def": "ADM-COMMON-C03",
+        "name": "筛选区",
+        "region": "filters",
+        "mode": "PAT-FILTER-03",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-PAYCHECK-01-C04",
+        "page": "ADM-PAYCHECK-01",
+        "def": "ADM-COMMON-C04",
+        "name": "状态页签",
+        "region": "tabs",
+        "mode": "PAT-FILTER-02",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-PAYCHECK-01-C05",
+        "page": "ADM-PAYCHECK-01",
+        "def": "ADM-COMMON-C05",
+        "name": "数据表格",
+        "region": "table",
+        "mode": "PAT-TABLE-02",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-PAYCHECK-01-C06",
+        "page": "ADM-PAYCHECK-01",
+        "def": "ADM-COMMON-C06",
+        "name": "分页",
+        "region": "pagination",
+        "mode": "PAT-PAGE-02",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-PAYCHECK-01-C07",
+        "page": "ADM-PAYCHECK-01",
+        "def": "ADM-PAYCHECK-C01",
+        "name": "支付核查面板",
+        "region": "drawer",
+        "mode": "PAT-DRAWER-02",
+        "variant": "admin-check",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-PAYCHECK-01-C08",
+        "page": "ADM-PAYCHECK-01",
+        "def": "ADM-COMMON-C11",
+        "name": "空态/错误/无权限区",
+        "region": "table",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-NOTIFY-01-C01",
+        "page": "ADM-NOTIFY-01",
+        "def": "ADM-COMMON-C01",
+        "name": "左侧业务菜单",
+        "region": "nav",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-NOTIFY-01-C02",
+        "page": "ADM-NOTIFY-01",
+        "def": "ADM-COMMON-C02",
+        "name": "顶部账号栏",
+        "region": "header",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-NOTIFY-01-C03",
+        "page": "ADM-NOTIFY-01",
+        "def": "ADM-COMMON-C03",
+        "name": "筛选区",
+        "region": "filters",
+        "mode": "PAT-FILTER-03",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-NOTIFY-01-C04",
+        "page": "ADM-NOTIFY-01",
+        "def": "ADM-COMMON-C04",
+        "name": "状态页签",
+        "region": "tabs",
+        "mode": "PAT-FILTER-02",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-NOTIFY-01-C05",
+        "page": "ADM-NOTIFY-01",
+        "def": "ADM-COMMON-C05",
+        "name": "数据表格",
+        "region": "table",
+        "mode": "PAT-TABLE-02",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-NOTIFY-01-C06",
+        "page": "ADM-NOTIFY-01",
+        "def": "ADM-COMMON-C06",
+        "name": "分页",
+        "region": "pagination",
+        "mode": "PAT-PAGE-02",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-NOTIFY-01-C07",
+        "page": "ADM-NOTIFY-01",
+        "def": "ADM-NOTIFY-C01",
+        "name": "通知任务详情",
+        "region": "drawer",
+        "mode": "PAT-DRAWER-01",
+        "variant": "admin-detail",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-NOTIFY-01-C08",
+        "page": "ADM-NOTIFY-01",
+        "def": "ADM-COMMON-C11",
+        "name": "空态/错误/无权限区",
+        "region": "table",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM"
+        ]
+      },
+      {
+        "id": "ADM-WALLET-01-C01",
+        "page": "ADM-WALLET-01",
+        "def": "ADM-COMMON-C01",
+        "name": "左侧业务菜单",
+        "region": "nav",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM",
+          "EDITING",
+          "SUCCESS"
+        ]
+      },
+      {
+        "id": "ADM-WALLET-01-C02",
+        "page": "ADM-WALLET-01",
+        "def": "ADM-COMMON-C02",
+        "name": "顶部账号栏",
+        "region": "header",
+        "mode": "PAT-NAV-04",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM",
+          "EDITING",
+          "SUCCESS"
+        ]
+      },
+      {
+        "id": "ADM-WALLET-01-C03",
+        "page": "ADM-WALLET-01",
+        "def": "ADM-COMMON-C10",
+        "name": "指标汇总卡",
+        "region": "metrics",
+        "mode": "PAT-CARD-04",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM",
+          "EDITING",
+          "SUCCESS"
+        ]
+      },
+      {
+        "id": "ADM-WALLET-01-C04",
+        "page": "ADM-WALLET-01",
+        "def": "ADM-WALLET-C01",
+        "name": "钱包阈值与充值记录",
+        "region": "main",
+        "mode": "PAT-INPUT-03",
+        "variant": "admin-config",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM",
+          "EDITING",
+          "SUCCESS"
+        ]
+      },
+      {
+        "id": "ADM-WALLET-01-C05",
+        "page": "ADM-WALLET-01",
+        "def": "ADM-COMMON-C11",
+        "name": "空态/错误/无权限区",
+        "region": "main",
+        "mode": "PAT-FEEDBACK-01",
+        "variant": "admin",
+        "states": [
+          "RESULTS",
+          "LOADING",
+          "EMPTY",
+          "ERROR",
+          "NO_PERM",
+          "EDITING",
+          "SUCCESS"
+        ]
+      }
+    ],
+    "definitions": [
+      {
+        "id": "COM-CLIENT-C01",
+        "name": "搜索输入框",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "COM-CLIENT-C02",
+        "name": "搜索提交动作",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "COM-CLIENT-C03",
+        "name": "商品卡片",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "COM-CLIENT-C04",
+        "name": "卡片列表容器",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "COM-CLIENT-C05",
+        "name": "排序/筛选栏",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "COM-CLIENT-C06",
+        "name": "商品卡片列表",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "COM-CLIENT-C07",
+        "name": "客服入口",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "COM-CLIENT-C08",
+        "name": "顶部标题栏",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "COM-CLIENT-C09",
+        "name": "加载/空/失败状态区",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "COM-CLIENT-C10",
+        "name": "商品明细卡",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "COM-CLIENT-C11",
+        "name": "状态筛选页签",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "COM-CLIENT-C12",
+        "name": "订单卡片列表",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "COM-CLIENT-C13",
+        "name": "登录失效引导",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "COM-CLIENT-C14",
+        "name": "底部标签栏",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "CL-HOME-C01",
+        "name": "首页内容区",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "CL-AUTH-C01",
+        "name": "首次实名提醒弹层",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "CL-SEARCH-C01",
+        "name": "搜索发现与热门区",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "CL-DETAIL-C01",
+        "name": "商品媒体图集",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "CL-DETAIL-C02",
+        "name": "商品信息与购买状态",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "CL-DETAIL-C03",
+        "name": "底部购买操作栏",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "CL-BUY-C01",
+        "name": "购买面板",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "CL-BUY-C02",
+        "name": "购买须知弹窗",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "CL-AUTH-C02",
+        "name": "平台实名承接层",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "CL-PHONE-C01",
+        "name": "手机号绑定表单",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "CL-AGREEMENT-C01",
+        "name": "协议正文与版本",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "CL-CHECKOUT-C01",
+        "name": "订单明细与金额区",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "CL-CHECKOUT-C02",
+        "name": "协议与继续支付栏",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "CL-PAY-C01",
+        "name": "支付返回确认弹窗",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "CL-PAY-C02",
+        "name": "扫码支付面板",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "CL-RESULT-C01",
+        "name": "结果状态与交付区",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "CL-ORDER-C01",
+        "name": "订单详情区",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "CL-ORDER-C02",
+        "name": "订单操作记录时间线",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "CL-PROFILE-C01",
+        "name": "个人中心区",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "CL-SERVICE-C01",
+        "name": "客服联系区",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "CL-WEB-C01",
+        "name": "桌面顶栏",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "CL-WEB-C02",
+        "name": "桌面购买卡",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "CL-WEB-C03",
+        "name": "桌面订单表",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "CL-WEB-C04",
+        "name": "桌面结算栏",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "ADM-COMMON-C01",
+        "name": "左侧业务菜单",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "ADM-COMMON-C02",
+        "name": "顶部账号栏",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "ADM-COMMON-C03",
+        "name": "筛选区",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "ADM-COMMON-C04",
+        "name": "状态页签",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "ADM-COMMON-C05",
+        "name": "数据表格",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "ADM-COMMON-C06",
+        "name": "分页",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "ADM-COMMON-C07",
+        "name": "详情/编辑弹窗",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "ADM-COMMON-C08",
+        "name": "行选择与批量",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "ADM-COMMON-C09",
+        "name": "导出动作",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "ADM-COMMON-C10",
+        "name": "指标汇总卡",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "ADM-COMMON-C11",
+        "name": "空态/错误/无权限区",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "ADM-LOGIN-C01",
+        "name": "登录表单",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "ADM-HOME-C01",
+        "name": "首页配置表单",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "ADM-PRODUCT-C01",
+        "name": "商品选品编辑表单",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "ADM-SUPPLIER-C01",
+        "name": "供应商配置表单",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "ADM-STOCK-C01",
+        "name": "库存新鲜度摘要",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "ADM-ORDER-C01",
+        "name": "订单详情区",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "ADM-GIFT-C01",
+        "name": "赠送批次处理面板",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "ADM-CODE-C01",
+        "name": "口令码处理面板",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "ADM-REFUND-C01",
+        "name": "退款审核面板",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "ADM-SERVICE-C01",
+        "name": "客服配置表单",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "ADM-RBAC-C01",
+        "name": "角色权限矩阵",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "ADM-AUDIT-C01",
+        "name": "操作记录详情",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "ADM-AGREEMENT-C01",
+        "name": "协议编辑与发布",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "ADM-SEARCH-C01",
+        "name": "搜索推荐配置",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "ADM-PAYCHECK-C01",
+        "name": "支付核查面板",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "ADM-NOTIFY-C01",
+        "name": "通知任务详情",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      },
+      {
+        "id": "ADM-WALLET-C01",
+        "name": "钱包阈值与充值记录",
+        "sections": [
+          "功能/组件名称",
+          "数据来源",
+          "功能交互逻辑",
+          "界面反馈与体验表现",
+          "组件样式",
+          "状态变更",
+          "数据流转与接口",
+          "埋点和日志",
+          "测试与验收条件",
+          "待确认项"
+        ]
+      }
+    ],
+    "diagrams": [
+      {
+        "id": "FL-CHECKOUT-001",
+        "title": "购买主流程",
+        "type": "FL",
+        "source_chars": 1251,
+        "svg_chars": 23088
+      },
+      {
+        "id": "FL-CODE-001",
+        "title": "口令码自动交付与 24 小时重试",
+        "type": "FL",
+        "source_chars": 998,
+        "svg_chars": 15706
+      },
+      {
+        "id": "FL-GIFT-001",
+        "title": "好友赠送人工交付",
+        "type": "FL",
+        "source_chars": 637,
+        "svg_chars": 10002
+      },
+      {
+        "id": "FL-PAY-001",
+        "title": "支付返回、确认中与晚到款",
+        "type": "FL",
+        "source_chars": 956,
+        "svg_chars": 16885
+      },
+      {
+        "id": "FL-REFUND-001",
+        "title": "退款闭环",
+        "type": "FL",
+        "source_chars": 757,
+        "svg_chars": 12949
+      },
+      {
+        "id": "FL-AGREEMENT-001",
+        "title": "协议版本变化处理",
+        "type": "FL",
+        "source_chars": 503,
+        "svg_chars": 7556
+      },
+      {
+        "id": "FL-ADMIN-PUBLISH-001",
+        "title": "商品选品、定价与发布",
+        "type": "FL",
+        "source_chars": 609,
+        "svg_chars": 9239
+      },
+      {
+        "id": "SM-PAY-001",
+        "title": "订单支付状态机",
+        "type": "SM",
+        "source_chars": 498,
+        "svg_chars": 7201
+      },
+      {
+        "id": "SM-CODE-001",
+        "title": "口令码交付状态机",
+        "type": "SM",
+        "source_chars": 463,
+        "svg_chars": 5748
+      },
+      {
+        "id": "SM-GIFT-001",
+        "title": "好友赠送状态机",
+        "type": "SM",
+        "source_chars": 398,
+        "svg_chars": 5016
+      },
+      {
+        "id": "SM-REFUND-001",
+        "title": "退款单状态机",
+        "type": "SM",
+        "source_chars": 379,
+        "svg_chars": 4851
+      },
+      {
+        "id": "SM-NOTIFY-001",
+        "title": "站内信任务状态机",
+        "type": "SM",
+        "source_chars": 391,
+        "svg_chars": 5025
+      },
+      {
+        "id": "SM-PRODUCT-001",
+        "title": "商品选品与发布状态机",
+        "type": "SM",
+        "source_chars": 471,
+        "svg_chars": 6066
+      },
+      {
+        "id": "SM-PAYCHECK-001",
+        "title": "支付核查状态机",
+        "type": "SM",
+        "source_chars": 369,
+        "svg_chars": 4741
+      },
+      {
+        "id": "SEQ-PAY-001",
+        "title": "下单支付与结果查询",
+        "type": "SEQ",
+        "source_chars": 534,
+        "svg_chars": 8980
+      },
+      {
+        "id": "SEQ-CODE-001",
+        "title": "自动取码与重试",
+        "type": "SEQ",
+        "source_chars": 608,
+        "svg_chars": 7666
+      },
+      {
+        "id": "SEQ-GIFT-001",
+        "title": "好友赠送批次交付",
+        "type": "SEQ",
+        "source_chars": 444,
+        "svg_chars": 7033
+      },
+      {
+        "id": "SEQ-NOTIFY-001",
+        "title": "站内信通知与重试",
+        "type": "SEQ",
+        "source_chars": 506,
+        "svg_chars": 8006
+      },
+      {
+        "id": "SEQ-REFUND-001",
+        "title": "退款执行与失败重试",
+        "type": "SEQ",
+        "source_chars": 465,
+        "svg_chars": 8073
+      },
+      {
+        "id": "SEQ-PAYCHECK-001",
+        "title": "支付核查与晚到款",
+        "type": "SEQ",
+        "source_chars": 418,
+        "svg_chars": 7029
+      }
+    ],
+    "project": {
+      "name": "Steam商城首期",
+      "version": "V1.6.0",
+      "batch": "BATCH-2026-10-27-01",
+      "prd": "Steam商城_PRD_V1.6.md",
+      "prdVersion": "V1.6",
+      "prdDate": "2026-10-22",
+      "prdStatus": "待评审",
+      "prdHash": "4b66a358fc5d6181ca04203ebcd39be6340587311ac8202094eeee61a8b0fe01",
+      "standardCommit": "c4a6d81aa8881f61d4fc5a48c18cda8191daf55f",
+      "ruleVersion": "V3.0",
+      "layoutRevision": "modular-1",
+      "contentRevision": "draft-20261027-stable-generation",
+      "completion": "设计评审稿",
+      "profileHash": "310b3a4c7651b8bb0f5ec04a0d3d4ad4c5e7406262cdf5f0269b53363bf61dbc"
+    },
+    "profile": {
+      "uiProfileId": "uip-steam-final-grayscale-20261026",
+      "uiProfileRevision": "r1",
+      "uiProfileSource": "人工处理后的最终版稳定视觉/布局/组件/交互特征；reference/projects/steam-store.md（69480fcf6718a918a9fdbcb62116c6cc9407b8ccda344a0cce5e0f1204a4f7a3a）；不含商城专属业务入口",
+      "uiProfileHash": "310b3a4c7651b8bb0f5ec04a0d3d4ad4c5e7406262cdf5f0269b53363bf61dbc",
+      "tokens": {
+        "bg": "#f4f4f4",
+        "panel": "#ffffff",
+        "ink": "#242424",
+        "muted": "#6b6b6b",
+        "line": "#cdcdcd",
+        "primary": "#343434",
+        "error": "#333333",
+        "success": "#444444",
+        "warning": "#555555",
+        "disabledBg": "#eaeaea",
+        "focus": "#525252",
+        "adminMenu": "#3a3a3a",
+        "frameBorder": "#8d939b",
+        "frameBg": "#fbfbfb",
+        "earpiece": "#c9cdd3",
+        "overlay": "rgba(0,0,0,.45)"
+      },
+      "spacing": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        16,
+        24
+      ],
+      "shells": {
+        "mobile": {
+          "reviewMax": 1440,
+          "canvasCol": 384,
+          "frameMode": "phone",
+          "frameW": 320,
+          "frameH": 640,
+          "border": "2px solid #8d939b",
+          "radius": 22,
+          "padding": 14,
+          "innerW": 288,
+          "innerH": 592,
+          "earpiece": "72x6 r3 #c9cdd3 mb10"
+        },
+        "desktop": {
+          "reviewMax": 1480,
+          "contentMax": "1200-1280",
+          "padding": 24
+        },
+        "admin": {
+          "reviewMax": 1480,
+          "menuW": 220,
+          "menuCollapsedW": 64,
+          "workspacePadding": 20
+        }
+      }
+    },
+    "counts": {
+      "pages": 50,
+      "states": 271,
+      "instances": 224,
+      "definitions": 66,
+      "diagrams": 20
+    }
+  },
+  "baseline_inventory_source": "../2026-10-20-steam-trial2/evidence.json#/final",
+  "caution": "Final 35 registered diagrams; other historic counts may include additional source fences. IDs are not semantic equivalence."
+}

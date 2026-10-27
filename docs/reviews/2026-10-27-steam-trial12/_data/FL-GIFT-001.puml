@@ -1,0 +1,32 @@
+@startuml
+!pragma layout smetana
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName "Microsoft YaHei"
+hide empty description
+state "开始" as START
+state "支付成功并锁定好友链接" as N1
+state "结果页展示待处理与 8:00～18:00" as N2
+state "运营导出赠送批次" as N3
+state "运营开始处理并人工赠送" as N4
+state "◇ 核实好友已收到游戏" as N5
+state "填写完成依据并标记已完成" as N6
+state "用户订单查看完成结果" as N7
+state "记录异常并转客服协商" as N8
+state "超时进入优先处理队列" as N9
+state "按客服/退款规则处理" as N10
+START --> N1
+N1 --> N2
+N2 --> N3
+N3 --> N4
+N4 --> N5
+N5 --> N6 : 已收到
+N6 --> N7
+N5 --> N8 : 链接错误/无法赠送
+N4 --> N9 : 超过累计 2 小时
+N9 --> N4 : 优先处理
+N8 --> N10 : 协商无法解决
+N7 --> [*]
+N8 --> [*]
+N10 --> [*]
+@enduml

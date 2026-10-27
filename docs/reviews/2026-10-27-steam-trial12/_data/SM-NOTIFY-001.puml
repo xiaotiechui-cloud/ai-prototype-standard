@@ -1,0 +1,17 @@
+@startuml
+!pragma layout smetana
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName "Microsoft YaHei"
+hide empty description
+state "待发送" as INIT
+state "待发送" as S1
+state "发送中" as S2
+S1 --> S2 : 开始发送 [任务唯一]
+state "平台已受理" as S3
+S2 --> S3 : 平台已受理 [可信回执/受理]
+state "发送失败/结果未知" as S4
+S2 --> S4 : 发送失败 [平台返回失败]
+S2 --> S4 : 结果未知 [超时/无回执]
+S4 --> S1 : 授权重试 [订单/交付仍有效]
+@enduml

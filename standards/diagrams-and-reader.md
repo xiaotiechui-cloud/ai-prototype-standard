@@ -35,7 +35,9 @@
 - 图源、SVG、表格三者不得互相矛盾。
 - 概览可压缩细节，但关键分支须追踪到详细图或规则表；结果不同的状态不能合并为无法判定的出口，图数量不作为覆盖证明。
 
-图示构建必须先形成可校验的节点/边结构模型，再生成 PlantUML；模型至少记录 `graphId`、`nodeId`、`nodeKind`、`label`、`role`、`state`、`source` 和边的 `from/to/guard`。普通 action/state/decision/merge/fork/join 节点的 `label` 不得为空或仅为空白；只有明确标记的 initial/terminal 装饰节点可以不显示文字。每条边的起点、终点和判断条件必须可解析，节点 ID 不得重复，除声明的 initial/terminal 外不得孤立；所有非终态节点必须有出口，所有终态必须可从入口到达。生成 SVG 后再核对节点 ID、可见文本、非零几何和视口边界；任一不满足即构建失败，不得用空白占位继续交付。
+图示构建必须先形成可校验的节点/边结构模型，再生成 PlantUML；模型至少记录 `graphId`、`nodeId`、`nodeKind`、`label`、`role`、`state`、`source` 和边的 `from/to/guard`。普通 action/state/decision/merge/fork/join 节点的 `label` 不得为空或仅为空白；只有结构模型明确标记为 initial/terminal 的装饰节点可以不显示文字。豁免依据是节点类型和图源语义，不是 `INIT`、`START`、`END` 等名称；普通状态或动作即使使用这些名称仍执行标签、连接、出口和可达性检查。每条边的起点、终点和判断条件必须可解析，节点 ID 不得重复，除声明的 initial/terminal 外不得孤立；所有非终态节点必须有出口，所有终态必须可从入口到达。结构模型、PlantUML、SVG/DOM 必须逐节点、逐边可追踪；无法建立身份映射的范围记为未验证。生成 SVG 后再核对节点 ID、可见文本、非零几何和视口边界；任一不满足即构建失败，不得用空白占位继续交付。
+
+检查器变更必须用最小反例证明能力：普通 `INIT` 孤立节点、空标签、同名节点漏字、悬空边和不可达终态应失败；合法无文字 initial/terminal 装饰节点应通过。不同图类型按各自节点模型检查，不能以不支持的语法解析结果为 0 个问题宣称通过。
 
 ### 18.4 图示入口
 

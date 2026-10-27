@@ -1,0 +1,17 @@
+@startuml
+!pragma layout smetana
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName "Microsoft YaHei"
+hide empty description
+state "待处理" as INIT
+state "待处理" as S1
+state "处理中" as S2
+S1 --> S2 : 运营开始处理 [批次已导出]
+state "已完成" as S3
+S2 --> S3 : 核实好友已收到 [完成依据已填写]
+state "处理异常" as S4
+S2 --> S4 : 链接错误/无法赠送 [异常原因已记录]
+S1 --> S1 : 超过累计 2 小时 [未完成]
+S4 --> S2 : 客服协商后可继续 [有处理方案]
+@enduml

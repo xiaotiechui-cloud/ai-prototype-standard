@@ -1,0 +1,16 @@
+@startuml
+!pragma layout smetana
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName "Microsoft YaHei"
+participant "支付/财务" as 支付_财务
+participant "支付核查" as 支付核查
+participant "支付渠道" as 支付渠道
+participant "订单服务" as 订单服务
+participant "退款服务" as 退款服务
+支付_财务 -> 支付核查 : 打开确认中订单/查询记录
+支付核查 -> 支付渠道 : 查询支付流水/凭证
+支付核查 -> 订单服务 : 有证据：确认已支付/确认未支付
+订单服务 -> 退款服务 : 晚到款不可履约/新单已支付：退款
+支付核查 -> 支付核查 : 无证据：保持确认中并升级
+@enduml

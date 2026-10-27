@@ -1,0 +1,47 @@
+@startuml
+!pragma layout smetana
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName "Microsoft YaHei"
+hide empty description
+state "开始" as START
+state "支付唤起返回/H5 恢复" as N1
+state "服务端查询支付状态/渠道通知" as N2
+state "◇ 判断支付结果" as N3
+state "已支付：启动交付" as N4
+state "交付结果页" as N5
+state "明确未支付且订单有效：确认订单" as N6
+state "结果未知：保持支付确认中" as N7
+state "超过约定时限：支付核查队列" as N8
+state "人工定性：已支付/未支付/仍未知" as N9
+state "◇ 晚到款确认已支付" as N10
+state "恢复旧单并关闭同商品新未支付单" as N11
+state "新单已支付或无法履约：原路退款" as N12
+state "恢复交付或退款完成" as N13
+state "◇ 30 分钟到期查询" as N14
+state "明确未支付：关闭订单" as N15
+START --> N1
+N1 --> N2
+N2 --> N3
+N3 --> N4 : 已支付
+N4 --> N5
+N3 --> N6 : 明确未支付且有效
+N3 --> N7 : 未知/超时
+N7 --> N8 : 超过约定时限
+N8 --> N9
+N9 --> N4 : 确认已支付
+N9 --> N6 : 确认未支付
+N9 --> N7 : 仍无法确认
+N7 --> N14 : 订单到期
+N14 --> N15 : 明确未支付
+N1 --> N10 : 关闭后收到支付成功
+N10 --> N11 : 可履约且无新已支付单
+N10 --> N12 : 不可履约/新单已支付
+N11 --> N13
+N12 --> N13
+N5 --> [*]
+N6 --> [*]
+N9 --> [*]
+N13 --> [*]
+N15 --> [*]
+@enduml

@@ -1,0 +1,18 @@
+@startuml
+!pragma layout smetana
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName "Microsoft YaHei"
+hide empty description
+state "未启动" as INIT
+state "未启动" as S1
+state "发码中" as S2
+S1 --> S2 : 支付成功 [订单已支付]
+state "已交付" as S3
+S2 --> S3 : 供应商返回并保存口令码 [code=00000 且已保存]
+state "交付异常" as S4
+S2 --> S4 : 失败/结果不明 [超时/pu004/pu005/余额不足]
+S4 --> S2 : 24 小时内复用原 orderid 重试 [未超窗且非 pu006]
+S4 --> S3 : 补发/换码完成 [人工记录新码]
+S4 --> S4 : 超窗/无法履约 [转退款]
+@enduml

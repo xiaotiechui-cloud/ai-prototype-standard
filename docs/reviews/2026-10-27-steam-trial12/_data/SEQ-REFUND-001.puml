@@ -1,0 +1,19 @@
+@startuml
+!pragma layout smetana
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName "Microsoft YaHei"
+participant "系统/财务" as 系统_财务
+participant "退款服务" as 退款服务
+participant "支付渠道" as 支付渠道
+participant "退款单" as 退款单
+participant "通知" as 通知
+系统_财务 -> 退款服务 : 创建退款任务（系统闭集/审核通过）
+退款服务 -> 支付渠道 : 原路退款
+支付渠道 -> 退款服务 : 成功/明确失败/未知
+note over 退款服务 : 异步
+退款服务 -> 退款单 : 更新资金结果/失败原因
+退款服务 -> 通知 : 退款发起/到账通知任务
+note over 通知 : 异步
+退款服务 -> 支付渠道 : 财务重试（复用原任务标识）
+@enduml

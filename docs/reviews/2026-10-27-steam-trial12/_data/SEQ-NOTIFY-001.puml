@@ -1,0 +1,20 @@
+@startuml
+!pragma layout smetana
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName "Microsoft YaHei"
+participant "商城服务端" as 商城服务端
+participant "平台站内信" as 平台站内信
+participant "用户" as 用户
+participant "通知记录" as 通知记录
+商城服务端 -> 通知记录 : 创建唯一事件任务（发码/退款）
+商城服务端 -> 平台站内信 : 按来源平台+用户ID发送
+note over 平台站内信 : 异步
+平台站内信 -> 商城服务端 : 受理/失败/结果未知
+note over 商城服务端 : 异步
+平台站内信 -> 用户 : 站内信展示（正文不含完整码）
+note over 用户 : 异步
+商城服务端 -> 通知记录 : 记录状态/失败原因/重试次数
+商城服务端 -> 平台站内信 : 授权重试（校验订单仍有效）
+note over 平台站内信 : 异步
+@enduml

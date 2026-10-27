@@ -1,0 +1,2891 @@
+{
+  "build-report.json": {
+    "generatedAt": "2026-10-27",
+    "project": {
+      "name": "Steam商城首期",
+      "version": "V1.6.0",
+      "batch": "BATCH-2026-10-27-01",
+      "prd": "Steam商城_PRD_V1.6.md",
+      "prdVersion": "V1.6",
+      "prdDate": "2026-10-22",
+      "prdStatus": "待评审",
+      "prdHash": "4b66a358fc5d6181ca04203ebcd39be6340587311ac8202094eeee61a8b0fe01",
+      "standardCommit": "c4a6d81aa8881f61d4fc5a48c18cda8191daf55f",
+      "ruleVersion": "V3.0",
+      "layoutRevision": "modular-1",
+      "contentRevision": "draft-20261027-stable-generation",
+      "completion": "设计评审稿"
+    },
+    "uiProfile": {
+      "id": "uip-steam-final-grayscale-20261026",
+      "revision": "r1",
+      "hash": "310b3a4c7651b8bb0f5ec04a0d3d4ad4c5e7406262cdf5f0269b53363bf61dbc"
+    },
+    "counts": {
+      "pages": 50,
+      "states": 271,
+      "instances": 224,
+      "definitions": 66,
+      "diagrams": 20,
+      "docs": 9,
+      "componentsWithDocs": 66
+    },
+    "html": {
+      "file": "02_低保真交互原型.html",
+      "bytes": 1778852,
+      "sha256": "39ac76b81bb1e58252af09f931fdd5cd9e113987f8b0c9e1328eabca78c315fe"
+    },
+    "checks": {
+      "missingDocs": [],
+      "componentDocFailures": [],
+      "diagramLint": [],
+      "diagramFailures": [],
+      "jsUnregisteredRefs": [],
+      "failures": [],
+      "warnings": []
+    }
+  },
+  "coverage.json": {
+    "runId": "COV-20261027-01",
+    "pages": 50,
+    "states": 271,
+    "instances": 224,
+    "seenInstances": 224,
+    "missing": [],
+    "duplicateNested": [],
+    "errors": []
+  },
+  "final-hashes.json": {
+    "generatedAt": "2026-10-27",
+    "project": "Steam商城首期 V1.6.0 / BATCH-2026-10-27-01",
+    "prd": {
+      "file": "Steam商城_PRD_V1.6.md",
+      "version": "V1.6",
+      "status": "待评审",
+      "sha256": "4b66a358fc5d6181ca04203ebcd39be6340587311ac8202094eeee61a8b0fe01"
+    },
+    "standard": {
+      "ruleVersion": "V3.0",
+      "layoutRevision": "modular-1",
+      "contentRevision": "draft-20261027-stable-generation",
+      "commit": "c4a6d81aa8881f61d4fc5a48c18cda8191daf55f"
+    },
+    "uiProfile": {
+      "id": "uip-steam-final-grayscale-20261026",
+      "revision": "r1",
+      "hash": "310b3a4c7651b8bb0f5ec04a0d3d4ad4c5e7406262cdf5f0269b53363bf61dbc"
+    },
+    "counts": {
+      "pages": 50,
+      "states": 271,
+      "instances": 224,
+      "definitions": 66,
+      "diagrams": 20,
+      "docs": 9,
+      "componentsWithDocs": 66
+    },
+    "runs": {
+      "build": "39ac76b81bb1e58252af09f931fdd5cd9e113987f8b0c9e1328eabca78c315fe",
+      "core": "RUN-20261027-01",
+      "extended": "RUN-20261027-EXT",
+      "coverage": "COV-20261027-01"
+    },
+    "verification": {
+      "core": {
+        "render": {
+          "total": 271,
+          "failed": 0,
+          "failures": []
+        },
+        "flows": {
+          "total": 19,
+          "passed": 19,
+          "failed": 0,
+          "failures": []
+        },
+        "layout": {
+          "total": 5,
+          "passed": 5,
+          "failed": 0,
+          "failures": []
+        },
+        "reader": {
+          "total": 3,
+          "passed": 3,
+          "failed": 0,
+          "failures": []
+        },
+        "diagram": {
+          "total": 3,
+          "passed": 3,
+          "failed": 0,
+          "failures": []
+        },
+        "offline": {
+          "total": 3,
+          "passed": 3,
+          "failed": 0,
+          "failures": []
+        },
+        "consoleErrors": 0,
+        "pageErrors": 0,
+        "externalRequests": 0
+      },
+      "extended": {
+        "flows": {
+          "total": 8,
+          "passed": 8,
+          "failed": 0
+        },
+        "admin": {
+          "total": 27,
+          "passed": 27,
+          "failed": 0
+        },
+        "reader": {
+          "total": 10,
+          "passed": 10,
+          "failed": 0
+        },
+        "diagram": {
+          "total": 40,
+          "passed": 40,
+          "failed": 0
+        },
+        "layout": {
+          "total": 2,
+          "passed": 2,
+          "failed": 0
+        },
+        "errors": 0
+      },
+      "coverage": {
+        "instances": 224,
+        "seen": 224,
+        "missing": 0,
+        "duplicateNested": 0,
+        "errors": 0
+      }
+    },
+    "files": {
+      "00_交付说明与变更记录.md": {
+        "bytes": 17245,
+        "sha256": "f1929feddf339db5db5370abc8989510c7da6b93c07a9c9e6e8c985d83d21c3a"
+      },
+      "01_页面与状态说明.md": {
+        "bytes": 225691,
+        "sha256": "9858c66cf339de206e01c0b8cc7f22c8e63bef281054245b17da2f4de2eb1cc9"
+      },
+      "02_低保真交互原型.html": {
+        "bytes": 1778852,
+        "sha256": "39ac76b81bb1e58252af09f931fdd5cd9e113987f8b0c9e1328eabca78c315fe"
+      },
+      "03_组件级文档.md": {
+        "bytes": 377965,
+        "sha256": "c8eb4df6dac3930d687d182138eac8a8dfd9493cdb098bca516c6600e12744d0"
+      },
+      "04_业务流程与异常规则.md": {
+        "bytes": 71328,
+        "sha256": "12770fa84a911dbd89796a22dea2414fd1becf26d677d19318289046215e7dfb"
+      },
+      "05_接口数据与权限说明.md": {
+        "bytes": 54275,
+        "sha256": "24e2849083e5f638ab32ec54c813f434d1c3d93a07ff86d30728b2482708a866"
+      },
+      "06_埋点文档.md": {
+        "bytes": 11721,
+        "sha256": "149e029a16ade72a9c4b95087dc1ae95f39a3fbdb9f281cb0fb227973d49a3ab"
+      },
+      "07_测试用例.md": {
+        "bytes": 77523,
+        "sha256": "97646749d4e0564c24b78335cf5e754239fb7cb784e9fda33ae05f805646fd3a"
+      },
+      "08_验证记录与验收映射.md": {
+        "bytes": 19281,
+        "sha256": "0553b0865b0e5993bfdc4e40fd947c63f7884b6ea887753caf935a0a2fe942a0"
+      },
+      "09_待确认事项与设计决策.md": {
+        "bytes": 14212,
+        "sha256": "c3a4b4f77cf4b5ebb30c889001348f1f469ab3161770ea4df3b1fa9877d3c92f"
+      },
+      "_checks/build-report.json": {
+        "bytes": 1269,
+        "sha256": "eb1e3541948c4872f25151e6aa58e138aa7c102e6eae8e57d08282c9cd452c3f"
+      },
+      "_checks/verification.json": {
+        "bytes": 38445,
+        "sha256": "4e907abb708f0ce1699a6ea809ec5578348474c67e92fc63d329b9b6a738fdde"
+      },
+      "_checks/verification-extended.json": {
+        "bytes": 12378,
+        "sha256": "7f7ce61c73605201290d302357d01d8eb5907fd3f96cff8e8e4915ca1c07b22c"
+      },
+      "_checks/coverage.json": {
+        "bytes": 166,
+        "sha256": "f47611a75fda013a275d9fcc7a62aa12316607727e438f6a1098268748f02b21"
+      },
+      "_checks/ui-profile.json": {
+        "bytes": 1741,
+        "sha256": "310b3a4c7651b8bb0f5ec04a0d3d4ad4c5e7406262cdf5f0269b53363bf61dbc"
+      },
+      "_checks/验证证据_2026-10-27.md": {
+        "bytes": 7738,
+        "sha256": "8e8ced17a8b51479fa7abe333ad400fafbee6cc96fd288aca0d6cea7ff98b9c3"
+      },
+      "_checks/screenshots/01-app-home.png": {
+        "bytes": 129763,
+        "sha256": "7d139ad51d7335152f5d65153495608a2334fc830b57825beba2399ba9ca8762"
+      },
+      "_checks/screenshots/02-buy-notice.png": {
+        "bytes": 130603,
+        "sha256": "0962f0c76a5f1eedab63c0fd400f490120c21dcf03b3e19e33ad51277c68477e"
+      },
+      "_checks/screenshots/03-app-result.png": {
+        "bytes": 123001,
+        "sha256": "a1abef3a7f215b74ba113ba09000428bb6e6103b003d557af50278233a416036"
+      },
+      "_checks/screenshots/04-web-detail.png": {
+        "bytes": 65642,
+        "sha256": "788dc19e4171d59998642f3e04955a47768676b5e5c510bd884565664a55d3d9"
+      },
+      "_checks/screenshots/05-admin-order.png": {
+        "bytes": 98660,
+        "sha256": "ca28189e0da4d042508b9ecbfb970bf012b0b7d61a946cfcaf387322b3b53749"
+      },
+      "_checks/screenshots/06-reader.png": {
+        "bytes": 130726,
+        "sha256": "c659f296e20854175c860612951ccc248b50db8d7150dc5cbfb3603cb67fff8d"
+      },
+      "_checks/screenshots/07-diagram.png": {
+        "bytes": 102207,
+        "sha256": "79dbcd6adf64814531a92f6867e6934ed812647f25dab3d98bcf4f3dec66931d"
+      },
+      "_checks/screenshots/08-doc-downloads.png": {
+        "bytes": 54697,
+        "sha256": "092eaf6d5562ae13b6ebdbad3bc5e2e2acaafd6554440fd4f9bb82222700afa5"
+      }
+    }
+  },
+  "ui-profile.json": {
+    "uiProfileId": "uip-steam-final-grayscale-20261026",
+    "uiProfileRevision": "r1",
+    "uiProfileSource": "人工处理后的最终版稳定视觉/布局/组件/交互特征；reference/projects/steam-store.md（69480fcf6718a918a9fdbcb62116c6cc9407b8ccda344a0cce5e0f1204a4f7a3a）；不含商城专属业务入口",
+    "tokens": {
+      "bg": "#f4f4f4",
+      "panel": "#ffffff",
+      "ink": "#242424",
+      "muted": "#6b6b6b",
+      "line": "#cdcdcd",
+      "primary": "#343434",
+      "error": "#333333",
+      "success": "#444444",
+      "warning": "#555555",
+      "disabledBg": "#eaeaea",
+      "focus": "#525252",
+      "adminMenu": "#3a3a3a",
+      "frameBorder": "#8d939b",
+      "frameBg": "#fbfbfb",
+      "earpiece": "#c9cdd3",
+      "overlay": "rgba(0,0,0,.45)"
+    },
+    "typography": {
+      "body": "14px/1.6 Microsoft YaHei, Arial, sans-serif",
+      "label": "12-13px",
+      "pageTitle": "20px/500",
+      "componentTitle": "16-18px/500"
+    },
+    "spacing": [
+      4,
+      6,
+      8,
+      10,
+      12,
+      16,
+      24
+    ],
+    "density": {
+      "mobileHit": 44,
+      "desktopHit": 40,
+      "desktopCompact": 36,
+      "adminHit": 40,
+      "adminTableCompact": 34,
+      "reviewHit": 40
+    },
+    "shells": {
+      "mobile": {
+        "reviewMax": 1440,
+        "canvasCol": 384,
+        "frameMode": "phone",
+        "frameW": 320,
+        "frameH": 640,
+        "border": "2px solid #8d939b",
+        "radius": 22,
+        "padding": 14,
+        "innerW": 288,
+        "innerH": 592,
+        "earpiece": "72x6 r3 #c9cdd3 mb10"
+      },
+      "desktop": {
+        "reviewMax": 1480,
+        "contentMax": "1200-1280",
+        "padding": 24
+      },
+      "admin": {
+        "reviewMax": 1480,
+        "menuW": 220,
+        "menuCollapsedW": 64,
+        "workspacePadding": 20
+      }
+    },
+    "layers": {
+      "confirmMax": 400,
+      "normalMax": 600,
+      "complexMax": 920,
+      "centeredMaxHostRatio": 0.8,
+      "bottomSheetMaxHostRatio": 0.88,
+      "sideSafe": 16,
+      "mobileSafe": 12,
+      "mobileRadius": 16
+    },
+    "diagram": {
+      "style": "grayscale",
+      "layout": "smetana",
+      "types": [
+        "FL",
+        "SM",
+        "SEQ"
+      ],
+      "minNodeLabel": 1
+    }
+  },
+  "verification-extended.json": {
+    "summary": {
+      "runId": "RUN-20261027-EXT",
+      "fatal": null,
+      "flows": {
+        "total": 8,
+        "passed": 8,
+        "failed": 0
+      },
+      "admin": {
+        "total": 27,
+        "passed": 27,
+        "failed": 0
+      },
+      "reader": {
+        "total": 10,
+        "passed": 10,
+        "failed": 0
+      },
+      "diagram": {
+        "total": 40,
+        "passed": 40,
+        "failed": 0
+      },
+      "layout": {
+        "total": 2,
+        "passed": 2,
+        "failed": 0
+      },
+      "errors": [],
+      "failures": []
+    },
+    "results": {
+      "runId": "RUN-20261027-EXT",
+      "startedAt": "2026-10-27T02:59:38.426Z",
+      "flows": [
+        {
+          "ok": true,
+          "msg": "未登录提交显示需要登录",
+          "st": "LOGIN_REQUIRED"
+        },
+        {
+          "ok": true,
+          "msg": "实名未知显示需要实名",
+          "st": "REALNAME_REQUIRED"
+        },
+        {
+          "ok": true,
+          "msg": "未成年立即拦截",
+          "st": "MINOR_BLOCKED"
+        },
+        {
+          "ok": true,
+          "msg": "未绑定手机显示绑定要求",
+          "st": "PHONE_REQUIRED"
+        },
+        {
+          "ok": true,
+          "msg": "余额不足停止交易",
+          "st": "BALANCE_LOW"
+        },
+        {
+          "ok": true,
+          "msg": "库存新鲜为 0 显示售罄"
+        },
+        {
+          "ok": true,
+          "msg": "实质性变更继续支付需重新确认",
+          "v": "APP-CHECKOUT-01",
+          "st": "RECONFIRM"
+        },
+        {
+          "ok": true,
+          "msg": "支付查询超时保持确认中",
+          "st": "TIMEOUT"
+        }
+      ],
+      "admin": [
+        {
+          "ok": true,
+          "msg": "后台页面渲染 ADM-LOGIN-01",
+          "reg": 0,
+          "title": "运营后台登录",
+          "table": 0,
+          "form": 1,
+          "doc": true
+        },
+        {
+          "ok": true,
+          "msg": "后台页面渲染 ADM-HOME-01",
+          "reg": 0,
+          "title": "首页管理",
+          "table": 0,
+          "form": 2,
+          "doc": true
+        },
+        {
+          "ok": true,
+          "msg": "后台页面渲染 ADM-PRODUCT-01",
+          "reg": 0,
+          "title": "选品与商品管理",
+          "table": 1,
+          "form": 0,
+          "doc": true
+        },
+        {
+          "ok": true,
+          "msg": "后台页面渲染 ADM-SUPPLIER-01",
+          "reg": 0,
+          "title": "供应商管理",
+          "table": 1,
+          "form": 3,
+          "doc": true
+        },
+        {
+          "ok": true,
+          "msg": "后台页面渲染 ADM-STOCK-01",
+          "reg": 0,
+          "title": "库存查看",
+          "table": 1,
+          "form": 0,
+          "doc": true
+        },
+        {
+          "ok": true,
+          "msg": "后台页面渲染 ADM-ORDER-01",
+          "reg": 0,
+          "title": "订单管理",
+          "table": 1,
+          "form": 0,
+          "doc": true
+        },
+        {
+          "ok": true,
+          "msg": "后台页面渲染 ADM-GIFT-01",
+          "reg": 0,
+          "title": "好友赠送",
+          "table": 1,
+          "form": 0,
+          "doc": true
+        },
+        {
+          "ok": true,
+          "msg": "后台页面渲染 ADM-CODE-01",
+          "reg": 0,
+          "title": "口令码交付",
+          "table": 1,
+          "form": 0,
+          "doc": true
+        },
+        {
+          "ok": true,
+          "msg": "后台页面渲染 ADM-REFUND-01",
+          "reg": 0,
+          "title": "退款管理",
+          "table": 1,
+          "form": 0,
+          "doc": true
+        },
+        {
+          "ok": true,
+          "msg": "后台页面渲染 ADM-SERVICE-01",
+          "reg": 0,
+          "title": "客服配置",
+          "table": 0,
+          "form": 1,
+          "doc": true
+        },
+        {
+          "ok": true,
+          "msg": "后台页面渲染 ADM-RBAC-01",
+          "reg": 0,
+          "title": "权限管理",
+          "table": 1,
+          "form": 0,
+          "doc": true
+        },
+        {
+          "ok": true,
+          "msg": "后台页面渲染 ADM-AUDIT-01",
+          "reg": 0,
+          "title": "操作记录",
+          "table": 1,
+          "form": 0,
+          "doc": true
+        },
+        {
+          "ok": true,
+          "msg": "后台页面渲染 ADM-AGREEMENT-01",
+          "reg": 0,
+          "title": "协议管理",
+          "table": 0,
+          "form": 1,
+          "doc": true
+        },
+        {
+          "ok": true,
+          "msg": "后台页面渲染 ADM-SEARCH-01",
+          "reg": 0,
+          "title": "搜索推荐",
+          "table": 1,
+          "form": 2,
+          "doc": true
+        },
+        {
+          "ok": true,
+          "msg": "后台页面渲染 ADM-PAYCHECK-01",
+          "reg": 0,
+          "title": "支付核查",
+          "table": 1,
+          "form": 0,
+          "doc": true
+        },
+        {
+          "ok": true,
+          "msg": "后台页面渲染 ADM-NOTIFY-01",
+          "reg": 0,
+          "title": "通知记录",
+          "table": 1,
+          "form": 0,
+          "doc": true
+        },
+        {
+          "ok": true,
+          "msg": "后台页面渲染 ADM-WALLET-01",
+          "reg": 0,
+          "title": "钱包余额",
+          "table": 1,
+          "form": 2,
+          "doc": true
+        },
+        {
+          "ok": true,
+          "msg": "赠送完成需依据并更新状态"
+        },
+        {
+          "ok": true,
+          "msg": "口令码重试确认与反馈"
+        },
+        {
+          "ok": true,
+          "msg": "支付核查需证据并确认支付"
+        },
+        {
+          "ok": true,
+          "msg": "权限矩阵保存"
+        },
+        {
+          "ok": true,
+          "msg": "协议发布确认与反馈"
+        },
+        {
+          "ok": true,
+          "msg": "首页发布确认与三端生效提示"
+        },
+        {
+          "ok": true,
+          "msg": "钱包阈值保存"
+        },
+        {
+          "ok": true,
+          "msg": "搜索关键词新增"
+        },
+        {
+          "ok": true,
+          "msg": "供应商配置保存"
+        },
+        {
+          "ok": true,
+          "msg": "库存同步反馈"
+        }
+      ],
+      "reader": [
+        {
+          "ok": true,
+          "msg": "阅读器全文 00_交付说明与变更记录.md",
+          "len": 7336
+        },
+        {
+          "ok": true,
+          "msg": "阅读器全文 01_页面与状态说明.md",
+          "len": 127309
+        },
+        {
+          "ok": true,
+          "msg": "阅读器全文 03_组件级文档.md",
+          "len": 153613
+        },
+        {
+          "ok": true,
+          "msg": "阅读器全文 04_业务流程与异常规则.md",
+          "len": 24345
+        },
+        {
+          "ok": true,
+          "msg": "阅读器全文 05_接口数据与权限说明.md",
+          "len": 23140
+        },
+        {
+          "ok": true,
+          "msg": "阅读器全文 06_埋点文档.md",
+          "len": 5778
+        },
+        {
+          "ok": true,
+          "msg": "阅读器全文 07_测试用例.md",
+          "len": 32084
+        },
+        {
+          "ok": true,
+          "msg": "阅读器全文 08_验证记录与验收映射.md",
+          "len": 9587
+        },
+        {
+          "ok": true,
+          "msg": "阅读器全文 09_待确认事项与设计决策.md",
+          "len": 5764
+        },
+        {
+          "ok": true,
+          "msg": "阅读器下载原始 MD",
+          "suggested": "01_页面与状态说明.md"
+        }
+      ],
+      "diagram": [
+        {
+          "ok": true,
+          "msg": "图示可见 FL-CHECKOUT-001",
+          "texts": 42,
+          "w": 1174
+        },
+        {
+          "ok": true,
+          "msg": "图示缩放 FL-CHECKOUT-001",
+          "before": 1174,
+          "after": 1726
+        },
+        {
+          "ok": true,
+          "msg": "图示可见 FL-CODE-001",
+          "texts": 27,
+          "w": 1174
+        },
+        {
+          "ok": true,
+          "msg": "图示缩放 FL-CODE-001",
+          "before": 1174,
+          "after": 1588
+        },
+        {
+          "ok": true,
+          "msg": "图示可见 FL-GIFT-001",
+          "texts": 16,
+          "w": 1174
+        },
+        {
+          "ok": true,
+          "msg": "图示缩放 FL-GIFT-001",
+          "before": 1174,
+          "after": 812
+        },
+        {
+          "ok": true,
+          "msg": "图示可见 FL-PAY-001",
+          "texts": 28,
+          "w": 1174
+        },
+        {
+          "ok": true,
+          "msg": "图示缩放 FL-PAY-001",
+          "before": 1174,
+          "after": 2042
+        },
+        {
+          "ok": true,
+          "msg": "图示可见 FL-REFUND-001",
+          "texts": 20,
+          "w": 1174
+        },
+        {
+          "ok": true,
+          "msg": "图示缩放 FL-REFUND-001",
+          "before": 1174,
+          "after": 1322
+        },
+        {
+          "ok": true,
+          "msg": "图示可见 FL-AGREEMENT-001",
+          "texts": 13,
+          "w": 1174
+        },
+        {
+          "ok": true,
+          "msg": "图示缩放 FL-AGREEMENT-001",
+          "before": 1174,
+          "after": 1080
+        },
+        {
+          "ok": true,
+          "msg": "图示可见 FL-ADMIN-PUBLISH-001",
+          "texts": 14,
+          "w": 1174
+        },
+        {
+          "ok": true,
+          "msg": "图示缩放 FL-ADMIN-PUBLISH-001",
+          "before": 1174,
+          "after": 968
+        },
+        {
+          "ok": true,
+          "msg": "图示可见 SM-PAY-001",
+          "texts": 13,
+          "w": 1174
+        },
+        {
+          "ok": true,
+          "msg": "图示缩放 SM-PAY-001",
+          "before": 1174,
+          "after": 1464
+        },
+        {
+          "ok": true,
+          "msg": "图示可见 SM-CODE-001",
+          "texts": 11,
+          "w": 1174
+        },
+        {
+          "ok": true,
+          "msg": "图示缩放 SM-CODE-001",
+          "before": 1174,
+          "after": 1396
+        },
+        {
+          "ok": true,
+          "msg": "图示可见 SM-GIFT-001",
+          "texts": 10,
+          "w": 1174
+        },
+        {
+          "ok": true,
+          "msg": "图示缩放 SM-GIFT-001",
+          "before": 1174,
+          "after": 1336
+        },
+        {
+          "ok": true,
+          "msg": "图示可见 SM-REFUND-001",
+          "texts": 10,
+          "w": 1174
+        },
+        {
+          "ok": true,
+          "msg": "图示缩放 SM-REFUND-001",
+          "before": 1174,
+          "after": 1086
+        },
+        {
+          "ok": true,
+          "msg": "图示可见 SM-NOTIFY-001",
+          "texts": 10,
+          "w": 1174
+        },
+        {
+          "ok": true,
+          "msg": "图示缩放 SM-NOTIFY-001",
+          "before": 1174,
+          "after": 1446
+        },
+        {
+          "ok": true,
+          "msg": "图示可见 SM-PRODUCT-001",
+          "texts": 12,
+          "w": 1174
+        },
+        {
+          "ok": true,
+          "msg": "图示缩放 SM-PRODUCT-001",
+          "before": 1174,
+          "after": 966
+        },
+        {
+          "ok": true,
+          "msg": "图示可见 SM-PAYCHECK-001",
+          "texts": 9,
+          "w": 1174
+        },
+        {
+          "ok": true,
+          "msg": "图示缩放 SM-PAYCHECK-001",
+          "before": 1174,
+          "after": 912
+        },
+        {
+          "ok": true,
+          "msg": "图示可见 SEQ-PAY-001",
+          "texts": 20,
+          "w": 1174
+        },
+        {
+          "ok": true,
+          "msg": "图示缩放 SEQ-PAY-001",
+          "before": 1174,
+          "after": 1392
+        },
+        {
+          "ok": true,
+          "msg": "图示可见 SEQ-CODE-001",
+          "texts": 17,
+          "w": 1174
+        },
+        {
+          "ok": true,
+          "msg": "图示缩放 SEQ-CODE-001",
+          "before": 1174,
+          "after": 1438
+        },
+        {
+          "ok": true,
+          "msg": "图示可见 SEQ-GIFT-001",
+          "texts": 16,
+          "w": 1174
+        },
+        {
+          "ok": true,
+          "msg": "图示缩放 SEQ-GIFT-001",
+          "before": 1174,
+          "after": 1114
+        },
+        {
+          "ok": true,
+          "msg": "图示可见 SEQ-NOTIFY-001",
+          "texts": 18,
+          "w": 1174
+        },
+        {
+          "ok": true,
+          "msg": "图示缩放 SEQ-NOTIFY-001",
+          "before": 1174,
+          "after": 1106
+        },
+        {
+          "ok": true,
+          "msg": "图示可见 SEQ-REFUND-001",
+          "texts": 18,
+          "w": 1174
+        },
+        {
+          "ok": true,
+          "msg": "图示缩放 SEQ-REFUND-001",
+          "before": 1174,
+          "after": 1272
+        },
+        {
+          "ok": true,
+          "msg": "图示可见 SEQ-PAYCHECK-001",
+          "texts": 15,
+          "w": 1174
+        },
+        {
+          "ok": true,
+          "msg": "图示缩放 SEQ-PAYCHECK-001",
+          "before": 1174,
+          "after": 1462
+        }
+      ],
+      "layout": [
+        {
+          "ok": true,
+          "msg": "后台 700px 菜单横滑不隐藏",
+          "w": 64,
+          "list": "flex",
+          "page": 700,
+          "win": 700
+        },
+        {
+          "ok": true,
+          "msg": "WEB 1024 无整页横向溢出",
+          "cols": "908px",
+          "page": 1024,
+          "win": 1024
+        }
+      ],
+      "errors": []
+    }
+  },
+  "verification.json": {
+    "summary": {
+      "runId": "RUN-20261027-01",
+      "fatal": null,
+      "render": {
+        "total": 271,
+        "failed": 0,
+        "failures": []
+      },
+      "flows": {
+        "total": 19,
+        "passed": 19,
+        "failed": 0,
+        "failures": []
+      },
+      "layout": {
+        "total": 5,
+        "passed": 5,
+        "failed": 0,
+        "failures": []
+      },
+      "reader": {
+        "total": 4,
+        "passed": 4,
+        "failed": 0,
+        "failures": []
+      },
+      "diagram": {
+        "total": 3,
+        "passed": 3,
+        "failed": 0,
+        "failures": []
+      },
+      "offline": {
+        "total": 3,
+        "passed": 3,
+        "failed": 0,
+        "failures": []
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "externalRequests": [],
+      "screenshots": [
+        {
+          "name": "01-app-home",
+          "file": "_checks\\screenshots\\01-app-home.png"
+        },
+        {
+          "name": "02-buy-notice",
+          "file": "_checks\\screenshots\\02-buy-notice.png"
+        },
+        {
+          "name": "03-app-result",
+          "file": "_checks\\screenshots\\03-app-result.png"
+        },
+        {
+          "name": "04-web-detail",
+          "file": "_checks\\screenshots\\04-web-detail.png"
+        },
+        {
+          "name": "05-admin-order",
+          "file": "_checks\\screenshots\\05-admin-order.png"
+        },
+        {
+          "name": "06-reader",
+          "file": "_checks\\screenshots\\06-reader.png"
+        },
+        {
+          "name": "07-diagram",
+          "file": "_checks\\screenshots\\07-diagram.png"
+        }
+      ]
+    },
+    "results": {
+      "runId": "RUN-20261027-01",
+      "startedAt": "2026-10-27T02:59:02.334Z",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "render": [
+        {
+          "ok": true,
+          "page": "APP-HOME-01",
+          "state": "DEFAULT",
+          "comps": 11
+        },
+        {
+          "ok": true,
+          "page": "APP-HOME-01",
+          "state": "LOADING",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "APP-HOME-01",
+          "state": "EMPTY",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "APP-HOME-01",
+          "state": "ERROR",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "APP-HOME-01",
+          "state": "OFFLINE",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "APP-AUTH-01",
+          "state": "SHOWN_KNOWN",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "APP-AUTH-01",
+          "state": "SHOWN_UNVERIFIED",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "APP-AUTH-01",
+          "state": "HIDDEN_UNKNOWN",
+          "comps": 0
+        },
+        {
+          "ok": true,
+          "page": "APP-AUTH-01",
+          "state": "CLOSED",
+          "comps": 0
+        },
+        {
+          "ok": true,
+          "page": "APP-SEARCH-01",
+          "state": "DEFAULT",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "APP-SEARCH-01",
+          "state": "EDITING",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "APP-SEARCH-01",
+          "state": "VALIDATION_ERROR",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "APP-SEARCH-01",
+          "state": "EMPTY",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "APP-SEARCH-01",
+          "state": "ERROR",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "APP-SEARCH-02",
+          "state": "RESULTS",
+          "comps": 11
+        },
+        {
+          "ok": true,
+          "page": "APP-SEARCH-02",
+          "state": "LOADING",
+          "comps": 6
+        },
+        {
+          "ok": true,
+          "page": "APP-SEARCH-02",
+          "state": "EMPTY",
+          "comps": 6
+        },
+        {
+          "ok": true,
+          "page": "APP-SEARCH-02",
+          "state": "ERROR",
+          "comps": 6
+        },
+        {
+          "ok": true,
+          "page": "APP-SEARCH-02",
+          "state": "END",
+          "comps": 6
+        },
+        {
+          "ok": true,
+          "page": "APP-DETAIL-01",
+          "state": "DEFAULT",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "APP-DETAIL-01",
+          "state": "EXPANDED",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "APP-DETAIL-01",
+          "state": "ORDER_PENDING",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "APP-DETAIL-01",
+          "state": "SOLD_OUT",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "APP-DETAIL-01",
+          "state": "UNAVAILABLE",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "APP-DETAIL-01",
+          "state": "ERROR",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "APP-BUY-01",
+          "state": "DEFAULT",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "APP-BUY-01",
+          "state": "VALIDATION_ERROR",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "APP-BUY-01",
+          "state": "SUBMITTING",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "APP-BUY-01",
+          "state": "LOGIN_REQUIRED",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "APP-BUY-01",
+          "state": "REALNAME_REQUIRED",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "APP-BUY-01",
+          "state": "MINOR_BLOCKED",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "APP-BUY-01",
+          "state": "PHONE_REQUIRED",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "APP-BUY-01",
+          "state": "BALANCE_LOW",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "APP-BUY-01",
+          "state": "STOCK_UNKNOWN",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "APP-BUY-01",
+          "state": "NOTICE",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "APP-AGREEMENT-01",
+          "state": "DEFAULT",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "APP-AGREEMENT-01",
+          "state": "SUBSTANTIVE",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "APP-AGREEMENT-01",
+          "state": "ERROR",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "APP-REALNAME-01",
+          "state": "SHOWN",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "APP-REALNAME-01",
+          "state": "LAUNCHING",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "APP-REALNAME-01",
+          "state": "UNAVAILABLE",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "APP-REALNAME-01",
+          "state": "SUCCESS",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "APP-REALNAME-01",
+          "state": "FAILED",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "APP-PHONE-01",
+          "state": "DEFAULT",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "APP-PHONE-01",
+          "state": "VALIDATION_ERROR",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "APP-PHONE-01",
+          "state": "SUBMITTING",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "APP-PHONE-01",
+          "state": "SUCCESS",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "APP-PHONE-01",
+          "state": "ERROR",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "APP-PHONE-01",
+          "state": "CANCELLED",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "APP-CHECKOUT-01",
+          "state": "DEFAULT",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "APP-CHECKOUT-01",
+          "state": "EXPIRED",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "APP-CHECKOUT-01",
+          "state": "SUBMITTING",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "APP-CHECKOUT-01",
+          "state": "ERROR",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "APP-CHECKOUT-01",
+          "state": "RECONFIRM",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "APP-PAYRET-01",
+          "state": "ASK",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "APP-PAYRET-01",
+          "state": "QUERYING",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "APP-PAYRET-01",
+          "state": "TIMEOUT",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "APP-PAYRET-01",
+          "state": "PAID",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "APP-PAYRET-01",
+          "state": "UNPAID",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "APP-RESULT-01",
+          "state": "CODE_ISSUING",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "APP-RESULT-01",
+          "state": "CODE_DELIVERED",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "APP-RESULT-01",
+          "state": "GIFT_PENDING",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "APP-RESULT-01",
+          "state": "DELIVERY_EXCEPTION",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "APP-RESULT-01",
+          "state": "REFUNDING",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "APP-RESULT-01",
+          "state": "REFUNDED",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "APP-RESULT-01",
+          "state": "REFUND_FAILED",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "APP-RESULT-01",
+          "state": "CONFIRMING",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "APP-RESULT-01",
+          "state": "ERROR",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "APP-ORDER-01",
+          "state": "RESULTS",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "APP-ORDER-01",
+          "state": "LOADING",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "APP-ORDER-01",
+          "state": "EMPTY",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "APP-ORDER-01",
+          "state": "ERROR",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "APP-ORDER-01",
+          "state": "SESSION_EXPIRED",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "APP-ORDER-02",
+          "state": "DEFAULT",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "APP-ORDER-02",
+          "state": "CODE_DELIVERED",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "APP-ORDER-02",
+          "state": "GIFT_PENDING",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "APP-ORDER-02",
+          "state": "DELIVERY_EXCEPTION",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "APP-ORDER-02",
+          "state": "REFUND_FAILED",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "APP-ORDER-02",
+          "state": "CONFIRMING",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "APP-ORDER-02",
+          "state": "ERROR",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "APP-PROFILE-01",
+          "state": "LOGGED_IN",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "APP-PROFILE-01",
+          "state": "GUEST",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "APP-PROFILE-01",
+          "state": "UNKNOWN",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "APP-SERVICE-01",
+          "state": "WITH_ORDER",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "APP-SERVICE-01",
+          "state": "NO_ORDER",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "APP-SERVICE-01",
+          "state": "FALLBACK",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "WEB-HOME-01",
+          "state": "DEFAULT",
+          "comps": 8
+        },
+        {
+          "ok": true,
+          "page": "WEB-HOME-01",
+          "state": "LOADING",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "WEB-HOME-01",
+          "state": "EMPTY",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "WEB-HOME-01",
+          "state": "ERROR",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "WEB-AUTH-01",
+          "state": "SHOWN_KNOWN",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "WEB-AUTH-01",
+          "state": "SHOWN_UNVERIFIED",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "WEB-AUTH-01",
+          "state": "HIDDEN_UNKNOWN",
+          "comps": 0
+        },
+        {
+          "ok": true,
+          "page": "WEB-AUTH-01",
+          "state": "CLOSED",
+          "comps": 0
+        },
+        {
+          "ok": true,
+          "page": "WEB-SEARCH-01",
+          "state": "DEFAULT",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "WEB-SEARCH-01",
+          "state": "EDITING",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "WEB-SEARCH-01",
+          "state": "VALIDATION_ERROR",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "WEB-SEARCH-01",
+          "state": "EMPTY",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "WEB-SEARCH-01",
+          "state": "ERROR",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "WEB-SEARCH-02",
+          "state": "RESULTS",
+          "comps": 10
+        },
+        {
+          "ok": true,
+          "page": "WEB-SEARCH-02",
+          "state": "LOADING",
+          "comps": 10
+        },
+        {
+          "ok": true,
+          "page": "WEB-SEARCH-02",
+          "state": "EMPTY",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "WEB-SEARCH-02",
+          "state": "ERROR",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "WEB-SEARCH-02",
+          "state": "END",
+          "comps": 10
+        },
+        {
+          "ok": true,
+          "page": "WEB-DETAIL-01",
+          "state": "DEFAULT",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "WEB-DETAIL-01",
+          "state": "EXPANDED",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "WEB-DETAIL-01",
+          "state": "ORDER_PENDING",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "WEB-DETAIL-01",
+          "state": "SOLD_OUT",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "WEB-DETAIL-01",
+          "state": "UNAVAILABLE",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "WEB-DETAIL-01",
+          "state": "ERROR",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "WEB-BUY-01",
+          "state": "DEFAULT",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "WEB-BUY-01",
+          "state": "VALIDATION_ERROR",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "WEB-BUY-01",
+          "state": "SUBMITTING",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "WEB-BUY-01",
+          "state": "LOGIN_REQUIRED",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "WEB-BUY-01",
+          "state": "REALNAME_REQUIRED",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "WEB-BUY-01",
+          "state": "MINOR_BLOCKED",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "WEB-BUY-01",
+          "state": "PHONE_REQUIRED",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "WEB-BUY-01",
+          "state": "BALANCE_LOW",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "WEB-BUY-01",
+          "state": "STOCK_UNKNOWN",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "WEB-BUY-01",
+          "state": "NOTICE",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "WEB-AGREEMENT-01",
+          "state": "DEFAULT",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "WEB-AGREEMENT-01",
+          "state": "SUBSTANTIVE",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "WEB-AGREEMENT-01",
+          "state": "ERROR",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "WEB-REALNAME-01",
+          "state": "SHOWN",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "WEB-REALNAME-01",
+          "state": "LAUNCHING",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "WEB-REALNAME-01",
+          "state": "UNAVAILABLE",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "WEB-REALNAME-01",
+          "state": "SUCCESS",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "WEB-REALNAME-01",
+          "state": "FAILED",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "WEB-PHONE-01",
+          "state": "DEFAULT",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "WEB-PHONE-01",
+          "state": "VALIDATION_ERROR",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "WEB-PHONE-01",
+          "state": "SUBMITTING",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "WEB-PHONE-01",
+          "state": "SUCCESS",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "WEB-PHONE-01",
+          "state": "ERROR",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "WEB-PHONE-01",
+          "state": "CANCELLED",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "WEB-CHECKOUT-01",
+          "state": "DEFAULT",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "WEB-CHECKOUT-01",
+          "state": "EXPIRED",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "WEB-CHECKOUT-01",
+          "state": "SUBMITTING",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "WEB-CHECKOUT-01",
+          "state": "ERROR",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "WEB-CHECKOUT-01",
+          "state": "RECONFIRM",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "WEB-PAYSCAN-01",
+          "state": "WAITING",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "WEB-PAYSCAN-01",
+          "state": "CONFIRMING",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "WEB-PAYSCAN-01",
+          "state": "PAID",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "WEB-PAYSCAN-01",
+          "state": "TIMEOUT",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "WEB-PAYRET-01",
+          "state": "ASK",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "WEB-PAYRET-01",
+          "state": "QUERYING",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "WEB-PAYRET-01",
+          "state": "TIMEOUT",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "WEB-PAYRET-01",
+          "state": "PAID",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "WEB-PAYRET-01",
+          "state": "UNPAID",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "WEB-RESULT-01",
+          "state": "CODE_ISSUING",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "WEB-RESULT-01",
+          "state": "CODE_DELIVERED",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "WEB-RESULT-01",
+          "state": "GIFT_PENDING",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "WEB-RESULT-01",
+          "state": "DELIVERY_EXCEPTION",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "WEB-RESULT-01",
+          "state": "REFUNDING",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "WEB-RESULT-01",
+          "state": "REFUNDED",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "WEB-RESULT-01",
+          "state": "REFUND_FAILED",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "WEB-RESULT-01",
+          "state": "CONFIRMING",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "WEB-RESULT-01",
+          "state": "ERROR",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "WEB-ORDER-01",
+          "state": "RESULTS",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "WEB-ORDER-01",
+          "state": "LOADING",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "WEB-ORDER-01",
+          "state": "EMPTY",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "WEB-ORDER-01",
+          "state": "ERROR",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "WEB-ORDER-01",
+          "state": "SESSION_EXPIRED",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "WEB-ORDER-02",
+          "state": "DEFAULT",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "WEB-ORDER-02",
+          "state": "CODE_DELIVERED",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "WEB-ORDER-02",
+          "state": "GIFT_PENDING",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "WEB-ORDER-02",
+          "state": "DELIVERY_EXCEPTION",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "WEB-ORDER-02",
+          "state": "REFUND_FAILED",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "WEB-ORDER-02",
+          "state": "CONFIRMING",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "WEB-ORDER-02",
+          "state": "ERROR",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "WEB-PROFILE-01",
+          "state": "LOGGED_IN",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "WEB-PROFILE-01",
+          "state": "GUEST",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "WEB-PROFILE-01",
+          "state": "UNKNOWN",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "WEB-SERVICE-01",
+          "state": "WITH_ORDER",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "WEB-SERVICE-01",
+          "state": "NO_ORDER",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "WEB-SERVICE-01",
+          "state": "FALLBACK",
+          "comps": 2
+        },
+        {
+          "ok": true,
+          "page": "ADM-LOGIN-01",
+          "state": "DEFAULT",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "ADM-LOGIN-01",
+          "state": "ERROR",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "ADM-LOGIN-01",
+          "state": "LOCKED",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "ADM-LOGIN-01",
+          "state": "SUBMITTING",
+          "comps": 1
+        },
+        {
+          "ok": true,
+          "page": "ADM-HOME-01",
+          "state": "DEFAULT",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-HOME-01",
+          "state": "EDITING",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-HOME-01",
+          "state": "VALIDATION_ERROR",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-HOME-01",
+          "state": "SUBMITTING",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-HOME-01",
+          "state": "SUCCESS",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-HOME-01",
+          "state": "ERROR",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-HOME-01",
+          "state": "NO_PERM",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-PRODUCT-01",
+          "state": "RESULTS",
+          "comps": 7
+        },
+        {
+          "ok": true,
+          "page": "ADM-PRODUCT-01",
+          "state": "LOADING",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "ADM-PRODUCT-01",
+          "state": "EMPTY",
+          "comps": 6
+        },
+        {
+          "ok": true,
+          "page": "ADM-PRODUCT-01",
+          "state": "ERROR",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "ADM-PRODUCT-01",
+          "state": "NO_PERM",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "ADM-SUPPLIER-01",
+          "state": "DEFAULT",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-SUPPLIER-01",
+          "state": "EDITING",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-SUPPLIER-01",
+          "state": "VALIDATION_ERROR",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-SUPPLIER-01",
+          "state": "SUBMITTING",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-SUPPLIER-01",
+          "state": "SUCCESS",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-SUPPLIER-01",
+          "state": "ERROR",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-SUPPLIER-01",
+          "state": "NO_PERM",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-STOCK-01",
+          "state": "RESULTS",
+          "comps": 7
+        },
+        {
+          "ok": true,
+          "page": "ADM-STOCK-01",
+          "state": "LOADING",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-STOCK-01",
+          "state": "EMPTY",
+          "comps": 6
+        },
+        {
+          "ok": true,
+          "page": "ADM-STOCK-01",
+          "state": "ERROR",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-STOCK-01",
+          "state": "NO_PERM",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "ADM-ORDER-01",
+          "state": "RESULTS",
+          "comps": 7
+        },
+        {
+          "ok": true,
+          "page": "ADM-ORDER-01",
+          "state": "LOADING",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "ADM-ORDER-01",
+          "state": "EMPTY",
+          "comps": 6
+        },
+        {
+          "ok": true,
+          "page": "ADM-ORDER-01",
+          "state": "ERROR",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "ADM-ORDER-01",
+          "state": "NO_PERM",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "ADM-GIFT-01",
+          "state": "RESULTS",
+          "comps": 7
+        },
+        {
+          "ok": true,
+          "page": "ADM-GIFT-01",
+          "state": "LOADING",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-GIFT-01",
+          "state": "EMPTY",
+          "comps": 6
+        },
+        {
+          "ok": true,
+          "page": "ADM-GIFT-01",
+          "state": "ERROR",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-GIFT-01",
+          "state": "NO_PERM",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "ADM-CODE-01",
+          "state": "RESULTS",
+          "comps": 6
+        },
+        {
+          "ok": true,
+          "page": "ADM-CODE-01",
+          "state": "LOADING",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-CODE-01",
+          "state": "EMPTY",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "ADM-CODE-01",
+          "state": "ERROR",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-CODE-01",
+          "state": "NO_PERM",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "ADM-REFUND-01",
+          "state": "RESULTS",
+          "comps": 6
+        },
+        {
+          "ok": true,
+          "page": "ADM-REFUND-01",
+          "state": "LOADING",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-REFUND-01",
+          "state": "EMPTY",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "ADM-REFUND-01",
+          "state": "ERROR",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-REFUND-01",
+          "state": "NO_PERM",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "ADM-SERVICE-01",
+          "state": "DEFAULT",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-SERVICE-01",
+          "state": "EDITING",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-SERVICE-01",
+          "state": "VALIDATION_ERROR",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-SERVICE-01",
+          "state": "SUBMITTING",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-SERVICE-01",
+          "state": "SUCCESS",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-SERVICE-01",
+          "state": "ERROR",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-SERVICE-01",
+          "state": "NO_PERM",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-RBAC-01",
+          "state": "RESULTS",
+          "comps": 6
+        },
+        {
+          "ok": true,
+          "page": "ADM-RBAC-01",
+          "state": "EMPTY",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "ADM-RBAC-01",
+          "state": "ERROR",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-RBAC-01",
+          "state": "NO_PERM",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "ADM-RBAC-01",
+          "state": "DRAWER",
+          "comps": 6
+        },
+        {
+          "ok": true,
+          "page": "ADM-AUDIT-01",
+          "state": "RESULTS",
+          "comps": 6
+        },
+        {
+          "ok": true,
+          "page": "ADM-AUDIT-01",
+          "state": "LOADING",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-AUDIT-01",
+          "state": "EMPTY",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "ADM-AUDIT-01",
+          "state": "ERROR",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-AUDIT-01",
+          "state": "NO_PERM",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "ADM-AGREEMENT-01",
+          "state": "DEFAULT",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-AGREEMENT-01",
+          "state": "EDITING",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-AGREEMENT-01",
+          "state": "VALIDATION_ERROR",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-AGREEMENT-01",
+          "state": "SUBMITTING",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-AGREEMENT-01",
+          "state": "SUCCESS",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-AGREEMENT-01",
+          "state": "ERROR",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-AGREEMENT-01",
+          "state": "NO_PERM",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-SEARCH-01",
+          "state": "DEFAULT",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-SEARCH-01",
+          "state": "EDITING",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-SEARCH-01",
+          "state": "VALIDATION_ERROR",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-SEARCH-01",
+          "state": "SUBMITTING",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-SEARCH-01",
+          "state": "SUCCESS",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-SEARCH-01",
+          "state": "ERROR",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-SEARCH-01",
+          "state": "NO_PERM",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-PAYCHECK-01",
+          "state": "RESULTS",
+          "comps": 6
+        },
+        {
+          "ok": true,
+          "page": "ADM-PAYCHECK-01",
+          "state": "LOADING",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-PAYCHECK-01",
+          "state": "EMPTY",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "ADM-PAYCHECK-01",
+          "state": "ERROR",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-PAYCHECK-01",
+          "state": "NO_PERM",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "ADM-NOTIFY-01",
+          "state": "RESULTS",
+          "comps": 6
+        },
+        {
+          "ok": true,
+          "page": "ADM-NOTIFY-01",
+          "state": "LOADING",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-NOTIFY-01",
+          "state": "EMPTY",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "ADM-NOTIFY-01",
+          "state": "ERROR",
+          "comps": 4
+        },
+        {
+          "ok": true,
+          "page": "ADM-NOTIFY-01",
+          "state": "NO_PERM",
+          "comps": 3
+        },
+        {
+          "ok": true,
+          "page": "ADM-WALLET-01",
+          "state": "RESULTS",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "ADM-WALLET-01",
+          "state": "LOADING",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "ADM-WALLET-01",
+          "state": "EMPTY",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "ADM-WALLET-01",
+          "state": "ERROR",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "ADM-WALLET-01",
+          "state": "NO_PERM",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "ADM-WALLET-01",
+          "state": "EDITING",
+          "comps": 5
+        },
+        {
+          "ok": true,
+          "page": "ADM-WALLET-01",
+          "state": "SUCCESS",
+          "comps": 5
+        }
+      ],
+      "flows": [
+        {
+          "ok": true,
+          "msg": "首页商品卡进入详情"
+        },
+        {
+          "ok": true,
+          "msg": "详情打开购买面板"
+        },
+        {
+          "ok": true,
+          "msg": "协议默认不勾选"
+        },
+        {
+          "ok": true,
+          "msg": "未同意协议显示购买须知"
+        },
+        {
+          "ok": true,
+          "msg": "购买创建订单进入确认订单"
+        },
+        {
+          "ok": true,
+          "msg": "继续支付进入支付返回确认"
+        },
+        {
+          "ok": true,
+          "msg": "支付查询已支付进入结果页"
+        },
+        {
+          "ok": true,
+          "msg": "存在未支付单显示订单处理中"
+        },
+        {
+          "ok": true,
+          "msg": "订单处理中恢复支付查询"
+        },
+        {
+          "ok": true,
+          "msg": "PC 首页进入详情"
+        },
+        {
+          "ok": true,
+          "msg": "PC 打开购买弹层"
+        },
+        {
+          "ok": true,
+          "msg": "后台订单筛选真实过滤"
+        },
+        {
+          "ok": true,
+          "msg": "筛选结果包含目标订单"
+        },
+        {
+          "ok": true,
+          "msg": "后台页签真实过滤"
+        },
+        {
+          "ok": true,
+          "msg": "后台订单详情抽屉打开"
+        },
+        {
+          "ok": true,
+          "msg": "导出二次确认打开"
+        },
+        {
+          "ok": true,
+          "msg": "导出触发文件下载"
+        },
+        {
+          "ok": true,
+          "msg": "价格不合规阻止发布"
+        },
+        {
+          "ok": true,
+          "msg": "取消退款确认不改数据且保留抽屉"
+        }
+      ],
+      "layout": [
+        {
+          "ok": true,
+          "msg": "手机外框 320×640",
+          "phone": {
+            "w": 320,
+            "h": 640
+          },
+          "screen": {
+            "w": 288,
+            "h": 592
+          },
+          "body": {
+            "sw": 288,
+            "cw": 288
+          }
+        },
+        {
+          "ok": true,
+          "msg": "内部业务区 288×592",
+          "phone": {
+            "w": 320,
+            "h": 640
+          },
+          "screen": {
+            "w": 288,
+            "h": 592
+          },
+          "body": {
+            "sw": 288,
+            "cw": 288
+          }
+        },
+        {
+          "ok": true,
+          "msg": "移动正文无横向溢出",
+          "phone": {
+            "w": 320,
+            "h": 640
+          },
+          "screen": {
+            "w": 288,
+            "h": 592
+          },
+          "body": {
+            "sw": 288,
+            "cw": 288
+          }
+        },
+        {
+          "ok": true,
+          "msg": "后台 1440 无整页/表格横向拖动",
+          "page": 1440,
+          "win": 1440,
+          "table": {
+            "sw": 1110,
+            "cw": 1110
+          }
+        },
+        {
+          "ok": true,
+          "msg": "后台 1920 无整页/表格横向拖动",
+          "page": 1920,
+          "win": 1920,
+          "table": {
+            "sw": 1150,
+            "cw": 1150
+          }
+        }
+      ],
+      "reader": [
+        {
+          "ok": true,
+          "msg": "阅读器打开"
+        },
+        {
+          "ok": true,
+          "msg": "阅读器渲染 00 全文"
+        },
+        {
+          "ok": true,
+          "msg": "阅读器切换 01"
+        },
+        {
+          "ok": true,
+          "msg": "文档列表直接下载 MD",
+          "suggested": "03_组件级文档.md"
+        }
+      ],
+      "diagram": [
+        {
+          "ok": true,
+          "msg": "图示弹层打开"
+        },
+        {
+          "ok": true,
+          "msg": "SVG 可见文本",
+          "texts": 42,
+          "w": 1174
+        },
+        {
+          "ok": true,
+          "msg": "200% 缩放真实改变尺寸",
+          "before": 1174,
+          "after": 1726
+        }
+      ],
+      "offline": [
+        {
+          "ok": true,
+          "msg": "无外部运行资源请求"
+        },
+        {
+          "ok": true,
+          "msg": "控制台无未处理错误"
+        },
+        {
+          "ok": true,
+          "msg": "无页面异常"
+        }
+      ],
+      "screenshots": [
+        {
+          "name": "01-app-home",
+          "file": "_checks\\screenshots\\01-app-home.png"
+        },
+        {
+          "name": "02-buy-notice",
+          "file": "_checks\\screenshots\\02-buy-notice.png"
+        },
+        {
+          "name": "03-app-result",
+          "file": "_checks\\screenshots\\03-app-result.png"
+        },
+        {
+          "name": "04-web-detail",
+          "file": "_checks\\screenshots\\04-web-detail.png"
+        },
+        {
+          "name": "05-admin-order",
+          "file": "_checks\\screenshots\\05-admin-order.png"
+        },
+        {
+          "name": "06-reader",
+          "file": "_checks\\screenshots\\06-reader.png"
+        },
+        {
+          "name": "07-diagram",
+          "file": "_checks\\screenshots\\07-diagram.png"
+        }
+      ],
+      "summary": {
+        "pages": 50,
+        "instances": 224,
+        "docs": 9,
+        "diagrams": 20,
+        "components": 66
+      }
+    }
+  }
+}

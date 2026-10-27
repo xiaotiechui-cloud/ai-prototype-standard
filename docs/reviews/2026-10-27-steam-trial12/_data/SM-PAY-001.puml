@@ -1,0 +1,20 @@
+@startuml
+!pragma layout smetana
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName "Microsoft YaHei"
+hide empty description
+state "待支付" as INIT
+state "待支付" as S1
+state "已支付" as S2
+S1 --> S2 : 服务端确认已支付 [渠道可信结果]
+state "确认中" as S3
+S1 --> S3 : 结果未知 [查询超时/渠道处理中]
+state "已关闭" as S4
+S1 --> S4 : 到期查询明确未支付 [订单到期且无在途支付]
+S3 --> S2 : 渠道确认已支付 [可信凭证]
+S3 --> S4 : 渠道确认未支付且已过期 [可信结果]
+S3 --> S3 : 仍无法确认 [超过约定时限]
+S4 --> S2 : 晚到款确认已支付 [可履约且无新已支付单]
+S4 --> S4 : 晚到款不可履约/新单已支付 [退款任务]
+@enduml
