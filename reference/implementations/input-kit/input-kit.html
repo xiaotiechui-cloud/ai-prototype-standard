@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>输入控件隔离参考 · IK-01</title>
+<style>
+:root{--bg:#f4f4f4;--panel:#fff;--ink:#242424;--muted:#6b6b6b;--line:#cdcdcd;--primary:#343434;--disabled:#eaeaea;--focus:#525252;--control-min:44px;--choice-size:16px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.6 "Microsoft YaHei",Arial,sans-serif}
+main{max-width:760px;margin:24px auto;padding:16px}
+h1{font-size:20px;font-weight:500;margin:0 0 12px}
+h2{font-size:16px;font-weight:500;margin:0 0 12px}
+p{margin:8px 0;overflow-wrap:anywhere}
+.tools{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:16px}
+.host{width:min(100%,680px);background:var(--panel);border:1px solid var(--line);padding:12px}
+.host[data-density="mobile"]{width:min(100%,288px);--control-min:44px}
+.host[data-density="desktop"]{--control-min:40px}
+.field{display:grid;gap:6px;margin-bottom:12px;min-width:0}
+.host input[type="text"],.host input[type="email"],.host textarea,.host select{width:100%;min-height:var(--control-min);padding:8px 10px;border:1px solid var(--line);border-radius:2px;background:var(--panel);color:var(--ink);font:inherit}
+.host textarea{resize:vertical}
+fieldset{min-width:0;margin:0 0 12px;padding:0;border:0}
+legend{font-weight:500;margin-bottom:6px}
+.choice{display:flex;align-items:flex-start;gap:8px;min-height:var(--control-min);padding:10px 0;cursor:pointer}
+.choice input[type="radio"],.choice input[type="checkbox"]{flex:0 0 var(--choice-size);width:var(--choice-size);height:var(--choice-size);margin:3px 0 0;padding:0;accent-color:var(--primary)}
+.choice span{min-width:0;overflow-wrap:anywhere}
+.choice:has(input:disabled){color:var(--muted);cursor:default}
+.host input[type="text"]:disabled{background:var(--disabled)}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.host [aria-invalid="true"]{border-width:2px;border-color:var(--ink)}
+.error{color:var(--ink);font-size:13px}
+[hidden]{display:none!important}
+button{min-height:44px;padding:8px 12px;font:inherit;border:1px solid var(--line);border-radius:2px;background:var(--panel);color:var(--ink);cursor:pointer}
+button[type="submit"]{background:var(--primary);color:#fff}
+output{display:block;margin-top:12px;white-space:pre-wrap;overflow-wrap:anywhere}
+.hint{color:var(--muted);font-size:13px}
+</style>
+<main>
+<h1>输入控件隔离参考</h1>
+<p class="hint">IK-01 · 按需组件试点，不是完整项目模板。浏览器与项目集成验证范围见 validation.json。</p>
+<div class="tools" aria-label="参考样例展示工具">
+<button id="mobile" type="button" aria-pressed="true">移动密度</button>
+<button id="desktop" type="button" aria-pressed="false">桌面密度</button>
+</div>
+<section class="host" id="host" data-density="mobile" data-profile="input-isolation-reference" data-profile-revision="1">
+<h2>同宿主表单</h2>
+<form id="form" novalidate>
+<div class="field" data-component="IK-TEXT" data-pattern="PAT-INPUT-01" data-variant="text-default">
+<label for="name">名称（必填）</label><input id="name" name="name" type="text" required aria-describedby="name-error" aria-invalid="false">
+<p id="name-error" class="error" hidden>错误：请填写名称。</p>
+</div>
+<div class="field"><label for="locked">禁用文本</label><input id="locked" type="text" value="此字段不可修改" disabled></div>
+<fieldset data-component="IK-RADIO" data-pattern="PAT-CHOICE-01" data-variant="native-radio">
+<legend>单选方式</legend>
+<label class="choice"><input id="mode-a" type="radio" name="mode" value="A" checked><span>方式 A（默认选中）</span></label>
+<label class="choice"><input id="mode-b" type="radio" name="mode" value="B"><span>方式 B：这是用于窄容器换行验证的长标签，不应拉伸选择图形，也不应挤成逐字竖排。</span></label>
+<label class="choice"><input id="mode-c" type="radio" name="mode" value="C" disabled><span>方式 C（禁用：当前条件不满足）</span></label>
+</fieldset>
+<fieldset data-component="IK-CHECK" data-pattern="PAT-CHECK-01" data-variant="native-checkbox" aria-describedby="consent-error">
+<legend>复选项</legend>
+<label class="choice"><input id="consent" type="checkbox" name="consent" aria-invalid="false" aria-describedby="consent-error"><span>我已阅读示例说明（必选；初始不勾选）</span></label>
+<p id="consent-error" class="error" hidden>错误：请勾选示例说明。</p>
+<label class="choice"><input id="extra" type="checkbox" name="extra"><span>可选附加项：这是一段独立长标签；只切换该项，不应影响其他选项。</span></label>
+<label class="choice"><input id="disabled-check" type="checkbox" checked disabled><span>禁用且选中（固定示例条件）</span></label>
+</fieldset>
+<div class="tools"><button id="submit" type="submit">提交示例</button><button id="reset" type="reset">重置示例</button></div>
+<output id="result" role="status" aria-live="polite">尚未提交</output>
+</form>
+</section>
+<p class="hint">仅内存演示。288px 是本例测试宿主宽度；16px 选择图形为样例局部值，不新增通用项目尺寸。图形与标签热区分开，采用原生语义。</p>
+</main>
+<script>
+// PURE-MODEL-BEGIN
+function validateInput(values) {
+  return { name: !values.name.trim(), consent: values.consent !== true };
+}
+// PURE-MODEL-END
+const form = document.getElementById('form');
+const nameInput = document.getElementById('name');
+const consentInput = document.getElementById('consent');
+const result = document.getElementById('result');
+function showErrors(errors) {
+  for (const key of ['name', 'consent']) {
+    document.getElementById(key).setAttribute('aria-invalid', String(errors[key]));
+    document.getElementById(key + '-error').hidden = !errors[key];
+  }
+}
+form.addEventListener('submit', event => {
+  event.preventDefault();
+  const values = { name: nameInput.value, consent: consentInput.checked };
+  const errors = validateInput(values);
+  showErrors(errors);
+  if (errors.name || errors.consent) {
+    result.textContent = '提交未完成，请修正标明的错误。';
+    (errors.name ? nameInput : consentInput).focus();
+    return;
+  }
+  const mode = new FormData(form).get('mode');
+  result.textContent = '已提交示例（仅内存）\n名称：' + values.name.trim() + '\n方式：' + mode + '\n附加项：' + (document.getElementById('extra').checked ? '是' : '否');
+});
+form.addEventListener('reset', () => {
+  showErrors({ name: false, consent: false });
+  result.textContent = '尚未提交';
+});
+for (const density of ['mobile', 'desktop']) {
+  document.getElementById(density).addEventListener('click', () => {
+    document.getElementById('host').dataset.density = density;
+    for (const key of ['mobile', 'desktop']) {
+      document.getElementById(key).setAttribute('aria-pressed', String(key === density));
+    }
+  });
+}
+</script>
+</html>

@@ -1,0 +1,5342 @@
+{
+  "basis": "Manual semantic responsibility mapping; different PRDs, no numeric quality score.",
+  "trial_pages": [
+    {
+      "id": "APP-HOME-01",
+      "end": "APP",
+      "name": "首页",
+      "purpose": "展示已发布商品与运营配置，提供搜索、订单、客服入口",
+      "entry": "平台入口进入",
+      "exit": "商品详情/搜索/我的订单/客服",
+      "overlay": false,
+      "reqs": [
+        "REQ-HOME-001",
+        "REQ-AUTH-001"
+      ],
+      "states": [
+        "DEFAULT",
+        "LOADING",
+        "EMPTY",
+        "ERROR",
+        "NOTICE_VERIFIED",
+        "NOTICE_UNVERIFIED"
+      ],
+      "components": [
+        {
+          "id": "APP-HOME-01-C01",
+          "def": "COM-CLIENT-C08",
+          "name": null,
+          "variant": "mobile",
+          "mode": "PAT-NAV-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NOTICE_VERIFIED",
+            "NOTICE_UNVERIFIED"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "APP-HOME-01-C02",
+          "def": "COM-CLIENT-C01",
+          "name": null,
+          "variant": "mobile",
+          "mode": "PAT-INPUT-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NOTICE_VERIFIED",
+            "NOTICE_UNVERIFIED"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-HOME-01-C03",
+          "def": "COM-STEAM-C01",
+          "name": null,
+          "variant": "manual",
+          "mode": "PAT-CAROUSEL-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NOTICE_VERIFIED",
+            "NOTICE_UNVERIFIED"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-HOME-01-C04",
+          "def": "COM-STEAM-C02",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-05",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NOTICE_VERIFIED",
+            "NOTICE_UNVERIFIED"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-HOME-01-C05",
+          "def": "COM-CLIENT-C05",
+          "name": null,
+          "variant": "mobile",
+          "mode": "PAT-FILTER-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NOTICE_VERIFIED",
+            "NOTICE_UNVERIFIED"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-HOME-01-C06",
+          "def": "COM-CLIENT-C04",
+          "name": null,
+          "variant": "mobile",
+          "mode": "PAT-LIST-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NOTICE_VERIFIED",
+            "NOTICE_UNVERIFIED"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-HOME-01-C07",
+          "def": "COM-CLIENT-C03",
+          "name": null,
+          "variant": "grid",
+          "mode": "PAT-CARD-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NOTICE_VERIFIED",
+            "NOTICE_UNVERIFIED"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-HOME-01-C08",
+          "def": "COM-CLIENT-C09",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NOTICE_VERIFIED",
+            "NOTICE_UNVERIFIED"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-HOME-01-C09",
+          "def": "COM-STEAM-C10",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-MODAL-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NOTICE_VERIFIED",
+            "NOTICE_UNVERIFIED"
+          ],
+          "region": "overlay",
+          "note": ""
+        },
+        {
+          "id": "APP-HOME-01-C10",
+          "def": "COM-CLIENT-C14",
+          "name": null,
+          "variant": "mobile",
+          "mode": "PAT-NAV-02",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NOTICE_VERIFIED",
+            "NOTICE_UNVERIFIED"
+          ],
+          "region": "footer",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "APP-SEARCH-01",
+      "end": "APP",
+      "name": "搜索",
+      "purpose": "输入关键词、展示搜索发现与热门商品、返回结果",
+      "entry": "首页搜索框",
+      "exit": "首页/商品详情",
+      "overlay": false,
+      "reqs": [
+        "REQ-SEARCH-001"
+      ],
+      "states": [
+        "DEFAULT",
+        "EDITING",
+        "LOADING",
+        "RESULTS",
+        "EMPTY",
+        "ERROR",
+        "END"
+      ],
+      "components": [
+        {
+          "id": "APP-SEARCH-01-C01",
+          "def": "COM-CLIENT-C08",
+          "name": null,
+          "variant": "mobile",
+          "mode": "PAT-NAV-01",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "LOADING",
+            "RESULTS",
+            "EMPTY",
+            "ERROR",
+            "END"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "APP-SEARCH-01-C02",
+          "def": "COM-CLIENT-C01",
+          "name": null,
+          "variant": "mobile",
+          "mode": "PAT-INPUT-01",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "LOADING",
+            "RESULTS",
+            "EMPTY",
+            "ERROR",
+            "END"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-SEARCH-01-C03",
+          "def": "COM-CLIENT-C05",
+          "name": null,
+          "variant": "mobile",
+          "mode": "PAT-FILTER-01",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "LOADING",
+            "RESULTS",
+            "EMPTY",
+            "ERROR",
+            "END"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-SEARCH-01-C04",
+          "def": "COM-CLIENT-C04",
+          "name": null,
+          "variant": "mobile",
+          "mode": "PAT-LIST-01",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "LOADING",
+            "RESULTS",
+            "EMPTY",
+            "ERROR",
+            "END"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-SEARCH-01-C05",
+          "def": "COM-CLIENT-C03",
+          "name": null,
+          "variant": "grid",
+          "mode": "PAT-CARD-01",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "LOADING",
+            "RESULTS",
+            "EMPTY",
+            "ERROR",
+            "END"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-SEARCH-01-C06",
+          "def": "COM-CLIENT-C03",
+          "name": null,
+          "variant": "row",
+          "mode": "PAT-CARD-01",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "LOADING",
+            "RESULTS",
+            "EMPTY",
+            "ERROR",
+            "END"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-SEARCH-01-C07",
+          "def": "COM-CLIENT-C09",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "LOADING",
+            "RESULTS",
+            "EMPTY",
+            "ERROR",
+            "END"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "APP-PRODUCT-01",
+      "end": "APP",
+      "name": "商品详情",
+      "purpose": "展示商品资料、交付说明、限制与购买操作",
+      "entry": "首页/搜索卡片",
+      "exit": "购买面板/搜索/客服/返回",
+      "overlay": false,
+      "reqs": [
+        "REQ-PRODUCT-001"
+      ],
+      "states": [
+        "DEFAULT",
+        "LOADING",
+        "UNAVAILABLE",
+        "PENDING_ORDER",
+        "STOCK_UNKNOWN",
+        "ERROR"
+      ],
+      "components": [
+        {
+          "id": "APP-PRODUCT-01-C01",
+          "def": "COM-CLIENT-C08",
+          "name": null,
+          "variant": "mobile",
+          "mode": "PAT-NAV-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "UNAVAILABLE",
+            "PENDING_ORDER",
+            "STOCK_UNKNOWN",
+            "ERROR"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "APP-PRODUCT-01-C02",
+          "def": "COM-STEAM-C03",
+          "name": null,
+          "variant": "mobile",
+          "mode": "PAT-GALLERY-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "UNAVAILABLE",
+            "PENDING_ORDER",
+            "STOCK_UNKNOWN",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-PRODUCT-01-C03",
+          "def": "COM-STEAM-C04",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-CARD-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "UNAVAILABLE",
+            "PENDING_ORDER",
+            "STOCK_UNKNOWN",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-PRODUCT-01-C04",
+          "def": "COM-CLIENT-C07",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-EXTERNAL-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "UNAVAILABLE",
+            "PENDING_ORDER",
+            "STOCK_UNKNOWN",
+            "ERROR"
+          ],
+          "region": "footer",
+          "note": ""
+        },
+        {
+          "id": "APP-PRODUCT-01-C05",
+          "def": "COM-CLIENT-C09",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "UNAVAILABLE",
+            "PENDING_ORDER",
+            "STOCK_UNKNOWN",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "APP-BUY-01",
+      "end": "APP",
+      "name": "购买面板",
+      "purpose": "核对规格、交付方式、好友链接、支付方式与协议",
+      "entry": "详情“立即购买”",
+      "exit": "确认订单/详情",
+      "overlay": true,
+      "reqs": [
+        "REQ-CHECKOUT-001",
+        "REQ-AUTH-001"
+      ],
+      "states": [
+        "DEFAULT",
+        "AGREEMENT_REQUIRED",
+        "AUTH_LOGIN",
+        "AUTH_REALNAME",
+        "AUTH_MINOR",
+        "PHONE_BIND",
+        "VALIDATION_ERROR",
+        "BUSINESS_REJECT",
+        "SUBMITTING"
+      ],
+      "components": [
+        {
+          "id": "APP-BUY-01-C01",
+          "def": "COM-STEAM-C05",
+          "name": null,
+          "variant": "mobileBottom",
+          "mode": "PAT-MODAL-02",
+          "states": [
+            "DEFAULT",
+            "AGREEMENT_REQUIRED",
+            "AUTH_LOGIN",
+            "AUTH_REALNAME",
+            "AUTH_MINOR",
+            "PHONE_BIND",
+            "VALIDATION_ERROR",
+            "BUSINESS_REJECT",
+            "SUBMITTING"
+          ],
+          "region": "overlay",
+          "note": ""
+        },
+        {
+          "id": "APP-BUY-01-C02",
+          "def": "COM-STEAM-C06",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-CHECK-01",
+          "states": [
+            "DEFAULT",
+            "AGREEMENT_REQUIRED",
+            "AUTH_LOGIN",
+            "AUTH_REALNAME",
+            "AUTH_MINOR",
+            "PHONE_BIND",
+            "VALIDATION_ERROR",
+            "BUSINESS_REJECT",
+            "SUBMITTING"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-BUY-01-C03",
+          "def": "COM-STEAM-C07",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-MODAL-03",
+          "states": [
+            "DEFAULT",
+            "AGREEMENT_REQUIRED",
+            "AUTH_LOGIN",
+            "AUTH_REALNAME",
+            "AUTH_MINOR",
+            "PHONE_BIND",
+            "VALIDATION_ERROR",
+            "BUSINESS_REJECT",
+            "SUBMITTING"
+          ],
+          "region": "overlay",
+          "note": ""
+        },
+        {
+          "id": "APP-BUY-01-C04",
+          "def": "COM-CLIENT-C09",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "AGREEMENT_REQUIRED",
+            "AUTH_LOGIN",
+            "AUTH_REALNAME",
+            "AUTH_MINOR",
+            "PHONE_BIND",
+            "VALIDATION_ERROR",
+            "BUSINESS_REJECT",
+            "SUBMITTING"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "APP-CHECKOUT-01",
+      "end": "APP",
+      "name": "确认订单",
+      "purpose": "承接未支付恢复与继续支付，展示订单快照与支付入口",
+      "entry": "购买面板提交/订单继续支付/支付返回",
+      "exit": "支付返回/结果页/订单",
+      "overlay": false,
+      "reqs": [
+        "REQ-CHECKOUT-001",
+        "REQ-PAY-001"
+      ],
+      "states": [
+        "DEFAULT",
+        "EXPIRED",
+        "PAYING",
+        "PAY_CONFIRMING",
+        "CLOSED",
+        "ERROR"
+      ],
+      "components": [
+        {
+          "id": "APP-CHECKOUT-01-C01",
+          "def": "COM-CLIENT-C08",
+          "name": null,
+          "variant": "mobile",
+          "mode": "PAT-NAV-01",
+          "states": [
+            "DEFAULT",
+            "EXPIRED",
+            "PAYING",
+            "PAY_CONFIRMING",
+            "CLOSED",
+            "ERROR"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "APP-CHECKOUT-01-C02",
+          "def": "COM-STEAM-C11",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-CARD-02",
+          "states": [
+            "DEFAULT",
+            "EXPIRED",
+            "PAYING",
+            "PAY_CONFIRMING",
+            "CLOSED",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-CHECKOUT-01-C03",
+          "def": "COM-CLIENT-C10",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-CARD-01",
+          "states": [
+            "DEFAULT",
+            "EXPIRED",
+            "PAYING",
+            "PAY_CONFIRMING",
+            "CLOSED",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-CHECKOUT-01-C04",
+          "def": "COM-STEAM-C06",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-CHECK-01",
+          "states": [
+            "DEFAULT",
+            "EXPIRED",
+            "PAYING",
+            "PAY_CONFIRMING",
+            "CLOSED",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-CHECKOUT-01-C05",
+          "def": "COM-STEAM-C14",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-ACTION-02",
+          "states": [
+            "DEFAULT",
+            "EXPIRED",
+            "PAYING",
+            "PAY_CONFIRMING",
+            "CLOSED",
+            "ERROR"
+          ],
+          "region": "footer",
+          "note": ""
+        },
+        {
+          "id": "APP-CHECKOUT-01-C06",
+          "def": "COM-CLIENT-C09",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "EXPIRED",
+            "PAYING",
+            "PAY_CONFIRMING",
+            "CLOSED",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "APP-PAYRET-01",
+      "end": "APP",
+      "name": "支付返回确认",
+      "purpose": "支付返回后主动查询真实结果，不按用户自述改状态",
+      "entry": "支付返回/订单重查",
+      "exit": "结果页/确认订单/确认中",
+      "overlay": false,
+      "reqs": [
+        "REQ-PAY-001"
+      ],
+      "states": [
+        "QUERY_PROMPT",
+        "QUERYING",
+        "RESULT_PAID",
+        "RESULT_UNPAID",
+        "RESULT_UNKNOWN",
+        "TIMEOUT"
+      ],
+      "components": [
+        {
+          "id": "APP-PAYRET-01-C01",
+          "def": "COM-CLIENT-C08",
+          "name": null,
+          "variant": "mobile",
+          "mode": "PAT-NAV-01",
+          "states": [
+            "QUERY_PROMPT",
+            "QUERYING",
+            "RESULT_PAID",
+            "RESULT_UNPAID",
+            "RESULT_UNKNOWN",
+            "TIMEOUT"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "APP-PAYRET-01-C02",
+          "def": "COM-STEAM-C09",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-ACTION-03",
+          "states": [
+            "QUERY_PROMPT",
+            "QUERYING",
+            "RESULT_PAID",
+            "RESULT_UNPAID",
+            "RESULT_UNKNOWN",
+            "TIMEOUT"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-PAYRET-01-C03",
+          "def": "COM-CLIENT-C09",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "QUERY_PROMPT",
+            "QUERYING",
+            "RESULT_PAID",
+            "RESULT_UNPAID",
+            "RESULT_UNKNOWN",
+            "TIMEOUT"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "APP-RESULT-01",
+      "end": "APP",
+      "name": "支付与交付结果",
+      "purpose": "分开展示支付、交付与退款事实",
+      "entry": "支付查询完成/订单详情",
+      "exit": "订单/客服/商品详情",
+      "overlay": false,
+      "reqs": [
+        "REQ-RESULT-001",
+        "REQ-CODE-001",
+        "REQ-GIFT-001"
+      ],
+      "states": [
+        "CODE_DELIVERED",
+        "CODE_ISSUING",
+        "CODE_EXCEPTION",
+        "GIFT_PENDING",
+        "GIFT_PROCESSING",
+        "REFUNDING",
+        "REFUNDED",
+        "REFUND_FAILED",
+        "PAY_CONFIRMING"
+      ],
+      "components": [
+        {
+          "id": "APP-RESULT-01-C01",
+          "def": "COM-CLIENT-C08",
+          "name": null,
+          "variant": "mobile",
+          "mode": "PAT-NAV-01",
+          "states": [
+            "CODE_DELIVERED",
+            "CODE_ISSUING",
+            "CODE_EXCEPTION",
+            "GIFT_PENDING",
+            "GIFT_PROCESSING",
+            "REFUNDING",
+            "REFUNDED",
+            "REFUND_FAILED",
+            "PAY_CONFIRMING"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "APP-RESULT-01-C02",
+          "def": "COM-STEAM-C08",
+          "name": null,
+          "variant": "code",
+          "mode": "PAT-CARD-02",
+          "states": [
+            "CODE_DELIVERED",
+            "CODE_ISSUING",
+            "CODE_EXCEPTION",
+            "GIFT_PENDING",
+            "GIFT_PROCESSING",
+            "REFUNDING",
+            "REFUNDED",
+            "REFUND_FAILED",
+            "PAY_CONFIRMING"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-RESULT-01-C03",
+          "def": "COM-STEAM-C08",
+          "name": null,
+          "variant": "gift",
+          "mode": "PAT-CARD-02",
+          "states": [
+            "CODE_DELIVERED",
+            "CODE_ISSUING",
+            "CODE_EXCEPTION",
+            "GIFT_PENDING",
+            "GIFT_PROCESSING",
+            "REFUNDING",
+            "REFUNDED",
+            "REFUND_FAILED",
+            "PAY_CONFIRMING"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-RESULT-01-C04",
+          "def": "COM-STEAM-C08",
+          "name": null,
+          "variant": "refund",
+          "mode": "PAT-CARD-02",
+          "states": [
+            "CODE_DELIVERED",
+            "CODE_ISSUING",
+            "CODE_EXCEPTION",
+            "GIFT_PENDING",
+            "GIFT_PROCESSING",
+            "REFUNDING",
+            "REFUNDED",
+            "REFUND_FAILED",
+            "PAY_CONFIRMING"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-RESULT-01-C05",
+          "def": "COM-STEAM-C11",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-CARD-02",
+          "states": [
+            "CODE_DELIVERED",
+            "CODE_ISSUING",
+            "CODE_EXCEPTION",
+            "GIFT_PENDING",
+            "GIFT_PROCESSING",
+            "REFUNDING",
+            "REFUNDED",
+            "REFUND_FAILED",
+            "PAY_CONFIRMING"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-RESULT-01-C06",
+          "def": "COM-CLIENT-C07",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-EXTERNAL-01",
+          "states": [
+            "CODE_DELIVERED",
+            "CODE_ISSUING",
+            "CODE_EXCEPTION",
+            "GIFT_PENDING",
+            "GIFT_PROCESSING",
+            "REFUNDING",
+            "REFUNDED",
+            "REFUND_FAILED",
+            "PAY_CONFIRMING"
+          ],
+          "region": "footer",
+          "note": ""
+        },
+        {
+          "id": "APP-RESULT-01-C07",
+          "def": "COM-CLIENT-C09",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "CODE_DELIVERED",
+            "CODE_ISSUING",
+            "CODE_EXCEPTION",
+            "GIFT_PENDING",
+            "GIFT_PROCESSING",
+            "REFUNDING",
+            "REFUNDED",
+            "REFUND_FAILED",
+            "PAY_CONFIRMING"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "APP-ORDER-01",
+      "end": "APP",
+      "name": "我的订单",
+      "purpose": "按状态查看本人订单并继续/查询/查看详情",
+      "entry": "首页/底部导航/站内信跳转",
+      "exit": "订单详情/确认订单/支付返回/客服",
+      "overlay": false,
+      "reqs": [
+        "REQ-ORDER-001"
+      ],
+      "states": [
+        "LOGGED_IN",
+        "GUEST",
+        "EMPTY",
+        "LOADING",
+        "ERROR",
+        "SESSION_EXPIRED"
+      ],
+      "components": [
+        {
+          "id": "APP-ORDER-01-C01",
+          "def": "COM-CLIENT-C08",
+          "name": null,
+          "variant": "mobile",
+          "mode": "PAT-NAV-01",
+          "states": [
+            "LOGGED_IN",
+            "GUEST",
+            "EMPTY",
+            "LOADING",
+            "ERROR",
+            "SESSION_EXPIRED"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "APP-ORDER-01-C02",
+          "def": "COM-CLIENT-C11",
+          "name": null,
+          "variant": "mobile",
+          "mode": "PAT-FILTER-02",
+          "states": [
+            "LOGGED_IN",
+            "GUEST",
+            "EMPTY",
+            "LOADING",
+            "ERROR",
+            "SESSION_EXPIRED"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-ORDER-01-C03",
+          "def": "COM-CLIENT-C12",
+          "name": null,
+          "variant": "mobile",
+          "mode": "PAT-LIST-03",
+          "states": [
+            "LOGGED_IN",
+            "GUEST",
+            "EMPTY",
+            "LOADING",
+            "ERROR",
+            "SESSION_EXPIRED"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-ORDER-01-C04",
+          "def": "COM-CLIENT-C09",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "LOGGED_IN",
+            "GUEST",
+            "EMPTY",
+            "LOADING",
+            "ERROR",
+            "SESSION_EXPIRED"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-ORDER-01-C05",
+          "def": "COM-CLIENT-C13",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-02",
+          "states": [
+            "LOGGED_IN",
+            "GUEST",
+            "EMPTY",
+            "LOADING",
+            "ERROR",
+            "SESSION_EXPIRED"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-ORDER-01-C06",
+          "def": "COM-CLIENT-C14",
+          "name": null,
+          "variant": "mobile",
+          "mode": "PAT-NAV-02",
+          "states": [
+            "LOGGED_IN",
+            "GUEST",
+            "EMPTY",
+            "LOADING",
+            "ERROR",
+            "SESSION_EXPIRED"
+          ],
+          "region": "footer",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "APP-ORDER-02",
+      "end": "APP",
+      "name": "订单详情",
+      "purpose": "展示订单快照、支付/交付/退款事实和售后入口",
+      "entry": "订单列表/结果页/站内信",
+      "exit": "订单列表/客服/结果页",
+      "overlay": false,
+      "reqs": [
+        "REQ-ORDER-001",
+        "REQ-REFUND-001"
+      ],
+      "states": [
+        "DEFAULT",
+        "PAY_CONFIRMING",
+        "DELIVERY_EXCEPTION",
+        "REFUND_FAILED",
+        "REFUNDED",
+        "CLOSED",
+        "ERROR"
+      ],
+      "components": [
+        {
+          "id": "APP-ORDER-02-C01",
+          "def": "COM-CLIENT-C08",
+          "name": null,
+          "variant": "mobile",
+          "mode": "PAT-NAV-01",
+          "states": [
+            "DEFAULT",
+            "PAY_CONFIRMING",
+            "DELIVERY_EXCEPTION",
+            "REFUND_FAILED",
+            "REFUNDED",
+            "CLOSED",
+            "ERROR"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "APP-ORDER-02-C02",
+          "def": "COM-STEAM-C11",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-CARD-02",
+          "states": [
+            "DEFAULT",
+            "PAY_CONFIRMING",
+            "DELIVERY_EXCEPTION",
+            "REFUND_FAILED",
+            "REFUNDED",
+            "CLOSED",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-ORDER-02-C03",
+          "def": "COM-STEAM-C08",
+          "name": null,
+          "variant": "code",
+          "mode": "PAT-CARD-02",
+          "states": [
+            "DEFAULT",
+            "PAY_CONFIRMING",
+            "DELIVERY_EXCEPTION",
+            "REFUND_FAILED",
+            "REFUNDED",
+            "CLOSED",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-ORDER-02-C04",
+          "def": "COM-STEAM-C08",
+          "name": null,
+          "variant": "refund",
+          "mode": "PAT-CARD-02",
+          "states": [
+            "DEFAULT",
+            "PAY_CONFIRMING",
+            "DELIVERY_EXCEPTION",
+            "REFUND_FAILED",
+            "REFUNDED",
+            "CLOSED",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-ORDER-02-C05",
+          "def": "COM-CLIENT-C07",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-EXTERNAL-01",
+          "states": [
+            "DEFAULT",
+            "PAY_CONFIRMING",
+            "DELIVERY_EXCEPTION",
+            "REFUND_FAILED",
+            "REFUNDED",
+            "CLOSED",
+            "ERROR"
+          ],
+          "region": "footer",
+          "note": ""
+        },
+        {
+          "id": "APP-ORDER-02-C06",
+          "def": "COM-CLIENT-C09",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "PAY_CONFIRMING",
+            "DELIVERY_EXCEPTION",
+            "REFUND_FAILED",
+            "REFUNDED",
+            "CLOSED",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "APP-AGREEMENT-01",
+      "end": "APP",
+      "name": "购买协议",
+      "purpose": "展示当前协议版本与正文，支持返回购买现场",
+      "entry": "购买面板/确认订单协议链接",
+      "exit": "来源页面",
+      "overlay": false,
+      "reqs": [
+        "REQ-AUTH-001",
+        "REQ-ADM-AGREEMENT"
+      ],
+      "states": [
+        "DEFAULT",
+        "LOADING",
+        "ERROR"
+      ],
+      "components": [
+        {
+          "id": "APP-AGREEMENT-01-C01",
+          "def": "COM-CLIENT-C08",
+          "name": null,
+          "variant": "mobile",
+          "mode": "PAT-NAV-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "ERROR"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "APP-AGREEMENT-01-C02",
+          "def": "COM-STEAM-C12",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-EXPAND-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-AGREEMENT-01-C03",
+          "def": "COM-CLIENT-C09",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "APP-SERVICE-01",
+      "end": "APP",
+      "name": "企业微信客服",
+      "purpose": "提供客服联系方式和订单号复制，无法唤起时给备用路径",
+      "entry": "首页/详情/结果/订单客服入口",
+      "exit": "返回来源",
+      "overlay": false,
+      "reqs": [
+        "REQ-SERVICE-001"
+      ],
+      "states": [
+        "WITH_ORDER",
+        "NO_ORDER",
+        "FALLBACK"
+      ],
+      "components": [
+        {
+          "id": "APP-SERVICE-01-C01",
+          "def": "COM-CLIENT-C08",
+          "name": null,
+          "variant": "mobile",
+          "mode": "PAT-NAV-01",
+          "states": [
+            "WITH_ORDER",
+            "NO_ORDER",
+            "FALLBACK"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "APP-SERVICE-01-C02",
+          "def": "COM-STEAM-C13",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-EXTERNAL-01",
+          "states": [
+            "WITH_ORDER",
+            "NO_ORDER",
+            "FALLBACK"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "APP-SERVICE-01-C03",
+          "def": "COM-CLIENT-C09",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "WITH_ORDER",
+            "NO_ORDER",
+            "FALLBACK"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "WEB-HOME-01",
+      "end": "WEB",
+      "name": "商城首页",
+      "purpose": "PC 宽屏展示已发布商品与运营配置",
+      "entry": "C 平台入口",
+      "exit": "详情/搜索/订单/客服",
+      "overlay": false,
+      "reqs": [
+        "REQ-HOME-001"
+      ],
+      "states": [
+        "DEFAULT",
+        "LOADING",
+        "EMPTY",
+        "ERROR",
+        "NOTICE_VERIFIED",
+        "NOTICE_UNVERIFIED"
+      ],
+      "components": [
+        {
+          "id": "WEB-HOME-01-C01",
+          "def": "COM-CLIENT-C08",
+          "name": null,
+          "variant": "desktop",
+          "mode": "PAT-NAV-03",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NOTICE_VERIFIED",
+            "NOTICE_UNVERIFIED"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "WEB-HOME-01-C02",
+          "def": "COM-CLIENT-C01",
+          "name": null,
+          "variant": "desktop",
+          "mode": "PAT-INPUT-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NOTICE_VERIFIED",
+            "NOTICE_UNVERIFIED"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-HOME-01-C03",
+          "def": "COM-STEAM-C01",
+          "name": null,
+          "variant": "manual",
+          "mode": "PAT-CAROUSEL-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NOTICE_VERIFIED",
+            "NOTICE_UNVERIFIED"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-HOME-01-C04",
+          "def": "COM-STEAM-C02",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-05",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NOTICE_VERIFIED",
+            "NOTICE_UNVERIFIED"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-HOME-01-C05",
+          "def": "COM-CLIENT-C05",
+          "name": null,
+          "variant": "desktop",
+          "mode": "PAT-FILTER-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NOTICE_VERIFIED",
+            "NOTICE_UNVERIFIED"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-HOME-01-C06",
+          "def": "COM-CLIENT-C04",
+          "name": null,
+          "variant": "desktop",
+          "mode": "PAT-GRID-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NOTICE_VERIFIED",
+            "NOTICE_UNVERIFIED"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-HOME-01-C07",
+          "def": "COM-CLIENT-C03",
+          "name": null,
+          "variant": "grid",
+          "mode": "PAT-CARD-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NOTICE_VERIFIED",
+            "NOTICE_UNVERIFIED"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-HOME-01-C08",
+          "def": "COM-CLIENT-C09",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NOTICE_VERIFIED",
+            "NOTICE_UNVERIFIED"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-HOME-01-C09",
+          "def": "COM-STEAM-C10",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-MODAL-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NOTICE_VERIFIED",
+            "NOTICE_UNVERIFIED"
+          ],
+          "region": "overlay",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "WEB-SEARCH-01",
+      "end": "WEB",
+      "name": "搜索",
+      "purpose": "同页默认态与结果态，展示发现、热门与结果",
+      "entry": "首页搜索",
+      "exit": "首页/详情",
+      "overlay": false,
+      "reqs": [
+        "REQ-SEARCH-001"
+      ],
+      "states": [
+        "DEFAULT",
+        "EDITING",
+        "LOADING",
+        "RESULTS",
+        "EMPTY",
+        "ERROR",
+        "END"
+      ],
+      "components": [
+        {
+          "id": "WEB-SEARCH-01-C01",
+          "def": "COM-CLIENT-C08",
+          "name": null,
+          "variant": "desktop",
+          "mode": "PAT-NAV-03",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "LOADING",
+            "RESULTS",
+            "EMPTY",
+            "ERROR",
+            "END"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "WEB-SEARCH-01-C02",
+          "def": "COM-CLIENT-C01",
+          "name": null,
+          "variant": "desktop",
+          "mode": "PAT-INPUT-01",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "LOADING",
+            "RESULTS",
+            "EMPTY",
+            "ERROR",
+            "END"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-SEARCH-01-C03",
+          "def": "COM-CLIENT-C05",
+          "name": null,
+          "variant": "desktop",
+          "mode": "PAT-FILTER-01",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "LOADING",
+            "RESULTS",
+            "EMPTY",
+            "ERROR",
+            "END"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-SEARCH-01-C04",
+          "def": "COM-CLIENT-C04",
+          "name": null,
+          "variant": "desktop",
+          "mode": "PAT-GRID-01",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "LOADING",
+            "RESULTS",
+            "EMPTY",
+            "ERROR",
+            "END"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-SEARCH-01-C05",
+          "def": "COM-CLIENT-C03",
+          "name": null,
+          "variant": "grid",
+          "mode": "PAT-CARD-01",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "LOADING",
+            "RESULTS",
+            "EMPTY",
+            "ERROR",
+            "END"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-SEARCH-01-C06",
+          "def": "COM-CLIENT-C03",
+          "name": null,
+          "variant": "row",
+          "mode": "PAT-CARD-01",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "LOADING",
+            "RESULTS",
+            "EMPTY",
+            "ERROR",
+            "END"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-SEARCH-01-C07",
+          "def": "COM-CLIENT-C09",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "LOADING",
+            "RESULTS",
+            "EMPTY",
+            "ERROR",
+            "END"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "WEB-PRODUCT-01",
+      "end": "WEB",
+      "name": "商品详情",
+      "purpose": "PC 分栏展示媒体与资料，右侧独立购买卡",
+      "entry": "首页/搜索",
+      "exit": "购买面板/搜索/客服/返回",
+      "overlay": false,
+      "reqs": [
+        "REQ-PRODUCT-001"
+      ],
+      "states": [
+        "DEFAULT",
+        "LOADING",
+        "UNAVAILABLE",
+        "PENDING_ORDER",
+        "STOCK_UNKNOWN",
+        "ERROR"
+      ],
+      "components": [
+        {
+          "id": "WEB-PRODUCT-01-C01",
+          "def": "COM-CLIENT-C08",
+          "name": null,
+          "variant": "desktop",
+          "mode": "PAT-NAV-03",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "UNAVAILABLE",
+            "PENDING_ORDER",
+            "STOCK_UNKNOWN",
+            "ERROR"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "WEB-PRODUCT-01-C02",
+          "def": "COM-STEAM-C03",
+          "name": null,
+          "variant": "desktop",
+          "mode": "PAT-GALLERY-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "UNAVAILABLE",
+            "PENDING_ORDER",
+            "STOCK_UNKNOWN",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-PRODUCT-01-C03",
+          "def": "COM-STEAM-C04",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-CARD-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "UNAVAILABLE",
+            "PENDING_ORDER",
+            "STOCK_UNKNOWN",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-PRODUCT-01-C04",
+          "def": "COM-CLIENT-C07",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-EXTERNAL-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "UNAVAILABLE",
+            "PENDING_ORDER",
+            "STOCK_UNKNOWN",
+            "ERROR"
+          ],
+          "region": "footer",
+          "note": ""
+        },
+        {
+          "id": "WEB-PRODUCT-01-C05",
+          "def": "COM-CLIENT-C09",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "UNAVAILABLE",
+            "PENDING_ORDER",
+            "STOCK_UNKNOWN",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "WEB-BUY-01",
+      "end": "WEB",
+      "name": "购买面板",
+      "purpose": "PC 居中购买面板，字段与 APP 同源",
+      "entry": "详情购买卡",
+      "exit": "确认订单/详情",
+      "overlay": true,
+      "reqs": [
+        "REQ-CHECKOUT-001",
+        "REQ-AUTH-001"
+      ],
+      "states": [
+        "DEFAULT",
+        "AGREEMENT_REQUIRED",
+        "AUTH_LOGIN",
+        "AUTH_REALNAME",
+        "AUTH_MINOR",
+        "PHONE_BIND",
+        "VALIDATION_ERROR",
+        "BUSINESS_REJECT",
+        "SUBMITTING"
+      ],
+      "components": [
+        {
+          "id": "WEB-BUY-01-C01",
+          "def": "COM-STEAM-C05",
+          "name": null,
+          "variant": "desktopCenter",
+          "mode": "PAT-MODAL-02",
+          "states": [
+            "DEFAULT",
+            "AGREEMENT_REQUIRED",
+            "AUTH_LOGIN",
+            "AUTH_REALNAME",
+            "AUTH_MINOR",
+            "PHONE_BIND",
+            "VALIDATION_ERROR",
+            "BUSINESS_REJECT",
+            "SUBMITTING"
+          ],
+          "region": "overlay",
+          "note": ""
+        },
+        {
+          "id": "WEB-BUY-01-C02",
+          "def": "COM-STEAM-C06",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-CHECK-01",
+          "states": [
+            "DEFAULT",
+            "AGREEMENT_REQUIRED",
+            "AUTH_LOGIN",
+            "AUTH_REALNAME",
+            "AUTH_MINOR",
+            "PHONE_BIND",
+            "VALIDATION_ERROR",
+            "BUSINESS_REJECT",
+            "SUBMITTING"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-BUY-01-C03",
+          "def": "COM-STEAM-C07",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-MODAL-03",
+          "states": [
+            "DEFAULT",
+            "AGREEMENT_REQUIRED",
+            "AUTH_LOGIN",
+            "AUTH_REALNAME",
+            "AUTH_MINOR",
+            "PHONE_BIND",
+            "VALIDATION_ERROR",
+            "BUSINESS_REJECT",
+            "SUBMITTING"
+          ],
+          "region": "overlay",
+          "note": ""
+        },
+        {
+          "id": "WEB-BUY-01-C04",
+          "def": "COM-CLIENT-C09",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "AGREEMENT_REQUIRED",
+            "AUTH_LOGIN",
+            "AUTH_REALNAME",
+            "AUTH_MINOR",
+            "PHONE_BIND",
+            "VALIDATION_ERROR",
+            "BUSINESS_REJECT",
+            "SUBMITTING"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "WEB-CHECKOUT-01",
+      "end": "WEB",
+      "name": "确认订单与扫码支付",
+      "purpose": "承接未支付恢复，提供待扫码/确认中/成功三态",
+      "entry": "购买面板/订单继续支付",
+      "exit": "结果页/订单/支付返回",
+      "overlay": false,
+      "reqs": [
+        "REQ-CHECKOUT-001",
+        "REQ-PAY-001"
+      ],
+      "states": [
+        "DEFAULT",
+        "EXPIRED",
+        "PAYING",
+        "SCAN_PENDING",
+        "SCAN_CONFIRMING",
+        "PAY_CONFIRMING",
+        "CLOSED",
+        "ERROR"
+      ],
+      "components": [
+        {
+          "id": "WEB-CHECKOUT-01-C01",
+          "def": "COM-CLIENT-C08",
+          "name": null,
+          "variant": "desktop",
+          "mode": "PAT-NAV-03",
+          "states": [
+            "DEFAULT",
+            "EXPIRED",
+            "PAYING",
+            "SCAN_PENDING",
+            "SCAN_CONFIRMING",
+            "PAY_CONFIRMING",
+            "CLOSED",
+            "ERROR"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "WEB-CHECKOUT-01-C02",
+          "def": "COM-STEAM-C11",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-CARD-02",
+          "states": [
+            "DEFAULT",
+            "EXPIRED",
+            "PAYING",
+            "SCAN_PENDING",
+            "SCAN_CONFIRMING",
+            "PAY_CONFIRMING",
+            "CLOSED",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-CHECKOUT-01-C03",
+          "def": "COM-CLIENT-C10",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-CARD-01",
+          "states": [
+            "DEFAULT",
+            "EXPIRED",
+            "PAYING",
+            "SCAN_PENDING",
+            "SCAN_CONFIRMING",
+            "PAY_CONFIRMING",
+            "CLOSED",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-CHECKOUT-01-C04",
+          "def": "COM-STEAM-C06",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-CHECK-01",
+          "states": [
+            "DEFAULT",
+            "EXPIRED",
+            "PAYING",
+            "SCAN_PENDING",
+            "SCAN_CONFIRMING",
+            "PAY_CONFIRMING",
+            "CLOSED",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-CHECKOUT-01-C05",
+          "def": "COM-STEAM-C14",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-ACTION-02",
+          "states": [
+            "DEFAULT",
+            "EXPIRED",
+            "PAYING",
+            "SCAN_PENDING",
+            "SCAN_CONFIRMING",
+            "PAY_CONFIRMING",
+            "CLOSED",
+            "ERROR"
+          ],
+          "region": "footer",
+          "note": ""
+        },
+        {
+          "id": "WEB-CHECKOUT-01-C06",
+          "def": "COM-CLIENT-C09",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "EXPIRED",
+            "PAYING",
+            "SCAN_PENDING",
+            "SCAN_CONFIRMING",
+            "PAY_CONFIRMING",
+            "CLOSED",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "WEB-PAYRET-01",
+      "end": "WEB",
+      "name": "支付返回确认",
+      "purpose": "查询真实支付结果，两个选项均触发查询",
+      "entry": "支付返回/订单重查",
+      "exit": "结果页/确认订单/确认中",
+      "overlay": false,
+      "reqs": [
+        "REQ-PAY-001"
+      ],
+      "states": [
+        "QUERY_PROMPT",
+        "QUERYING",
+        "RESULT_PAID",
+        "RESULT_UNPAID",
+        "RESULT_UNKNOWN",
+        "TIMEOUT"
+      ],
+      "components": [
+        {
+          "id": "WEB-PAYRET-01-C01",
+          "def": "COM-CLIENT-C08",
+          "name": null,
+          "variant": "desktop",
+          "mode": "PAT-NAV-03",
+          "states": [
+            "QUERY_PROMPT",
+            "QUERYING",
+            "RESULT_PAID",
+            "RESULT_UNPAID",
+            "RESULT_UNKNOWN",
+            "TIMEOUT"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "WEB-PAYRET-01-C02",
+          "def": "COM-STEAM-C09",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-ACTION-03",
+          "states": [
+            "QUERY_PROMPT",
+            "QUERYING",
+            "RESULT_PAID",
+            "RESULT_UNPAID",
+            "RESULT_UNKNOWN",
+            "TIMEOUT"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-PAYRET-01-C03",
+          "def": "COM-CLIENT-C09",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "QUERY_PROMPT",
+            "QUERYING",
+            "RESULT_PAID",
+            "RESULT_UNPAID",
+            "RESULT_UNKNOWN",
+            "TIMEOUT"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "WEB-RESULT-01",
+      "end": "WEB",
+      "name": "支付与交付结果",
+      "purpose": "PC 结果页，支付与交付分列",
+      "entry": "支付查询完成/订单详情",
+      "exit": "订单/客服/商品详情",
+      "overlay": false,
+      "reqs": [
+        "REQ-RESULT-001",
+        "REQ-CODE-001",
+        "REQ-GIFT-001"
+      ],
+      "states": [
+        "CODE_DELIVERED",
+        "CODE_ISSUING",
+        "CODE_EXCEPTION",
+        "GIFT_PENDING",
+        "GIFT_PROCESSING",
+        "REFUNDING",
+        "REFUNDED",
+        "REFUND_FAILED",
+        "PAY_CONFIRMING"
+      ],
+      "components": [
+        {
+          "id": "WEB-RESULT-01-C01",
+          "def": "COM-CLIENT-C08",
+          "name": null,
+          "variant": "desktop",
+          "mode": "PAT-NAV-03",
+          "states": [
+            "CODE_DELIVERED",
+            "CODE_ISSUING",
+            "CODE_EXCEPTION",
+            "GIFT_PENDING",
+            "GIFT_PROCESSING",
+            "REFUNDING",
+            "REFUNDED",
+            "REFUND_FAILED",
+            "PAY_CONFIRMING"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "WEB-RESULT-01-C02",
+          "def": "COM-STEAM-C08",
+          "name": null,
+          "variant": "code",
+          "mode": "PAT-CARD-02",
+          "states": [
+            "CODE_DELIVERED",
+            "CODE_ISSUING",
+            "CODE_EXCEPTION",
+            "GIFT_PENDING",
+            "GIFT_PROCESSING",
+            "REFUNDING",
+            "REFUNDED",
+            "REFUND_FAILED",
+            "PAY_CONFIRMING"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-RESULT-01-C03",
+          "def": "COM-STEAM-C08",
+          "name": null,
+          "variant": "gift",
+          "mode": "PAT-CARD-02",
+          "states": [
+            "CODE_DELIVERED",
+            "CODE_ISSUING",
+            "CODE_EXCEPTION",
+            "GIFT_PENDING",
+            "GIFT_PROCESSING",
+            "REFUNDING",
+            "REFUNDED",
+            "REFUND_FAILED",
+            "PAY_CONFIRMING"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-RESULT-01-C04",
+          "def": "COM-STEAM-C08",
+          "name": null,
+          "variant": "refund",
+          "mode": "PAT-CARD-02",
+          "states": [
+            "CODE_DELIVERED",
+            "CODE_ISSUING",
+            "CODE_EXCEPTION",
+            "GIFT_PENDING",
+            "GIFT_PROCESSING",
+            "REFUNDING",
+            "REFUNDED",
+            "REFUND_FAILED",
+            "PAY_CONFIRMING"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-RESULT-01-C05",
+          "def": "COM-STEAM-C11",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-CARD-02",
+          "states": [
+            "CODE_DELIVERED",
+            "CODE_ISSUING",
+            "CODE_EXCEPTION",
+            "GIFT_PENDING",
+            "GIFT_PROCESSING",
+            "REFUNDING",
+            "REFUNDED",
+            "REFUND_FAILED",
+            "PAY_CONFIRMING"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-RESULT-01-C06",
+          "def": "COM-CLIENT-C07",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-EXTERNAL-01",
+          "states": [
+            "CODE_DELIVERED",
+            "CODE_ISSUING",
+            "CODE_EXCEPTION",
+            "GIFT_PENDING",
+            "GIFT_PROCESSING",
+            "REFUNDING",
+            "REFUNDED",
+            "REFUND_FAILED",
+            "PAY_CONFIRMING"
+          ],
+          "region": "footer",
+          "note": ""
+        },
+        {
+          "id": "WEB-RESULT-01-C07",
+          "def": "COM-CLIENT-C09",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "CODE_DELIVERED",
+            "CODE_ISSUING",
+            "CODE_EXCEPTION",
+            "GIFT_PENDING",
+            "GIFT_PROCESSING",
+            "REFUNDING",
+            "REFUNDED",
+            "REFUND_FAILED",
+            "PAY_CONFIRMING"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "WEB-ORDER-01",
+      "end": "WEB",
+      "name": "我的订单",
+      "purpose": "桌面表格/列表混合，按状态查看本人订单",
+      "entry": "顶栏/结果页/站内信",
+      "exit": "订单详情抽屉/确认订单/客服",
+      "overlay": false,
+      "reqs": [
+        "REQ-ORDER-001"
+      ],
+      "states": [
+        "LOGGED_IN",
+        "GUEST",
+        "EMPTY",
+        "LOADING",
+        "ERROR",
+        "SESSION_EXPIRED"
+      ],
+      "components": [
+        {
+          "id": "WEB-ORDER-01-C01",
+          "def": "COM-CLIENT-C08",
+          "name": null,
+          "variant": "desktop",
+          "mode": "PAT-NAV-03",
+          "states": [
+            "LOGGED_IN",
+            "GUEST",
+            "EMPTY",
+            "LOADING",
+            "ERROR",
+            "SESSION_EXPIRED"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "WEB-ORDER-01-C02",
+          "def": "COM-CLIENT-C11",
+          "name": null,
+          "variant": "desktop",
+          "mode": "PAT-FILTER-02",
+          "states": [
+            "LOGGED_IN",
+            "GUEST",
+            "EMPTY",
+            "LOADING",
+            "ERROR",
+            "SESSION_EXPIRED"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-ORDER-01-C03",
+          "def": "COM-CLIENT-C12",
+          "name": null,
+          "variant": "desktop",
+          "mode": "PAT-TABLE-01",
+          "states": [
+            "LOGGED_IN",
+            "GUEST",
+            "EMPTY",
+            "LOADING",
+            "ERROR",
+            "SESSION_EXPIRED"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-ORDER-01-C04",
+          "def": "COM-CLIENT-C09",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "LOGGED_IN",
+            "GUEST",
+            "EMPTY",
+            "LOADING",
+            "ERROR",
+            "SESSION_EXPIRED"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-ORDER-01-C05",
+          "def": "COM-CLIENT-C13",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-02",
+          "states": [
+            "LOGGED_IN",
+            "GUEST",
+            "EMPTY",
+            "LOADING",
+            "ERROR",
+            "SESSION_EXPIRED"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "WEB-ORDER-02",
+      "end": "WEB",
+      "name": "订单详情抽屉",
+      "purpose": "按订单号打开详情，关闭恢复查询、页码、滚动与焦点",
+      "entry": "订单列表“查看”",
+      "exit": "订单列表/客服/结果页",
+      "overlay": true,
+      "reqs": [
+        "REQ-ORDER-001",
+        "REQ-REFUND-001"
+      ],
+      "states": [
+        "DEFAULT",
+        "PAY_CONFIRMING",
+        "DELIVERY_EXCEPTION",
+        "REFUND_FAILED",
+        "REFUNDED",
+        "CLOSED",
+        "ERROR"
+      ],
+      "components": [
+        {
+          "id": "WEB-ORDER-02-C01",
+          "def": "COM-STEAM-C11",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-CARD-02",
+          "states": [
+            "DEFAULT",
+            "PAY_CONFIRMING",
+            "DELIVERY_EXCEPTION",
+            "REFUND_FAILED",
+            "REFUNDED",
+            "CLOSED",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-ORDER-02-C02",
+          "def": "COM-STEAM-C08",
+          "name": null,
+          "variant": "code",
+          "mode": "PAT-CARD-02",
+          "states": [
+            "DEFAULT",
+            "PAY_CONFIRMING",
+            "DELIVERY_EXCEPTION",
+            "REFUND_FAILED",
+            "REFUNDED",
+            "CLOSED",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-ORDER-02-C03",
+          "def": "COM-STEAM-C08",
+          "name": null,
+          "variant": "refund",
+          "mode": "PAT-CARD-02",
+          "states": [
+            "DEFAULT",
+            "PAY_CONFIRMING",
+            "DELIVERY_EXCEPTION",
+            "REFUND_FAILED",
+            "REFUNDED",
+            "CLOSED",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-ORDER-02-C04",
+          "def": "COM-CLIENT-C07",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-EXTERNAL-01",
+          "states": [
+            "DEFAULT",
+            "PAY_CONFIRMING",
+            "DELIVERY_EXCEPTION",
+            "REFUND_FAILED",
+            "REFUNDED",
+            "CLOSED",
+            "ERROR"
+          ],
+          "region": "footer",
+          "note": ""
+        },
+        {
+          "id": "WEB-ORDER-02-C05",
+          "def": "COM-CLIENT-C09",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "PAY_CONFIRMING",
+            "DELIVERY_EXCEPTION",
+            "REFUND_FAILED",
+            "REFUNDED",
+            "CLOSED",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "WEB-AGREEMENT-01",
+      "end": "WEB",
+      "name": "购买协议",
+      "purpose": "同容器打开协议并返回购买现场",
+      "entry": "购买面板/确认订单协议链接",
+      "exit": "来源页面",
+      "overlay": false,
+      "reqs": [
+        "REQ-AUTH-001",
+        "REQ-ADM-AGREEMENT"
+      ],
+      "states": [
+        "DEFAULT",
+        "LOADING",
+        "ERROR"
+      ],
+      "components": [
+        {
+          "id": "WEB-AGREEMENT-01-C01",
+          "def": "COM-CLIENT-C08",
+          "name": null,
+          "variant": "desktop",
+          "mode": "PAT-NAV-03",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "ERROR"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "WEB-AGREEMENT-01-C02",
+          "def": "COM-STEAM-C12",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-EXPAND-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-AGREEMENT-01-C03",
+          "def": "COM-CLIENT-C09",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "WEB-SERVICE-01",
+      "end": "WEB",
+      "name": "企业微信客服",
+      "purpose": "PC 客服入口与备用路径",
+      "entry": "首页/详情/结果/订单客服",
+      "exit": "返回来源",
+      "overlay": false,
+      "reqs": [
+        "REQ-SERVICE-001"
+      ],
+      "states": [
+        "WITH_ORDER",
+        "NO_ORDER",
+        "FALLBACK"
+      ],
+      "components": [
+        {
+          "id": "WEB-SERVICE-01-C01",
+          "def": "COM-CLIENT-C08",
+          "name": null,
+          "variant": "desktop",
+          "mode": "PAT-NAV-03",
+          "states": [
+            "WITH_ORDER",
+            "NO_ORDER",
+            "FALLBACK"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "WEB-SERVICE-01-C02",
+          "def": "COM-STEAM-C13",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-EXTERNAL-01",
+          "states": [
+            "WITH_ORDER",
+            "NO_ORDER",
+            "FALLBACK"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "WEB-SERVICE-01-C03",
+          "def": "COM-CLIENT-C09",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "WITH_ORDER",
+            "NO_ORDER",
+            "FALLBACK"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "ADM-HOME-01",
+      "end": "ADM",
+      "name": "首页管理",
+      "purpose": "编辑、预览、发布三入口共用首页配置",
+      "entry": "后台菜单",
+      "exit": "草稿/预览/已发布",
+      "overlay": false,
+      "reqs": [
+        "REQ-ADM-CATALOG"
+      ],
+      "states": [
+        "DEFAULT",
+        "EDITING",
+        "PREVIEW",
+        "PUBLISHING",
+        "ERROR"
+      ],
+      "components": [
+        {
+          "id": "ADM-HOME-01-C01",
+          "def": "ADM-COMMON-C01",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "PREVIEW",
+            "PUBLISHING",
+            "ERROR"
+          ],
+          "region": "shell",
+          "note": ""
+        },
+        {
+          "id": "ADM-HOME-01-C02",
+          "def": "ADM-COMMON-C02",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "PREVIEW",
+            "PUBLISHING",
+            "ERROR"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "ADM-HOME-01-C03",
+          "def": "ADM-STEAM-C01",
+          "name": null,
+          "variant": "draftPublish",
+          "mode": "PAT-ACTION-03",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "PREVIEW",
+            "PUBLISHING",
+            "ERROR"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "ADM-HOME-01-C04",
+          "def": "ADM-COMMON-C11",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "PREVIEW",
+            "PUBLISHING",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "ADM-PRODUCT-01",
+      "end": "ADM",
+      "name": "商品管理",
+      "purpose": "候选目录选品、内容、定价、发布与上下架",
+      "entry": "后台菜单",
+      "exit": "编辑弹窗/列表",
+      "overlay": false,
+      "reqs": [
+        "REQ-ADM-CATALOG"
+      ],
+      "states": [
+        "DEFAULT",
+        "LOADING",
+        "EMPTY",
+        "ERROR",
+        "NO_PERM",
+        "DRAWER_EDIT",
+        "VALIDATION_ERROR"
+      ],
+      "components": [
+        {
+          "id": "ADM-PRODUCT-01-C01",
+          "def": "ADM-COMMON-C01",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NO_PERM",
+            "DRAWER_EDIT",
+            "VALIDATION_ERROR"
+          ],
+          "region": "shell",
+          "note": ""
+        },
+        {
+          "id": "ADM-PRODUCT-01-C02",
+          "def": "ADM-COMMON-C02",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NO_PERM",
+            "DRAWER_EDIT",
+            "VALIDATION_ERROR"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "ADM-PRODUCT-01-C03",
+          "def": "ADM-COMMON-C03",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FILTER-03",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NO_PERM",
+            "DRAWER_EDIT",
+            "VALIDATION_ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "ADM-PRODUCT-01-C04",
+          "def": "ADM-COMMON-C04",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FILTER-02",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NO_PERM",
+            "DRAWER_EDIT",
+            "VALIDATION_ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "ADM-PRODUCT-01-C05",
+          "def": "ADM-COMMON-C05",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-TABLE-02",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NO_PERM",
+            "DRAWER_EDIT",
+            "VALIDATION_ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "ADM-PRODUCT-01-C06",
+          "def": "ADM-COMMON-C06",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-PAGE-02",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NO_PERM",
+            "DRAWER_EDIT",
+            "VALIDATION_ERROR"
+          ],
+          "region": "footer",
+          "note": ""
+        },
+        {
+          "id": "ADM-PRODUCT-01-C07",
+          "def": "ADM-COMMON-C07",
+          "name": null,
+          "variant": "edit",
+          "mode": "PAT-DRAWER-02",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NO_PERM",
+            "DRAWER_EDIT",
+            "VALIDATION_ERROR"
+          ],
+          "region": "overlay",
+          "note": ""
+        },
+        {
+          "id": "ADM-PRODUCT-01-C08",
+          "def": "ADM-STEAM-C02",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-INPUT-03",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NO_PERM",
+            "DRAWER_EDIT",
+            "VALIDATION_ERROR"
+          ],
+          "region": "overlay",
+          "note": ""
+        },
+        {
+          "id": "ADM-PRODUCT-01-C09",
+          "def": "ADM-COMMON-C11",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NO_PERM",
+            "DRAWER_EDIT",
+            "VALIDATION_ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "ADM-SUPPLIER-01",
+      "end": "ADM",
+      "name": "供应商管理",
+      "purpose": "维护供应商、APPID、gid 映射与组合白名单",
+      "entry": "后台菜单",
+      "exit": "编辑弹窗",
+      "overlay": false,
+      "reqs": [
+        "REQ-ADM-CATALOG"
+      ],
+      "states": [
+        "DEFAULT",
+        "LOADING",
+        "ERROR",
+        "DRAWER_EDIT"
+      ],
+      "components": [
+        {
+          "id": "ADM-SUPPLIER-01-C01",
+          "def": "ADM-COMMON-C01",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "ERROR",
+            "DRAWER_EDIT"
+          ],
+          "region": "shell",
+          "note": ""
+        },
+        {
+          "id": "ADM-SUPPLIER-01-C02",
+          "def": "ADM-COMMON-C02",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "ERROR",
+            "DRAWER_EDIT"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "ADM-SUPPLIER-01-C03",
+          "def": "ADM-COMMON-C03",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FILTER-03",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "ERROR",
+            "DRAWER_EDIT"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "ADM-SUPPLIER-01-C04",
+          "def": "ADM-COMMON-C05",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-TABLE-02",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "ERROR",
+            "DRAWER_EDIT"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "ADM-SUPPLIER-01-C05",
+          "def": "ADM-COMMON-C06",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-PAGE-02",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "ERROR",
+            "DRAWER_EDIT"
+          ],
+          "region": "footer",
+          "note": ""
+        },
+        {
+          "id": "ADM-SUPPLIER-01-C06",
+          "def": "ADM-COMMON-C07",
+          "name": null,
+          "variant": "edit",
+          "mode": "PAT-DRAWER-02",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "ERROR",
+            "DRAWER_EDIT"
+          ],
+          "region": "overlay",
+          "note": ""
+        },
+        {
+          "id": "ADM-SUPPLIER-01-C07",
+          "def": "ADM-STEAM-C02",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-INPUT-03",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "ERROR",
+            "DRAWER_EDIT"
+          ],
+          "region": "overlay",
+          "note": ""
+        },
+        {
+          "id": "ADM-SUPPLIER-01-C08",
+          "def": "ADM-COMMON-C11",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "ERROR",
+            "DRAWER_EDIT"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "ADM-STOCK-01",
+      "end": "ADM",
+      "name": "库存查看",
+      "purpose": "查看供应商库存缓存、同步时间与新鲜度",
+      "entry": "后台菜单",
+      "exit": "筛选/刷新",
+      "overlay": false,
+      "reqs": [
+        "REQ-ADM-STOCK"
+      ],
+      "states": [
+        "DEFAULT",
+        "EMPTY",
+        "ERROR",
+        "STALE"
+      ],
+      "components": [
+        {
+          "id": "ADM-STOCK-01-C01",
+          "def": "ADM-COMMON-C01",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "STALE"
+          ],
+          "region": "shell",
+          "note": ""
+        },
+        {
+          "id": "ADM-STOCK-01-C02",
+          "def": "ADM-COMMON-C02",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "STALE"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "ADM-STOCK-01-C03",
+          "def": "ADM-COMMON-C03",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FILTER-03",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "STALE"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "ADM-STOCK-01-C04",
+          "def": "ADM-COMMON-C05",
+          "name": null,
+          "variant": "compact",
+          "mode": "PAT-TABLE-02",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "STALE"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "ADM-STOCK-01-C05",
+          "def": "ADM-COMMON-C06",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-PAGE-02",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "STALE"
+          ],
+          "region": "footer",
+          "note": ""
+        },
+        {
+          "id": "ADM-STOCK-01-C06",
+          "def": "ADM-COMMON-C11",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "STALE"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "ADM-ORDER-01",
+      "end": "ADM",
+      "name": "订单管理",
+      "purpose": "按条件查询订单、查看详情并按权限导出",
+      "entry": "后台菜单",
+      "exit": "详情弹窗/导出结果",
+      "overlay": false,
+      "reqs": [
+        "REQ-ADM-ORDER"
+      ],
+      "states": [
+        "DEFAULT",
+        "LOADING",
+        "EMPTY",
+        "ERROR",
+        "NO_PERM",
+        "DRAWER",
+        "EXPORTING",
+        "EXPORT_ERROR"
+      ],
+      "components": [
+        {
+          "id": "ADM-ORDER-01-C01",
+          "def": "ADM-COMMON-C01",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NO_PERM",
+            "DRAWER",
+            "EXPORTING",
+            "EXPORT_ERROR"
+          ],
+          "region": "shell",
+          "note": ""
+        },
+        {
+          "id": "ADM-ORDER-01-C02",
+          "def": "ADM-COMMON-C02",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NO_PERM",
+            "DRAWER",
+            "EXPORTING",
+            "EXPORT_ERROR"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "ADM-ORDER-01-C03",
+          "def": "ADM-COMMON-C03",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FILTER-03",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NO_PERM",
+            "DRAWER",
+            "EXPORTING",
+            "EXPORT_ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "ADM-ORDER-01-C04",
+          "def": "ADM-COMMON-C04",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FILTER-02",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NO_PERM",
+            "DRAWER",
+            "EXPORTING",
+            "EXPORT_ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "ADM-ORDER-01-C05",
+          "def": "ADM-COMMON-C05",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-TABLE-02",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NO_PERM",
+            "DRAWER",
+            "EXPORTING",
+            "EXPORT_ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "ADM-ORDER-01-C06",
+          "def": "ADM-COMMON-C06",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-PAGE-02",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NO_PERM",
+            "DRAWER",
+            "EXPORTING",
+            "EXPORT_ERROR"
+          ],
+          "region": "footer",
+          "note": ""
+        },
+        {
+          "id": "ADM-ORDER-01-C07",
+          "def": "ADM-COMMON-C08",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-BATCH-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NO_PERM",
+            "DRAWER",
+            "EXPORTING",
+            "EXPORT_ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "ADM-ORDER-01-C08",
+          "def": "ADM-COMMON-C09",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-EXPORT-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NO_PERM",
+            "DRAWER",
+            "EXPORTING",
+            "EXPORT_ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "ADM-ORDER-01-C09",
+          "def": "ADM-COMMON-C07",
+          "name": null,
+          "variant": "detail",
+          "mode": "PAT-DRAWER-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NO_PERM",
+            "DRAWER",
+            "EXPORTING",
+            "EXPORT_ERROR"
+          ],
+          "region": "overlay",
+          "note": ""
+        },
+        {
+          "id": "ADM-ORDER-01-C10",
+          "def": "ADM-COMMON-C11",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "EMPTY",
+            "ERROR",
+            "NO_PERM",
+            "DRAWER",
+            "EXPORTING",
+            "EXPORT_ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "ADM-GIFT-01",
+      "end": "ADM",
+      "name": "好友赠送",
+      "purpose": "待处理队列、批次导出、开始处理、完成确认",
+      "entry": "后台菜单",
+      "exit": "批次面板/完成确认",
+      "overlay": false,
+      "reqs": [
+        "REQ-ADM-GIFT"
+      ],
+      "states": [
+        "DEFAULT",
+        "EMPTY",
+        "ERROR",
+        "DRAWER",
+        "BATCH_CREATED",
+        "PARTIAL_FAIL"
+      ],
+      "components": [
+        {
+          "id": "ADM-GIFT-01-C01",
+          "def": "ADM-COMMON-C01",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "BATCH_CREATED",
+            "PARTIAL_FAIL"
+          ],
+          "region": "shell",
+          "note": ""
+        },
+        {
+          "id": "ADM-GIFT-01-C02",
+          "def": "ADM-COMMON-C02",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "BATCH_CREATED",
+            "PARTIAL_FAIL"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "ADM-GIFT-01-C03",
+          "def": "ADM-COMMON-C03",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FILTER-03",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "BATCH_CREATED",
+            "PARTIAL_FAIL"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "ADM-GIFT-01-C04",
+          "def": "ADM-COMMON-C05",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-TABLE-02",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "BATCH_CREATED",
+            "PARTIAL_FAIL"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "ADM-GIFT-01-C05",
+          "def": "ADM-COMMON-C06",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-PAGE-02",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "BATCH_CREATED",
+            "PARTIAL_FAIL"
+          ],
+          "region": "footer",
+          "note": ""
+        },
+        {
+          "id": "ADM-GIFT-01-C06",
+          "def": "ADM-COMMON-C08",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-BATCH-01",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "BATCH_CREATED",
+            "PARTIAL_FAIL"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "ADM-GIFT-01-C07",
+          "def": "ADM-COMMON-C07",
+          "name": null,
+          "variant": "detail",
+          "mode": "PAT-DRAWER-01",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "BATCH_CREATED",
+            "PARTIAL_FAIL"
+          ],
+          "region": "overlay",
+          "note": ""
+        },
+        {
+          "id": "ADM-GIFT-01-C08",
+          "def": "ADM-STEAM-C03",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-BATCH-01",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "BATCH_CREATED",
+            "PARTIAL_FAIL"
+          ],
+          "region": "overlay",
+          "note": ""
+        },
+        {
+          "id": "ADM-GIFT-01-C09",
+          "def": "ADM-COMMON-C11",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "BATCH_CREATED",
+            "PARTIAL_FAIL"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "ADM-CODE-01",
+      "end": "ADM",
+      "name": "口令码交付",
+      "purpose": "查询交付记录、处理不明订单、重试、补发与换码",
+      "entry": "后台菜单",
+      "exit": "操作弹窗",
+      "overlay": false,
+      "reqs": [
+        "REQ-ADM-CODE"
+      ],
+      "states": [
+        "DEFAULT",
+        "EMPTY",
+        "ERROR",
+        "DRAWER",
+        "RETRYING",
+        "RETRY_FAIL"
+      ],
+      "components": [
+        {
+          "id": "ADM-CODE-01-C01",
+          "def": "ADM-COMMON-C01",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "RETRYING",
+            "RETRY_FAIL"
+          ],
+          "region": "shell",
+          "note": ""
+        },
+        {
+          "id": "ADM-CODE-01-C02",
+          "def": "ADM-COMMON-C02",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "RETRYING",
+            "RETRY_FAIL"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "ADM-CODE-01-C03",
+          "def": "ADM-COMMON-C03",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FILTER-03",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "RETRYING",
+            "RETRY_FAIL"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "ADM-CODE-01-C04",
+          "def": "ADM-COMMON-C05",
+          "name": null,
+          "variant": "compact",
+          "mode": "PAT-TABLE-02",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "RETRYING",
+            "RETRY_FAIL"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "ADM-CODE-01-C05",
+          "def": "ADM-COMMON-C06",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-PAGE-02",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "RETRYING",
+            "RETRY_FAIL"
+          ],
+          "region": "footer",
+          "note": ""
+        },
+        {
+          "id": "ADM-CODE-01-C06",
+          "def": "ADM-COMMON-C07",
+          "name": null,
+          "variant": "edit",
+          "mode": "PAT-DRAWER-02",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "RETRYING",
+            "RETRY_FAIL"
+          ],
+          "region": "overlay",
+          "note": ""
+        },
+        {
+          "id": "ADM-CODE-01-C07",
+          "def": "ADM-STEAM-C07",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-DRAWER-02",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "RETRYING",
+            "RETRY_FAIL"
+          ],
+          "region": "overlay",
+          "note": ""
+        },
+        {
+          "id": "ADM-CODE-01-C08",
+          "def": "ADM-COMMON-C11",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "RETRYING",
+            "RETRY_FAIL"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "ADM-REFUND-01",
+      "end": "ADM",
+      "name": "退款管理",
+      "purpose": "系统/特殊退款审核、执行、失败重试与留痕",
+      "entry": "后台菜单",
+      "exit": "退款处理弹窗",
+      "overlay": false,
+      "reqs": [
+        "REQ-ADM-REFUND",
+        "REQ-REFUND-001"
+      ],
+      "states": [
+        "DEFAULT",
+        "EMPTY",
+        "ERROR",
+        "DRAWER",
+        "CONFIRM",
+        "SUBMITTING",
+        "FAILED"
+      ],
+      "components": [
+        {
+          "id": "ADM-REFUND-01-C01",
+          "def": "ADM-COMMON-C01",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "CONFIRM",
+            "SUBMITTING",
+            "FAILED"
+          ],
+          "region": "shell",
+          "note": ""
+        },
+        {
+          "id": "ADM-REFUND-01-C02",
+          "def": "ADM-COMMON-C02",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "CONFIRM",
+            "SUBMITTING",
+            "FAILED"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "ADM-REFUND-01-C03",
+          "def": "ADM-COMMON-C03",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FILTER-03",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "CONFIRM",
+            "SUBMITTING",
+            "FAILED"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "ADM-REFUND-01-C04",
+          "def": "ADM-COMMON-C04",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FILTER-02",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "CONFIRM",
+            "SUBMITTING",
+            "FAILED"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "ADM-REFUND-01-C05",
+          "def": "ADM-COMMON-C05",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-TABLE-02",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "CONFIRM",
+            "SUBMITTING",
+            "FAILED"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "ADM-REFUND-01-C06",
+          "def": "ADM-COMMON-C06",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-PAGE-02",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "CONFIRM",
+            "SUBMITTING",
+            "FAILED"
+          ],
+          "region": "footer",
+          "note": ""
+        },
+        {
+          "id": "ADM-REFUND-01-C07",
+          "def": "ADM-COMMON-C07",
+          "name": null,
+          "variant": "edit",
+          "mode": "PAT-DRAWER-02",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "CONFIRM",
+            "SUBMITTING",
+            "FAILED"
+          ],
+          "region": "overlay",
+          "note": ""
+        },
+        {
+          "id": "ADM-REFUND-01-C08",
+          "def": "ADM-STEAM-C04",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-ACTION-03",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "CONFIRM",
+            "SUBMITTING",
+            "FAILED"
+          ],
+          "region": "overlay",
+          "note": ""
+        },
+        {
+          "id": "ADM-REFUND-01-C09",
+          "def": "ADM-COMMON-C11",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "CONFIRM",
+            "SUBMITTING",
+            "FAILED"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "ADM-SERVICE-01",
+      "end": "ADM",
+      "name": "客服配置",
+      "purpose": "维护企业微信联系方式、引导文案与服务时间",
+      "entry": "后台菜单",
+      "exit": "保存结果",
+      "overlay": false,
+      "reqs": [
+        "REQ-ADM-CONFIG"
+      ],
+      "states": [
+        "DEFAULT",
+        "EDITING",
+        "SAVING",
+        "SUCCESS",
+        "ERROR"
+      ],
+      "components": [
+        {
+          "id": "ADM-SERVICE-01-C01",
+          "def": "ADM-COMMON-C01",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "SAVING",
+            "SUCCESS",
+            "ERROR"
+          ],
+          "region": "shell",
+          "note": ""
+        },
+        {
+          "id": "ADM-SERVICE-01-C02",
+          "def": "ADM-COMMON-C02",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "SAVING",
+            "SUCCESS",
+            "ERROR"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "ADM-SERVICE-01-C03",
+          "def": "ADM-STEAM-C01",
+          "name": null,
+          "variant": "directSave",
+          "mode": "PAT-ACTION-03",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "SAVING",
+            "SUCCESS",
+            "ERROR"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "ADM-SERVICE-01-C04",
+          "def": "ADM-COMMON-C11",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "SAVING",
+            "SUCCESS",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "ADM-RBAC-01",
+      "end": "ADM",
+      "name": "权限管理",
+      "purpose": "账号角色、菜单与敏感动作授权，含单人退款权限",
+      "entry": "后台菜单",
+      "exit": "授权弹窗",
+      "overlay": false,
+      "reqs": [
+        "REQ-ADM-RBAC"
+      ],
+      "states": [
+        "DEFAULT",
+        "EMPTY",
+        "DRAWER",
+        "SAVING",
+        "ERROR",
+        "NO_PERM"
+      ],
+      "components": [
+        {
+          "id": "ADM-RBAC-01-C01",
+          "def": "ADM-COMMON-C01",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "DRAWER",
+            "SAVING",
+            "ERROR",
+            "NO_PERM"
+          ],
+          "region": "shell",
+          "note": ""
+        },
+        {
+          "id": "ADM-RBAC-01-C02",
+          "def": "ADM-COMMON-C02",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "DRAWER",
+            "SAVING",
+            "ERROR",
+            "NO_PERM"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "ADM-RBAC-01-C03",
+          "def": "ADM-COMMON-C05",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-TABLE-02",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "DRAWER",
+            "SAVING",
+            "ERROR",
+            "NO_PERM"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "ADM-RBAC-01-C04",
+          "def": "ADM-COMMON-C06",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-PAGE-02",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "DRAWER",
+            "SAVING",
+            "ERROR",
+            "NO_PERM"
+          ],
+          "region": "footer",
+          "note": ""
+        },
+        {
+          "id": "ADM-RBAC-01-C05",
+          "def": "ADM-COMMON-C07",
+          "name": null,
+          "variant": "edit",
+          "mode": "PAT-DRAWER-02",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "DRAWER",
+            "SAVING",
+            "ERROR",
+            "NO_PERM"
+          ],
+          "region": "overlay",
+          "note": ""
+        },
+        {
+          "id": "ADM-RBAC-01-C06",
+          "def": "ADM-COMMON-C11",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "DRAWER",
+            "SAVING",
+            "ERROR",
+            "NO_PERM"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "ADM-AUDIT-01",
+      "end": "ADM",
+      "name": "操作记录",
+      "purpose": "按订单/人员/时间追溯敏感操作前后结果",
+      "entry": "后台菜单",
+      "exit": "筛选/详情",
+      "overlay": false,
+      "reqs": [
+        "REQ-ADM-RBAC"
+      ],
+      "states": [
+        "DEFAULT",
+        "EMPTY",
+        "ERROR"
+      ],
+      "components": [
+        {
+          "id": "ADM-AUDIT-01-C01",
+          "def": "ADM-COMMON-C01",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR"
+          ],
+          "region": "shell",
+          "note": ""
+        },
+        {
+          "id": "ADM-AUDIT-01-C02",
+          "def": "ADM-COMMON-C02",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "ADM-AUDIT-01-C03",
+          "def": "ADM-COMMON-C03",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FILTER-03",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "ADM-AUDIT-01-C04",
+          "def": "ADM-COMMON-C05",
+          "name": null,
+          "variant": "compact",
+          "mode": "PAT-TABLE-02",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "ADM-AUDIT-01-C05",
+          "def": "ADM-COMMON-C06",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-PAGE-02",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR"
+          ],
+          "region": "footer",
+          "note": ""
+        },
+        {
+          "id": "ADM-AUDIT-01-C06",
+          "def": "ADM-COMMON-C11",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "ADM-AGREEMENT-01",
+      "end": "ADM",
+      "name": "协议管理",
+      "purpose": "草稿、预览、发布、实质性变更标记与版本记录",
+      "entry": "后台菜单",
+      "exit": "发布结果",
+      "overlay": false,
+      "reqs": [
+        "REQ-ADM-AGREEMENT"
+      ],
+      "states": [
+        "DEFAULT",
+        "EDITING",
+        "PREVIEW",
+        "PUBLISHING",
+        "ERROR"
+      ],
+      "components": [
+        {
+          "id": "ADM-AGREEMENT-01-C01",
+          "def": "ADM-COMMON-C01",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "PREVIEW",
+            "PUBLISHING",
+            "ERROR"
+          ],
+          "region": "shell",
+          "note": ""
+        },
+        {
+          "id": "ADM-AGREEMENT-01-C02",
+          "def": "ADM-COMMON-C02",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "PREVIEW",
+            "PUBLISHING",
+            "ERROR"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "ADM-AGREEMENT-01-C03",
+          "def": "ADM-STEAM-C01",
+          "name": null,
+          "variant": "draftPublish",
+          "mode": "PAT-ACTION-03",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "PREVIEW",
+            "PUBLISHING",
+            "ERROR"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "ADM-AGREEMENT-01-C04",
+          "def": "ADM-COMMON-C11",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "PREVIEW",
+            "PUBLISHING",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "ADM-SEARCHCFG-01",
+      "end": "ADM",
+      "name": "搜索推荐",
+      "purpose": "配置搜索发现关键词与热门商品，保存即生效",
+      "entry": "后台菜单",
+      "exit": "保存结果",
+      "overlay": false,
+      "reqs": [
+        "REQ-ADM-SEARCH"
+      ],
+      "states": [
+        "DEFAULT",
+        "EDITING",
+        "SAVING",
+        "SUCCESS",
+        "ERROR"
+      ],
+      "components": [
+        {
+          "id": "ADM-SEARCHCFG-01-C01",
+          "def": "ADM-COMMON-C01",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "SAVING",
+            "SUCCESS",
+            "ERROR"
+          ],
+          "region": "shell",
+          "note": ""
+        },
+        {
+          "id": "ADM-SEARCHCFG-01-C02",
+          "def": "ADM-COMMON-C02",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "SAVING",
+            "SUCCESS",
+            "ERROR"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "ADM-SEARCHCFG-01-C03",
+          "def": "ADM-STEAM-C01",
+          "name": null,
+          "variant": "directSave",
+          "mode": "PAT-ACTION-03",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "SAVING",
+            "SUCCESS",
+            "ERROR"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "ADM-SEARCHCFG-01-C04",
+          "def": "ADM-COMMON-C11",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "EDITING",
+            "SAVING",
+            "SUCCESS",
+            "ERROR"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "ADM-PAYCHECK-01",
+      "end": "ADM",
+      "name": "支付核查",
+      "purpose": "处理支付确认中任务，仅渠道证据可定性",
+      "entry": "后台菜单",
+      "exit": "核查弹窗",
+      "overlay": false,
+      "reqs": [
+        "REQ-ADM-PAYCHECK"
+      ],
+      "states": [
+        "DEFAULT",
+        "EMPTY",
+        "ERROR",
+        "DRAWER",
+        "CONFIRM_RESULT",
+        "SUBMITTING",
+        "FAILED"
+      ],
+      "components": [
+        {
+          "id": "ADM-PAYCHECK-01-C01",
+          "def": "ADM-COMMON-C01",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "CONFIRM_RESULT",
+            "SUBMITTING",
+            "FAILED"
+          ],
+          "region": "shell",
+          "note": ""
+        },
+        {
+          "id": "ADM-PAYCHECK-01-C02",
+          "def": "ADM-COMMON-C02",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "CONFIRM_RESULT",
+            "SUBMITTING",
+            "FAILED"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "ADM-PAYCHECK-01-C03",
+          "def": "ADM-COMMON-C03",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FILTER-03",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "CONFIRM_RESULT",
+            "SUBMITTING",
+            "FAILED"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "ADM-PAYCHECK-01-C04",
+          "def": "ADM-COMMON-C05",
+          "name": null,
+          "variant": "compact",
+          "mode": "PAT-TABLE-02",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "CONFIRM_RESULT",
+            "SUBMITTING",
+            "FAILED"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "ADM-PAYCHECK-01-C05",
+          "def": "ADM-COMMON-C06",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-PAGE-02",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "CONFIRM_RESULT",
+            "SUBMITTING",
+            "FAILED"
+          ],
+          "region": "footer",
+          "note": ""
+        },
+        {
+          "id": "ADM-PAYCHECK-01-C06",
+          "def": "ADM-COMMON-C07",
+          "name": null,
+          "variant": "edit",
+          "mode": "PAT-DRAWER-02",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "CONFIRM_RESULT",
+            "SUBMITTING",
+            "FAILED"
+          ],
+          "region": "overlay",
+          "note": ""
+        },
+        {
+          "id": "ADM-PAYCHECK-01-C07",
+          "def": "ADM-STEAM-C05",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-ACTION-03",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "CONFIRM_RESULT",
+            "SUBMITTING",
+            "FAILED"
+          ],
+          "region": "overlay",
+          "note": ""
+        },
+        {
+          "id": "ADM-PAYCHECK-01-C08",
+          "def": "ADM-COMMON-C11",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "CONFIRM_RESULT",
+            "SUBMITTING",
+            "FAILED"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "ADM-NOTIFY-01",
+      "end": "ADM",
+      "name": "通知记录",
+      "purpose": "查看站内信任务、失败原因并授权重试",
+      "entry": "后台菜单",
+      "exit": "详情/重试",
+      "overlay": false,
+      "reqs": [
+        "REQ-ADM-NOTIFY"
+      ],
+      "states": [
+        "DEFAULT",
+        "EMPTY",
+        "ERROR",
+        "DRAWER",
+        "RETRYING",
+        "RETRY_FAIL"
+      ],
+      "components": [
+        {
+          "id": "ADM-NOTIFY-01-C01",
+          "def": "ADM-COMMON-C01",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "RETRYING",
+            "RETRY_FAIL"
+          ],
+          "region": "shell",
+          "note": ""
+        },
+        {
+          "id": "ADM-NOTIFY-01-C02",
+          "def": "ADM-COMMON-C02",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "RETRYING",
+            "RETRY_FAIL"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "ADM-NOTIFY-01-C03",
+          "def": "ADM-COMMON-C03",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FILTER-03",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "RETRYING",
+            "RETRY_FAIL"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "ADM-NOTIFY-01-C04",
+          "def": "ADM-COMMON-C05",
+          "name": null,
+          "variant": "compact",
+          "mode": "PAT-TABLE-02",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "RETRYING",
+            "RETRY_FAIL"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "ADM-NOTIFY-01-C05",
+          "def": "ADM-COMMON-C06",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-PAGE-02",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "RETRYING",
+            "RETRY_FAIL"
+          ],
+          "region": "footer",
+          "note": ""
+        },
+        {
+          "id": "ADM-NOTIFY-01-C06",
+          "def": "ADM-COMMON-C07",
+          "name": null,
+          "variant": "edit",
+          "mode": "PAT-DRAWER-02",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "RETRYING",
+            "RETRY_FAIL"
+          ],
+          "region": "overlay",
+          "note": ""
+        },
+        {
+          "id": "ADM-NOTIFY-01-C07",
+          "def": "ADM-COMMON-C11",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "EMPTY",
+            "ERROR",
+            "DRAWER",
+            "RETRYING",
+            "RETRY_FAIL"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "ADM-WALLET-01",
+      "end": "ADM",
+      "name": "钱包余额",
+      "purpose": "展示供应商钱包总额/可用/冻结，设置预警阈值",
+      "entry": "后台菜单",
+      "exit": "阈值保存",
+      "overlay": false,
+      "reqs": [
+        "REQ-ADM-WALLET"
+      ],
+      "states": [
+        "DEFAULT",
+        "LOADING",
+        "ERROR",
+        "SET_THRESHOLD",
+        "SAVING",
+        "BELOW_THRESHOLD"
+      ],
+      "components": [
+        {
+          "id": "ADM-WALLET-01-C01",
+          "def": "ADM-COMMON-C01",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "ERROR",
+            "SET_THRESHOLD",
+            "SAVING",
+            "BELOW_THRESHOLD"
+          ],
+          "region": "shell",
+          "note": ""
+        },
+        {
+          "id": "ADM-WALLET-01-C02",
+          "def": "ADM-COMMON-C02",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-NAV-04",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "ERROR",
+            "SET_THRESHOLD",
+            "SAVING",
+            "BELOW_THRESHOLD"
+          ],
+          "region": "header",
+          "note": ""
+        },
+        {
+          "id": "ADM-WALLET-01-C03",
+          "def": "ADM-COMMON-C10",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-CARD-04",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "ERROR",
+            "SET_THRESHOLD",
+            "SAVING",
+            "BELOW_THRESHOLD"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "ADM-WALLET-01-C04",
+          "def": "ADM-COMMON-C05",
+          "name": null,
+          "variant": "compact",
+          "mode": "PAT-TABLE-02",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "ERROR",
+            "SET_THRESHOLD",
+            "SAVING",
+            "BELOW_THRESHOLD"
+          ],
+          "region": "content",
+          "note": ""
+        },
+        {
+          "id": "ADM-WALLET-01-C05",
+          "def": "ADM-STEAM-C06",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-INPUT-03",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "ERROR",
+            "SET_THRESHOLD",
+            "SAVING",
+            "BELOW_THRESHOLD"
+          ],
+          "region": "overlay",
+          "note": ""
+        },
+        {
+          "id": "ADM-WALLET-01-C06",
+          "def": "ADM-COMMON-C11",
+          "name": null,
+          "variant": "standard",
+          "mode": "PAT-FEEDBACK-01",
+          "states": [
+            "DEFAULT",
+            "LOADING",
+            "ERROR",
+            "SET_THRESHOLD",
+            "SAVING",
+            "BELOW_THRESHOLD"
+          ],
+          "region": "content",
+          "note": ""
+        }
+      ]
+    }
+  ],
+  "final_pages": [
+    {
+      "id": "APP-HOME-01",
+      "end": "APP",
+      "name": "商城首页",
+      "state_ids": [
+        "RESULTS",
+        "LOADING",
+        "EMPTY",
+        "ERROR",
+        "NOTICE"
+      ],
+      "line": 6497
+    },
+    {
+      "id": "APP-NOTICE-01",
+      "end": "APP",
+      "name": "首次进入实名提醒",
+      "state_ids": [
+        "UNVERIFIED",
+        "VERIFIED",
+        "MINOR",
+        "UNKNOWN"
+      ],
+      "line": 6499
+    },
+    {
+      "id": "APP-SEARCH-01",
+      "end": "APP",
+      "name": "搜索默认页",
+      "state_ids": [
+        "DEFAULT",
+        "EDITING",
+        "EMPTY",
+        "ERROR"
+      ],
+      "line": 6501
+    },
+    {
+      "id": "APP-SEARCH-02",
+      "end": "APP",
+      "name": "搜索结果页",
+      "state_ids": [
+        "RESULTS",
+        "LOADING",
+        "EMPTY",
+        "ERROR",
+        "END"
+      ],
+      "line": 6503
+    },
+    {
+      "id": "APP-PRODUCT-01",
+      "end": "APP",
+      "name": "商品详情",
+      "state_ids": [
+        "DEFAULT",
+        "PARTIAL",
+        "UNAVAILABLE",
+        "PENDING_ORDER",
+        "EXPANDED",
+        "ERROR",
+        "PANEL"
+      ],
+      "line": 6505
+    },
+    {
+      "id": "APP-PANEL-01",
+      "end": "APP",
+      "name": "购买面板",
+      "state_ids": [
+        "PANEL",
+        "PANEL_AGREE",
+        "CDK_HELP"
+      ],
+      "line": 6507
+    },
+    {
+      "id": "APP-AUTH-01",
+      "end": "APP",
+      "name": "实名说明弹层",
+      "state_ids": [
+        "SHOWN"
+      ],
+      "line": 6509
+    },
+    {
+      "id": "APP-AGREEMENT-01",
+      "end": "APP",
+      "name": "购买协议查看",
+      "state_ids": [
+        "DEFAULT",
+        "ERROR",
+        "STALE"
+      ],
+      "line": 6510
+    },
+    {
+      "id": "APP-PHONE-01",
+      "end": "APP",
+      "name": "绑定手机号",
+      "state_ids": [
+        "DEFAULT",
+        "CODE_SENT",
+        "ERROR",
+        "BOUND"
+      ],
+      "line": 6512
+    },
+    {
+      "id": "APP-LOGIN-01",
+      "end": "APP",
+      "name": "手机号登录/注册",
+      "state_ids": [
+        "DEFAULT",
+        "CODE_SENT",
+        "ERROR"
+      ],
+      "line": 6514
+    },
+    {
+      "id": "APP-REALNAME-01",
+      "end": "APP",
+      "name": "实名认证",
+      "state_ids": [
+        "FORM",
+        "SUBMITTING",
+        "FAILED",
+        "MINOR"
+      ],
+      "line": 6516
+    },
+    {
+      "id": "APP-REALNAME-02",
+      "end": "APP",
+      "name": "实名认证结果",
+      "state_ids": [
+        "SUCCESS",
+        "MINOR"
+      ],
+      "line": 6518
+    },
+    {
+      "id": "APP-PRIVACY-01",
+      "end": "APP",
+      "name": "隐私政策",
+      "state_ids": [
+        "DEFAULT"
+      ],
+      "line": 6520
+    },
+    {
+      "id": "APP-CHECKOUT-01",
+      "end": "APP",
+      "name": "确认订单",
+      "state_ids": [
+        "DEFAULT",
+        "SHOWN",
+        "READONLY",
+        "EXPIRED",
+        "SUBMITTING",
+        "ERROR"
+      ],
+      "line": 6522
+    },
+    {
+      "id": "APP-PAYRET-01",
+      "end": "APP",
+      "name": "支付返回确认",
+      "state_ids": [
+        "SHOWN",
+        "QUERYING",
+        "TIMEOUT"
+      ],
+      "line": 6524
+    },
+    {
+      "id": "APP-RESULT-01",
+      "end": "APP",
+      "name": "支付与交付结果页",
+      "state_ids": [
+        "DELIVERED",
+        "ISSUING",
+        "EXCEPTION",
+        "PAY_CONFIRMING",
+        "PAY_FAILED",
+        "ORDER_CLOSED",
+        "LATE_PAY",
+        "GIFT_PENDING",
+        "GIFT_PROCESSING",
+        "GIFT_DONE",
+        "GIFT_EXCEPTION",
+        "ERROR"
+      ],
+      "line": 6526
+    },
+    {
+      "id": "APP-ORDER-01",
+      "end": "APP",
+      "name": "我的订单",
+      "state_ids": [
+        "RESULTS",
+        "LOADING",
+        "EMPTY",
+        "ERROR",
+        "SESSION_EXPIRED"
+      ],
+      "line": 6528
+    },
+    {
+      "id": "APP-ORDER-02",
+      "end": "APP",
+      "name": "订单详情",
+      "state_ids": [
+        "DEFAULT",
+        "CODE_ISSUING",
+        "CODE_EXCEPTION",
+        "REPLACED",
+        "GIFT",
+        "ERROR"
+      ],
+      "line": 6530
+    },
+    {
+      "id": "APP-MINE-01",
+      "end": "APP",
+      "name": "我的",
+      "state_ids": [
+        "LOGGED_IN",
+        "GUEST",
+        "UNKNOWN"
+      ],
+      "line": 6532
+    },
+    {
+      "id": "APP-SERVICE-01",
+      "end": "APP",
+      "name": "企业微信客服",
+      "state_ids": [
+        "WITH_ORDER",
+        "NO_ORDER",
+        "FALLBACK"
+      ],
+      "line": 6534
+    },
+    {
+      "id": "APP-CONTAINER-01",
+      "end": "APP",
+      "name": "容器异常提示",
+      "state_ids": [
+        "EXTERNAL"
+      ],
+      "line": 6536
+    },
+    {
+      "id": "WEB-HOME-01",
+      "end": "WEB",
+      "name": "首页（PC 多列）",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "ERROR"
+      ],
+      "line": 6539
+    },
+    {
+      "id": "WEB-SEARCH-01",
+      "end": "WEB",
+      "name": "搜索与结果",
+      "state_ids": [
+        "DEFAULT",
+        "RESULTS",
+        "EMPTY",
+        "ERROR"
+      ],
+      "line": 6541
+    },
+    {
+      "id": "WEB-PRODUCT-01",
+      "end": "WEB",
+      "name": "商品详情（PC 分栏）",
+      "state_ids": [
+        "DEFAULT",
+        "EXPANDED",
+        "UNAVAILABLE",
+        "PENDING_ORDER"
+      ],
+      "line": 6543
+    },
+    {
+      "id": "WEB-CHECKOUT-01",
+      "end": "WEB",
+      "name": "确认订单（PC 分栏）",
+      "state_ids": [
+        "DEFAULT",
+        "QR_WAIT",
+        "QR_CONFIRMING",
+        "QR_SUCCESS",
+        "EXPIRED",
+        "SUBMITTING",
+        "ERROR"
+      ],
+      "line": 6545
+    },
+    {
+      "id": "WEB-PAYRET-01",
+      "end": "WEB",
+      "name": "支付返回确认（居中弹窗）",
+      "state_ids": [
+        "SHOWN",
+        "QUERYING"
+      ],
+      "line": 6547
+    },
+    {
+      "id": "WEB-RESULT-01",
+      "end": "WEB",
+      "name": "支付与交付结果页（PC）",
+      "state_ids": [
+        "DELIVERED",
+        "ISSUING",
+        "EXCEPTION",
+        "PAY_CONFIRMING",
+        "PAY_FAILED",
+        "ORDER_CLOSED",
+        "LATE_PAY",
+        "GIFT_PENDING",
+        "ERROR"
+      ],
+      "line": 6549
+    },
+    {
+      "id": "WEB-ORDER-01",
+      "end": "WEB",
+      "name": "我的订单（PC）",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "ERROR",
+        "SESSION_EXPIRED",
+        "DRAWER"
+      ],
+      "line": 6551
+    },
+    {
+      "id": "WEB-MINE-01",
+      "end": "WEB",
+      "name": "我的（PC）",
+      "state_ids": [
+        "LOGGED_IN",
+        "GUEST",
+        "UNKNOWN"
+      ],
+      "line": 6553
+    },
+    {
+      "id": "WEB-LOGIN-01",
+      "end": "WEB",
+      "name": "手机号登录/注册（PC）",
+      "state_ids": [
+        "DEFAULT",
+        "CODE_SENT",
+        "ERROR"
+      ],
+      "line": 6555
+    },
+    {
+      "id": "WEB-PHONE-01",
+      "end": "WEB",
+      "name": "绑定手机号（PC）",
+      "state_ids": [
+        "DEFAULT",
+        "CODE_SENT",
+        "ERROR",
+        "BOUND"
+      ],
+      "line": 6557
+    },
+    {
+      "id": "WEB-REALNAME-01",
+      "end": "WEB",
+      "name": "实名认证（PC）",
+      "state_ids": [
+        "FORM",
+        "SUBMITTING",
+        "FAILED",
+        "MINOR"
+      ],
+      "line": 6559
+    },
+    {
+      "id": "WEB-REALNAME-02",
+      "end": "WEB",
+      "name": "实名认证结果（PC）",
+      "state_ids": [
+        "SUCCESS",
+        "MINOR"
+      ],
+      "line": 6561
+    },
+    {
+      "id": "ADM-LOGIN-01",
+      "end": "ADM",
+      "name": "后台登录",
+      "state_ids": [
+        "DEFAULT",
+        "ERROR"
+      ],
+      "line": 6565
+    },
+    {
+      "id": "ADM-HOME-01",
+      "end": "ADM",
+      "name": "首页配置管理",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "ERROR",
+        "DRAWER"
+      ],
+      "line": 6566
+    },
+    {
+      "id": "ADM-GOODS-01",
+      "end": "ADM",
+      "name": "商品管理",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "ERROR",
+        "DRAWER"
+      ],
+      "line": 6567
+    },
+    {
+      "id": "ADM-STOCK-01",
+      "end": "ADM",
+      "name": "可售库存",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "DRAWER"
+      ],
+      "line": 6568
+    },
+    {
+      "id": "ADM-SEARCH-01",
+      "end": "ADM",
+      "name": "搜索推荐配置",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "DRAWER"
+      ],
+      "line": 6569
+    },
+    {
+      "id": "ADM-ORDER-01",
+      "end": "ADM",
+      "name": "订单管理",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "ERROR",
+        "LOADING",
+        "NO_PERM",
+        "DRAWER"
+      ],
+      "line": 6570
+    },
+    {
+      "id": "ADM-GIFT-01",
+      "end": "ADM",
+      "name": "好友赠送",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "DRAWER"
+      ],
+      "line": 6571
+    },
+    {
+      "id": "ADM-CODE-01",
+      "end": "ADM",
+      "name": "口令码交付",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "NO_PERM",
+        "DRAWER"
+      ],
+      "line": 6572
+    },
+    {
+      "id": "ADM-NOTIFY-01",
+      "end": "ADM",
+      "name": "通知记录",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "DRAWER"
+      ],
+      "line": 6573
+    },
+    {
+      "id": "ADM-REFUND-01",
+      "end": "ADM",
+      "name": "特殊退款",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "DRAWER"
+      ],
+      "line": 6574
+    },
+    {
+      "id": "ADM-PAYCHK-01",
+      "end": "ADM",
+      "name": "支付核查",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "DRAWER"
+      ],
+      "line": 6575
+    },
+    {
+      "id": "ADM-AGREE-01",
+      "end": "ADM",
+      "name": "协议管理",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "DRAWER"
+      ],
+      "line": 6576
+    },
+    {
+      "id": "ADM-SERVICE-01",
+      "end": "ADM",
+      "name": "客服配置",
+      "state_ids": [
+        "DEFAULT"
+      ],
+      "line": 6577
+    },
+    {
+      "id": "ADM-RBAC-01",
+      "end": "ADM",
+      "name": "权限管理",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "DRAWER"
+      ],
+      "line": 6578
+    },
+    {
+      "id": "ADM-AUDIT-01",
+      "end": "ADM",
+      "name": "操作记录",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "DRAWER"
+      ],
+      "line": 6579
+    },
+    {
+      "id": "ADM-STAT-01",
+      "end": "ADM",
+      "name": "基础统计",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY"
+      ],
+      "line": 6580
+    }
+  ],
+  "responsibilities": [
+    {
+      "group": "browse/search/detail/purchase",
+      "trial": "APP + WEB",
+      "final": "A/B + PC",
+      "assessment": "common responsibility, align states before comparing"
+    },
+    {
+      "group": "profile/order/service",
+      "trial": "APP/WEB order list; no profile view",
+      "final": "My view + order branches",
+      "assessment": "trial PRD ORDER-01 nickname/avatar missing; not a mandatory universal My page"
+    },
+    {
+      "group": "home/search configuration",
+      "trial": "text and checkbox forms",
+      "final": "lists with drag handles",
+      "assessment": "compare required configuration semantics, not identical forms"
+    },
+    {
+      "group": "search history/random recommendations/video",
+      "trial": "explicit exclusions",
+      "final": "present",
+      "assessment": "PRD or later project decision; do not copy automatically"
+    },
+    {
+      "group": "telemetry",
+      "trial": "0 front-end events",
+      "final": "52 events",
+      "assessment": "scope difference; not a defect by count"
+    }
+  ]
+}

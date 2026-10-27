@@ -1,0 +1,1098 @@
+{
+  "snapshot": "C:\\Users\\xiaot\\AppData\\Local\\Temp\\trial13-review-20261027\\trial-refresh",
+  "files": [
+    {
+      "path": "00_交付说明与变更记录.md",
+      "sha256": "a709f41ff63b9221fc611bc39bd862f038abdc633b0e55b03a39d337ffac7575",
+      "bytes": 15684,
+      "unchanged_after_copy": true,
+      "diff_ranges": [
+        {
+          "tag": "replace",
+          "old": [
+            63,
+            63
+          ],
+          "new": [
+            63,
+            63
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            65,
+            65
+          ],
+          "new": [
+            65,
+            65
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            81,
+            82
+          ],
+          "new": [
+            81,
+            82
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            117,
+            117
+          ],
+          "new": [
+            117,
+            117
+          ]
+        },
+        {
+          "tag": "insert",
+          "old": [
+            145,
+            144
+          ],
+          "new": [
+            145,
+            146
+          ]
+        }
+      ]
+    },
+    {
+      "path": "01_页面与状态说明.md",
+      "sha256": "3af67db8632e04a21a578947430835d8036f1791e3cf33d5ec3e25cc7e098ebe",
+      "bytes": 213278,
+      "unchanged_after_copy": true,
+      "diff_ranges": [
+        {
+          "tag": "replace",
+          "old": [
+            46,
+            46
+          ],
+          "new": [
+            46,
+            46
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            61,
+            61
+          ],
+          "new": [
+            61,
+            61
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            72,
+            72
+          ],
+          "new": [
+            72,
+            72
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            150,
+            154
+          ],
+          "new": [
+            150,
+            155
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            209,
+            212
+          ],
+          "new": [
+            210,
+            214
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            334,
+            334
+          ],
+          "new": [
+            336,
+            336
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            372,
+            372
+          ],
+          "new": [
+            374,
+            374
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            374,
+            379
+          ],
+          "new": [
+            376,
+            382
+          ]
+        },
+        {
+          "tag": "insert",
+          "old": [
+            428,
+            427
+          ],
+          "new": [
+            431,
+            431
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            487,
+            487
+          ],
+          "new": [
+            491,
+            491
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            582,
+            587
+          ],
+          "new": [
+            586,
+            591
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            652,
+            657
+          ],
+          "new": [
+            656,
+            661
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            818,
+            823
+          ],
+          "new": [
+            822,
+            827
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            888,
+            893
+          ],
+          "new": [
+            892,
+            897
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            1051,
+            1053
+          ],
+          "new": [
+            1055,
+            1057
+          ]
+        }
+      ]
+    },
+    {
+      "path": "02_低保真交互原型.html",
+      "sha256": "0fcfb213b66697b64ed60ecce1c33102b267b78cec5ab3553534de29f5446320",
+      "bytes": 1804359,
+      "unchanged_after_copy": true,
+      "diff_ranges": [
+        {
+          "tag": "insert",
+          "old": [
+            43,
+            42
+          ],
+          "new": [
+            43,
+            43
+          ]
+        },
+        {
+          "tag": "insert",
+          "old": [
+            122,
+            121
+          ],
+          "new": [
+            123,
+            129
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            405,
+            405
+          ],
+          "new": [
+            413,
+            413
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            584,
+            584
+          ],
+          "new": [
+            592,
+            592
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            621,
+            621
+          ],
+          "new": [
+            629,
+            629
+          ]
+        },
+        {
+          "tag": "insert",
+          "old": [
+            895,
+            894
+          ],
+          "new": [
+            903,
+            927
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            896,
+            900
+          ],
+          "new": [
+            929,
+            934
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            903,
+            903
+          ],
+          "new": [
+            937,
+            938
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            936,
+            936
+          ],
+          "new": [
+            971,
+            971
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            1043,
+            1046
+          ],
+          "new": [
+            1078,
+            1083
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            1050,
+            1050
+          ],
+          "new": [
+            1087,
+            1087
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            1555,
+            1555
+          ],
+          "new": [
+            1592,
+            1592
+          ]
+        },
+        {
+          "tag": "insert",
+          "old": [
+            1606,
+            1605
+          ],
+          "new": [
+            1643,
+            1643
+          ]
+        }
+      ]
+    },
+    {
+      "path": "03_组件级文档.md",
+      "sha256": "195f13e1f55f5a1d4a81da9612c26fe800b7e04b27047b382e4585343a32d9f0",
+      "bytes": 293721,
+      "unchanged_after_copy": true,
+      "diff_ranges": [
+        {
+          "tag": "replace",
+          "old": [
+            25,
+            25
+          ],
+          "new": [
+            25,
+            25
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            148,
+            148
+          ],
+          "new": [
+            148,
+            148
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            150,
+            151
+          ],
+          "new": [
+            150,
+            151
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            153,
+            153
+          ],
+          "new": [
+            153,
+            153
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            159,
+            163
+          ],
+          "new": [
+            159,
+            164
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            328,
+            328
+          ],
+          "new": [
+            329,
+            329
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            330,
+            331
+          ],
+          "new": [
+            331,
+            332
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            333,
+            333
+          ],
+          "new": [
+            334,
+            334
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            339,
+            342
+          ],
+          "new": [
+            340,
+            344
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            1605,
+            1605
+          ],
+          "new": [
+            1607,
+            1607
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            1613,
+            1613
+          ],
+          "new": [
+            1615,
+            1615
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            1625,
+            1625
+          ],
+          "new": [
+            1627,
+            1627
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            1665,
+            1665
+          ],
+          "new": [
+            1667,
+            1667
+          ]
+        },
+        {
+          "tag": "insert",
+          "old": [
+            1673,
+            1672
+          ],
+          "new": [
+            1675,
+            1766
+          ]
+        }
+      ]
+    },
+    {
+      "path": "07_测试用例.md",
+      "sha256": "217b41d650b3efe0336496929732fb730849ee0639c9d9d7379c371adcb06b64",
+      "bytes": 119197,
+      "unchanged_after_copy": true,
+      "diff_ranges": [
+        {
+          "tag": "replace",
+          "old": [
+            65,
+            65
+          ],
+          "new": [
+            65,
+            65
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            671,
+            671
+          ],
+          "new": [
+            671,
+            671
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            675,
+            676
+          ],
+          "new": [
+            675,
+            676
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            680,
+            680
+          ],
+          "new": [
+            680,
+            680
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            690,
+            693
+          ],
+          "new": [
+            690,
+            692
+          ]
+        }
+      ]
+    },
+    {
+      "path": "08_验证记录与验收映射.md",
+      "sha256": "caaec99a693d2bfb557085331d56a6b13ab19ed54d64daf4324bc11990c89ebc",
+      "bytes": 52791,
+      "unchanged_after_copy": true,
+      "diff_ranges": [
+        {
+          "tag": "replace",
+          "old": [
+            25,
+            25
+          ],
+          "new": [
+            25,
+            25
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            50,
+            50
+          ],
+          "new": [
+            50,
+            50
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            53,
+            53
+          ],
+          "new": [
+            53,
+            53
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            98,
+            99
+          ],
+          "new": [
+            98,
+            99
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            101,
+            101
+          ],
+          "new": [
+            101,
+            101
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            125,
+            125
+          ],
+          "new": [
+            125,
+            125
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            216,
+            216
+          ],
+          "new": [
+            216,
+            216
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            261,
+            262
+          ],
+          "new": [
+            261,
+            262
+          ]
+        }
+      ]
+    },
+    {
+      "path": "_checks/browser-suite.json",
+      "sha256": "4ff6c6134ef81640df9070804e2d235c8b325c71cce6327fa5e5660a702dfb52",
+      "bytes": 5541,
+      "unchanged_after_copy": true,
+      "diff_ranges": [
+        {
+          "tag": "replace",
+          "old": [
+            6,
+            7
+          ],
+          "new": [
+            6,
+            7
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            14,
+            14
+          ],
+          "new": [
+            14,
+            14
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            26,
+            26
+          ],
+          "new": [
+            26,
+            26
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            117,
+            117
+          ],
+          "new": [
+            117,
+            117
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            119,
+            119
+          ],
+          "new": [
+            119,
+            126
+          ]
+        }
+      ]
+    },
+    {
+      "path": "_checks/shots/suite-admin-order.png",
+      "sha256": "b6790c8bb2bd6b5be400138398e8806d2d3f42368fcd4b3346c1e0723d9ec344",
+      "bytes": 112007,
+      "unchanged_after_copy": true
+    },
+    {
+      "path": "_checks/shots/suite-final.png",
+      "sha256": "33055ee27287ac3681767f481e09e7a0b0ebdcea9d52a4dc71ec74bbac0f3c48",
+      "bytes": 69019,
+      "unchanged_after_copy": true
+    },
+    {
+      "path": "_checks/shots/suite-web-result.png",
+      "sha256": "d0d8cecb8722c235c0febabcc42a2fef1a83037d65e8726889a5d4799c9e7b6a",
+      "bytes": 68736,
+      "unchanged_after_copy": true
+    },
+    {
+      "path": "_checks/static-check.json",
+      "sha256": "b001d7f91e7101f8d76950e375d1b074d9053910e745776f1a4dc828107abc0e",
+      "bytes": 6686,
+      "unchanged_after_copy": true,
+      "diff_ranges": [
+        {
+          "tag": "replace",
+          "old": [
+            139,
+            139
+          ],
+          "new": [
+            139,
+            139
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            141,
+            141
+          ],
+          "new": [
+            141,
+            141
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            145,
+            145
+          ],
+          "new": [
+            145,
+            145
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            147,
+            147
+          ],
+          "new": [
+            147,
+            147
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            163,
+            163
+          ],
+          "new": [
+            163,
+            163
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            229,
+            232
+          ],
+          "new": [
+            229,
+            232
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            236,
+            237
+          ],
+          "new": [
+            236,
+            237
+          ]
+        }
+      ]
+    },
+    {
+      "path": "_checks/浏览器检查.md",
+      "sha256": "80a1fad4ad96095618bb3dd0b38467e47811bcf715b4baa882fb2e526cb5c35a",
+      "bytes": 3742,
+      "unchanged_after_copy": true,
+      "diff_ranges": [
+        {
+          "tag": "replace",
+          "old": [
+            10,
+            10
+          ],
+          "new": [
+            10,
+            10
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            12,
+            12
+          ],
+          "new": [
+            12,
+            12
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            25,
+            25
+          ],
+          "new": [
+            25,
+            26
+          ]
+        }
+      ]
+    },
+    {
+      "path": "_checks/静态检查.md",
+      "sha256": "f4c9992895306a854a756434cfaf1311c1527b9fbd6e9bbca30ba0e7fab9839f",
+      "bytes": 4508,
+      "unchanged_after_copy": true,
+      "diff_ranges": [
+        {
+          "tag": "replace",
+          "old": [
+            31,
+            32
+          ],
+          "new": [
+            31,
+            32
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            35,
+            35
+          ],
+          "new": [
+            35,
+            35
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            51,
+            54
+          ],
+          "new": [
+            51,
+            54
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            58,
+            59
+          ],
+          "new": [
+            58,
+            59
+          ]
+        }
+      ]
+    },
+    {
+      "path": "_checks/验证证据.json",
+      "sha256": "647c4343c2b050dae08c545997ed5db13d220ab5078640b3895af4913ba5bb71",
+      "bytes": 5241,
+      "unchanged_after_copy": true,
+      "diff_ranges": [
+        {
+          "tag": "replace",
+          "old": [
+            44,
+            45
+          ],
+          "new": [
+            44,
+            45
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            49,
+            50
+          ],
+          "new": [
+            49,
+            50
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            54,
+            55
+          ],
+          "new": [
+            54,
+            55
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            59,
+            60
+          ],
+          "new": [
+            59,
+            60
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            79,
+            80
+          ],
+          "new": [
+            79,
+            80
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            84,
+            85
+          ],
+          "new": [
+            84,
+            85
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            113,
+            114
+          ],
+          "new": [
+            113,
+            114
+          ]
+        }
+      ]
+    },
+    {
+      "path": "_checks/验证证据.md",
+      "sha256": "e7e75219936e88e16e08eff21801ddd5aa00da510fa8689bc6b0109e3c61d5bd",
+      "bytes": 2506,
+      "unchanged_after_copy": true,
+      "diff_ranges": [
+        {
+          "tag": "replace",
+          "old": [
+            17,
+            20
+          ],
+          "new": [
+            17,
+            20
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            24,
+            25
+          ],
+          "new": [
+            24,
+            25
+          ]
+        },
+        {
+          "tag": "replace",
+          "old": [
+            34,
+            34
+          ],
+          "new": [
+            34,
+            34
+          ]
+        }
+      ]
+    }
+  ]
+}

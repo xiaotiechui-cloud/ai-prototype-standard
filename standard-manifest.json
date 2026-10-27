@@ -1,7 +1,7 @@
 {
   "rule_version": "V3.0",
   "layout_revision": "modular-1",
-  "content_revision": "draft-20261027-trial12-execution",
+  "content_revision": "draft-20261027-trial13-contracts",
   "status": "user-confirmed-maintenance-draft",
   "baseline": {
     "path": "archive/AI原型图与组件级文档说明标准_V3.0.md",
@@ -377,6 +377,18 @@
       "title": "Steam商城已确认项目设计契约（浏览器未验证）",
       "paths": [
         "reference/projects/steam-store.md"
+      ]
+    },
+    {
+      "id": "input-kit",
+      "title": "最小输入类型隔离参考（按需试点；浏览器范围见验证记录）",
+      "paths": [
+        "reference/implementations/input-kit/README.md",
+        "reference/implementations/input-kit/scenario.md",
+        "reference/implementations/input-kit/input-kit.html",
+        "reference/implementations/input-kit/profile.json",
+        "reference/implementations/input-kit/baseline.json",
+        "reference/implementations/input-kit/validation.json"
       ]
     }
   ],

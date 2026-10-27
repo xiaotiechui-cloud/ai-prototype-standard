@@ -1,0 +1,47 @@
+{
+  "id": "input-isolation-reference",
+  "revision": "1",
+  "scope": "IK-01 fixture only; not a universal project profile",
+  "standard_source": "standards/ui-and-components.md 7.1/7.2/7.3/15.3.1",
+  "tokens": {
+    "--bg": "#f4f4f4",
+    "--panel": "#fff",
+    "--ink": "#242424",
+    "--muted": "#6b6b6b",
+    "--line": "#cdcdcd",
+    "--primary": "#343434",
+    "--disabled": "#eaeaea",
+    "--focus": "#525252"
+  },
+  "densities": {
+    "mobile": {
+      "control_min_css_px": 44,
+      "host_max_css_px": 288
+    },
+    "desktop": {
+      "control_min_css_px": 40,
+      "host_max_css_px": 680
+    }
+  },
+  "local_example_values": {
+    "choice_graphic_css_px": 16,
+    "meaning": "local fixture, not new mandatory standard"
+  },
+  "components": [
+    {
+      "id": "IK-TEXT",
+      "pattern": "PAT-INPUT-01",
+      "variant": "text-default"
+    },
+    {
+      "id": "IK-RADIO",
+      "pattern": "PAT-CHOICE-01",
+      "variant": "native-radio"
+    },
+    {
+      "id": "IK-CHECK",
+      "pattern": "PAT-CHECK-01",
+      "variant": "native-checkbox"
+    }
+  ]
+}

@@ -1,0 +1,428 @@
+{
+  "trial": {
+    "source": "D:\\模型汇总\\GitHub维护测试\\试跑13.0",
+    "snapshot": "C:\\Users\\xiaot\\AppData\\Local\\Temp\\trial13-review-20261027\\trial",
+    "files": [
+      {
+        "path": "00_交付说明与变更记录.md",
+        "bytes": 14454,
+        "sha256": "7ba4356e59fa577d8d900bde1d08606cba4062481bc6cbdea6f36a85cd48849c",
+        "mtime": 1793084982.7692912,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "01_页面与状态说明.md",
+        "bytes": 212587,
+        "sha256": "e2cd823d84ccd413e26a0a96b4714ddf12504b4e9d72c307686556e0f366aa59",
+        "mtime": 1793084839.7237022,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "02_低保真交互原型.html",
+        "bytes": 1783160,
+        "sha256": "f9a88a071ba84d9527e6b27ccfdba23a35b2f0e7c0f32d74f24e381b5fe6e6c4",
+        "mtime": 1793085109.087875,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "03_组件级文档.md",
+        "bytes": 286974,
+        "sha256": "e31d7f17416f67790d5609656f5516091cd69ef48fd687c77585617734def9ed",
+        "mtime": 1793084839.7297015,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "04_业务流程与异常规则.md",
+        "bytes": 54313,
+        "sha256": "61bed56281e24fbf6d37c306176c246f298c889c1d1d8473779a30a12a15946b",
+        "mtime": 1793084839.7317023,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "05_接口数据与权限说明.md",
+        "bytes": 105366,
+        "sha256": "9a9c6dc9127e18b4b02e54f300793fa7481038a0550de0aa24f85608a976a2f9",
+        "mtime": 1793084839.736732,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "06_埋点文档.md",
+        "bytes": 4566,
+        "sha256": "38b0e321efba7f832b7063b64afc76abc3b2d809f1a045184b21f9cf93106b98",
+        "mtime": 1793084839.7377012,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "07_测试用例.md",
+        "bytes": 119060,
+        "sha256": "97c2d2388c81fa04be877bbb3c86609b677f3c1b1595b89b2edb460d2c9c229e",
+        "mtime": 1793084839.740703,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "08_验证记录与验收映射.md",
+        "bytes": 52718,
+        "sha256": "b03a697514a415be0c871f9115ca31724a661d2a72a833403aa0800ba57b3a34",
+        "mtime": 1793085108.9416285,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "09_待确认事项与设计决策.md",
+        "bytes": 9179,
+        "sha256": "d1fb43884a728981f3e98628519d61c605a4f4f5db0378410a57075898d28f07",
+        "mtime": 1793084839.7417326,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/browser-suite.json",
+        "bytes": 5040,
+        "sha256": "a87f6b5d7e3b83f3cbe0583e31692556f0165abef0c2bcae566a2db2756df8b1",
+        "mtime": 1793085143.424745,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/diagram-check.json",
+        "bytes": 2194,
+        "sha256": "be26ac9fd37f51db6f36b2304bc155637191b61df395ff44b9ca04c9a85bc3c3",
+        "mtime": 1793084986.0959046,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/extra-checks.json",
+        "bytes": 2242,
+        "sha256": "12862284959a3c0e74a8bc2035f7887eb1c46de9d459092aec036bc3295097fa",
+        "mtime": 1793085158.2913837,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/repair-check.json",
+        "bytes": 3281,
+        "sha256": "002136dad50448198f21d8c5f03f914e7ee5e76a5149d60eace6cade18f4f4e6",
+        "mtime": 1793085184.043036,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/repair-smoke.json",
+        "bytes": 1274,
+        "sha256": "ffd12614dc889ac9470f37d9bb9672d71f16814c44e1e2f45382697fa8cd50c6",
+        "mtime": 1793085183.8968308,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/shots/admin-export.png",
+        "bytes": 112736,
+        "sha256": "1963587db67eb044647bd0a4fe51b4ddec556e4199f6b2b7a86dcf49adb46f08",
+        "mtime": 1793075692.126098,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/shots/admin-order-drawer.png",
+        "bytes": 113364,
+        "sha256": "34c9a38daa76027f264ad25e70ce72c22c8c994cefb0d3935a31f40cc14b3509",
+        "mtime": 1793075691.3268583,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/shots/admin-orders-1440.png",
+        "bytes": 84027,
+        "sha256": "5b7b80b512a0e45f14c0e79048de43ec0ba0d59672ff1f4651eb5f9ecd09d7bb",
+        "mtime": 1793076020.8586712,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/shots/admin-orders.png",
+        "bytes": 113004,
+        "sha256": "0c597bbbc42203a07eef9e6048a7015a5577cced0ad9a91d90da876989e93aed",
+        "mtime": 1793075682.061656,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/shots/admin-rbac-noperm.png",
+        "bytes": 100793,
+        "sha256": "bff747559a3ea8b6e4142521f863c4b62901177f4f80984184e9e1de78c9e3bf",
+        "mtime": 1793075710.6747735,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/shots/admin-refund.png",
+        "bytes": 109560,
+        "sha256": "0b95a3bfe2d60ea6786eb178572bd1d0a89dfaf205b26576e264666c18cc0d7b",
+        "mtime": 1793075724.3473115,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/shots/default-1440.png",
+        "bytes": 127084,
+        "sha256": "1c7b6c77f04afded803af0fa8d96107080e687f201e145cc7e0a284f7a5b5020",
+        "mtime": 1793075364.381032,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/shots/diagram-200.png",
+        "bytes": 70066,
+        "sha256": "023b7c2aa527e338329c7a62c2546b66925b5f5bf9476c4c3d368dc5b1f7f948",
+        "mtime": 1793075811.5338652,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/shots/home-1440.png",
+        "bytes": 108621,
+        "sha256": "ff69c72c78dd2bbfb42a9f680356ce6d8d428e1e9e5508e9690c8ce370bd032b",
+        "mtime": 1793076033.800147,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/shots/home-default-1440.png",
+        "bytes": 108831,
+        "sha256": "169a25ee0e7359236bf9237b2e89274e797b049c0555bcf826282a60cc8c1726",
+        "mtime": 1793075417.6064115,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/shots/journey-result.png",
+        "bytes": 107490,
+        "sha256": "cefe8f7bed0b19a287869b8af226f24694d067e5986cdbefda18610b65e15f2e",
+        "mtime": 1793075608.031921,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/shots/journey-result2.png",
+        "bytes": 112364,
+        "sha256": "e1f27eafcc0f05a5c980240ab0f819b414a84b7de781bd8ada06a8ddb3f6c5f1",
+        "mtime": 1793075617.8347394,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/shots/suite-admin-order.png",
+        "bytes": 112043,
+        "sha256": "693dde7ebbaa171da0b278fb259ab1e43df31de783d271382e7b8f0c48973696",
+        "mtime": 1793085128.2972834,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/shots/suite-final.png",
+        "bytes": 89259,
+        "sha256": "888801c85d5ef5fb0e08e60e042030ce11c15901b039d5f9127247e2122536c2",
+        "mtime": 1793085143.4237444,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/shots/suite-home.png",
+        "bytes": 118410,
+        "sha256": "bf336431c9a7be099496bf23d4294c32e0eab76a0d1fe8b82fda7e970751ca76",
+        "mtime": 1793085112.7232046,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/shots/suite-mobile-result.png",
+        "bytes": 114762,
+        "sha256": "0b1ecea9ac51298518c609e7d6bcfdec9d57d7221e4368a2c615352a85836265",
+        "mtime": 1793085118.847204,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/shots/suite-web-result.png",
+        "bytes": 68897,
+        "sha256": "0dd659382451c9c398918a47fb0f6e9b0bfacd0bd88925d77d1e636b57fb35bf",
+        "mtime": 1793085125.5775557,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/shots/web-buy.png",
+        "bytes": 65918,
+        "sha256": "e2f79be74fc6e3d970d32cf52c7446de9fbc43e33acb8e6cfec7bd44d9820f1d",
+        "mtime": 1793076050.4377584,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/shots/web-result.png",
+        "bytes": 62321,
+        "sha256": "62b3ed8808c70de0de797765b8bc0890c28be66ee2a135343db78f50dea40b9b",
+        "mtime": 1793075789.9076486,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/static-check.json",
+        "bytes": 6686,
+        "sha256": "ffcd4c21cde7f0a1b24c7bee643ccd2e64e309713e183ee1f9a3627d0fe81fc2",
+        "mtime": 1793085109.2508848,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/修复检查.md",
+        "bytes": 2217,
+        "sha256": "ae00d3dc9ed37cd2b8f99d3381b6f707cc2ace0b3f7d19365ecc2500fbe37f54",
+        "mtime": 1793085184.043036,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/图示结构检查.md",
+        "bytes": 1217,
+        "sha256": "f28fe48e42df9f6c6e08e9fcbc38d4b99f51e43cb336eddf81ce504502e636e9",
+        "mtime": 1793084986.096904,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/浏览器检查.md",
+        "bytes": 3449,
+        "sha256": "3edf1fcc63e579ac083450ec69374158cc38f31af3882a3b9f856471d030039c",
+        "mtime": 1793085143.424745,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/静态检查.md",
+        "bytes": 4508,
+        "sha256": "d8bee60c181ee9073a94230cc74b3f61bea9aecd12f9726b00d3b06af2160ef2",
+        "mtime": 1793085109.2508848,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/验证证据.json",
+        "bytes": 5241,
+        "sha256": "08b0d865a792e2622910936742749a7528243803e4807c09f6abdd76be4370a4",
+        "mtime": 1793085184.167145,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/验证证据.md",
+        "bytes": 2506,
+        "sha256": "d365fbcaacd02fa07a79c168b8d43fcf207d0e7646d1f472ca3dd10a27f505f6",
+        "mtime": 1793085184.167145,
+        "unchanged_after_copy": true
+      }
+    ]
+  },
+  "final": {
+    "source": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.5",
+    "snapshot": "C:\\Users\\xiaot\\AppData\\Local\\Temp\\trial13-review-20261027\\final",
+    "files": [
+      {
+        "path": "00_交付说明与变更记录.md",
+        "bytes": 171029,
+        "sha256": "eeda8bf37e42c0ed4dbed4fb9415c59c57f5fce16fce8e9973882b0038912889",
+        "mtime": 1792653170.069689,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "01_页面与状态说明.md",
+        "bytes": 139700,
+        "sha256": "9ff370b3cf46c1578cc7be45f8e6deb44ef2d8b124b57481b3e972942deb75e2",
+        "mtime": 1792653141.352237,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "02_低保真交互原型.html",
+        "bytes": 6434934,
+        "sha256": "179e0d93471d098861a85bf1653ee0f84fa13a62a0e21b0e4611077fa65d62ac",
+        "mtime": 1792653173.380646,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "03_组件级文档.md",
+        "bytes": 1609330,
+        "sha256": "550cdbdc7f665669ccd306befa35503f196df7991a1376c47b393653de85afba",
+        "mtime": 1792653146.1625144,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "04_业务流程与异常规则.md",
+        "bytes": 240706,
+        "sha256": "8c358d78088171a24d0c6bd64c973ad6d3a889470da6da65934d2853eca1f397",
+        "mtime": 1792653141.550785,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "05_接口数据与权限说明.md",
+        "bytes": 343090,
+        "sha256": "92a03a1020256b97438eb952eb72d355ff87d3d17b46e9a2938dc89bb2296fd1",
+        "mtime": 1792653115.4997096,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "06_埋点文档.md",
+        "bytes": 124331,
+        "sha256": "0edf64e2e197a43afa1b02c22d5df8a545efcfb9b35b8b184411c0163a36d5ec",
+        "mtime": 1792653158.2722461,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "07_测试用例.md",
+        "bytes": 290233,
+        "sha256": "e10b5331f2d2709ebfb5ad0086187adcc47758b32920bffb15b7ba813d8df66c",
+        "mtime": 1792652548.5743752,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "08_验证记录与验收映射.md",
+        "bytes": 379114,
+        "sha256": "faa17d684ac2d7508a79c8071a66187d722afe9d134d111bf71548798c4463fa",
+        "mtime": 1792652557.7076497,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "09_待确认事项与设计决策.md",
+        "bytes": 48237,
+        "sha256": "2fdcca2a3b6676710fc915a1cfa643f3a52399f4cbaf5b6fa88c1976a9c4e572",
+        "mtime": 1792653169.9976895,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/验证证据_2026-10-15.md",
+        "bytes": 156224,
+        "sha256": "4cc93e35201749d86507694c8eb891b0eff887789c189e64aa03b34273c76a87",
+        "mtime": 1792649322.4311714,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/验证证据_CHG-0096_2026-10-22.md",
+        "bytes": 2519,
+        "sha256": "a496d5ae83f262c2e50a57896c6b4985fc88b054901b5b0d4119e506602833c4",
+        "mtime": 1792644844.6109707,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/验证证据_CHG-0097_2026-10-22.md",
+        "bytes": 2241,
+        "sha256": "671f3a36fa0b3b43c17dd12b41205bd255a0bbe6b37b07fc23dc96e58c4f833a",
+        "mtime": 1792648454.0971117,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/验证证据_CHG-0098_2026-10-22.md",
+        "bytes": 1314,
+        "sha256": "e6ee1dcdc8c083d1c42ca02f24f7371f280d895084d5736ed7c11231fdf2779b",
+        "mtime": 1792649322.410567,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/验证证据_CHG-0099_2026-10-22.md",
+        "bytes": 4095,
+        "sha256": "18cde5d22e7252a3ee73c6ff73f1f8b6e3a405a7d606db031ddc23ab8df6db6f",
+        "mtime": 1792650759.073646,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/验证证据_CHG-0100_2026-10-22.md",
+        "bytes": 3109,
+        "sha256": "e80ab3d5147c25a5a6892b4e8184255076688fb411842743be604065ae6ba452",
+        "mtime": 1792652094.2226498,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "_checks/验证证据_CHG-0101_2026-10-22.md",
+        "bytes": 1579,
+        "sha256": "31fbb33767db5a97f3f976468d830fc9f8715b181c9cabf637cef86d21c34e6a",
+        "mtime": 1792653195.709699,
+        "unchanged_after_copy": true
+      },
+      {
+        "path": "补充_商城用户管理说明.md",
+        "bytes": 18397,
+        "sha256": "c1a10750d51b403e3d5d6f7c4920af0aa2bbdc650215f3dd5918c83490164d89",
+        "mtime": 1792653095.563727,
+        "unchanged_after_copy": true
+      }
+    ]
+  },
+  "captured_at": "2026-10-27T15:14:24.230322+08:00"
+}

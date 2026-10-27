@@ -19,3 +19,5 @@
 表单输入沿[business24.5](../../standards/deliverables-business.md#s-24)记录原始类型、枚举解码和非法值处置；`"0"`/`"false"`是否等价由字段契约声明。父子层或批量表单按[core3.4](../../standards/core.md#s-3)固定成员身份与聚合条件，单成员完成不得直接代表父级全部完成。
 
 查看、预览、取消不写业务事实；保留草稿不能被解释为保留资格校验通过。仅内存媒体预览说明边界，不宣称服务端上传/持久化。按 [quality29](../../standards/quality-and-evidence.md#s-29) 测截图、几何、命中与父子层前后数据，不以一张弹窗截图证明全部出口。
+
+输入类型与几何隔离的唯一规则见 ui15.3.1；需要代码时按需读取 [input-kit](../../reference/implementations/input-kit/README.md)。样例绑定令牌/模式/版本，项目采用后记录覆盖并独立验证混排几何与真实操作；不强制依赖或在线框架。

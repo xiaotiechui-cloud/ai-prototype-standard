@@ -1,0 +1,14 @@
+{
+  "meaning": "Review package integrity only; not browser or business acceptance",
+  "report_count": 8,
+  "input_files_rehashed": 59,
+  "changed_inputs_since_snapshot": [],
+  "missing_relative_links": [],
+  "comparison_basis": "initial snapshot plus documented 15-file refresh overlay",
+  "active_standards_edited": false,
+  "prototype_edited": false,
+  "independent_browser_executed": false,
+  "repository_verify": "PASS; archive SHA-256, 45 source sections, 16 modules, 10 rule IDs, 606 links, 9 starter templates",
+  "git_diff_check": "PASS (tracked diff); review directory is untracked",
+  "status_observed": "main ahead 3; only this review directory untracked; no commit/push performed"
+}

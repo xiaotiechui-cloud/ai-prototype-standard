@@ -20,3 +20,11 @@
 几何、层栈和具体动作使用 [矩阵入口](README.md) 中相应方法；内容/表单/数据/查询按 [模式入口](../patterns/README.md) 选择。真实浏览器不具备时保留L4/L5未验证，可交评审稿，不宣称验收通过。
 
 结果与前次失败进入08唯一实际记录，07引用同批次；TC、入口覆盖和检查结论分别统计。没有执行的行不填实际结果/通过日期，不为展示通过率缩减分母。
+
+## 结果协议与反例（按需）
+
+权威为 quality29.13.1。先登记计划检查集合，逐条结果有稳定 ID、严格类型/状态及独立 detail，再从明细派生汇总。计划总数不能随非法结果减少；协议无效保留错误、原分母及未封存状态，不据 detail:false 推定图示失败。
+
+可选工具 [check_result_protocol.py](../../tools/check_result_protocol.py) 演示一个明确的 JSON 枚举协议，命令 `python tools/check_result_protocol.py 项目结果.json`。格式由工具 docstring 给出；这不是所有项目强制格式。`python tools/test_result_protocol.py` 检查合法通过、合法业务失败及类型/错位/漏项/重复/汇总反例。工具只验证协议，不能证明记录实际执行、浏览器通过或项目语义正确。采用布尔协议或人工表格时另作等价检查，不直接混用本例枚举。
+
+输入组件可按需读取 [input-kit](../../reference/implementations/input-kit/README.md)；同宿主混排、长标签及真实操作的项目集成结果单独记录。DEC 多视图检查按 decisions28.2～28.4 对齐当前 ID/状态/依据，合法历史变化与实施进度不判为批准。

@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-27",
+  "status": "static-and-pure-logic-passed-browser-unverified",
+  "sample_sha256": "0cbb08bc3340a15f0daa8230abded11d93db80ff03dbc9e6c1bff9cf9779855d",
+  "profile_sha256": "be6d1536c2173c8a550b1c83661817a134bbab0830b80e8f78e8dc1b0185a457",
+  "baseline_sha256": "6a730e29bd5d20944e881ca3dd5f3f246362beaa3d5f2c1d532677401e8d0db9",
+  "command": "python -X utf8 tools/check_input_reference.py",
+  "exit_code": 0,
+  "observed_result": "PASS: script syntax; static IDs/labels/dependencies; profile bindings; scoped geometry lint and pollution counterexample; pure validation/no mutation",
+  "browser_executed": false,
+  "browser_attempt": {
+    "attempt": "cua.createBrowserTab iab file:///D:/.../input-kit.html",
+    "result": "URL security policy rejected file protocol; allowed protocols http/https",
+    "executed": false,
+    "workaround_attempted": false
+  },
+  "browser_cases": {
+    "IK-B01": "unverified",
+    "IK-B02": "unverified",
+    "IK-B03": "unverified",
+    "IK-B04": "unverified",
+    "IK-B05": "unverified",
+    "IK-B06": "unverified",
+    "IK-B07": "unverified",
+    "IK-B08": "unverified"
+  },
+  "project_integration": "unverified",
+  "golden_sample": false,
+  "meaning": "Static/fixture pure-function checks only; not browser or project acceptance"
+}

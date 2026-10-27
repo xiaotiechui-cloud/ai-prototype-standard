@@ -1,0 +1,22 @@
+{
+  "claimed_total": 20,
+  "claimed_pass": 20,
+  "strict_true": 18,
+  "strict_false": 0,
+  "invalid_count": 2,
+  "invalid_items": [
+    {
+      "id": "DG-SVG",
+      "ok_type": "str",
+      "ok": "所有 FL/SM SVG 节点/标签/几何有效",
+      "detail": false
+    },
+    {
+      "id": "DG-SEQ",
+      "ok_type": "str",
+      "ok": "所有 SEQ 消息可见",
+      "detail": true
+    }
+  ],
+  "meaning": "Invalid result schema; not a claim that the diagram itself failed."
+}

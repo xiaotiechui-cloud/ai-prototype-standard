@@ -1,0 +1,328 @@
+{
+  "date": "2026-10-27",
+  "content_revision": "draft-20261027-trial13-contracts",
+  "meaning": "Standard maintenance and fixture static/pure logic only; not project/browser acceptance",
+  "observed_prior_tool_results": [
+    {
+      "command": "python -X utf8 tools/test_result_protocol.py",
+      "exit_code": 0,
+      "result": "Ran 10 tests; OK",
+      "scope": "unit counterexamples; not project acceptance"
+    },
+    {
+      "command": "python -X utf8 tools/maintain.py verify",
+      "exit_code": 0,
+      "result": "PASS: archive SHA-256; 45 source sections; 16 modules; 10 stable rule IDs; dependency routes; 12 opt-in resources; 646 links; 9 starter templates"
+    },
+    {
+      "command": "python -X utf8 tools/check_input_reference.py",
+      "exit_code": 0,
+      "result": "PASS: script syntax; static IDs/labels/dependencies; profile bindings; scoped geometry lint and pollution counterexample; pure validation/no mutation"
+    },
+    {
+      "command": "python -X utf8 tools/check_reference.py",
+      "exit_code": 0,
+      "result": "PASS: missing ID; isolated draft; invalid/failed no-write; stable target; exactly-once replay; reset fixture; script syntax, IDs, dependencies, SVG/source sync"
+    }
+  ],
+  "additional_executions": [
+    {
+      "command": [
+        "D:\\Tools\\Python\\cpython-3.11.15-windows-x86_64-none\\python.exe",
+        "-X",
+        "utf8",
+        "tools/maintain.py",
+        "pack",
+        "--stage",
+        "prototype",
+        "--profiles",
+        "client",
+        "web",
+        "admin",
+        "--name",
+        "trial13-default-155616"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "PASS: archive SHA-256; 45 source sections; 16 modules; 10 stable rule IDs; dependency routes; 12 opt-in resources; 646 links; 9 starter templates\nPACK: 9 modules; 190034 UTF-8 bytes vs baseline 191673 bytes (not a token estimate)\nCREATED: exports/trial13-default-155616.md\n",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "command": [
+        "D:\\Tools\\Python\\cpython-3.11.15-windows-x86_64-none\\python.exe",
+        "-X",
+        "utf8",
+        "tools/maintain.py",
+        "pack",
+        "--stage",
+        "full",
+        "--profiles",
+        "client",
+        "web",
+        "admin",
+        "--name",
+        "trial13-full-155616"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "PASS: archive SHA-256; 45 source sections; 16 modules; 10 stable rule IDs; dependency routes; 12 opt-in resources; 646 links; 9 starter templates\nPACK: 13 modules; 256716 UTF-8 bytes vs baseline 191673 bytes (not a token estimate)\nCREATED: exports/trial13-full-155616.md\n",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "command": [
+        "D:\\Tools\\Python\\cpython-3.11.15-windows-x86_64-none\\python.exe",
+        "-X",
+        "utf8",
+        "tools/maintain.py",
+        "pack",
+        "--stage",
+        "prototype",
+        "--profiles",
+        "client",
+        "web",
+        "admin",
+        "--name",
+        "trial13-input-155616",
+        "--support",
+        "input-kit"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "PASS: archive SHA-256; 45 source sections; 16 modules; 10 stable rule IDs; dependency routes; 12 opt-in resources; 646 links; 9 starter templates\nPACK: 9 modules; 206153 UTF-8 bytes vs baseline 191673 bytes (not a token estimate)\nCREATED: exports/trial13-input-155616.md\n",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "check": "unknown support rejected",
+      "exit_code": 1,
+      "passed": true,
+      "reason": "Unknown support resource rejected; no export created"
+    },
+    {
+      "check": "default routes and module dependencies equal pre-change HEAD",
+      "passed": true
+    },
+    {
+      "command": [
+        "D:\\Tools\\Python\\cpython-3.11.15-windows-x86_64-none\\python.exe",
+        "-X",
+        "utf8",
+        "tools/check_result_protocol.py",
+        "C:\\Users\\xiaot\\AppData\\Local\\Temp\\protocol-cli-mrerf9m4\\result.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\n  \"protocol_valid\": true,\n  \"ready_for_evidence_review\": true,\n  \"planned_total\": 2,\n  \"summary\": {\n    \"pass\": 2,\n    \"fail\": 0,\n    \"unverified\": 0,\n    \"blocked\": 0,\n    \"not_applicable\": 0\n  },\n  \"errors\": [],\n  \"meaning\": \"Protocol check only; execution, evidence and acceptance unproved\"\n}\n",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "command": [
+        "D:\\Tools\\Python\\cpython-3.11.15-windows-x86_64-none\\python.exe",
+        "-X",
+        "utf8",
+        "tools/check_result_protocol.py",
+        "C:\\Users\\xiaot\\AppData\\Local\\Temp\\protocol-cli-mrerf9m4\\result.json"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "stdout": "{\n  \"protocol_valid\": true,\n  \"ready_for_evidence_review\": false,\n  \"planned_total\": 2,\n  \"summary\": {\n    \"pass\": 1,\n    \"fail\": 1,\n    \"unverified\": 0,\n    \"blocked\": 0,\n    \"not_applicable\": 0\n  },\n  \"errors\": [],\n  \"meaning\": \"Protocol check only; execution, evidence and acceptance unproved\"\n}\n",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "command": [
+        "D:\\Tools\\Python\\cpython-3.11.15-windows-x86_64-none\\python.exe",
+        "-X",
+        "utf8",
+        "tools/check_result_protocol.py",
+        "C:\\Users\\xiaot\\AppData\\Local\\Temp\\protocol-cli-mrerf9m4\\result.json"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "stdout": "{\n  \"protocol_valid\": true,\n  \"ready_for_evidence_review\": false,\n  \"planned_total\": 2,\n  \"summary\": {\n    \"pass\": 1,\n    \"fail\": 0,\n    \"unverified\": 1,\n    \"blocked\": 0,\n    \"not_applicable\": 0\n  },\n  \"errors\": [],\n  \"meaning\": \"Protocol check only; execution, evidence and acceptance unproved\"\n}\n",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "command": [
+        "D:\\Tools\\Python\\cpython-3.11.15-windows-x86_64-none\\python.exe",
+        "-X",
+        "utf8",
+        "tools/check_result_protocol.py",
+        "C:\\Users\\xiaot\\AppData\\Local\\Temp\\protocol-cli-mrerf9m4\\result.json"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "stdout": "{\n  \"protocol_valid\": true,\n  \"ready_for_evidence_review\": false,\n  \"planned_total\": 2,\n  \"summary\": {\n    \"pass\": 1,\n    \"fail\": 0,\n    \"unverified\": 0,\n    \"blocked\": 1,\n    \"not_applicable\": 0\n  },\n  \"errors\": [],\n  \"meaning\": \"Protocol check only; execution, evidence and acceptance unproved\"\n}\n",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "command": [
+        "D:\\Tools\\Python\\cpython-3.11.15-windows-x86_64-none\\python.exe",
+        "-X",
+        "utf8",
+        "tools/check_result_protocol.py",
+        "C:\\Users\\xiaot\\AppData\\Local\\Temp\\protocol-cli-mrerf9m4\\result.json"
+      ],
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "stdout": "{\n  \"protocol_valid\": false,\n  \"ready_for_evidence_review\": false,\n  \"planned_total\": 2,\n  \"summary\": null,\n  \"errors\": [\n    \"checks[0] invalid status type/value\",\n    \"summary differs from detail-derived counts\"\n  ],\n  \"meaning\": \"Protocol check only; execution, evidence and acceptance unproved\"\n}\n",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "command": [
+        "D:\\Tools\\Python\\cpython-3.11.15-windows-x86_64-none\\python.exe",
+        "-X",
+        "utf8",
+        "tools/check_result_protocol.py",
+        "C:\\Users\\xiaot\\AppData\\Local\\Temp\\protocol-cli-mrerf9m4\\result.json"
+      ],
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "stdout": "{\"protocol_valid\": false, \"errors\": [\"Expecting property name enclosed in double quotes: line 1 column 2 (char 1)\"]}\n",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "command": [
+        "D:\\Tools\\Python\\cpython-3.11.15-windows-x86_64-none\\python.exe",
+        "-X",
+        "utf8",
+        "tools/maintain.py",
+        "pack",
+        "--stage",
+        "prototype",
+        "--profiles",
+        "client",
+        "web",
+        "admin",
+        "--name",
+        "trial13-input-final-155725",
+        "--support",
+        "input-kit"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: archive SHA-256; 45 source sections; 16 modules; 10 stable rule IDs; dependency routes; 12 opt-in resources; 646 links; 9 starter templates\nPACK: 9 modules; 207379 UTF-8 bytes vs baseline 191673 bytes (not a token estimate)\nCREATED: exports/trial13-input-final-155725.md\n",
+      "stderr": "",
+      "passed": true,
+      "reason": "validation record sealed after initial export; current support bytes rechecked"
+    }
+  ],
+  "packs": [
+    {
+      "stage": "prototype",
+      "support_ids": [],
+      "path": "D:\\资料备份\\产品蒸馏房\\ai-prototype-standard\\exports\\trial13-default-155616.md",
+      "sha256": "d3b000e5608d39153f673f0c30d1cfcbeca1d5c4e5c4fba7e48b9886cd56cc53",
+      "modules": 9,
+      "support_files": 0
+    },
+    {
+      "stage": "full",
+      "support_ids": [],
+      "path": "D:\\资料备份\\产品蒸馏房\\ai-prototype-standard\\exports\\trial13-full-155616.md",
+      "sha256": "15bfb426ba5022d48e20c458bc30504c8680cf0f7317088a3088604a709df3a8",
+      "modules": 13,
+      "support_files": 0
+    },
+    {
+      "stage": "prototype",
+      "support_ids": [
+        "input-kit"
+      ],
+      "path": "D:\\资料备份\\产品蒸馏房\\ai-prototype-standard\\exports\\trial13-input-final-155725.md",
+      "sha256": "fd75bf4c2ee4781d5bbce4a36a43da7aafe4435a0c49a47bafb791d33960107c",
+      "modules": 9,
+      "support_files": 6,
+      "validation_record": "final actual validation included"
+    }
+  ],
+  "baseline_modules": [
+    {
+      "path": "standards/core.md",
+      "sha256": "f02ea9ad757e842b174e6444176da186759b5fdf955e548b306da5054ce1273b"
+    },
+    {
+      "path": "standards/workflow-and-model.md",
+      "sha256": "6be11eee0965c6a979d836f7755990915319851d5fe46ee621b2e0980a5663b6"
+    },
+    {
+      "path": "standards/ui-and-components.md",
+      "sha256": "85a243b42d316fab239fcb25eadce89132d4be2cd6b50f6ac0602eeabe047abc"
+    },
+    {
+      "path": "standards/profiles/client.md",
+      "sha256": "3bb3400239cffda96c77852b7cd142c87b95c7fc6b459a6d943869bd50b4e93c"
+    },
+    {
+      "path": "standards/profiles/desktop-web.md",
+      "sha256": "017b07d6e7e38ce05f6df55182fc710fe811db48c3bd1105f8ca46716a86b9c9"
+    },
+    {
+      "path": "standards/profiles/admin.md",
+      "sha256": "b2e875bce2c42266da8897c0cd6725cea2548d1f90897bc088d545050fb04a87"
+    },
+    {
+      "path": "standards/runtime-and-build.md",
+      "sha256": "a9e2e0c586d5c20be3c9c3fd54ee92e0d4e4cfb2e82d1ea860aeea044b05f449"
+    },
+    {
+      "path": "standards/diagrams-and-reader.md",
+      "sha256": "00757546ffe193faea9a96860c14e68428226d99a8ddb50178141d5eb127c7e4"
+    },
+    {
+      "path": "standards/deliverables-ui.md",
+      "sha256": "a64c20e3be21ebb50f98d58e15e7ee58902907eb22f8832c3956a99f13067089"
+    },
+    {
+      "path": "standards/deliverables-business.md",
+      "sha256": "fce2b448128ab8ab85b23a78f9294d2366caf9caa3a719e51aeeb970e31ab36d"
+    },
+    {
+      "path": "standards/quality-and-evidence.md",
+      "sha256": "692306296d2a2a3ebff9fa7b5923bf28b3a030ff05ad606e4abb623c7393b87e"
+    },
+    {
+      "path": "standards/decisions-and-change.md",
+      "sha256": "17a131057abedfebc7671da8eda58b99247055d8d1af1ce5bca4c5aee3623b97"
+    },
+    {
+      "path": "standards/contracts-and-checklists.md",
+      "sha256": "d1d8f5b96e99335992fb972340e4dfe5c12103526c287df5fb72a70c9386188e"
+    },
+    {
+      "path": "reference/original-front-matter.md",
+      "sha256": "bd7dd98bbd12bc6317b53e0f6beec69674d7138c02976216b26c6d2af5e01182"
+    },
+    {
+      "path": "reference/original-prompts.md",
+      "sha256": "1ba715f8203e3424d77282f1912ed4013a1218e6633ece0d86efcf1c1711988c"
+    },
+    {
+      "path": "reference/examples.md",
+      "sha256": "a65af63209e30876bd91b179b16233ff412fa195b8b9d930b073aacefe89b0ee"
+    }
+  ],
+  "browser": {
+    "attempt": "cua.createBrowserTab iab file:///D:/.../input-kit.html",
+    "result": "URL security policy rejected file protocol; allowed protocols http/https",
+    "executed": false,
+    "workaround_attempted": false
+  },
+  "unverified": [
+    "IK-B01 through IK-B08 browser cases",
+    "project integration",
+    "new fixed-PRD repeat generation",
+    "independent project acceptance"
+  ],
+  "commit_push_performed": false,
+  "untracked_whitespace_check": {
+    "passed": true,
+    "scope": "text files; no trailing spaces/tabs"
+  }
+}

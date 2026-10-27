@@ -1,0 +1,471 @@
+[
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 69,
+    "key": "phone",
+    "excerpt": ".phone{width:320px;height:640px;box-sizing:border-box;border:2px solid #8d939b;border-radius:22px;padding:14px;background:#fbfbfb;flex:none;display:flex;flex-direction:column;position:relative}"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 71,
+    "key": "screen",
+    "excerpt": ".screen{width:288px;height:592px;box-sizing:border-box;background:#fff;border:1px solid #e2e2e2;display:flex;flex-direction:column;overflow:hidden;position:relative}"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 140,
+    "key": "field_input",
+    "excerpt": ".field input,.field select,.field textarea{height:40px;border:1px solid var(--line);background:#fff;padding:0 8px;width:100%}"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 145,
+    "key": "radio_css",
+    "excerpt": ".radio-line{display:flex;gap:14px;flex-wrap:wrap;font-size:13px}"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 146,
+    "key": "radio_css",
+    "excerpt": ".radio-line label{display:flex;align-items:center;gap:5px;min-height:34px;white-space:nowrap;flex:none}"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 548,
+    "key": "tab_go",
+    "excerpt": "function go(page,state,opts){"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 576,
+    "key": "modal_host",
+    "excerpt": "return `<div class=\"modal-mask center\" data-layer=\"confirm\"><div class=\"modal-box\"><h3>${esc(S.confirm.title)}</h3><p>${esc(S.confirm.body||'')}</p><p class=\"small muted\">对象：${esc(S.confirm.obj||'—')}</p><div class=\"modal-actions\"><button class=\"btn\" data-act=\"adm-confirm-cancel\">取消</button><button class=\"btn primary\" data-act=\"adm-confirm-ok\">${esc(S.confirm.ok||'确认')}</button></div></div></div>`;"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 653,
+    "key": "quick_nav",
+    "excerpt": "function quickNav(p){"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 655,
+    "key": "quick_nav",
+    "excerpt": "return comp(id,`<div class=\"quicknav\"><button data-act=\"go\" data-to=\"APP-SEARCH-01\"><span>⌕</span><span>搜索商品</span></button><button data-act=\"go\" data-to=\"APP-ORDER-01\"><span>▤</span><span>我的订单</span></button><button data-act=\"service-open\"><span>✆</span><span>联系客服</span></button></div>`,'standard');"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 668,
+    "key": "modal_host",
+    "excerpt": "return comp(id,`<div class=\"modal-mask center\" data-layer=\"notice\">${inner}</div>`,'standard');"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 708,
+    "key": "app_home",
+    "excerpt": "function appHome(p,state){"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 714,
+    "key": "search_inputs",
+    "excerpt": "const searchHtml=comp(sid,`<div class=\"searchbar\"><input id=\"searchInput\" value=\"${esc(S.search.draft)}\" placeholder=\"输入商品名称搜索\" aria-label=\"搜索商品\"><button data-act=\"search-submit\">搜索</button></div>`,'mobile');"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 715,
+    "key": "quick_nav",
+    "excerpt": "return `${searchHtml}${banner(p)}${quickNav(p)}${sortBar(p)}${productGrid(p,list,'grid')}<div class=\"sec small muted\">共 ${list.length} 个已发布商品；未发布、组合、供应商下架或价格不合规商品不进入首页。</div>`;"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 728,
+    "key": "search_inputs",
+    "excerpt": "let h=comp(id,`<div class=\"searchbar\"><input id=\"searchInput\" value=\"${esc(S.search.draft)}\" placeholder=\"输入商品名称搜索\" aria-label=\"搜索商品\"><button data-act=\"search-submit\">搜索</button></div>`,'mobile');"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 792,
+    "key": "modal_host",
+    "excerpt": "let sheet=comp(cBuy,`<div class=\"modal-mask\"><div class=\"sheet\"><div class=\"sheet-head\"><div class=\"t\">核对购买内容</div><button class=\"x\" data-act=\"buy-close\" aria-label=\"关闭\">×</button></div><div class=\"sheet-body\">"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 798,
+    "key": "buy_radio",
+    "excerpt": "<div class=\"field\"><label>支付方式</label><div class=\"radio-line\"><label><input type=\"radio\" name=\"pay\" value=\"wechat\" data-change=\"pay-method\" ${S.buy.payMethod==='wechat'?'checked':''}>微信支付</label><label><input type=\"radio\" name=\"pay\" value=\"alipay\" data-change=\"pay-method\" ${S.buy.payMethod==='alipay'?'checked':''}>支付宝</label></div></div>"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 804,
+    "key": "modal_host",
+    "excerpt": "if(state==='AGREEMENT_REQUIRED')modal=`<div class=\"modal-mask center\" style=\"z-index:40\"><div class=\"modal-box\"><h3>购买须知</h3><p>请先阅读并同意《购买协议》。协议主体为商城经营公司，包含交付、时效与退款原则；同意后仍需完成手机号与商品校验，不能直接支付。</p><div class=\"modal-actions\"><button class=\"btn\" data-act=\"open-agreement\">查看协议</button><button class=\"btn\" data-act=\"buy-close\">取消</button><button class=\"btn primary\" data-act=\"buy-agree-continue\">同意并继续</button></div></div></div>`;"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 805,
+    "key": "modal_host",
+    "excerpt": "if(state==='AUTH_LOGIN')modal=`<div class=\"modal-mask center\" style=\"z-index:40\"><div class=\"modal-box\"><h3>购买前请先登录</h3><p>登录后会回到当前购买面板，商品、规格和支付方式保留。取消登录将停止本次购买，仍可继续浏览。</p><div class=\"modal-actions\"><button class=\"btn\" data-act=\"buy-close\">取消</button><button class=\"btn primary\" data-act=\"verify-login\">平台登录</button></div></div></div>`;"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 806,
+    "key": "modal_host",
+    "excerpt": "if(state==='AUTH_REALNAME')modal=`<div class=\"modal-mask center\" style=\"z-index:40\"><div class=\"modal-box\"><h3>购买前需完成实名认证</h3><p>${S.session.realName==='unknown'?'暂无法获取可信实名状态，成功前不放行交易。':'您也可以先浏览商品。认证成功后返回商城，会重新校验当前账号状态。'}</p><div class=\"modal-actions\"><button class=\"btn\" data-act=\"buy-close\">暂不认证</button><button class=\"btn primary\" data-act=\"verify-realname\">${S.session.realName==='unknown'?'重新核验':'前往认证'}</button></div></div></div>`;"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 807,
+    "key": "modal_host",
+    "excerpt": "if(state==='AUTH_MINOR')modal=`<div class=\"modal-mask center\" style=\"z-index:40\"><div class=\"modal-box\"><h3>暂不可购买</h3><p>您当前为未成年，可浏览商品但暂不可购买。不会继续协议或手机号步骤。</p><div class=\"modal-actions\"><button class=\"btn primary\" data-act=\"buy-close\">返回浏览</button></div></div></div>`;"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 808,
+    "key": "modal_host",
+    "excerpt": "if(state==='PHONE_BIND')modal=`<div class=\"modal-mask center\" style=\"z-index:40\"><div class=\"modal-box\"><h3>请先绑定手机号</h3><p>手机号仅用于交易条件核验与必要的交易联系。绑定成功后会回到原购买现场。</p><div class=\"field\"><label>手机号</label><input id=\"phoneInput\" value=\"13800000000\" inputmode=\"numeric\"></div><div class=\"field\"><label>短信验证码</label><input id=\"codeInput\" placeholder=\"演示验证码 123456\"><div class=\"tiny muted\">短信仅用于交易验证，不发送营销或交付通知。</div></div><div class=\"modal-actions\"><button class=\"btn\" data-act=\"buy-close\">取消</button><button "
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 809,
+    "key": "modal_host",
+    "excerpt": "if(state==='BUSINESS_REJECT')modal=`<div class=\"modal-mask center\" style=\"z-index:40\"><div class=\"modal-box\"><h3>暂不可购买</h3><p>${esc(S.buy.error||'补货中/暂不可购买：供应商余额不足或库存校验未通过。')}</p><div class=\"modal-actions\"><button class=\"btn primary\" data-act=\"buy-close\">返回详情</button></div></div></div>`;"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 895,
+    "key": "app_order_list",
+    "excerpt": "function appOrderList(p,state){"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 938,
+    "key": "search_inputs",
+    "excerpt": "const searchHtml=comp(search,`<div class=\"wsearch\"><input id=\"wsearchInput\" value=\"${esc(S.search.draft)}\" placeholder=\"输入商品名称搜索\" aria-label=\"搜索商品\"><button data-act=\"wsearch-submit\">搜索</button></div>`,'desktop');"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 969,
+    "key": "quick_nav",
+    "excerpt": "return `<h2>${esc(S.config.home.published.title)}</h2><div class=\"sub\">同一套已发布配置覆盖 A/B/C 三入口；只展示已选品并发布的商品。</div>${banner(p)}${quickNav(p)}<div style=\"height:12px\"></div>${sortBar(p)}${productGrid(p,list,'grid')}<div class=\"sub\" style=\"margin-top:12px\">共 ${list.length} 个已发布商品；不出现钱包、购物车、优惠券、会员等未建设入口。</div>`;"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 1005,
+    "key": "buy_radio",
+    "excerpt": "<div class=\"field\"><label>支付方式</label><div class=\"radio-line\"><label><input type=\"radio\" name=\"wpay\" value=\"wechat\" data-change=\"pay-method\" ${S.buy.payMethod==='wechat'?'checked':''}>微信支付</label><label><input type=\"radio\" name=\"wpay\" value=\"alipay\" data-change=\"pay-method\" ${S.buy.payMethod==='alipay'?'checked':''}>支付宝</label></div></div>"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 1009,
+    "key": "modal_host",
+    "excerpt": "if(state==='AGREEMENT_REQUIRED')modal=`<div class=\"modal-mask center\" style=\"z-index:40\"><div class=\"modal-box\"><h3>购买须知</h3><p>请先阅读并同意《购买协议》。同意后仍需完成手机号与商品校验。</p><div class=\"modal-actions\"><button class=\"btn\" data-act=\"open-agreement\">查看协议</button><button class=\"btn\" data-act=\"buy-close\">取消</button><button class=\"btn primary\" data-act=\"buy-agree-continue\">同意并继续</button></div></div></div>`;"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 1010,
+    "key": "modal_host",
+    "excerpt": "if(state==='AUTH_LOGIN')modal=`<div class=\"modal-mask center\" style=\"z-index:40\"><div class=\"modal-box\"><h3>购买前请先登录</h3><p>登录后回到当前面板，商品与支付方式保留。</p><div class=\"modal-actions\"><button class=\"btn\" data-act=\"buy-close\">取消</button><button class=\"btn primary\" data-act=\"verify-login\">平台登录</button></div></div></div>`;"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 1011,
+    "key": "modal_host",
+    "excerpt": "if(state==='AUTH_REALNAME')modal=`<div class=\"modal-mask center\" style=\"z-index:40\"><div class=\"modal-box\"><h3>购买前需完成实名认证</h3><p>${S.session.realName==='unknown'?'暂无法获取可信实名状态，成功前不放行交易。':'您也可以先浏览商品。认证成功后返回商城重新校验。'}</p><div class=\"modal-actions\"><button class=\"btn\" data-act=\"buy-close\">暂不认证</button><button class=\"btn primary\" data-act=\"verify-realname\">${S.session.realName==='unknown'?'重新核验':'前往认证'}</button></div></div></div>`;"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 1012,
+    "key": "modal_host",
+    "excerpt": "if(state==='AUTH_MINOR')modal=`<div class=\"modal-mask center\" style=\"z-index:40\"><div class=\"modal-box\"><h3>暂不可购买</h3><p>您当前为未成年，可浏览但暂不可购买。</p><div class=\"modal-actions\"><button class=\"btn primary\" data-act=\"buy-close\">返回浏览</button></div></div></div>`;"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 1013,
+    "key": "modal_host",
+    "excerpt": "if(state==='PHONE_BIND')modal=`<div class=\"modal-mask center\" style=\"z-index:40\"><div class=\"modal-box\"><h3>请先绑定手机号</h3><div class=\"field\"><label>手机号</label><input id=\"phoneInput\" value=\"13800000000\"></div><div class=\"field\"><label>短信验证码</label><input id=\"codeInput\" placeholder=\"演示验证码 123456\"></div><div class=\"modal-actions\"><button class=\"btn\" data-act=\"buy-close\">取消</button><button class=\"btn primary\" data-act=\"verify-phone\">绑定并继续</button></div></div></div>`;"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 1014,
+    "key": "modal_host",
+    "excerpt": "if(state==='BUSINESS_REJECT')modal=`<div class=\"modal-mask center\" style=\"z-index:40\"><div class=\"modal-box\"><h3>暂不可购买</h3><p>${esc(S.buy.error||'供应商余额不足或库存校验未通过。')}</p><div class=\"modal-actions\"><button class=\"btn primary\" data-act=\"buy-close\">返回详情</button></div></div></div>`;"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 1042,
+    "key": "web_order_list",
+    "excerpt": "function webOrderList(p,state){"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 1079,
+    "key": "admin_system",
+    "excerpt": "{group:'系统',items:[['ADM-RBAC-01','权限管理','权限配置'],['ADM-AUDIT-01','操作记录','操作记录']]}"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 1323,
+    "key": "buy_radio",
+    "excerpt": "drawer:r=>`<div class=\"adm-form\"><h3>${esc(r.id)}｜${esc(r.orderNo)}</h3><div class=\"grid\"><div class=\"field\"><label>渠道</label><div>${esc(r.channel)}</div></div><div class=\"field\"><label>状态</label><div>${statusTag(r.state)}</div></div><div class=\"field\"><label>发起/最后查询</label><div>${esc(r.startedAt)} / ${esc(r.lastQueryAt)}</div></div><div class=\"field\"><label>当前结果</label><div>${esc(r.result)}</div></div></div><div class=\"field full\"><label>核查证据（必选）</label><div class=\"radio-line\"><label><input typ"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 1336,
+    "key": "home_config",
+    "excerpt": "function renderHomeConfig(p,state){"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 1355,
+    "key": "search_config",
+    "excerpt": "function renderSearchConfig(p,state){"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 1525,
+    "key": "action_dispatch",
+    "excerpt": "function onClick(e){"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 1561,
+    "key": "search_submit",
+    "excerpt": "else if(act==='search-submit'||act==='wsearch-submit'){const inp=document.querySelector(act==='search-submit'?'#searchInput':'#wsearchInput');const v=(inp?inp.value:'').trim();if(!v){S.search.error='请输入商品名称后再搜索';renderAll();return;}S.search.draft=v;S.search.query=v;S.search.limit=4;S.search.error='';S.state='RESULTS';const targetPage=S.end==='WEB'?'WEB-SEARCH-01':'APP-SEARCH-01';if(S.page!==targetPage){go(targetPage,'RESULTS');}else renderAll();}"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 1646,
+    "key": "save_home",
+    "excerpt": "function saveHomeDraft(){const d=S.config.home.draft;d.title=(document.querySelector('#homeTitle')||{}).value||d.title;d.subtitle=(document.querySelector('#homeSubtitle')||{}).value||d.subtitle;d.banner=(document.querySelector('#homeBanner')||{}).value||d.banner;d.bannerTarget=(document.querySelector('#homeTarget')||{}).value||d.bannerTarget;d.updatedAt=nowStr();}"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 1648,
+    "key": "save_service",
+    "excerpt": "function saveService(){const c=S.config.service;c.account=(document.querySelector('#svcAccount')||{}).value||c.account;c.displayName=(document.querySelector('#svcName')||{}).value||c.displayName;c.guide=(document.querySelector('#svcGuide')||{}).value||c.guide;c.hours=(document.querySelector('#svcHours')||{}).value||c.hours;c.updatedAt=nowStr();c.updatedBy=S.adminRole;addAudit('保存客服配置','service',c.account,c.account,'成功');toast('客服配置已保存并生效');renderAll();}"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 1649,
+    "key": "save_search",
+    "excerpt": "function saveSearch(){const c=S.config.search;const kw=(document.querySelector('#searchKeywords')||{}).value||'';c.keywords=kw.split(/[，,]/).map(x=>x.trim()).filter(Boolean);const hot=Array.from(document.querySelectorAll('[data-hot]')).filter(x=>x.checked).map(x=>x.dataset.hot);const bad=hot.filter(id=>{const p=product(id);return !p||!p.published;});if(bad.length){toast('热门商品必须来自已发布商品：'+bad.join('、'),'err');return;}c.hotProductIds=hot;c.updatedAt=nowStr();c.updatedBy=S.adminRole;addAudit('保存搜索推荐"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 1650,
+    "key": "save_wallet",
+    "excerpt": "function saveWallet(){const w=S.config.wallet;const v=Number((document.querySelector('#walletThreshold')||{}).value);if(!(v>=0)||Number.isNaN(v)){toast('阈值必须为非负金额','err');return;}w.threshold=v;addAudit('保存钱包阈值','wallet',String(w.threshold),String(v),'成功');toast('阈值已保存并生效');renderAll();}"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 1651,
+    "key": "save_role",
+    "excerpt": "function saveRole(id){const a=S.accounts.find(x=>x.id===id);if(!a)return;const role=(document.querySelector('#rbacRole')||{}).value||a.role;const perms=Array.from(document.querySelectorAll('[data-rbac-perm]')).filter(x=>x.checked).map(x=>x.dataset.rbacPerm);a.role=role;S.roleMatrix[role]=perms;S.singleRefund=perms.includes('单人退款');addAudit('保存角色权限',a.id,a.role,role+' / '+perms.join('、'),'成功');adminRt('ADM-RBAC-01').drawerId=null;S.state='DEFAULT';toast('权限已保存（原型会话）');renderAll();}"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 1722,
+    "key": "search_key",
+    "excerpt": "function onKey(e){"
+  },
+  {
+    "side": "trial",
+    "file": "02_低保真交互原型.html",
+    "line": 1727,
+    "key": "esc",
+    "excerpt": "if(e.key==='Escape'){"
+  },
+  {
+    "side": "final",
+    "file": "02_低保真交互原型.html",
+    "line": 132,
+    "key": "phone",
+    "excerpt": ".phone{width:min(320px,100%);min-height:610px;margin:auto;padding:14px;"
+  },
+  {
+    "side": "final",
+    "file": "02_低保真交互原型.html",
+    "line": 192,
+    "key": "final_radio",
+    "excerpt": ".ver-row .ver-radio{width:14px;height:14px;border:1px solid #8d939b;border-radius:50%;flex:none;background:#fff}"
+  },
+  {
+    "side": "final",
+    "file": "02_低保真交互原型.html",
+    "line": 193,
+    "key": "final_radio",
+    "excerpt": ".ver-row[aria-pressed=\"true\"] .ver-radio{border:4px solid var(--primary)}"
+  },
+  {
+    "side": "final",
+    "file": "02_低保真交互原型.html",
+    "line": 235,
+    "key": "quick_nav",
+    "excerpt": "内容导航只放内容入口（首页、搜索商品）；我的订单、我的、客服统一收进右侧用户区，"
+  },
+  {
+    "side": "final",
+    "file": "02_低保真交互原型.html",
+    "line": 1627,
+    "key": "modal_host",
+    "excerpt": "return '<div class=\"modal-mask center\" data-guide=\"1\" style=\"position:absolute;inset:0;z-index:20\">' +"
+  },
+  {
+    "side": "final",
+    "file": "02_低保真交互原型.html",
+    "line": 2065,
+    "key": "modal_host",
+    "excerpt": "? '<div class=\"modal-mask\" data-component=\"' + c + '10\" style=\"position:absolute;inset:0;z-index:9;' +"
+  },
+  {
+    "side": "final",
+    "file": "02_低保真交互原型.html",
+    "line": 2079,
+    "key": "modal_host",
+    "excerpt": "? '<div class=\"modal-mask\" data-component=\"' + c + '11\" style=\"position:absolute;inset:0;z-index:10;' +"
+  },
+  {
+    "side": "final",
+    "file": "02_低保真交互原型.html",
+    "line": 2099,
+    "key": "modal_host",
+    "excerpt": "return '<div class=\"modal-mask center\">' +"
+  },
+  {
+    "side": "final",
+    "file": "02_低保真交互原型.html",
+    "line": 2875,
+    "key": "quick_nav",
+    "excerpt": "「搜索商品」是商城内的检索工具，不是独立的一级页面；「我的订单 / 客服」收进「我的」页。"
+  },
+  {
+    "side": "final",
+    "file": "02_低保真交互原型.html",
+    "line": 4422,
+    "key": "drag",
+    "excerpt": "return '<div class=\"hm-item\" draggable=\"true\" data-hm-item=\"' + attr(it.id) + '\" data-idx=\"' + k + '\">' +"
+  },
+  {
+    "side": "final",
+    "file": "02_低保真交互原型.html",
+    "line": 4476,
+    "key": "drag",
+    "excerpt": "return '<tr draggable=\"true\" data-drag-item=\"' + attr(gid) + '\" data-drag-list=\"hot\"' +"
+  },
+  {
+    "side": "final",
+    "file": "02_低保真交互原型.html",
+    "line": 4715,
+    "key": "drag",
+    "excerpt": "return '<div class=\"gd-med\" draggable=\"true\" data-gd-item=\"' + attr(m.id) + '\" data-gd-idx=\"' + k + '\">' +"
+  },
+  {
+    "side": "final",
+    "file": "02_低保真交互原型.html",
+    "line": 5086,
+    "key": "drag",
+    "excerpt": "return ' data-sr-item=\"' + attr(r.id) + '\" draggable=\"true\"';"
+  },
+  {
+    "side": "final",
+    "file": "02_低保真交互原型.html",
+    "line": 6590,
+    "key": "tab_go",
+    "excerpt": "function go(pageId, stateCode, goodsId) {"
+  },
+  {
+    "side": "final",
+    "file": "02_低保真交互原型.html",
+    "line": 7032,
+    "key": "final_drag",
+    "excerpt": "function bindAdmHomeDnD() {"
+  },
+  {
+    "side": "final",
+    "file": "02_低保真交互原型.html",
+    "line": 7039,
+    "key": "drag",
+    "excerpt": "document.addEventListener('dragstart', function (e) {"
+  },
+  {
+    "side": "final",
+    "file": "02_低保真交互原型.html",
+    "line": 7110,
+    "key": "final_drag",
+    "excerpt": "function bindAdmGoodsDnD() {"
+  },
+  {
+    "side": "final",
+    "file": "02_低保真交互原型.html",
+    "line": 7116,
+    "key": "drag",
+    "excerpt": "document.addEventListener('dragstart', function (e) {"
+  },
+  {
+    "side": "final",
+    "file": "02_低保真交互原型.html",
+    "line": 7157,
+    "key": "final_drag",
+    "excerpt": "function bindAdmSearchDnD() {"
+  },
+  {
+    "side": "final",
+    "file": "02_低保真交互原型.html",
+    "line": 7166,
+    "key": "drag",
+    "excerpt": "document.addEventListener('dragstart', function (e) {"
+  },
+  {
+    "side": "final",
+    "file": "02_低保真交互原型.html",
+    "line": 7325,
+    "key": "drag",
+    "excerpt": "document.addEventListener('mousedown', function (e) {"
+  }
+]
