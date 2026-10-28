@@ -1,0 +1,242 @@
+[
+  {
+    "relative": "00_交付说明与变更记录.md",
+    "bytes": 10069,
+    "sha256": "3e3b2aaa56c54c98e0bf9d13e115b9be6f9aee8634495cd0e4abbf8549c6da5d"
+  },
+  {
+    "relative": "01_页面与状态说明.md",
+    "bytes": 278690,
+    "sha256": "1359bba4d956266ba016f50252f825b3f42183aa47a89d034ec30205e202c56a"
+  },
+  {
+    "relative": "02_低保真交互原型.html",
+    "bytes": 3498273,
+    "sha256": "5c8ea683f315c8d995785fdc151e0338b371a7a0944fd0d0f356613b40afa3a4"
+  },
+  {
+    "relative": "03_组件级文档.md",
+    "bytes": 787032,
+    "sha256": "9f2be353d67428497aa2f69035f446781755cd6d152723e50683668cb1f98f51"
+  },
+  {
+    "relative": "04_业务流程与异常规则.md",
+    "bytes": 41991,
+    "sha256": "8bba94602ead617e65a491da42279916821af8aea43e93c31575191e4bcbe149"
+  },
+  {
+    "relative": "05_接口数据与权限说明.md",
+    "bytes": 121866,
+    "sha256": "ee602ce90d1052993a63a6907a8a1762da3df0ac662dcc5cbbd1bd67e031cc36"
+  },
+  {
+    "relative": "06_埋点文档.md",
+    "bytes": 9497,
+    "sha256": "1fad939b6548cc5e8cd2cb2b38bcac441b94f4365c5b3976a260c0ff9c0770f2"
+  },
+  {
+    "relative": "07_测试用例.md",
+    "bytes": 176819,
+    "sha256": "f260ec96ae5440c2bfc4bbc02bf56dd7f723e2ed098326ad4b3fd6f9c79ccdc7"
+  },
+  {
+    "relative": "08_验证记录与验收映射.md",
+    "bytes": 49803,
+    "sha256": "c5907e8f7187b8c770b0fc44657cf49b757494ba685ff45113a429cc7d3d8159"
+  },
+  {
+    "relative": "09_待确认事项与设计决策.md",
+    "bytes": 10253,
+    "sha256": "65f685c4b6e3421fd219f1faa07c29678e3968bd5d6fcbb6b7991dbb0093d9a7"
+  },
+  {
+    "relative": "_checks/build_report.json",
+    "bytes": 568,
+    "sha256": "2d994487d029258256076cd35ef2d0ab67d127bbb59bc70c5a90c9a54f56885b"
+  },
+  {
+    "relative": "_checks/check_results.json",
+    "bytes": 7305,
+    "sha256": "4ccbaa46e763e20a2f23e5568f1a859d6089af1338a568ecc0a615943cd91a67"
+  },
+  {
+    "relative": "_checks/CHK-016_home.png",
+    "bytes": 109463,
+    "sha256": "01d465cb80789aebe50280b7f1eccdbb8443a6711ae73f0a57bb9433419652cc"
+  },
+  {
+    "relative": "_checks/CHK-017_search.png",
+    "bytes": 103638,
+    "sha256": "3a3e11929169e3490e69444057aa0cc438805609698e13b0efa3e2af06b612da"
+  },
+  {
+    "relative": "_checks/CHK-018_purchase.png",
+    "bytes": 121385,
+    "sha256": "bd7c43cc44668a17a217e83c72c9d653502968a301e3d52dbaa896fb065bef61"
+  },
+  {
+    "relative": "_checks/CHK-019_payret.png",
+    "bytes": 119382,
+    "sha256": "5332dea894a400455d2b8d5156a48827ea50956aaab2532398927d778e60939e"
+  },
+  {
+    "relative": "_checks/CHK-020_orders.png",
+    "bytes": 120152,
+    "sha256": "ba7dcda5b77bf181b2bafcaa6f4cadafabe3cc1eaa1809ea27b56d35edbfaffc"
+  },
+  {
+    "relative": "_checks/CHK-021_pc_home.png",
+    "bytes": 63199,
+    "sha256": "ae88b79c5220bc9bbe35cd38c8d49dc4786fec2611447d6bb9486ef52c6fc4a4"
+  },
+  {
+    "relative": "_checks/CHK-022_pc_buy.png",
+    "bytes": 62212,
+    "sha256": "d317b3b0a701afe0674d5c4211e4aad6ae5f96d358eb893d98213f62781fa8e7"
+  },
+  {
+    "relative": "_checks/CHK-023_scan.png",
+    "bytes": 66076,
+    "sha256": "77d3216b065c01141c2e9c179f889c4fd3aa4eec0a82ae46e86ab0647e6019d7"
+  },
+  {
+    "relative": "_checks/CHK-024_table.png",
+    "bytes": 76662,
+    "sha256": "a4db186ec04651dbd9a57392ebd0b4fb64962327bc19781d20066b1b8b02605e"
+  },
+  {
+    "relative": "_checks/CHK-025_admin_table.png",
+    "bytes": 99569,
+    "sha256": "9a1f8c77709514c559316ca345f33d583c2a06afcaaf171600a1121595cf984e"
+  },
+  {
+    "relative": "_checks/CHK-026_admin_filter.png",
+    "bytes": 77351,
+    "sha256": "99b77e0c2cbd8dec050eef182a14642e4c74f13e17cc89b7ebbf3f2f9936b69e"
+  },
+  {
+    "relative": "_checks/CHK-027_drawer.png",
+    "bytes": 83572,
+    "sha256": "aab80b02bfa517f8fe0350b989c004a8575a0784bcaa473948f27d208d7f68d8"
+  },
+  {
+    "relative": "_checks/CHK-028_confirm.png",
+    "bytes": 94143,
+    "sha256": "7792fbdf72ba1966d0e0f971d92e05194a7d6ad083db7785444bd8e5ff54fbb2"
+  },
+  {
+    "relative": "_checks/CHK-029_perm.png",
+    "bytes": 95404,
+    "sha256": "e6f8e821858e9195ef24c3c22a3b56c0dbe4151c0b66d3e296d3ce6e24b14935"
+  },
+  {
+    "relative": "_checks/CHK-030_publish.png",
+    "bytes": 110093,
+    "sha256": "d66c7a51beafbe58a066d8f9aec25f5b75fca68feb264b1c4575bffe5b55b324"
+  },
+  {
+    "relative": "_checks/CHK-031_refund.png",
+    "bytes": 114494,
+    "sha256": "dcec329d9ac6563848e43f2414cd8afd124f5377fc3b2027a9838b681cb5a725"
+  },
+  {
+    "relative": "_checks/CHK-032_paycheck.png",
+    "bytes": 66669,
+    "sha256": "07eadce939517c2e9f1050911d0c12601c65b18a4239e1623656011b3b5c7b6d"
+  },
+  {
+    "relative": "_checks/CHK-033_reader.png",
+    "bytes": 127811,
+    "sha256": "3189df6d0be6289a2f8638ea2e809b254ae7cdf0c5f1ebb187956471622f2c1f"
+  },
+  {
+    "relative": "_checks/CHK-034_diagram.png",
+    "bytes": 127888,
+    "sha256": "7b92a82d999fb7e8dd35ef1a4b72782b5e1a423b5311471e9b59ff8a174419ff"
+  },
+  {
+    "relative": "_checks/CHK-035_input.png",
+    "bytes": 119681,
+    "sha256": "b3408d6dca3f94f773fd693ce0511a77ef88621118971ff5675c9457afd39220"
+  },
+  {
+    "relative": "_checks/CHK-036_layer.png",
+    "bytes": 111326,
+    "sha256": "8ff0eb5804b48d859cc8f4c68d87833490646fd9973f7e681ec9cbe21fc32a05"
+  },
+  {
+    "relative": "_checks/CHK-037_narrow.png",
+    "bytes": 113424,
+    "sha256": "bf94b4654251906f546493df453f95a2538aa8336d2545d5bf8e906515b9c227"
+  },
+  {
+    "relative": "_checks/CHK-039_late.png",
+    "bytes": 113406,
+    "sha256": "f9b252a810aef97a6888630eda272a3d4ee77a734e7e25706978ff3db448ea18"
+  },
+  {
+    "relative": "_checks/component_audit_new.json",
+    "bytes": 27709,
+    "sha256": "635dd506f26fd520112afd5f96631d0c73cc3a36a43eb928afb1d8b222e658d4"
+  },
+  {
+    "relative": "_checks/doc_acceptance_checks.json",
+    "bytes": 1988,
+    "sha256": "9b46162107fcb3f964b489a3768a789a75dcdbd9b8a6577f0d575834ca4f6d04"
+  },
+  {
+    "relative": "_checks/final_batch.json",
+    "bytes": 7793,
+    "sha256": "ee6eb41588dae8fe33b44a5721f20d9e256eef6a75093b7577f04a4aa009c647"
+  },
+  {
+    "relative": "_checks/full_check_result.json",
+    "bytes": 4981,
+    "sha256": "14b9d0a631fa6e4591819810cd74f777727985e7304bbf1be28ab2fcb71f4240"
+  },
+  {
+    "relative": "_checks/regression_acceptance.json",
+    "bytes": 6599,
+    "sha256": "7eea79f9f157a405bf64cb855df01a404b0c87b9d19a264c8fb8fdda7c71b76e"
+  },
+  {
+    "relative": "_checks/render_all.json",
+    "bytes": 689,
+    "sha256": "06a7449d0c16e2956c6f9fe6b26bc4d001642da2c8d3d26e703c16d5da83c21b"
+  },
+  {
+    "relative": "_checks/render_results.json",
+    "bytes": 689,
+    "sha256": "90b2ba95d53802f95f5769326c6f6de93395396d3f4ba50fce4316038e46c90b"
+  },
+  {
+    "relative": "_checks/structure_results.json",
+    "bytes": 1883,
+    "sha256": "064e640311d5b9ef7ed500ca05e6a0eafe28e02e8bb266dfb49f72c66dc19b92"
+  },
+  {
+    "relative": "_checks/ui-profile.json",
+    "bytes": 1582,
+    "sha256": "7817c71da587862c5ff7c4ca360703ccf5fdc342a1b16cfb37e21061c9d4cb29"
+  },
+  {
+    "relative": "_checks/早期构建截图_未用于验收.png",
+    "bytes": 115886,
+    "sha256": "1e366f07937f1d7d16016b18020854160eb2ba4082036810d53859d49197bad4"
+  },
+  {
+    "relative": "_checks/验证证据_2026-10-28.md",
+    "bytes": 9900,
+    "sha256": "f56088178a32f1af06ddb6103810a5d8a89b8aba0c77d04b443ca52dff61e794"
+  },
+  {
+    "relative": "BUILD-MANIFEST.json",
+    "bytes": 3897,
+    "sha256": "2aefea298b9557482d2f7ba94c825f77c5a1690a227fd6541f3f9c19689c9bbc"
+  },
+  {
+    "relative": "修复与复测说明.md",
+    "bytes": 5383,
+    "sha256": "073fe1c930fbfcbe64e0fe57e894b6a51027aed43fdf1cfc9da7ad6a6bdd742d"
+  }
+]

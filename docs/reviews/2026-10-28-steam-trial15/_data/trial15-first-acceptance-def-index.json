@@ -1,0 +1,291 @@
+[
+  {
+    "id": "DEF-001",
+    "severity": "P0",
+    "title": "支付返回/重新查询/迟到回调可把未支付或确认中订单改为已支付",
+    "status_at_first_acceptance": "待修复",
+    "rule_refs": null,
+    "evidence_refs": [
+      "evidence/pay_bug_result.json (sha256:746b7d7b415a70f51d395f85d0471ae50b9d66c2ec52e1c8adea67ff36cc1cf8)",
+      "evidence/late_callback.json (sha256:0aaba36f1802694b0eff45b1b1037dad4bec5f6ae5167be737bfddb7acd71342)",
+      "evidence/PAYBUG_after_unpaid.png (sha256:674065c76822543fdff9d316ee7a80b88e4e6805742a25592106aa0236438edb)",
+      "evidence/LATE_CALLBACK.png (sha256:e8a24ab95887676f3c27a04ba11c2b8f0f1747aeaf01f5c3477157ed87ec1b79)"
+    ]
+  },
+  {
+    "id": "DEF-002",
+    "severity": "P0",
+    "title": "财务无单人退款权限仍可审核并执行特殊退款",
+    "status_at_first_acceptance": "待修复",
+    "rule_refs": null,
+    "evidence_refs": [
+      "evidence/refund_perm_result2.json (sha256:0ed167ead6ca5f5e39093ace0a4941ca2b6d3ffe3eb794f21d70340cff81bad8)",
+      "evidence/REFUND_FINANCE_DONE.png (sha256:dd3ffc0391e01e3deaf952fd48eec769ec9ea240eb34f7679f6987aebfb06067)",
+      "evidence/admin_matrix.json (sha256:40d81d1f2d2bd22a4b82dec4c2f1fb214351abdf7965aae5a79c0646a96ad218)"
+    ]
+  },
+  {
+    "id": "DEF-003",
+    "severity": "P1",
+    "title": "同商品两笔有效订单、恢复错单且换规格流程不可达",
+    "status_at_first_acceptance": "待修复",
+    "rule_refs": null,
+    "evidence_refs": [
+      "evidence/business_tests.json (sha256:9e2415946e037862fe4764fed54308cf01d0e4f5aa03ffee9b7ed2b260fed774)",
+      "evidence/late_payment_close.json (sha256:f4e96dc8bf68c3d5b9fc335cb9d526f8179d57ac84f13e5f72bada0eeeccb6ec)"
+    ]
+  },
+  {
+    "id": "DEF-004",
+    "severity": "P1",
+    "title": "好友赠送被供应商余额/库存错误拦截，库存风险提示缺失",
+    "status_at_first_acceptance": "待修复",
+    "rule_refs": null,
+    "evidence_refs": [
+      "evidence/gift_balance.json (sha256:72debea02a9a586879c8ab4725200a10bf0133488d20a1eb8f533ebd6a1e396b)",
+      "evidence/panel_risk.json (sha256:9da6678f9def2bcb6ae53ce84d46d766b60c895f047b36ddc83634db81a86bd0)",
+      "evidence/PANEL_STOCK_UNKNOWN.png (sha256:b8d680526842235d660b98f30b496f3b0d8a92f486b7c38695269e475890ae70)"
+    ]
+  },
+  {
+    "id": "DEF-005",
+    "severity": "P1",
+    "title": "退款成功结果页无已退款态，异常单仍显示发码中/可刷新出新交付",
+    "status_at_first_acceptance": "待修复",
+    "rule_refs": null,
+    "evidence_refs": [
+      "evidence/more_tests.json (sha256:f7cee673c1426e518783467b5998070e5c98434e27d0e0f83a56dae6e948402a)",
+      "evidence/refund_display.json (sha256:e88ccdbb8ffe23e2b1f8a0dfe8051f46bbe6d0dd41e34efd7190c76a03249a5e)",
+      "evidence/refresh_delivery.json (sha256:236266a83951041fe6d220f19cd9a5d68b5a0d4acb1d3f170aef5a5b9d1746f8)",
+      "evidence/REFRESH_REFUND_FAILED.png (sha256:fa9e0e6194d82a84bf051848a1342adca63c183190f396248ddb23675f1f394b)"
+    ]
+  },
+  {
+    "id": "DEF-006",
+    "severity": "P1",
+    "title": "继续支付/最终提交未重新校验商品与余额",
+    "status_at_first_acceptance": "待修复",
+    "rule_refs": null,
+    "evidence_refs": [
+      "evidence/business_tests.json (sha256:9e2415946e037862fe4764fed54308cf01d0e4f5aa03ffee9b7ed2b260fed774)",
+      "evidence/business_tests2.json (sha256:a6ee3836b0ac981ef29040dc49ab67cb7cd04cded5b0afb353a067b090194c46)"
+    ]
+  },
+  {
+    "id": "DEF-007",
+    "severity": "P1",
+    "title": "来源平台切换不隔离订单，所有平台看到同一订单集",
+    "status_at_first_acceptance": "待修复",
+    "rule_refs": null,
+    "evidence_refs": [
+      "evidence/isolation.json (sha256:6cbeb309278b413bb18e972f53d90df883e68f9995280c634a7971d18e8da191)"
+    ]
+  },
+  {
+    "id": "DEF-008",
+    "severity": "P1",
+    "title": "C 端缺少首次进入实名提醒（无 W-NOTICE）",
+    "status_at_first_acceptance": "待修复",
+    "rule_refs": null,
+    "evidence_refs": [
+      "evidence/notice.json (sha256:2bae15a9a5e7d9aaa3837d44fe0264940ea20945f8995951f05af1bff2f336e9)",
+      "01_页面与状态说明.md:48",
+      "02 PAGES_DATA"
+    ]
+  },
+  {
+    "id": "DEF-009",
+    "severity": "P1",
+    "title": "好友链接仅非空校验，abc 被接受并建单",
+    "status_at_first_acceptance": "待修复",
+    "rule_refs": null,
+    "evidence_refs": [
+      "evidence/business_tests.json (sha256:9e2415946e037862fe4764fed54308cf01d0e4f5aa03ffee9b7ed2b260fed774)"
+    ]
+  },
+  {
+    "id": "DEF-010",
+    "severity": "P1",
+    "title": "组件注册与 DOM 归属不一致，弹层组件无法定位",
+    "status_at_first_acceptance": "待修复",
+    "rule_refs": null,
+    "evidence_refs": [
+      "evidence/component_audit.json (sha256:a108aa9d745f35037818c3ac6e00b1a10d25db3da4595d529a242532e44eec86)",
+      "evidence/dup_components.json (sha256:4e309e16ad44e0089c4addfd9c3bbec49466a1ba8c26a207cac83fc3cbf23674)",
+      "evidence/more_tests.json (sha256:f7cee673c1426e518783467b5998070e5c98434e27d0e0f83a56dae6e948402a)",
+      "evidence/PANEL_STOCK_UNKNOWN.png (sha256:b8d680526842235d660b98f30b496f3b0d8a92f486b7c38695269e475890ae70)"
+    ]
+  },
+  {
+    "id": "DEF-011",
+    "severity": "P1",
+    "title": "流程图/状态机/时序结构 lint 失败",
+    "status_at_first_acceptance": "待修复",
+    "rule_refs": null,
+    "evidence_refs": [
+      "extracted/flow_check.json",
+      "extracted/sm_check.json",
+      "04:95/110/129/131/161/162/359/382/401/422",
+      "05:1274-1275"
+    ]
+  },
+  {
+    "id": "DEF-012",
+    "severity": "P1",
+    "title": "01 状态明细与操作流转 100% 模板化",
+    "status_at_first_acceptance": "待修复",
+    "rule_refs": null,
+    "evidence_refs": [
+      "01_页面与状态说明.md:573-579",
+      "01_页面与状态说明.md:801-803",
+      "统计 223/103"
+    ]
+  },
+  {
+    "id": "DEF-013",
+    "severity": "P1",
+    "title": "03 组件十节模板化，第2/3/4/6节不可执行",
+    "status_at_first_acceptance": "待修复",
+    "rule_refs": null,
+    "evidence_refs": [
+      "03_组件级文档.md:1750-1795",
+      "03_组件级文档.md:2142-2195",
+      "03_组件级文档.md:5814-5865",
+      "统计输出"
+    ]
+  },
+  {
+    "id": "DEF-014",
+    "severity": "P1",
+    "title": "07 的 73 条 AC 用例步骤/数据/不变断言完全相同",
+    "status_at_first_acceptance": "待修复",
+    "rule_refs": null,
+    "evidence_refs": [
+      "07_测试用例.md:122-284",
+      "07_测试用例.md:1233",
+      "统计 73/73"
+    ]
+  },
+  {
+    "id": "DEF-015",
+    "severity": "P1",
+    "title": "03 引用 26 个 06 未定义事件",
+    "status_at_first_acceptance": "待修复",
+    "rule_refs": null,
+    "evidence_refs": [
+      "extracted/ref_check.json",
+      "03_组件级文档.md:1484/1997/2201/3869/4752"
+    ]
+  },
+  {
+    "id": "DEF-016",
+    "severity": "P1",
+    "title": "移动购买弹层宿主错误：420×656 覆盖 288×592 业务区，焦点不回触发入口",
+    "status_at_first_acceptance": "待修复",
+    "rule_refs": null,
+    "evidence_refs": [
+      "evidence/layout_tools.json (sha256:4227e389fc75004041aa45667821f12d578097e66495d005f24915009822dc34)",
+      "evidence/PANEL_STOCK_UNKNOWN.png (sha256:b8d680526842235d660b98f30b496f3b0d8a92f486b7c38695269e475890ae70)"
+    ]
+  },
+  {
+    "id": "DEF-017",
+    "severity": "P1",
+    "title": "W 未绑手机跳转 M-PHONE，W-PHONE 流程不可达",
+    "status_at_first_acceptance": "待修复",
+    "rule_refs": null,
+    "evidence_refs": [
+      "evidence/w_phone.json (sha256:6cab09f5596d8030ee5bd9eb8bd8881bb151d920de05dfa7bdb753f47e09cb9b)",
+      "01_页面与状态说明.md:258"
+    ]
+  },
+  {
+    "id": "DEF-018",
+    "severity": "P1",
+    "title": "业务画布内演示控件可伪造已支付/已交付",
+    "status_at_first_acceptance": "待修复",
+    "rule_refs": null,
+    "evidence_refs": [
+      "evidence/w_demo.json (sha256:66e7fbf5b727603c49fd6b330d6dee5ce92ec6b4fd2cffc341c169d6c3e3eb86)",
+      "evidence/refresh_delivery.json (sha256:236266a83951041fe6d220f19cd9a5d68b5a0d4acb1d3f170aef5a5b9d1746f8)",
+      "evidence/REFRESH_REFUND_FAILED.png (sha256:fa9e0e6194d82a84bf051848a1342adca63c183190f396248ddb23675f1f394b)"
+    ]
+  },
+  {
+    "id": "DEF-019",
+    "severity": "P1",
+    "title": "08/自测把失败或未验证写成 40/40 通过、覆盖完整",
+    "status_at_first_acceptance": "待修复",
+    "rule_refs": null,
+    "evidence_refs": [
+      "08_验证记录与验收映射.md:133/143/150/153/174-176",
+      "_checks/final_batch.json",
+      "_checks/验证证据_2026-10-28.md:107",
+      "evidence/pay_bug_result.json (sha256:746b7d7b415a70f51d395f85d0471ae50b9d66c2ec52e1c8adea67ff36cc1cf8)",
+      "evidence/refund_perm_result2.json (sha256:0ed167ead6ca5f5e39093ace0a4941ca2b6d3ffe3eb794f21d70340cff81bad8)"
+    ]
+  },
+  {
+    "id": "DEF-020",
+    "severity": "P2",
+    "title": "W 订单详情显示原始枚举 gift_pending/none",
+    "status_at_first_acceptance": "待修复",
+    "rule_refs": null,
+    "evidence_refs": [
+      "evidence/business_tests.json (sha256:9e2415946e037862fe4764fed54308cf01d0e4f5aa03ffee9b7ed2b260fed774)"
+    ]
+  },
+  {
+    "id": "DEF-021",
+    "severity": "P2",
+    "title": "移动订单“交付中”页签包含已交付订单",
+    "status_at_first_acceptance": "待修复",
+    "rule_refs": null,
+    "evidence_refs": [
+      "evidence/business_tests.json (sha256:9e2415946e037862fe4764fed54308cf01d0e4f5aa03ffee9b7ed2b260fed774)"
+    ]
+  },
+  {
+    "id": "DEF-022",
+    "severity": "P2",
+    "title": "权限矩阵只有 14 行，缺 8 类 §9.4 基线动作",
+    "status_at_first_acceptance": "待修复",
+    "rule_refs": null,
+    "evidence_refs": [
+      "evidence/admin_matrix.json (sha256:40d81d1f2d2bd22a4b82dec4c2f1fb214351abdf7965aae5a79c0646a96ad218)",
+      "02 ADM-PERM-01"
+    ]
+  },
+  {
+    "id": "DEF-023",
+    "severity": "P2",
+    "title": "04 七个流程章节全部编号“## 2.”",
+    "status_at_first_acceptance": "待修复",
+    "rule_refs": null,
+    "evidence_refs": [
+      "04_业务流程与异常规则.md:46/117/167/205/233/267/308"
+    ]
+  },
+  {
+    "id": "DEF-024",
+    "severity": "P2",
+    "title": "05 逐接口第6/8/10/11项为统一模板，API-ADM-006 无引用",
+    "status_at_first_acceptance": "待修复",
+    "rule_refs": null,
+    "evidence_refs": [
+      "05_接口数据与权限说明.md:86-91 等",
+      "extracted/ref_check.json"
+    ]
+  },
+  {
+    "id": "DEF-025",
+    "severity": "P2",
+    "title": "HTML 无 data-variant/data-ui-profile 标记，变体消费不可核对",
+    "status_at_first_acceptance": "待修复",
+    "rule_refs": null,
+    "evidence_refs": [
+      "evidence/profile_markers.txt (sha256:53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3)",
+      "02 DOM"
+    ]
+  }
+]

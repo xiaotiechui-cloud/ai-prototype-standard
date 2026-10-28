@@ -5,7 +5,7 @@
 | 触发条件 | 读取 | 权威依据 |
 | --- | --- | --- |
 | 生成交付、自测计划、能力缺口或缺陷修复回归 | [AI自测](selftest.md) | STD-QA-001；STD-GATE-001 |
-| 复跑入口、输入/产物指纹或写后消费者证据需要预检 | [AI自测与可选声明预检工具](selftest.md) | quality 29.13；不替代真实执行 |
+| 复跑入口、输入/产物指纹、写后消费者证据或必需检查集合需要预检 | [AI自测与证据/门控工具](selftest.md) | quality 29.13；不替代真实执行 |
 | 改尺寸、排版、响应式或说明滚动 | [几何与阅读](layout-and-reading.md) | ui 7、8.4、9.3；reader 19 |
 | 改组件选择、描边、工具或父子弹层 | [上下文与层栈](context-and-layers.md) | STD-RV-001、STD-RT-001；ui 8.5/9.5 |
 | 改确认、保存、字段解码、批次聚合、记录、上传、图示或数据联动 | [动作与结果](actions-and-results.md) | STD-ACT-001；business 24.5；core 3.4；admin 12.6；reader 18 |

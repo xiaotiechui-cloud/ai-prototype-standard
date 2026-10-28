@@ -1,0 +1,56 @@
+[
+  {
+    "file": "00_交付说明与变更记录.md",
+    "match": true,
+    "embedded_sha256": "48619ceae92cbb25db2086854fe67e4e7ad5bd78b7fca36015a13966e586e09e",
+    "external_sha256": "48619ceae92cbb25db2086854fe67e4e7ad5bd78b7fca36015a13966e586e09e"
+  },
+  {
+    "file": "01_页面与状态说明.md",
+    "match": true,
+    "embedded_sha256": "43dd5949de0244ebc0fd1df74670ee7e2ab64a84ea5043dae3e68d18d2c9e468",
+    "external_sha256": "43dd5949de0244ebc0fd1df74670ee7e2ab64a84ea5043dae3e68d18d2c9e468"
+  },
+  {
+    "file": "03_组件级文档.md",
+    "match": true,
+    "embedded_sha256": "4faf6777728f06504328dc12da8cff0bcde6d1e5bb131914cd58fed481553201",
+    "external_sha256": "4faf6777728f06504328dc12da8cff0bcde6d1e5bb131914cd58fed481553201"
+  },
+  {
+    "file": "04_业务流程与异常规则.md",
+    "match": true,
+    "embedded_sha256": "7a122d97a191423f54232bdc52375bbc056c92af01f4aba3ed5023ffe2eb19b9",
+    "external_sha256": "7a122d97a191423f54232bdc52375bbc056c92af01f4aba3ed5023ffe2eb19b9"
+  },
+  {
+    "file": "05_接口数据与权限说明.md",
+    "match": true,
+    "embedded_sha256": "5b257ea1545876c32d290bfe56d8c7447fa477956d7d49a50c8adb13469d70a1",
+    "external_sha256": "5b257ea1545876c32d290bfe56d8c7447fa477956d7d49a50c8adb13469d70a1"
+  },
+  {
+    "file": "06_埋点文档.md",
+    "match": true,
+    "embedded_sha256": "2c60a1b03b6f6167aaf2cd9dd0d176531b3f31d9883d28455f16dfff068049b6",
+    "external_sha256": "2c60a1b03b6f6167aaf2cd9dd0d176531b3f31d9883d28455f16dfff068049b6"
+  },
+  {
+    "file": "07_测试用例.md",
+    "match": true,
+    "embedded_sha256": "9672cd8f6a5522fdafc7534ec47e12e638b38112ba12cdcde3f92dba75bfa67c",
+    "external_sha256": "9672cd8f6a5522fdafc7534ec47e12e638b38112ba12cdcde3f92dba75bfa67c"
+  },
+  {
+    "file": "08_验证记录与验收映射.md",
+    "match": true,
+    "embedded_sha256": "e6c1590686f50fd2f9697818eb6244846988b3748a1d73db33a031f3462ce3fe",
+    "external_sha256": "e6c1590686f50fd2f9697818eb6244846988b3748a1d73db33a031f3462ce3fe"
+  },
+  {
+    "file": "09_待确认事项与设计决策.md",
+    "match": true,
+    "embedded_sha256": "656806d81c14c039a1fe59550ccd6262d27bdc6ccfc4c468963b8787e4ac2af7",
+    "external_sha256": "656806d81c14c039a1fe59550ccd6262d27bdc6ccfc4c468963b8787e4ac2af7"
+  }
+]

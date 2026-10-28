@@ -2,7 +2,7 @@
 
 规则基线：**V3.0**；模块化维护结构：**modular-1，用户已确认、未发布**。本文件是装载入口，不替代详细规范。
 
-当前内容修订：`draft-20261028-trial14-evidence`；生成前 UI Profile 档案指纹与输出产物指纹分列，复跑记录补目标路径/哈希、依赖、环境、编码及封存边界；按需证据预检工具不证明声明真实或浏览器行为通过。详见[试跑14落实](docs/reviews/2026-10-28-steam-trial14/08_确认与落实.md)。这是维护稿标识，不是正式版本或发布标签；精确输入以 commit 和实际模块哈希固定。
+当前内容修订：`draft-20261028-trial15-required-check-gate`；在试跑14的档案/复跑证据基础上，增加可选 required-check-set 出门门控及反例测试。详见[试跑15落实](docs/reviews/2026-10-28-steam-trial15/08_确认与落实.md)。这是维护稿标识，不是正式版本或发布标签；精确输入以 commit 和实际模块哈希固定。
 
 ## 先识别任务，再读取文件
 
@@ -12,7 +12,7 @@
 4. 按 [章节索引](docs/CHAPTER-INDEX.md) 定位后续遇到的跨章引用；若当前阶段依赖该条款，先补读权威文件，不凭记忆补写。各端不适用的业务示例仍应按 PRD 判断。
 5. 将范围、规则版本、PRD 基线、稳定 ID、模型位置、加载模块及摘要写入项目工作区的上下文记录。后续阶段读取该记录与真实交付物。
 
-工具能力、实现前预期、自测/修复/回归和最终文件证据按`STD-QA-001`，首次建模补读 [quality29.9～29.14](standards/quality-and-evidence.md#s-29)。按PRD选择 [模式细节](docs/patterns/README.md)，无浏览器等必要能力须明确未验证。
+工具能力、实现前预期、自测/修复/回归和最终文件证据按`STD-QA-001`，首次建模补读 [quality29.9～29.14](standards/quality-and-evidence.md#s-29)。按PRD选择 [模式细节](docs/patterns/README.md)，无浏览器等必要能力须明确未验证。需要固定本轮必做检查时，可按 [required-check-set 示例](docs/acceptance/required-check-set.example.json) 使用 `tools/check_required_check_set.py`；它是可失败的执行门，不是第二份规则或验收台账。
 
 完整生成推荐阶段：`model → prototype → docs → verify`；最后依据 core 的第 31 章判断交付状态。阶段提示只划分工作，不能自行删除最终交付物。第一轮默认是设计评审稿。
 
@@ -45,7 +45,7 @@
 
 ```text
 本轮 PRD 已评审。请读取 AI-START.md 和 standard-manifest.json。
-本次使用 V3.0 / modular-1 / draft-20261028-trial14-evidence 维护稿；先识别端和范围，按路由实际读取规则。
+本次使用 V3.0 / modular-1 / draft-20261028-trial15-required-check-gate 维护稿；先识别端和范围，按路由实际读取规则。
 从建模开始，保存模型、稳定 ID 和待确认项；后续依次完成原型、文档、验证。
 按STD-QA-001先声明实际工具能力并保存布局/行为预期；交付前真实自测，修复并回归。
 每阶段报告实际加载模块与哈希，最终按标准关卡报告交付状态、证据和未验证项。

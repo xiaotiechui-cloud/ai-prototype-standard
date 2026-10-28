@@ -1,0 +1,114 @@
+[
+  {
+    "id": "FL-ORDER-001",
+    "title": "购买主流程",
+    "source_chars": 0,
+    "svg_chars": 27650,
+    "empty_svg_text_elements": 0
+  },
+  {
+    "id": "FL-PAY-002",
+    "title": "支付返回、确认中与晚到款",
+    "source_chars": 0,
+    "svg_chars": 22601,
+    "empty_svg_text_elements": 0
+  },
+  {
+    "id": "FL-CODE-003",
+    "title": "口令码交付与重试",
+    "source_chars": 0,
+    "svg_chars": 9885,
+    "empty_svg_text_elements": 0
+  },
+  {
+    "id": "FL-GIFT-004",
+    "title": "好友赠送批次",
+    "source_chars": 0,
+    "svg_chars": 5747,
+    "empty_svg_text_elements": 0
+  },
+  {
+    "id": "FL-REFUND-005",
+    "title": "退款闭环",
+    "source_chars": 0,
+    "svg_chars": 8695,
+    "empty_svg_text_elements": 0
+  },
+  {
+    "id": "FL-ADM-006",
+    "title": "选品与发布",
+    "source_chars": 0,
+    "svg_chars": 11129,
+    "empty_svg_text_elements": 0
+  },
+  {
+    "id": "FL-PAYCHECK-007",
+    "title": "支付核查",
+    "source_chars": 0,
+    "svg_chars": 8070,
+    "empty_svg_text_elements": 0
+  },
+  {
+    "id": "SM-ORDER-001",
+    "title": "订单支付状态",
+    "source_chars": 0,
+    "svg_chars": 6758,
+    "empty_svg_text_elements": 0
+  },
+  {
+    "id": "SM-DELIVERY-002",
+    "title": "口令码交付",
+    "source_chars": 0,
+    "svg_chars": 5356,
+    "empty_svg_text_elements": 0
+  },
+  {
+    "id": "SM-GIFT-003",
+    "title": "好友赠送",
+    "source_chars": 0,
+    "svg_chars": 4698,
+    "empty_svg_text_elements": 0
+  },
+  {
+    "id": "SM-REFUND-004",
+    "title": "退款单",
+    "source_chars": 0,
+    "svg_chars": 4598,
+    "empty_svg_text_elements": 0
+  },
+  {
+    "id": "SM-NOTIFY-005",
+    "title": "站内信任务",
+    "source_chars": 0,
+    "svg_chars": 4739,
+    "empty_svg_text_elements": 0
+  },
+  {
+    "id": "SM-PRODUCT-006",
+    "title": "商品选品与发布",
+    "source_chars": 0,
+    "svg_chars": 5620,
+    "empty_svg_text_elements": 0
+  },
+  {
+    "id": "SEQ-ORDER-001",
+    "title": "下单与支付",
+    "source_chars": 0,
+    "svg_chars": 10685,
+    "empty_svg_text_elements": 0
+  },
+  {
+    "id": "SEQ-CODE-002",
+    "title": "取码与重试",
+    "source_chars": 0,
+    "svg_chars": 6014,
+    "empty_svg_text_elements": 0
+  },
+  {
+    "id": "SEQ-REFUND-003",
+    "title": "退款执行",
+    "source_chars": 0,
+    "svg_chars": 4998,
+    "empty_svg_text_elements": 0
+  }
+]

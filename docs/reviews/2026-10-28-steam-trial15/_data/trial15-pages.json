@@ -1,0 +1,2175 @@
+[
+  {
+    "id": "M-HOME-01",
+    "end": "M",
+    "name": "商城首页",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "无已发布商品"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ]
+    ],
+    "state_count": 4,
+    "components": [
+      {
+        "id": "M-HOME-01-C01",
+        "name": "顶部区域",
+        "shared": "",
+        "pat": "PAT-NAV-01",
+        "states": "DEFAULT"
+      },
+      {
+        "id": "M-HOME-01-C02",
+        "name": "首页配置区",
+        "shared": "",
+        "pat": "PAT-CAROUSEL-01",
+        "states": "DEFAULT,EMPTY"
+      },
+      {
+        "id": "M-HOME-01-C03",
+        "name": "商品卡片列表",
+        "shared": "COM-CLIENT-C06",
+        "pat": "PAT-LIST-01",
+        "states": "DEFAULT,LOADING,EMPTY,ERROR"
+      },
+      {
+        "id": "M-HOME-01-C04",
+        "name": "底部标签栏",
+        "shared": "COM-CLIENT-C14",
+        "pat": "PAT-NAV-02",
+        "states": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "id": "M-NOTICE-01",
+    "end": "M",
+    "name": "首次进入实名提醒",
+    "states": [
+      [
+        "CERTIFIED",
+        "已实名：知道了"
+      ],
+      [
+        "UNCERTIFIED",
+        "未实名：前往认证"
+      ],
+      [
+        "UNKNOWN",
+        "状态未知：不展示"
+      ]
+    ],
+    "state_count": 3,
+    "components": [
+      {
+        "id": "M-NOTICE-01-C01",
+        "name": "提醒弹窗",
+        "shared": "",
+        "pat": "PAT-MODAL-01",
+        "states": "CERTIFIED,UNCERTIFIED"
+      }
+    ]
+  },
+  {
+    "id": "M-SEARCH-01",
+    "end": "M",
+    "name": "搜索默认页",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "EDITING",
+        "输入中"
+      ],
+      [
+        "EMPTY",
+        "无推荐配置"
+      ],
+      [
+        "ERROR",
+        "配置加载失败"
+      ]
+    ],
+    "state_count": 4,
+    "components": [
+      {
+        "id": "M-SEARCH-01-C01",
+        "name": "顶部栏",
+        "shared": "COM-CLIENT-C08",
+        "pat": "PAT-NAV-01",
+        "states": "DEFAULT"
+      },
+      {
+        "id": "M-SEARCH-01-C02",
+        "name": "搜索框与提交",
+        "shared": "COM-CLIENT-C01",
+        "pat": "PAT-INPUT-01",
+        "states": "DEFAULT,EDITING"
+      },
+      {
+        "id": "M-SEARCH-01-C03",
+        "name": "搜索推荐区",
+        "shared": "",
+        "pat": "PAT-LIST-02",
+        "states": "DEFAULT,EMPTY,ERROR"
+      }
+    ]
+  },
+  {
+    "id": "M-SEARCH-02",
+    "end": "M",
+    "name": "搜索结果页",
+    "states": [
+      [
+        "RESULTS",
+        "有结果"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "无结果"
+      ],
+      [
+        "ERROR",
+        "请求失败"
+      ],
+      [
+        "END",
+        "已加载全部"
+      ]
+    ],
+    "state_count": 5,
+    "components": [
+      {
+        "id": "M-SEARCH-02-C01",
+        "name": "顶部栏与搜索框",
+        "shared": "COM-CLIENT-C08",
+        "pat": "PAT-NAV-01",
+        "states": "RESULTS,LOADING,EMPTY,ERROR,END"
+      },
+      {
+        "id": "M-SEARCH-02-C02",
+        "name": "排序栏",
+        "shared": "COM-CLIENT-C05",
+        "pat": "PAT-FILTER-01",
+        "states": "RESULTS"
+      },
+      {
+        "id": "M-SEARCH-02-C03",
+        "name": "结果卡片列表",
+        "shared": "COM-CLIENT-C06",
+        "pat": "PAT-LIST-01",
+        "states": "RESULTS,LOADING,EMPTY,ERROR,END"
+      },
+      {
+        "id": "M-SEARCH-02-C04",
+        "name": "状态区",
+        "shared": "COM-CLIENT-C09",
+        "pat": "PAT-FEEDBACK-01",
+        "states": "LOADING,EMPTY,ERROR,END"
+      }
+    ]
+  },
+  {
+    "id": "M-PRODUCT-01",
+    "end": "M",
+    "name": "商品详情",
+    "states": [
+      [
+        "DEFAULT",
+        "可售"
+      ],
+      [
+        "PENDING_ORDER",
+        "订单处理中"
+      ],
+      [
+        "PAID_DELIVERING",
+        "已支付交付中"
+      ],
+      [
+        "SOLD_OUT",
+        "售罄"
+      ],
+      [
+        "UNAVAILABLE",
+        "不可售"
+      ],
+      [
+        "EXPANDED",
+        "长文展开"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ]
+    ],
+    "state_count": 7,
+    "components": [
+      {
+        "id": "M-PRODUCT-01-C01",
+        "name": "商品媒体区",
+        "shared": "",
+        "pat": "PAT-GALLERY-01",
+        "states": "DEFAULT,PENDING_ORDER,PAID_DELIVERING,UNAVAILABLE"
+      },
+      {
+        "id": "M-PRODUCT-01-C02",
+        "name": "商品信息与提示",
+        "shared": "",
+        "pat": "PAT-CARD-01",
+        "states": "DEFAULT,PENDING_ORDER,PAID_DELIVERING,SOLD_OUT,UNAVAILABLE,EXPANDED,ERROR"
+      },
+      {
+        "id": "M-PRODUCT-01-C03",
+        "name": "介绍与须知折叠",
+        "shared": "",
+        "pat": "PAT-EXPAND-01",
+        "states": "DEFAULT,EXPANDED"
+      },
+      {
+        "id": "M-PRODUCT-01-C04",
+        "name": "底部购买栏",
+        "shared": "",
+        "pat": "PAT-ACTION-02",
+        "states": "DEFAULT,PENDING_ORDER,PAID_DELIVERING,SOLD_OUT,UNAVAILABLE"
+      },
+      {
+        "id": "M-PRODUCT-01-C05",
+        "name": "客服入口",
+        "shared": "COM-CLIENT-C07",
+        "pat": "PAT-EXTERNAL-01",
+        "states": "DEFAULT,PENDING_ORDER,PAID_DELIVERING,SOLD_OUT,UNAVAILABLE"
+      }
+    ]
+  },
+  {
+    "id": "M-BUY-01",
+    "end": "M",
+    "name": "购买面板",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "VALIDATION_ERROR",
+        "校验失败"
+      ],
+      [
+        "AGREEMENT_NOTICE",
+        "购买须知"
+      ],
+      [
+        "BUSINESS_REJECT",
+        "业务拒绝"
+      ],
+      [
+        "STOCK_UNKNOWN",
+        "库存未知风险提示"
+      ],
+      [
+        "SUBMITTING",
+        "提交中"
+      ]
+    ],
+    "state_count": 6,
+    "components": [
+      {
+        "id": "M-BUY-01-C01",
+        "name": "面板容器与摘要",
+        "shared": "",
+        "pat": "PAT-MODAL-02",
+        "states": "DEFAULT,VALIDATION_ERROR,BUSINESS_REJECT,STOCK_UNKNOWN,SUBMITTING"
+      },
+      {
+        "id": "M-BUY-01-C02",
+        "name": "规格与交付选择",
+        "shared": "",
+        "pat": "PAT-CHOICE-01",
+        "states": "DEFAULT"
+      },
+      {
+        "id": "M-BUY-01-C03",
+        "name": "好友链接与支付方式",
+        "shared": "",
+        "pat": "PAT-INPUT-02",
+        "states": "DEFAULT,VALIDATION_ERROR"
+      },
+      {
+        "id": "M-BUY-01-C04",
+        "name": "协议与主按钮",
+        "shared": "",
+        "pat": "PAT-CHECK-01",
+        "states": "DEFAULT,AGREEMENT_NOTICE,BUSINESS_REJECT,STOCK_UNKNOWN,SUBMITTING"
+      },
+      {
+        "id": "M-BUY-01-C05",
+        "name": "购买须知弹窗",
+        "shared": "",
+        "pat": "PAT-MODAL-03",
+        "states": "AGREEMENT_NOTICE"
+      }
+    ]
+  },
+  {
+    "id": "M-AGREEMENT-01",
+    "end": "M",
+    "name": "购买协议页",
+    "states": [
+      [
+        "DEFAULT",
+        "当前版本"
+      ],
+      [
+        "STALE",
+        "版本已更新"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ]
+    ],
+    "state_count": 3,
+    "components": [
+      {
+        "id": "M-AGREEMENT-01-C01",
+        "name": "协议内容卡",
+        "shared": "",
+        "pat": "PAT-EXPAND-01",
+        "states": "DEFAULT,STALE,ERROR"
+      }
+    ]
+  },
+  {
+    "id": "M-PHONE-01",
+    "end": "M",
+    "name": "手机号绑定",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "VALIDATION_ERROR",
+        "校验失败"
+      ],
+      [
+        "SUBMITTING",
+        "提交中"
+      ],
+      [
+        "ERROR",
+        "发送失败"
+      ]
+    ],
+    "state_count": 4,
+    "components": [
+      {
+        "id": "M-PHONE-01-C01",
+        "name": "绑定表单",
+        "shared": "",
+        "pat": "PAT-INPUT-01",
+        "states": "DEFAULT,VALIDATION_ERROR,SUBMITTING,ERROR"
+      },
+      {
+        "id": "M-PHONE-01-C02",
+        "name": "隐私告知",
+        "shared": "",
+        "pat": "PAT-NOTICE-01",
+        "states": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "id": "M-CHECKOUT-01",
+    "end": "M",
+    "name": "确认订单",
+    "states": [
+      [
+        "DEFAULT",
+        "待支付"
+      ],
+      [
+        "AGREEMENT_REQUIRED",
+        "需重新同意协议"
+      ],
+      [
+        "SUBMITTING",
+        "提交中"
+      ],
+      [
+        "EXPIRED",
+        "已过期"
+      ],
+      [
+        "CLOSED",
+        "已关闭"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ]
+    ],
+    "state_count": 6,
+    "components": [
+      {
+        "id": "M-CHECKOUT-01-C01",
+        "name": "订单摘要与倒计时",
+        "shared": "",
+        "pat": "PAT-CARD-01",
+        "states": "DEFAULT,AGREEMENT_REQUIRED,EXPIRED,CLOSED,ERROR"
+      },
+      {
+        "id": "M-CHECKOUT-01-C02",
+        "name": "协议重新确认",
+        "shared": "",
+        "pat": "PAT-CHECK-01",
+        "states": "AGREEMENT_REQUIRED"
+      },
+      {
+        "id": "M-CHECKOUT-01-C03",
+        "name": "支付操作区",
+        "shared": "",
+        "pat": "PAT-ACTION-03",
+        "states": "DEFAULT,SUBMITTING"
+      }
+    ]
+  },
+  {
+    "id": "M-PAYRET-01",
+    "end": "M",
+    "name": "支付返回确认",
+    "states": [
+      [
+        "SHOWN",
+        "询问"
+      ],
+      [
+        "QUERYING",
+        "查询中"
+      ],
+      [
+        "TIMEOUT",
+        "查询超时"
+      ]
+    ],
+    "state_count": 3,
+    "components": [
+      {
+        "id": "M-PAYRET-01-C01",
+        "name": "返回询问",
+        "shared": "",
+        "pat": "PAT-MODAL-03",
+        "states": "SHOWN,QUERYING,TIMEOUT"
+      }
+    ]
+  },
+  {
+    "id": "M-RESULT-01",
+    "end": "M",
+    "name": "支付与交付结果页",
+    "states": [
+      [
+        "DEFAULT",
+        "按业务事实展示"
+      ],
+      [
+        "DELIVERED",
+        "已交付"
+      ],
+      [
+        "ISSUING",
+        "发码中"
+      ],
+      [
+        "EXCEPTION",
+        "交付异常"
+      ],
+      [
+        "GIFT_PENDING",
+        "赠送待处理"
+      ],
+      [
+        "REFUNDING",
+        "退款中"
+      ],
+      [
+        "REFUND_FAILED",
+        "退款失败"
+      ],
+      [
+        "REFUNDED",
+        "已退款"
+      ],
+      [
+        "CONFIRMING",
+        "支付确认中"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ]
+    ],
+    "state_count": 10,
+    "components": [
+      {
+        "id": "M-RESULT-01-C01",
+        "name": "结果状态头",
+        "shared": "",
+        "pat": "PAT-CARD-02",
+        "states": "DEFAULT,DELIVERED,ISSUING,EXCEPTION,GIFT_PENDING,REFUNDING,REFUND_FAILED,REFUNDED,CONFIRMING,ERROR"
+      },
+      {
+        "id": "M-RESULT-01-C02",
+        "name": "口令码与赠送卡",
+        "shared": "",
+        "pat": "PAT-CODE-01",
+        "states": "DELIVERED,ISSUING,EXCEPTION,GIFT_PENDING"
+      },
+      {
+        "id": "M-RESULT-01-C03",
+        "name": "退款状态卡",
+        "shared": "",
+        "pat": "PAT-CARD-02",
+        "states": "REFUNDING,REFUND_FAILED,REFUNDED"
+      },
+      {
+        "id": "M-RESULT-01-C04",
+        "name": "结果操作区",
+        "shared": "",
+        "pat": "PAT-ACTION-01",
+        "states": "DELIVERED,ISSUING,EXCEPTION,GIFT_PENDING,REFUNDING,REFUND_FAILED,REFUNDED,CONFIRMING"
+      }
+    ]
+  },
+  {
+    "id": "M-ORDERS-01",
+    "end": "M",
+    "name": "我的订单",
+    "states": [
+      [
+        "RESULTS",
+        "有订单"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "无订单"
+      ],
+      [
+        "ERROR",
+        "请求失败"
+      ],
+      [
+        "SESSION_EXPIRED",
+        "登录失效"
+      ]
+    ],
+    "state_count": 5,
+    "components": [
+      {
+        "id": "M-ORDERS-01-C01",
+        "name": "状态筛选页签",
+        "shared": "COM-CLIENT-C11",
+        "pat": "PAT-FILTER-02",
+        "states": "RESULTS,EMPTY"
+      },
+      {
+        "id": "M-ORDERS-01-C02",
+        "name": "订单卡片列表",
+        "shared": "COM-CLIENT-C12",
+        "pat": "PAT-LIST-03",
+        "states": "RESULTS,LOADING,EMPTY,ERROR"
+      },
+      {
+        "id": "M-ORDERS-01-C03",
+        "name": "状态区",
+        "shared": "COM-CLIENT-C09",
+        "pat": "PAT-FEEDBACK-01",
+        "states": "LOADING,EMPTY,ERROR"
+      },
+      {
+        "id": "M-ORDERS-01-C04",
+        "name": "登录失效引导",
+        "shared": "COM-CLIENT-C13",
+        "pat": "PAT-FEEDBACK-02",
+        "states": "SESSION_EXPIRED"
+      }
+    ]
+  },
+  {
+    "id": "M-ORDER-01",
+    "end": "M",
+    "name": "订单详情",
+    "states": [
+      [
+        "DEFAULT",
+        "详情"
+      ],
+      [
+        "PAYING",
+        "待支付"
+      ],
+      [
+        "CONFIRMING",
+        "支付确认中"
+      ],
+      [
+        "DELIVERING",
+        "交付中"
+      ],
+      [
+        "GIFT_PENDING",
+        "赠送待处理"
+      ],
+      [
+        "REFUND_FAILED",
+        "退款失败"
+      ],
+      [
+        "CLOSED",
+        "已关闭"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ]
+    ],
+    "state_count": 8,
+    "components": [
+      {
+        "id": "M-ORDER-01-C01",
+        "name": "订单商品快照",
+        "shared": "",
+        "pat": "PAT-CARD-01",
+        "states": "DEFAULT,PAYING,CONFIRMING,DELIVERING,GIFT_PENDING,REFUND_FAILED,CLOSED,ERROR"
+      },
+      {
+        "id": "M-ORDER-01-C02",
+        "name": "支付与退款信息",
+        "shared": "",
+        "pat": "PAT-CARD-02",
+        "states": "DEFAULT,PAYING,CONFIRMING,REFUND_FAILED,CLOSED"
+      },
+      {
+        "id": "M-ORDER-01-C03",
+        "name": "交付记录",
+        "shared": "",
+        "pat": "PAT-CARD-01",
+        "states": "DELIVERING,GIFT_PENDING"
+      },
+      {
+        "id": "M-ORDER-01-C04",
+        "name": "订单操作区",
+        "shared": "",
+        "pat": "PAT-ACTION-01",
+        "states": "DEFAULT,PAYING,CONFIRMING,DELIVERING,GIFT_PENDING,REFUND_FAILED,CLOSED"
+      }
+    ]
+  },
+  {
+    "id": "M-PROFILE-01",
+    "end": "M",
+    "name": "我的",
+    "states": [
+      [
+        "LOGGED_IN",
+        "已登录"
+      ],
+      [
+        "GUEST",
+        "游客"
+      ],
+      [
+        "UNKNOWN",
+        "状态未知"
+      ]
+    ],
+    "state_count": 3,
+    "components": [
+      {
+        "id": "M-PROFILE-01-C01",
+        "name": "账号与资格卡",
+        "shared": "",
+        "pat": "PAT-CARD-03",
+        "states": "LOGGED_IN,GUEST,UNKNOWN"
+      },
+      {
+        "id": "M-PROFILE-01-C02",
+        "name": "个人中心入口区",
+        "shared": "",
+        "pat": "PAT-NAV-01",
+        "states": "LOGGED_IN,GUEST,UNKNOWN"
+      },
+      {
+        "id": "M-PROFILE-01-C03",
+        "name": "底部标签栏",
+        "shared": "COM-CLIENT-C14",
+        "pat": "PAT-NAV-02",
+        "states": "LOGGED_IN,GUEST,UNKNOWN"
+      }
+    ]
+  },
+  {
+    "id": "M-SERVICE-01",
+    "end": "M",
+    "name": "企业微信客服",
+    "states": [
+      [
+        "WITH_ORDER",
+        "带订单号"
+      ],
+      [
+        "NO_ORDER",
+        "无订单"
+      ],
+      [
+        "FALLBACK",
+        "无法唤起备用"
+      ]
+    ],
+    "state_count": 3,
+    "components": [
+      {
+        "id": "M-SERVICE-01-C01",
+        "name": "客服卡",
+        "shared": "",
+        "pat": "PAT-EXTERNAL-01",
+        "states": "WITH_ORDER,NO_ORDER,FALLBACK"
+      }
+    ]
+  },
+  {
+    "id": "W-HOME-01",
+    "end": "W",
+    "name": "商城首页（PC）",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "无已发布商品"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ]
+    ],
+    "state_count": 4,
+    "components": [
+      {
+        "id": "W-HOME-01-C01",
+        "name": "顶部导航栏",
+        "shared": "",
+        "pat": "PAT-NAV-03",
+        "states": "DEFAULT"
+      },
+      {
+        "id": "W-HOME-01-C02",
+        "name": "首页配置区",
+        "shared": "",
+        "pat": "PAT-CAROUSEL-01",
+        "states": "DEFAULT,EMPTY"
+      },
+      {
+        "id": "W-HOME-01-C03",
+        "name": "商品网格",
+        "shared": "",
+        "pat": "PAT-GRID-01",
+        "states": "DEFAULT,LOADING,EMPTY,ERROR"
+      },
+      {
+        "id": "W-HOME-01-C04",
+        "name": "客服入口",
+        "shared": "COM-CLIENT-C07",
+        "pat": "PAT-EXTERNAL-01",
+        "states": "DEFAULT"
+      },
+      {
+        "id": "W-HOME-01-C05",
+        "name": "首次实名提醒弹窗",
+        "shared": "",
+        "pat": "PAT-MODAL-01",
+        "states": "(跨页弹层)"
+      }
+    ]
+  },
+  {
+    "id": "W-SEARCH-01",
+    "end": "W",
+    "name": "搜索页（PC）",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "RESULTS",
+        "有结果"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "无结果"
+      ],
+      [
+        "ERROR",
+        "请求失败"
+      ],
+      [
+        "END",
+        "已加载全部"
+      ]
+    ],
+    "state_count": 6,
+    "components": [
+      {
+        "id": "W-SEARCH-01-C01",
+        "name": "搜索区",
+        "shared": "COM-CLIENT-C01",
+        "pat": "PAT-INPUT-01",
+        "states": "DEFAULT,RESULTS,LOADING,EMPTY,ERROR,END"
+      },
+      {
+        "id": "W-SEARCH-01-C02",
+        "name": "搜索推荐区",
+        "shared": "",
+        "pat": "PAT-LIST-02",
+        "states": "DEFAULT,EMPTY"
+      },
+      {
+        "id": "W-SEARCH-01-C03",
+        "name": "结果网格",
+        "shared": "COM-CLIENT-C06",
+        "pat": "PAT-LIST-01",
+        "states": "RESULTS,LOADING,EMPTY,ERROR,END"
+      }
+    ]
+  },
+  {
+    "id": "W-PRODUCT-01",
+    "end": "W",
+    "name": "商品详情（PC）",
+    "states": [
+      [
+        "DEFAULT",
+        "可售"
+      ],
+      [
+        "PENDING_ORDER",
+        "订单处理中"
+      ],
+      [
+        "PAID_DELIVERING",
+        "已支付交付中"
+      ],
+      [
+        "SOLD_OUT",
+        "售罄"
+      ],
+      [
+        "UNAVAILABLE",
+        "不可售"
+      ],
+      [
+        "EXPANDED",
+        "长文展开"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ]
+    ],
+    "state_count": 7,
+    "components": [
+      {
+        "id": "W-PRODUCT-01-C01",
+        "name": "PC 媒体与资料",
+        "shared": "",
+        "pat": "PAT-GALLERY-01",
+        "states": "DEFAULT,PENDING_ORDER,PAID_DELIVERING,UNAVAILABLE,EXPANDED,ERROR"
+      },
+      {
+        "id": "W-PRODUCT-01-C02",
+        "name": "PC 购买卡",
+        "shared": "",
+        "pat": "PAT-CARD-01",
+        "states": "DEFAULT,PENDING_ORDER,PAID_DELIVERING,SOLD_OUT,UNAVAILABLE"
+      },
+      {
+        "id": "W-PRODUCT-01-C03",
+        "name": "PC 介绍折叠",
+        "shared": "",
+        "pat": "PAT-EXPAND-01",
+        "states": "DEFAULT,EXPANDED"
+      }
+    ]
+  },
+  {
+    "id": "W-BUY-01",
+    "end": "W",
+    "name": "购买弹层（PC）",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "VALIDATION_ERROR",
+        "校验失败"
+      ],
+      [
+        "AGREEMENT_NOTICE",
+        "购买须知"
+      ],
+      [
+        "BUSINESS_REJECT",
+        "业务拒绝"
+      ],
+      [
+        "STOCK_UNKNOWN",
+        "库存未知风险"
+      ],
+      [
+        "SUBMITTING",
+        "提交中"
+      ]
+    ],
+    "state_count": 6,
+    "components": [
+      {
+        "id": "W-BUY-01-C01",
+        "name": "购买弹层容器",
+        "shared": "",
+        "pat": "PAT-MODAL-02",
+        "states": "DEFAULT,VALIDATION_ERROR,BUSINESS_REJECT,STOCK_UNKNOWN,SUBMITTING"
+      },
+      {
+        "id": "W-BUY-01-C02",
+        "name": "规格交付与资料",
+        "shared": "",
+        "pat": "PAT-CHOICE-01",
+        "states": "DEFAULT,VALIDATION_ERROR"
+      },
+      {
+        "id": "W-BUY-01-C03",
+        "name": "协议与主操作",
+        "shared": "",
+        "pat": "PAT-CHECK-01",
+        "states": "DEFAULT,AGREEMENT_NOTICE,SUBMITTING"
+      }
+    ]
+  },
+  {
+    "id": "W-CHECKOUT-01",
+    "end": "W",
+    "name": "确认订单与扫码支付（PC）",
+    "states": [
+      [
+        "DEFAULT",
+        "待扫码"
+      ],
+      [
+        "PAY_CONFIRMING",
+        "支付确认中"
+      ],
+      [
+        "PAY_SUCCESS",
+        "支付成功"
+      ],
+      [
+        "AGREEMENT_REQUIRED",
+        "需重新同意协议"
+      ],
+      [
+        "EXPIRED",
+        "已过期"
+      ],
+      [
+        "CLOSED",
+        "已关闭"
+      ]
+    ],
+    "state_count": 6,
+    "components": [
+      {
+        "id": "W-CHECKOUT-01-C01",
+        "name": "订单结算卡",
+        "shared": "",
+        "pat": "PAT-CARD-01",
+        "states": "DEFAULT,AGREEMENT_REQUIRED,EXPIRED,CLOSED"
+      },
+      {
+        "id": "W-CHECKOUT-01-C02",
+        "name": "扫码支付弹层",
+        "shared": "",
+        "pat": "PAT-EXTERNAL-01",
+        "states": "DEFAULT,PAY_CONFIRMING,PAY_SUCCESS"
+      },
+      {
+        "id": "W-CHECKOUT-01-C03",
+        "name": "协议重新确认",
+        "shared": "",
+        "pat": "PAT-CHECK-01",
+        "states": "AGREEMENT_REQUIRED"
+      }
+    ]
+  },
+  {
+    "id": "W-PAYRET-01",
+    "end": "W",
+    "name": "支付返回确认（PC）",
+    "states": [
+      [
+        "SHOWN",
+        "询问"
+      ],
+      [
+        "QUERYING",
+        "查询中"
+      ],
+      [
+        "TIMEOUT",
+        "查询超时"
+      ]
+    ],
+    "state_count": 3,
+    "components": [
+      {
+        "id": "W-PAYRET-01-C01",
+        "name": "返回询问",
+        "shared": "",
+        "pat": "PAT-MODAL-03",
+        "states": "SHOWN,QUERYING,TIMEOUT"
+      }
+    ]
+  },
+  {
+    "id": "W-RESULT-01",
+    "end": "W",
+    "name": "支付与交付结果页（PC）",
+    "states": [
+      [
+        "DEFAULT",
+        "按业务事实展示"
+      ],
+      [
+        "DELIVERED",
+        "已交付"
+      ],
+      [
+        "ISSUING",
+        "发码中"
+      ],
+      [
+        "EXCEPTION",
+        "交付异常"
+      ],
+      [
+        "GIFT_PENDING",
+        "赠送待处理"
+      ],
+      [
+        "REFUNDING",
+        "退款中"
+      ],
+      [
+        "REFUND_FAILED",
+        "退款失败"
+      ],
+      [
+        "REFUNDED",
+        "已退款"
+      ],
+      [
+        "CONFIRMING",
+        "支付确认中"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ]
+    ],
+    "state_count": 10,
+    "components": [
+      {
+        "id": "W-RESULT-01-C01",
+        "name": "结果状态与交付",
+        "shared": "",
+        "pat": "PAT-CARD-02",
+        "states": "DEFAULT,DELIVERED,ISSUING,EXCEPTION,GIFT_PENDING,REFUNDING,REFUND_FAILED,REFUNDED,CONFIRMING,ERROR"
+      },
+      {
+        "id": "W-RESULT-01-C02",
+        "name": "退款状态卡",
+        "shared": "",
+        "pat": "PAT-CARD-02",
+        "states": "REFUNDING,REFUND_FAILED,REFUNDED"
+      }
+    ]
+  },
+  {
+    "id": "W-ORDERS-01",
+    "end": "W",
+    "name": "我的订单（PC）",
+    "states": [
+      [
+        "RESULTS",
+        "有订单"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "无订单"
+      ],
+      [
+        "ERROR",
+        "请求失败"
+      ],
+      [
+        "SESSION_EXPIRED",
+        "登录失效"
+      ]
+    ],
+    "state_count": 5,
+    "components": [
+      {
+        "id": "W-ORDERS-01-C01",
+        "name": "状态页签",
+        "shared": "COM-CLIENT-C11",
+        "pat": "PAT-FILTER-02",
+        "states": "RESULTS,EMPTY"
+      },
+      {
+        "id": "W-ORDERS-01-C02",
+        "name": "订单表格",
+        "shared": "",
+        "pat": "PAT-LIST-04",
+        "states": "RESULTS,LOADING,EMPTY,ERROR"
+      },
+      {
+        "id": "W-ORDERS-01-C03",
+        "name": "登录失效引导",
+        "shared": "COM-CLIENT-C13",
+        "pat": "PAT-FEEDBACK-02",
+        "states": "SESSION_EXPIRED"
+      }
+    ]
+  },
+  {
+    "id": "W-ORDER-01",
+    "end": "W",
+    "name": "订单详情抽屉（PC）",
+    "states": [
+      [
+        "DEFAULT",
+        "详情"
+      ],
+      [
+        "PAYING",
+        "待支付"
+      ],
+      [
+        "CONFIRMING",
+        "支付确认中"
+      ],
+      [
+        "DELIVERING",
+        "交付中"
+      ],
+      [
+        "GIFT_PENDING",
+        "赠送待处理"
+      ],
+      [
+        "REFUND_FAILED",
+        "退款失败"
+      ],
+      [
+        "CLOSED",
+        "已关闭"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ]
+    ],
+    "state_count": 8,
+    "components": [
+      {
+        "id": "W-ORDER-01-C01",
+        "name": "订单抽屉容器",
+        "shared": "",
+        "pat": "PAT-DRAWER-01",
+        "states": "DEFAULT,PAYING,CONFIRMING,DELIVERING,GIFT_PENDING,REFUND_FAILED,CLOSED,ERROR"
+      },
+      {
+        "id": "W-ORDER-01-C02",
+        "name": "订单事实分栏",
+        "shared": "",
+        "pat": "PAT-CARD-02",
+        "states": "DEFAULT,PAYING,CONFIRMING,DELIVERING,GIFT_PENDING,REFUND_FAILED,CLOSED"
+      },
+      {
+        "id": "W-ORDER-01-C03",
+        "name": "抽屉操作区",
+        "shared": "",
+        "pat": "PAT-ACTION-01",
+        "states": "DEFAULT,PAYING,CONFIRMING,DELIVERING,GIFT_PENDING,REFUND_FAILED"
+      }
+    ]
+  },
+  {
+    "id": "W-PROFILE-01",
+    "end": "W",
+    "name": "我的（PC）",
+    "states": [
+      [
+        "LOGGED_IN",
+        "已登录"
+      ],
+      [
+        "GUEST",
+        "游客"
+      ],
+      [
+        "UNKNOWN",
+        "状态未知"
+      ]
+    ],
+    "state_count": 3,
+    "components": [
+      {
+        "id": "W-PROFILE-01-C01",
+        "name": "账号与资格卡",
+        "shared": "",
+        "pat": "PAT-CARD-03",
+        "states": "LOGGED_IN,GUEST,UNKNOWN"
+      },
+      {
+        "id": "W-PROFILE-01-C02",
+        "name": "个人中心入口区",
+        "shared": "",
+        "pat": "PAT-NAV-03",
+        "states": "LOGGED_IN,GUEST,UNKNOWN"
+      }
+    ]
+  },
+  {
+    "id": "W-SERVICE-01",
+    "end": "W",
+    "name": "企业微信客服（PC）",
+    "states": [
+      [
+        "WITH_ORDER",
+        "带订单号"
+      ],
+      [
+        "NO_ORDER",
+        "无订单"
+      ],
+      [
+        "FALLBACK",
+        "无法唤起备用"
+      ]
+    ],
+    "state_count": 3,
+    "components": [
+      {
+        "id": "W-SERVICE-01-C01",
+        "name": "客服卡",
+        "shared": "",
+        "pat": "PAT-EXTERNAL-01",
+        "states": "WITH_ORDER,NO_ORDER,FALLBACK"
+      }
+    ]
+  },
+  {
+    "id": "W-AGREEMENT-01",
+    "end": "W",
+    "name": "购买协议页（PC）",
+    "states": [
+      [
+        "DEFAULT",
+        "当前版本"
+      ],
+      [
+        "STALE",
+        "版本已更新"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ]
+    ],
+    "state_count": 3,
+    "components": [
+      {
+        "id": "W-AGREEMENT-01-C01",
+        "name": "协议内容卡",
+        "shared": "",
+        "pat": "PAT-EXPAND-01",
+        "states": "DEFAULT,STALE,ERROR"
+      }
+    ]
+  },
+  {
+    "id": "W-PHONE-01",
+    "end": "W",
+    "name": "手机号绑定（PC）",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "VALIDATION_ERROR",
+        "校验失败"
+      ],
+      [
+        "SUBMITTING",
+        "提交中"
+      ],
+      [
+        "ERROR",
+        "发送失败"
+      ]
+    ],
+    "state_count": 4,
+    "components": [
+      {
+        "id": "W-PHONE-01-C01",
+        "name": "绑定表单",
+        "shared": "",
+        "pat": "PAT-INPUT-01",
+        "states": "DEFAULT,VALIDATION_ERROR,SUBMITTING,ERROR"
+      }
+    ]
+  },
+  {
+    "id": "ADM-HOME-01",
+    "end": "ADM",
+    "name": "首页管理",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "EDITING",
+        "编辑中"
+      ],
+      [
+        "PREVIEW",
+        "预览"
+      ],
+      [
+        "PUBLISHING",
+        "发布中"
+      ],
+      [
+        "SUCCESS",
+        "已发布"
+      ],
+      [
+        "ERROR",
+        "发布失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "state_count": 7,
+    "components": [
+      {
+        "id": "ADM-HOME-01-C01",
+        "name": "左侧业务菜单",
+        "shared": "ADM-COMMON-C01",
+        "pat": "PAT-NAV-04",
+        "states": "DEFAULT,EDITING,PREVIEW,PUBLISHING,SUCCESS,ERROR,NO_PERM"
+      },
+      {
+        "id": "ADM-HOME-01-C02",
+        "name": "顶部账号栏",
+        "shared": "ADM-COMMON-C02",
+        "pat": "PAT-NAV-04",
+        "states": "DEFAULT,EDITING,PREVIEW,PUBLISHING,SUCCESS,ERROR,NO_PERM"
+      },
+      {
+        "id": "ADM-HOME-01-C03",
+        "name": "首页配置表单",
+        "shared": "",
+        "pat": "PAT-INPUT-03",
+        "states": "DEFAULT,EDITING,PREVIEW,SUCCESS,ERROR"
+      },
+      {
+        "id": "ADM-HOME-01-C04",
+        "name": "发布与版本栏",
+        "shared": "",
+        "pat": "PAT-ACTION-03",
+        "states": "DEFAULT,PREVIEW,PUBLISHING,SUCCESS,ERROR"
+      }
+    ]
+  },
+  {
+    "id": "ADM-PRODUCT-01",
+    "end": "ADM",
+    "name": "选品与商品管理",
+    "states": [
+      [
+        "RESULTS",
+        "有数据"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "无匹配"
+      ],
+      [
+        "ERROR",
+        "查询失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "state_count": 5,
+    "components": [
+      {
+        "id": "ADM-PRODUCT-01-C01",
+        "name": "筛选区",
+        "shared": "ADM-COMMON-C03",
+        "pat": "PAT-FILTER-03",
+        "states": "RESULTS,LOADING,EMPTY,ERROR"
+      },
+      {
+        "id": "ADM-PRODUCT-01-C02",
+        "name": "商品表格",
+        "shared": "ADM-COMMON-C05",
+        "pat": "PAT-TABLE-02",
+        "states": "RESULTS,LOADING,EMPTY,ERROR,NO_PERM"
+      },
+      {
+        "id": "ADM-PRODUCT-01-C03",
+        "name": "商品编辑弹窗",
+        "shared": "",
+        "pat": "PAT-DRAWER-02",
+        "states": "DRAWER"
+      },
+      {
+        "id": "ADM-PRODUCT-01-C04",
+        "name": "价格合规与发布动作",
+        "shared": "",
+        "pat": "PAT-ACTION-04",
+        "states": "RESULTS,EDITING"
+      }
+    ]
+  },
+  {
+    "id": "ADM-SUPPLIER-01",
+    "end": "ADM",
+    "name": "供应商管理",
+    "states": [
+      [
+        "RESULTS",
+        "有数据"
+      ],
+      [
+        "DRAWER",
+        "编辑"
+      ],
+      [
+        "ERROR",
+        "查询失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "state_count": 4,
+    "components": [
+      {
+        "id": "ADM-SUPPLIER-01-C01",
+        "name": "供应商表格",
+        "shared": "ADM-COMMON-C05",
+        "pat": "PAT-TABLE-02",
+        "states": "RESULTS,ERROR,NO_PERM"
+      },
+      {
+        "id": "ADM-SUPPLIER-01-C02",
+        "name": "供应商配置弹窗",
+        "shared": "",
+        "pat": "PAT-DRAWER-02",
+        "states": "DRAWER"
+      },
+      {
+        "id": "ADM-SUPPLIER-01-C03",
+        "name": "组合商品白名单",
+        "shared": "",
+        "pat": "PAT-CHECK-02",
+        "states": "RESULTS,DRAWER"
+      }
+    ]
+  },
+  {
+    "id": "ADM-STOCK-01",
+    "end": "ADM",
+    "name": "库存查看",
+    "states": [
+      [
+        "RESULTS",
+        "有数据"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "无匹配"
+      ],
+      [
+        "ERROR",
+        "查询失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "state_count": 5,
+    "components": [
+      {
+        "id": "ADM-STOCK-01-C01",
+        "name": "库存指标卡",
+        "shared": "ADM-COMMON-C10",
+        "pat": "PAT-CARD-04",
+        "states": "RESULTS"
+      },
+      {
+        "id": "ADM-STOCK-01-C02",
+        "name": "库存表格",
+        "shared": "ADM-COMMON-C05",
+        "pat": "PAT-TABLE-02",
+        "states": "RESULTS,LOADING,EMPTY,ERROR"
+      },
+      {
+        "id": "ADM-STOCK-01-C03",
+        "name": "供应商同步动作",
+        "shared": "",
+        "pat": "PAT-ACTION-04",
+        "states": "RESULTS"
+      }
+    ]
+  },
+  {
+    "id": "ADM-ORDER-01",
+    "end": "ADM",
+    "name": "订单管理",
+    "states": [
+      [
+        "RESULTS",
+        "有数据"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "无匹配"
+      ],
+      [
+        "ERROR",
+        "查询失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "state_count": 5,
+    "components": [
+      {
+        "id": "ADM-ORDER-01-C01",
+        "name": "筛选区",
+        "shared": "ADM-COMMON-C03",
+        "pat": "PAT-FILTER-03",
+        "states": "RESULTS,LOADING,EMPTY,ERROR"
+      },
+      {
+        "id": "ADM-ORDER-01-C02",
+        "name": "订单表格",
+        "shared": "ADM-COMMON-C05",
+        "pat": "PAT-TABLE-02",
+        "states": "RESULTS,LOADING,EMPTY,ERROR,NO_PERM"
+      },
+      {
+        "id": "ADM-ORDER-01-C03",
+        "name": "分页",
+        "shared": "ADM-COMMON-C06",
+        "pat": "PAT-PAGE-02",
+        "states": "RESULTS,EMPTY"
+      },
+      {
+        "id": "ADM-ORDER-01-C04",
+        "name": "导出动作",
+        "shared": "ADM-COMMON-C09",
+        "pat": "PAT-EXPORT-01",
+        "states": "RESULTS"
+      },
+      {
+        "id": "ADM-ORDER-01-C05",
+        "name": "订单详情抽屉",
+        "shared": "",
+        "pat": "PAT-DRAWER-01",
+        "states": "DRAWER"
+      }
+    ]
+  },
+  {
+    "id": "ADM-GIFT-01",
+    "end": "ADM",
+    "name": "好友赠送",
+    "states": [
+      [
+        "RESULTS",
+        "待处理队列"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "无待处理"
+      ],
+      [
+        "ERROR",
+        "查询失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "state_count": 5,
+    "components": [
+      {
+        "id": "ADM-GIFT-01-C01",
+        "name": "赠送队列表格",
+        "shared": "ADM-COMMON-C05",
+        "pat": "PAT-TABLE-02",
+        "states": "RESULTS,LOADING,EMPTY,ERROR"
+      },
+      {
+        "id": "ADM-GIFT-01-C02",
+        "name": "批次导出",
+        "shared": "",
+        "pat": "PAT-EXPORT-01",
+        "states": "RESULTS"
+      },
+      {
+        "id": "ADM-GIFT-01-C03",
+        "name": "完成确认弹窗",
+        "shared": "",
+        "pat": "PAT-DRAWER-02",
+        "states": "DRAWER"
+      }
+    ]
+  },
+  {
+    "id": "ADM-CODE-01",
+    "end": "ADM",
+    "name": "口令码交付",
+    "states": [
+      [
+        "RESULTS",
+        "异常优先"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "无记录"
+      ],
+      [
+        "ERROR",
+        "查询失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "state_count": 5,
+    "components": [
+      {
+        "id": "ADM-CODE-01-C01",
+        "name": "交付表格",
+        "shared": "ADM-COMMON-C05",
+        "pat": "PAT-TABLE-02",
+        "states": "RESULTS,LOADING,EMPTY,ERROR"
+      },
+      {
+        "id": "ADM-CODE-01-C02",
+        "name": "交付详情抽屉",
+        "shared": "",
+        "pat": "PAT-DRAWER-01",
+        "states": "DRAWER"
+      },
+      {
+        "id": "ADM-CODE-01-C03",
+        "name": "补发换码弹窗",
+        "shared": "",
+        "pat": "PAT-DRAWER-02",
+        "states": "DRAWER"
+      }
+    ]
+  },
+  {
+    "id": "ADM-REFUND-01",
+    "end": "ADM",
+    "name": "退款管理",
+    "states": [
+      [
+        "RESULTS",
+        "待处理/失败优先"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "无退款"
+      ],
+      [
+        "ERROR",
+        "查询失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "state_count": 5,
+    "components": [
+      {
+        "id": "ADM-REFUND-01-C01",
+        "name": "退款表格",
+        "shared": "ADM-COMMON-C05",
+        "pat": "PAT-TABLE-02",
+        "states": "RESULTS,LOADING,EMPTY,ERROR"
+      },
+      {
+        "id": "ADM-REFUND-01-C02",
+        "name": "退款审核弹窗",
+        "shared": "",
+        "pat": "PAT-DRAWER-02",
+        "states": "DRAWER"
+      },
+      {
+        "id": "ADM-REFUND-01-C03",
+        "name": "退款失败重试",
+        "shared": "",
+        "pat": "PAT-ACTION-04",
+        "states": "RESULTS,DRAWER"
+      }
+    ]
+  },
+  {
+    "id": "ADM-SERVICE-01",
+    "end": "ADM",
+    "name": "客服配置",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "EDITING",
+        "编辑中"
+      ],
+      [
+        "SUCCESS",
+        "已保存"
+      ],
+      [
+        "ERROR",
+        "保存失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "state_count": 5,
+    "components": [
+      {
+        "id": "ADM-SERVICE-01-C01",
+        "name": "客服配置表单",
+        "shared": "",
+        "pat": "PAT-INPUT-03",
+        "states": "DEFAULT,EDITING,SUCCESS,ERROR"
+      }
+    ]
+  },
+  {
+    "id": "ADM-PERM-01",
+    "end": "ADM",
+    "name": "权限管理",
+    "states": [
+      [
+        "RESULTS",
+        "账号/角色"
+      ],
+      [
+        "DRAWER",
+        "配置"
+      ],
+      [
+        "EMPTY",
+        "无账号"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "state_count": 4,
+    "components": [
+      {
+        "id": "ADM-PERM-01-C01",
+        "name": "权限矩阵表",
+        "shared": "",
+        "pat": "PAT-CHECK-02",
+        "states": "RESULTS,DRAWER,EMPTY"
+      },
+      {
+        "id": "ADM-PERM-01-C02",
+        "name": "角色分配弹窗",
+        "shared": "",
+        "pat": "PAT-DRAWER-02",
+        "states": "DRAWER"
+      }
+    ]
+  },
+  {
+    "id": "ADM-AUDIT-01",
+    "end": "ADM",
+    "name": "操作记录",
+    "states": [
+      [
+        "RESULTS",
+        "有数据"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "无匹配"
+      ],
+      [
+        "ERROR",
+        "查询失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "state_count": 5,
+    "components": [
+      {
+        "id": "ADM-AUDIT-01-C01",
+        "name": "审计筛选",
+        "shared": "ADM-COMMON-C03",
+        "pat": "PAT-FILTER-03",
+        "states": "RESULTS,LOADING,EMPTY,ERROR"
+      },
+      {
+        "id": "ADM-AUDIT-01-C02",
+        "name": "审计表格",
+        "shared": "ADM-COMMON-C05",
+        "pat": "PAT-TABLE-02",
+        "states": "RESULTS,LOADING,EMPTY,ERROR"
+      }
+    ]
+  },
+  {
+    "id": "ADM-AGREEMENT-01",
+    "end": "ADM",
+    "name": "协议管理",
+    "states": [
+      [
+        "DEFAULT",
+        "当前版本"
+      ],
+      [
+        "EDITING",
+        "编辑中"
+      ],
+      [
+        "PREVIEW",
+        "预览"
+      ],
+      [
+        "PUBLISHING",
+        "发布中"
+      ],
+      [
+        "SUCCESS",
+        "已发布"
+      ],
+      [
+        "ERROR",
+        "发布失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "state_count": 7,
+    "components": [
+      {
+        "id": "ADM-AGREEMENT-01-C01",
+        "name": "协议编辑表单",
+        "shared": "",
+        "pat": "PAT-INPUT-03",
+        "states": "DEFAULT,EDITING,PREVIEW,SUCCESS,ERROR"
+      },
+      {
+        "id": "ADM-AGREEMENT-01-C02",
+        "name": "发布与实质性变更标记",
+        "shared": "",
+        "pat": "PAT-ACTION-03",
+        "states": "DEFAULT,PREVIEW,PUBLISHING,SUCCESS,ERROR"
+      }
+    ]
+  },
+  {
+    "id": "ADM-SEARCH-01",
+    "end": "ADM",
+    "name": "搜索推荐",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "EDITING",
+        "编辑中"
+      ],
+      [
+        "SAVING",
+        "保存中"
+      ],
+      [
+        "SUCCESS",
+        "已保存"
+      ],
+      [
+        "ERROR",
+        "保存失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "state_count": 6,
+    "components": [
+      {
+        "id": "ADM-SEARCH-01-C01",
+        "name": "关键词配置",
+        "shared": "",
+        "pat": "PAT-INPUT-03",
+        "states": "DEFAULT,EDITING,SAVING,SUCCESS,ERROR"
+      },
+      {
+        "id": "ADM-SEARCH-01-C02",
+        "name": "热门商品选择",
+        "shared": "",
+        "pat": "PAT-CHOICE-01",
+        "states": "DEFAULT,EDITING"
+      }
+    ]
+  },
+  {
+    "id": "ADM-PAYCHECK-01",
+    "end": "ADM",
+    "name": "支付核查",
+    "states": [
+      [
+        "RESULTS",
+        "确认中队列"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "无任务"
+      ],
+      [
+        "ERROR",
+        "查询失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "state_count": 5,
+    "components": [
+      {
+        "id": "ADM-PAYCHECK-01-C01",
+        "name": "核查表格",
+        "shared": "ADM-COMMON-C05",
+        "pat": "PAT-TABLE-02",
+        "states": "RESULTS,LOADING,EMPTY,ERROR"
+      },
+      {
+        "id": "ADM-PAYCHECK-01-C02",
+        "name": "核查处置弹窗",
+        "shared": "",
+        "pat": "PAT-DRAWER-02",
+        "states": "DRAWER"
+      }
+    ]
+  },
+  {
+    "id": "ADM-NOTIFY-01",
+    "end": "ADM",
+    "name": "通知记录",
+    "states": [
+      [
+        "RESULTS",
+        "失败/未知优先"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "无任务"
+      ],
+      [
+        "ERROR",
+        "查询失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "state_count": 5,
+    "components": [
+      {
+        "id": "ADM-NOTIFY-01-C01",
+        "name": "通知表格",
+        "shared": "ADM-COMMON-C05",
+        "pat": "PAT-TABLE-02",
+        "states": "RESULTS,LOADING,EMPTY,ERROR"
+      },
+      {
+        "id": "ADM-NOTIFY-01-C02",
+        "name": "通知重试动作",
+        "shared": "",
+        "pat": "PAT-ACTION-04",
+        "states": "RESULTS"
+      }
+    ]
+  },
+  {
+    "id": "ADM-WALLET-01",
+    "end": "ADM",
+    "name": "钱包余额",
+    "states": [
+      [
+        "RESULTS",
+        "有余额"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "无数据"
+      ],
+      [
+        "ERROR",
+        "查询失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "state_count": 5,
+    "components": [
+      {
+        "id": "ADM-WALLET-01-C01",
+        "name": "钱包指标卡",
+        "shared": "ADM-COMMON-C10",
+        "pat": "PAT-CARD-04",
+        "states": "RESULTS,LOADING,ERROR"
+      },
+      {
+        "id": "ADM-WALLET-01-C02",
+        "name": "阈值设置",
+        "shared": "",
+        "pat": "PAT-INPUT-03",
+        "states": "RESULTS"
+      }
+    ]
+  }
+]

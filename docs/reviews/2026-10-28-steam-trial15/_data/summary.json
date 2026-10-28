@@ -1,0 +1,132 @@
+{
+  "trial": {
+    "folder": "D:\\模型汇总\\GitHub维护测试\\试跑15.0\\Steam商城原型交付_V1.0",
+    "html_sha256": "5c8ea683f315c8d995785fdc151e0338b371a7a0944fd0d0f356613b40afa3a4",
+    "bytes": 3498273,
+    "meta": {
+      "counts": {
+        "pages": 44,
+        "states": 225,
+        "instances": 119,
+        "defs": 98,
+        "diagrams": 16,
+        "events": 46,
+        "tcs": 81,
+        "decs": 24,
+        "docs": 9
+      },
+      "profile": {
+        "id": "steam-mall-gray-v1",
+        "revision": "1",
+        "source": "STD V3.0 ui7.1/7.4/7.5.1 + 项目设计补充（DEC-020）",
+        "tokens": {
+          "bg": "#f4f4f4",
+          "panel": "#ffffff",
+          "ink": "#242424",
+          "muted": "#6b6b6b",
+          "line": "#cdcdcd",
+          "primary": "#343434",
+          "error": "#333333",
+          "success": "#444444",
+          "warning": "#555555",
+          "menu": "#3a3a3a",
+          "disabled": "#eaeaea",
+          "focus": "#525252"
+        },
+        "spacing": {
+          "label": 4,
+          "compact": 6,
+          "actions": 8,
+          "card": 10,
+          "grid": 12,
+          "split": 16,
+          "outer": 24
+        },
+        "type": {
+          "body": "14/1.6",
+          "title": "20/500",
+          "component": "16-18/500",
+          "help": "12-13/400"
+        },
+        "shells": {
+          "mobile": {
+            "frame": "320x640",
+            "inner": "288x592",
+            "padding": 14,
+            "border": "2px solid #8d939b",
+            "radius": 22,
+            "notch": "72x6"
+          },
+          "desktop": {
+            "max": 1280,
+            "padding": 24,
+            "detail": "1.15:1 + 300px"
+          },
+          "admin": {
+            "menu": "220/64",
+            "workPadding": 20,
+            "table": "fixed"
+          }
+        },
+        "modal": {
+          "confirm": 400,
+          "normal": 600,
+          "complex": 920,
+          "mask": "45%",
+          "maxHeight": "auto"
+        },
+        "defaults": {
+          "tableColumns": 7,
+          "mobileHeat": 44,
+          "desktopHeat": 40,
+          "adminHeat": 40,
+          "tableActionHeat": 34
+        }
+      },
+      "profile_hash": "57ff45abc84448b8",
+      "gate_version": "V3.0"
+    },
+    "pages": 44,
+    "states": 225,
+    "instances": 119,
+    "component_definitions": 98,
+    "diagrams": 16,
+    "embedded_docs": 9,
+    "ends": {
+      "M": 15,
+      "W": 13,
+      "ADM": 16
+    },
+    "manifest_files_passed": 10,
+    "manifest_files_total": 10,
+    "embedded_docs_match": 9,
+    "embedded_docs_total": 9
+  },
+  "final": {
+    "folder": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.5",
+    "html_sha256": "179e0d93471d098861a85bf1653ee0f84fa13a62a0e21b0e4611077fa65d62ac",
+    "matches_saved_baseline": true,
+    "saved_counts": {
+      "folder": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.5",
+      "html_sha256": "179e0d93471d098861a85bf1653ee0f84fa13a62a0e21b0e4611077fa65d62ac",
+      "reused_inventory": "../2026-10-27-steam-trial13/_data/inventory.json",
+      "pages": 49,
+      "states": 185,
+      "diagrams": 36,
+      "component_definitions": 221
+    }
+  },
+  "first_acceptance": {
+    "run": "RUN-20261028-01",
+    "def_count": 25,
+    "run_html_sha256": "633d73c45721d6bb563652648c74626935a6afae8e075d9af07a2b61a77a8fa3",
+    "repair_html_sha256": "5c8ea683f315c8d995785fdc151e0338b371a7a0944fd0d0f356613b40afa3a4"
+  },
+  "prd": {
+    "path": "C:\\Users\\xiaot\\AppData\\Roaming\\CherryStudio\\Data\\Files\\01a1806d-0d26-742b-b27e-aa985f14a067.md",
+    "exists": true,
+    "expected_sha256": "4b66a358fc5d6181ca04203ebcd39be6340587311ac8202094eeee61a8b0fe01",
+    "actual_sha256": "4b66a358fc5d6181ca04203ebcd39be6340587311ac8202094eeee61a8b0fe01",
+    "hash_matches": true
+  }
+}
