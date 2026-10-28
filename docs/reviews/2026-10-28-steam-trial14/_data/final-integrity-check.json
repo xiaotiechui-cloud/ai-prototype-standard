@@ -1,0 +1,41 @@
+{
+  "trial-files.json": {
+    "checked": 24,
+    "changed_or_missing": []
+  },
+  "final-files.json": {
+    "checked": 18,
+    "changed_or_missing": []
+  },
+  "maintain_verify": "PASS: archive SHA-256; 45 source sections; 16 modules; 10 stable rule IDs; dependency routes; 12 opt-in resources; 668 links; 9 starter templates",
+  "report_links_missing": [],
+  "git_status_short": [
+    "M AI-START.md",
+    " M CHANGELOG.md",
+    " M MAINTENANCE.md",
+    " M MIGRATION.md",
+    " M README.md",
+    " M docs/REVIEW.md",
+    " M docs/acceptance/README.md",
+    " M docs/acceptance/selftest.md",
+    " M reference/implementations/review-kit/README.md",
+    " M standard-manifest.json",
+    " M standards/quality-and-evidence.md",
+    " M standards/ui-and-components.md",
+    " M \"templates/01_\\351\\241\\265\\351\\235\\242\\344\\270\\216\\347\\212\\266\\346\\200\\201\\350\\257\\264\\346\\230\\216.md\"",
+    " M \"templates/08_\\351\\252\\214\\350\\257\\201\\350\\256\\260\\345\\275\\225\\344\\270\\216\\351\\252\\214\\346\\224\\266\\346\\230\\240\\345\\260\\204.md\"",
+    "?? docs/acceptance/execution-evidence.example.json",
+    "?? docs/reviews/2026-10-28-steam-trial14/",
+    "?? tools/check_execution_evidence.py",
+    "?? tools/review_contract_fixture.py",
+    "?? tools/test_execution_evidence.py",
+    "?? tools/test_review_contract_fixture.py"
+  ],
+  "tracked_files_modified": 14,
+  "git_diff_check": "passed",
+  "browser": "not independently executed; file URL blocked",
+  "standards_status": "approved maintenance draft; not committed/pushed",
+  "reports": 6,
+  "observations": 19,
+  "page_responsibility_rows": 49
+}

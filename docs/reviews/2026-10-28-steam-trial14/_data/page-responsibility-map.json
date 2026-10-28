@@ -1,0 +1,398 @@
+[
+  {
+    "trial": "H5-HOME-01",
+    "name": "首页",
+    "final_candidates": [
+      "APP-HOME-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "H5-SEARCH-01",
+    "name": "搜索默认页",
+    "final_candidates": [
+      "APP-SEARCH-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "H5-SEARCH-02",
+    "name": "搜索结果页",
+    "final_candidates": [
+      "APP-SEARCH-02"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "H5-PRODUCT-01",
+    "name": "商品详情",
+    "final_candidates": [
+      "APP-PRODUCT-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "H5-BUY-01",
+    "name": "购买面板",
+    "final_candidates": [
+      "APP-PANEL-01"
+    ],
+    "note": "独立页与内嵌面板/路径表达不同；不以是否独立注册判缺页"
+  },
+  {
+    "trial": "H5-CHECKOUT-01",
+    "name": "确认订单",
+    "final_candidates": [
+      "APP-CHECKOUT-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "H5-PAY-01",
+    "name": "支付发起（模拟收银台）",
+    "final_candidates": [
+      "APP-CHECKOUT-01",
+      "APP-PAYRET-01"
+    ],
+    "note": "独立页与内嵌面板/路径表达不同；不以是否独立注册判缺页"
+  },
+  {
+    "trial": "H5-PAYRET-01",
+    "name": "支付返回确认",
+    "final_candidates": [
+      "APP-PAYRET-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "H5-RESULT-01",
+    "name": "支付与交付结果页",
+    "final_candidates": [
+      "APP-RESULT-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "H5-ORDERS-01",
+    "name": "我的订单",
+    "final_candidates": [
+      "APP-ORDER-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "H5-ORDER-01",
+    "name": "订单详情",
+    "final_candidates": [
+      "APP-ORDER-02"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "H5-PROFILE-01",
+    "name": "我的",
+    "final_candidates": [
+      "APP-MINE-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "H5-SERVICE-01",
+    "name": "企业微信客服",
+    "final_candidates": [
+      "APP-SERVICE-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "H5-AGREEMENT-01",
+    "name": "购买协议",
+    "final_candidates": [
+      "APP-AGREEMENT-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "H5-AUTH-01",
+    "name": "登录与实名引导",
+    "final_candidates": [
+      "APP-AUTH-01",
+      "APP-LOGIN-01",
+      "APP-REALNAME-01",
+      "APP-REALNAME-02"
+    ],
+    "note": "试跑合并身份引导，最终拆分多个阶段；须按守卫与返回路径核验"
+  },
+  {
+    "trial": "H5-PHONE-01",
+    "name": "手机号绑定（商城兜底）",
+    "final_candidates": [
+      "APP-PHONE-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "H5-NOTICE-01",
+    "name": "首次进入提醒",
+    "final_candidates": [
+      "APP-NOTICE-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "WEB-HOME-01",
+    "name": "PC 首页",
+    "final_candidates": [
+      "WEB-HOME-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "WEB-SEARCH-01",
+    "name": "PC 搜索",
+    "final_candidates": [
+      "WEB-SEARCH-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "WEB-PRODUCT-01",
+    "name": "PC 商品详情",
+    "final_candidates": [
+      "WEB-PRODUCT-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "WEB-BUY-01",
+    "name": "PC 购买面板",
+    "final_candidates": [
+      "WEB-PRODUCT-01"
+    ],
+    "note": "独立页与内嵌面板/路径表达不同；不以是否独立注册判缺页"
+  },
+  {
+    "trial": "WEB-CHECKOUT-01",
+    "name": "PC 确认订单",
+    "final_candidates": [
+      "WEB-CHECKOUT-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "WEB-PAY-01",
+    "name": "PC 扫码支付",
+    "final_candidates": [
+      "WEB-CHECKOUT-01",
+      "WEB-PAYRET-01"
+    ],
+    "note": "独立页与内嵌面板/路径表达不同；不以是否独立注册判缺页"
+  },
+  {
+    "trial": "WEB-PAYRET-01",
+    "name": "PC 支付返回确认",
+    "final_candidates": [
+      "WEB-PAYRET-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "WEB-RESULT-01",
+    "name": "PC 支付与交付结果",
+    "final_candidates": [
+      "WEB-RESULT-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "WEB-ORDERS-01",
+    "name": "PC 我的订单",
+    "final_candidates": [
+      "WEB-ORDER-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "WEB-ORDER-01",
+    "name": "PC 订单详情",
+    "final_candidates": [
+      "WEB-ORDER-01",
+      "APP-ORDER-02"
+    ],
+    "note": "候选职责映射；共享移动层/详情的实际调用链未完全核实，不据此封存覆盖"
+  },
+  {
+    "trial": "WEB-PROFILE-01",
+    "name": "PC 我的",
+    "final_candidates": [
+      "WEB-MINE-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "WEB-SERVICE-01",
+    "name": "PC 客服",
+    "final_candidates": [
+      "APP-SERVICE-01"
+    ],
+    "note": "候选职责映射；共享移动层/详情的实际调用链未完全核实，不据此封存覆盖"
+  },
+  {
+    "trial": "WEB-AGREEMENT-01",
+    "name": "PC 购买协议",
+    "final_candidates": [
+      "APP-AGREEMENT-01"
+    ],
+    "note": "候选职责映射；共享移动层/详情的实际调用链未完全核实，不据此封存覆盖"
+  },
+  {
+    "trial": "WEB-AUTH-01",
+    "name": "PC 登录与实名引导",
+    "final_candidates": [
+      "WEB-LOGIN-01",
+      "WEB-REALNAME-01",
+      "WEB-REALNAME-02"
+    ],
+    "note": "试跑合并身份引导，最终拆分多个阶段；须按守卫与返回路径核验"
+  },
+  {
+    "trial": "WEB-PHONE-01",
+    "name": "PC 手机号绑定",
+    "final_candidates": [
+      "WEB-PHONE-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "WEB-NOTICE-01",
+    "name": "PC 首次进入提醒",
+    "final_candidates": [
+      "APP-NOTICE-01"
+    ],
+    "note": "候选职责映射；共享移动层/详情的实际调用链未完全核实，不据此封存覆盖"
+  },
+  {
+    "trial": "ADM-HOME-01",
+    "name": "首页管理",
+    "final_candidates": [
+      "ADM-HOME-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "ADM-PRODUCT-01",
+    "name": "商品管理",
+    "final_candidates": [
+      "ADM-GOODS-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "ADM-SUPPLIER-01",
+    "name": "供应商管理",
+    "final_candidates": [],
+    "note": "最终库存/上游等相关区域需进一步对齐；无独立同名页不判试跑多余或最终缺失"
+  },
+  {
+    "trial": "ADM-STOCK-01",
+    "name": "库存查看",
+    "final_candidates": [
+      "ADM-STOCK-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "ADM-ORDER-01",
+    "name": "订单管理",
+    "final_candidates": [
+      "ADM-ORDER-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "ADM-GIFT-01",
+    "name": "好友赠送",
+    "final_candidates": [
+      "ADM-GIFT-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "ADM-CODE-01",
+    "name": "口令码交付",
+    "final_candidates": [
+      "ADM-CODE-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "ADM-REFUND-01",
+    "name": "退款管理",
+    "final_candidates": [
+      "ADM-REFUND-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "ADM-SERVICE-01",
+    "name": "客服配置",
+    "final_candidates": [
+      "ADM-SERVICE-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "ADM-RBAC-01",
+    "name": "权限管理",
+    "final_candidates": [
+      "ADM-RBAC-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "ADM-AUDIT-01",
+    "name": "操作记录",
+    "final_candidates": [
+      "ADM-AUDIT-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "ADM-AGREEMENT-01",
+    "name": "协议管理",
+    "final_candidates": [
+      "ADM-AGREE-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "ADM-SEARCHCFG-01",
+    "name": "搜索推荐",
+    "final_candidates": [
+      "ADM-SEARCH-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "ADM-PAYCHECK-01",
+    "name": "支付核查",
+    "final_candidates": [
+      "ADM-PAYCHK-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "ADM-NOTIFY-01",
+    "name": "通知记录",
+    "final_candidates": [
+      "ADM-NOTIFY-01"
+    ],
+    "note": "职责相近；不是同状态/同组件数量等价"
+  },
+  {
+    "trial": "ADM-WALLET-01",
+    "name": "钱包余额",
+    "final_candidates": [],
+    "note": "最终库存/上游等相关区域需进一步对齐；无独立同名页不判试跑多余或最终缺失"
+  }
+]

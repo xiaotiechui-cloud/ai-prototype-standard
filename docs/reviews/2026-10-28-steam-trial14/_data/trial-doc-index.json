@@ -1,0 +1,2681 @@
+{
+  "00_交付说明与变更记录.md": {
+    "lines": 111,
+    "headings": [
+      {
+        "line": 1,
+        "title": "# 00_交付说明与变更记录"
+      },
+      {
+        "line": 12,
+        "title": "## 1. 项目与需求基线"
+      },
+      {
+        "line": 38,
+        "title": "## 2. 本轮范围与排除项"
+      },
+      {
+        "line": 49,
+        "title": "## 3. 文件及版本清单"
+      },
+      {
+        "line": 64,
+        "title": "## 4. 建议评审路线"
+      },
+      {
+        "line": 74,
+        "title": "## 5. 运行与演示方法"
+      },
+      {
+        "line": 84,
+        "title": "## 6. 完成情况与限制"
+      },
+      {
+        "line": 96,
+        "title": "## 7. 评审记录"
+      },
+      {
+        "line": 102,
+        "title": "## 8. 版本变更与影响"
+      },
+      {
+        "line": 109,
+        "title": "## 9. 历史文件迁移映射"
+      }
+    ],
+    "ids": {
+      "TC-[A-Z0-9-]+": 0,
+      "CHK-\\d+": 0,
+      "DEC-\\d+": 0,
+      "AC-\\d+": 2
+    }
+  },
+  "01_页面与状态说明.md": {
+    "lines": 1213,
+    "headings": [
+      {
+        "line": 1,
+        "title": "# 01_页面与状态说明"
+      },
+      {
+        "line": 12,
+        "title": "## 1. 角色及平台"
+      },
+      {
+        "line": 14,
+        "title": "### 1.1 生成配置档案"
+      },
+      {
+        "line": 24,
+        "title": "### 1.2 端、角色与边界"
+      },
+      {
+        "line": 42,
+        "title": "## 2. 页面总表"
+      },
+      {
+        "line": 98,
+        "title": "## 3. 组件注册表"
+      },
+      {
+        "line": 415,
+        "title": "## 4. 导航关系"
+      },
+      {
+        "line": 525,
+        "title": "## 5. 交互模式选型"
+      },
+      {
+        "line": 567,
+        "title": "## 6. 本期/后续边界"
+      },
+      {
+        "line": 573,
+        "title": "## 7. 状态适用矩阵"
+      },
+      {
+        "line": 816,
+        "title": "## 8. 状态明细"
+      },
+      {
+        "line": 1057,
+        "title": "## 9. 操作流转"
+      },
+      {
+        "line": 1204,
+        "title": "## 10. 定时、异步与返回恢复"
+      }
+    ],
+    "ids": {
+      "TC-[A-Z0-9-]+": 69,
+      "CHK-\\d+": 0,
+      "DEC-\\d+": 3,
+      "AC-\\d+": 1
+    }
+  },
+  "03_组件级文档.md": {
+    "lines": 5952,
+    "headings": [
+      {
+        "line": 1,
+        "title": "# 03_组件级文档"
+      },
+      {
+        "line": 12,
+        "title": "## 1. 组织方式与合成规则"
+      },
+      {
+        "line": 19,
+        "title": "## 2. 页面概览（逐页）"
+      },
+      {
+        "line": 21,
+        "title": "### 3.1 H5-HOME-01 首页"
+      },
+      {
+        "line": 562,
+        "title": "## 3. 共享组件定义（63 个）"
+      },
+      {
+        "line": 564,
+        "title": "### COM-CLIENT-C01 搜索输入框"
+      },
+      {
+        "line": 603,
+        "title": "### COM-CLIENT-C02 搜索提交动作"
+      },
+      {
+        "line": 638,
+        "title": "### COM-CLIENT-C03 商品/内容卡片"
+      },
+      {
+        "line": 675,
+        "title": "### COM-CLIENT-C04 卡片列表容器"
+      },
+      {
+        "line": 707,
+        "title": "### COM-CLIENT-C05 排序/筛选栏"
+      },
+      {
+        "line": 739,
+        "title": "### COM-CLIENT-C06 商品卡片列表"
+      },
+      {
+        "line": 775,
+        "title": "### COM-CLIENT-C07 客服入口"
+      },
+      {
+        "line": 811,
+        "title": "### COM-CLIENT-C08 顶部标题栏"
+      },
+      {
+        "line": 847,
+        "title": "### COM-CLIENT-C09 加载/空/失败状态区"
+      },
+      {
+        "line": 883,
+        "title": "### COM-CLIENT-C10 商品明细卡"
+      },
+      {
+        "line": 917,
+        "title": "### COM-CLIENT-C11 状态筛选页签"
+      },
+      {
+        "line": 951,
+        "title": "### COM-CLIENT-C12 订单卡片列表"
+      },
+      {
+        "line": 987,
+        "title": "### COM-CLIENT-C13 登录失效引导"
+      },
+      {
+        "line": 1020,
+        "title": "### COM-CLIENT-C14 底部标签栏"
+      },
+      {
+        "line": 1053,
+        "title": "### COM-CLIENT-C15 广告位轮播/单图"
+      },
+      {
+        "line": 1086,
+        "title": "### COM-CLIENT-C16 首页快捷导航"
+      },
+      {
+        "line": 1119,
+        "title": "### COM-CLIENT-C17 商品主操作栏"
+      },
+      {
+        "line": 1157,
+        "title": "### COM-CLIENT-C18 媒体图集"
+      },
+      {
+        "line": 1190,
+        "title": "### COM-CLIENT-C19 长文折叠区"
+      },
+      {
+        "line": 1223,
+        "title": "### COM-CLIENT-C20 规格/交付方式选择"
+      },
+      {
+        "line": 1259,
+        "title": "### COM-CLIENT-C21 协议勾选与查看"
+      },
+      {
+        "line": 1297,
+        "title": "### COM-CLIENT-C22 支付方式选择"
+      },
+      {
+        "line": 1329,
+        "title": "### COM-CLIENT-C23 好友链接输入"
+      },
+      {
+        "line": 1365,
+        "title": "### COM-CLIENT-C24 支付结果询问"
+      },
+      {
+        "line": 1403,
+        "title": "### COM-CLIENT-C25 口令码交付卡"
+      },
+      {
+        "line": 1439,
+        "title": "### COM-CLIENT-C26 赠送进度卡"
+      },
+      {
+        "line": 1475,
+        "title": "### COM-CLIENT-C27 退款状态卡"
+      },
+      {
+        "line": 1510,
+        "title": "### COM-CLIENT-C28 订单状态摘要"
+      },
+      {
+        "line": 1544,
+        "title": "### COM-CLIENT-C29 客服渠道卡"
+      },
+      {
+        "line": 1578,
+        "title": "### COM-CLIENT-C30 实名认证引导卡"
+      },
+      {
+        "line": 1614,
+        "title": "### COM-CLIENT-C31 手机号绑定表单"
+      },
+      {
+        "line": 1653,
+        "title": "### COM-CLIENT-C32 首次进入提醒"
+      },
+      {
+        "line": 1691,
+        "title": "### COM-CLIENT-C33 金额摘要"
+      },
+      {
+        "line": 1724,
+        "title": "### COM-CLIENT-C34 PC 站点顶栏"
+      },
+      {
+        "line": 1757,
+        "title": "### COM-CLIENT-C35 PC 商品网格"
+      },
+      {
+        "line": 1790,
+        "title": "### COM-CLIENT-C36 页面提示条"
+      },
+      {
+        "line": 1824,
+        "title": "### COM-CLIENT-C37 订单操作栏"
+      },
+      {
+        "line": 1861,
+        "title": "### COM-CLIENT-C38 支付收银台（模拟）"
+      },
+      {
+        "line": 1897,
+        "title": "### COM-CLIENT-C39 搜索发现与热门区块"
+      },
+      {
+        "line": 1931,
+        "title": "### COM-CLIENT-C40 商品信息摘要"
+      },
+      {
+        "line": 1969,
+        "title": "### COM-CLIENT-C41 购买须知弹窗"
+      },
+      {
+        "line": 2003,
+        "title": "### COM-CLIENT-C42 个人中心信息卡"
+      },
+      {
+        "line": 2038,
+        "title": "### COM-CLIENT-C43 协议正文"
+      },
+      {
+        "line": 2074,
+        "title": "### ADM-COMMON-C01 左侧业务菜单"
+      },
+      {
+        "line": 2111,
+        "title": "### ADM-COMMON-C02 顶部账号栏"
+      },
+      {
+        "line": 2144,
+        "title": "### ADM-COMMON-C03 筛选区"
+      },
+      {
+        "line": 2183,
+        "title": "### ADM-COMMON-C04 状态页签"
+      },
+      {
+        "line": 2217,
+        "title": "### ADM-COMMON-C05 数据表格"
+      },
+      {
+        "line": 2254,
+        "title": "### ADM-COMMON-C06 分页"
+      },
+      {
+        "line": 2290,
+        "title": "### ADM-COMMON-C07 详情/编辑弹窗"
+      },
+      {
+        "line": 2326,
+        "title": "### ADM-COMMON-C08 行选择与批量"
+      },
+      {
+        "line": 2360,
+        "title": "### ADM-COMMON-C09 导出动作"
+      },
+      {
+        "line": 2396,
+        "title": "### ADM-COMMON-C10 指标汇总卡"
+      },
+      {
+        "line": 2428,
+        "title": "### ADM-COMMON-C11 空态/错误/无权限区"
+      },
+      {
+        "line": 2462,
+        "title": "### ADM-COMMON-C12 配置表单壳"
+      },
+      {
+        "line": 2497,
+        "title": "### ADM-COMMON-C13 富文本/长文编辑"
+      },
+      {
+        "line": 2532,
+        "title": "### ADM-COMMON-C14 图片/素材槽位"
+      },
+      {
+        "line": 2567,
+        "title": "### ADM-COMMON-C15 排序行组"
+      },
+      {
+        "line": 2603,
+        "title": "### ADM-COMMON-C16 权限矩阵"
+      },
+      {
+        "line": 2639,
+        "title": "### ADM-COMMON-C17 操作记录时间线"
+      },
+      {
+        "line": 2671,
+        "title": "### ADM-COMMON-C18 状态标签组"
+      },
+      {
+        "line": 2703,
+        "title": "### ADM-COMMON-C19 导出任务与文件"
+      },
+      {
+        "line": 2736,
+        "title": "### ADM-COMMON-C20 角色/对象选择器"
+      },
+      {
+        "line": 2772,
+        "title": "## 4. 页面实例与覆盖"
+      },
+      {
+        "line": 2774,
+        "title": "#### 页面 H5-HOME-01 首页| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 2785,
+        "title": "#### 实例 H5-HOME-01-C01（定义 COM-CLIENT-C08）"
+      },
+      {
+        "line": 2794,
+        "title": "#### 实例 H5-HOME-01-C02（定义 COM-CLIENT-C15）"
+      },
+      {
+        "line": 2803,
+        "title": "#### 实例 H5-HOME-01-C03（定义 COM-CLIENT-C16）"
+      },
+      {
+        "line": 2812,
+        "title": "#### 实例 H5-HOME-01-C04（定义 COM-CLIENT-C05）"
+      },
+      {
+        "line": 2821,
+        "title": "#### 实例 H5-HOME-01-C05（定义 COM-CLIENT-C06）"
+      },
+      {
+        "line": 2830,
+        "title": "#### 实例 H5-HOME-01-C06（定义 COM-CLIENT-C03）"
+      },
+      {
+        "line": 2839,
+        "title": "#### 实例 H5-HOME-01-C07（定义 COM-CLIENT-C09）"
+      },
+      {
+        "line": 2848,
+        "title": "#### 实例 H5-HOME-01-C08（定义 COM-CLIENT-C07）"
+      },
+      {
+        "line": 2857,
+        "title": "#### 实例 H5-HOME-01-C09（定义 COM-CLIENT-C14）"
+      },
+      {
+        "line": 2866,
+        "title": "#### 页面 H5-SEARCH-01 搜索默认页| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 2873,
+        "title": "#### 实例 H5-SEARCH-01-C01（定义 COM-CLIENT-C08）"
+      },
+      {
+        "line": 2882,
+        "title": "#### 实例 H5-SEARCH-01-C02（定义 COM-CLIENT-C01）"
+      },
+      {
+        "line": 2891,
+        "title": "#### 实例 H5-SEARCH-01-C03（定义 COM-CLIENT-C02）"
+      },
+      {
+        "line": 2900,
+        "title": "#### 实例 H5-SEARCH-01-C04（定义 COM-CLIENT-C39）"
+      },
+      {
+        "line": 2909,
+        "title": "#### 实例 H5-SEARCH-01-C05（定义 COM-CLIENT-C09）"
+      },
+      {
+        "line": 2918,
+        "title": "#### 页面 H5-SEARCH-02 搜索结果页| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 2927,
+        "title": "#### 实例 H5-SEARCH-02-C01（定义 COM-CLIENT-C08）"
+      },
+      {
+        "line": 2936,
+        "title": "#### 实例 H5-SEARCH-02-C02（定义 COM-CLIENT-C01）"
+      },
+      {
+        "line": 2945,
+        "title": "#### 实例 H5-SEARCH-02-C03（定义 COM-CLIENT-C02）"
+      },
+      {
+        "line": 2954,
+        "title": "#### 实例 H5-SEARCH-02-C04（定义 COM-CLIENT-C05）"
+      },
+      {
+        "line": 2963,
+        "title": "#### 实例 H5-SEARCH-02-C05（定义 COM-CLIENT-C06）"
+      },
+      {
+        "line": 2972,
+        "title": "#### 实例 H5-SEARCH-02-C06（定义 COM-CLIENT-C03）"
+      },
+      {
+        "line": 2981,
+        "title": "#### 实例 H5-SEARCH-02-C07（定义 COM-CLIENT-C09）"
+      },
+      {
+        "line": 2990,
+        "title": "#### 页面 H5-PRODUCT-01 商品详情| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 2999,
+        "title": "#### 实例 H5-PRODUCT-01-C01（定义 COM-CLIENT-C08）"
+      },
+      {
+        "line": 3008,
+        "title": "#### 实例 H5-PRODUCT-01-C02（定义 COM-CLIENT-C18）"
+      },
+      {
+        "line": 3017,
+        "title": "#### 实例 H5-PRODUCT-01-C03（定义 COM-CLIENT-C40）"
+      },
+      {
+        "line": 3026,
+        "title": "#### 实例 H5-PRODUCT-01-C04（定义 COM-CLIENT-C19）"
+      },
+      {
+        "line": 3035,
+        "title": "#### 实例 H5-PRODUCT-01-C05（定义 COM-CLIENT-C17）"
+      },
+      {
+        "line": 3044,
+        "title": "#### 实例 H5-PRODUCT-01-C06（定义 COM-CLIENT-C36）"
+      },
+      {
+        "line": 3053,
+        "title": "#### 实例 H5-PRODUCT-01-C07（定义 COM-CLIENT-C07）"
+      },
+      {
+        "line": 3062,
+        "title": "#### 页面 H5-BUY-01 购买面板| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 3072,
+        "title": "#### 实例 H5-BUY-01-C01（定义 COM-CLIENT-C10）"
+      },
+      {
+        "line": 3081,
+        "title": "#### 实例 H5-BUY-01-C02（定义 COM-CLIENT-C20）"
+      },
+      {
+        "line": 3090,
+        "title": "#### 实例 H5-BUY-01-C03（定义 COM-CLIENT-C23）"
+      },
+      {
+        "line": 3099,
+        "title": "#### 实例 H5-BUY-01-C04（定义 COM-CLIENT-C22）"
+      },
+      {
+        "line": 3108,
+        "title": "#### 实例 H5-BUY-01-C05（定义 COM-CLIENT-C21）"
+      },
+      {
+        "line": 3117,
+        "title": "#### 实例 H5-BUY-01-C06（定义 COM-CLIENT-C33）"
+      },
+      {
+        "line": 3126,
+        "title": "#### 实例 H5-BUY-01-C07（定义 COM-CLIENT-C36）"
+      },
+      {
+        "line": 3135,
+        "title": "#### 实例 H5-BUY-01-C08（定义 COM-CLIENT-C41）"
+      },
+      {
+        "line": 3144,
+        "title": "#### 页面 H5-CHECKOUT-01 确认订单| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 3152,
+        "title": "#### 实例 H5-CHECKOUT-01-C01（定义 COM-CLIENT-C08）"
+      },
+      {
+        "line": 3161,
+        "title": "#### 实例 H5-CHECKOUT-01-C02（定义 COM-CLIENT-C10）"
+      },
+      {
+        "line": 3170,
+        "title": "#### 实例 H5-CHECKOUT-01-C03（定义 COM-CLIENT-C33）"
+      },
+      {
+        "line": 3179,
+        "title": "#### 实例 H5-CHECKOUT-01-C04（定义 COM-CLIENT-C21）"
+      },
+      {
+        "line": 3188,
+        "title": "#### 实例 H5-CHECKOUT-01-C05（定义 COM-CLIENT-C36）"
+      },
+      {
+        "line": 3197,
+        "title": "#### 实例 H5-CHECKOUT-01-C06（定义 COM-CLIENT-C17）"
+      },
+      {
+        "line": 3206,
+        "title": "#### 页面 H5-PAY-01 支付发起（模拟收银台）| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 3211,
+        "title": "#### 实例 H5-PAY-01-C01（定义 COM-CLIENT-C38）"
+      },
+      {
+        "line": 3220,
+        "title": "#### 实例 H5-PAY-01-C02（定义 COM-CLIENT-C33）"
+      },
+      {
+        "line": 3229,
+        "title": "#### 实例 H5-PAY-01-C03（定义 COM-CLIENT-C36）"
+      },
+      {
+        "line": 3238,
+        "title": "#### 页面 H5-PAYRET-01 支付返回确认| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 3243,
+        "title": "#### 实例 H5-PAYRET-01-C01（定义 COM-CLIENT-C24）"
+      },
+      {
+        "line": 3252,
+        "title": "#### 实例 H5-PAYRET-01-C02（定义 COM-CLIENT-C36）"
+      },
+      {
+        "line": 3261,
+        "title": "#### 实例 H5-PAYRET-01-C03（定义 COM-CLIENT-C09）"
+      },
+      {
+        "line": 3270,
+        "title": "#### 页面 H5-RESULT-01 支付与交付结果页| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 3279,
+        "title": "#### 实例 H5-RESULT-01-C01（定义 COM-CLIENT-C08）"
+      },
+      {
+        "line": 3288,
+        "title": "#### 实例 H5-RESULT-01-C02（定义 COM-CLIENT-C28）"
+      },
+      {
+        "line": 3297,
+        "title": "#### 实例 H5-RESULT-01-C03（定义 COM-CLIENT-C25）"
+      },
+      {
+        "line": 3306,
+        "title": "#### 实例 H5-RESULT-01-C04（定义 COM-CLIENT-C26）"
+      },
+      {
+        "line": 3315,
+        "title": "#### 实例 H5-RESULT-01-C05（定义 COM-CLIENT-C27）"
+      },
+      {
+        "line": 3324,
+        "title": "#### 实例 H5-RESULT-01-C06（定义 COM-CLIENT-C37）"
+      },
+      {
+        "line": 3333,
+        "title": "#### 实例 H5-RESULT-01-C07（定义 COM-CLIENT-C07）"
+      },
+      {
+        "line": 3342,
+        "title": "#### 页面 H5-ORDERS-01 我的订单| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 3350,
+        "title": "#### 实例 H5-ORDERS-01-C01（定义 COM-CLIENT-C08）"
+      },
+      {
+        "line": 3359,
+        "title": "#### 实例 H5-ORDERS-01-C02（定义 COM-CLIENT-C11）"
+      },
+      {
+        "line": 3368,
+        "title": "#### 实例 H5-ORDERS-01-C03（定义 COM-CLIENT-C12）"
+      },
+      {
+        "line": 3377,
+        "title": "#### 实例 H5-ORDERS-01-C04（定义 COM-CLIENT-C09）"
+      },
+      {
+        "line": 3386,
+        "title": "#### 实例 H5-ORDERS-01-C05（定义 COM-CLIENT-C13）"
+      },
+      {
+        "line": 3395,
+        "title": "#### 实例 H5-ORDERS-01-C06（定义 COM-CLIENT-C14）"
+      },
+      {
+        "line": 3404,
+        "title": "#### 页面 H5-ORDER-01 订单详情| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 3414,
+        "title": "#### 实例 H5-ORDER-01-C01（定义 COM-CLIENT-C08）"
+      },
+      {
+        "line": 3423,
+        "title": "#### 实例 H5-ORDER-01-C02（定义 COM-CLIENT-C28）"
+      },
+      {
+        "line": 3432,
+        "title": "#### 实例 H5-ORDER-01-C03（定义 COM-CLIENT-C10）"
+      },
+      {
+        "line": 3441,
+        "title": "#### 实例 H5-ORDER-01-C04（定义 COM-CLIENT-C25）"
+      },
+      {
+        "line": 3450,
+        "title": "#### 实例 H5-ORDER-01-C05（定义 COM-CLIENT-C26）"
+      },
+      {
+        "line": 3459,
+        "title": "#### 实例 H5-ORDER-01-C06（定义 COM-CLIENT-C27）"
+      },
+      {
+        "line": 3468,
+        "title": "#### 实例 H5-ORDER-01-C07（定义 COM-CLIENT-C37）"
+      },
+      {
+        "line": 3477,
+        "title": "#### 实例 H5-ORDER-01-C08（定义 COM-CLIENT-C07）"
+      },
+      {
+        "line": 3486,
+        "title": "#### 页面 H5-PROFILE-01 我的| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 3491,
+        "title": "#### 实例 H5-PROFILE-01-C01（定义 COM-CLIENT-C42）"
+      },
+      {
+        "line": 3500,
+        "title": "#### 实例 H5-PROFILE-01-C02（定义 COM-CLIENT-C07）"
+      },
+      {
+        "line": 3509,
+        "title": "#### 实例 H5-PROFILE-01-C03（定义 COM-CLIENT-C14）"
+      },
+      {
+        "line": 3518,
+        "title": "#### 页面 H5-SERVICE-01 企业微信客服| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 3523,
+        "title": "#### 实例 H5-SERVICE-01-C01（定义 COM-CLIENT-C08）"
+      },
+      {
+        "line": 3532,
+        "title": "#### 实例 H5-SERVICE-01-C02（定义 COM-CLIENT-C29）"
+      },
+      {
+        "line": 3541,
+        "title": "#### 实例 H5-SERVICE-01-C03（定义 COM-CLIENT-C09）"
+      },
+      {
+        "line": 3550,
+        "title": "#### 页面 H5-AGREEMENT-01 购买协议| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 3555,
+        "title": "#### 实例 H5-AGREEMENT-01-C01（定义 COM-CLIENT-C08）"
+      },
+      {
+        "line": 3564,
+        "title": "#### 实例 H5-AGREEMENT-01-C02（定义 COM-CLIENT-C43）"
+      },
+      {
+        "line": 3573,
+        "title": "#### 实例 H5-AGREEMENT-01-C03（定义 COM-CLIENT-C36）"
+      },
+      {
+        "line": 3582,
+        "title": "#### 页面 H5-AUTH-01 登录与实名引导| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 3585,
+        "title": "#### 实例 H5-AUTH-01-C01（定义 COM-CLIENT-C30）"
+      },
+      {
+        "line": 3594,
+        "title": "#### 页面 H5-PHONE-01 手机号绑定（商城兜底）| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 3599,
+        "title": "#### 实例 H5-PHONE-01-C01（定义 COM-CLIENT-C08）"
+      },
+      {
+        "line": 3608,
+        "title": "#### 实例 H5-PHONE-01-C02（定义 COM-CLIENT-C31）"
+      },
+      {
+        "line": 3617,
+        "title": "#### 实例 H5-PHONE-01-C03（定义 COM-CLIENT-C36）"
+      },
+      {
+        "line": 3626,
+        "title": "#### 页面 H5-NOTICE-01 首次进入提醒| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 3630,
+        "title": "#### 实例 H5-NOTICE-01-C01（定义 COM-CLIENT-C32）"
+      },
+      {
+        "line": 3639,
+        "title": "#### 实例 H5-NOTICE-01-C02（定义 COM-CLIENT-C36）"
+      },
+      {
+        "line": 3648,
+        "title": "#### 页面 WEB-HOME-01 PC 首页| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 3658,
+        "title": "#### 实例 WEB-HOME-01-C01（定义 COM-CLIENT-C34）"
+      },
+      {
+        "line": 3667,
+        "title": "#### 实例 WEB-HOME-01-C02（定义 COM-CLIENT-C15）"
+      },
+      {
+        "line": 3676,
+        "title": "#### 实例 WEB-HOME-01-C03（定义 COM-CLIENT-C16）"
+      },
+      {
+        "line": 3685,
+        "title": "#### 实例 WEB-HOME-01-C04（定义 COM-CLIENT-C05）"
+      },
+      {
+        "line": 3694,
+        "title": "#### 实例 WEB-HOME-01-C05（定义 COM-CLIENT-C35）"
+      },
+      {
+        "line": 3703,
+        "title": "#### 实例 WEB-HOME-01-C06（定义 COM-CLIENT-C03）"
+      },
+      {
+        "line": 3712,
+        "title": "#### 实例 WEB-HOME-01-C07（定义 COM-CLIENT-C09）"
+      },
+      {
+        "line": 3721,
+        "title": "#### 实例 WEB-HOME-01-C08（定义 COM-CLIENT-C07）"
+      },
+      {
+        "line": 3730,
+        "title": "#### 页面 WEB-SEARCH-01 PC 搜索| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 3740,
+        "title": "#### 实例 WEB-SEARCH-01-C01（定义 COM-CLIENT-C34）"
+      },
+      {
+        "line": 3749,
+        "title": "#### 实例 WEB-SEARCH-01-C02（定义 COM-CLIENT-C01）"
+      },
+      {
+        "line": 3758,
+        "title": "#### 实例 WEB-SEARCH-01-C03（定义 COM-CLIENT-C02）"
+      },
+      {
+        "line": 3767,
+        "title": "#### 实例 WEB-SEARCH-01-C04（定义 COM-CLIENT-C39）"
+      },
+      {
+        "line": 3776,
+        "title": "#### 实例 WEB-SEARCH-01-C05（定义 COM-CLIENT-C05）"
+      },
+      {
+        "line": 3785,
+        "title": "#### 实例 WEB-SEARCH-01-C06（定义 COM-CLIENT-C35）"
+      },
+      {
+        "line": 3794,
+        "title": "#### 实例 WEB-SEARCH-01-C07（定义 COM-CLIENT-C03）"
+      },
+      {
+        "line": 3803,
+        "title": "#### 实例 WEB-SEARCH-01-C08（定义 COM-CLIENT-C09）"
+      },
+      {
+        "line": 3812,
+        "title": "#### 页面 WEB-PRODUCT-01 PC 商品详情| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 3821,
+        "title": "#### 实例 WEB-PRODUCT-01-C01（定义 COM-CLIENT-C34）"
+      },
+      {
+        "line": 3830,
+        "title": "#### 实例 WEB-PRODUCT-01-C02（定义 COM-CLIENT-C18）"
+      },
+      {
+        "line": 3839,
+        "title": "#### 实例 WEB-PRODUCT-01-C03（定义 COM-CLIENT-C40）"
+      },
+      {
+        "line": 3848,
+        "title": "#### 实例 WEB-PRODUCT-01-C04（定义 COM-CLIENT-C19）"
+      },
+      {
+        "line": 3857,
+        "title": "#### 实例 WEB-PRODUCT-01-C05（定义 COM-CLIENT-C17）"
+      },
+      {
+        "line": 3866,
+        "title": "#### 实例 WEB-PRODUCT-01-C06（定义 COM-CLIENT-C36）"
+      },
+      {
+        "line": 3875,
+        "title": "#### 实例 WEB-PRODUCT-01-C07（定义 COM-CLIENT-C07）"
+      },
+      {
+        "line": 3884,
+        "title": "#### 页面 WEB-BUY-01 PC 购买面板| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 3894,
+        "title": "#### 实例 WEB-BUY-01-C01（定义 COM-CLIENT-C10）"
+      },
+      {
+        "line": 3903,
+        "title": "#### 实例 WEB-BUY-01-C02（定义 COM-CLIENT-C20）"
+      },
+      {
+        "line": 3912,
+        "title": "#### 实例 WEB-BUY-01-C03（定义 COM-CLIENT-C23）"
+      },
+      {
+        "line": 3921,
+        "title": "#### 实例 WEB-BUY-01-C04（定义 COM-CLIENT-C22）"
+      },
+      {
+        "line": 3930,
+        "title": "#### 实例 WEB-BUY-01-C05（定义 COM-CLIENT-C21）"
+      },
+      {
+        "line": 3939,
+        "title": "#### 实例 WEB-BUY-01-C06（定义 COM-CLIENT-C33）"
+      },
+      {
+        "line": 3948,
+        "title": "#### 实例 WEB-BUY-01-C07（定义 COM-CLIENT-C36）"
+      },
+      {
+        "line": 3957,
+        "title": "#### 实例 WEB-BUY-01-C08（定义 COM-CLIENT-C41）"
+      },
+      {
+        "line": 3966,
+        "title": "#### 页面 WEB-CHECKOUT-01 PC 确认订单| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 3974,
+        "title": "#### 实例 WEB-CHECKOUT-01-C01（定义 COM-CLIENT-C34）"
+      },
+      {
+        "line": 3983,
+        "title": "#### 实例 WEB-CHECKOUT-01-C02（定义 COM-CLIENT-C10）"
+      },
+      {
+        "line": 3992,
+        "title": "#### 实例 WEB-CHECKOUT-01-C03（定义 COM-CLIENT-C33）"
+      },
+      {
+        "line": 4001,
+        "title": "#### 实例 WEB-CHECKOUT-01-C04（定义 COM-CLIENT-C21）"
+      },
+      {
+        "line": 4010,
+        "title": "#### 实例 WEB-CHECKOUT-01-C05（定义 COM-CLIENT-C36）"
+      },
+      {
+        "line": 4019,
+        "title": "#### 实例 WEB-CHECKOUT-01-C06（定义 COM-CLIENT-C17）"
+      },
+      {
+        "line": 4028,
+        "title": "#### 页面 WEB-PAY-01 PC 扫码支付| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 4033,
+        "title": "#### 实例 WEB-PAY-01-C01（定义 COM-CLIENT-C38）"
+      },
+      {
+        "line": 4042,
+        "title": "#### 实例 WEB-PAY-01-C02（定义 COM-CLIENT-C33）"
+      },
+      {
+        "line": 4051,
+        "title": "#### 实例 WEB-PAY-01-C03（定义 COM-CLIENT-C36）"
+      },
+      {
+        "line": 4060,
+        "title": "#### 页面 WEB-PAYRET-01 PC 支付返回确认| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 4065,
+        "title": "#### 实例 WEB-PAYRET-01-C01（定义 COM-CLIENT-C24）"
+      },
+      {
+        "line": 4074,
+        "title": "#### 实例 WEB-PAYRET-01-C02（定义 COM-CLIENT-C36）"
+      },
+      {
+        "line": 4083,
+        "title": "#### 实例 WEB-PAYRET-01-C03（定义 COM-CLIENT-C09）"
+      },
+      {
+        "line": 4092,
+        "title": "#### 页面 WEB-RESULT-01 PC 支付与交付结果| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 4101,
+        "title": "#### 实例 WEB-RESULT-01-C01（定义 COM-CLIENT-C34）"
+      },
+      {
+        "line": 4110,
+        "title": "#### 实例 WEB-RESULT-01-C02（定义 COM-CLIENT-C28）"
+      },
+      {
+        "line": 4119,
+        "title": "#### 实例 WEB-RESULT-01-C03（定义 COM-CLIENT-C25）"
+      },
+      {
+        "line": 4128,
+        "title": "#### 实例 WEB-RESULT-01-C04（定义 COM-CLIENT-C26）"
+      },
+      {
+        "line": 4137,
+        "title": "#### 实例 WEB-RESULT-01-C05（定义 COM-CLIENT-C27）"
+      },
+      {
+        "line": 4146,
+        "title": "#### 实例 WEB-RESULT-01-C06（定义 COM-CLIENT-C37）"
+      },
+      {
+        "line": 4155,
+        "title": "#### 实例 WEB-RESULT-01-C07（定义 COM-CLIENT-C07）"
+      },
+      {
+        "line": 4164,
+        "title": "#### 页面 WEB-ORDERS-01 PC 我的订单| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 4171,
+        "title": "#### 实例 WEB-ORDERS-01-C01（定义 COM-CLIENT-C34）"
+      },
+      {
+        "line": 4180,
+        "title": "#### 实例 WEB-ORDERS-01-C02（定义 COM-CLIENT-C11）"
+      },
+      {
+        "line": 4189,
+        "title": "#### 实例 WEB-ORDERS-01-C03（定义 COM-CLIENT-C12）"
+      },
+      {
+        "line": 4198,
+        "title": "#### 实例 WEB-ORDERS-01-C04（定义 COM-CLIENT-C09）"
+      },
+      {
+        "line": 4207,
+        "title": "#### 实例 WEB-ORDERS-01-C05（定义 COM-CLIENT-C13）"
+      },
+      {
+        "line": 4216,
+        "title": "#### 页面 WEB-ORDER-01 PC 订单详情| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 4226,
+        "title": "#### 实例 WEB-ORDER-01-C01（定义 COM-CLIENT-C34）"
+      },
+      {
+        "line": 4235,
+        "title": "#### 实例 WEB-ORDER-01-C02（定义 COM-CLIENT-C28）"
+      },
+      {
+        "line": 4244,
+        "title": "#### 实例 WEB-ORDER-01-C03（定义 COM-CLIENT-C10）"
+      },
+      {
+        "line": 4253,
+        "title": "#### 实例 WEB-ORDER-01-C04（定义 COM-CLIENT-C25）"
+      },
+      {
+        "line": 4262,
+        "title": "#### 实例 WEB-ORDER-01-C05（定义 COM-CLIENT-C26）"
+      },
+      {
+        "line": 4271,
+        "title": "#### 实例 WEB-ORDER-01-C06（定义 COM-CLIENT-C27）"
+      },
+      {
+        "line": 4280,
+        "title": "#### 实例 WEB-ORDER-01-C07（定义 COM-CLIENT-C37）"
+      },
+      {
+        "line": 4289,
+        "title": "#### 实例 WEB-ORDER-01-C08（定义 COM-CLIENT-C07）"
+      },
+      {
+        "line": 4298,
+        "title": "#### 页面 WEB-PROFILE-01 PC 我的| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 4303,
+        "title": "#### 实例 WEB-PROFILE-01-C01（定义 COM-CLIENT-C34）"
+      },
+      {
+        "line": 4312,
+        "title": "#### 实例 WEB-PROFILE-01-C02（定义 COM-CLIENT-C42）"
+      },
+      {
+        "line": 4321,
+        "title": "#### 实例 WEB-PROFILE-01-C03（定义 COM-CLIENT-C07）"
+      },
+      {
+        "line": 4330,
+        "title": "#### 页面 WEB-SERVICE-01 PC 客服| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 4334,
+        "title": "#### 实例 WEB-SERVICE-01-C01（定义 COM-CLIENT-C34）"
+      },
+      {
+        "line": 4343,
+        "title": "#### 实例 WEB-SERVICE-01-C02（定义 COM-CLIENT-C29）"
+      },
+      {
+        "line": 4352,
+        "title": "#### 页面 WEB-AGREEMENT-01 PC 购买协议| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 4357,
+        "title": "#### 实例 WEB-AGREEMENT-01-C01（定义 COM-CLIENT-C34）"
+      },
+      {
+        "line": 4366,
+        "title": "#### 实例 WEB-AGREEMENT-01-C02（定义 COM-CLIENT-C43）"
+      },
+      {
+        "line": 4375,
+        "title": "#### 实例 WEB-AGREEMENT-01-C03（定义 COM-CLIENT-C36）"
+      },
+      {
+        "line": 4384,
+        "title": "#### 页面 WEB-AUTH-01 PC 登录与实名引导| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 4387,
+        "title": "#### 实例 WEB-AUTH-01-C01（定义 COM-CLIENT-C30）"
+      },
+      {
+        "line": 4396,
+        "title": "#### 页面 WEB-PHONE-01 PC 手机号绑定| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 4401,
+        "title": "#### 实例 WEB-PHONE-01-C01（定义 COM-CLIENT-C34）"
+      },
+      {
+        "line": 4410,
+        "title": "#### 实例 WEB-PHONE-01-C02（定义 COM-CLIENT-C31）"
+      },
+      {
+        "line": 4419,
+        "title": "#### 实例 WEB-PHONE-01-C03（定义 COM-CLIENT-C36）"
+      },
+      {
+        "line": 4428,
+        "title": "#### 页面 WEB-NOTICE-01 PC 首次进入提醒| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 4432,
+        "title": "#### 实例 WEB-NOTICE-01-C01（定义 COM-CLIENT-C32）"
+      },
+      {
+        "line": 4441,
+        "title": "#### 实例 WEB-NOTICE-01-C02（定义 COM-CLIENT-C36）"
+      },
+      {
+        "line": 4450,
+        "title": "#### 页面 ADM-HOME-01 首页管理| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 4459,
+        "title": "#### 实例 ADM-HOME-01-C01（定义 ADM-COMMON-C01）"
+      },
+      {
+        "line": 4468,
+        "title": "#### 实例 ADM-HOME-01-C02（定义 ADM-COMMON-C02）"
+      },
+      {
+        "line": 4477,
+        "title": "#### 实例 ADM-HOME-01-C11（定义 ADM-COMMON-C11）"
+      },
+      {
+        "line": 4486,
+        "title": "#### 实例 ADM-HOME-01-C12（定义 ADM-COMMON-C12）"
+      },
+      {
+        "line": 4495,
+        "title": "#### 实例 ADM-HOME-01-C13（定义 ADM-COMMON-C14）"
+      },
+      {
+        "line": 4504,
+        "title": "#### 实例 ADM-HOME-01-C14（定义 ADM-COMMON-C15）"
+      },
+      {
+        "line": 4513,
+        "title": "#### 实例 ADM-HOME-01-C15（定义 ADM-COMMON-C20）"
+      },
+      {
+        "line": 4522,
+        "title": "#### 页面 ADM-PRODUCT-01 商品管理| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 4536,
+        "title": "#### 实例 ADM-PRODUCT-01-C01（定义 ADM-COMMON-C01）"
+      },
+      {
+        "line": 4545,
+        "title": "#### 实例 ADM-PRODUCT-01-C02（定义 ADM-COMMON-C02）"
+      },
+      {
+        "line": 4554,
+        "title": "#### 实例 ADM-PRODUCT-01-C03（定义 ADM-COMMON-C03）"
+      },
+      {
+        "line": 4563,
+        "title": "#### 实例 ADM-PRODUCT-01-C04（定义 ADM-COMMON-C04）"
+      },
+      {
+        "line": 4572,
+        "title": "#### 实例 ADM-PRODUCT-01-C05（定义 ADM-COMMON-C05）"
+      },
+      {
+        "line": 4581,
+        "title": "#### 实例 ADM-PRODUCT-01-C06（定义 ADM-COMMON-C06）"
+      },
+      {
+        "line": 4590,
+        "title": "#### 实例 ADM-PRODUCT-01-C07（定义 ADM-COMMON-C07）"
+      },
+      {
+        "line": 4599,
+        "title": "#### 实例 ADM-PRODUCT-01-C08（定义 ADM-COMMON-C08）"
+      },
+      {
+        "line": 4608,
+        "title": "#### 实例 ADM-PRODUCT-01-C11（定义 ADM-COMMON-C11）"
+      },
+      {
+        "line": 4617,
+        "title": "#### 实例 ADM-PRODUCT-01-C12（定义 ADM-COMMON-C14）"
+      },
+      {
+        "line": 4626,
+        "title": "#### 实例 ADM-PRODUCT-01-C13（定义 ADM-COMMON-C13）"
+      },
+      {
+        "line": 4635,
+        "title": "#### 实例 ADM-PRODUCT-01-C14（定义 ADM-COMMON-C18）"
+      },
+      {
+        "line": 4644,
+        "title": "#### 页面 ADM-SUPPLIER-01 供应商管理| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 4655,
+        "title": "#### 实例 ADM-SUPPLIER-01-C01（定义 ADM-COMMON-C01）"
+      },
+      {
+        "line": 4664,
+        "title": "#### 实例 ADM-SUPPLIER-01-C02（定义 ADM-COMMON-C02）"
+      },
+      {
+        "line": 4673,
+        "title": "#### 实例 ADM-SUPPLIER-01-C03（定义 ADM-COMMON-C03）"
+      },
+      {
+        "line": 4682,
+        "title": "#### 实例 ADM-SUPPLIER-01-C05（定义 ADM-COMMON-C05）"
+      },
+      {
+        "line": 4691,
+        "title": "#### 实例 ADM-SUPPLIER-01-C06（定义 ADM-COMMON-C06）"
+      },
+      {
+        "line": 4700,
+        "title": "#### 实例 ADM-SUPPLIER-01-C07（定义 ADM-COMMON-C07）"
+      },
+      {
+        "line": 4709,
+        "title": "#### 实例 ADM-SUPPLIER-01-C11（定义 ADM-COMMON-C11）"
+      },
+      {
+        "line": 4718,
+        "title": "#### 实例 ADM-SUPPLIER-01-C12（定义 ADM-COMMON-C12）"
+      },
+      {
+        "line": 4727,
+        "title": "#### 实例 ADM-SUPPLIER-01-C13（定义 ADM-COMMON-C20）"
+      },
+      {
+        "line": 4736,
+        "title": "#### 页面 ADM-STOCK-01 库存查看| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 4747,
+        "title": "#### 实例 ADM-STOCK-01-C01（定义 ADM-COMMON-C01）"
+      },
+      {
+        "line": 4756,
+        "title": "#### 实例 ADM-STOCK-01-C02（定义 ADM-COMMON-C02）"
+      },
+      {
+        "line": 4765,
+        "title": "#### 实例 ADM-STOCK-01-C03（定义 ADM-COMMON-C03）"
+      },
+      {
+        "line": 4774,
+        "title": "#### 实例 ADM-STOCK-01-C04（定义 ADM-COMMON-C04）"
+      },
+      {
+        "line": 4783,
+        "title": "#### 实例 ADM-STOCK-01-C05（定义 ADM-COMMON-C05）"
+      },
+      {
+        "line": 4792,
+        "title": "#### 实例 ADM-STOCK-01-C06（定义 ADM-COMMON-C06）"
+      },
+      {
+        "line": 4801,
+        "title": "#### 实例 ADM-STOCK-01-C07（定义 ADM-COMMON-C07）"
+      },
+      {
+        "line": 4810,
+        "title": "#### 实例 ADM-STOCK-01-C11（定义 ADM-COMMON-C11）"
+      },
+      {
+        "line": 4819,
+        "title": "#### 实例 ADM-STOCK-01-C12（定义 ADM-COMMON-C18）"
+      },
+      {
+        "line": 4828,
+        "title": "#### 页面 ADM-ORDER-01 订单管理| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 4843,
+        "title": "#### 实例 ADM-ORDER-01-C01（定义 ADM-COMMON-C01）"
+      },
+      {
+        "line": 4852,
+        "title": "#### 实例 ADM-ORDER-01-C02（定义 ADM-COMMON-C02）"
+      },
+      {
+        "line": 4861,
+        "title": "#### 实例 ADM-ORDER-01-C03（定义 ADM-COMMON-C03）"
+      },
+      {
+        "line": 4870,
+        "title": "#### 实例 ADM-ORDER-01-C04（定义 ADM-COMMON-C04）"
+      },
+      {
+        "line": 4879,
+        "title": "#### 实例 ADM-ORDER-01-C05（定义 ADM-COMMON-C05）"
+      },
+      {
+        "line": 4888,
+        "title": "#### 实例 ADM-ORDER-01-C06（定义 ADM-COMMON-C06）"
+      },
+      {
+        "line": 4897,
+        "title": "#### 实例 ADM-ORDER-01-C07（定义 ADM-COMMON-C07）"
+      },
+      {
+        "line": 4906,
+        "title": "#### 实例 ADM-ORDER-01-C08（定义 ADM-COMMON-C08）"
+      },
+      {
+        "line": 4915,
+        "title": "#### 实例 ADM-ORDER-01-C09（定义 ADM-COMMON-C09）"
+      },
+      {
+        "line": 4924,
+        "title": "#### 实例 ADM-ORDER-01-C10（定义 ADM-COMMON-C10）"
+      },
+      {
+        "line": 4933,
+        "title": "#### 实例 ADM-ORDER-01-C11（定义 ADM-COMMON-C11）"
+      },
+      {
+        "line": 4942,
+        "title": "#### 实例 ADM-ORDER-01-C12（定义 ADM-COMMON-C18）"
+      },
+      {
+        "line": 4951,
+        "title": "#### 实例 ADM-ORDER-01-C13（定义 ADM-COMMON-C17）"
+      },
+      {
+        "line": 4960,
+        "title": "#### 页面 ADM-GIFT-01 好友赠送| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 4974,
+        "title": "#### 实例 ADM-GIFT-01-C01（定义 ADM-COMMON-C01）"
+      },
+      {
+        "line": 4983,
+        "title": "#### 实例 ADM-GIFT-01-C02（定义 ADM-COMMON-C02）"
+      },
+      {
+        "line": 4992,
+        "title": "#### 实例 ADM-GIFT-01-C03（定义 ADM-COMMON-C03）"
+      },
+      {
+        "line": 5001,
+        "title": "#### 实例 ADM-GIFT-01-C04（定义 ADM-COMMON-C04）"
+      },
+      {
+        "line": 5010,
+        "title": "#### 实例 ADM-GIFT-01-C05（定义 ADM-COMMON-C05）"
+      },
+      {
+        "line": 5019,
+        "title": "#### 实例 ADM-GIFT-01-C06（定义 ADM-COMMON-C06）"
+      },
+      {
+        "line": 5028,
+        "title": "#### 实例 ADM-GIFT-01-C07（定义 ADM-COMMON-C07）"
+      },
+      {
+        "line": 5037,
+        "title": "#### 实例 ADM-GIFT-01-C08（定义 ADM-COMMON-C08）"
+      },
+      {
+        "line": 5046,
+        "title": "#### 实例 ADM-GIFT-01-C09（定义 ADM-COMMON-C09）"
+      },
+      {
+        "line": 5055,
+        "title": "#### 实例 ADM-GIFT-01-C11（定义 ADM-COMMON-C11）"
+      },
+      {
+        "line": 5064,
+        "title": "#### 实例 ADM-GIFT-01-C12（定义 ADM-COMMON-C19）"
+      },
+      {
+        "line": 5073,
+        "title": "#### 实例 ADM-GIFT-01-C13（定义 ADM-COMMON-C18）"
+      },
+      {
+        "line": 5082,
+        "title": "#### 页面 ADM-CODE-01 口令码交付| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 5095,
+        "title": "#### 实例 ADM-CODE-01-C01（定义 ADM-COMMON-C01）"
+      },
+      {
+        "line": 5104,
+        "title": "#### 实例 ADM-CODE-01-C02（定义 ADM-COMMON-C02）"
+      },
+      {
+        "line": 5113,
+        "title": "#### 实例 ADM-CODE-01-C03（定义 ADM-COMMON-C03）"
+      },
+      {
+        "line": 5122,
+        "title": "#### 实例 ADM-CODE-01-C04（定义 ADM-COMMON-C04）"
+      },
+      {
+        "line": 5131,
+        "title": "#### 实例 ADM-CODE-01-C05（定义 ADM-COMMON-C05）"
+      },
+      {
+        "line": 5140,
+        "title": "#### 实例 ADM-CODE-01-C06（定义 ADM-COMMON-C06）"
+      },
+      {
+        "line": 5149,
+        "title": "#### 实例 ADM-CODE-01-C07（定义 ADM-COMMON-C07）"
+      },
+      {
+        "line": 5158,
+        "title": "#### 实例 ADM-CODE-01-C08（定义 ADM-COMMON-C08）"
+      },
+      {
+        "line": 5167,
+        "title": "#### 实例 ADM-CODE-01-C11（定义 ADM-COMMON-C11）"
+      },
+      {
+        "line": 5176,
+        "title": "#### 实例 ADM-CODE-01-C12（定义 ADM-COMMON-C18）"
+      },
+      {
+        "line": 5185,
+        "title": "#### 实例 ADM-CODE-01-C13（定义 ADM-COMMON-C17）"
+      },
+      {
+        "line": 5194,
+        "title": "#### 页面 ADM-REFUND-01 退款管理| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 5207,
+        "title": "#### 实例 ADM-REFUND-01-C01（定义 ADM-COMMON-C01）"
+      },
+      {
+        "line": 5216,
+        "title": "#### 实例 ADM-REFUND-01-C02（定义 ADM-COMMON-C02）"
+      },
+      {
+        "line": 5225,
+        "title": "#### 实例 ADM-REFUND-01-C03（定义 ADM-COMMON-C03）"
+      },
+      {
+        "line": 5234,
+        "title": "#### 实例 ADM-REFUND-01-C04（定义 ADM-COMMON-C04）"
+      },
+      {
+        "line": 5243,
+        "title": "#### 实例 ADM-REFUND-01-C05（定义 ADM-COMMON-C05）"
+      },
+      {
+        "line": 5252,
+        "title": "#### 实例 ADM-REFUND-01-C06（定义 ADM-COMMON-C06）"
+      },
+      {
+        "line": 5261,
+        "title": "#### 实例 ADM-REFUND-01-C07（定义 ADM-COMMON-C07）"
+      },
+      {
+        "line": 5270,
+        "title": "#### 实例 ADM-REFUND-01-C08（定义 ADM-COMMON-C08）"
+      },
+      {
+        "line": 5279,
+        "title": "#### 实例 ADM-REFUND-01-C11（定义 ADM-COMMON-C11）"
+      },
+      {
+        "line": 5288,
+        "title": "#### 实例 ADM-REFUND-01-C12（定义 ADM-COMMON-C18）"
+      },
+      {
+        "line": 5297,
+        "title": "#### 实例 ADM-REFUND-01-C13（定义 ADM-COMMON-C17）"
+      },
+      {
+        "line": 5306,
+        "title": "#### 页面 ADM-SERVICE-01 客服配置| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 5313,
+        "title": "#### 实例 ADM-SERVICE-01-C01（定义 ADM-COMMON-C01）"
+      },
+      {
+        "line": 5322,
+        "title": "#### 实例 ADM-SERVICE-01-C02（定义 ADM-COMMON-C02）"
+      },
+      {
+        "line": 5331,
+        "title": "#### 实例 ADM-SERVICE-01-C11（定义 ADM-COMMON-C11）"
+      },
+      {
+        "line": 5340,
+        "title": "#### 实例 ADM-SERVICE-01-C12（定义 ADM-COMMON-C12）"
+      },
+      {
+        "line": 5349,
+        "title": "#### 实例 ADM-SERVICE-01-C13（定义 ADM-COMMON-C13）"
+      },
+      {
+        "line": 5358,
+        "title": "#### 页面 ADM-RBAC-01 权限管理| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 5370,
+        "title": "#### 实例 ADM-RBAC-01-C01（定义 ADM-COMMON-C01）"
+      },
+      {
+        "line": 5379,
+        "title": "#### 实例 ADM-RBAC-01-C02（定义 ADM-COMMON-C02）"
+      },
+      {
+        "line": 5388,
+        "title": "#### 实例 ADM-RBAC-01-C03（定义 ADM-COMMON-C03）"
+      },
+      {
+        "line": 5397,
+        "title": "#### 实例 ADM-RBAC-01-C04（定义 ADM-COMMON-C04）"
+      },
+      {
+        "line": 5406,
+        "title": "#### 实例 ADM-RBAC-01-C05（定义 ADM-COMMON-C05）"
+      },
+      {
+        "line": 5415,
+        "title": "#### 实例 ADM-RBAC-01-C06（定义 ADM-COMMON-C06）"
+      },
+      {
+        "line": 5424,
+        "title": "#### 实例 ADM-RBAC-01-C07（定义 ADM-COMMON-C07）"
+      },
+      {
+        "line": 5433,
+        "title": "#### 实例 ADM-RBAC-01-C11（定义 ADM-COMMON-C11）"
+      },
+      {
+        "line": 5442,
+        "title": "#### 实例 ADM-RBAC-01-C12（定义 ADM-COMMON-C16）"
+      },
+      {
+        "line": 5451,
+        "title": "#### 实例 ADM-RBAC-01-C13（定义 ADM-COMMON-C20）"
+      },
+      {
+        "line": 5460,
+        "title": "#### 页面 ADM-AUDIT-01 操作记录| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 5471,
+        "title": "#### 实例 ADM-AUDIT-01-C01（定义 ADM-COMMON-C01）"
+      },
+      {
+        "line": 5480,
+        "title": "#### 实例 ADM-AUDIT-01-C02（定义 ADM-COMMON-C02）"
+      },
+      {
+        "line": 5489,
+        "title": "#### 实例 ADM-AUDIT-01-C03（定义 ADM-COMMON-C03）"
+      },
+      {
+        "line": 5498,
+        "title": "#### 实例 ADM-AUDIT-01-C04（定义 ADM-COMMON-C04）"
+      },
+      {
+        "line": 5507,
+        "title": "#### 实例 ADM-AUDIT-01-C05（定义 ADM-COMMON-C05）"
+      },
+      {
+        "line": 5516,
+        "title": "#### 实例 ADM-AUDIT-01-C06（定义 ADM-COMMON-C06）"
+      },
+      {
+        "line": 5525,
+        "title": "#### 实例 ADM-AUDIT-01-C07（定义 ADM-COMMON-C07）"
+      },
+      {
+        "line": 5534,
+        "title": "#### 实例 ADM-AUDIT-01-C11（定义 ADM-COMMON-C11）"
+      },
+      {
+        "line": 5543,
+        "title": "#### 实例 ADM-AUDIT-01-C12（定义 ADM-COMMON-C17）"
+      },
+      {
+        "line": 5552,
+        "title": "#### 页面 ADM-AGREEMENT-01 协议管理| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 5559,
+        "title": "#### 实例 ADM-AGREEMENT-01-C01（定义 ADM-COMMON-C01）"
+      },
+      {
+        "line": 5568,
+        "title": "#### 实例 ADM-AGREEMENT-01-C02（定义 ADM-COMMON-C02）"
+      },
+      {
+        "line": 5577,
+        "title": "#### 实例 ADM-AGREEMENT-01-C11（定义 ADM-COMMON-C11）"
+      },
+      {
+        "line": 5586,
+        "title": "#### 实例 ADM-AGREEMENT-01-C12（定义 ADM-COMMON-C12）"
+      },
+      {
+        "line": 5595,
+        "title": "#### 实例 ADM-AGREEMENT-01-C13（定义 ADM-COMMON-C13）"
+      },
+      {
+        "line": 5604,
+        "title": "#### 页面 ADM-SEARCHCFG-01 搜索推荐| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 5611,
+        "title": "#### 实例 ADM-SEARCHCFG-01-C01（定义 ADM-COMMON-C01）"
+      },
+      {
+        "line": 5620,
+        "title": "#### 实例 ADM-SEARCHCFG-01-C02（定义 ADM-COMMON-C02）"
+      },
+      {
+        "line": 5629,
+        "title": "#### 实例 ADM-SEARCHCFG-01-C11（定义 ADM-COMMON-C11）"
+      },
+      {
+        "line": 5638,
+        "title": "#### 实例 ADM-SEARCHCFG-01-C12（定义 ADM-COMMON-C15）"
+      },
+      {
+        "line": 5647,
+        "title": "#### 实例 ADM-SEARCHCFG-01-C13（定义 ADM-COMMON-C20）"
+      },
+      {
+        "line": 5656,
+        "title": "#### 页面 ADM-PAYCHECK-01 支付核查| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 5668,
+        "title": "#### 实例 ADM-PAYCHECK-01-C01（定义 ADM-COMMON-C01）"
+      },
+      {
+        "line": 5677,
+        "title": "#### 实例 ADM-PAYCHECK-01-C02（定义 ADM-COMMON-C02）"
+      },
+      {
+        "line": 5686,
+        "title": "#### 实例 ADM-PAYCHECK-01-C03（定义 ADM-COMMON-C03）"
+      },
+      {
+        "line": 5695,
+        "title": "#### 实例 ADM-PAYCHECK-01-C04（定义 ADM-COMMON-C04）"
+      },
+      {
+        "line": 5704,
+        "title": "#### 实例 ADM-PAYCHECK-01-C05（定义 ADM-COMMON-C05）"
+      },
+      {
+        "line": 5713,
+        "title": "#### 实例 ADM-PAYCHECK-01-C06（定义 ADM-COMMON-C06）"
+      },
+      {
+        "line": 5722,
+        "title": "#### 实例 ADM-PAYCHECK-01-C07（定义 ADM-COMMON-C07）"
+      },
+      {
+        "line": 5731,
+        "title": "#### 实例 ADM-PAYCHECK-01-C11（定义 ADM-COMMON-C11）"
+      },
+      {
+        "line": 5740,
+        "title": "#### 实例 ADM-PAYCHECK-01-C12（定义 ADM-COMMON-C17）"
+      },
+      {
+        "line": 5749,
+        "title": "#### 实例 ADM-PAYCHECK-01-C13（定义 ADM-COMMON-C18）"
+      },
+      {
+        "line": 5758,
+        "title": "#### 页面 ADM-NOTIFY-01 通知记录| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 5770,
+        "title": "#### 实例 ADM-NOTIFY-01-C01（定义 ADM-COMMON-C01）"
+      },
+      {
+        "line": 5779,
+        "title": "#### 实例 ADM-NOTIFY-01-C02（定义 ADM-COMMON-C02）"
+      },
+      {
+        "line": 5788,
+        "title": "#### 实例 ADM-NOTIFY-01-C03（定义 ADM-COMMON-C03）"
+      },
+      {
+        "line": 5797,
+        "title": "#### 实例 ADM-NOTIFY-01-C04（定义 ADM-COMMON-C04）"
+      },
+      {
+        "line": 5806,
+        "title": "#### 实例 ADM-NOTIFY-01-C05（定义 ADM-COMMON-C05）"
+      },
+      {
+        "line": 5815,
+        "title": "#### 实例 ADM-NOTIFY-01-C06（定义 ADM-COMMON-C06）"
+      },
+      {
+        "line": 5824,
+        "title": "#### 实例 ADM-NOTIFY-01-C07（定义 ADM-COMMON-C07）"
+      },
+      {
+        "line": 5833,
+        "title": "#### 实例 ADM-NOTIFY-01-C11（定义 ADM-COMMON-C11）"
+      },
+      {
+        "line": 5842,
+        "title": "#### 实例 ADM-NOTIFY-01-C12（定义 ADM-COMMON-C18）"
+      },
+      {
+        "line": 5851,
+        "title": "#### 实例 ADM-NOTIFY-01-C13（定义 ADM-COMMON-C17）"
+      },
+      {
+        "line": 5860,
+        "title": "#### 页面 ADM-WALLET-01 钱包余额| 实例ID | 定义 | 名称 | 区域 | 适用状态 | 实例差异摘要 |"
+      },
+      {
+        "line": 5871,
+        "title": "#### 实例 ADM-WALLET-01-C01（定义 ADM-COMMON-C01）"
+      },
+      {
+        "line": 5880,
+        "title": "#### 实例 ADM-WALLET-01-C02（定义 ADM-COMMON-C02）"
+      },
+      {
+        "line": 5889,
+        "title": "#### 实例 ADM-WALLET-01-C05（定义 ADM-COMMON-C05）"
+      },
+      {
+        "line": 5898,
+        "title": "#### 实例 ADM-WALLET-01-C06（定义 ADM-COMMON-C06）"
+      },
+      {
+        "line": 5907,
+        "title": "#### 实例 ADM-WALLET-01-C07（定义 ADM-COMMON-C07）"
+      },
+      {
+        "line": 5916,
+        "title": "#### 实例 ADM-WALLET-01-C10（定义 ADM-COMMON-C10）"
+      },
+      {
+        "line": 5925,
+        "title": "#### 实例 ADM-WALLET-01-C11（定义 ADM-COMMON-C11）"
+      },
+      {
+        "line": 5934,
+        "title": "#### 实例 ADM-WALLET-01-C12（定义 ADM-COMMON-C12）"
+      },
+      {
+        "line": 5943,
+        "title": "#### 实例 ADM-WALLET-01-C13（定义 ADM-COMMON-C18）"
+      }
+    ],
+    "ids": {
+      "TC-[A-Z0-9-]+": 60,
+      "CHK-\\d+": 0,
+      "DEC-\\d+": 0,
+      "AC-\\d+": 2
+    }
+  },
+  "04_业务流程与异常规则.md": {
+    "lines": 545,
+    "headings": [
+      {
+        "line": 1,
+        "title": "# 04_业务流程与异常规则"
+      },
+      {
+        "line": 12,
+        "title": "## 1. 范围与业务规则"
+      },
+      {
+        "line": 23,
+        "title": "## 2. 流程目录"
+      },
+      {
+        "line": 33,
+        "title": "## 3. 流程节点说明"
+      },
+      {
+        "line": 35,
+        "title": "### FL-ORDER-001 购买与支付主流程"
+      },
+      {
+        "line": 124,
+        "title": "### FL-GIFT-001 好友赠送人工交付"
+      },
+      {
+        "line": 165,
+        "title": "### FL-REFUND-001 退款闭集与失败处理"
+      },
+      {
+        "line": 211,
+        "title": "### FL-PAYCHECK-001 支付确认中核查"
+      },
+      {
+        "line": 245,
+        "title": "### FL-SELECT-001 选品、内容与发布"
+      },
+      {
+        "line": 288,
+        "title": "## 4. 业务对象状态机"
+      },
+      {
+        "line": 290,
+        "title": "### 4.1 状态字典"
+      },
+      {
+        "line": 322,
+        "title": "### 4.2 迁移表"
+      },
+      {
+        "line": 355,
+        "title": "### SM-PAY-001 订单支付状态"
+      },
+      {
+        "line": 376,
+        "title": "### SM-DELIVERY-001 口令码交付状态"
+      },
+      {
+        "line": 397,
+        "title": "### SM-GIFT-001 好友赠送处理状态"
+      },
+      {
+        "line": 418,
+        "title": "### SM-REFUND-001 退款单状态"
+      },
+      {
+        "line": 439,
+        "title": "### SM-NOTIFY-001 站内信任务状态"
+      },
+      {
+        "line": 462,
+        "title": "### SM-PRODUCT-001 商品选品与发布状态"
+      },
+      {
+        "line": 489,
+        "title": "## 5. 异常处理矩阵"
+      },
+      {
+        "line": 528,
+        "title": "## 6. 恢复、补偿与人工介入"
+      },
+      {
+        "line": 539,
+        "title": "## 7. 适用性与待确认项"
+      }
+    ],
+    "ids": {
+      "TC-[A-Z0-9-]+": 38,
+      "CHK-\\d+": 0,
+      "DEC-\\d+": 0,
+      "AC-\\d+": 0
+    }
+  },
+  "05_接口数据与权限说明.md": {
+    "lines": 1330,
+    "headings": [
+      {
+        "line": 1,
+        "title": "# 05_接口数据与权限说明"
+      },
+      {
+        "line": 12,
+        "title": "## 1. 数据交互范围及契约状态"
+      },
+      {
+        "line": 19,
+        "title": "## 2. 接口目录"
+      },
+      {
+        "line": 55,
+        "title": "## 3. 逐接口契约"
+      },
+      {
+        "line": 57,
+        "title": "### API-IDENTITY-001 获取可信身份与实名/成年状态"
+      },
+      {
+        "line": 92,
+        "title": "### API-AGREEMENT-001 获取购买协议当前版本"
+      },
+      {
+        "line": 125,
+        "title": "### API-SMS-001 发送交易验证码"
+      },
+      {
+        "line": 158,
+        "title": "### API-BIND-001 提交手机号绑定"
+      },
+      {
+        "line": 193,
+        "title": "### API-CATALOG-001 前台已发布商品列表"
+      },
+      {
+        "line": 232,
+        "title": "### API-CATALOG-002 商品详情"
+      },
+      {
+        "line": 269,
+        "title": "### API-HOME-001 首页已发布配置"
+      },
+      {
+        "line": 300,
+        "title": "### API-SEARCH-001 搜索商品"
+      },
+      {
+        "line": 334,
+        "title": "### API-SEARCHCFG-001 搜索推荐配置（前台）"
+      },
+      {
+        "line": 363,
+        "title": "### API-ORDER-001 本人订单列表"
+      },
+      {
+        "line": 400,
+        "title": "### API-ORDER-002 订单详情"
+      },
+      {
+        "line": 434,
+        "title": "### API-ORDER-003 查询订单支付状态"
+      },
+      {
+        "line": 465,
+        "title": "### API-ORDER-004 换规格：关闭旧单并创建新单"
+      },
+      {
+        "line": 500,
+        "title": "### API-PAY-001 获取可用支付渠道"
+      },
+      {
+        "line": 530,
+        "title": "### API-PAY-002 创建支付尝试"
+      },
+      {
+        "line": 564,
+        "title": "### API-PAY-003 查询支付结果"
+      },
+      {
+        "line": 597,
+        "title": "### API-DELIVERY-001 获取订单交付记录"
+      },
+      {
+        "line": 631,
+        "title": "### API-GIFT-001 获取赠送记录"
+      },
+      {
+        "line": 663,
+        "title": "### API-REFUND-001 获取订单退款状态"
+      },
+      {
+        "line": 696,
+        "title": "### API-SERVICE-001 获取客服配置"
+      },
+      {
+        "line": 727,
+        "title": "### API-NOTIFY-001 创建站内信通知任务"
+      },
+      {
+        "line": 759,
+        "title": "### API-SUPPLIER-001 供应商候选商品列表 ProductList"
+      },
+      {
+        "line": 799,
+        "title": "### API-SUPPLIER-002 供应商商品信息 ProductInfo"
+      },
+      {
+        "line": 834,
+        "title": "### API-SUPPLIER-003 自动取码 extractcode"
+      },
+      {
+        "line": 873,
+        "title": "### API-SUPPLIER-004 供应商钱包余额 getwalletcode"
+      },
+      {
+        "line": 907,
+        "title": "### API-SUPPLIER-005 采购订单 BuyOrderList"
+      },
+      {
+        "line": 943,
+        "title": "### API-SUPPLIER-006 发货成功日志 RequestlogList"
+      },
+      {
+        "line": 979,
+        "title": "### API-SUPPLIER-007 批发市场订单 MarketOrderList"
+      },
+      {
+        "line": 1013,
+        "title": "### API-ADM-EXPORT-001 后台导出订单/赠送数据"
+      },
+      {
+        "line": 1046,
+        "title": "### API-RBAC-001 后台权限矩阵与角色"
+      },
+      {
+        "line": 1079,
+        "title": "### API-AUDIT-001 查询操作记录"
+      },
+      {
+        "line": 1116,
+        "title": "## 4. 数据对象、字段及枚举字典"
+      },
+      {
+        "line": 1157,
+        "title": "## 5. 角色与系统权限"
+      },
+      {
+        "line": 1159,
+        "title": "### 5.1 后台角色矩阵（首期基线，PRD §9.4）"
+      },
+      {
+        "line": 1188,
+        "title": "### 5.2 数据范围"
+      },
+      {
+        "line": 1198,
+        "title": "### 5.3 系统权限"
+      },
+      {
+        "line": 1202,
+        "title": "## 6. 数据边界与留存"
+      },
+      {
+        "line": 1217,
+        "title": "## 7. 接口及第三方服务时序"
+      },
+      {
+        "line": 1226,
+        "title": "### SEQ-PAY-001 下单与支付结果确认"
+      },
+      {
+        "line": 1253,
+        "title": "### SEQ-CODE-001 支付后自动取码与重试"
+      },
+      {
+        "line": 1276,
+        "title": "### SEQ-NOTIFY-001 站内信发送与重试"
+      },
+      {
+        "line": 1298,
+        "title": "### SEQ-REFUND-001 退款发起与失败重试"
+      },
+      {
+        "line": 1324,
+        "title": "## 8. 消息说明及待确认依赖"
+      }
+    ],
+    "ids": {
+      "TC-[A-Z0-9-]+": 9,
+      "CHK-\\d+": 0,
+      "DEC-\\d+": 0,
+      "AC-\\d+": 1
+    }
+  },
+  "06_埋点文档.md": {
+    "lines": 99,
+    "headings": [
+      {
+        "line": 1,
+        "title": "# 06_埋点文档"
+      },
+      {
+        "line": 12,
+        "title": "## 1. 范围与硬规则"
+      },
+      {
+        "line": 19,
+        "title": "## 2. 事件明细（七列）"
+      },
+      {
+        "line": 69,
+        "title": "## 3. 触发与统计口径"
+      },
+      {
+        "line": 78,
+        "title": "## 4. 属性复用"
+      },
+      {
+        "line": 89,
+        "title": "## 5. 敏感数据"
+      },
+      {
+        "line": 93,
+        "title": "## 6. 管理后台不适用"
+      },
+      {
+        "line": 97,
+        "title": "## 7. 完成检查"
+      }
+    ],
+    "ids": {
+      "TC-[A-Z0-9-]+": 0,
+      "CHK-\\d+": 0,
+      "DEC-\\d+": 0,
+      "AC-\\d+": 0
+    }
+  },
+  "07_测试用例.md": {
+    "lines": 3610,
+    "headings": [
+      {
+        "line": 1,
+        "title": "# 07_测试用例"
+      },
+      {
+        "line": 12,
+        "title": "## 1. 范围与基线"
+      },
+      {
+        "line": 18,
+        "title": "## 2. 环境及准入"
+      },
+      {
+        "line": 28,
+        "title": "## 3. 用例索引"
+      },
+      {
+        "line": 128,
+        "title": "## 4. 详细用例"
+      },
+      {
+        "line": 130,
+        "title": "### TC-HOME-001 首页展示已发布商品与真实入口"
+      },
+      {
+        "line": 154,
+        "title": "### TC-HOME-002 首页不同商品卡进入各自详情"
+      },
+      {
+        "line": 191,
+        "title": "### TC-HOME-003 首页排序真实改变顺序且选中唯一"
+      },
+      {
+        "line": 234,
+        "title": "### TC-HOME-004 首页加载/空/失败状态可恢复"
+      },
+      {
+        "line": 266,
+        "title": "### TC-SEARCH-001 搜索输入、清空与提交"
+      },
+      {
+        "line": 310,
+        "title": "### TC-SEARCH-002 搜索结果加载/空/失败/末页"
+      },
+      {
+        "line": 347,
+        "title": "### TC-SEARCH-003 搜索结果排序与进入详情"
+      },
+      {
+        "line": 380,
+        "title": "### TC-SEARCH-004 搜索发现关键词与热门商品"
+      },
+      {
+        "line": 416,
+        "title": "### TC-PRODUCT-001 商品详情信息、媒体与长文"
+      },
+      {
+        "line": 461,
+        "title": "### TC-PRODUCT-002 订单处理中恢复旧单"
+      },
+      {
+        "line": 501,
+        "title": "### TC-PRODUCT-003 已支付交付中可复购"
+      },
+      {
+        "line": 538,
+        "title": "### TC-PRODUCT-004 不可售商品禁止新购并说明原因"
+      },
+      {
+        "line": 571,
+        "title": "### TC-PRODUCT-005 库存未知风险与余额提示"
+      },
+      {
+        "line": 611,
+        "title": "### TC-PRODUCT-006 商品下架后历史订单仍可查看"
+      },
+      {
+        "line": 648,
+        "title": "### TC-BUY-001 购买面板结构与规格联动"
+      },
+      {
+        "line": 680,
+        "title": "### TC-BUY-002 好友链接必填与付款后锁定"
+      },
+      {
+        "line": 726,
+        "title": "### TC-BUY-003 未勾选协议先购买须知，同意后仍校验手机"
+      },
+      {
+        "line": 766,
+        "title": "### TC-BUY-004 购买校验优先级与登录恢复"
+      },
+      {
+        "line": 802,
+        "title": "### TC-BUY-005 手机号兜底绑定并返回购买"
+      },
+      {
+        "line": 848,
+        "title": "### TC-BUY-006 换规格关闭旧单"
+      },
+      {
+        "line": 876,
+        "title": "### TC-BUY-007 商品级订单拦截"
+      },
+      {
+        "line": 919,
+        "title": "### TC-BUY-008 防重复提交与业务拒绝保留现场"
+      },
+      {
+        "line": 955,
+        "title": "### TC-CHECKOUT-001 确认订单结构与金额快照"
+      },
+      {
+        "line": 983,
+        "title": "### TC-CHECKOUT-002 好友链接付款前修改需先查支付状态"
+      },
+      {
+        "line": 1013,
+        "title": "### TC-CHECKOUT-003 到期/不可售关闭旧单与重新购买"
+      },
+      {
+        "line": 1047,
+        "title": "### TC-PAY-001 微信/支付宝收银台与金额"
+      },
+      {
+        "line": 1094,
+        "title": "### TC-PAY-002 支付取消/失败返回确认订单"
+      },
+      {
+        "line": 1135,
+        "title": "### TC-PAY-003 支付结果未知保持确认中"
+      },
+      {
+        "line": 1167,
+        "title": "### TC-PAY-004 支付返回两选项均查询服务端"
+      },
+      {
+        "line": 1206,
+        "title": "### TC-PAY-005 确认中不自动关闭与晚到款恢复"
+      },
+      {
+        "line": 1249,
+        "title": "### TC-PAY-006 重复支付只退款不重复交付"
+      },
+      {
+        "line": 1284,
+        "title": "### TC-RESULT-001 口令码结果、复制与发码中"
+      },
+      {
+        "line": 1322,
+        "title": "### TC-RESULT-002 赠送结果与交付时段"
+      },
+      {
+        "line": 1348,
+        "title": "### TC-RESULT-003 退款失败展示与客服"
+      },
+      {
+        "line": 1379,
+        "title": "### TC-ORDER-001 订单列表页签真实过滤与计数"
+      },
+      {
+        "line": 1419,
+        "title": "### TC-ORDER-002 订单详情按订单号读取三状态"
+      },
+      {
+        "line": 1453,
+        "title": "### TC-ORDER-003 继续支付、查询与复制订单号"
+      },
+      {
+        "line": 1501,
+        "title": "### TC-ORDER-004 客服入口携带订单与归属校验"
+      },
+      {
+        "line": 1537,
+        "title": "### TC-ORDER-005 会话失效清除旧数据并回原页"
+      },
+      {
+        "line": 1571,
+        "title": "### TC-AUTH-001 首次提醒仅可信实名展示"
+      },
+      {
+        "line": 1598,
+        "title": "### TC-AUTH-002 未实名/未成年/未知拦截"
+      },
+      {
+        "line": 1628,
+        "title": "### TC-AUTH-003 认证返回重查并保留现场"
+      },
+      {
+        "line": 1664,
+        "title": "### TC-AUTH-004 切换账号清理旧选择"
+      },
+      {
+        "line": 1696,
+        "title": "### TC-PHONE-001 平台已绑定不重复要求"
+      },
+      {
+        "line": 1723,
+        "title": "### TC-PHONE-002 兜底绑定成功/失败/取消"
+      },
+      {
+        "line": 1760,
+        "title": "### TC-PHONE-003 验证码频控与隐私告知"
+      },
+      {
+        "line": 1794,
+        "title": "### TC-NAV-001 一级/二级页面导航与返回恢复"
+      },
+      {
+        "line": 1833,
+        "title": "### TC-NAV-002 首页真实入口可达且无空入口"
+      },
+      {
+        "line": 1868,
+        "title": "### TC-NAV-003 PC 顶栏与响应式布局"
+      },
+      {
+        "line": 1904,
+        "title": "### TC-STATE-001 加载/空/失败/超时状态区分"
+      },
+      {
+        "line": 1935,
+        "title": "### TC-WEB-001 PC 详情两栏与购买弹层"
+      },
+      {
+        "line": 1970,
+        "title": "### TC-WEB-002 PC 扫码支付三态"
+      },
+      {
+        "line": 2007,
+        "title": "### TC-AGREEMENT-001 协议查看/返回/版本"
+      },
+      {
+        "line": 2040,
+        "title": "### TC-AGREEMENT-002 实质性变更需重新同意"
+      },
+      {
+        "line": 2065,
+        "title": "### TC-PROFILE-001 个人中心登录/游客/未知"
+      },
+      {
+        "line": 2100,
+        "title": "### TC-SERVICE-001 客服复制与无法唤起备用"
+      },
+      {
+        "line": 2137,
+        "title": "### TC-ADM-NAV-001 后台菜单、角色与收起"
+      },
+      {
+        "line": 2170,
+        "title": "### TC-ADM-PERM-001 权限裁剪与直链无权限"
+      },
+      {
+        "line": 2205,
+        "title": "### TC-ADM-PERM-002 权限矩阵与单人退款"
+      },
+      {
+        "line": 2248,
+        "title": "### TC-ADM-FILTER-001 筛选草稿/提交/重置/刷新"
+      },
+      {
+        "line": 2287,
+        "title": "### TC-ADM-TAB-001 页签真实过滤与计数"
+      },
+      {
+        "line": 2324,
+        "title": "### TC-ADM-TABLE-001 真表格与两条不同记录详情"
+      },
+      {
+        "line": 2360,
+        "title": "### TC-ADM-PAGE-001 分页与每页条数"
+      },
+      {
+        "line": 2398,
+        "title": "### TC-ADM-BATCH-001 行选择/全选/半选与批量结果"
+      },
+      {
+        "line": 2436,
+        "title": "### TC-ADM-EXPORT-001 导出范围/权限/脱敏/留痕"
+      },
+      {
+        "line": 2468,
+        "title": "### TC-ADM-DRAWER-001 详情/编辑打开/保存/失败/关闭"
+      },
+      {
+        "line": 2513,
+        "title": "### TC-ADM-STATE-001 空/失败/超时/无权限区分"
+      },
+      {
+        "line": 2538,
+        "title": "### TC-ADM-METRIC-001 指标卡与列表同源"
+      },
+      {
+        "line": 2570,
+        "title": "### TC-ADM-CONFIG-001 配置保存/重置/草稿不提前生效"
+      },
+      {
+        "line": 2603,
+        "title": "### TC-ADM-HOME-001 首页草稿/预览/发布/版本"
+      },
+      {
+        "line": 2642,
+        "title": "### TC-ADM-PRODUCT-001 选品/内容/价格/发布"
+      },
+      {
+        "line": 2684,
+        "title": "### TC-ADM-PRODUCT-002 组合商品人工白名单"
+      },
+      {
+        "line": 2728,
+        "title": "### TC-ADM-SUPPLIER-001 供应商配置与敏感字段"
+      },
+      {
+        "line": 2770,
+        "title": "### TC-ADM-STOCK-001 库存同步与新鲜度"
+      },
+      {
+        "line": 2805,
+        "title": "### TC-ADM-ORDER-001 订单查询/详情/导出"
+      },
+      {
+        "line": 2840,
+        "title": "### TC-ADM-GIFT-001 赠送批次导出/开始/完成"
+      },
+      {
+        "line": 2877,
+        "title": "### TC-ADM-GIFT-002 赠送异常与重复导出"
+      },
+      {
+        "line": 2910,
+        "title": "### TC-ADM-CODE-001 取码重试/补发/换码"
+      },
+      {
+        "line": 2948,
+        "title": "### TC-ADM-CODE-002 pu006 只查不发与超窗"
+      },
+      {
+        "line": 2980,
+        "title": "### TC-ADM-REFUND-001 退款审核/执行/失败重试"
+      },
+      {
+        "line": 3013,
+        "title": "### TC-ADM-REFUND-002 单人退款权限"
+      },
+      {
+        "line": 3048,
+        "title": "### TC-ADM-SERVICE-001 客服配置保存即生效"
+      },
+      {
+        "line": 3079,
+        "title": "### TC-ADM-AGREEMENT-001 协议发布/版本/实质变更"
+      },
+      {
+        "line": 3116,
+        "title": "### TC-ADM-SEARCHCFG-001 搜索推荐排序/启停/保存即生效"
+      },
+      {
+        "line": 3150,
+        "title": "### TC-ADM-PAYCHECK-001 支付核查仅渠道证据定性"
+      },
+      {
+        "line": 3190,
+        "title": "### TC-ADM-NOTIFY-001 通知重试与去重"
+      },
+      {
+        "line": 3227,
+        "title": "### TC-ADM-WALLET-001 钱包阈值与余额不足停售"
+      },
+      {
+        "line": 3277,
+        "title": "### TC-ADM-AUDIT-001 操作记录前后值与追踪"
+      },
+      {
+        "line": 3308,
+        "title": "### TC-ADM-PICKER-001 对象选择器取消/确认/失效"
+      },
+      {
+        "line": 3352,
+        "title": "### TC-ADM-MEDIA-001 素材添加/删除确认/排序"
+      },
+      {
+        "line": 3388,
+        "title": "### TC-DOC-001 文档阅读器全文/切换/下载"
+      },
+      {
+        "line": 3427,
+        "title": "### TC-DOC-002 图示离线查看/缩放/图源"
+      },
+      {
+        "line": 3463,
+        "title": "### TC-DOC-003 单文件离线与无运行依赖"
+      },
+      {
+        "line": 3500,
+        "title": "### TC-NOTICE-001 首次提醒展示/关闭/前往认证"
+      },
+      {
+        "line": 3553,
+        "title": "### TC-NOTICE-002 游客/未知不展示且不强制登录"
+      },
+      {
+        "line": 3592,
+        "title": "## 5. 覆盖与缺口"
+      },
+      {
+        "line": 3598,
+        "title": "## 6. 用例评审记录"
+      },
+      {
+        "line": 3604,
+        "title": "## 7. 执行记录索引"
+      },
+      {
+        "line": 3608,
+        "title": "## 8. 验收准出建议"
+      }
+    ],
+    "ids": {
+      "TC-[A-Z0-9-]+": 95,
+      "CHK-\\d+": 0,
+      "DEC-\\d+": 0,
+      "AC-\\d+": 22
+    }
+  },
+  "08_验证记录与验收映射.md": {
+    "lines": 378,
+    "headings": [
+      {
+        "line": 1,
+        "title": "# 08_验证记录与验收映射"
+      },
+      {
+        "line": 12,
+        "title": "## 1. 需求覆盖映射"
+      },
+      {
+        "line": 188,
+        "title": "## 2. 验收条件与阶段"
+      },
+      {
+        "line": 266,
+        "title": "## 3. 实际验证记录"
+      },
+      {
+        "line": 338,
+        "title": "## 4. 失败、缺陷及未验证范围"
+      },
+      {
+        "line": 340,
+        "title": "### 4.1 缺陷"
+      },
+      {
+        "line": 352,
+        "title": "### 4.2 未验证"
+      },
+      {
+        "line": 361,
+        "title": "### 4.3 修复与回归记录"
+      },
+      {
+        "line": 371,
+        "title": "## 5. 复核与执行汇总"
+      }
+    ],
+    "ids": {
+      "TC-[A-Z0-9-]+": 79,
+      "CHK-\\d+": 55,
+      "DEC-\\d+": 0,
+      "AC-\\d+": 73
+    }
+  },
+  "09_待确认事项与设计决策.md": {
+    "lines": 143,
+    "headings": [
+      {
+        "line": 1,
+        "title": "# 09_待确认事项与设计决策"
+      },
+      {
+        "line": 12,
+        "title": "## 1. 阻断项"
+      },
+      {
+        "line": 24,
+        "title": "## 2. 非阻断待确认项"
+      },
+      {
+        "line": 68,
+        "title": "## 3. AI 设计补充与设计决策"
+      },
+      {
+        "line": 90,
+        "title": "## 4. 已确认决策及依据（PRD 上下文）"
+      },
+      {
+        "line": 126,
+        "title": "## 5. 关闭记录"
+      },
+      {
+        "line": 138,
+        "title": "## 6. 一致性与使用说明"
+      }
+    ],
+    "ids": {
+      "TC-[A-Z0-9-]+": 0,
+      "CHK-\\d+": 0,
+      "DEC-\\d+": 15,
+      "AC-\\d+": 27
+    }
+  }
+}

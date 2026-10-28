@@ -1,0 +1,1181 @@
+{
+  "pages": [
+    {
+      "id": "APP-HOME-01",
+      "end": "APP",
+      "name": "商城首页",
+      "state_ids": [
+        "RESULTS",
+        "LOADING",
+        "EMPTY",
+        "ERROR",
+        "NOTICE"
+      ],
+      "line": 6497
+    },
+    {
+      "id": "APP-NOTICE-01",
+      "end": "APP",
+      "name": "首次进入实名提醒",
+      "state_ids": [
+        "UNVERIFIED",
+        "VERIFIED",
+        "MINOR",
+        "UNKNOWN"
+      ],
+      "line": 6499
+    },
+    {
+      "id": "APP-SEARCH-01",
+      "end": "APP",
+      "name": "搜索默认页",
+      "state_ids": [
+        "DEFAULT",
+        "EDITING",
+        "EMPTY",
+        "ERROR"
+      ],
+      "line": 6501
+    },
+    {
+      "id": "APP-SEARCH-02",
+      "end": "APP",
+      "name": "搜索结果页",
+      "state_ids": [
+        "RESULTS",
+        "LOADING",
+        "EMPTY",
+        "ERROR",
+        "END"
+      ],
+      "line": 6503
+    },
+    {
+      "id": "APP-PRODUCT-01",
+      "end": "APP",
+      "name": "商品详情",
+      "state_ids": [
+        "DEFAULT",
+        "PARTIAL",
+        "UNAVAILABLE",
+        "PENDING_ORDER",
+        "EXPANDED",
+        "ERROR",
+        "PANEL"
+      ],
+      "line": 6505
+    },
+    {
+      "id": "APP-PANEL-01",
+      "end": "APP",
+      "name": "购买面板",
+      "state_ids": [
+        "PANEL",
+        "PANEL_AGREE",
+        "CDK_HELP"
+      ],
+      "line": 6507
+    },
+    {
+      "id": "APP-AUTH-01",
+      "end": "APP",
+      "name": "实名说明弹层",
+      "state_ids": [
+        "SHOWN"
+      ],
+      "line": 6509
+    },
+    {
+      "id": "APP-AGREEMENT-01",
+      "end": "APP",
+      "name": "购买协议查看",
+      "state_ids": [
+        "DEFAULT",
+        "ERROR",
+        "STALE"
+      ],
+      "line": 6510
+    },
+    {
+      "id": "APP-PHONE-01",
+      "end": "APP",
+      "name": "绑定手机号",
+      "state_ids": [
+        "DEFAULT",
+        "CODE_SENT",
+        "ERROR",
+        "BOUND"
+      ],
+      "line": 6512
+    },
+    {
+      "id": "APP-LOGIN-01",
+      "end": "APP",
+      "name": "手机号登录/注册",
+      "state_ids": [
+        "DEFAULT",
+        "CODE_SENT",
+        "ERROR"
+      ],
+      "line": 6514
+    },
+    {
+      "id": "APP-REALNAME-01",
+      "end": "APP",
+      "name": "实名认证",
+      "state_ids": [
+        "FORM",
+        "SUBMITTING",
+        "FAILED",
+        "MINOR"
+      ],
+      "line": 6516
+    },
+    {
+      "id": "APP-REALNAME-02",
+      "end": "APP",
+      "name": "实名认证结果",
+      "state_ids": [
+        "SUCCESS",
+        "MINOR"
+      ],
+      "line": 6518
+    },
+    {
+      "id": "APP-PRIVACY-01",
+      "end": "APP",
+      "name": "隐私政策",
+      "state_ids": [
+        "DEFAULT"
+      ],
+      "line": 6520
+    },
+    {
+      "id": "APP-CHECKOUT-01",
+      "end": "APP",
+      "name": "确认订单",
+      "state_ids": [
+        "DEFAULT",
+        "SHOWN",
+        "READONLY",
+        "EXPIRED",
+        "SUBMITTING",
+        "ERROR"
+      ],
+      "line": 6522
+    },
+    {
+      "id": "APP-PAYRET-01",
+      "end": "APP",
+      "name": "支付返回确认",
+      "state_ids": [
+        "SHOWN",
+        "QUERYING",
+        "TIMEOUT"
+      ],
+      "line": 6524
+    },
+    {
+      "id": "APP-RESULT-01",
+      "end": "APP",
+      "name": "支付与交付结果页",
+      "state_ids": [
+        "DELIVERED",
+        "ISSUING",
+        "EXCEPTION",
+        "PAY_CONFIRMING",
+        "PAY_FAILED",
+        "ORDER_CLOSED",
+        "LATE_PAY",
+        "GIFT_PENDING",
+        "GIFT_PROCESSING",
+        "GIFT_DONE",
+        "GIFT_EXCEPTION",
+        "ERROR"
+      ],
+      "line": 6526
+    },
+    {
+      "id": "APP-ORDER-01",
+      "end": "APP",
+      "name": "我的订单",
+      "state_ids": [
+        "RESULTS",
+        "LOADING",
+        "EMPTY",
+        "ERROR",
+        "SESSION_EXPIRED"
+      ],
+      "line": 6528
+    },
+    {
+      "id": "APP-ORDER-02",
+      "end": "APP",
+      "name": "订单详情",
+      "state_ids": [
+        "DEFAULT",
+        "CODE_ISSUING",
+        "CODE_EXCEPTION",
+        "REPLACED",
+        "GIFT",
+        "ERROR"
+      ],
+      "line": 6530
+    },
+    {
+      "id": "APP-MINE-01",
+      "end": "APP",
+      "name": "我的",
+      "state_ids": [
+        "LOGGED_IN",
+        "GUEST",
+        "UNKNOWN"
+      ],
+      "line": 6532
+    },
+    {
+      "id": "APP-SERVICE-01",
+      "end": "APP",
+      "name": "企业微信客服",
+      "state_ids": [
+        "WITH_ORDER",
+        "NO_ORDER",
+        "FALLBACK"
+      ],
+      "line": 6534
+    },
+    {
+      "id": "APP-CONTAINER-01",
+      "end": "APP",
+      "name": "容器异常提示",
+      "state_ids": [
+        "EXTERNAL"
+      ],
+      "line": 6536
+    },
+    {
+      "id": "WEB-HOME-01",
+      "end": "WEB",
+      "name": "首页（PC 多列）",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "ERROR"
+      ],
+      "line": 6539
+    },
+    {
+      "id": "WEB-SEARCH-01",
+      "end": "WEB",
+      "name": "搜索与结果",
+      "state_ids": [
+        "DEFAULT",
+        "RESULTS",
+        "EMPTY",
+        "ERROR"
+      ],
+      "line": 6541
+    },
+    {
+      "id": "WEB-PRODUCT-01",
+      "end": "WEB",
+      "name": "商品详情（PC 分栏）",
+      "state_ids": [
+        "DEFAULT",
+        "EXPANDED",
+        "UNAVAILABLE",
+        "PENDING_ORDER"
+      ],
+      "line": 6543
+    },
+    {
+      "id": "WEB-CHECKOUT-01",
+      "end": "WEB",
+      "name": "确认订单（PC 分栏）",
+      "state_ids": [
+        "DEFAULT",
+        "QR_WAIT",
+        "QR_CONFIRMING",
+        "QR_SUCCESS",
+        "EXPIRED",
+        "SUBMITTING",
+        "ERROR"
+      ],
+      "line": 6545
+    },
+    {
+      "id": "WEB-PAYRET-01",
+      "end": "WEB",
+      "name": "支付返回确认（居中弹窗）",
+      "state_ids": [
+        "SHOWN",
+        "QUERYING"
+      ],
+      "line": 6547
+    },
+    {
+      "id": "WEB-RESULT-01",
+      "end": "WEB",
+      "name": "支付与交付结果页（PC）",
+      "state_ids": [
+        "DELIVERED",
+        "ISSUING",
+        "EXCEPTION",
+        "PAY_CONFIRMING",
+        "PAY_FAILED",
+        "ORDER_CLOSED",
+        "LATE_PAY",
+        "GIFT_PENDING",
+        "ERROR"
+      ],
+      "line": 6549
+    },
+    {
+      "id": "WEB-ORDER-01",
+      "end": "WEB",
+      "name": "我的订单（PC）",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "ERROR",
+        "SESSION_EXPIRED",
+        "DRAWER"
+      ],
+      "line": 6551
+    },
+    {
+      "id": "WEB-MINE-01",
+      "end": "WEB",
+      "name": "我的（PC）",
+      "state_ids": [
+        "LOGGED_IN",
+        "GUEST",
+        "UNKNOWN"
+      ],
+      "line": 6553
+    },
+    {
+      "id": "WEB-LOGIN-01",
+      "end": "WEB",
+      "name": "手机号登录/注册（PC）",
+      "state_ids": [
+        "DEFAULT",
+        "CODE_SENT",
+        "ERROR"
+      ],
+      "line": 6555
+    },
+    {
+      "id": "WEB-PHONE-01",
+      "end": "WEB",
+      "name": "绑定手机号（PC）",
+      "state_ids": [
+        "DEFAULT",
+        "CODE_SENT",
+        "ERROR",
+        "BOUND"
+      ],
+      "line": 6557
+    },
+    {
+      "id": "WEB-REALNAME-01",
+      "end": "WEB",
+      "name": "实名认证（PC）",
+      "state_ids": [
+        "FORM",
+        "SUBMITTING",
+        "FAILED",
+        "MINOR"
+      ],
+      "line": 6559
+    },
+    {
+      "id": "WEB-REALNAME-02",
+      "end": "WEB",
+      "name": "实名认证结果（PC）",
+      "state_ids": [
+        "SUCCESS",
+        "MINOR"
+      ],
+      "line": 6561
+    },
+    {
+      "id": "ADM-LOGIN-01",
+      "end": "ADM",
+      "name": "后台登录",
+      "state_ids": [
+        "DEFAULT",
+        "ERROR"
+      ],
+      "line": 6565
+    },
+    {
+      "id": "ADM-HOME-01",
+      "end": "ADM",
+      "name": "首页配置管理",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "ERROR",
+        "DRAWER"
+      ],
+      "line": 6566
+    },
+    {
+      "id": "ADM-GOODS-01",
+      "end": "ADM",
+      "name": "商品管理",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "ERROR",
+        "DRAWER"
+      ],
+      "line": 6567
+    },
+    {
+      "id": "ADM-STOCK-01",
+      "end": "ADM",
+      "name": "可售库存",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "DRAWER"
+      ],
+      "line": 6568
+    },
+    {
+      "id": "ADM-SEARCH-01",
+      "end": "ADM",
+      "name": "搜索推荐配置",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "DRAWER"
+      ],
+      "line": 6569
+    },
+    {
+      "id": "ADM-ORDER-01",
+      "end": "ADM",
+      "name": "订单管理",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "ERROR",
+        "LOADING",
+        "NO_PERM",
+        "DRAWER"
+      ],
+      "line": 6570
+    },
+    {
+      "id": "ADM-GIFT-01",
+      "end": "ADM",
+      "name": "好友赠送",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "DRAWER"
+      ],
+      "line": 6571
+    },
+    {
+      "id": "ADM-CODE-01",
+      "end": "ADM",
+      "name": "口令码交付",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "NO_PERM",
+        "DRAWER"
+      ],
+      "line": 6572
+    },
+    {
+      "id": "ADM-NOTIFY-01",
+      "end": "ADM",
+      "name": "通知记录",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "DRAWER"
+      ],
+      "line": 6573
+    },
+    {
+      "id": "ADM-REFUND-01",
+      "end": "ADM",
+      "name": "特殊退款",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "DRAWER"
+      ],
+      "line": 6574
+    },
+    {
+      "id": "ADM-PAYCHK-01",
+      "end": "ADM",
+      "name": "支付核查",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "DRAWER"
+      ],
+      "line": 6575
+    },
+    {
+      "id": "ADM-AGREE-01",
+      "end": "ADM",
+      "name": "协议管理",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "DRAWER"
+      ],
+      "line": 6576
+    },
+    {
+      "id": "ADM-SERVICE-01",
+      "end": "ADM",
+      "name": "客服配置",
+      "state_ids": [
+        "DEFAULT"
+      ],
+      "line": 6577
+    },
+    {
+      "id": "ADM-RBAC-01",
+      "end": "ADM",
+      "name": "权限管理",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "DRAWER"
+      ],
+      "line": 6578
+    },
+    {
+      "id": "ADM-AUDIT-01",
+      "end": "ADM",
+      "name": "操作记录",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY",
+        "DRAWER"
+      ],
+      "line": 6579
+    },
+    {
+      "id": "ADM-STAT-01",
+      "end": "ADM",
+      "name": "基础统计",
+      "state_ids": [
+        "RESULTS",
+        "EMPTY"
+      ],
+      "line": 6580
+    }
+  ],
+  "page_count": 49,
+  "state_count": 185,
+  "component_doc_count": 221,
+  "component_doc_ids": [
+    "ADM-AGREE-01-C01",
+    "ADM-AGREE-01-C02",
+    "ADM-AUDIT-01-C01",
+    "ADM-AUDIT-01-C02",
+    "ADM-CODE-01-C01",
+    "ADM-CODE-01-C02",
+    "ADM-CODE-01-C05",
+    "ADM-COMMON-C01",
+    "ADM-COMMON-C02",
+    "ADM-COMMON-C03",
+    "ADM-COMMON-C04",
+    "ADM-COMMON-C05",
+    "ADM-COMMON-C06",
+    "ADM-COMMON-C07",
+    "ADM-COMMON-C08",
+    "ADM-COMMON-C09",
+    "ADM-COMMON-C10",
+    "ADM-COMMON-C11",
+    "ADM-GIFT-01-C01",
+    "ADM-GIFT-01-C03",
+    "ADM-GOODS-01-C01",
+    "ADM-GOODS-01-C02",
+    "ADM-GOODS-01-C03",
+    "ADM-HOME-01-C01",
+    "ADM-HOME-01-C02",
+    "ADM-HOME-01-C03",
+    "ADM-LOGIN-01-C01",
+    "ADM-LOGIN-01-C02",
+    "ADM-NOTIFY-01-C01",
+    "ADM-NOTIFY-01-C02",
+    "ADM-NOTIFY-01-C03",
+    "ADM-NOTIFY-01-C04",
+    "ADM-ORDER-01-C01",
+    "ADM-ORDER-01-C02",
+    "ADM-PAYCHK-01-C01",
+    "ADM-PAYCHK-01-C02",
+    "ADM-RBAC-01-C01",
+    "ADM-RBAC-01-C02",
+    "ADM-RBAC-01-C03",
+    "ADM-REFUND-01-C01",
+    "ADM-REFUND-01-C02",
+    "ADM-SEARCH-01-C01",
+    "ADM-SEARCH-01-C02",
+    "ADM-SERVICE-01-C01",
+    "ADM-STAT-01-C01",
+    "ADM-STAT-01-C02",
+    "ADM-STOCK-01-C01",
+    "ADM-STOCK-01-C02",
+    "APP-AGREEMENT-01-C01",
+    "APP-AGREEMENT-01-C02",
+    "APP-AGREEMENT-01-C03",
+    "APP-AUTH-01-C01",
+    "APP-AUTH-01-C02",
+    "APP-AUTH-01-C03",
+    "APP-AUTH-01-C04",
+    "APP-CHECKOUT-01-C01",
+    "APP-CHECKOUT-01-C02",
+    "APP-CHECKOUT-01-C03",
+    "APP-CHECKOUT-01-C04",
+    "APP-CHECKOUT-01-C05",
+    "APP-CHECKOUT-01-C06",
+    "APP-CHECKOUT-01-C07",
+    "APP-CHECKOUT-01-C08",
+    "APP-CHECKOUT-01-C09",
+    "APP-CONTAINER-01-C01",
+    "APP-CONTAINER-01-C02",
+    "APP-HOME-01-C01",
+    "APP-HOME-01-C02",
+    "APP-HOME-01-C04",
+    "APP-HOME-01-C06",
+    "APP-HOME-01-C07",
+    "APP-HOME-01-C08",
+    "APP-HOME-01-C09",
+    "APP-LOGIN-01-C01",
+    "APP-LOGIN-01-C02",
+    "APP-LOGIN-01-C03",
+    "APP-LOGIN-01-C04",
+    "APP-LOGIN-01-C05",
+    "APP-LOGIN-01-C06",
+    "APP-MINE-01-C01",
+    "APP-MINE-01-C02",
+    "APP-MINE-01-C03",
+    "APP-MINE-01-C04",
+    "APP-MINE-01-C05",
+    "APP-MINE-01-C06",
+    "APP-NOTICE-01-C01",
+    "APP-NOTICE-01-C02",
+    "APP-NOTICE-01-C03",
+    "APP-NOTICE-01-C04",
+    "APP-ORDER-01-C01",
+    "APP-ORDER-01-C02",
+    "APP-ORDER-01-C03",
+    "APP-ORDER-01-C04",
+    "APP-ORDER-01-C05",
+    "APP-ORDER-02-C01",
+    "APP-ORDER-02-C02",
+    "APP-ORDER-02-C03",
+    "APP-ORDER-02-C04",
+    "APP-ORDER-02-C05",
+    "APP-ORDER-02-C06",
+    "APP-ORDER-02-C07",
+    "APP-PANEL-01-C01",
+    "APP-PANEL-01-C02",
+    "APP-PANEL-01-C03",
+    "APP-PANEL-01-C05",
+    "APP-PANEL-01-C06",
+    "APP-PANEL-01-C07",
+    "APP-PANEL-01-C08",
+    "APP-PANEL-01-C09",
+    "APP-PANEL-01-C10",
+    "APP-PANEL-01-C11",
+    "APP-PAYRET-01-C01",
+    "APP-PAYRET-01-C02",
+    "APP-PAYRET-01-C03",
+    "APP-PAYRET-01-C04",
+    "APP-PAYRET-01-C05",
+    "APP-PHONE-01-C01",
+    "APP-PHONE-01-C02",
+    "APP-PHONE-01-C03",
+    "APP-PHONE-01-C04",
+    "APP-PRIVACY-01-C01",
+    "APP-PRIVACY-01-C02",
+    "APP-PRIVACY-01-C03",
+    "APP-PRODUCT-01-C01",
+    "APP-PRODUCT-01-C02",
+    "APP-PRODUCT-01-C03",
+    "APP-PRODUCT-01-C06",
+    "APP-PRODUCT-01-C07",
+    "APP-PRODUCT-01-C08",
+    "APP-PRODUCT-01-C09",
+    "APP-PRODUCT-01-C10",
+    "APP-REALNAME-01-C01",
+    "APP-REALNAME-01-C02",
+    "APP-REALNAME-01-C03",
+    "APP-REALNAME-01-C04",
+    "APP-REALNAME-01-C05",
+    "APP-REALNAME-02-C01",
+    "APP-REALNAME-02-C02",
+    "APP-REALNAME-02-C03",
+    "APP-RESULT-01-C01",
+    "APP-RESULT-01-C02",
+    "APP-RESULT-01-C03",
+    "APP-RESULT-01-C04",
+    "APP-RESULT-01-C05",
+    "APP-SEARCH-01-C01",
+    "APP-SEARCH-01-C02",
+    "APP-SEARCH-01-C03",
+    "APP-SEARCH-01-C04",
+    "APP-SEARCH-01-C05",
+    "APP-SEARCH-02-C01",
+    "APP-SEARCH-02-C03",
+    "APP-SEARCH-02-C04",
+    "APP-SERVICE-01-C01",
+    "APP-SERVICE-01-C02",
+    "APP-SERVICE-01-C03",
+    "APP-SERVICE-01-C04",
+    "COM-CLIENT-C01",
+    "COM-CLIENT-C02",
+    "COM-CLIENT-C03",
+    "COM-CLIENT-C04",
+    "COM-CLIENT-C05",
+    "COM-CLIENT-C06",
+    "COM-CLIENT-C07",
+    "COM-CLIENT-C08",
+    "COM-CLIENT-C09",
+    "COM-CLIENT-C10",
+    "COM-CLIENT-C11",
+    "COM-CLIENT-C12",
+    "COM-CLIENT-C13",
+    "COM-CLIENT-C14",
+    "WEB-CHECKOUT-01-C01",
+    "WEB-CHECKOUT-01-C02",
+    "WEB-CHECKOUT-01-C03",
+    "WEB-CHECKOUT-01-C04",
+    "WEB-CHECKOUT-01-C05",
+    "WEB-CHECKOUT-01-C06",
+    "WEB-CHECKOUT-01-C07",
+    "WEB-HOME-01-C01",
+    "WEB-HOME-01-C02",
+    "WEB-HOME-01-C03",
+    "WEB-HOME-01-C04",
+    "WEB-LOGIN-01-C01",
+    "WEB-LOGIN-01-C02",
+    "WEB-MINE-01-C01",
+    "WEB-MINE-01-C02",
+    "WEB-MINE-01-C03",
+    "WEB-MINE-01-C04",
+    "WEB-MINE-01-C05",
+    "WEB-ORDER-01-C01",
+    "WEB-ORDER-01-C02",
+    "WEB-ORDER-01-C03",
+    "WEB-ORDER-01-C04",
+    "WEB-PAYRET-01-C01",
+    "WEB-PAYRET-01-C02",
+    "WEB-PHONE-01-C01",
+    "WEB-PHONE-01-C02",
+    "WEB-PHONE-01-C03",
+    "WEB-PHONE-01-C04",
+    "WEB-PRODUCT-01-C01",
+    "WEB-PRODUCT-01-C02",
+    "WEB-PRODUCT-01-C03",
+    "WEB-PRODUCT-01-C06",
+    "WEB-PRODUCT-01-C07",
+    "WEB-PRODUCT-01-C08",
+    "WEB-PRODUCT-01-C09",
+    "WEB-PRODUCT-01-C10",
+    "WEB-PRODUCT-01-C11",
+    "WEB-REALNAME-01-C01",
+    "WEB-REALNAME-01-C02",
+    "WEB-REALNAME-02-C01",
+    "WEB-REALNAME-02-C02",
+    "WEB-RESULT-01-C01",
+    "WEB-RESULT-01-C02",
+    "WEB-RESULT-01-C03",
+    "WEB-RESULT-01-C04",
+    "WEB-SEARCH-01-C01",
+    "WEB-SEARCH-01-C02",
+    "WEB-SEARCH-01-C03",
+    "WEB-SEARCH-01-C04",
+    "WEB-SEARCH-01-C05",
+    "WEB-SEARCH-01-C06"
+  ],
+  "diagram_count": 36,
+  "diagrams": [
+    {
+      "id": "FL-BROWSE-001",
+      "title": "2.1 FL-BROWSE-001 免登录浏览（首页→排序→搜索→详情）",
+      "type": null,
+      "lines": 55,
+      "chars": 1404,
+      "svg_chars": 24028
+    },
+    {
+      "id": "FL-SEARCH-001",
+      "title": "2.2 FL-SEARCH-001 搜索（默认页→提交→结果→继续加载/失败）",
+      "type": null,
+      "lines": 49,
+      "chars": 1220,
+      "svg_chars": 21030
+    },
+    {
+      "id": "FL-AUTH-001",
+      "title": "2.3 FL-AUTH-001 首次进入实名提醒（状态判定→按钮→关闭/跳转→返回重查）",
+      "type": null,
+      "lines": 38,
+      "chars": 1067,
+      "svg_chars": 14999
+    },
+    {
+      "id": "FL-AUTH-002",
+      "title": "2.4 FL-AUTH-002 购买时实名衔接（未实名→说明弹层→暂不认证/去认证→返回重查）",
+      "type": null,
+      "lines": 35,
+      "chars": 925,
+      "svg_chars": 13726
+    },
+    {
+      "id": "FL-BUY-001",
+      "title": "2.5 FL-BUY-001 购买主流程（与 PRD 5.1 主流程图一致）",
+      "type": null,
+      "lines": 53,
+      "chars": 1352,
+      "svg_chars": 22162
+    },
+    {
+      "id": "FL-PHONE-001",
+      "title": "2.6 FL-PHONE-001 手机号绑定衔接",
+      "type": null,
+      "lines": 29,
+      "chars": 812,
+      "svg_chars": 10146
+    },
+    {
+      "id": "FL-CHECKOUT-001",
+      "title": "2.7 FL-CHECKOUT-001 未支付订单恢复与继续支付",
+      "type": null,
+      "lines": 50,
+      "chars": 1416,
+      "svg_chars": 21241
+    },
+    {
+      "id": "FL-PAY-001",
+      "title": "2.8 FL-PAY-001 支付发起与返回确认（PAY-07～10 与结果去向）",
+      "type": null,
+      "lines": 46,
+      "chars": 1322,
+      "svg_chars": 19329
+    },
+    {
+      "id": "FL-DELIVER-001",
+      "title": "2.9 FL-DELIVER-001 口令码自动交付与站内信通知",
+      "type": null,
+      "lines": 41,
+      "chars": 1298,
+      "svg_chars": 16130
+    },
+    {
+      "id": "FL-DELIVER-002",
+      "title": "2.10 FL-DELIVER-002 好友赠送人工交付（工作时段规则与未定时间边界）",
+      "type": null,
+      "lines": 45,
+      "chars": 1380,
+      "svg_chars": 18548
+    },
+    {
+      "id": "FL-ORDER-001",
+      "title": "2.11 FL-ORDER-001 订单查看与状态恢复",
+      "type": null,
+      "lines": 56,
+      "chars": 1405,
+      "svg_chars": 24140
+    },
+    {
+      "id": "FL-SERVICE-001",
+      "title": "2.12 FL-SERVICE-001 企业微信客服与后台售后",
+      "type": null,
+      "lines": 41,
+      "chars": 1126,
+      "svg_chars": 15779
+    },
+    {
+      "id": "FL-ADM-HOME-001",
+      "title": "2.13 FL-ADM-HOME-001 首页配置发布",
+      "type": null,
+      "lines": 39,
+      "chars": 1020,
+      "svg_chars": 15007
+    },
+    {
+      "id": "FL-ADM-GOODS-001",
+      "title": "2.14 FL-ADM-GOODS-001 商品与规格维护",
+      "type": null,
+      "lines": 42,
+      "chars": 1072,
+      "svg_chars": 16323
+    },
+    {
+      "id": "FL-ADM-ORDER-001",
+      "title": "2.15 FL-ADM-ORDER-001 后台订单处理与导出",
+      "type": null,
+      "lines": 55,
+      "chars": 1302,
+      "svg_chars": 22903
+    },
+    {
+      "id": "FL-ADM-GIFT-001",
+      "title": "2.16 FL-ADM-GIFT-001 赠送批次处理（导出→人工赠送→核实→完成确认）",
+      "type": null,
+      "lines": 33,
+      "chars": 952,
+      "svg_chars": 11968
+    },
+    {
+      "id": "FL-ADM-CODE-001",
+      "title": "2.17 FL-ADM-CODE-001 人工补发",
+      "type": null,
+      "lines": 45,
+      "chars": 1268,
+      "svg_chars": 18090
+    },
+    {
+      "id": "FL-ADM-REFUND-001",
+      "title": "2.18 FL-ADM-REFUND-001 特殊退款",
+      "type": null,
+      "lines": 36,
+      "chars": 1067,
+      "svg_chars": 13235
+    },
+    {
+      "id": "FL-ADM-NOTIFY-001",
+      "title": "2.19 FL-ADM-NOTIFY-001 站内信任务与失败重试",
+      "type": null,
+      "lines": 33,
+      "chars": 923,
+      "svg_chars": 12094
+    },
+    {
+      "id": "FL-ADM-AGREE-001",
+      "title": "2.20 FL-ADM-AGREE-001 协议版本发布",
+      "type": null,
+      "lines": 30,
+      "chars": 832,
+      "svg_chars": 10071
+    },
+    {
+      "id": "FL-ADM-SUPPLY-001",
+      "title": "2.21 FL-ADM-SUPPLY-001 上游自动发货与人工核查",
+      "type": null,
+      "lines": 31,
+      "chars": 549,
+      "svg_chars": 14274
+    },
+    {
+      "id": "SM-PAY-001",
+      "title": "3.1 SM-PAY-001 支付",
+      "type": null,
+      "lines": 27,
+      "chars": 902,
+      "svg_chars": 9568
+    },
+    {
+      "id": "SM-CODE-001",
+      "title": "3.2 SM-CODE-001 口令码交付",
+      "type": null,
+      "lines": 25,
+      "chars": 833,
+      "svg_chars": 7479
+    },
+    {
+      "id": "SM-GIFT-001",
+      "title": "3.3 SM-GIFT-001 好友赠送",
+      "type": null,
+      "lines": 25,
+      "chars": 828,
+      "svg_chars": 8031
+    },
+    {
+      "id": "SM-AFTER-001",
+      "title": "3.4 SM-AFTER-001 售后",
+      "type": null,
+      "lines": 21,
+      "chars": 635,
+      "svg_chars": 5491
+    },
+    {
+      "id": "SM-REFUND-001",
+      "title": "3.5 SM-REFUND-001 退款单",
+      "type": null,
+      "lines": 25,
+      "chars": 874,
+      "svg_chars": 7860
+    },
+    {
+      "id": "SM-NOTIFY-001",
+      "title": "3.6 SM-NOTIFY-001 站内信任务",
+      "type": null,
+      "lines": 28,
+      "chars": 952,
+      "svg_chars": 9344
+    },
+    {
+      "id": "SEQ-AUTH-001",
+      "title": "6.1 SEQ-AUTH-001 登录与实名衔接",
+      "type": null,
+      "lines": 63,
+      "chars": 1189,
+      "svg_chars": 25285
+    },
+    {
+      "id": "SEQ-BUY-001",
+      "title": "6.2 SEQ-BUY-001 下单与支付",
+      "type": null,
+      "lines": 89,
+      "chars": 1729,
+      "svg_chars": 36436
+    },
+    {
+      "id": "SEQ-PAY-001",
+      "title": "6.3 SEQ-PAY-001 支付返回与结果确认（12项说明第9项）",
+      "type": null,
+      "lines": 56,
+      "chars": 1148,
+      "svg_chars": 20804
+    },
+    {
+      "id": "SEQ-CODE-001",
+      "title": "6.4 SEQ-CODE-001 口令码自动交付与站内信通知",
+      "type": null,
+      "lines": 55,
+      "chars": 1180,
+      "svg_chars": 23978
+    },
+    {
+      "id": "SEQ-GIFT-001",
+      "title": "6.5 SEQ-GIFT-001 好友赠送人工交付",
+      "type": null,
+      "lines": 48,
+      "chars": 1179,
+      "svg_chars": 20535
+    },
+    {
+      "id": "SEQ-NOTIFY-001",
+      "title": "6.6 SEQ-NOTIFY-001 站内信发送与失败核查重试",
+      "type": null,
+      "lines": 54,
+      "chars": 1124,
+      "svg_chars": 22590
+    },
+    {
+      "id": "SEQ-ADM-001",
+      "title": "6.7 SEQ-ADM-001 后台订单查询与导出",
+      "type": null,
+      "lines": 47,
+      "chars": 911,
+      "svg_chars": 17658
+    },
+    {
+      "id": "SEQ-ADM-002",
+      "title": "6.8 SEQ-ADM-002 人工补发",
+      "type": null,
+      "lines": 46,
+      "chars": 1005,
+      "svg_chars": 18874
+    },
+    {
+      "id": "SEQ-ADM-003",
+      "title": "6.9 SEQ-ADM-003 特殊退款",
+      "type": null,
+      "lines": 61,
+      "chars": 1245,
+      "svg_chars": 25629
+    }
+  ],
+  "embedded_docs": [
+    {
+      "file": "00_交付说明与变更记录.md",
+      "external_exists": true,
+      "embedded_chars": 80608,
+      "external_chars": 80306,
+      "normalized_match": true,
+      "embedded_sha256": "ef16b7a47aacde88f7740b88381db65ae8210f9521cec8b9a4dce0d2308df829",
+      "external_sha256": "ef16b7a47aacde88f7740b88381db65ae8210f9521cec8b9a4dce0d2308df829"
+    },
+    {
+      "file": "01_页面与状态说明.md",
+      "external_exists": true,
+      "embedded_chars": 84530,
+      "external_chars": 83711,
+      "normalized_match": true,
+      "embedded_sha256": "38bcd7f2521996efebb504b8dbac9484eb83147f256a8e0582cd86df21da9186",
+      "external_sha256": "38bcd7f2521996efebb504b8dbac9484eb83147f256a8e0582cd86df21da9186"
+    },
+    {
+      "file": "03_组件级文档.md",
+      "external_exists": true,
+      "embedded_chars": 803206,
+      "external_chars": 789670,
+      "normalized_match": true,
+      "embedded_sha256": "d7e59736d1a468bb37290e8b5872592cc946a25e809fc25676c4562becd05cd0",
+      "external_sha256": "d7e59736d1a468bb37290e8b5872592cc946a25e809fc25676c4562becd05cd0"
+    },
+    {
+      "file": "04_业务流程与异常规则.md",
+      "external_exists": true,
+      "embedded_chars": 137160,
+      "external_chars": 134964,
+      "normalized_match": true,
+      "embedded_sha256": "27fa286f62aa24c989f942a48841021e2fd03a12c2526d3775ed52b2635a7144",
+      "external_sha256": "27fa286f62aa24c989f942a48841021e2fd03a12c2526d3775ed52b2635a7144"
+    },
+    {
+      "file": "05_接口数据与权限说明.md",
+      "external_exists": true,
+      "embedded_chars": 202467,
+      "external_chars": 199355,
+      "normalized_match": true,
+      "embedded_sha256": "27489df873d624d038081571f1f6d041b053fc3ceb13aff024120134253edb0d",
+      "external_sha256": "27489df873d624d038081571f1f6d041b053fc3ceb13aff024120134253edb0d"
+    },
+    {
+      "file": "06_埋点文档.md",
+      "external_exists": true,
+      "embedded_chars": 64605,
+      "external_chars": 63892,
+      "normalized_match": true,
+      "embedded_sha256": "6cc580d938c00e6646f4bf346973dd49eba256bc6e613e9fa4bdd52c4c694aa7",
+      "external_sha256": "6cc580d938c00e6646f4bf346973dd49eba256bc6e613e9fa4bdd52c4c694aa7"
+    },
+    {
+      "file": "07_测试用例.md",
+      "external_exists": true,
+      "embedded_chars": 135574,
+      "external_chars": 133179,
+      "normalized_match": true,
+      "embedded_sha256": "7b363f986554d74513757f459639ce7429158bf2b16a7953b045b4b3ba5d85dc",
+      "external_sha256": "7b363f986554d74513757f459639ce7429158bf2b16a7953b045b4b3ba5d85dc"
+    },
+    {
+      "file": "08_验证记录与验收映射.md",
+      "external_exists": true,
+      "embedded_chars": 191882,
+      "external_chars": 189596,
+      "normalized_match": true,
+      "embedded_sha256": "eaea7f2e7a18f6a6525e6bdeab40b60796b2b40d67e517c40c7fcb4b9c41d166",
+      "external_sha256": "eaea7f2e7a18f6a6525e6bdeab40b60796b2b40d67e517c40c7fcb4b9c41d166"
+    },
+    {
+      "file": "09_待确认事项与设计决策.md",
+      "external_exists": true,
+      "embedded_chars": 23855,
+      "external_chars": 23621,
+      "normalized_match": true,
+      "embedded_sha256": "387f13ce999266aee9f78d928440da0ed589f400fb890bc98137b82afd15995e",
+      "external_sha256": "387f13ce999266aee9f78d928440da0ed589f400fb890bc98137b82afd15995e"
+    }
+  ]
+}

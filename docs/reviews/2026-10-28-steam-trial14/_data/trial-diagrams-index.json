@@ -1,0 +1,137 @@
+[
+  {
+    "id": "FL-ORDER-001",
+    "title": "购买与支付主流程",
+    "from": "04",
+    "kind": "FL",
+    "svg_xml": true,
+    "svg_texts": 51,
+    "empty_texts": 0
+  },
+  {
+    "id": "FL-GIFT-001",
+    "title": "好友赠送人工交付",
+    "from": "04",
+    "kind": "FL",
+    "svg_xml": true,
+    "svg_texts": 20,
+    "empty_texts": 0
+  },
+  {
+    "id": "FL-REFUND-001",
+    "title": "退款闭集与失败处理",
+    "from": "04",
+    "kind": "FL",
+    "svg_xml": true,
+    "svg_texts": 25,
+    "empty_texts": 0
+  },
+  {
+    "id": "FL-PAYCHECK-001",
+    "title": "支付确认中核查",
+    "from": "04",
+    "kind": "FL",
+    "svg_xml": true,
+    "svg_texts": 18,
+    "empty_texts": 0
+  },
+  {
+    "id": "FL-SELECT-001",
+    "title": "选品、内容与发布",
+    "from": "04",
+    "kind": "FL",
+    "svg_xml": true,
+    "svg_texts": 16,
+    "empty_texts": 0
+  },
+  {
+    "id": "SM-PAY-001",
+    "title": "订单支付状态",
+    "from": "04",
+    "kind": "SM",
+    "svg_xml": true,
+    "svg_texts": 8,
+    "empty_texts": 0
+  },
+  {
+    "id": "SM-DELIVERY-001",
+    "title": "口令码交付状态",
+    "from": "04",
+    "kind": "SM",
+    "svg_xml": true,
+    "svg_texts": 8,
+    "empty_texts": 0
+  },
+  {
+    "id": "SM-GIFT-001",
+    "title": "好友赠送处理状态",
+    "from": "04",
+    "kind": "SM",
+    "svg_xml": true,
+    "svg_texts": 8,
+    "empty_texts": 0
+  },
+  {
+    "id": "SM-REFUND-001",
+    "title": "退款单状态",
+    "from": "04",
+    "kind": "SM",
+    "svg_xml": true,
+    "svg_texts": 8,
+    "empty_texts": 0
+  },
+  {
+    "id": "SM-NOTIFY-001",
+    "title": "站内信任务状态",
+    "from": "04",
+    "kind": "SM",
+    "svg_xml": true,
+    "svg_texts": 10,
+    "empty_texts": 0
+  },
+  {
+    "id": "SM-PRODUCT-001",
+    "title": "商品选品与发布状态",
+    "from": "04",
+    "kind": "SM",
+    "svg_xml": true,
+    "svg_texts": 12,
+    "empty_texts": 0
+  },
+  {
+    "id": "SEQ-PAY-001",
+    "title": "下单与支付结果确认",
+    "from": "05",
+    "kind": "SEQ",
+    "svg_xml": true,
+    "svg_texts": 20,
+    "empty_texts": 0
+  },
+  {
+    "id": "SEQ-CODE-001",
+    "title": "支付后自动取码与重试",
+    "from": "05",
+    "kind": "SEQ",
+    "svg_xml": true,
+    "svg_texts": 14,
+    "empty_texts": 0
+  },
+  {
+    "id": "SEQ-NOTIFY-001",
+    "title": "站内信发送与重试",
+    "from": "05",
+    "kind": "SEQ",
+    "svg_xml": true,
+    "svg_texts": 12,
+    "empty_texts": 0
+  },
+  {
+    "id": "SEQ-REFUND-001",
+    "title": "退款发起与失败重试",
+    "from": "05",
+    "kind": "SEQ",
+    "svg_xml": true,
+    "svg_texts": 16,
+    "empty_texts": 0
+  }
+]

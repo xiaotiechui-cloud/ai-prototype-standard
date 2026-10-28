@@ -1,0 +1,1850 @@
+[
+  {
+    "id": "H5-HOME-01-C01",
+    "name": "顶部标题栏",
+    "def": "COM-CLIENT-C08",
+    "sections": 10
+  },
+  {
+    "id": "H5-HOME-01-C02",
+    "name": "广告位轮播/单图",
+    "def": "COM-CLIENT-C15",
+    "sections": 10
+  },
+  {
+    "id": "H5-HOME-01-C03",
+    "name": "首页快捷导航",
+    "def": "COM-CLIENT-C16",
+    "sections": 10
+  },
+  {
+    "id": "H5-HOME-01-C04",
+    "name": "排序/筛选栏",
+    "def": "COM-CLIENT-C05",
+    "sections": 10
+  },
+  {
+    "id": "H5-HOME-01-C05",
+    "name": "商品卡片列表",
+    "def": "COM-CLIENT-C06",
+    "sections": 10
+  },
+  {
+    "id": "H5-HOME-01-C06",
+    "name": "商品/内容卡片",
+    "def": "COM-CLIENT-C03",
+    "sections": 10
+  },
+  {
+    "id": "H5-HOME-01-C07",
+    "name": "加载/空/失败状态区",
+    "def": "COM-CLIENT-C09",
+    "sections": 10
+  },
+  {
+    "id": "H5-HOME-01-C08",
+    "name": "客服入口",
+    "def": "COM-CLIENT-C07",
+    "sections": 10
+  },
+  {
+    "id": "H5-HOME-01-C09",
+    "name": "底部标签栏",
+    "def": "COM-CLIENT-C14",
+    "sections": 10
+  },
+  {
+    "id": "H5-SEARCH-01-C01",
+    "name": "顶部标题栏",
+    "def": "COM-CLIENT-C08",
+    "sections": 10
+  },
+  {
+    "id": "H5-SEARCH-01-C02",
+    "name": "搜索输入框",
+    "def": "COM-CLIENT-C01",
+    "sections": 10
+  },
+  {
+    "id": "H5-SEARCH-01-C03",
+    "name": "搜索提交动作",
+    "def": "COM-CLIENT-C02",
+    "sections": 10
+  },
+  {
+    "id": "H5-SEARCH-01-C04",
+    "name": "搜索发现与热门区块",
+    "def": "COM-CLIENT-C39",
+    "sections": 10
+  },
+  {
+    "id": "H5-SEARCH-01-C05",
+    "name": "加载/空/失败状态区",
+    "def": "COM-CLIENT-C09",
+    "sections": 10
+  },
+  {
+    "id": "H5-SEARCH-02-C01",
+    "name": "顶部标题栏",
+    "def": "COM-CLIENT-C08",
+    "sections": 10
+  },
+  {
+    "id": "H5-SEARCH-02-C02",
+    "name": "搜索输入框",
+    "def": "COM-CLIENT-C01",
+    "sections": 10
+  },
+  {
+    "id": "H5-SEARCH-02-C03",
+    "name": "搜索提交动作",
+    "def": "COM-CLIENT-C02",
+    "sections": 10
+  },
+  {
+    "id": "H5-SEARCH-02-C04",
+    "name": "排序/筛选栏",
+    "def": "COM-CLIENT-C05",
+    "sections": 10
+  },
+  {
+    "id": "H5-SEARCH-02-C05",
+    "name": "商品卡片列表",
+    "def": "COM-CLIENT-C06",
+    "sections": 10
+  },
+  {
+    "id": "H5-SEARCH-02-C06",
+    "name": "商品/内容卡片",
+    "def": "COM-CLIENT-C03",
+    "sections": 10
+  },
+  {
+    "id": "H5-SEARCH-02-C07",
+    "name": "加载/空/失败状态区",
+    "def": "COM-CLIENT-C09",
+    "sections": 10
+  },
+  {
+    "id": "H5-PRODUCT-01-C01",
+    "name": "顶部标题栏",
+    "def": "COM-CLIENT-C08",
+    "sections": 10
+  },
+  {
+    "id": "H5-PRODUCT-01-C02",
+    "name": "媒体图集",
+    "def": "COM-CLIENT-C18",
+    "sections": 10
+  },
+  {
+    "id": "H5-PRODUCT-01-C03",
+    "name": "商品信息摘要",
+    "def": "COM-CLIENT-C40",
+    "sections": 10
+  },
+  {
+    "id": "H5-PRODUCT-01-C04",
+    "name": "长文折叠区",
+    "def": "COM-CLIENT-C19",
+    "sections": 10
+  },
+  {
+    "id": "H5-PRODUCT-01-C05",
+    "name": "商品主操作栏",
+    "def": "COM-CLIENT-C17",
+    "sections": 10
+  },
+  {
+    "id": "H5-PRODUCT-01-C06",
+    "name": "页面提示条",
+    "def": "COM-CLIENT-C36",
+    "sections": 10
+  },
+  {
+    "id": "H5-PRODUCT-01-C07",
+    "name": "客服入口",
+    "def": "COM-CLIENT-C07",
+    "sections": 10
+  },
+  {
+    "id": "H5-BUY-01-C01",
+    "name": "商品明细卡",
+    "def": "COM-CLIENT-C10",
+    "sections": 10
+  },
+  {
+    "id": "H5-BUY-01-C02",
+    "name": "规格/交付方式选择",
+    "def": "COM-CLIENT-C20",
+    "sections": 10
+  },
+  {
+    "id": "H5-BUY-01-C03",
+    "name": "好友链接输入",
+    "def": "COM-CLIENT-C23",
+    "sections": 10
+  },
+  {
+    "id": "H5-BUY-01-C04",
+    "name": "支付方式选择",
+    "def": "COM-CLIENT-C22",
+    "sections": 10
+  },
+  {
+    "id": "H5-BUY-01-C05",
+    "name": "协议勾选与查看",
+    "def": "COM-CLIENT-C21",
+    "sections": 10
+  },
+  {
+    "id": "H5-BUY-01-C06",
+    "name": "金额摘要",
+    "def": "COM-CLIENT-C33",
+    "sections": 10
+  },
+  {
+    "id": "H5-BUY-01-C07",
+    "name": "页面提示条",
+    "def": "COM-CLIENT-C36",
+    "sections": 10
+  },
+  {
+    "id": "H5-BUY-01-C08",
+    "name": "购买须知弹窗",
+    "def": "COM-CLIENT-C41",
+    "sections": 10
+  },
+  {
+    "id": "H5-CHECKOUT-01-C01",
+    "name": "顶部标题栏",
+    "def": "COM-CLIENT-C08",
+    "sections": 10
+  },
+  {
+    "id": "H5-CHECKOUT-01-C02",
+    "name": "商品明细卡",
+    "def": "COM-CLIENT-C10",
+    "sections": 10
+  },
+  {
+    "id": "H5-CHECKOUT-01-C03",
+    "name": "金额摘要",
+    "def": "COM-CLIENT-C33",
+    "sections": 10
+  },
+  {
+    "id": "H5-CHECKOUT-01-C04",
+    "name": "协议勾选与查看",
+    "def": "COM-CLIENT-C21",
+    "sections": 10
+  },
+  {
+    "id": "H5-CHECKOUT-01-C05",
+    "name": "页面提示条",
+    "def": "COM-CLIENT-C36",
+    "sections": 10
+  },
+  {
+    "id": "H5-CHECKOUT-01-C06",
+    "name": "商品主操作栏",
+    "def": "COM-CLIENT-C17",
+    "sections": 10
+  },
+  {
+    "id": "H5-PAY-01-C01",
+    "name": "支付收银台（模拟）",
+    "def": "COM-CLIENT-C38",
+    "sections": 10
+  },
+  {
+    "id": "H5-PAY-01-C02",
+    "name": "金额摘要",
+    "def": "COM-CLIENT-C33",
+    "sections": 10
+  },
+  {
+    "id": "H5-PAY-01-C03",
+    "name": "页面提示条",
+    "def": "COM-CLIENT-C36",
+    "sections": 10
+  },
+  {
+    "id": "H5-PAYRET-01-C01",
+    "name": "支付结果询问",
+    "def": "COM-CLIENT-C24",
+    "sections": 10
+  },
+  {
+    "id": "H5-PAYRET-01-C02",
+    "name": "页面提示条",
+    "def": "COM-CLIENT-C36",
+    "sections": 10
+  },
+  {
+    "id": "H5-PAYRET-01-C03",
+    "name": "加载/空/失败状态区",
+    "def": "COM-CLIENT-C09",
+    "sections": 10
+  },
+  {
+    "id": "H5-RESULT-01-C01",
+    "name": "顶部标题栏",
+    "def": "COM-CLIENT-C08",
+    "sections": 10
+  },
+  {
+    "id": "H5-RESULT-01-C02",
+    "name": "订单状态摘要",
+    "def": "COM-CLIENT-C28",
+    "sections": 10
+  },
+  {
+    "id": "H5-RESULT-01-C03",
+    "name": "口令码交付卡",
+    "def": "COM-CLIENT-C25",
+    "sections": 10
+  },
+  {
+    "id": "H5-RESULT-01-C04",
+    "name": "赠送进度卡",
+    "def": "COM-CLIENT-C26",
+    "sections": 10
+  },
+  {
+    "id": "H5-RESULT-01-C05",
+    "name": "退款状态卡",
+    "def": "COM-CLIENT-C27",
+    "sections": 10
+  },
+  {
+    "id": "H5-RESULT-01-C06",
+    "name": "订单操作栏",
+    "def": "COM-CLIENT-C37",
+    "sections": 10
+  },
+  {
+    "id": "H5-RESULT-01-C07",
+    "name": "客服入口",
+    "def": "COM-CLIENT-C07",
+    "sections": 10
+  },
+  {
+    "id": "H5-ORDERS-01-C01",
+    "name": "顶部标题栏",
+    "def": "COM-CLIENT-C08",
+    "sections": 10
+  },
+  {
+    "id": "H5-ORDERS-01-C02",
+    "name": "状态筛选页签",
+    "def": "COM-CLIENT-C11",
+    "sections": 10
+  },
+  {
+    "id": "H5-ORDERS-01-C03",
+    "name": "订单卡片列表",
+    "def": "COM-CLIENT-C12",
+    "sections": 10
+  },
+  {
+    "id": "H5-ORDERS-01-C04",
+    "name": "加载/空/失败状态区",
+    "def": "COM-CLIENT-C09",
+    "sections": 10
+  },
+  {
+    "id": "H5-ORDERS-01-C05",
+    "name": "登录失效引导",
+    "def": "COM-CLIENT-C13",
+    "sections": 10
+  },
+  {
+    "id": "H5-ORDERS-01-C06",
+    "name": "底部标签栏",
+    "def": "COM-CLIENT-C14",
+    "sections": 10
+  },
+  {
+    "id": "H5-ORDER-01-C01",
+    "name": "顶部标题栏",
+    "def": "COM-CLIENT-C08",
+    "sections": 10
+  },
+  {
+    "id": "H5-ORDER-01-C02",
+    "name": "订单状态摘要",
+    "def": "COM-CLIENT-C28",
+    "sections": 10
+  },
+  {
+    "id": "H5-ORDER-01-C03",
+    "name": "商品明细卡",
+    "def": "COM-CLIENT-C10",
+    "sections": 10
+  },
+  {
+    "id": "H5-ORDER-01-C04",
+    "name": "口令码交付卡",
+    "def": "COM-CLIENT-C25",
+    "sections": 10
+  },
+  {
+    "id": "H5-ORDER-01-C05",
+    "name": "赠送进度卡",
+    "def": "COM-CLIENT-C26",
+    "sections": 10
+  },
+  {
+    "id": "H5-ORDER-01-C06",
+    "name": "退款状态卡",
+    "def": "COM-CLIENT-C27",
+    "sections": 10
+  },
+  {
+    "id": "H5-ORDER-01-C07",
+    "name": "订单操作栏",
+    "def": "COM-CLIENT-C37",
+    "sections": 10
+  },
+  {
+    "id": "H5-ORDER-01-C08",
+    "name": "客服入口",
+    "def": "COM-CLIENT-C07",
+    "sections": 10
+  },
+  {
+    "id": "H5-PROFILE-01-C01",
+    "name": "个人中心信息卡",
+    "def": "COM-CLIENT-C42",
+    "sections": 10
+  },
+  {
+    "id": "H5-PROFILE-01-C02",
+    "name": "客服入口",
+    "def": "COM-CLIENT-C07",
+    "sections": 10
+  },
+  {
+    "id": "H5-PROFILE-01-C03",
+    "name": "底部标签栏",
+    "def": "COM-CLIENT-C14",
+    "sections": 10
+  },
+  {
+    "id": "H5-SERVICE-01-C01",
+    "name": "顶部标题栏",
+    "def": "COM-CLIENT-C08",
+    "sections": 10
+  },
+  {
+    "id": "H5-SERVICE-01-C02",
+    "name": "客服渠道卡",
+    "def": "COM-CLIENT-C29",
+    "sections": 10
+  },
+  {
+    "id": "H5-SERVICE-01-C03",
+    "name": "加载/空/失败状态区",
+    "def": "COM-CLIENT-C09",
+    "sections": 10
+  },
+  {
+    "id": "H5-AGREEMENT-01-C01",
+    "name": "顶部标题栏",
+    "def": "COM-CLIENT-C08",
+    "sections": 10
+  },
+  {
+    "id": "H5-AGREEMENT-01-C02",
+    "name": "协议正文",
+    "def": "COM-CLIENT-C43",
+    "sections": 10
+  },
+  {
+    "id": "H5-AGREEMENT-01-C03",
+    "name": "页面提示条",
+    "def": "COM-CLIENT-C36",
+    "sections": 10
+  },
+  {
+    "id": "H5-AUTH-01-C01",
+    "name": "实名认证引导卡",
+    "def": "COM-CLIENT-C30",
+    "sections": 10
+  },
+  {
+    "id": "H5-PHONE-01-C01",
+    "name": "顶部标题栏",
+    "def": "COM-CLIENT-C08",
+    "sections": 10
+  },
+  {
+    "id": "H5-PHONE-01-C02",
+    "name": "手机号绑定表单",
+    "def": "COM-CLIENT-C31",
+    "sections": 10
+  },
+  {
+    "id": "H5-PHONE-01-C03",
+    "name": "页面提示条",
+    "def": "COM-CLIENT-C36",
+    "sections": 10
+  },
+  {
+    "id": "H5-NOTICE-01-C01",
+    "name": "首次进入提醒",
+    "def": "COM-CLIENT-C32",
+    "sections": 10
+  },
+  {
+    "id": "H5-NOTICE-01-C02",
+    "name": "页面提示条",
+    "def": "COM-CLIENT-C36",
+    "sections": 10
+  },
+  {
+    "id": "WEB-HOME-01-C01",
+    "name": "PC 站点顶栏",
+    "def": "COM-CLIENT-C34",
+    "sections": 10
+  },
+  {
+    "id": "WEB-HOME-01-C02",
+    "name": "广告位轮播/单图",
+    "def": "COM-CLIENT-C15",
+    "sections": 10
+  },
+  {
+    "id": "WEB-HOME-01-C03",
+    "name": "首页快捷导航",
+    "def": "COM-CLIENT-C16",
+    "sections": 10
+  },
+  {
+    "id": "WEB-HOME-01-C04",
+    "name": "排序/筛选栏",
+    "def": "COM-CLIENT-C05",
+    "sections": 10
+  },
+  {
+    "id": "WEB-HOME-01-C05",
+    "name": "PC 商品网格",
+    "def": "COM-CLIENT-C35",
+    "sections": 10
+  },
+  {
+    "id": "WEB-HOME-01-C06",
+    "name": "商品/内容卡片",
+    "def": "COM-CLIENT-C03",
+    "sections": 10
+  },
+  {
+    "id": "WEB-HOME-01-C07",
+    "name": "加载/空/失败状态区",
+    "def": "COM-CLIENT-C09",
+    "sections": 10
+  },
+  {
+    "id": "WEB-HOME-01-C08",
+    "name": "客服入口",
+    "def": "COM-CLIENT-C07",
+    "sections": 10
+  },
+  {
+    "id": "WEB-SEARCH-01-C01",
+    "name": "PC 站点顶栏",
+    "def": "COM-CLIENT-C34",
+    "sections": 10
+  },
+  {
+    "id": "WEB-SEARCH-01-C02",
+    "name": "搜索输入框",
+    "def": "COM-CLIENT-C01",
+    "sections": 10
+  },
+  {
+    "id": "WEB-SEARCH-01-C03",
+    "name": "搜索提交动作",
+    "def": "COM-CLIENT-C02",
+    "sections": 10
+  },
+  {
+    "id": "WEB-SEARCH-01-C04",
+    "name": "搜索发现与热门区块",
+    "def": "COM-CLIENT-C39",
+    "sections": 10
+  },
+  {
+    "id": "WEB-SEARCH-01-C05",
+    "name": "排序/筛选栏",
+    "def": "COM-CLIENT-C05",
+    "sections": 10
+  },
+  {
+    "id": "WEB-SEARCH-01-C06",
+    "name": "PC 商品网格",
+    "def": "COM-CLIENT-C35",
+    "sections": 10
+  },
+  {
+    "id": "WEB-SEARCH-01-C07",
+    "name": "商品/内容卡片",
+    "def": "COM-CLIENT-C03",
+    "sections": 10
+  },
+  {
+    "id": "WEB-SEARCH-01-C08",
+    "name": "加载/空/失败状态区",
+    "def": "COM-CLIENT-C09",
+    "sections": 10
+  },
+  {
+    "id": "WEB-PRODUCT-01-C01",
+    "name": "PC 站点顶栏",
+    "def": "COM-CLIENT-C34",
+    "sections": 10
+  },
+  {
+    "id": "WEB-PRODUCT-01-C02",
+    "name": "媒体图集",
+    "def": "COM-CLIENT-C18",
+    "sections": 10
+  },
+  {
+    "id": "WEB-PRODUCT-01-C03",
+    "name": "商品信息摘要",
+    "def": "COM-CLIENT-C40",
+    "sections": 10
+  },
+  {
+    "id": "WEB-PRODUCT-01-C04",
+    "name": "长文折叠区",
+    "def": "COM-CLIENT-C19",
+    "sections": 10
+  },
+  {
+    "id": "WEB-PRODUCT-01-C05",
+    "name": "商品主操作栏",
+    "def": "COM-CLIENT-C17",
+    "sections": 10
+  },
+  {
+    "id": "WEB-PRODUCT-01-C06",
+    "name": "页面提示条",
+    "def": "COM-CLIENT-C36",
+    "sections": 10
+  },
+  {
+    "id": "WEB-PRODUCT-01-C07",
+    "name": "客服入口",
+    "def": "COM-CLIENT-C07",
+    "sections": 10
+  },
+  {
+    "id": "WEB-BUY-01-C01",
+    "name": "商品明细卡",
+    "def": "COM-CLIENT-C10",
+    "sections": 10
+  },
+  {
+    "id": "WEB-BUY-01-C02",
+    "name": "规格/交付方式选择",
+    "def": "COM-CLIENT-C20",
+    "sections": 10
+  },
+  {
+    "id": "WEB-BUY-01-C03",
+    "name": "好友链接输入",
+    "def": "COM-CLIENT-C23",
+    "sections": 10
+  },
+  {
+    "id": "WEB-BUY-01-C04",
+    "name": "支付方式选择",
+    "def": "COM-CLIENT-C22",
+    "sections": 10
+  },
+  {
+    "id": "WEB-BUY-01-C05",
+    "name": "协议勾选与查看",
+    "def": "COM-CLIENT-C21",
+    "sections": 10
+  },
+  {
+    "id": "WEB-BUY-01-C06",
+    "name": "金额摘要",
+    "def": "COM-CLIENT-C33",
+    "sections": 10
+  },
+  {
+    "id": "WEB-BUY-01-C07",
+    "name": "页面提示条",
+    "def": "COM-CLIENT-C36",
+    "sections": 10
+  },
+  {
+    "id": "WEB-BUY-01-C08",
+    "name": "购买须知弹窗",
+    "def": "COM-CLIENT-C41",
+    "sections": 10
+  },
+  {
+    "id": "WEB-CHECKOUT-01-C01",
+    "name": "PC 站点顶栏",
+    "def": "COM-CLIENT-C34",
+    "sections": 10
+  },
+  {
+    "id": "WEB-CHECKOUT-01-C02",
+    "name": "商品明细卡",
+    "def": "COM-CLIENT-C10",
+    "sections": 10
+  },
+  {
+    "id": "WEB-CHECKOUT-01-C03",
+    "name": "金额摘要",
+    "def": "COM-CLIENT-C33",
+    "sections": 10
+  },
+  {
+    "id": "WEB-CHECKOUT-01-C04",
+    "name": "协议勾选与查看",
+    "def": "COM-CLIENT-C21",
+    "sections": 10
+  },
+  {
+    "id": "WEB-CHECKOUT-01-C05",
+    "name": "页面提示条",
+    "def": "COM-CLIENT-C36",
+    "sections": 10
+  },
+  {
+    "id": "WEB-CHECKOUT-01-C06",
+    "name": "商品主操作栏",
+    "def": "COM-CLIENT-C17",
+    "sections": 10
+  },
+  {
+    "id": "WEB-PAY-01-C01",
+    "name": "支付收银台（模拟）",
+    "def": "COM-CLIENT-C38",
+    "sections": 10
+  },
+  {
+    "id": "WEB-PAY-01-C02",
+    "name": "金额摘要",
+    "def": "COM-CLIENT-C33",
+    "sections": 10
+  },
+  {
+    "id": "WEB-PAY-01-C03",
+    "name": "页面提示条",
+    "def": "COM-CLIENT-C36",
+    "sections": 10
+  },
+  {
+    "id": "WEB-PAYRET-01-C01",
+    "name": "支付结果询问",
+    "def": "COM-CLIENT-C24",
+    "sections": 10
+  },
+  {
+    "id": "WEB-PAYRET-01-C02",
+    "name": "页面提示条",
+    "def": "COM-CLIENT-C36",
+    "sections": 10
+  },
+  {
+    "id": "WEB-PAYRET-01-C03",
+    "name": "加载/空/失败状态区",
+    "def": "COM-CLIENT-C09",
+    "sections": 10
+  },
+  {
+    "id": "WEB-RESULT-01-C01",
+    "name": "PC 站点顶栏",
+    "def": "COM-CLIENT-C34",
+    "sections": 10
+  },
+  {
+    "id": "WEB-RESULT-01-C02",
+    "name": "订单状态摘要",
+    "def": "COM-CLIENT-C28",
+    "sections": 10
+  },
+  {
+    "id": "WEB-RESULT-01-C03",
+    "name": "口令码交付卡",
+    "def": "COM-CLIENT-C25",
+    "sections": 10
+  },
+  {
+    "id": "WEB-RESULT-01-C04",
+    "name": "赠送进度卡",
+    "def": "COM-CLIENT-C26",
+    "sections": 10
+  },
+  {
+    "id": "WEB-RESULT-01-C05",
+    "name": "退款状态卡",
+    "def": "COM-CLIENT-C27",
+    "sections": 10
+  },
+  {
+    "id": "WEB-RESULT-01-C06",
+    "name": "订单操作栏",
+    "def": "COM-CLIENT-C37",
+    "sections": 10
+  },
+  {
+    "id": "WEB-RESULT-01-C07",
+    "name": "客服入口",
+    "def": "COM-CLIENT-C07",
+    "sections": 10
+  },
+  {
+    "id": "WEB-ORDERS-01-C01",
+    "name": "PC 站点顶栏",
+    "def": "COM-CLIENT-C34",
+    "sections": 10
+  },
+  {
+    "id": "WEB-ORDERS-01-C02",
+    "name": "状态筛选页签",
+    "def": "COM-CLIENT-C11",
+    "sections": 10
+  },
+  {
+    "id": "WEB-ORDERS-01-C03",
+    "name": "订单卡片列表",
+    "def": "COM-CLIENT-C12",
+    "sections": 10
+  },
+  {
+    "id": "WEB-ORDERS-01-C04",
+    "name": "加载/空/失败状态区",
+    "def": "COM-CLIENT-C09",
+    "sections": 10
+  },
+  {
+    "id": "WEB-ORDERS-01-C05",
+    "name": "登录失效引导",
+    "def": "COM-CLIENT-C13",
+    "sections": 10
+  },
+  {
+    "id": "WEB-ORDER-01-C01",
+    "name": "PC 站点顶栏",
+    "def": "COM-CLIENT-C34",
+    "sections": 10
+  },
+  {
+    "id": "WEB-ORDER-01-C02",
+    "name": "订单状态摘要",
+    "def": "COM-CLIENT-C28",
+    "sections": 10
+  },
+  {
+    "id": "WEB-ORDER-01-C03",
+    "name": "商品明细卡",
+    "def": "COM-CLIENT-C10",
+    "sections": 10
+  },
+  {
+    "id": "WEB-ORDER-01-C04",
+    "name": "口令码交付卡",
+    "def": "COM-CLIENT-C25",
+    "sections": 10
+  },
+  {
+    "id": "WEB-ORDER-01-C05",
+    "name": "赠送进度卡",
+    "def": "COM-CLIENT-C26",
+    "sections": 10
+  },
+  {
+    "id": "WEB-ORDER-01-C06",
+    "name": "退款状态卡",
+    "def": "COM-CLIENT-C27",
+    "sections": 10
+  },
+  {
+    "id": "WEB-ORDER-01-C07",
+    "name": "订单操作栏",
+    "def": "COM-CLIENT-C37",
+    "sections": 10
+  },
+  {
+    "id": "WEB-ORDER-01-C08",
+    "name": "客服入口",
+    "def": "COM-CLIENT-C07",
+    "sections": 10
+  },
+  {
+    "id": "WEB-PROFILE-01-C01",
+    "name": "PC 站点顶栏",
+    "def": "COM-CLIENT-C34",
+    "sections": 10
+  },
+  {
+    "id": "WEB-PROFILE-01-C02",
+    "name": "个人中心信息卡",
+    "def": "COM-CLIENT-C42",
+    "sections": 10
+  },
+  {
+    "id": "WEB-PROFILE-01-C03",
+    "name": "客服入口",
+    "def": "COM-CLIENT-C07",
+    "sections": 10
+  },
+  {
+    "id": "WEB-SERVICE-01-C01",
+    "name": "PC 站点顶栏",
+    "def": "COM-CLIENT-C34",
+    "sections": 10
+  },
+  {
+    "id": "WEB-SERVICE-01-C02",
+    "name": "客服渠道卡",
+    "def": "COM-CLIENT-C29",
+    "sections": 10
+  },
+  {
+    "id": "WEB-AGREEMENT-01-C01",
+    "name": "PC 站点顶栏",
+    "def": "COM-CLIENT-C34",
+    "sections": 10
+  },
+  {
+    "id": "WEB-AGREEMENT-01-C02",
+    "name": "协议正文",
+    "def": "COM-CLIENT-C43",
+    "sections": 10
+  },
+  {
+    "id": "WEB-AGREEMENT-01-C03",
+    "name": "页面提示条",
+    "def": "COM-CLIENT-C36",
+    "sections": 10
+  },
+  {
+    "id": "WEB-AUTH-01-C01",
+    "name": "实名认证引导卡",
+    "def": "COM-CLIENT-C30",
+    "sections": 10
+  },
+  {
+    "id": "WEB-PHONE-01-C01",
+    "name": "PC 站点顶栏",
+    "def": "COM-CLIENT-C34",
+    "sections": 10
+  },
+  {
+    "id": "WEB-PHONE-01-C02",
+    "name": "手机号绑定表单",
+    "def": "COM-CLIENT-C31",
+    "sections": 10
+  },
+  {
+    "id": "WEB-PHONE-01-C03",
+    "name": "页面提示条",
+    "def": "COM-CLIENT-C36",
+    "sections": 10
+  },
+  {
+    "id": "WEB-NOTICE-01-C01",
+    "name": "首次进入提醒",
+    "def": "COM-CLIENT-C32",
+    "sections": 10
+  },
+  {
+    "id": "WEB-NOTICE-01-C02",
+    "name": "页面提示条",
+    "def": "COM-CLIENT-C36",
+    "sections": 10
+  },
+  {
+    "id": "ADM-HOME-01-C01",
+    "name": "左侧业务菜单",
+    "def": "ADM-COMMON-C01",
+    "sections": 10
+  },
+  {
+    "id": "ADM-HOME-01-C02",
+    "name": "顶部账号栏",
+    "def": "ADM-COMMON-C02",
+    "sections": 10
+  },
+  {
+    "id": "ADM-HOME-01-C11",
+    "name": "空态/错误/无权限区",
+    "def": "ADM-COMMON-C11",
+    "sections": 10
+  },
+  {
+    "id": "ADM-HOME-01-C12",
+    "name": "配置表单壳",
+    "def": "ADM-COMMON-C12",
+    "sections": 10
+  },
+  {
+    "id": "ADM-HOME-01-C13",
+    "name": "图片/素材槽位",
+    "def": "ADM-COMMON-C14",
+    "sections": 10
+  },
+  {
+    "id": "ADM-HOME-01-C14",
+    "name": "排序行组",
+    "def": "ADM-COMMON-C15",
+    "sections": 10
+  },
+  {
+    "id": "ADM-HOME-01-C15",
+    "name": "角色/对象选择器",
+    "def": "ADM-COMMON-C20",
+    "sections": 10
+  },
+  {
+    "id": "ADM-PRODUCT-01-C01",
+    "name": "左侧业务菜单",
+    "def": "ADM-COMMON-C01",
+    "sections": 10
+  },
+  {
+    "id": "ADM-PRODUCT-01-C02",
+    "name": "顶部账号栏",
+    "def": "ADM-COMMON-C02",
+    "sections": 10
+  },
+  {
+    "id": "ADM-PRODUCT-01-C03",
+    "name": "筛选区",
+    "def": "ADM-COMMON-C03",
+    "sections": 10
+  },
+  {
+    "id": "ADM-PRODUCT-01-C04",
+    "name": "状态页签",
+    "def": "ADM-COMMON-C04",
+    "sections": 10
+  },
+  {
+    "id": "ADM-PRODUCT-01-C05",
+    "name": "数据表格",
+    "def": "ADM-COMMON-C05",
+    "sections": 10
+  },
+  {
+    "id": "ADM-PRODUCT-01-C06",
+    "name": "分页",
+    "def": "ADM-COMMON-C06",
+    "sections": 10
+  },
+  {
+    "id": "ADM-PRODUCT-01-C07",
+    "name": "详情/编辑弹窗",
+    "def": "ADM-COMMON-C07",
+    "sections": 10
+  },
+  {
+    "id": "ADM-PRODUCT-01-C08",
+    "name": "行选择与批量",
+    "def": "ADM-COMMON-C08",
+    "sections": 10
+  },
+  {
+    "id": "ADM-PRODUCT-01-C11",
+    "name": "空态/错误/无权限区",
+    "def": "ADM-COMMON-C11",
+    "sections": 10
+  },
+  {
+    "id": "ADM-PRODUCT-01-C12",
+    "name": "图片/素材槽位",
+    "def": "ADM-COMMON-C14",
+    "sections": 10
+  },
+  {
+    "id": "ADM-PRODUCT-01-C13",
+    "name": "富文本/长文编辑",
+    "def": "ADM-COMMON-C13",
+    "sections": 10
+  },
+  {
+    "id": "ADM-PRODUCT-01-C14",
+    "name": "状态标签组",
+    "def": "ADM-COMMON-C18",
+    "sections": 10
+  },
+  {
+    "id": "ADM-SUPPLIER-01-C01",
+    "name": "左侧业务菜单",
+    "def": "ADM-COMMON-C01",
+    "sections": 10
+  },
+  {
+    "id": "ADM-SUPPLIER-01-C02",
+    "name": "顶部账号栏",
+    "def": "ADM-COMMON-C02",
+    "sections": 10
+  },
+  {
+    "id": "ADM-SUPPLIER-01-C03",
+    "name": "筛选区",
+    "def": "ADM-COMMON-C03",
+    "sections": 10
+  },
+  {
+    "id": "ADM-SUPPLIER-01-C05",
+    "name": "数据表格",
+    "def": "ADM-COMMON-C05",
+    "sections": 10
+  },
+  {
+    "id": "ADM-SUPPLIER-01-C06",
+    "name": "分页",
+    "def": "ADM-COMMON-C06",
+    "sections": 10
+  },
+  {
+    "id": "ADM-SUPPLIER-01-C07",
+    "name": "详情/编辑弹窗",
+    "def": "ADM-COMMON-C07",
+    "sections": 10
+  },
+  {
+    "id": "ADM-SUPPLIER-01-C11",
+    "name": "空态/错误/无权限区",
+    "def": "ADM-COMMON-C11",
+    "sections": 10
+  },
+  {
+    "id": "ADM-SUPPLIER-01-C12",
+    "name": "配置表单壳",
+    "def": "ADM-COMMON-C12",
+    "sections": 10
+  },
+  {
+    "id": "ADM-SUPPLIER-01-C13",
+    "name": "角色/对象选择器",
+    "def": "ADM-COMMON-C20",
+    "sections": 10
+  },
+  {
+    "id": "ADM-STOCK-01-C01",
+    "name": "左侧业务菜单",
+    "def": "ADM-COMMON-C01",
+    "sections": 10
+  },
+  {
+    "id": "ADM-STOCK-01-C02",
+    "name": "顶部账号栏",
+    "def": "ADM-COMMON-C02",
+    "sections": 10
+  },
+  {
+    "id": "ADM-STOCK-01-C03",
+    "name": "筛选区",
+    "def": "ADM-COMMON-C03",
+    "sections": 10
+  },
+  {
+    "id": "ADM-STOCK-01-C04",
+    "name": "状态页签",
+    "def": "ADM-COMMON-C04",
+    "sections": 10
+  },
+  {
+    "id": "ADM-STOCK-01-C05",
+    "name": "数据表格",
+    "def": "ADM-COMMON-C05",
+    "sections": 10
+  },
+  {
+    "id": "ADM-STOCK-01-C06",
+    "name": "分页",
+    "def": "ADM-COMMON-C06",
+    "sections": 10
+  },
+  {
+    "id": "ADM-STOCK-01-C07",
+    "name": "详情/编辑弹窗",
+    "def": "ADM-COMMON-C07",
+    "sections": 10
+  },
+  {
+    "id": "ADM-STOCK-01-C11",
+    "name": "空态/错误/无权限区",
+    "def": "ADM-COMMON-C11",
+    "sections": 10
+  },
+  {
+    "id": "ADM-STOCK-01-C12",
+    "name": "状态标签组",
+    "def": "ADM-COMMON-C18",
+    "sections": 10
+  },
+  {
+    "id": "ADM-ORDER-01-C01",
+    "name": "左侧业务菜单",
+    "def": "ADM-COMMON-C01",
+    "sections": 10
+  },
+  {
+    "id": "ADM-ORDER-01-C02",
+    "name": "顶部账号栏",
+    "def": "ADM-COMMON-C02",
+    "sections": 10
+  },
+  {
+    "id": "ADM-ORDER-01-C03",
+    "name": "筛选区",
+    "def": "ADM-COMMON-C03",
+    "sections": 10
+  },
+  {
+    "id": "ADM-ORDER-01-C04",
+    "name": "状态页签",
+    "def": "ADM-COMMON-C04",
+    "sections": 10
+  },
+  {
+    "id": "ADM-ORDER-01-C05",
+    "name": "数据表格",
+    "def": "ADM-COMMON-C05",
+    "sections": 10
+  },
+  {
+    "id": "ADM-ORDER-01-C06",
+    "name": "分页",
+    "def": "ADM-COMMON-C06",
+    "sections": 10
+  },
+  {
+    "id": "ADM-ORDER-01-C07",
+    "name": "详情/编辑弹窗",
+    "def": "ADM-COMMON-C07",
+    "sections": 10
+  },
+  {
+    "id": "ADM-ORDER-01-C08",
+    "name": "行选择与批量",
+    "def": "ADM-COMMON-C08",
+    "sections": 10
+  },
+  {
+    "id": "ADM-ORDER-01-C09",
+    "name": "导出动作",
+    "def": "ADM-COMMON-C09",
+    "sections": 10
+  },
+  {
+    "id": "ADM-ORDER-01-C10",
+    "name": "指标汇总卡",
+    "def": "ADM-COMMON-C10",
+    "sections": 10
+  },
+  {
+    "id": "ADM-ORDER-01-C11",
+    "name": "空态/错误/无权限区",
+    "def": "ADM-COMMON-C11",
+    "sections": 10
+  },
+  {
+    "id": "ADM-ORDER-01-C12",
+    "name": "状态标签组",
+    "def": "ADM-COMMON-C18",
+    "sections": 10
+  },
+  {
+    "id": "ADM-ORDER-01-C13",
+    "name": "操作记录时间线",
+    "def": "ADM-COMMON-C17",
+    "sections": 10
+  },
+  {
+    "id": "ADM-GIFT-01-C01",
+    "name": "左侧业务菜单",
+    "def": "ADM-COMMON-C01",
+    "sections": 10
+  },
+  {
+    "id": "ADM-GIFT-01-C02",
+    "name": "顶部账号栏",
+    "def": "ADM-COMMON-C02",
+    "sections": 10
+  },
+  {
+    "id": "ADM-GIFT-01-C03",
+    "name": "筛选区",
+    "def": "ADM-COMMON-C03",
+    "sections": 10
+  },
+  {
+    "id": "ADM-GIFT-01-C04",
+    "name": "状态页签",
+    "def": "ADM-COMMON-C04",
+    "sections": 10
+  },
+  {
+    "id": "ADM-GIFT-01-C05",
+    "name": "数据表格",
+    "def": "ADM-COMMON-C05",
+    "sections": 10
+  },
+  {
+    "id": "ADM-GIFT-01-C06",
+    "name": "分页",
+    "def": "ADM-COMMON-C06",
+    "sections": 10
+  },
+  {
+    "id": "ADM-GIFT-01-C07",
+    "name": "详情/编辑弹窗",
+    "def": "ADM-COMMON-C07",
+    "sections": 10
+  },
+  {
+    "id": "ADM-GIFT-01-C08",
+    "name": "行选择与批量",
+    "def": "ADM-COMMON-C08",
+    "sections": 10
+  },
+  {
+    "id": "ADM-GIFT-01-C09",
+    "name": "导出动作",
+    "def": "ADM-COMMON-C09",
+    "sections": 10
+  },
+  {
+    "id": "ADM-GIFT-01-C11",
+    "name": "空态/错误/无权限区",
+    "def": "ADM-COMMON-C11",
+    "sections": 10
+  },
+  {
+    "id": "ADM-GIFT-01-C12",
+    "name": "导出任务与文件",
+    "def": "ADM-COMMON-C19",
+    "sections": 10
+  },
+  {
+    "id": "ADM-GIFT-01-C13",
+    "name": "状态标签组",
+    "def": "ADM-COMMON-C18",
+    "sections": 10
+  },
+  {
+    "id": "ADM-CODE-01-C01",
+    "name": "左侧业务菜单",
+    "def": "ADM-COMMON-C01",
+    "sections": 10
+  },
+  {
+    "id": "ADM-CODE-01-C02",
+    "name": "顶部账号栏",
+    "def": "ADM-COMMON-C02",
+    "sections": 10
+  },
+  {
+    "id": "ADM-CODE-01-C03",
+    "name": "筛选区",
+    "def": "ADM-COMMON-C03",
+    "sections": 10
+  },
+  {
+    "id": "ADM-CODE-01-C04",
+    "name": "状态页签",
+    "def": "ADM-COMMON-C04",
+    "sections": 10
+  },
+  {
+    "id": "ADM-CODE-01-C05",
+    "name": "数据表格",
+    "def": "ADM-COMMON-C05",
+    "sections": 10
+  },
+  {
+    "id": "ADM-CODE-01-C06",
+    "name": "分页",
+    "def": "ADM-COMMON-C06",
+    "sections": 10
+  },
+  {
+    "id": "ADM-CODE-01-C07",
+    "name": "详情/编辑弹窗",
+    "def": "ADM-COMMON-C07",
+    "sections": 10
+  },
+  {
+    "id": "ADM-CODE-01-C08",
+    "name": "行选择与批量",
+    "def": "ADM-COMMON-C08",
+    "sections": 10
+  },
+  {
+    "id": "ADM-CODE-01-C11",
+    "name": "空态/错误/无权限区",
+    "def": "ADM-COMMON-C11",
+    "sections": 10
+  },
+  {
+    "id": "ADM-CODE-01-C12",
+    "name": "状态标签组",
+    "def": "ADM-COMMON-C18",
+    "sections": 10
+  },
+  {
+    "id": "ADM-CODE-01-C13",
+    "name": "操作记录时间线",
+    "def": "ADM-COMMON-C17",
+    "sections": 10
+  },
+  {
+    "id": "ADM-REFUND-01-C01",
+    "name": "左侧业务菜单",
+    "def": "ADM-COMMON-C01",
+    "sections": 10
+  },
+  {
+    "id": "ADM-REFUND-01-C02",
+    "name": "顶部账号栏",
+    "def": "ADM-COMMON-C02",
+    "sections": 10
+  },
+  {
+    "id": "ADM-REFUND-01-C03",
+    "name": "筛选区",
+    "def": "ADM-COMMON-C03",
+    "sections": 10
+  },
+  {
+    "id": "ADM-REFUND-01-C04",
+    "name": "状态页签",
+    "def": "ADM-COMMON-C04",
+    "sections": 10
+  },
+  {
+    "id": "ADM-REFUND-01-C05",
+    "name": "数据表格",
+    "def": "ADM-COMMON-C05",
+    "sections": 10
+  },
+  {
+    "id": "ADM-REFUND-01-C06",
+    "name": "分页",
+    "def": "ADM-COMMON-C06",
+    "sections": 10
+  },
+  {
+    "id": "ADM-REFUND-01-C07",
+    "name": "详情/编辑弹窗",
+    "def": "ADM-COMMON-C07",
+    "sections": 10
+  },
+  {
+    "id": "ADM-REFUND-01-C08",
+    "name": "行选择与批量",
+    "def": "ADM-COMMON-C08",
+    "sections": 10
+  },
+  {
+    "id": "ADM-REFUND-01-C11",
+    "name": "空态/错误/无权限区",
+    "def": "ADM-COMMON-C11",
+    "sections": 10
+  },
+  {
+    "id": "ADM-REFUND-01-C12",
+    "name": "状态标签组",
+    "def": "ADM-COMMON-C18",
+    "sections": 10
+  },
+  {
+    "id": "ADM-REFUND-01-C13",
+    "name": "操作记录时间线",
+    "def": "ADM-COMMON-C17",
+    "sections": 10
+  },
+  {
+    "id": "ADM-SERVICE-01-C01",
+    "name": "左侧业务菜单",
+    "def": "ADM-COMMON-C01",
+    "sections": 10
+  },
+  {
+    "id": "ADM-SERVICE-01-C02",
+    "name": "顶部账号栏",
+    "def": "ADM-COMMON-C02",
+    "sections": 10
+  },
+  {
+    "id": "ADM-SERVICE-01-C11",
+    "name": "空态/错误/无权限区",
+    "def": "ADM-COMMON-C11",
+    "sections": 10
+  },
+  {
+    "id": "ADM-SERVICE-01-C12",
+    "name": "配置表单壳",
+    "def": "ADM-COMMON-C12",
+    "sections": 10
+  },
+  {
+    "id": "ADM-SERVICE-01-C13",
+    "name": "富文本/长文编辑",
+    "def": "ADM-COMMON-C13",
+    "sections": 10
+  },
+  {
+    "id": "ADM-RBAC-01-C01",
+    "name": "左侧业务菜单",
+    "def": "ADM-COMMON-C01",
+    "sections": 10
+  },
+  {
+    "id": "ADM-RBAC-01-C02",
+    "name": "顶部账号栏",
+    "def": "ADM-COMMON-C02",
+    "sections": 10
+  },
+  {
+    "id": "ADM-RBAC-01-C03",
+    "name": "筛选区",
+    "def": "ADM-COMMON-C03",
+    "sections": 10
+  },
+  {
+    "id": "ADM-RBAC-01-C04",
+    "name": "状态页签",
+    "def": "ADM-COMMON-C04",
+    "sections": 10
+  },
+  {
+    "id": "ADM-RBAC-01-C05",
+    "name": "数据表格",
+    "def": "ADM-COMMON-C05",
+    "sections": 10
+  },
+  {
+    "id": "ADM-RBAC-01-C06",
+    "name": "分页",
+    "def": "ADM-COMMON-C06",
+    "sections": 10
+  },
+  {
+    "id": "ADM-RBAC-01-C07",
+    "name": "详情/编辑弹窗",
+    "def": "ADM-COMMON-C07",
+    "sections": 10
+  },
+  {
+    "id": "ADM-RBAC-01-C11",
+    "name": "空态/错误/无权限区",
+    "def": "ADM-COMMON-C11",
+    "sections": 10
+  },
+  {
+    "id": "ADM-RBAC-01-C12",
+    "name": "权限矩阵",
+    "def": "ADM-COMMON-C16",
+    "sections": 10
+  },
+  {
+    "id": "ADM-RBAC-01-C13",
+    "name": "角色/对象选择器",
+    "def": "ADM-COMMON-C20",
+    "sections": 10
+  },
+  {
+    "id": "ADM-AUDIT-01-C01",
+    "name": "左侧业务菜单",
+    "def": "ADM-COMMON-C01",
+    "sections": 10
+  },
+  {
+    "id": "ADM-AUDIT-01-C02",
+    "name": "顶部账号栏",
+    "def": "ADM-COMMON-C02",
+    "sections": 10
+  },
+  {
+    "id": "ADM-AUDIT-01-C03",
+    "name": "筛选区",
+    "def": "ADM-COMMON-C03",
+    "sections": 10
+  },
+  {
+    "id": "ADM-AUDIT-01-C04",
+    "name": "状态页签",
+    "def": "ADM-COMMON-C04",
+    "sections": 10
+  },
+  {
+    "id": "ADM-AUDIT-01-C05",
+    "name": "数据表格",
+    "def": "ADM-COMMON-C05",
+    "sections": 10
+  },
+  {
+    "id": "ADM-AUDIT-01-C06",
+    "name": "分页",
+    "def": "ADM-COMMON-C06",
+    "sections": 10
+  },
+  {
+    "id": "ADM-AUDIT-01-C07",
+    "name": "详情/编辑弹窗",
+    "def": "ADM-COMMON-C07",
+    "sections": 10
+  },
+  {
+    "id": "ADM-AUDIT-01-C11",
+    "name": "空态/错误/无权限区",
+    "def": "ADM-COMMON-C11",
+    "sections": 10
+  },
+  {
+    "id": "ADM-AUDIT-01-C12",
+    "name": "操作记录时间线",
+    "def": "ADM-COMMON-C17",
+    "sections": 10
+  },
+  {
+    "id": "ADM-AGREEMENT-01-C01",
+    "name": "左侧业务菜单",
+    "def": "ADM-COMMON-C01",
+    "sections": 10
+  },
+  {
+    "id": "ADM-AGREEMENT-01-C02",
+    "name": "顶部账号栏",
+    "def": "ADM-COMMON-C02",
+    "sections": 10
+  },
+  {
+    "id": "ADM-AGREEMENT-01-C11",
+    "name": "空态/错误/无权限区",
+    "def": "ADM-COMMON-C11",
+    "sections": 10
+  },
+  {
+    "id": "ADM-AGREEMENT-01-C12",
+    "name": "配置表单壳",
+    "def": "ADM-COMMON-C12",
+    "sections": 10
+  },
+  {
+    "id": "ADM-AGREEMENT-01-C13",
+    "name": "富文本/长文编辑",
+    "def": "ADM-COMMON-C13",
+    "sections": 10
+  },
+  {
+    "id": "ADM-SEARCHCFG-01-C01",
+    "name": "左侧业务菜单",
+    "def": "ADM-COMMON-C01",
+    "sections": 10
+  },
+  {
+    "id": "ADM-SEARCHCFG-01-C02",
+    "name": "顶部账号栏",
+    "def": "ADM-COMMON-C02",
+    "sections": 10
+  },
+  {
+    "id": "ADM-SEARCHCFG-01-C11",
+    "name": "空态/错误/无权限区",
+    "def": "ADM-COMMON-C11",
+    "sections": 10
+  },
+  {
+    "id": "ADM-SEARCHCFG-01-C12",
+    "name": "排序行组",
+    "def": "ADM-COMMON-C15",
+    "sections": 10
+  },
+  {
+    "id": "ADM-SEARCHCFG-01-C13",
+    "name": "角色/对象选择器",
+    "def": "ADM-COMMON-C20",
+    "sections": 10
+  },
+  {
+    "id": "ADM-PAYCHECK-01-C01",
+    "name": "左侧业务菜单",
+    "def": "ADM-COMMON-C01",
+    "sections": 10
+  },
+  {
+    "id": "ADM-PAYCHECK-01-C02",
+    "name": "顶部账号栏",
+    "def": "ADM-COMMON-C02",
+    "sections": 10
+  },
+  {
+    "id": "ADM-PAYCHECK-01-C03",
+    "name": "筛选区",
+    "def": "ADM-COMMON-C03",
+    "sections": 10
+  },
+  {
+    "id": "ADM-PAYCHECK-01-C04",
+    "name": "状态页签",
+    "def": "ADM-COMMON-C04",
+    "sections": 10
+  },
+  {
+    "id": "ADM-PAYCHECK-01-C05",
+    "name": "数据表格",
+    "def": "ADM-COMMON-C05",
+    "sections": 10
+  },
+  {
+    "id": "ADM-PAYCHECK-01-C06",
+    "name": "分页",
+    "def": "ADM-COMMON-C06",
+    "sections": 10
+  },
+  {
+    "id": "ADM-PAYCHECK-01-C07",
+    "name": "详情/编辑弹窗",
+    "def": "ADM-COMMON-C07",
+    "sections": 10
+  },
+  {
+    "id": "ADM-PAYCHECK-01-C11",
+    "name": "空态/错误/无权限区",
+    "def": "ADM-COMMON-C11",
+    "sections": 10
+  },
+  {
+    "id": "ADM-PAYCHECK-01-C12",
+    "name": "操作记录时间线",
+    "def": "ADM-COMMON-C17",
+    "sections": 10
+  },
+  {
+    "id": "ADM-PAYCHECK-01-C13",
+    "name": "状态标签组",
+    "def": "ADM-COMMON-C18",
+    "sections": 10
+  },
+  {
+    "id": "ADM-NOTIFY-01-C01",
+    "name": "左侧业务菜单",
+    "def": "ADM-COMMON-C01",
+    "sections": 10
+  },
+  {
+    "id": "ADM-NOTIFY-01-C02",
+    "name": "顶部账号栏",
+    "def": "ADM-COMMON-C02",
+    "sections": 10
+  },
+  {
+    "id": "ADM-NOTIFY-01-C03",
+    "name": "筛选区",
+    "def": "ADM-COMMON-C03",
+    "sections": 10
+  },
+  {
+    "id": "ADM-NOTIFY-01-C04",
+    "name": "状态页签",
+    "def": "ADM-COMMON-C04",
+    "sections": 10
+  },
+  {
+    "id": "ADM-NOTIFY-01-C05",
+    "name": "数据表格",
+    "def": "ADM-COMMON-C05",
+    "sections": 10
+  },
+  {
+    "id": "ADM-NOTIFY-01-C06",
+    "name": "分页",
+    "def": "ADM-COMMON-C06",
+    "sections": 10
+  },
+  {
+    "id": "ADM-NOTIFY-01-C07",
+    "name": "详情/编辑弹窗",
+    "def": "ADM-COMMON-C07",
+    "sections": 10
+  },
+  {
+    "id": "ADM-NOTIFY-01-C11",
+    "name": "空态/错误/无权限区",
+    "def": "ADM-COMMON-C11",
+    "sections": 10
+  },
+  {
+    "id": "ADM-NOTIFY-01-C12",
+    "name": "状态标签组",
+    "def": "ADM-COMMON-C18",
+    "sections": 10
+  },
+  {
+    "id": "ADM-NOTIFY-01-C13",
+    "name": "操作记录时间线",
+    "def": "ADM-COMMON-C17",
+    "sections": 10
+  },
+  {
+    "id": "ADM-WALLET-01-C01",
+    "name": "左侧业务菜单",
+    "def": "ADM-COMMON-C01",
+    "sections": 10
+  },
+  {
+    "id": "ADM-WALLET-01-C02",
+    "name": "顶部账号栏",
+    "def": "ADM-COMMON-C02",
+    "sections": 10
+  },
+  {
+    "id": "ADM-WALLET-01-C05",
+    "name": "数据表格",
+    "def": "ADM-COMMON-C05",
+    "sections": 10
+  },
+  {
+    "id": "ADM-WALLET-01-C06",
+    "name": "分页",
+    "def": "ADM-COMMON-C06",
+    "sections": 10
+  },
+  {
+    "id": "ADM-WALLET-01-C07",
+    "name": "详情/编辑弹窗",
+    "def": "ADM-COMMON-C07",
+    "sections": 10
+  },
+  {
+    "id": "ADM-WALLET-01-C10",
+    "name": "指标汇总卡",
+    "def": "ADM-COMMON-C10",
+    "sections": 10
+  },
+  {
+    "id": "ADM-WALLET-01-C11",
+    "name": "空态/错误/无权限区",
+    "def": "ADM-COMMON-C11",
+    "sections": 10
+  },
+  {
+    "id": "ADM-WALLET-01-C12",
+    "name": "配置表单壳",
+    "def": "ADM-COMMON-C12",
+    "sections": 10
+  },
+  {
+    "id": "ADM-WALLET-01-C13",
+    "name": "状态标签组",
+    "def": "ADM-COMMON-C18",
+    "sections": 10
+  }
+]

@@ -1,5 +1,11 @@
 # 变更记录
 
+## 已批准落实未发布：draft-20261028-trial14-evidence（2026-10-28）
+
+试跑14对比方案已审核通过。ui7.1.1澄清`uiProfileHash`必须指向生成前实际消费的设计档案快照，CSS/HTML输出指纹单列；不强制档案文件格式。quality29.13补复跑入口、目标路径与原字节哈希、依赖、环境、编码及解析失败的封存边界，08模板同步。
+
+修正review-kit默认外框文案；新增按需`execution-evidence-1`预检示例和正/负例测试，检查路径/hash/声明字段/消费者读回文件；增加profile实际消费、业务/评审层、排序语义和发布读回的纯模型夹具。工具不证明声明真实性或浏览器行为。新增至acceptance-selftest按需资源；同步01/08模板、README、AI-START、MAINTENANCE、MIGRATION和REVIEW。未修改原型或独立验收仓库；未改变V3.0/modular-1、主交付物和默认路由；未提交、推送、打标签或发布。
+
 ## 已批准落实未发布：draft-20261027-trial13-contracts（2026-10-27）
 
 用户回复“采纳全部建议，审核通过”，批准试跑13 C13-A～D及B执行方向。按[落实记录](docs/reviews/2026-10-27-steam-trial13/08_确认与落实.md)在 workflow5.3、ui15.3.1、quality29.13.1、decisions28.2～28.4细化唯一归口；同步01/03/07/08/09、清单及按需执行方法，不新增同义STD。

@@ -1,0 +1,430 @@
+{
+  "geometry_final.json": {
+    "encoding": "utf-8",
+    "data": {
+      "phone": {
+        "w": 320,
+        "h": 640,
+        "iw": 288,
+        "ih": 592,
+        "overflow": false
+      },
+      "inputs": {
+        "textH": 40,
+        "radio": null,
+        "check": [
+          16,
+          16
+        ]
+      },
+      "productScroll": {
+        "client": 483,
+        "scroll": 666
+      },
+      "outline": {
+        "before": {
+          "w": 260,
+          "h": 177.515625,
+          "x": 84,
+          "y": 631.359375
+        },
+        "after": {
+          "w": 260,
+          "h": 177.515625,
+          "x": 84,
+          "y": 631.359375
+        },
+        "equal": true
+      },
+      "web1440": {
+        "doc": 1440,
+        "win": 1440,
+        "main": 1280,
+        "cols": 6
+      },
+      "web1920": {
+        "doc": 1920,
+        "win": 1920,
+        "main": 1280
+      },
+      "adm1440": {
+        "doc": 1920,
+        "win": 1920,
+        "wrap": [
+          1168,
+          1168
+        ],
+        "table": 1168,
+        "cols": [
+          36,
+          203.75,
+          79.234375,
+          203.75,
+          101.875,
+          101.875,
+          113.1875,
+          169.796875,
+          158.53125
+        ],
+        "control": 40
+      },
+      "adm1440b": {
+        "doc": 1440,
+        "win": 1440,
+        "wrap": [
+          1128,
+          1128
+        ]
+      },
+      "adm1920": {
+        "doc": 1920,
+        "win": 1920,
+        "wrap": [
+          1168,
+          1168
+        ]
+      }
+    }
+  },
+  "static_result.json": {
+    "encoding": "gb18030",
+    "data": {
+      "files": [
+        "00_交付说明与变更记录.md",
+        "01_页面与状态说明.md",
+        "02_低保真交互原型.html",
+        "03_组件级文档.md",
+        "04_业务流程与异常规则.md",
+        "05_接口数据与权限说明.md",
+        "06_埋点文档.md",
+        "07_测试用例.md",
+        "08_验证记录与验收映射.md",
+        "09_待确认事项与设计决策.md",
+        "_checks"
+      ],
+      "file_count": 10,
+      "headers": {
+        "00_交付说明与变更记录.md": {
+          "文档版本": true,
+          "适用PRD版本": true,
+          "适用端": true,
+          "文档状态": true,
+          "关联文件": true,
+          "更新时间": true,
+          "编写方式": true
+        },
+        "01_页面与状态说明.md": {
+          "文档版本": true,
+          "适用PRD版本": true,
+          "适用端": true,
+          "文档状态": true,
+          "关联文件": true,
+          "更新时间": true,
+          "编写方式": true
+        },
+        "03_组件级文档.md": {
+          "文档版本": true,
+          "适用PRD版本": true,
+          "适用端": true,
+          "文档状态": true,
+          "关联文件": true,
+          "更新时间": true,
+          "编写方式": true
+        },
+        "04_业务流程与异常规则.md": {
+          "文档版本": true,
+          "适用PRD版本": true,
+          "适用端": true,
+          "文档状态": true,
+          "关联文件": true,
+          "更新时间": true,
+          "编写方式": true
+        },
+        "05_接口数据与权限说明.md": {
+          "文档版本": true,
+          "适用PRD版本": true,
+          "适用端": true,
+          "文档状态": true,
+          "关联文件": true,
+          "更新时间": true,
+          "编写方式": true
+        },
+        "06_埋点文档.md": {
+          "文档版本": true,
+          "适用PRD版本": true,
+          "适用端": true,
+          "文档状态": true,
+          "关联文件": true,
+          "更新时间": true,
+          "编写方式": true
+        },
+        "07_测试用例.md": {
+          "文档版本": true,
+          "适用PRD版本": true,
+          "适用端": true,
+          "文档状态": true,
+          "关联文件": true,
+          "更新时间": true,
+          "编写方式": true
+        },
+        "08_验证记录与验收映射.md": {
+          "文档版本": true,
+          "适用PRD版本": true,
+          "适用端": true,
+          "文档状态": true,
+          "关联文件": true,
+          "更新时间": true,
+          "编写方式": true
+        },
+        "09_待确认事项与设计决策.md": {
+          "文档版本": true,
+          "适用PRD版本": true,
+          "适用端": true,
+          "文档状态": true,
+          "关联文件": true,
+          "更新时间": true,
+          "编写方式": true
+        }
+      },
+      "headers_ok": true,
+      "counts": {
+        "pages": 49,
+        "states": 236,
+        "instances": 308,
+        "defs": 63,
+        "flows": 5,
+        "sms": 6,
+        "seqs": 4,
+        "doc01_pages": 49,
+        "doc01_states": 236
+      },
+      "comp_defs": 63,
+      "comp_instances": 308,
+      "defs_with_10_sections": 63,
+      "defs_section_min": 10,
+      "events": 18,
+      "admin_events_zero": true,
+      "external_refs": [],
+      "css_imports": [],
+      "offline_ok": true,
+      "inline_script_bytes": 3714610,
+      "syntax_ok": true,
+      "syntax_err": ""
+    }
+  },
+  "verify_result.json": {
+    "encoding": "utf-8",
+    "data": {
+      "date": "2026-10-27",
+      "browser": "156.0.4314.42",
+      "checks": [
+        {
+          "chk": "CHK-004",
+          "name": "03 组件定义与实例十节完整",
+          "pass": true,
+          "detail": "{\"ids\":308,\"bad\":0,\"defs\":62}"
+        },
+        {
+          "chk": "CHK-045",
+          "name": "组件选择器十节完整",
+          "pass": true,
+          "detail": "section headings=10"
+        },
+        {
+          "chk": "CHK-014",
+          "name": "输入控件类型隔离",
+          "pass": true,
+          "detail": "buy=[\"radio\",\"radio\",\"checkbox\"] search=[\"text\"] ADM={\"types\":[\"text\",\"text\",\"text\",\"checkbox\",\"checkbox\",\"checkbox\",\"checkbox\",\"checkbox\",\"checkbox\",\"checkbox\",\"checkbox\",\"checkbox\",\"checkbox\",\"checkbox\"],\"selects\":6}"
+        },
+        {
+          "chk": "CHK-016",
+          "name": "订单处理中恢复旧单",
+          "pass": true,
+          "detail": "{\"page\":\"H5-CHECKOUT-01\",\"state\":\"DEFAULT\"}"
+        },
+        {
+          "chk": "CHK-017",
+          "name": "已支付交付中复购",
+          "pass": true,
+          "detail": "{\"buyEnabled\":1,\"buyRv\":{\"page\":\"H5-BUY-01\",\"state\":\"DEFAULT\"},\"layer\":1}"
+        },
+        {
+          "chk": "CHK-019",
+          "name": "支付取消/失败/未知分支",
+          "pass": true,
+          "detail": "{\"failR\":{\"page\":\"H5-PAYRET-01\",\"state\":\"UNPAID\"},\"timeoutR\":{\"page\":\"H5-PAYRET-01\",\"state\":\"TIMEOUT\"},\"okR\":{\"page\":\"H5-RESULT-01\",\"state\":\"ISSUING\"}}"
+        },
+        {
+          "chk": "CHK-020",
+          "name": "支付返回两选项均查询",
+          "pass": true,
+          "detail": "{\"q1\":{\"page\":\"H5-PAYRET-01\",\"state\":\"QUERYING\"},\"q2\":{\"page\":\"H5-RESULT-01\",\"state\":\"ISSUING\"}}"
+        },
+        {
+          "chk": "CHK-021",
+          "name": "口令码复制/赠送进度/退款失败",
+          "pass": true,
+          "detail": "{\"copyBtn\":1,\"t1\":\"口令码已复制\",\"giftText\":true,\"refundText\":true}"
+        },
+        {
+          "chk": "CHK-022",
+          "name": "订单页签过滤与计数",
+          "pass": true,
+          "detail": "{\"allRows\":6,\"pendingRows\":1,\"deliveredRows\":1}"
+        },
+        {
+          "chk": "CHK-023",
+          "name": "会话失效清旧数据并重登",
+          "pass": true,
+          "detail": "{\"page\":\"H5-AUTH-01\",\"state\":\"LOGIN\"}"
+        },
+        {
+          "chk": "CHK-024",
+          "name": "首次提醒可信/游客/未知",
+          "pass": true,
+          "detail": "{\"vLayer\":1,\"vBtn\":1,\"afterKnow\":{\"page\":\"H5-HOME-01\",\"state\":\"DEFAULT\"},\"uBtns\":{\"verify\":true,\"close\":true},\"hiddenLayer\":0,\"hiddenHome\":1}"
+        },
+        {
+          "chk": "CHK-025",
+          "name": "WEB 购买弹层与扫码三态",
+          "pass": true,
+          "detail": "{\"webLayer\":1,\"webPayBtn\":1,\"webPayAfter\":{\"page\":\"WEB-PAYRET-01\",\"state\":\"QUERYING\"},\"statesWeb\":{\"CONFIRMING\":{\"layer\":1,\"result\":false,\"problem\":true},\"SUCCESS\":{\"layer\":1,\"result\":true,\"problem\":false},\"UNKNOWN\":{\"layer\":1,\"result\":false,\"problem\":true}}}"
+        },
+        {
+          "chk": "CHK-026",
+          "name": "WEB 搜索默认/结果/空/失败",
+          "pass": true,
+          "detail": "{\"webSearch\":{\"page\":\"WEB-SEARCH-01\",\"state\":\"RESULTS\"},\"webRows\":1,\"emptyShown\":{\"empty\":0,\"discovery\":1},\"errorShown\":1}"
+        },
+        {
+          "chk": "CHK-029",
+          "name": "ADM 分页/每页条数",
+          "pass": true,
+          "detail": "{\"p1\":10,\"p2\":2,\"size20\":12}"
+        },
+        {
+          "chk": "CHK-030",
+          "name": "ADM 行选择/全选/批量",
+          "pass": true,
+          "detail": " 当前页全选已选 10 条（仅当前页）批量导出清除选择"
+        },
+        {
+          "chk": "CHK-031",
+          "name": "ADM 两条不同记录详情按 ID 打开",
+          "pass": true,
+          "detail": "{\"d1\":\"SO20261027001 · A\",\"d2\":\"SO20261027002 · B\"}"
+        },
+        {
+          "chk": "CHK-032",
+          "name": "ADM 商品发布/下架确认与取消",
+          "pass": true,
+          "detail": "{\"pubCount\":4,\"cancelOk\":true,\"confirmOk\":true}"
+        },
+        {
+          "chk": "CHK-033",
+          "name": "ADM 赠送开始/完成依据/异常",
+          "pass": true,
+          "detail": "{\"giftMsg1\":\"已开始处理：SO20261027002\",\"giftErr\":\"完成确认必须填写核实依据/备注\",\"giftMsg2\":\"赠送已完成并记录依据\"}"
+        },
+        {
+          "chk": "CHK-034",
+          "name": "ADM 取码重试/补发/换码",
+          "pass": true,
+          "detail": "{\"codeErr\":\"补发/换码必须填写原因\",\"codeMsg\":\"补发已提交并关联原订单\"}"
+        },
+        {
+          "chk": "CHK-035",
+          "name": "ADM 退款审核/执行/失败重试",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "chk": "CHK-037",
+          "name": "ADM 通知重试去重",
+          "pass": true,
+          "detail": "{\"notifyRetry\":4,\"notifyOk\":true}"
+        },
+        {
+          "chk": "CHK-038",
+          "name": "ADM 权限矩阵与单人退款",
+          "pass": true,
+          "detail": "{\"matrix\":{\"rows\":13,\"checks\":52,\"single\":true},\"rbacMsg\":\"权限已保存并留痕；单人退款=开启\"}"
+        },
+        {
+          "chk": "CHK-039",
+          "name": "ADM 角色裁剪与无权限页",
+          "pass": true,
+          "detail": "{\"adminMenu\":17,\"kefuMenu\":3,\"noPerm\":true}"
+        },
+        {
+          "chk": "CHK-040",
+          "name": "ADM 导出范围/脱敏/留痕",
+          "pass": true,
+          "detail": "{\"exportToast\":\"已导出 12 行（脱敏）\",\"exportDenied\":\"无导出权限，请联系管理员\"}"
+        },
+        {
+          "chk": "CHK-041",
+          "name": "ADM 首页草稿/预览/发布",
+          "pass": true,
+          "detail": "{\"draftMsg\":\"草稿已保存，前台未生效\",\"preview\":1}"
+        },
+        {
+          "chk": "CHK-042",
+          "name": "ADM 协议发布/版本/实质变更",
+          "pass": true,
+          "detail": "{\"agrPreview\":1,\"agrVersion\":1}"
+        },
+        {
+          "chk": "CHK-043",
+          "name": "ADM 搜索推荐排序/启停/保存",
+          "pass": true,
+          "detail": "{\"kwMsg\":\"启停已调整（未保存）\",\"saveMsg\":\"搜索推荐已保存并生效\"}"
+        },
+        {
+          "chk": "CHK-044",
+          "name": "ADM 钱包阈值与余额不足停售",
+          "pass": true,
+          "detail": "阈值已保存：¥3000.00（当前低于阈值）"
+        },
+        {
+          "chk": "CHK-047",
+          "name": "文档阅读器 9 份全文/目录/切换/下载",
+          "pass": true,
+          "detail": "{\"docCount\":9,\"tocCount\":9,\"dl\":1,\"readerTitle\":\"01_页面与状态说明\"}"
+        },
+        {
+          "chk": "CHK-048",
+          "name": "图示 15 张打开/缩放/图源/关闭",
+          "pass": true,
+          "detail": "{\"diagCount\":15,\"svgCount\":1,\"srcShown\":true,\"diagClosed\":0}"
+        },
+        {
+          "chk": "CHK-049",
+          "name": "打开/关闭阅读器不改变原型上下文",
+          "pass": true,
+          "detail": "{\"beforeCtx\":{\"page\":\"H5-PRODUCT-01\",\"state\":\"DEFAULT\"},\"afterCtx\":{\"page\":\"H5-PRODUCT-01\",\"state\":\"DEFAULT\"},\"docClosed\":0}"
+        },
+        {
+          "chk": "CHK-054",
+          "name": "高风险动作取消/Esc 不改数据",
+          "pass": true,
+          "detail": "confirmGone=0"
+        },
+        {
+          "chk": "CHK-055",
+          "name": "移动端热区≥44px、后台控件≥40px",
+          "pass": true,
+          "detail": "{\"mobile\":{\"min\":44,\"count\":5,\"sample\":[44,44,52,52,52]},\"webLink\":{\"min\":40,\"count\":2},\"adm\":{\"min\":40,\"count\":4,\"sample\":[40,40,40,40]}}"
+        },
+        {
+          "chk": "CHK-050",
+          "name": "控制台无未处理错误",
+          "pass": true,
+          "detail": "errors=0 []"
+        }
+      ],
+      "pass": 34,
+      "fail": 0
+    }
+  }
+}

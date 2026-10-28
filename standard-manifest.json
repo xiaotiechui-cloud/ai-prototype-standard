@@ -1,7 +1,7 @@
 {
   "rule_version": "V3.0",
   "layout_revision": "modular-1",
-  "content_revision": "draft-20261027-trial13-contracts",
+  "content_revision": "draft-20261028-trial14-evidence",
   "status": "user-confirmed-maintenance-draft",
   "baseline": {
     "path": "archive/AI原型图与组件级文档说明标准_V3.0.md",
@@ -337,7 +337,12 @@
       "title": "AI自测与修复回归操作方法",
       "paths": [
         "docs/acceptance/README.md",
-        "docs/acceptance/selftest.md"
+        "docs/acceptance/selftest.md",
+        "docs/acceptance/execution-evidence.example.json",
+        "tools/check_execution_evidence.py",
+        "tools/test_execution_evidence.py",
+        "tools/review_contract_fixture.py",
+        "tools/test_review_contract_fixture.py"
       ]
     },
     {

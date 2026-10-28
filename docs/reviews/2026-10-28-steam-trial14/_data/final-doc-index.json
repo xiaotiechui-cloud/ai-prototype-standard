@@ -1,0 +1,3192 @@
+{
+  "00_交付说明与变更记录.md": {
+    "lines": 302,
+    "headings": [
+      {
+        "line": 1,
+        "title": "# 00_交付说明与变更记录"
+      },
+      {
+        "line": 15,
+        "title": "## 1 项目与需求基线"
+      },
+      {
+        "line": 31,
+        "title": "## 2 本轮范围与排除项"
+      },
+      {
+        "line": 33,
+        "title": "### 2.1 本轮范围"
+      },
+      {
+        "line": 42,
+        "title": "### 2.2 排除项（本轮**不实现**，且在原型中不伪装为已实现入口）"
+      },
+      {
+        "line": 49,
+        "title": "### 2.3 \"本版拟采用（待评审）\"项的处理"
+      },
+      {
+        "line": 55,
+        "title": "## 3 文件及版本清单"
+      },
+      {
+        "line": 89,
+        "title": "## 4 建议评审路线"
+      },
+      {
+        "line": 103,
+        "title": "### 4.1 演示入口与模拟数据说明"
+      },
+      {
+        "line": 114,
+        "title": "### 4.2 模拟能力与真实依赖的边界"
+      },
+      {
+        "line": 127,
+        "title": "## 5 运行与演示方法"
+      },
+      {
+        "line": 144,
+        "title": "## 6 完成情况与限制"
+      },
+      {
+        "line": 146,
+        "title": "### 6.1 需求与端覆盖"
+      },
+      {
+        "line": 150,
+        "title": "### 6.2 检查状态"
+      },
+      {
+        "line": 160,
+        "title": "### 6.3 明确限制（不得被理解为已完成）"
+      },
+      {
+        "line": 172,
+        "title": "## 7 版本变更与影响"
+      },
+      {
+        "line": 289,
+        "title": "## 8 评审记录"
+      },
+      {
+        "line": 299,
+        "title": "## 9 历史文件迁移映射"
+      }
+    ],
+    "ids": {
+      "TC-[A-Z0-9-]+": 22,
+      "CHK-\\d+": 154,
+      "DEC-\\d+": 0,
+      "AC-\\d+": 2
+    }
+  },
+  "01_页面与状态说明.md": {
+    "lines": 819,
+    "headings": [
+      {
+        "line": 1,
+        "title": "# 01_页面与状态说明"
+      },
+      {
+        "line": 17,
+        "title": "## 1 角色及平台"
+      },
+      {
+        "line": 19,
+        "title": "### 1.1 端与容器"
+      },
+      {
+        "line": 29,
+        "title": "### 1.2 角色"
+      },
+      {
+        "line": 45,
+        "title": "## 2 页面总表"
+      },
+      {
+        "line": 54,
+        "title": "### 2.1 APP（移动客户端 H5）"
+      },
+      {
+        "line": 80,
+        "title": "### 2.2 WEB（PC 桌面 Web 客户端）"
+      },
+      {
+        "line": 99,
+        "title": "### 2.3 ADM（运营后台）"
+      },
+      {
+        "line": 125,
+        "title": "## 3 组件注册表"
+      },
+      {
+        "line": 129,
+        "title": "### 3.1 APP 组件"
+      },
+      {
+        "line": 247,
+        "title": "### 3.2 WEB 组件"
+      },
+      {
+        "line": 306,
+        "title": "### 3.3 ADM 共用组件"
+      },
+      {
+        "line": 322,
+        "title": "### 3.4 ADM 页面组件"
+      },
+      {
+        "line": 381,
+        "title": "## 4 导航关系"
+      },
+      {
+        "line": 437,
+        "title": "## 5 交互模式选型"
+      },
+      {
+        "line": 495,
+        "title": "## 6 页面状态与操作流转"
+      },
+      {
+        "line": 497,
+        "title": "### 6.1 状态码词汇表"
+      },
+      {
+        "line": 545,
+        "title": "### 6.2 状态适用矩阵"
+      },
+      {
+        "line": 549,
+        "title": "#### 6.2.1 APP 页面"
+      },
+      {
+        "line": 636,
+        "title": "#### 6.2.2 WEB 页面"
+      },
+      {
+        "line": 655,
+        "title": "#### 6.2.3 ADM 页面"
+      },
+      {
+        "line": 699,
+        "title": "#### 6.2.4 2026-10-22 新增页面状态（CHG-0096）"
+      },
+      {
+        "line": 723,
+        "title": "### 6.3 状态明细（关键状态）"
+      },
+      {
+        "line": 742,
+        "title": "### 6.4 用户动作流转"
+      },
+      {
+        "line": 774,
+        "title": "### 6.5 定时与异步"
+      },
+      {
+        "line": 788,
+        "title": "### 6.6 返回与恢复"
+      },
+      {
+        "line": 806,
+        "title": "## 7 本期与后续边界"
+      }
+    ],
+    "ids": {
+      "TC-[A-Z0-9-]+": 13,
+      "CHK-\\d+": 1,
+      "DEC-\\d+": 0,
+      "AC-\\d+": 4
+    }
+  },
+  "03_组件级文档.md": {
+    "lines": 13536,
+    "headings": [
+      {
+        "line": 1,
+        "title": "# 03_组件级文档"
+      },
+      {
+        "line": 37,
+        "title": "# 03_组件级文档（第A部分：客户端共享组件、首页、搜索与商品详情）"
+      },
+      {
+        "line": 39,
+        "title": "## A 客户端共享组件定义"
+      },
+      {
+        "line": 45,
+        "title": "### COM-CLIENT-C01 搜索输入框"
+      },
+      {
+        "line": 109,
+        "title": "### COM-CLIENT-C02 搜索提交动作"
+      },
+      {
+        "line": 179,
+        "title": "### COM-CLIENT-C03 商品卡片"
+      },
+      {
+        "line": 246,
+        "title": "### COM-CLIENT-C04 商品卡片列表容器"
+      },
+      {
+        "line": 315,
+        "title": "### COM-CLIENT-C05 排序栏"
+      },
+      {
+        "line": 379,
+        "title": "### COM-CLIENT-C06 商品卡片列表（首页/搜索结果复用）"
+      },
+      {
+        "line": 439,
+        "title": "### COM-CLIENT-C07 客服入口"
+      },
+      {
+        "line": 499,
+        "title": "### COM-CLIENT-C08 顶部标题栏"
+      },
+      {
+        "line": 557,
+        "title": "### COM-CLIENT-C09 加载/空/失败状态区与继续加载"
+      },
+      {
+        "line": 623,
+        "title": "### COM-CLIENT-C10 商品明细卡"
+      },
+      {
+        "line": 682,
+        "title": "### COM-CLIENT-C11 状态筛选页签"
+      },
+      {
+        "line": 740,
+        "title": "### COM-CLIENT-C12 订单卡片列表"
+      },
+      {
+        "line": 810,
+        "title": "### COM-CLIENT-C13 登录失效引导"
+      },
+      {
+        "line": 867,
+        "title": "### COM-CLIENT-C14 底部标签栏"
+      },
+      {
+        "line": 930,
+        "title": "## B APP 页面组件"
+      },
+      {
+        "line": 932,
+        "title": "### APP-HOME-01 商城首页"
+      },
+      {
+        "line": 936,
+        "title": "#### APP-HOME-01-C01 顶部标题栏"
+      },
+      {
+        "line": 988,
+        "title": "#### APP-HOME-01-C02 搜索入口"
+      },
+      {
+        "line": 1035,
+        "title": "#### APP-HOME-01-C04 广告位"
+      },
+      {
+        "line": 1101,
+        "title": "#### APP-HOME-01-C06 排序与筛选栏（共享）"
+      },
+      {
+        "line": 1155,
+        "title": "#### APP-HOME-01-C07 商品卡片列表（共享）"
+      },
+      {
+        "line": 1213,
+        "title": "#### APP-HOME-01-C08 加载与失败状态区（共享）"
+      },
+      {
+        "line": 1274,
+        "title": "#### APP-HOME-01-C09 底部标签栏"
+      },
+      {
+        "line": 1325,
+        "title": "### APP-NOTICE-01 首次进入实名提醒（弹层）"
+      },
+      {
+        "line": 1329,
+        "title": "#### APP-NOTICE-01-C01 提醒弹层容器"
+      },
+      {
+        "line": 1384,
+        "title": "#### APP-NOTICE-01-C02 提醒文案区"
+      },
+      {
+        "line": 1436,
+        "title": "#### APP-NOTICE-01-C03 主按钮"
+      },
+      {
+        "line": 1490,
+        "title": "#### APP-NOTICE-01-C04 右上角关闭按钮"
+      },
+      {
+        "line": 1541,
+        "title": "### APP-SEARCH-01 搜索默认页"
+      },
+      {
+        "line": 1545,
+        "title": "#### APP-SEARCH-01-C01 搜索输入框（共享）"
+      },
+      {
+        "line": 1597,
+        "title": "#### APP-SEARCH-01-C02 搜索发现区"
+      },
+      {
+        "line": 1651,
+        "title": "#### APP-SEARCH-01-C03 热门商品区"
+      },
+      {
+        "line": 1703,
+        "title": "#### APP-SEARCH-01-C04 联想建议列表"
+      },
+      {
+        "line": 1750,
+        "title": "#### APP-SEARCH-01-C05 搜索历史"
+      },
+      {
+        "line": 1811,
+        "title": "### APP-SEARCH-02 搜索结果页"
+      },
+      {
+        "line": 1815,
+        "title": "#### APP-SEARCH-02-C01 搜索输入框（共享，回填关键词）"
+      },
+      {
+        "line": 1869,
+        "title": "#### APP-SEARCH-02-C03 结果卡片列表（共享）"
+      },
+      {
+        "line": 1927,
+        "title": "#### APP-SEARCH-02-C04 继续加载/分页（共享）"
+      },
+      {
+        "line": 1984,
+        "title": "### APP-PRODUCT-01 商品详情"
+      },
+      {
+        "line": 1988,
+        "title": "#### APP-PRODUCT-01-C01 详情顶部导航"
+      },
+      {
+        "line": 2038,
+        "title": "#### APP-PRODUCT-01-C02 商品媒体区（图片 / 视频轮播）"
+      },
+      {
+        "line": 2099,
+        "title": "#### APP-PRODUCT-01-C03 名称价格区"
+      },
+      {
+        "line": 2154,
+        "title": "#### APP-PRODUCT-01-C06 商品须知（可展开）"
+      },
+      {
+        "line": 2209,
+        "title": "#### APP-PRODUCT-01-C07 底部操作栏"
+      },
+      {
+        "line": 2279,
+        "title": "#### APP-PRODUCT-01-C08 未支付订单提示条"
+      },
+      {
+        "line": 2335,
+        "title": "#### APP-PRODUCT-01-C09 游戏介绍"
+      },
+      {
+        "line": 2386,
+        "title": "#### APP-PRODUCT-01-C10 硬件配置"
+      },
+      {
+        "line": 2441,
+        "title": "# 03_组件级文档（第B部分：APP 购买链路）"
+      },
+      {
+        "line": 2443,
+        "title": "## B APP 购买链路组件"
+      },
+      {
+        "line": 2447,
+        "title": "### APP-PANEL-01-C01 面板容器"
+      },
+      {
+        "line": 2524,
+        "title": "### APP-PANEL-01-C02 商品与金额区"
+      },
+      {
+        "line": 2581,
+        "title": "### APP-PANEL-01-C03 规格选择"
+      },
+      {
+        "line": 2650,
+        "title": "### APP-PANEL-01-C05 发货方式与适用限制"
+      },
+      {
+        "line": 2714,
+        "title": "### APP-PANEL-01-C06 好友链接输入"
+      },
+      {
+        "line": 2786,
+        "title": "### APP-PANEL-01-C07 支付方式选择"
+      },
+      {
+        "line": 2854,
+        "title": "### APP-PANEL-01-C08 协议勾选"
+      },
+      {
+        "line": 2924,
+        "title": "### APP-PANEL-01-C09 最终购买按钮"
+      },
+      {
+        "line": 3032,
+        "title": "### APP-PANEL-01-C10 购买须知弹窗"
+      },
+      {
+        "line": 3106,
+        "title": "### APP-PANEL-01-C11 CDK 商品购买说明弹层"
+      },
+      {
+        "line": 3171,
+        "title": "### APP-AUTH-01-C01 说明弹层容器"
+      },
+      {
+        "line": 3243,
+        "title": "### APP-AUTH-01-C02 实名说明文案"
+      },
+      {
+        "line": 3297,
+        "title": "### APP-AUTH-01-C03 暂不认证按钮"
+      },
+      {
+        "line": 3356,
+        "title": "### APP-AUTH-01-C04 去认证按钮"
+      },
+      {
+        "line": 3427,
+        "title": "### APP-AGREEMENT-01-C01 协议页导航"
+      },
+      {
+        "line": 3480,
+        "title": "### APP-AGREEMENT-01-C02 协议正文"
+      },
+      {
+        "line": 3545,
+        "title": "### APP-AGREEMENT-01-C03 底部操作"
+      },
+      {
+        "line": 3597,
+        "title": "### APP-PHONE-01-C01 绑定页导航"
+      },
+      {
+        "line": 3640,
+        "title": "### APP-PHONE-01-C02 绑定状态/说明"
+      },
+      {
+        "line": 3690,
+        "title": "### APP-PHONE-01-C03 手机号与验证码表单"
+      },
+      {
+        "line": 3742,
+        "title": "### APP-PHONE-01-C04 绑定操作"
+      },
+      {
+        "line": 3793,
+        "title": "### APP-CHECKOUT-01-C01 顶部导航"
+      },
+      {
+        "line": 3852,
+        "title": "### APP-CHECKOUT-01-C02 订单信息区"
+      },
+      {
+        "line": 3917,
+        "title": "### APP-CHECKOUT-01-C03 商品明细卡（共享实例）"
+      },
+      {
+        "line": 3976,
+        "title": "### APP-CHECKOUT-01-C04 好友链接（可改，付款前）"
+      },
+      {
+        "line": 4051,
+        "title": "### APP-CHECKOUT-01-C05 支付方式选择"
+      },
+      {
+        "line": 4119,
+        "title": "### APP-CHECKOUT-01-C06 价格明细"
+      },
+      {
+        "line": 4183,
+        "title": "### APP-CHECKOUT-01-C07 协议勾选"
+      },
+      {
+        "line": 4253,
+        "title": "### APP-CHECKOUT-01-C08 底部合计与继续支付"
+      },
+      {
+        "line": 4331,
+        "title": "### APP-CHECKOUT-01-C09 倒计时（条件展示）"
+      },
+      {
+        "line": 4391,
+        "title": "### APP-PAYRET-01-C01 询问弹窗容器"
+      },
+      {
+        "line": 4462,
+        "title": "### APP-PAYRET-01-C02 询问文案"
+      },
+      {
+        "line": 4516,
+        "title": "### APP-PAYRET-01-C03 未支付按钮"
+      },
+      {
+        "line": 4586,
+        "title": "### APP-PAYRET-01-C04 已支付按钮"
+      },
+      {
+        "line": 4655,
+        "title": "### APP-PAYRET-01-C05 查询中反馈"
+      },
+      {
+        "line": 4724,
+        "title": "# 03_组件级文档（第C部分：APP 交付、订单与个人中心）"
+      },
+      {
+        "line": 4726,
+        "title": "## C APP 交付、订单与个人中心组件"
+      },
+      {
+        "line": 4728,
+        "title": "### APP-RESULT-01-C01 结果页导航"
+      },
+      {
+        "line": 4786,
+        "title": "### APP-RESULT-01-C02 结果摘要区"
+      },
+      {
+        "line": 4864,
+        "title": "### APP-RESULT-01-C03 口令码交付区"
+      },
+      {
+        "line": 4939,
+        "title": "### APP-RESULT-01-C04 好友赠送交付区"
+      },
+      {
+        "line": 5010,
+        "title": "### APP-RESULT-01-C05 查看订单与客服入口"
+      },
+      {
+        "line": 5073,
+        "title": "### APP-ORDER-01-C01 顶部导航"
+      },
+      {
+        "line": 5126,
+        "title": "### APP-ORDER-01-C02 状态筛选页签"
+      },
+      {
+        "line": 5187,
+        "title": "### APP-ORDER-01-C03 订单卡片列表"
+      },
+      {
+        "line": 5261,
+        "title": "### APP-ORDER-01-C04 分页/加载更多"
+      },
+      {
+        "line": 5325,
+        "title": "### APP-ORDER-01-C05 登录失效引导"
+      },
+      {
+        "line": 5385,
+        "title": "### APP-ORDER-02-C01 详情顶部导航"
+      },
+      {
+        "line": 5440,
+        "title": "### APP-ORDER-02-C02 状态区分区"
+      },
+      {
+        "line": 5519,
+        "title": "### APP-ORDER-02-C03 商品快照区"
+      },
+      {
+        "line": 5574,
+        "title": "### APP-ORDER-02-C04 口令码区"
+      },
+      {
+        "line": 5647,
+        "title": "### APP-ORDER-02-C05 好友赠送区"
+      },
+      {
+        "line": 5714,
+        "title": "### APP-ORDER-02-C06 售后记录区"
+      },
+      {
+        "line": 5778,
+        "title": "### APP-ORDER-02-C07 底部操作栏"
+      },
+      {
+        "line": 5853,
+        "title": "### APP-MINE-01-C01 账号信息区"
+      },
+      {
+        "line": 5912,
+        "title": "### APP-MINE-01-C02 资格状态区"
+      },
+      {
+        "line": 5981,
+        "title": "### APP-MINE-01-C03 我的订单区"
+      },
+      {
+        "line": 6049,
+        "title": "### APP-MINE-01-C04 客服入口"
+      },
+      {
+        "line": 6100,
+        "title": "### APP-MINE-01-C05 协议与关于"
+      },
+      {
+        "line": 6151,
+        "title": "### APP-MINE-01-C06 底部标签栏"
+      },
+      {
+        "line": 6202,
+        "title": "### APP-SERVICE-01-C01 客服引导区"
+      },
+      {
+        "line": 6256,
+        "title": "### APP-SERVICE-01-C02 复制订单号"
+      },
+      {
+        "line": 6313,
+        "title": "### APP-SERVICE-01-C03 企业微信唤起/二维码"
+      },
+      {
+        "line": 6377,
+        "title": "### APP-SERVICE-01-C04 备用提示"
+      },
+      {
+        "line": 6439,
+        "title": "### APP-CONTAINER-01-C01 容器异常提示区"
+      },
+      {
+        "line": 6492,
+        "title": "### APP-CONTAINER-01-C02 操作按钮"
+      },
+      {
+        "line": 6544,
+        "title": "# 03_组件级文档（第D部分：PC 桌面 Web 客户端）"
+      },
+      {
+        "line": 6546,
+        "title": "## D PC 桌面 Web 客户端组件"
+      },
+      {
+        "line": 6548,
+        "title": "### WEB-HOME-01-C01 顶部导航条"
+      },
+      {
+        "line": 6620,
+        "title": "### WEB-HOME-01-C02 广告位（宽屏）"
+      },
+      {
+        "line": 6683,
+        "title": "### WEB-HOME-01-C03 排序栏"
+      },
+      {
+        "line": 6745,
+        "title": "### WEB-HOME-01-C04 商品网格（多列）"
+      },
+      {
+        "line": 6817,
+        "title": "### WEB-SEARCH-01-C01 搜索输入框"
+      },
+      {
+        "line": 6884,
+        "title": "### WEB-SEARCH-01-C02 搜索发现区（宽屏）"
+      },
+      {
+        "line": 6944,
+        "title": "### WEB-SEARCH-01-C03 热门商品区（宽屏）"
+      },
+      {
+        "line": 7005,
+        "title": "### WEB-SEARCH-01-C04 结果网格"
+      },
+      {
+        "line": 7074,
+        "title": "### WEB-SEARCH-01-C05 分页控件"
+      },
+      {
+        "line": 7134,
+        "title": "#### WEB-SEARCH-01-C06 搜索历史（宽屏）"
+      },
+      {
+        "line": 7183,
+        "title": "### WEB-PRODUCT-01-C01 详情顶部导航"
+      },
+      {
+        "line": 7238,
+        "title": "### WEB-PRODUCT-01-C02 媒体图集（分栏左）"
+      },
+      {
+        "line": 7292,
+        "title": "### WEB-PRODUCT-01-C03 名称价格区（分栏右）"
+      },
+      {
+        "line": 7349,
+        "title": "### WEB-PRODUCT-01-C06 商品须知"
+      },
+      {
+        "line": 7402,
+        "title": "### WEB-PRODUCT-01-C07 右侧购买卡"
+      },
+      {
+        "line": 7478,
+        "title": "### WEB-PRODUCT-01-C08 购买面板（居中弹层）"
+      },
+      {
+        "line": 7570,
+        "title": "### WEB-PRODUCT-01-C09 游戏介绍（PC）"
+      },
+      {
+        "line": 7604,
+        "title": "### WEB-PRODUCT-01-C10 硬件配置"
+      },
+      {
+        "line": 7655,
+        "title": "### WEB-CHECKOUT-01-C01 商品明细卡"
+      },
+      {
+        "line": 7713,
+        "title": "### WEB-CHECKOUT-01-C02 好友链接"
+      },
+      {
+        "line": 7771,
+        "title": "### WEB-CHECKOUT-01-C03 支付方式选择"
+      },
+      {
+        "line": 7828,
+        "title": "### WEB-CHECKOUT-01-C04 价格明细"
+      },
+      {
+        "line": 7884,
+        "title": "### WEB-CHECKOUT-01-C05 协议勾选"
+      },
+      {
+        "line": 7945,
+        "title": "### WEB-CHECKOUT-01-C06 右侧结算栏"
+      },
+      {
+        "line": 8026,
+        "title": "#### WEB-CHECKOUT-01-C07 收银台扫码弹窗"
+      },
+      {
+        "line": 8089,
+        "title": "### WEB-PAYRET-01-C01 居中询问弹窗"
+      },
+      {
+        "line": 8152,
+        "title": "### WEB-PAYRET-01-C02 查询中反馈"
+      },
+      {
+        "line": 8219,
+        "title": "### WEB-RESULT-01-C01 结果摘要区"
+      },
+      {
+        "line": 8286,
+        "title": "### WEB-RESULT-01-C02 口令码交付区"
+      },
+      {
+        "line": 8352,
+        "title": "### WEB-RESULT-01-C03 好友赠送交付区"
+      },
+      {
+        "line": 8410,
+        "title": "### WEB-RESULT-01-C04 查看订单与客服"
+      },
+      {
+        "line": 8475,
+        "title": "### WEB-ORDER-01-C01 筛选区"
+      },
+      {
+        "line": 8544,
+        "title": "### WEB-ORDER-01-C02 订单表格/列表"
+      },
+      {
+        "line": 8615,
+        "title": "### WEB-ORDER-01-C03 订单详情抽屉"
+      },
+      {
+        "line": 8698,
+        "title": "### WEB-ORDER-01-C04 分页控件"
+      },
+      {
+        "line": 8757,
+        "title": "### WEB-MINE-01-C01 账号信息区"
+      },
+      {
+        "line": 8818,
+        "title": "### WEB-MINE-01-C02 资格状态区"
+      },
+      {
+        "line": 8885,
+        "title": "### WEB-MINE-01-C03 我的订单区"
+      },
+      {
+        "line": 8937,
+        "title": "### WEB-MINE-01-C04 客服入口"
+      },
+      {
+        "line": 8985,
+        "title": "### WEB-MINE-01-C05 协议与关于"
+      },
+      {
+        "line": 9033,
+        "title": "# 03_组件级文档（第E部分：运营后台，共用组件与首页／商品／库存／订单）"
+      },
+      {
+        "line": 9040,
+        "title": "## E1 后台共用组件"
+      },
+      {
+        "line": 9062,
+        "title": "### ADM-COMMON-C01 后台左侧业务菜单"
+      },
+      {
+        "line": 9124,
+        "title": "### ADM-COMMON-C02 顶部账号与操作栏"
+      },
+      {
+        "line": 9176,
+        "title": "### ADM-COMMON-C03 筛选区（共享，含高级筛选）"
+      },
+      {
+        "line": 9244,
+        "title": "### ADM-COMMON-C04 状态页签（共享）"
+      },
+      {
+        "line": 9303,
+        "title": "### ADM-COMMON-C05 数据表格（共享）"
+      },
+      {
+        "line": 9364,
+        "title": "### ADM-COMMON-C06 分页（共享）"
+      },
+      {
+        "line": 9421,
+        "title": "### ADM-COMMON-C07 详情/编辑弹窗（共享）"
+      },
+      {
+        "line": 9480,
+        "title": "### ADM-COMMON-C08 行选择与批量操作（共享）"
+      },
+      {
+        "line": 9538,
+        "title": "### ADM-COMMON-C09 导出动作（共享）"
+      },
+      {
+        "line": 9596,
+        "title": "### ADM-COMMON-C10 指标汇总卡（共享）"
+      },
+      {
+        "line": 9656,
+        "title": "### ADM-COMMON-C11 空态/错误/无权限区（共享）"
+      },
+      {
+        "line": 9710,
+        "title": "## E2 页面组件"
+      },
+      {
+        "line": 9716,
+        "title": "### ADM-LOGIN-01 后台登录"
+      },
+      {
+        "line": 9724,
+        "title": "#### ADM-LOGIN-01-C01 登录表单"
+      },
+      {
+        "line": 9779,
+        "title": "#### ADM-LOGIN-01-C02 登录按钮"
+      },
+      {
+        "line": 9831,
+        "title": "### ADM-HOME-01 首页配置管理"
+      },
+      {
+        "line": 9840,
+        "title": "#### ADM-HOME-01-C01 首页组件列表"
+      },
+      {
+        "line": 9898,
+        "title": "#### ADM-HOME-01-C02 组件编辑弹窗"
+      },
+      {
+        "line": 9973,
+        "title": "#### ADM-HOME-01-C03 保存与发布"
+      },
+      {
+        "line": 10026,
+        "title": "### ADM-GOODS-01 商品管理"
+      },
+      {
+        "line": 10034,
+        "title": "#### ADM-GOODS-01-C01 商品表格"
+      },
+      {
+        "line": 10091,
+        "title": "#### ADM-GOODS-01-C02 商品编辑弹窗"
+      },
+      {
+        "line": 10152,
+        "title": "#### ADM-GOODS-01-C03 上下架动作"
+      },
+      {
+        "line": 10209,
+        "title": "### ADM-STOCK-01 可售库存"
+      },
+      {
+        "line": 10218,
+        "title": "#### ADM-STOCK-01-C01 库存表格"
+      },
+      {
+        "line": 10277,
+        "title": "#### ADM-STOCK-01-C02 同步记录与手动同步"
+      },
+      {
+        "line": 10334,
+        "title": "### ADM-ORDER-01 订单管理"
+      },
+      {
+        "line": 10343,
+        "title": "#### ADM-ORDER-01-C01 订单表格"
+      },
+      {
+        "line": 10406,
+        "title": "#### ADM-ORDER-01-C02 订单详情弹窗"
+      },
+      {
+        "line": 10482,
+        "title": "# 03_组件级文档（第F部分：运营后台，赠送/口令码/退款/权限/统计/通知等）"
+      },
+      {
+        "line": 10484,
+        "title": "## F 运营后台业务组件"
+      },
+      {
+        "line": 10486,
+        "title": "### ADM-GIFT-01-C01 好友赠送订单列表"
+      },
+      {
+        "line": 10571,
+        "title": "### ADM-GIFT-01-C03 导出与批次动作"
+      },
+      {
+        "line": 10644,
+        "title": "### ADM-CODE-01-C01 交付记录表格"
+      },
+      {
+        "line": 10717,
+        "title": "### ADM-CODE-01-C02 人工补发弹窗"
+      },
+      {
+        "line": 10790,
+        "title": "### ADM-REFUND-01-C01 退款表格"
+      },
+      {
+        "line": 10870,
+        "title": "### ADM-REFUND-01-C02 审核弹窗"
+      },
+      {
+        "line": 10946,
+        "title": "### ADM-SERVICE-01-C01 客服配置表单"
+      },
+      {
+        "line": 11020,
+        "title": "### ADM-RBAC-01-C01 角色表格"
+      },
+      {
+        "line": 11093,
+        "title": "### ADM-RBAC-01-C02 权限矩阵"
+      },
+      {
+        "line": 11161,
+        "title": "### ADM-RBAC-01-C03 账号表格与授权弹窗"
+      },
+      {
+        "line": 11237,
+        "title": "### ADM-AUDIT-01-C01 操作记录表格"
+      },
+      {
+        "line": 11309,
+        "title": "### ADM-AUDIT-01-C02 记录详情弹窗"
+      },
+      {
+        "line": 11375,
+        "title": "### ADM-STAT-01-C01 时间范围与统计口径"
+      },
+      {
+        "line": 11447,
+        "title": "### ADM-STAT-01-C02 统计表格"
+      },
+      {
+        "line": 11520,
+        "title": "### ADM-AGREE-01-C01 协议版本表格"
+      },
+      {
+        "line": 11593,
+        "title": "### ADM-AGREE-01-C02 协议编辑与发布"
+      },
+      {
+        "line": 11667,
+        "title": "### ADM-SEARCH-01-C01 关键词配置表格"
+      },
+      {
+        "line": 11736,
+        "title": "### ADM-SEARCH-01-C02 推荐商品配置表格"
+      },
+      {
+        "line": 11809,
+        "title": "### ADM-PAYCHK-01-C01 支付尝试表格"
+      },
+      {
+        "line": 11886,
+        "title": "### ADM-PAYCHK-01-C02 核查记录弹窗"
+      },
+      {
+        "line": 11956,
+        "title": "### ADM-NOTIFY-01-C01 通知任务表格"
+      },
+      {
+        "line": 12037,
+        "title": "### ADM-NOTIFY-01-C02 重试动作"
+      },
+      {
+        "line": 12109,
+        "title": "### ADM-NOTIFY-01-C03 通知详情弹窗"
+      },
+      {
+        "line": 12181,
+        "title": "### ADM-NOTIFY-01-C04 通知模板管理弹层"
+      },
+      {
+        "line": 12247,
+        "title": "## 4.18 2026-10-22 新增页面组件（CHG-0096）"
+      },
+      {
+        "line": 12251,
+        "title": "### APP-LOGIN-01-C01 登录页导航"
+      },
+      {
+        "line": 12294,
+        "title": "### APP-LOGIN-01-C02 账号体系说明"
+      },
+      {
+        "line": 12337,
+        "title": "### APP-LOGIN-01-C03 错误提示条"
+      },
+      {
+        "line": 12380,
+        "title": "### APP-LOGIN-01-C04 验证码已发送提示"
+      },
+      {
+        "line": 12423,
+        "title": "### APP-LOGIN-01-C05 手机号与验证码表单"
+      },
+      {
+        "line": 12466,
+        "title": "### APP-LOGIN-01-C06 平台账号登录"
+      },
+      {
+        "line": 12509,
+        "title": "### APP-REALNAME-01-C01 实名页导航"
+      },
+      {
+        "line": 12552,
+        "title": "### APP-REALNAME-01-C02 实名说明"
+      },
+      {
+        "line": 12595,
+        "title": "### APP-REALNAME-01-C03 未成年提示"
+      },
+      {
+        "line": 12638,
+        "title": "### APP-REALNAME-01-C04 核验失败提示"
+      },
+      {
+        "line": 12681,
+        "title": "### APP-REALNAME-01-C05 实名信息表单"
+      },
+      {
+        "line": 12724,
+        "title": "### APP-REALNAME-02-C01 实名结果页导航"
+      },
+      {
+        "line": 12767,
+        "title": "### APP-REALNAME-02-C02 实名结果摘要"
+      },
+      {
+        "line": 12811,
+        "title": "### APP-REALNAME-02-C03 结果操作"
+      },
+      {
+        "line": 12854,
+        "title": "### APP-PRIVACY-01-C01 隐私政策导航"
+      },
+      {
+        "line": 12897,
+        "title": "### APP-PRIVACY-01-C02 隐私政策正文"
+      },
+      {
+        "line": 12940,
+        "title": "### APP-PRIVACY-01-C03 隐私政策返回操作"
+      },
+      {
+        "line": 12983,
+        "title": "### WEB-LOGIN-01-C01 登录页账号说明（PC）"
+      },
+      {
+        "line": 13026,
+        "title": "### WEB-LOGIN-01-C02 登录/注册表单（PC）"
+      },
+      {
+        "line": 13069,
+        "title": "### WEB-PHONE-01-C01 绑定页导航（PC）"
+      },
+      {
+        "line": 13112,
+        "title": "### WEB-PHONE-01-C02 绑定状态/说明（PC）"
+      },
+      {
+        "line": 13156,
+        "title": "### WEB-PHONE-01-C03 手机号与验证码表单（PC）"
+      },
+      {
+        "line": 13205,
+        "title": "### WEB-PHONE-01-C04 绑定操作（PC）"
+      },
+      {
+        "line": 13252,
+        "title": "### WEB-REALNAME-01-C01 实名说明（PC）"
+      },
+      {
+        "line": 13295,
+        "title": "### WEB-REALNAME-01-C02 实名信息表单（PC）"
+      },
+      {
+        "line": 13338,
+        "title": "### WEB-REALNAME-02-C01 实名结果页导航（PC）"
+      },
+      {
+        "line": 13382,
+        "title": "### WEB-REALNAME-02-C02 实名结果卡（PC）"
+      },
+      {
+        "line": 13426,
+        "title": "### ADM-CODE-01-C05 钉钉通知记录弹层"
+      },
+      {
+        "line": 13469,
+        "title": "## 4.26 CHG-0096 对既有组件的修改"
+      },
+      {
+        "line": 13481,
+        "title": "### WEB-PRODUCT-01-C11 实名认证提示弹层（PC）"
+      },
+      {
+        "line": 13509,
+        "title": "## CHG-0097 对既有组件的修改（2026-10-22）"
+      },
+      {
+        "line": 13520,
+        "title": "## CHG-0098 对既有组件的修改（2026-10-22）"
+      },
+      {
+        "line": 13526,
+        "title": "## CHG-0099 对既有组件的修改（2026-10-22）"
+      },
+      {
+        "line": 13532,
+        "title": "## CHG-0100 对既有组件的修改（2026-10-22）"
+      }
+    ],
+    "ids": {
+      "TC-[A-Z0-9-]+": 297,
+      "CHK-\\d+": 1,
+      "DEC-\\d+": 0,
+      "AC-\\d+": 36
+    }
+  },
+  "04_业务流程与异常规则.md": {
+    "lines": 2196,
+    "headings": [
+      {
+        "line": 1,
+        "title": "# 04_业务流程与异常规则"
+      },
+      {
+        "line": 21,
+        "title": "## 1 范围与业务规则"
+      },
+      {
+        "line": 23,
+        "title": "### 1.1 范围与基线"
+      },
+      {
+        "line": 35,
+        "title": "### 1.2 端、角色与职责边界"
+      },
+      {
+        "line": 50,
+        "title": "### 1.3 统一业务规则（BR，跨流程共用，只在本节维护）"
+      },
+      {
+        "line": 75,
+        "title": "### 1.4 编号与追踪规则"
+      },
+      {
+        "line": 89,
+        "title": "## 2 核心业务流程及节点表（标准 10.1）"
+      },
+      {
+        "line": 93,
+        "title": "### 2.0 流程目录"
+      },
+      {
+        "line": 118,
+        "title": "### 2.1 FL-BROWSE-001 免登录浏览（首页→排序→搜索→详情）"
+      },
+      {
+        "line": 200,
+        "title": "### 2.2 FL-SEARCH-001 搜索（默认页→提交→结果→继续加载/失败）"
+      },
+      {
+        "line": 276,
+        "title": "### 2.3 FL-AUTH-001 首次进入实名提醒（状态判定→按钮→关闭/跳转→返回重查）"
+      },
+      {
+        "line": 337,
+        "title": "### 2.4 FL-AUTH-002 购买时实名衔接（未实名→说明弹层→暂不认证/去认证→返回重查）"
+      },
+      {
+        "line": 394,
+        "title": "### 2.5 FL-BUY-001 购买主流程（与 PRD 5.1 主流程图一致）"
+      },
+      {
+        "line": 484,
+        "title": "### 2.6 FL-PHONE-001 手机号绑定衔接"
+      },
+      {
+        "line": 532,
+        "title": "### 2.7 FL-CHECKOUT-001 未支付订单恢复与继续支付"
+      },
+      {
+        "line": 607,
+        "title": "### 2.8 FL-PAY-001 支付发起与返回确认（PAY-07～10 与结果去向）"
+      },
+      {
+        "line": 688,
+        "title": "### 2.9 FL-DELIVER-001 口令码自动交付与站内信通知"
+      },
+      {
+        "line": 754,
+        "title": "### 2.10 FL-DELIVER-002 好友赠送人工交付（工作时段规则与未定时间边界）"
+      },
+      {
+        "line": 823,
+        "title": "### 2.11 FL-ORDER-001 订单查看与状态恢复"
+      },
+      {
+        "line": 906,
+        "title": "### 2.12 FL-SERVICE-001 企业微信客服与后台售后"
+      },
+      {
+        "line": 968,
+        "title": "### 2.13 FL-ADM-HOME-001 首页配置发布"
+      },
+      {
+        "line": 1025,
+        "title": "### 2.14 FL-ADM-GOODS-001 商品与规格维护"
+      },
+      {
+        "line": 1088,
+        "title": "### 2.15 FL-ADM-ORDER-001 后台订单处理与导出"
+      },
+      {
+        "line": 1164,
+        "title": "### 2.16 FL-ADM-GIFT-001 赠送批次处理（导出→人工赠送→核实→完成确认）"
+      },
+      {
+        "line": 1218,
+        "title": "### 2.17 FL-ADM-CODE-001 人工补发"
+      },
+      {
+        "line": 1296,
+        "title": "### 2.18 FL-ADM-REFUND-001 特殊退款"
+      },
+      {
+        "line": 1354,
+        "title": "### 2.19 FL-ADM-NOTIFY-001 站内信任务与失败重试"
+      },
+      {
+        "line": 1406,
+        "title": "### 2.20 FL-ADM-AGREE-001 协议版本发布"
+      },
+      {
+        "line": 1457,
+        "title": "### 2.21 FL-ADM-SUPPLY-001 上游自动发货与人工核查"
+      },
+      {
+        "line": 1515,
+        "title": "## 3 业务对象状态机及迁移表（标准 10.2）"
+      },
+      {
+        "line": 1519,
+        "title": "### 3.0 状态机总览"
+      },
+      {
+        "line": 1533,
+        "title": "### 3.1 SM-PAY-001 支付"
+      },
+      {
+        "line": 1588,
+        "title": "### 3.2 SM-CODE-001 口令码交付"
+      },
+      {
+        "line": 1639,
+        "title": "### 3.3 SM-GIFT-001 好友赠送"
+      },
+      {
+        "line": 1690,
+        "title": "### 3.4 SM-AFTER-001 售后"
+      },
+      {
+        "line": 1732,
+        "title": "### 3.5 SM-REFUND-001 退款单"
+      },
+      {
+        "line": 1782,
+        "title": "### 3.6 SM-NOTIFY-001 站内信任务"
+      },
+      {
+        "line": 1838,
+        "title": "### 3.7 派生与展示状态引用（不另建状态机）"
+      },
+      {
+        "line": 1851,
+        "title": "### 3.8 竞态与判定依据（取消与成功同时到达、重复回调、终态后事件、跨端刷新、补偿）"
+      },
+      {
+        "line": 1864,
+        "title": "## 4 异常处理矩阵（标准 10.3）"
+      },
+      {
+        "line": 1941,
+        "title": "## 5 恢复、补偿与人工介入"
+      },
+      {
+        "line": 1943,
+        "title": "### 5.1 恢复路径原则"
+      },
+      {
+        "line": 1951,
+        "title": "### 5.2 人工介入清单"
+      },
+      {
+        "line": 1970,
+        "title": "### 5.3 补偿与对账"
+      },
+      {
+        "line": 1977,
+        "title": "### 5.4 待确认的时限与阈值（不以“联系客服”替代）"
+      },
+      {
+        "line": 1991,
+        "title": "## 6 适用性和待确认项"
+      },
+      {
+        "line": 1993,
+        "title": "### 6.1 适用性结论"
+      },
+      {
+        "line": 2007,
+        "title": "### 6.2 待确认项与本文档的关联"
+      },
+      {
+        "line": 2030,
+        "title": "### 6.3 设计建议与决策引用（详见 09）"
+      },
+      {
+        "line": 2041,
+        "title": "## 7 离线可视入口说明（标准 10.1 图示要求）"
+      },
+      {
+        "line": 2059,
+        "title": "## 8 2026-10-22 评审增量规则（CHG-0096）"
+      },
+      {
+        "line": 2063,
+        "title": "### 8.1 FL-AUTH-003 独立手机号登录/注册"
+      },
+      {
+        "line": 2074,
+        "title": "### 8.2 FL-AUTH-004 独立账号实名认证"
+      },
+      {
+        "line": 2085,
+        "title": "### 8.3 FL-ADM-CODE-002 pu004 异常处理与钉钉通知"
+      },
+      {
+        "line": 2095,
+        "title": "### 8.4 FL-PAY-002 支付结果查询与晚到款"
+      },
+      {
+        "line": 2106,
+        "title": "### 8.5 订单展示五态与退款子状态"
+      },
+      {
+        "line": 2120,
+        "title": "### 8.6 30 分钟有效期、库存与价格"
+      },
+      {
+        "line": 2128,
+        "title": "### 8.7 使用指引与售后"
+      },
+      {
+        "line": 2133,
+        "title": "### 8.8 好友赠送与通知"
+      },
+      {
+        "line": 2140,
+        "title": "### 8.9 新增异常规则（CHG-0096）"
+      },
+      {
+        "line": 2152,
+        "title": "### 8.10 实名认证来源与购买准入（CHG-0097）"
+      },
+      {
+        "line": 2160,
+        "title": "### 8.11 订单详情展示规则（CHG-0097）"
+      },
+      {
+        "line": 2167,
+        "title": "### 8.12 2026-10-22 补充评审规则（CHG-0098）"
+      },
+      {
+        "line": 2173,
+        "title": "### 8.13 采购余额强校验与库存分层校验（CHG-0099）"
+      },
+      {
+        "line": 2188,
+        "title": "### 8.14 手机号主动绑定与多发货方式可售（CHG-0100）"
+      }
+    ],
+    "ids": {
+      "TC-[A-Z0-9-]+": 94,
+      "CHK-\\d+": 1,
+      "DEC-\\d+": 0,
+      "AC-\\d+": 6
+    }
+  },
+  "05_接口数据与权限说明.md": {
+    "lines": 3112,
+    "headings": [
+      {
+        "line": 1,
+        "title": "# Steam商城首期 接口数据与权限说明"
+      },
+      {
+        "line": 19,
+        "title": "## 1 数据交互范围及契约状态"
+      },
+      {
+        "line": 21,
+        "title": "### 1.1 本文件定位与契约状态分级"
+      },
+      {
+        "line": 34,
+        "title": "### 1.2 契约状态总表"
+      },
+      {
+        "line": 54,
+        "title": "### 1.3 通用数据约定（本轮建议契约，全部待技术确认）"
+      },
+      {
+        "line": 73,
+        "title": "### 1.4 第三方依赖契约状态"
+      },
+      {
+        "line": 88,
+        "title": "## 2 接口目录与逐接口契约"
+      },
+      {
+        "line": 90,
+        "title": "### 2.0 接口目录"
+      },
+      {
+        "line": 174,
+        "title": "### 2.1 AUTH 身份与资格"
+      },
+      {
+        "line": 176,
+        "title": "#### 2.1.1 API-AUTH-001 获取当前商城用户账号与平台会话"
+      },
+      {
+        "line": 223,
+        "title": "#### 2.1.2 API-AUTH-002 获取可信实名与成年结果"
+      },
+      {
+        "line": 263,
+        "title": "#### 2.1.3 API-AUTH-003 唤起平台实名（SDK/跳转，非HTTP动作契约）"
+      },
+      {
+        "line": 292,
+        "title": "#### 2.1.4 API-AUTH-004 获取手机号绑定状态"
+      },
+      {
+        "line": 328,
+        "title": "#### 2.1.5 API-AUTH-005 首次进入提醒记录读写"
+      },
+      {
+        "line": 359,
+        "title": "### 2.2 HOME 首页配置"
+      },
+      {
+        "line": 361,
+        "title": "#### 2.2.1 API-HOME-001 获取首页配置（标题/广告/导航）"
+      },
+      {
+        "line": 400,
+        "title": "#### 2.2.2 API-HOME-002 获取商品列表（含排序与分页）"
+      },
+      {
+        "line": 446,
+        "title": "### 2.3 SEARCH 搜索"
+      },
+      {
+        "line": 448,
+        "title": "#### 2.3.1 API-SEARCH-001 关键词搜索"
+      },
+      {
+        "line": 485,
+        "title": "#### 2.3.2 API-SEARCH-002 获取搜索发现与热门商品"
+      },
+      {
+        "line": 514,
+        "title": "#### 2.3.3 API-SEARCH-003 搜索结果列表（排序/分页，可与 001 合并说明）"
+      },
+      {
+        "line": 539,
+        "title": "### 2.4 PRODUCT 商品详情"
+      },
+      {
+        "line": 541,
+        "title": "#### 2.4.1 API-PRODUCT-001 获取商品详情与规格"
+      },
+      {
+        "line": 591,
+        "title": "### 2.5 ORDER 订单"
+      },
+      {
+        "line": 593,
+        "title": "#### 2.5.1 API-ORDER-001 创建订单"
+      },
+      {
+        "line": 647,
+        "title": "#### 2.5.2 API-ORDER-002 查询当前账号该商品未支付订单"
+      },
+      {
+        "line": 678,
+        "title": "#### 2.5.3 API-ORDER-003 查询订单列表/详情"
+      },
+      {
+        "line": 726,
+        "title": "#### 2.5.4 API-ORDER-004 获取订单交付结果"
+      },
+      {
+        "line": 766,
+        "title": "### 2.6 PAY 支付"
+      },
+      {
+        "line": 768,
+        "title": "#### 2.6.1 API-PAY-001 发起支付（获取支付参数/收银台）"
+      },
+      {
+        "line": 811,
+        "title": "#### 2.6.2 API-PAY-002 查询支付结果"
+      },
+      {
+        "line": 855,
+        "title": "### 2.7 CHECKOUT 结算资料"
+      },
+      {
+        "line": 857,
+        "title": "#### 2.7.1 API-CHECKOUT-001 保存/校验好友链接与订单资料"
+      },
+      {
+        "line": 899,
+        "title": "### 2.8 AGREE 购买协议"
+      },
+      {
+        "line": 901,
+        "title": "#### 2.8.1 API-AGREE-001 记录协议同意"
+      },
+      {
+        "line": 939,
+        "title": "#### 2.8.2 API-AGREE-002 获取购买协议文本与版本"
+      },
+      {
+        "line": 970,
+        "title": "### 2.9 CODE 口令码交付"
+      },
+      {
+        "line": 972,
+        "title": "#### 2.9.1 API-CODE-001 获取订单口令码交付记录"
+      },
+      {
+        "line": 1014,
+        "title": "### 2.10 GIFT 好友赠送"
+      },
+      {
+        "line": 1016,
+        "title": "#### 2.10.1 API-GIFT-001 获取好友赠送交付状态"
+      },
+      {
+        "line": 1052,
+        "title": "### 2.11 NOTIFY 站内信通知"
+      },
+      {
+        "line": 1054,
+        "title": "#### 2.11.1 API-NOTIFY-001 站内信通知任务与发送记录（服务端到平台）"
+      },
+      {
+        "line": 1099,
+        "title": "### 2.12 AFTER 售后记录"
+      },
+      {
+        "line": 1101,
+        "title": "#### 2.12.1 API-AFTER-001 获取订单售后记录"
+      },
+      {
+        "line": 1135,
+        "title": "### 2.13 SERVICE 客服配置"
+      },
+      {
+        "line": 1137,
+        "title": "#### 2.13.1 API-SERVICE-001 获取客服配置"
+      },
+      {
+        "line": 1170,
+        "title": "### 2.14 ADMIN 运营后台接口（API-ADMIN-001～162）"
+      },
+      {
+        "line": 1181,
+        "title": "#### 2.14.1 API-ADMIN-001 后台登录与账号校验"
+      },
+      {
+        "line": 1200,
+        "title": "#### 2.14.2 API-ADMIN-003 导出任务"
+      },
+      {
+        "line": 1217,
+        "title": "#### 2.14.3 API-ADMIN-004 统计汇总"
+      },
+      {
+        "line": 1231,
+        "title": "#### 2.14.4 API-ADMIN-010 首页配置读取/编辑"
+      },
+      {
+        "line": 1250,
+        "title": "#### 2.14.5 API-ADMIN-011 首页配置发布"
+      },
+      {
+        "line": 1264,
+        "title": "#### 2.14.6 API-ADMIN-020 商品与规格维护"
+      },
+      {
+        "line": 1283,
+        "title": "#### 2.14.7 API-ADMIN-021 商品上下架/状态变更"
+      },
+      {
+        "line": 1297,
+        "title": "#### 2.14.8 API-ADMIN-030 供应商与商品映射（**本期不启用，编号保留**）"
+      },
+      {
+        "line": 1313,
+        "title": "#### 2.14.9 API-ADMIN-040 库存/可售读取与维护"
+      },
+      {
+        "line": 1329,
+        "title": "#### 2.14.10 API-ADMIN-041 库存同步动作与记录"
+      },
+      {
+        "line": 1342,
+        "title": "#### 2.14.11 API-ADMIN-050 订单查询"
+      },
+      {
+        "line": 1359,
+        "title": "#### 2.14.12 API-ADMIN-051 订单详情"
+      },
+      {
+        "line": 1374,
+        "title": "#### 2.14.13 API-ADMIN-060 赠送待处理队列"
+      },
+      {
+        "line": 1388,
+        "title": "#### 2.14.14 API-ADMIN-061 赠送批次记录"
+      },
+      {
+        "line": 1400,
+        "title": "#### 2.14.15 API-ADMIN-062 赠送批量导出"
+      },
+      {
+        "line": 1420,
+        "title": "#### 2.14.16 API-ADMIN-063 赠送处理与完成确认"
+      },
+      {
+        "line": 1433,
+        "title": "#### 2.14.17 API-ADMIN-070 口令码交付记录查询"
+      },
+      {
+        "line": 1455,
+        "title": "#### 2.14.18 API-ADMIN-071 人工补发"
+      },
+      {
+        "line": 1472,
+        "title": "#### 2.14.19 API-ADMIN-080 退款单查询"
+      },
+      {
+        "line": 1489,
+        "title": "#### 2.14.20 API-ADMIN-081 退款审核与执行"
+      },
+      {
+        "line": 1505,
+        "title": "#### 2.14.21 API-ADMIN-090 客服配置维护"
+      },
+      {
+        "line": 1519,
+        "title": "#### 2.14.22 API-ADMIN-100 角色与菜单权限"
+      },
+      {
+        "line": 1536,
+        "title": "#### 2.14.23 API-ADMIN-101 后台账号分配角色"
+      },
+      {
+        "line": 1552,
+        "title": "#### 2.14.24 API-ADMIN-110 操作记录查询"
+      },
+      {
+        "line": 1568,
+        "title": "#### 2.14.25 API-ADMIN-120 基础统计"
+      },
+      {
+        "line": 1583,
+        "title": "#### 2.14.26 API-ADMIN-130 协议版本查询"
+      },
+      {
+        "line": 1599,
+        "title": "#### 2.14.27 API-ADMIN-131 协议编辑与发布"
+      },
+      {
+        "line": 1612,
+        "title": "#### 2.14.28 API-ADMIN-140 搜索推荐配置"
+      },
+      {
+        "line": 1625,
+        "title": "#### 2.14.29 API-ADMIN-150 支付核查记录"
+      },
+      {
+        "line": 1647,
+        "title": "#### 2.14.30 API-ADMIN-160 通知任务记录"
+      },
+      {
+        "line": 1667,
+        "title": "#### 2.14.31 API-ADMIN-161 通知授权重试"
+      },
+      {
+        "line": 1680,
+        "title": "#### 2.14.32 API-ADMIN-072 人工调用供应商获取口令码（已废弃）"
+      },
+      {
+        "line": 1687,
+        "title": "#### 2.14.33 API-ADMIN-162 通知模板查询/编辑"
+      },
+      {
+        "line": 1705,
+        "title": "### 2.15 HIgame 上游接口（直销商 API）"
+      },
+      {
+        "line": 1719,
+        "title": "#### 2.15.0 共同约定"
+      },
+      {
+        "line": 1735,
+        "title": "#### 2.15.1 API-HIGAME-001 商品列表"
+      },
+      {
+        "line": 1745,
+        "title": "#### 2.15.2 API-HIGAME-002 商品详情/库存/价格"
+      },
+      {
+        "line": 1755,
+        "title": "#### 2.15.3 API-HIGAME-003 钱包余额"
+      },
+      {
+        "line": 1765,
+        "title": "#### 2.15.4 API-HIGAME-004 自动发货（核心）"
+      },
+      {
+        "line": 1798,
+        "title": "#### 2.15.5 API-HIGAME-005 发货日志"
+      },
+      {
+        "line": 1807,
+        "title": "#### 2.15.6 API-HIGAME-006 采购订单列表"
+      },
+      {
+        "line": 1815,
+        "title": "#### 2.15.7 API-HIGAME-007 批发市场订单列表"
+      },
+      {
+        "line": 1823,
+        "title": "#### 2.15.8 上游接口与内部接口的映射"
+      },
+      {
+        "line": 1835,
+        "title": "#### 2.15.9 商品在架与库存刷新口径（CHG-0092）"
+      },
+      {
+        "line": 1844,
+        "title": "## 3 数据对象、字段及枚举字典"
+      },
+      {
+        "line": 1846,
+        "title": "### 3.1 数据对象清单（来源：PRD 10.2 最小数据对象）"
+      },
+      {
+        "line": 1869,
+        "title": "### 3.2 字段字典"
+      },
+      {
+        "line": 1969,
+        "title": "### 3.3 客户端埋点属性主定义（标准 11.2 / 12.4）"
+      },
+      {
+        "line": 1994,
+        "title": "### 3.4 枚举及配置字典（业务对象状态码）"
+      },
+      {
+        "line": 2046,
+        "title": "### 3.5 业务码与错误码字典（建议契约，待技术确认）"
+      },
+      {
+        "line": 2076,
+        "title": "## 4 角色/系统权限"
+      },
+      {
+        "line": 2078,
+        "title": "### 4.1 角色权限表"
+      },
+      {
+        "line": 2099,
+        "title": "### 4.2 系统权限表"
+      },
+      {
+        "line": 2113,
+        "title": "### 4.3 授权类型区分（避免用一个“已授权”统称）"
+      },
+      {
+        "line": 2125,
+        "title": "## 5 数据边界与留存"
+      },
+      {
+        "line": 2129,
+        "title": "### 5.1 数据类别、目的、依据与期限"
+      },
+      {
+        "line": 2148,
+        "title": "### 5.2 删除、匿名化与账号变化触发"
+      },
+      {
+        "line": 2159,
+        "title": "### 5.3 访问范围与证据要求"
+      },
+      {
+        "line": 2169,
+        "title": "## 6 接口及第三方服务时序图"
+      },
+      {
+        "line": 2171,
+        "title": "### 6.0 场景目录与参与者"
+      },
+      {
+        "line": 2198,
+        "title": "### 6.1 SEQ-AUTH-001 登录与实名衔接"
+      },
+      {
+        "line": 2282,
+        "title": "### 6.2 SEQ-BUY-001 下单与支付"
+      },
+      {
+        "line": 2398,
+        "title": "### 6.3 SEQ-PAY-001 支付返回与结果确认（12项说明第9项）"
+      },
+      {
+        "line": 2475,
+        "title": "### 6.4 SEQ-CODE-001 口令码自动交付与站内信通知"
+      },
+      {
+        "line": 2553,
+        "title": "### 6.5 SEQ-GIFT-001 好友赠送人工交付"
+      },
+      {
+        "line": 2622,
+        "title": "### 6.6 SEQ-NOTIFY-001 站内信发送与失败核查重试"
+      },
+      {
+        "line": 2699,
+        "title": "### 6.7 SEQ-ADM-001 后台订单查询与导出"
+      },
+      {
+        "line": 2763,
+        "title": "### 6.8 SEQ-ADM-002 人工补发"
+      },
+      {
+        "line": 2827,
+        "title": "### 6.9 SEQ-ADM-003 特殊退款"
+      },
+      {
+        "line": 2907,
+        "title": "### 6.10 离线可视入口与图源一致性"
+      },
+      {
+        "line": 2913,
+        "title": "### 6.11 时序编号归属与 04 引用对照（一致性修正记录）"
+      },
+      {
+        "line": 2939,
+        "title": "## 7 消息说明及待确认依赖"
+      },
+      {
+        "line": 2941,
+        "title": "### 7.1 消息与回调总索引"
+      },
+      {
+        "line": 2954,
+        "title": "### 7.2 待确认依赖清单（本文件视角）"
+      },
+      {
+        "line": 2984,
+        "title": "### 7.3 跨文件同步与维护规则"
+      },
+      {
+        "line": 3003,
+        "title": "## 8 CHG-0096 新增接口与数据字段（2026-10-22）"
+      },
+      {
+        "line": 3005,
+        "title": "### 8.1 API-AUTH-101 发送短信验证码"
+      },
+      {
+        "line": 3014,
+        "title": "### 8.2 API-AUTH-102 短信验证码登录/注册"
+      },
+      {
+        "line": 3022,
+        "title": "### 8.3 API-AUTH-103 独立账号实名核验"
+      },
+      {
+        "line": 3030,
+        "title": "### 8.4 API-ORDER-005 自有库存预占/释放/消耗"
+      },
+      {
+        "line": 3039,
+        "title": "### 8.5 API-ADMIN-163 自有库存调整与台账"
+      },
+      {
+        "line": 3047,
+        "title": "### 8.6 API-ADMIN-164 供应商价格与库存快照"
+      },
+      {
+        "line": 3054,
+        "title": "### 8.7 API-ADMIN-165 钉钉通知记录"
+      },
+      {
+        "line": 3061,
+        "title": "### 8.8 API-ADMIN-166 退款完成回执与订单状态同步"
+      },
+      {
+        "line": 3068,
+        "title": "### 8.9 字段与权限增量"
+      },
+      {
+        "line": 3079,
+        "title": "### 8.10 CHG-0097 字段与接口补充"
+      },
+      {
+        "line": 3088,
+        "title": "### 8.11 CHG-0098 价格手动更新"
+      },
+      {
+        "line": 3094,
+        "title": "### 8.12 CHG-0099 采购钱包与库存分层字段"
+      },
+      {
+        "line": 3105,
+        "title": "### 8.13 CHG-0100 手机号主动绑定与多发货方式可售"
+      }
+    ],
+    "ids": {
+      "TC-[A-Z0-9-]+": 155,
+      "CHK-\\d+": 1,
+      "DEC-\\d+": 0,
+      "AC-\\d+": 21
+    }
+  },
+  "06_埋点文档.md": {
+    "lines": 713,
+    "headings": [
+      {
+        "line": 1,
+        "title": "# 06_埋点文档"
+      },
+      {
+        "line": 17,
+        "title": "## 1 范围与统计目的"
+      },
+      {
+        "line": 19,
+        "title": "### 1.1 端范围结论（硬性规则）"
+      },
+      {
+        "line": 27,
+        "title": "### 1.2 统计目的"
+      },
+      {
+        "line": 36,
+        "title": "### 1.3 统计口径与事件总数"
+      },
+      {
+        "line": 46,
+        "title": "### 1.4 必设计行为覆盖对照"
+      },
+      {
+        "line": 105,
+        "title": "## 2 阅读说明"
+      },
+      {
+        "line": 107,
+        "title": "### 2.1 事件明细表结构"
+      },
+      {
+        "line": 114,
+        "title": "### 2.2 命名约束"
+      },
+      {
+        "line": 121,
+        "title": "### 2.3 属性值示例或说明的写法"
+      },
+      {
+        "line": 130,
+        "title": "### 2.4 属性跨事件复用规则"
+      },
+      {
+        "line": 138,
+        "title": "### 2.5 结果属性的触发时点要求"
+      },
+      {
+        "line": 142,
+        "title": "### 2.6 与其他文件的关系"
+      },
+      {
+        "line": 154,
+        "title": "## 3 事件明细"
+      },
+      {
+        "line": 158,
+        "title": "### 3.1 容器"
+      },
+      {
+        "line": 160,
+        "title": "#### 3.1.1 ContainerDetectResultEvent ｜ 容器类型识别结果"
+      },
+      {
+        "line": 166,
+        "title": "### 3.2 首页与广告"
+      },
+      {
+        "line": 168,
+        "title": "#### 3.2.1 HomeLoadResultEvent ｜ 首页加载结果"
+      },
+      {
+        "line": 176,
+        "title": "#### 3.2.2 AdImpressionEvent ｜ 广告位曝光"
+      },
+      {
+        "line": 183,
+        "title": "#### 3.2.3 AdClickEvent ｜ 广告位点击"
+      },
+      {
+        "line": 190,
+        "title": "#### 3.2.4 AdLoadResultEvent ｜ 广告位加载结果"
+      },
+      {
+        "line": 197,
+        "title": "#### 3.2.5 TabSwitchEvent ｜ 一级页面切换"
+      },
+      {
+        "line": 206,
+        "title": "#### 3.2.6 GoodsCardClickEvent ｜ 商品卡片点击"
+      },
+      {
+        "line": 215,
+        "title": "#### 3.2.7 GoodsListLoadResultEvent ｜ 商品列表加载结果"
+      },
+      {
+        "line": 226,
+        "title": "### 3.3 搜索"
+      },
+      {
+        "line": 228,
+        "title": "#### 3.3.1 SearchSubmitEvent ｜ 搜索提交"
+      },
+      {
+        "line": 234,
+        "title": "#### 3.3.2 SearchResultReturnEvent ｜ 搜索结果返回"
+      },
+      {
+        "line": 248,
+        "title": "#### 3.3.3 SearchRecommendClickEvent ｜ 搜索推荐点击"
+      },
+      {
+        "line": 257,
+        "title": "### 3.4 商品详情"
+      },
+      {
+        "line": 259,
+        "title": "#### 3.4.1 ProductDetailLoadResultEvent ｜ 商品详情加载结果"
+      },
+      {
+        "line": 267,
+        "title": "#### 3.4.2 GallerySwitchEvent ｜ 媒体切换（图集/视频）"
+      },
+      {
+        "line": 275,
+        "title": "#### 3.4.3 IntroExpandEvent ｜ 介绍展开"
+      },
+      {
+        "line": 282,
+        "title": "#### 3.4.4 DetailBuyEntryClickEvent ｜ 详情购买入口点击"
+      },
+      {
+        "line": 290,
+        "title": "### 3.5 首次进入提醒"
+      },
+      {
+        "line": 292,
+        "title": "#### 3.5.1 FirstNoticeShowEvent ｜ 首次提醒曝光"
+      },
+      {
+        "line": 298,
+        "title": "#### 3.5.2 FirstNoticePrimaryClickEvent ｜ 首次提醒主按钮点击"
+      },
+      {
+        "line": 304,
+        "title": "#### 3.5.3 FirstNoticeCloseEvent ｜ 首次提醒关闭"
+      },
+      {
+        "line": 310,
+        "title": "### 3.6 购买面板与购买校验"
+      },
+      {
+        "line": 312,
+        "title": "#### 3.6.1 BuyPanelOpenEvent ｜ 购买面板打开"
+      },
+      {
+        "line": 321,
+        "title": "#### 3.6.2 SpecSwitchEvent ｜ 规格切换"
+      },
+      {
+        "line": 329,
+        "title": "#### 3.6.3 DeliveryTypeSwitchEvent ｜ 交付方式切换"
+      },
+      {
+        "line": 337,
+        "title": "#### 3.6.4 PayChannelSelectEvent ｜ 支付方式选择"
+      },
+      {
+        "line": 344,
+        "title": "#### 3.6.5 AgreementActionEvent ｜ 协议操作"
+      },
+      {
+        "line": 353,
+        "title": "#### 3.6.6 FinalBuyClickEvent ｜ 最终购买点击"
+      },
+      {
+        "line": 363,
+        "title": "#### 3.6.7 PurchaseVerifyResultEvent ｜ 购买校验结果"
+      },
+      {
+        "line": 373,
+        "title": "#### 3.6.8 VerifyDialogShowEvent ｜ 校验引导弹层曝光"
+      },
+      {
+        "line": 380,
+        "title": "#### 3.6.9 VerifyDialogActionEvent ｜ 校验引导弹层操作"
+      },
+      {
+        "line": 387,
+        "title": "#### 3.6.10 CdkHelpOpenEvent ｜ CDK 说明查看"
+      },
+      {
+        "line": 397,
+        "title": "### 3.7 支付"
+      },
+      {
+        "line": 399,
+        "title": "#### 3.7.1 PayLaunchResultEvent ｜ 支付发起结果"
+      },
+      {
+        "line": 408,
+        "title": "#### 3.7.2 PayReturnQueryEvent ｜ 支付返回查询"
+      },
+      {
+        "line": 418,
+        "title": "### 3.8 交付结果"
+      },
+      {
+        "line": 420,
+        "title": "#### 3.8.1 ResultPageShowEvent ｜ 结果页曝光"
+      },
+      {
+        "line": 430,
+        "title": "#### 3.8.2 CodeActionEvent ｜ 口令码区域操作"
+      },
+      {
+        "line": 438,
+        "title": "### 3.9 订单"
+      },
+      {
+        "line": 440,
+        "title": "#### 3.9.1 OrderListLoadResultEvent ｜ 订单列表加载结果"
+      },
+      {
+        "line": 450,
+        "title": "#### 3.9.2 OrderCardClickEvent ｜ 订单卡片点击"
+      },
+      {
+        "line": 458,
+        "title": "#### 3.9.3 OrderDetailShowEvent ｜ 订单详情曝光"
+      },
+      {
+        "line": 468,
+        "title": "#### 3.9.4 OrderContinuePayClickEvent ｜ 继续支付点击"
+      },
+      {
+        "line": 476,
+        "title": "#### 3.9.5 OrderNumberCopyEvent ｜ 订单号复制"
+      },
+      {
+        "line": 484,
+        "title": "### 3.10 我的"
+      },
+      {
+        "line": 486,
+        "title": "#### 3.10.1 MinePageShowEvent ｜ 我的页曝光"
+      },
+      {
+        "line": 493,
+        "title": "#### 3.10.2 MineActionClickEvent ｜ 我的页操作点击"
+      },
+      {
+        "line": 499,
+        "title": "### 3.11 客服"
+      },
+      {
+        "line": 501,
+        "title": "#### 3.11.1 ServiceEntryClickEvent ｜ 客服入口点击"
+      },
+      {
+        "line": 508,
+        "title": "#### 3.11.2 ServiceLaunchResultEvent ｜ 客服唤起结果"
+      },
+      {
+        "line": 514,
+        "title": "### 3.12 属性跨事件复用清单"
+      },
+      {
+        "line": 567,
+        "title": "## 4 特殊触发/去重口径"
+      },
+      {
+        "line": 569,
+        "title": "### 4.1 通用口径（全部客户端事件适用）"
+      },
+      {
+        "line": 582,
+        "title": "### 4.2 事件级触发与去重说明表"
+      },
+      {
+        "line": 605,
+        "title": "## 5 敏感数据与采集失败策略"
+      },
+      {
+        "line": 607,
+        "title": "### 5.1 绝对不得采集的内容"
+      },
+      {
+        "line": 619,
+        "title": "### 5.2 口令码与好友链接的非敏感表达"
+      },
+      {
+        "line": 624,
+        "title": "### 5.3 最小必要与新增采集"
+      },
+      {
+        "line": 629,
+        "title": "### 5.4 采集失败与上报策略"
+      },
+      {
+        "line": 640,
+        "title": "## 6 待确认项"
+      },
+      {
+        "line": 661,
+        "title": "### 3.13 独立手机号登录、实名与隐私（CHG-0096）"
+      },
+      {
+        "line": 663,
+        "title": "#### 3.13.1 AuthLoginViewEvent ｜ 登录页曝光"
+      },
+      {
+        "line": 670,
+        "title": "#### 3.13.2 AuthSmsSendEvent ｜ 获取短信验证码"
+      },
+      {
+        "line": 677,
+        "title": "#### 3.13.3 AuthLoginResultEvent ｜ 登录/注册结果"
+      },
+      {
+        "line": 685,
+        "title": "#### 3.13.4 AuthRealnameViewEvent ｜ 实名页曝光"
+      },
+      {
+        "line": 692,
+        "title": "#### 3.13.5 AuthRealnameSubmitEvent ｜ 提交实名"
+      },
+      {
+        "line": 699,
+        "title": "#### 3.13.6 AuthRealnameResultEvent ｜ 实名结果"
+      },
+      {
+        "line": 706,
+        "title": "#### 3.13.7 PrivacyViewEvent ｜ 隐私政策曝光"
+      }
+    ],
+    "ids": {
+      "TC-[A-Z0-9-]+": 17,
+      "CHK-\\d+": 0,
+      "DEC-\\d+": 0,
+      "AC-\\d+": 3
+    }
+  },
+  "07_测试用例.md": {
+    "lines": 2395,
+    "headings": [
+      {
+        "line": 1,
+        "title": "# Steam商城首期 测试用例"
+      },
+      {
+        "line": 17,
+        "title": "## 1 范围与基线"
+      },
+      {
+        "line": 19,
+        "title": "### 1.1 需求与交付基线"
+      },
+      {
+        "line": 33,
+        "title": "### 1.2 本轮范围与不伪造声明"
+      },
+      {
+        "line": 39,
+        "title": "### 1.3 阶段划分与能力边界"
+      },
+      {
+        "line": 49,
+        "title": "### 1.4 用例编号与字段规则"
+      },
+      {
+        "line": 58,
+        "title": "### 1.5 覆盖统计口径"
+      },
+      {
+        "line": 63,
+        "title": "## 2 环境及准入"
+      },
+      {
+        "line": 65,
+        "title": "### 2.1 测试环境"
+      },
+      {
+        "line": 79,
+        "title": "### 2.2 敏感信息与数据处理约束"
+      },
+      {
+        "line": 85,
+        "title": "### 2.3 准入条件（全部满足方可执行）"
+      },
+      {
+        "line": 93,
+        "title": "### 2.4 准出与阶段移交"
+      },
+      {
+        "line": 98,
+        "title": "## 3 用例索引"
+      },
+      {
+        "line": 383,
+        "title": "## 4 详细用例"
+      },
+      {
+        "line": 387,
+        "title": "### 4.1 AUTH（身份、登录与资格）"
+      },
+      {
+        "line": 485,
+        "title": "### 4.2 HOME（首页）"
+      },
+      {
+        "line": 543,
+        "title": "### 4.3 SEARCH（搜索）"
+      },
+      {
+        "line": 609,
+        "title": "### 4.4 PRODUCT（商品详情）"
+      },
+      {
+        "line": 723,
+        "title": "### 4.5 PANEL（购买面板）"
+      },
+      {
+        "line": 789,
+        "title": "### 4.6 AGREEMENT（购买协议）"
+      },
+      {
+        "line": 839,
+        "title": "### 4.7 PHONE（手机号绑定）"
+      },
+      {
+        "line": 889,
+        "title": "### 4.8 CHECKOUT（确认订单）"
+      },
+      {
+        "line": 947,
+        "title": "### 4.9 PAY（支付发起与结果）"
+      },
+      {
+        "line": 1045,
+        "title": "### 4.10 RESULT（支付与交付结果页）"
+      },
+      {
+        "line": 1103,
+        "title": "### 4.11 ORDER（我的订单）"
+      },
+      {
+        "line": 1169,
+        "title": "### 4.12 MINE（我的）"
+      },
+      {
+        "line": 1203,
+        "title": "### 4.13 SERVICE（企业微信客服）"
+      },
+      {
+        "line": 1237,
+        "title": "### 4.14 CODE（口令码交付）"
+      },
+      {
+        "line": 1295,
+        "title": "### 4.15 GIFT（好友赠送）"
+      },
+      {
+        "line": 1361,
+        "title": "### 4.16 NOTIFY（口令码生成后的站内信通知）"
+      },
+      {
+        "line": 1435,
+        "title": "### 4.17 ADM（运营后台）"
+      },
+      {
+        "line": 1661,
+        "title": "### 4.18 TRACK（客户端埋点）"
+      },
+      {
+        "line": 1753,
+        "title": "### 4.19 DELIVERY（原型交付与容器）"
+      },
+      {
+        "line": 1803,
+        "title": "### 4.20 READER（MD阅读器，离线）"
+      },
+      {
+        "line": 1893,
+        "title": "### 4.21 LABEL（页面/组件编号标注交互）"
+      },
+      {
+        "line": 2168,
+        "title": "### 4.22 CHG-0096 评审增量用例"
+      },
+      {
+        "line": 2202,
+        "title": "### 4.23 CHG-0097 评审补充用例"
+      },
+      {
+        "line": 2214,
+        "title": "### 4.24 CHG-0098 补充用例"
+      },
+      {
+        "line": 2222,
+        "title": "### 4.25 CHG-0099 补充用例（采购余额与库存分层）"
+      },
+      {
+        "line": 2233,
+        "title": "### 4.26 CHG-0100 补充用例（手机号绑定与多发货方式）"
+      },
+      {
+        "line": 2243,
+        "title": "## 5 覆盖与缺口引用"
+      },
+      {
+        "line": 2245,
+        "title": "### 5.1 用例统计"
+      },
+      {
+        "line": 2286,
+        "title": "### 5.2 验收场景 AC-01～AC-39 映射"
+      },
+      {
+        "line": 2332,
+        "title": "### 5.3 本轮未覆盖或仅部分覆盖项及原因"
+      },
+      {
+        "line": 2357,
+        "title": "## 6 用例评审记录"
+      },
+      {
+        "line": 2367,
+        "title": "## 7 执行记录索引"
+      },
+      {
+        "line": 2379,
+        "title": "## 8 验收准出建议"
+      }
+    ],
+    "ids": {
+      "TC-[A-Z0-9-]+": 344,
+      "CHK-\\d+": 1,
+      "DEC-\\d+": 0,
+      "AC-\\d+": 39
+    }
+  },
+  "08_验证记录与验收映射.md": {
+    "lines": 2286,
+    "headings": [
+      {
+        "line": 1,
+        "title": "# 08_验证记录与验收映射"
+      },
+      {
+        "line": 18,
+        "title": "## 1 需求覆盖映射"
+      },
+      {
+        "line": 23,
+        "title": "### 1.1 范围、身份与资格（PRD 第2、3章）"
+      },
+      {
+        "line": 47,
+        "title": "### 1.2 首页、搜索与商品（PRD 第4章）"
+      },
+      {
+        "line": 71,
+        "title": "### 1.3 下单、支付与交付（PRD 第5、6、7章）"
+      },
+      {
+        "line": 93,
+        "title": "### 1.4 我的、订单与客服（PRD 第8章）"
+      },
+      {
+        "line": 106,
+        "title": "### 1.5 运营后台（PRD 第9章）"
+      },
+      {
+        "line": 129,
+        "title": "### 1.6 跨章质量、埋点与范围边界"
+      },
+      {
+        "line": 142,
+        "title": "### 1.7 覆盖统计与缺口"
+      },
+      {
+        "line": 173,
+        "title": "## 2 验收条件与阶段"
+      },
+      {
+        "line": 225,
+        "title": "## 3 实际验证记录"
+      },
+      {
+        "line": 230,
+        "title": "### 3.1 版本与环境"
+      },
+      {
+        "line": 245,
+        "title": "### 3.2 结构与一致性检查"
+      },
+      {
+        "line": 258,
+        "title": "### 3.3 原型交互实测"
+      },
+      {
+        "line": 285,
+        "title": "### 3.4 后台交互实测（标准 8.7 矩阵）"
+      },
+      {
+        "line": 304,
+        "title": "### 3.5 文档阅读器实测（标准 8.5.5 矩阵）"
+      },
+      {
+        "line": 319,
+        "title": "### 3.6 本轮验证中发现并修复的缺陷"
+      },
+      {
+        "line": 336,
+        "title": "### 3.7 第二轮修订后的复验（CHG-0013 ～ CHG-0017）"
+      },
+      {
+        "line": 363,
+        "title": "### 3.8 参考实现比对后的调整与复验（CHG-0018 ～ CHG-0022）"
+      },
+      {
+        "line": 399,
+        "title": "### 3.9 购买链路可操作性修复与复验（CHG-0023）"
+      },
+      {
+        "line": 421,
+        "title": "### 3.10 界面尺寸延伸审计与修复（CHG-0024、CHG-0025）"
+      },
+      {
+        "line": 454,
+        "title": "### 3.11 PC 端画布尺寸修正与三档宽度实测（CHG-0026、CHG-0027、CHG-0028）"
+      },
+      {
+        "line": 493,
+        "title": "### 3.12 PC 首页功能入口布局修正（CHG-0029）"
+      },
+      {
+        "line": 527,
+        "title": "### 3.13 顶栏导航命名与搜索组件修正（CHG-0030）"
+      },
+      {
+        "line": 552,
+        "title": "### 3.14 一级页面收敛与「我的」页重设（CHG-0031）"
+      },
+      {
+        "line": 585,
+        "title": "### 3.15 商品详情字段与购买面板优化（CHG-0032）"
+      },
+      {
+        "line": 617,
+        "title": "### 3.16 组件说明铺开与组件选择器吸顶（CHG-0033）"
+      },
+      {
+        "line": 644,
+        "title": "### 3.17 移除界面右侧的嵌套滚动条（CHG-0034）"
+      },
+      {
+        "line": 668,
+        "title": "### 3.18 移动画布触控热区复核（CHG-0035）"
+      },
+      {
+        "line": 689,
+        "title": "### 3.19 组件选择器下拉化、评审注释合并、描边与工具条排版修正（CHG-0036）"
+      },
+      {
+        "line": 717,
+        "title": "### 3.20 状态块通栏与画布/组件说明并列（CHG-0037）"
+      },
+      {
+        "line": 741,
+        "title": "### 3.21 图示改用 PlantUML 出图（CHG-0038）"
+      },
+      {
+        "line": 766,
+        "title": "### 3.22 PC 商品详情购买面板补齐（CHG-0039）"
+      },
+      {
+        "line": 791,
+        "title": "### 3.23 PC 商品详情返回入口（CHG-0040）"
+      },
+      {
+        "line": 816,
+        "title": "### 3.24 手机画布排序栏单行（CHG-0041）"
+      },
+      {
+        "line": 839,
+        "title": "### 3.25 首页广告位改为可交互组件（CHG-0042）"
+      },
+      {
+        "line": 865,
+        "title": "### 3.26 组件说明改为一行一点（CHG-0043）"
+      },
+      {
+        "line": 887,
+        "title": "### 3.27 来源列改写为「生产方 + 真实字段路径」（CHG-0044）"
+      },
+      {
+        "line": 916,
+        "title": "### 3.28 说明列独立滚动与吸顶（CHG-0045）"
+      },
+      {
+        "line": 944,
+        "title": "### 3.29 搜索结果页移除排序栏、搜索历史与换一批（CHG-0046）"
+      },
+      {
+        "line": 976,
+        "title": "### 3.30 搜索默认页不回填关键词（CHG-0047）"
+      },
+      {
+        "line": 997,
+        "title": "### 3.31 订单状态三态、页签一行与 PC 收银台扫码弹窗（CHG-0048）"
+      },
+      {
+        "line": 1034,
+        "title": "### 3.32 「我的」页订单状态快捷入口同步为三态（CHG-0049）"
+      },
+      {
+        "line": 1057,
+        "title": "### 3.33 PC 购买链路按端分流（CHG-0050）"
+      },
+      {
+        "line": 1086,
+        "title": "### 3.34 组件计数分母与检查项分母订正（CHG-0051）"
+      },
+      {
+        "line": 1113,
+        "title": "### 3.35 收银台扫码弹窗不再展示支付方式（CHG-0052）"
+      },
+      {
+        "line": 1137,
+        "title": "### 3.36 PC 订单列表「查看」按钮与详情抽屉读错记录（CHG-0053）"
+      },
+      {
+        "line": 1163,
+        "title": "### 3.37 后台侧边菜单栏重新设计（CHG-0054）"
+      },
+      {
+        "line": 1194,
+        "title": "### 3.38 首页配置管理收敛为两个固定组件（CHG-0055）"
+      },
+      {
+        "line": 1221,
+        "title": "### 3.39 首页banner 编辑：素材编排与轮播间隔（CHG-0056）"
+      },
+      {
+        "line": 1250,
+        "title": "### 3.40 首页banner 编辑的保存反馈与排版（CHG-0057）"
+      },
+      {
+        "line": 1278,
+        "title": "### 3.41 首页商品列表编辑改版与热门商品（CHG-0058）"
+      },
+      {
+        "line": 1307,
+        "title": "### 3.42 首页banner 图片上传入口不可用（CHG-0059）"
+      },
+      {
+        "line": 1333,
+        "title": "### 3.43 后台删除二次确认与热门商品纯拖拽排序（CHG-0060）"
+      },
+      {
+        "line": 1359,
+        "title": "### 3.44 首页配置抽屉的说明精简与工作区浮层提示（CHG-0061）"
+      },
+      {
+        "line": 1386,
+        "title": "### 3.45 首页配置抽屉的进一步精简与提示文案统一（CHG-0062）"
+      },
+      {
+        "line": 1411,
+        "title": "### 3.46 第一期移除供应商维护页面（CHG-0063）"
+      },
+      {
+        "line": 1438,
+        "title": "### 3.47 复核 CHG-0063 时发现的口径错误（CHG-0065）"
+      },
+      {
+        "line": 1460,
+        "title": "### 3.48 后台数据交互统一为「操作列按钮 + 独立弹窗」（CHG-0066）"
+      },
+      {
+        "line": 1487,
+        "title": "### 3.49 弹窗按钮归位与滚动锁定（CHG-0067）"
+      },
+      {
+        "line": 1510,
+        "title": "### 3.50 弹窗提交后关闭与反馈可见（CHG-0068）"
+      },
+      {
+        "line": 1533,
+        "title": "### 3.51 商品资料模型与商品编辑弹窗改版（CHG-0069）"
+      },
+      {
+        "line": 1561,
+        "title": "### 3.52 商品上架/下架的二次确认与结果提示（CHG-0070）"
+      },
+      {
+        "line": 1582,
+        "title": "### 3.53 「商品介绍」改名「游戏介绍」并合并为唯一介绍区块（CHG-0071）"
+      },
+      {
+        "line": 1604,
+        "title": "### 3.54 商品详情区块收敛与后台硬件配置（CHG-0072）"
+      },
+      {
+        "line": 1635,
+        "title": "### 3.55 弹窗打开时最上层内部仍可滚动（CHG-0073）"
+      },
+      {
+        "line": 1656,
+        "title": "### 3.56 商品素材预览区（CHG-0074）"
+      },
+      {
+        "line": 1677,
+        "title": "### 3.57 搜索推荐配置的增删、启停与拖拽排序（CHG-0075）"
+      },
+      {
+        "line": 1701,
+        "title": "### 3.58 关键词拖拽排序与启停二次确认（CHG-0076）"
+      },
+      {
+        "line": 1721,
+        "title": "### 3.59 热门商品改为「列表选择 + 搜索」并去掉规格（CHG-0077）"
+      },
+      {
+        "line": 1742,
+        "title": "### 3.60 订单管理的用户信息、筛选与导出字段（CHG-0078）"
+      },
+      {
+        "line": 1765,
+        "title": "### 3.61 好友赠送队列按支付完成与人工状态推进重构（CHG-0079）"
+      },
+      {
+        "line": 1786,
+        "title": "### 3.62 好友赠送列表与详情按评审 11 点调整（CHG-0080）"
+      },
+      {
+        "line": 1808,
+        "title": "### 3.63 订单交付两态与口令码补发同步（CHG-0081）"
+      },
+      {
+        "line": 1836,
+        "title": "### 3.64 人工调用供应商 API 获取口令码（CHG-0082，已由 CHG-0091 取代）"
+      },
+      {
+        "line": 1858,
+        "title": "### 3.65 供应商取码的二次确认与调用备份（CHG-0083，已由 CHG-0091 取代）"
+      },
+      {
+        "line": 1880,
+        "title": "### 3.66 补发/换码后的交付状态同步（CHG-0084）"
+      },
+      {
+        "line": 1900,
+        "title": "### 3.67 口令码交付只含已支付订单（CHG-0085）"
+      },
+      {
+        "line": 1920,
+        "title": "### 3.68 移除资金与售后菜单与订单管理退款（CHG-0086）"
+      },
+      {
+        "line": 1940,
+        "title": "### 3.69 移除支付核查菜单（CHG-0087）"
+      },
+      {
+        "line": 1959,
+        "title": "### 3.70 通知记录单页签与通知模板管理（CHG-0088）"
+      },
+      {
+        "line": 1980,
+        "title": "### 3.71 协议修改记录、菜单精简与菜单权限（CHG-0089）"
+      },
+      {
+        "line": 2004,
+        "title": "### 3.72 HIgame 上游 API 与人工核查兜底（CHG-0090）"
+      },
+      {
+        "line": 2021,
+        "title": "### 3.73 移除供应商 API 取码，改为人工查询上游后台后手工录入（CHG-0091）"
+      },
+      {
+        "line": 2043,
+        "title": "### 3.74 运营处理口径收敛与下单前库存校验（CHG-0092）"
+      },
+      {
+        "line": 2068,
+        "title": "### 3.75 移除换码与新旧口令码定义（CHG-0094）"
+      },
+      {
+        "line": 2087,
+        "title": "### 3.76 流程图末端空合并节点修复（CHG-0095）"
+      },
+      {
+        "line": 2107,
+        "title": "### 3.77 2026-10-22 评审 16 项需求实施（CHG-0096）"
+      },
+      {
+        "line": 2128,
+        "title": "### 3.78 2026-10-22 评审补充四项（CHG-0097）"
+      },
+      {
+        "line": 2144,
+        "title": "### 3.79 2026-10-22 评审三项收口（CHG-0098）"
+      },
+      {
+        "line": 2154,
+        "title": "### 3.80 2026-10-22 采购余额与库存分层（CHG-0099）"
+      },
+      {
+        "line": 2167,
+        "title": "### 3.81 2026-10-22 手机号主动绑定与多发货方式（CHG-0100）"
+      },
+      {
+        "line": 2179,
+        "title": "### 3.82 2026-10-22 绑定页按钮与禁用态微调（CHG-0101）"
+      },
+      {
+        "line": 2188,
+        "title": "## 4 失败、缺陷及未验证范围"
+      },
+      {
+        "line": 2190,
+        "title": "### 4.1 未修复/未完成的检查项"
+      },
+      {
+        "line": 2205,
+        "title": "### 4.2 需要业务方明确的阻断项（影响验收预期）"
+      },
+      {
+        "line": 2218,
+        "title": "## 5 复核与执行汇总"
+      },
+      {
+        "line": 2220,
+        "title": "### 5.1 检查结论汇总（按口径分开统计，不混合）"
+      },
+      {
+        "line": 2235,
+        "title": "### 5.2 测试用例执行汇总"
+      },
+      {
+        "line": 2248,
+        "title": "### 5.3 需求覆盖双向核对"
+      },
+      {
+        "line": 2259,
+        "title": "### 5.4 复核记录"
+      },
+      {
+        "line": 2272,
+        "title": "### 5.5 证据与限制声明"
+      }
+    ],
+    "ids": {
+      "TC-[A-Z0-9-]+": 297,
+      "CHK-\\d+": 477,
+      "DEC-\\d+": 0,
+      "AC-\\d+": 39
+    }
+  },
+  "09_待确认事项与设计决策.md": {
+    "lines": 234,
+    "headings": [
+      {
+        "line": 1,
+        "title": "# 09_待确认事项与设计决策"
+      },
+      {
+        "line": 19,
+        "title": "## 1 阻断项"
+      },
+      {
+        "line": 37,
+        "title": "## 2 非阻断待确认项"
+      },
+      {
+        "line": 76,
+        "title": "## 3 AI 设计补充"
+      },
+      {
+        "line": 94,
+        "title": "## 4 已确认决策及依据"
+      },
+      {
+        "line": 122,
+        "title": "## 5 关闭记录"
+      },
+      {
+        "line": 139,
+        "title": "## 6 2026-10-22 评审确认决策（CHG-0096）"
+      },
+      {
+        "line": 174,
+        "title": "## 7 2026-10-22 评审补充决策（CHG-0097）"
+      },
+      {
+        "line": 187,
+        "title": "## 8 2026-10-22 评审收口决策（CHG-0098）"
+      },
+      {
+        "line": 197,
+        "title": "## 9 2026-10-22 采购余额与库存分层决策（CHG-0099）"
+      },
+      {
+        "line": 209,
+        "title": "## 10 2026-10-22 手机号绑定与多发货方式决策（CHG-0100）"
+      },
+      {
+        "line": 221,
+        "title": "## 11 2026-10-22 绑定页与禁用态微调（CHG-0101）"
+      },
+      {
+        "line": 230,
+        "title": "## 12 2026-10-22 用户账号模型澄清（CHG-0102）"
+      }
+    ],
+    "ids": {
+      "TC-[A-Z0-9-]+": 4,
+      "CHK-\\d+": 2,
+      "DEC-\\d+": 0,
+      "AC-\\d+": 0
+    }
+  },
+  "补充_商城用户管理说明.md": {
+    "lines": 341,
+    "headings": [
+      {
+        "line": 1,
+        "title": "# 商城用户管理说明（补充稿）"
+      },
+      {
+        "line": 11,
+        "title": "## 1. 结论摘要"
+      },
+      {
+        "line": 26,
+        "title": "## 2. 账号模型"
+      },
+      {
+        "line": 28,
+        "title": "### 2.1 商城用户账号 + 绑定关系"
+      },
+      {
+        "line": 43,
+        "title": "### 2.2 建议的账号字段"
+      },
+      {
+        "line": 61,
+        "title": "### 2.3 与当前原型实现的对照"
+      },
+      {
+        "line": 74,
+        "title": "## 3. 与其他平台授权登录的关系"
+      },
+      {
+        "line": 76,
+        "title": "### 3.1 平台授权登录能取得什么"
+      },
+      {
+        "line": 86,
+        "title": "### 3.2 账号映射关系"
+      },
+      {
+        "line": 100,
+        "title": "### 3.3 不合并原则"
+      },
+      {
+        "line": 120,
+        "title": "## 4. 用户生命周期"
+      },
+      {
+        "line": 122,
+        "title": "### 4.1 主路径"
+      },
+      {
+        "line": 146,
+        "title": "### 4.2 典型场景"
+      },
+      {
+        "line": 159,
+        "title": "## 5. 实名与手机号的关系"
+      },
+      {
+        "line": 161,
+        "title": "### 5.1 实名"
+      },
+      {
+        "line": 169,
+        "title": "### 5.2 手机号"
+      },
+      {
+        "line": 180,
+        "title": "## 6. 订单与数据归属"
+      },
+      {
+        "line": 198,
+        "title": "## 7. 会话、切换与退出"
+      },
+      {
+        "line": 213,
+        "title": "## 8. 后台用户管理"
+      },
+      {
+        "line": 215,
+        "title": "### 8.1 本期现状"
+      },
+      {
+        "line": 230,
+        "title": "### 8.2 建议的用户管理页（未实现）"
+      },
+      {
+        "line": 273,
+        "title": "## 9. 权限与敏感数据"
+      },
+      {
+        "line": 289,
+        "title": "## 10. 异常与边界"
+      },
+      {
+        "line": 305,
+        "title": "## 11. 原型查看路径"
+      },
+      {
+        "line": 318,
+        "title": "## 12. 待确认事项"
+      },
+      {
+        "line": 329,
+        "title": "## 附录 A 接口与字段映射"
+      }
+    ],
+    "ids": {
+      "TC-[A-Z0-9-]+": 0,
+      "CHK-\\d+": 0,
+      "DEC-\\d+": 0,
+      "AC-\\d+": 2
+    }
+  }
+}

@@ -1,0 +1,899 @@
+
+/* ============================================================
+   共通灰度基线（标准 V2.1 第7.2节）
+   ============================================================ */
+:root{--bg:#f3f4f6;--panel:#fff;--ink:#20242a;--muted:#6b7280;
+ --line:#c9cdd3;--primary:#2f343b;--error:#a33b3b;--success:#356b4d;--warn:#8a641e;
+ --soft:#e8eaed;--head:#f5f6f7}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font:14px/1.6 "Microsoft YaHei","PingFang SC",Arial,sans-serif}
+h1,h2,h3,h4,p,ul,ol,dl,dd,figure{margin:0}
+ul,ol{padding-left:1.2em}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+a{color:#2b5d8a}
+/* 评审外壳宽度：移动端由 1080px 放宽到 1440px。画布列已按手机画布定宽（384px），
+   放宽后多出来的宽度全部给说明列——组件十节里的 9 列宽表在 1080px 下只能挤到每列 60px、
+   逐字换行；1440px 下说明列约 980px，表格可正常铺开。标准 7.2 记的是 1080px，
+   此处按评审反馈放宽（见 00 CHG-0033）。 */
+.shell{max-width:1440px;margin:auto;padding:24px;container-type:inline-size;container-name:shell}
+/* 管理后台评审外壳按标准 7.6.1 使用更宽桌面布局，与客户端外壳切换 */
+.shell.admin-mode{max-width:1480px}
+.admin-shell{max-width:1480px;margin:auto;padding:24px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+
+/* ============================================================
+   评审外壳
+   ============================================================ */
+.rv-head{background:var(--panel);border:1px solid var(--line);padding:16px;margin-bottom:14px}
+.rv-head h1{font-size:20px;font-weight:500}
+.rv-head .rv-meta{font-size:12px;color:var(--muted);margin-top:4px}
+.rv-head .rv-note{font-size:12px;color:var(--muted);margin-top:8px;border-left:3px solid var(--line);padding-left:8px}
+.rv-toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:flex-end;background:var(--panel);
+ border:1px solid var(--line);padding:12px 16px;margin-bottom:14px}
+.rv-toolbar label{display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--muted)}
+.rv-toolbar select,.rv-toolbar button{background:#fff;border:1px solid var(--line);border-radius:0;padding:8px 10px;min-height:40px}
+.rv-toolbar button[aria-pressed="true"]{background:var(--primary);color:#fff;border-color:var(--primary)}
+.rv-toolbar .spacer{flex:1}
+/* 模拟身份控制（评审工具）：直接设定交易前置条件，便于分段评审而不必每次走完整链路 */
+/* 模拟身份条：标签与控件同行排列。原先沿用「标签在上、控件在下」的两行结构，
+   而同一行里的标题与状态提示是单行，居中后各条目的文字落在不同高度上，看起来参差不齐。
+   改为同行后每一条都是一行、同一高度，行内基线与控件高度都对齐。 */
+.rv-simbar{align-items:center;border-left:3px solid var(--primary);margin-top:-14px;row-gap:8px}
+.rv-simbar .sim-title{font-size:13px;font-weight:500;margin-right:4px;white-space:nowrap}
+.rv-simbar .sim-title small{font-weight:400;color:var(--muted);margin-left:4px}
+.rv-simbar label{flex-direction:row;align-items:center;gap:6px;font-size:12.5px;white-space:nowrap}
+.rv-simbar select{min-height:40px;width:auto}
+.rv-simbar #simHint{margin-left:0;text-align:right}
+@media(max-width:759px){.rv-simbar{margin-top:-10px}}
+button:disabled{background:#c9cdd3;color:#666b72;cursor:default}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{outline:2px solid #526477;outline-offset:2px}
+
+/* 评审外壳双栏（客户端按标准 7.2 的 1 : 1.1） */
+/* 移动客户端评审外壳：画布列按「手机画布 320px + 面板内边距 + 滚动条」定宽，
+   剩余宽度全部给说明列。原 1 : 1.1 的等比切分让画布列空出约 160px，
+   而说明列只有约 520px——组件十节里的 9 列宽表放不下，只能横向滚动（评审反馈）。 */
+.rv-layout{display:grid;grid-template-columns:minmax(0,384px) minmax(0,1fr);gap:24px;align-items:start}
+/* 第一行是通栏的「当前状态」块；第二行左画布、右「选择器 + 组件说明」，
+   两块从同一 y 起排，读说明时不会与画布上下错位（评审反馈）。
+   画布在客户端布局下吸顶：滚到组件十节深处时左侧仍是完整原型界面；
+   sticky 只改绘制位置、不产生滚动容器，不会带回嵌套滚动条。 */
+.rv-layout>#secState{grid-column:1/-1;grid-row:1}
+/* 画布块约 798px 高。窗口较矮时（笔记本常见 640～700px 视口）常驻会切掉底部且滚不到，
+   因此限制在视口高度内、超出部分由该块自身滚动；滚动条同样不绘制。 */
+.rv-layout>.admin-main{grid-column:1;grid-row:2;position:sticky;top:0;max-height:100vh;overflow:auto}
+/* 说明列独立滚动并吸顶（评审反馈）：鼠标落在这一列时滚的是本列，落在其余任何位置滚的是整页。
+   列高按视口封顶后，页面总高不再被十节说明撑长——「流程与图示」「完整交付文件」不必先滚完
+   说明才能到达。不设 overscroll-behavior:contain：本列滚到底后继续滚，自然交还给整页。 */
+.rv-layout>.rv-side{grid-column:2;grid-row:2;min-width:0;position:sticky;top:0;
+ max-height:100vh;overflow:auto}
+.panel{min-width:0;background:var(--panel);border:1px solid var(--line);padding:16px}
+.panel>.panel-h{font-size:12px;color:var(--muted);border-bottom:1px solid var(--line);
+ padding-bottom:6px;margin-bottom:10px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+/* 说明区的滚动条：静止时不画滑块，指针进入该列（或键盘焦点在其中）时才显形。
+   这样既留下「这一列可以单独滚」的提示，又不会在界面右侧常驻第二根竖条——
+   CHG-0034 要求移除的是**常驻的嵌套滚动条**，不是这一列自身的滚动能力。 */
+.rv-layout>.rv-side,.admin-shell-layout>.rv-side{
+ scrollbar-width:thin;scrollbar-color:transparent transparent}
+.rv-layout>.rv-side:hover,.rv-layout>.rv-side:focus-within,
+.admin-shell-layout>.rv-side:hover,.admin-shell-layout>.rv-side:focus-within{
+ scrollbar-color:#c9cdd3 transparent}
+.rv-layout>.rv-side::-webkit-scrollbar,.admin-shell-layout>.rv-side::-webkit-scrollbar{width:8px;height:8px}
+.rv-layout>.rv-side::-webkit-scrollbar-thumb,
+.admin-shell-layout>.rv-side::-webkit-scrollbar-thumb{background:transparent;border-radius:4px}
+.rv-layout>.rv-side:hover::-webkit-scrollbar-thumb,.rv-layout>.rv-side:focus-within::-webkit-scrollbar-thumb,
+.admin-shell-layout>.rv-side:hover::-webkit-scrollbar-thumb,
+.admin-shell-layout>.rv-side:focus-within::-webkit-scrollbar-thumb{background:#c9cdd3}
+.rv-side{min-width:0}
+/* 后台：主列表字段多，优先扩大原型区域、完整说明移至画布下方（标准 7.6.1）：
+   第一行画布通栏，第二行左为当前状态、右为「组件选择器 + 该组件十节正文」。
+   后台画布不做吸顶——画布本身可到 760px 高，常驻会挤掉阅读区。 */
+.admin-shell-layout{display:grid;grid-template-columns:minmax(300px,390px) minmax(0,1fr);
+ gap:18px;align-items:start}
+.admin-shell-layout>.admin-main{grid-column:1/-1;grid-row:1}
+.admin-shell-layout>#secState{grid-column:1;grid-row:2;min-width:0}
+.admin-shell-layout>.rv-side{grid-column:2;grid-row:2;min-width:0;
+ position:sticky;top:0;max-height:100vh;overflow:auto}
+.admin-shell-layout .rv-side>#flash{margin-bottom:12px}
+/* 后台布局同样按视口封顶：后台画布通栏在上，说明列在下行右侧，独立滚动（评审反馈）。 */
+.admin-shell-layout .rv-side>#secDoc .doc-body{padding-right:6px}
+/* 下列断点按评审外壳自身宽度判定（容器查询），不依赖窗口宽度 */
+@container shell (max-width:1100px){
+  .admin-shell-layout{grid-template-columns:minmax(0,1fr)}
+  .admin-shell-layout>#secState,
+  .admin-shell-layout>.admin-main,
+  .admin-shell-layout>.rv-side{grid-column:1;grid-row:auto}
+  /* 单列时说明区不再独立滚动：此时它已在页面流中顺排，再套一个视口高的滚动框
+     会把十节说明关进小窗口里（评审反馈只在双栏下要求独立滚动）。 */
+  .admin-shell-layout>.rv-side{position:static;max-height:none;overflow:visible}
+}
+@container shell (max-width:759px){
+  .rv-layout{grid-template-columns:minmax(0,1fr)}
+  .rv-layout>#secState,
+  .rv-layout>.admin-main,
+  .rv-layout>.rv-side{grid-column:1;grid-row:auto}
+  .rv-layout>.admin-main{position:static}
+  .rv-layout>.rv-side{position:static;max-height:none;overflow:visible}
+  .shell{padding:14px}
+}
+/* 网格子项允许收缩：说明区中的宽表在自身容器内滚动，不把评审外壳撑宽（标准 7.4.3 / 8.5.2） */
+.rv-layout>*,.admin-shell-layout>*{min-width:0}
+
+/* ============================================================
+   业务画布：移动客户端（标准 7.2）
+   ============================================================ */
+.phone{width:min(320px,100%);min-height:610px;margin:auto;padding:14px;
+ border:2px solid #8d939b;border-radius:22px;background:#fbfbfb;position:relative;
+ display:flex;flex-direction:column}
+.phone.has-tab{padding-bottom:0}
+.phone .notch{width:72px;height:6px;background:#c9cdd3;border-radius:3px;margin:0 auto 10px;flex:none}
+.phone-body{max-height:640px;overflow-y:auto;overflow-x:hidden;padding-right:2px;flex:1 1 auto;min-height:0}
+/* 原型界面只保留页面级滚动条（评审反馈：移除右侧滑动条）。
+   画布内的滚动容器（手机壳、PC 画布、弹层）与评审侧栏的组件选择器列表都保留滚动能力、
+   但不绘制滑块：原先这几处 overflow:auto 会在界面右侧叠出 2–4 根嵌套竖条，
+   其中最深的一根还随外层一起滚动，观感上像是"右侧多了一条"。 */
+.phone-body,.desk-body,.modal,.picker,.thumbrow,.admin-sidebar,.rv-layout>.admin-main{
+ scrollbar-width:none;-ms-overflow-style:none}
+.phone-body::-webkit-scrollbar,.desk-body::-webkit-scrollbar,.modal::-webkit-scrollbar,
+.picker::-webkit-scrollbar,.thumbrow::-webkit-scrollbar,.admin-sidebar::-webkit-scrollbar,
+.rv-layout>.admin-main::-webkit-scrollbar{width:0;height:0;display:none}
+/* 手机画布内的尺寸收敛：320px 宽度下压缩内边距，避免文字被迫拆行 */
+.phone-body .card{padding:9px;margin-bottom:8px}
+.phone-body .card.flat{padding:7px}
+.phone-body .btn{padding:9px 10px}
+.phone-body .bar{padding:6px 0}
+.phone-body .sect-t{margin:9px 0 5px}
+.phone-body .hint{margin-top:3px}
+
+/* ---------- 底部标签栏：移动端「商城 / 我的」两个一级页面之间的切换 ----------
+   只在两个一级页面（APP-HOME-01 商城、APP-MINE-01 我的）显示；
+   二级页面（商品详情、结算、订单、结果页等）不显示，用返回键回上级（移动端主流做法）。 */
+.tabbar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+ border-top:1px solid var(--line);background:#fff;margin:8px -14px 0;
+ border-radius:0 0 20px 20px;flex:none;position:relative;z-index:3}
+.tabbar button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;
+ border:0;background:none;min-height:52px;color:var(--muted);font-size:11px;line-height:1.2;cursor:pointer}
+.tabbar .tb-ico{width:20px;height:20px;border:1px solid var(--line);background:#eef0f2;display:block}
+.tabbar button[aria-current="page"]{color:var(--primary);font-weight:600}
+.tabbar button[aria-current="page"] .tb-ico{border-color:var(--primary);background:#e7edf6}
+
+/* ---------- 商品详情：图片/视频轮播 ----------
+   媒体项为图片或视频，同一轮播内切换；左右切换按钮覆盖在舞台上，缩略图行同时充当指示器。 */
+.carousel{position:relative}
+.carousel-stage{position:relative;height:150px;display:flex;align-items:center;justify-content:center;
+ background:#e4e6e9;border:1px solid #d6d9dd;color:#6b7280;font-size:12px;overflow:hidden}
+.carousel-stage .play{width:34px;height:34px;border:1px solid #8d939b;border-radius:50%;background:#fff;
+ display:flex;align-items:center;justify-content:center;font-size:13px;color:#4b5563;margin-right:8px;flex:none}
+.carousel-stage .media-label{display:flex;align-items:center;justify-content:center;min-width:0;padding:0 8px}
+/* 轮播左右切换与缩略图都是移动端触控热区，按标准 7.2／7.5 取 44×44 CSS 像素 */
+.cbtn{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border:1px solid var(--line);
+ background:rgba(255,255,255,.88);color:#4b5563;font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.cbtn.prev{left:0}
+.cbtn.next{right:0}
+.cindex{position:absolute;right:6px;bottom:6px;background:rgba(32,36,42,.7);color:#fff;
+ font-size:11px;line-height:1.6;padding:0 6px;border-radius:2px}
+.thumbrow{display:flex;gap:6px;margin-top:6px;overflow-x:auto;padding-bottom:2px}
+.thumbblk{flex:none;width:46px;height:44px;border:1px solid #d6d9dd;background:#e4e6e9;color:#6b7280;
+ font-size:11px;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
+.thumbblk[aria-pressed="true"]{border:2px solid var(--primary);color:var(--text);background:#eef2f7}
+
+/* ---------- 购买面板：版本选择行（右侧统一小字提示 + 问号说明入口） ---------- */
+.ver-list{display:flex;flex-direction:column;gap:6px}
+.ver-row{display:flex;align-items:center;gap:8px;width:100%;min-height:54px;padding:8px;
+ border:1px solid var(--line);background:#fff;cursor:pointer;text-align:left;flex-wrap:wrap}
+.ver-row[aria-pressed="true"]{border:2px solid var(--primary);background:#eef2f7}
+.ver-row .ver-radio{width:14px;height:14px;border:1px solid #8d939b;border-radius:50%;flex:none;background:#fff}
+.ver-row[aria-pressed="true"] .ver-radio{border:4px solid var(--primary)}
+.ver-row .ver-name{font-size:13px;font-weight:500}
+.ver-row .ver-price{margin-left:auto;font-size:13px}
+.ver-row .ver-note{flex-basis:100%;display:flex;align-items:center;gap:4px;font-size:11px;color:var(--muted);padding-left:22px}
+/* 问号说明入口：可视圆圈 16px，但热区扩到 44×44（负外边距抵消，不改变行高）。
+   小图标直接做成 16px 热区在移动端不可点，这里按标准 7.2 的最小热区处理。 */
+.q{width:44px;height:44px;min-height:44px;border:0;background:none;display:inline-flex;align-items:center;
+ justify-content:center;cursor:pointer;flex:none;padding:0;margin:-14px -14px -14px 0}
+.q-ico{width:16px;height:16px;border:1px solid #8d939b;border-radius:50%;background:#fff;color:#4b5563;
+ font-size:11px;line-height:1;display:inline-flex;align-items:center;justify-content:center}
+/* 面板內的说明文字行（发货方式等） */
+.way-note{font-size:11px;color:var(--muted);margin-top:4px}
+
+/* ---------- 个人中心（「我的」页）共用件 ---------- */
+.avatar{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:#eef0f2;
+ display:flex;align-items:center;justify-content:center;font-size:11px;color:#6b7280;flex:none}
+.cell{display:flex;align-items:center;gap:10px;width:100%;min-height:48px;padding:8px 0;
+ background:none;border:0;border-top:1px solid var(--line);text-align:left;cursor:pointer;color:inherit}
+.cell:first-child{border-top:0}
+.cell .k{font-size:13px}
+.cell .v{margin-left:auto;font-size:12px;color:var(--muted);text-align:right}
+.cell .arrow{color:#a9aeb5;flex:none;font-size:12px}
+.cell:disabled{cursor:default;color:var(--muted)}
+/* 订单状态快捷入口：图标在上、名称在下（移动端主流）；角标只表示「需要用户处理」的状态，
+   已支付／已关闭不带角标，避免把「可查看」误读成「待办」。 */
+.stat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px}
+.stat{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;
+ min-height:62px;padding:6px 2px;border:0;background:none;font-size:11px;color:var(--text);cursor:pointer;line-height:1.2}
+.stat .st-ico{width:22px;height:22px;border:1px solid var(--line);background:#eef0f2;display:block}
+.stat .badge{position:absolute;top:0;right:14px;min-width:16px;height:16px;border-radius:8px;
+ background:var(--error);color:#fff;font-size:11px;line-height:16px;padding:0 4px;text-align:center}
+.sec-hd{display:flex;align-items:center;gap:8px;min-width:0}
+.sec-hd .more{margin-left:auto;border:0;background:none;color:var(--muted);font-size:12px;cursor:pointer;
+ min-height:44px;padding:0 2px;white-space:nowrap}
+
+/* 桌面客户端画布 */
+.desk{width:100%;min-width:0;background:#fbfbfb;border:2px solid #8d939b;border-radius:8px;padding:0;overflow:hidden}
+.desk-bar{display:flex;align-items:center;gap:8px;background:#eceef1;border-bottom:1px solid var(--line);padding:6px 10px;font-size:12px;color:var(--muted)}
+.desk-body{padding:14px;max-height:760px;overflow:auto;container-type:inline-size;container-name:desk}
+.desk-narrow{max-width:760px}
+
+/* ---------- 桌面 Web 顶栏：左「标识＋内容导航」，右「用户区」 ----------
+   内容导航只放内容入口（首页、搜索商品）；我的订单、我的、客服统一收进右侧用户区，
+   避免同一入口在导航与入口行里出现两次。顶栏不设搜索输入框——关键词输入在搜索页内完成。
+   （另见 06-web.js webNav 注释） */
+.topbar{display:flex;align-items:center;gap:6px;flex-wrap:wrap;min-width:0}
+/* 二级页面的返回入口：PC 端此前没有任何返回控件（移动端靠 navBar 的返回键）。
+   放在条首、与站点标识用竖线分隔，站点导航本身在各页保持一致。 */
+/* 返回入口贴在业务标题左侧：与标题同一行、基线对齐，不进入站点级顶栏。 */
+.page-back{border:1px solid var(--line);background:#fff;padding:6px 10px;min-height:40px;
+ white-space:nowrap;cursor:pointer;flex:none;font-size:13px;color:var(--ink)}
+.page-back:hover{background:#f5f6f7}
+.page-head{flex-wrap:nowrap}
+.page-head .t{min-width:0;overflow-wrap:anywhere}
+.topbar-logo{border:0;background:none;padding:8px 2px;min-height:40px;font-size:16px;font-weight:700;color:var(--primary);white-space:nowrap;cursor:pointer}
+.topbar-nav{display:flex;align-items:center;gap:2px;flex-wrap:wrap}
+.topbar-nav button{border:0;background:none;padding:8px 12px;min-height:40px;color:var(--text);white-space:nowrap;cursor:pointer}
+.topbar-nav button[aria-current="page"]{color:var(--primary);font-weight:600;box-shadow:inset 0 -2px 0 var(--primary)}
+.topbar-user{display:flex;align-items:center;white-space:nowrap;margin-left:auto}
+.topbar-user button{border:0;background:none;padding:8px 8px;min-height:40px;color:var(--muted);cursor:pointer;white-space:nowrap}
+.topbar-user button[aria-current="page"]{color:var(--primary)}
+.topbar-user .sep{width:1px;height:16px;background:var(--line);margin:0 8px;flex:none}
+
+/* 内容容器：宽画布下居中，正文不铺满超宽窗口（03 组件文档：容器 1200px 居中） */
+.desk-container{max-width:1200px;margin:0 auto;min-width:0}
+
+/* 业务页面标题行：位于顶栏之下，只写业务名称与状态，不写评审描述 */
+.page-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin:14px 0 10px;min-width:0}
+.page-head .t{font-size:16px;font-weight:600}
+.page-head .n{font-size:12px;color:var(--muted)}
+
+/* 区块标题行：标题在左、排序在右，与它排序的商品网格同属一个内容块 */
+.sec-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:14px 0 10px;min-width:0}
+.sec-head .t{font-size:15px;font-weight:600}
+.sec-head .n{font-size:12px;color:var(--muted)}
+.sec-head .sort{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-left:auto}
+.sec-head .sort .tag{min-height:36px;padding:6px 10px;margin:0}
+/* 排序栏：PC 与手机共用一行，间隙分开控制。
+   手机画布内 5 个排序项按 44×44 触控下限已占 232px，加上 8px 间隙共 264px，
+   而画布内可用宽度只有 260px，导致「最新」被迫换到第二行；
+   按钮尺寸不能再压（触控下限），因此只把间隙收到 4px，总宽 248px，单行放下。 */
+/* 首页广告位：整图即热区；左右箭头与指示点叠在图上，不额外占竖向空间。
+   指示点的可见条很小（16×8），但按钮热区按移动端 44×44 取。 */
+.ad{position:relative}
+.ad-hit{display:block;width:100%;border:0;background:none;padding:0;cursor:pointer}
+.ad-img{display:flex;align-items:center;justify-content:center;height:96px;background:#e4e6e9;
+ color:#6b7280;font-size:12px;border:1px dashed #c9cdd3;text-align:center;padding:0 46px}
+.desk .ad-img{height:220px;font-size:13px}
+.ad-arrow{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border:1px solid var(--line);
+ background:rgba(255,255,255,.9);font-size:16px;line-height:1;cursor:pointer;z-index:2}
+.ad-arrow.prev{left:4px}
+.ad-arrow.next{right:4px}
+.ad-dots{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:center;z-index:2}
+.ad-dots button{width:44px;height:44px;border:0;background:none;padding:0;display:flex;
+ align-items:center;justify-content:center;cursor:pointer}
+.ad-dots button::before{content:'';width:16px;height:8px;background:#c9cdd3;box-shadow:0 0 0 1px rgba(255,255,255,.75)}
+.ad-dots button[aria-pressed="true"]::before{background:#2f343b}
+/* 订单状态页签：一行展示（评审反馈）。不换行；宽度不够时横向滚动，也不折成两行。
+   类名用 .segbar 而不是 .tabbar——.tabbar 已是移动端底部标签栏的类名，
+   复用会把它的两列网格改成横向 flex，底部标签栏会被压窄到 34px（实测踩到过）。 */
+.segbar{display:flex;flex-wrap:nowrap;gap:6px;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none}
+.segbar::-webkit-scrollbar{width:0;height:0;display:none}
+.segbar>.tag{flex:none;min-width:44px;justify-content:center}
+/* PC 收银台扫码弹窗（CHG-0048）：二维码用占位块表示，本原型不加载外部图片 */
+.qr-box{width:176px;height:176px;margin:10px auto;border:1px solid var(--line);
+ background:repeating-linear-gradient(45deg,#eceef1 0 7px,#f8f9fa 7px 14px);
+ display:flex;align-items:center;justify-content:center;text-align:center;
+ font-size:11px;color:#6b7280;padding:10px;line-height:1.6}
+.qr-steps{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin:6px 0 2px}
+.qr-steps span{font-size:11px;color:var(--muted);border:1px solid var(--line);padding:2px 8px;background:#fff}
+.qr-steps span.now{background:var(--primary);color:#fff;border-color:var(--primary)}
+.qr-steps span.done{border-color:var(--success);color:var(--success)}
+.qr-ok{width:56px;height:56px;border-radius:50%;background:var(--success);color:#fff;
+ display:flex;align-items:center;justify-content:center;font-size:28px;margin:6px auto}
+.sortbar{display:flex;flex-wrap:wrap;gap:8px}
+.phone-body .sortbar{gap:4px}
+
+/* ============================================================
+   业务画布：管理后台（标准 7.6.1）
+   ============================================================ */
+.admin-canvas{width:100%;min-width:0;display:grid;grid-template-columns:220px minmax(0,1fr);
+ background:#fbfbfb;border:2px solid #8d939b;border-radius:8px;overflow:hidden}
+.admin-canvas-wrap{padding:10px;overflow:visible;container-type:inline-size;container-name:admincv}
+/* 左侧业务菜单（CHG-0054 重新设计；标准 7.6.1“菜单深灰、工作区浅灰”）。
+   参考主流后台控制台：品牌区＋菜单搜索＋可折叠分组＋图标菜单项＋选中标线＋待处理角标＋可收起为窄条。
+   配色沿用灰度线框调性；如需换强调色，只改 --sb-accent 一处。 */
+.admin-sidebar{--sb-ink:#c3cad4;--sb-dim:#7f8896;--sb-hover:rgba(255,255,255,.07);
+ --sb-on:rgba(255,255,255,.13);--sb-accent:#fff;
+ background:#2b3038;color:var(--sb-ink);padding:0;min-height:680px;
+ display:flex;flex-direction:column;overflow:hidden}
+.admin-sidebar .sb-brand{display:flex;align-items:center;gap:9px;height:56px;flex:none;padding:0 12px 0 14px;
+ border-bottom:1px solid rgba(255,255,255,.08)}
+.admin-sidebar .sb-mark{width:24px;height:24px;flex:none;border-radius:5px;background:rgba(255,255,255,.16);
+ color:#fff;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center}
+.admin-sidebar .sb-brand-t{font-size:13.5px;font-weight:500;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.admin-sidebar button.sb-collapse{margin-left:auto;flex:none;width:26px;min-width:26px;height:26px;min-height:26px;
+ padding:0;border:0;background:transparent;color:var(--sb-dim);font-size:13px;line-height:1;cursor:pointer;border-radius:4px}
+.admin-sidebar button.sb-collapse:hover{background:var(--sb-hover);color:#fff}
+.admin-sidebar .sb-search{flex:none;padding:10px 12px 4px}
+.admin-sidebar .sb-search input{width:100%;min-height:34px;font-size:12.5px;color:#e6e9ed;
+ background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.11);border-radius:4px;padding:5px 9px}
+.admin-sidebar .sb-search input::placeholder{color:var(--sb-dim)}
+.admin-sidebar .sb-search input:focus{outline:none;border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.1)}
+.admin-sidebar .sb-nav{flex:1;overflow-y:auto;overflow-x:hidden;padding:2px 0 12px}
+.admin-sidebar button.sb-group{display:flex;align-items:center;width:100%;text-align:left;background:transparent;
+ border:0;border-radius:0;color:var(--sb-dim);font-size:11px;letter-spacing:.05em;
+ padding:13px 14px 5px;min-height:30px;cursor:pointer}
+.admin-sidebar button.sb-group:hover{color:var(--sb-ink)}
+.admin-sidebar .sb-caret{margin-left:auto;width:0;height:0;
+ border-left:3.5px solid transparent;border-right:3.5px solid transparent;border-top:4px solid currentColor;
+ transform:rotate(-90deg);transition:transform .15s}
+.admin-sidebar button.sb-group[aria-expanded="true"] .sb-caret{transform:rotate(0)}
+.admin-sidebar button.sb-item{display:flex;align-items:center;gap:9px;width:100%;text-align:left;background:transparent;
+ border:0;border-radius:0;border-left:3px solid transparent;padding:0 12px;min-height:40px;
+ font-size:13px;color:var(--sb-ink);cursor:pointer}
+.admin-sidebar button.sb-item:hover{background:var(--sb-hover);color:#fff}
+.admin-sidebar button.sb-item[aria-pressed="true"]{background:var(--sb-on);color:#fff;
+ border-left-color:var(--sb-accent);font-weight:500}
+.admin-sidebar .sb-ic{flex:none;display:block}
+.admin-sidebar .sb-label{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.admin-sidebar .sb-badge{flex:none;min-width:18px;height:18px;padding:0 5px;border-radius:9px;
+ background:var(--error);color:#fff;font-size:11px;line-height:18px;text-align:center}
+.admin-sidebar .sb-empty{padding:14px;font-size:12px;color:var(--sb-dim);line-height:1.7}
+.admin-sidebar [hidden]{display:none!important}
+/* 收起为窄条：只留图标，名称靠 title 提示（主流后台的折叠态） */
+.admin-canvas.sb-collapsed{grid-template-columns:64px minmax(0,1fr)}
+.admin-canvas.sb-collapsed .admin-sidebar .sb-brand-t,
+.admin-canvas.sb-collapsed .admin-sidebar .sb-label,
+.admin-canvas.sb-collapsed .admin-sidebar .sb-badge,
+.admin-canvas.sb-collapsed .admin-sidebar .sb-group,
+.admin-canvas.sb-collapsed .admin-sidebar .sb-search{display:none}
+.admin-canvas.sb-collapsed .admin-sidebar .sb-brand{justify-content:center;padding:0}
+.admin-canvas.sb-collapsed .admin-sidebar button.sb-collapse{margin-left:0}
+.admin-canvas.sb-collapsed .admin-sidebar button.sb-item{justify-content:center;padding:0;gap:0}
+.admin-main{min-width:0;background:#fff;display:flex;flex-direction:column}
+.admin-topbar{height:58px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--line);
+ padding:0 20px;background:#fafbfc;flex-wrap:wrap}
+.admin-topbar .who{margin-left:auto;font-size:12px;color:var(--muted)}
+.admin-content{padding:16px 18px;min-width:0}
+/* 后台操作结果浮层（CHG-0061）：保存等动作的结果必须出现在工作区内，
+   不能只挂在评审外壳右侧的说明列——评审者正看着画布，等于没有反馈。 */
+.adm-toast{position:fixed;left:50%;top:20px;transform:translateX(-50%);z-index:90;
+ max-width:min(620px,92vw);background:#20242a;color:#fff;font-size:13px;line-height:1.65;
+ padding:11px 18px;box-shadow:0 6px 20px rgba(0,0,0,.22);border-radius:4px}
+.adm-toast.err{background:var(--error)}
+.admin-title{font-size:20px;font-weight:500;margin-bottom:4px}
+.admin-sub{font-size:12px;color:var(--muted);margin-bottom:14px}
+.admin-filter-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:12px}
+.admin-filter-grid .fld{display:flex;flex-direction:column;gap:4px;min-width:0}
+.admin-filter-grid .fld span{font-size:12px;color:var(--muted)}
+.admin-filter-actions{display:flex;flex-wrap:wrap;gap:8px;grid-column:1/-1}
+.admin-canvas button,.admin-canvas input,.admin-canvas select{min-height:40px;font:inherit;border:1px solid var(--line);background:#fff;border-radius:0;padding:6px 10px}
+.admin-canvas .mini,.mini{min-height:34px;padding:4px 8px;font-size:12px}
+/* 页签行：右侧留一个动作位（CHG-0075）；.admin-tabs 在行内不再自己画底边 */
+.admin-tabs-row{display:flex;align-items:flex-end;gap:12px;border-bottom:1px solid var(--line);margin-bottom:12px}
+.admin-tabs-row .admin-tabs{flex:1;min-width:0;border-bottom:0;margin-bottom:0}
+.admin-tabs-act{flex:none;padding-bottom:6px}
+tr.dragging{opacity:.45}
+tr.over{box-shadow:inset 0 2px 0 #2f343b}
+/* 可点击的表格内文字按钮（订单列表的用户名称） */
+.admin-canvas .ellip{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.admin-canvas .btn-link{border:0;background:transparent;padding:0;font:inherit;color:#1f5fbf;cursor:pointer;text-align:left}
+.admin-canvas .btn-link:hover{text-decoration:underline}
+.admin-canvas .btn-link.ellip{max-width:100%}
+.admin-canvas .btn-link:focus-visible{outline:2px solid #20242a;outline-offset:2px}
+.admin-canvas td .grip{border:0;background:transparent;cursor:grab;color:var(--muted);font-size:14px;line-height:1;padding:2px 6px}
+.admin-tabs{display:flex;flex-wrap:wrap;gap:0;border-bottom:1px solid var(--line);margin-bottom:12px}
+.admin-tabs button{background:transparent;border:0;border-bottom:2px solid transparent;padding:8px 14px;min-height:40px}
+.admin-tabs button[aria-pressed="true"]{background:#f4f5f6;box-shadow:inset 0 -2px 0 #2f343b;font-weight:500}
+.admin-table{width:100%;min-width:0;table-layout:fixed;border-collapse:collapse;font-size:12.5px}
+/* 列多时收窄左右内边距，把宽度留给内容（避免逐字换行） */
+.admin-table th,.admin-table td{padding:10px 8px;border-bottom:1px solid #e3e6ea;text-align:left;
+ overflow-wrap:anywhere;white-space:normal;vertical-align:top}
+/* 表头允许换行：固定列宽下 nowrap 会让表头文字溢出到相邻单元格 */
+.admin-table th{background:#e9ecef;font-size:12px;font-weight:500;line-height:1.45}
+.admin-table tbody tr:hover{background:#fafbfc}
+.admin-table tbody tr[aria-selected="true"]{background:#f0f2f4}
+/* 选择列用百分比，避免固定像素列在隐藏次要列后按比例膨胀占掉宽度 */
+.admin-table .select-col{padding-left:6px;padding-right:4px}
+/* 窄屏按字段优先级收起次要列，核心字段与操作保留，次要字段在详情抽屉可查（标准 7.6.1） */
+@container admincv (max-width:860px){.admin-table .sec{display:none}}
+.admin-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;margin-bottom:14px}
+.admin-card{border:1px solid var(--line);background:#fff;padding:10px 12px}
+.admin-card .k{font-size:12px;color:var(--muted)}
+.admin-card .v{font-size:18px;font-weight:500;margin-top:2px}
+.admin-card .u{font-size:12px;color:var(--muted);margin-top:2px}
+/* 后台画布按自身宽度适配（容器查询），与评审外壳宽度解耦 */
+@container admincv (max-width:1180px){.admin-canvas{grid-template-columns:200px minmax(0,1fr)}}
+/* 窄画布下菜单改为横向可滑动条，保留模块切换入口而不是直接隐藏（标准 7.6.1 窄屏按优先级收起） */
+@container admincv (max-width:700px){
+  .admin-canvas,.admin-canvas.sb-collapsed{grid-template-columns:minmax(0,1fr)}
+  .admin-sidebar{min-height:0;display:block;overflow:visible}
+  .admin-sidebar .sb-brand,.admin-sidebar .sb-search{display:none}
+  .admin-sidebar .sb-nav{display:flex;gap:2px;overflow-x:auto;padding:6px}
+  .admin-sidebar button.sb-group{display:none}
+  .admin-sidebar button.sb-item{width:auto;flex:none;border-left:0;border-bottom:3px solid transparent;
+   padding:0 10px;white-space:nowrap}
+  .admin-sidebar button.sb-item[aria-pressed="true"]{border-bottom-color:var(--sb-accent);border-left-color:transparent}
+}
+
+/* 首页banner 素材编排（CHG-0056）：图片上传 + 商品选择 + 拖拽排序 */
+.hm-list{display:flex;flex-direction:column;gap:8px;margin-top:6px}
+.hm-item{display:flex;gap:10px;align-items:center;border:1px solid var(--line);background:#fff;padding:10px 12px}
+.hm-item.dragging{opacity:.45}
+.hm-item.over{border-color:#2f343b;box-shadow:inset 0 3px 0 #2f343b}
+.admin-canvas button.hm-grip{flex:none;width:22px;min-width:22px;height:56px;min-height:56px;padding:0;border:0;background:transparent;
+ color:#b3b9c1;font-size:14px;cursor:grab;letter-spacing:-2px}
+.admin-canvas button.hm-grip:hover{color:var(--ink)}
+.hm-up{position:relative;flex:none;width:96px;height:56px;border:1px dashed var(--line);background:#f5f6f7;
+ display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:11px;color:#6b7280;
+ cursor:pointer;text-align:center;line-height:1.35;overflow:hidden;background-size:cover;background-position:center}
+/* 真正的 file 输入铺满整个缩略图：点击即可打开本地文件对话框，
+   且可 Tab 聚焦、Enter/空格同样触发——不依赖脚本转发点击。 */
+.admin-canvas .hm-up input[type=file]{position:absolute;inset:0;width:100%;height:100%;min-height:0;
+ margin:0;padding:0;border:0;background:transparent;opacity:0;cursor:pointer}
+.hm-up:hover{border-color:#8d939b}
+.hm-up.has-img{border-style:solid;border-color:var(--line)}
+.hm-up.has-img span{display:none}
+.hm-prev{flex:none;width:96px;height:56px;border:1px solid var(--line);background:#eceef1;display:flex;
+ align-items:center;justify-content:center;font-size:11px;color:#6b7280;overflow:hidden}
+.hm-prev img{width:100%;height:100%;object-fit:cover;display:block}
+.hm-body{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px}
+.hm-top{display:flex;align-items:center;gap:8px;min-width:0}
+.hm-top .hm-no{font-size:12.5px;font-weight:500;flex:none}
+.hm-top .hm-flag{font-size:11.5px;color:var(--error);flex:none}
+.admin-canvas button.hm-x{margin-left:auto;flex:none;min-height:30px;padding:3px 10px;font-size:12px}
+.hm-bot{display:flex;align-items:center;gap:10px;min-width:0}
+.hm-bot .gd{flex:1;min-width:0;font-size:12.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hm-bot .gd.empty{color:var(--error)}
+.hm-bot .pr{flex:none;font-size:12.5px;color:var(--muted)}
+.admin-canvas button.hm-pick{flex:none;min-height:30px;padding:3px 10px;font-size:12px}
+.hm-empty{border:1px dashed var(--line);padding:14px;text-align:center;font-size:12.5px;color:var(--muted);background:#fafbfc}
+.hm-hint{margin-top:6px;font-size:11.5px;color:var(--muted);line-height:1.6}
+.hm-hint.err{color:var(--error)}
+/* 首页商品列表的「热门商品列表」表格（CHG-0058） */
+.hm-section{margin-top:2px}
+.hm-section-t{font-size:12.5px;font-weight:500;margin-bottom:2px}
+.hm-hot{width:100%;min-width:0;border-collapse:collapse;table-layout:fixed;margin-top:6px}
+.hm-hot th{background:#e9ecef;font-size:12px;font-weight:500;padding:8px 10px;text-align:left;border-bottom:1px solid #e3e6ea}
+.hm-hot td{padding:8px 10px;border-bottom:1px solid #e3e6ea;font-size:12.5px;vertical-align:middle}
+.hm-hot tr.dragging{opacity:.45}
+.hm-hot tr.over td{border-top:2px solid #2f343b}
+.hm-hot .col-grip{width:28px}
+.hm-hot .col-img{width:64px}
+.hm-hot .col-sale{width:86px}
+.hm-hot .col-op{width:126px}
+.admin-canvas button.hm-hotgrip{width:22px;min-width:22px;height:32px;min-height:32px;padding:0;border:0;background:transparent;
+ color:#b3b9c1;cursor:grab;font-size:14px;letter-spacing:-2px}
+.hm-thumb{width:56px;height:32px;border:1px solid var(--line);background:#eceef1;display:flex;align-items:center;
+ justify-content:center;font-size:11px;color:#6b7280}
+.hm-hotop{display:flex;gap:6px}
+.admin-canvas button.hm-hotop-b{min-height:30px;min-width:30px;padding:3px 6px;font-size:12px}
+.hm-hot .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+/* 后台覆盖层：编辑/查看弹窗、商品选择弹层与删除二次确认共用（CHG-0060、CHG-0066）。
+   层级：编辑弹窗 70 < 叠加弹层 .stacked 80 < 二次确认 .top 88 < 浮层提示 90。 */
+.adm-mask{position:fixed;inset:0;background:rgba(32,36,42,.44);display:none;align-items:center;
+ justify-content:center;z-index:70;padding:20px}
+.adm-mask.stacked{z-index:80}
+.adm-mask.top{z-index:88}
+.adm-mask.on{display:flex}
+.adm-dlg{width:min(560px,100%);max-height:82vh;background:#fff;border:1px solid #8d939b;display:flex;flex-direction:column}
+.adm-dlg .dt{display:flex;align-items:center;gap:10px;padding:10px 12px;border-bottom:1px solid var(--line);background:#fafbfc}
+.adm-dlg .db{padding:10px 12px;overflow:auto;flex:1;min-height:0}
+.adm-dlg .df{display:flex;gap:8px;justify-content:flex-end;padding:10px 12px;border-top:1px solid var(--line)}
+/* 二次确认层：窄一些，正文一行说明 + 主次动作 */
+.adm-dlg.confirm{width:min(400px,100%)}
+.adm-dlg.confirm .db{font-size:13px;line-height:1.7}
+.adm-dlg.confirm .db .obj{margin-top:6px;color:var(--muted);font-size:12px;word-break:break-all}
+/* 编辑/查看弹窗（CHG-0066）：后台的数据编辑与详情统一在居中的独立弹窗内完成，
+   不再渲染成列表下方的一块区域。宽版给到 920px，容纳首页 banner 素材与热门商品表格。 */
+.adm-dlg.form{width:min(920px,100%);max-height:86vh}
+.adm-dlg.form .db{padding:14px 16px;font-size:13px}
+.adm-dlg.form .db>:first-child{margin-top:0}
+.adm-dlg.form .db>:last-child{margin-bottom:0}
+/* 弹窗头部：标题在左，保存/关闭类动作统一收在右上角（CHG-0067）。
+   标题过长时省略，动作区不被压缩、按钮换行也不挤压标题。 */
+.adm-dlg .dt .strong{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.adm-dlg .dt .acts{margin-left:auto;display:flex;gap:8px;align-items:center;gap:8px;
+ flex:none;flex-wrap:wrap;justify-content:flex-end}
+/* 商品编辑弹窗（CHG-0069）：多规格、多交付类型、多地区与素材列表。
+   每块＝左侧固定标签（88px）＋右侧内容区，块间以分隔线区隔。 */
+/* 业务用的计数与元信息。不要用 .xsmall.muted：那个类会被评审注释收集器按内容识别并移出画布。 */
+.gd-count{flex:none;font-size:12px;color:var(--muted)}
+.gd-count b{font-weight:600;color:#2f343b}
+.adm-meta{flex:none;font-size:12px;color:var(--muted)}
+/* 业务用的计数与元信息。不要用 .xsmall.muted：那个类会被评审注释收集器按内容识别并移出画布。 */
+.gd-count{flex:none;font-size:12px;color:var(--muted)}
+.gd-count b{font-weight:600;color:#2f343b}
+.adm-meta{flex:none;font-size:12px;color:var(--muted)}
+.gd-block{display:flex;gap:10px;align-items:flex-start;padding:11px 0;border-top:1px solid var(--line)}
+.gd-block:first-child{border-top:0;padding-top:2px}
+.gd-label{width:88px;flex:none;font-size:12px;color:var(--muted);padding-top:9px}
+.gd-label .req{color:var(--error);margin-left:2px}
+.gd-body{flex:1;min-width:0}
+.gd-specs{display:flex;flex-direction:column;gap:8px}
+.gd-spec-row{display:flex;gap:8px;align-items:center}
+.admin-canvas .gd-spec-row input{min-height:38px}
+/* 规格行的宽度要盖过后面的 .inp{width:100%}，因此带上父选择器提高权重 */
+.gd-spec-row .gd-spec-nm{flex:1;min-width:0;width:auto}
+.gd-spec-row .gd-spec-pr{width:118px;flex:none}
+.gd-del{flex:none}
+.gd-ways{display:flex;gap:18px;align-items:center;flex-wrap:wrap;min-height:38px}
+.admin-canvas .gd-ways label{display:flex;gap:6px;align-items:center;font-size:13px;cursor:pointer;margin:0}
+.admin-canvas .gd-ways input{width:18px;height:18px;min-height:auto;flex:none}
+/* 硬件配置（CHG-0072）：按游戏名搜索 → 结果行 → 采用；下面是可编辑的五项 */
+.gd-sys-q{display:flex;gap:8px;align-items:center}
+.gd-sys-q .inp{flex:1;min-width:0;min-height:38px}
+.gd-sys-hit{margin-top:8px;border:1px solid var(--line);background:#fafbfc;padding:8px 10px}
+.gd-sys-hit .t{font-size:12px;color:var(--muted)}
+.gd-sys-hit .v{font-size:12px;margin-top:2px}
+/* 每行一个字段：四列栅格下每个输入框只有约 260px，长取值（如双 CPU/双显卡）会被裁断 */
+.gd-sys-fields{display:grid;grid-template-columns:88px minmax(0,1fr);gap:8px 10px;align-items:center;margin-top:10px;max-width:620px}
+.admin-canvas .gd-sys-fields input{min-height:38px}
+.gd-sys-fields .k{font-size:12px;color:var(--muted)}
+.gd-chips{display:flex;gap:6px;flex-wrap:wrap;align-items:center;min-height:38px}
+.gd-chip{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--line);padding:4px 6px 4px 8px;
+ font-size:12px;background:#fafbfc}
+.admin-canvas .gd-chip button{border:0;background:transparent;cursor:pointer;color:var(--muted);
+ font-size:13px;line-height:1;padding:0 2px;min-height:auto}
+/* 素材预览（CHG-0074）：大预览块 + 缩略图行，形态对齐前端商品详情页顶图 */
+.gd-prev{margin-bottom:10px;border:1px solid var(--line);background:#fafbfc;padding:10px}
+.gd-prev-hd{font-size:12px;color:var(--muted);margin-bottom:8px}
+.gd-prev-stage{height:180px;background:#eef0f3;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.gd-prev-img{max-width:100%;max-height:100%;object-fit:contain;display:block}
+.gd-prev-ph{color:#6b7280;font-size:12px;text-align:center;padding:0 12px;line-height:1.7;word-break:break-all}
+.gd-prev-meta{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:12px;color:#20242a;margin-top:8px}
+.gd-prev-top{background:#fff;border:1px solid var(--line);font-size:11px;padding:1px 6px;color:var(--muted)}
+.gd-thumbs{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.gd-thumb{width:72px;height:46px;padding:0;border:1px solid var(--line);background:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;overflow:hidden;font-size:11px;color:#6b7280}
+.gd-thumb.on{border-color:#20242a;box-shadow:inset 0 0 0 1px #20242a}
+.gd-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.gd-meds{display:flex;flex-direction:column;gap:6px}
+.gd-med{display:flex;gap:8px;align-items:center;border:1px solid var(--line);padding:6px 8px;background:#fff}
+.gd-med.dragging{opacity:.45}
+.gd-med.over{box-shadow:inset 0 2px 0 #2f343b}
+.admin-canvas .gd-med .grip{border:0;background:transparent;cursor:grab;color:var(--muted);
+ padding:0 2px;min-height:auto;font-size:13px}
+.gd-med .kind{flex:none;font-size:11px;border:1px solid var(--line);padding:1px 5px;color:var(--muted)}
+.gd-med .fn{flex:1;min-width:0;font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.admin-canvas .gd-med .del{border:0;background:transparent;cursor:pointer;color:var(--error);
+ font-size:12px;min-height:auto;padding:0 2px}
+/* 上传按钮用透明覆盖的原生 file input，点击即开本地选择框，键盘可达（同 banner 素材） */
+.gd-up{position:relative;display:inline-flex;align-items:center;justify-content:center;flex:none}
+.gd-up .btn{white-space:nowrap}
+.admin-canvas .gd-up input[type=file]{position:absolute;inset:0;width:100%;height:100%;min-height:0;
+ margin:0;padding:0;border:0;background:transparent;opacity:0;cursor:pointer}
+.gd-regions{overscroll-behavior:contain;max-height:44vh;overflow:auto;border:1px solid var(--line)}
+.admin-canvas .gd-region-row{display:flex;gap:8px;align-items:center;padding:7px 10px;
+ border-bottom:1px solid #eef0f2;font-size:13px;cursor:pointer;margin:0}
+.admin-canvas .gd-region-row:last-child{border-bottom:0}
+.admin-canvas .gd-region-row input{width:17px;height:17px;min-height:auto;flex:none}
+/* 表单页（客服配置）的保存等动作同样固定在页面右上角（CHG-0067）。 */
+/* 表单页（客服配置）的保存等动作同样固定在页面右上角（CHG-0067）。 */
+.admin-page-acts{margin-left:auto;display:flex;gap:8px;align-items:flex-start;flex:none;flex-wrap:wrap;justify-content:flex-end}
+/* 弹窗打开时：正文区滚到边界后不再链式带动背后的列表 */
+.adm-dlg .db{overscroll-behavior:contain}
+/* 兜底：万一可滚动祖先没被脚本识别到，页面根元素也不滚 */
+html.adm-scroll-locked,html.adm-scroll-locked body{overflow:hidden}
+/* 当前打开弹窗的那一行：即便行本身不可点，也要能看出弹窗数据来自哪条记录 */
+.admin-canvas table.admin-table tr.row-open>td{background:#f2f5f8}
+.admin-canvas table.admin-table tr.row-open>td:first-child{box-shadow:inset 3px 0 0 #2f343b}
+.admin-canvas button.danger{border-color:var(--error);color:var(--error)}
+.admin-canvas button.danger:hover{background:#fbf1f1}
+.hm-srch{display:flex;gap:8px;margin-bottom:8px}
+.admin-canvas .hm-srch input{flex:1;min-height:38px}
+.admin-canvas .hm-grow{display:flex;gap:10px;align-items:center;width:100%;text-align:left;
+ padding:8px;border:1px solid transparent;border-bottom:1px solid #e3e6ea;background:#fff;cursor:pointer}
+.admin-canvas .hm-grow:hover{background:#fafbfc}
+.admin-canvas .hm-grow[aria-selected="true"]{background:#f0f2f4;border-color:#2f343b}
+.hm-grow .nm{flex:1;min-width:0;font-size:12.5px}
+.hm-grow .pr{flex:none;font-size:12.5px;color:var(--muted)}
+
+/* ============================================================
+   业务组件样式（灰度线框）
+   ============================================================ */
+.bar{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--line);min-height:44px}
+.bar .grow{flex:1;min-width:0}
+.bar .ttl{font-size:15px;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar .sub{font-size:11px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ico-btn{min-width:44px;min-height:44px;border:1px solid var(--line);background:#fff;display:inline-flex;
+ align-items:center;justify-content:center;font-size:12px;padding:0 8px;flex:none}
+.mk{display:inline-block;line-height:1}
+.card{border:1px solid var(--line);background:#fff;padding:10px;margin-bottom:10px;min-width:0}
+.card.flat{padding:8px}
+.row{display:flex;align-items:center;gap:8px;min-width:0}
+.row.wrap{flex-wrap:wrap}
+.col{display:flex;flex-direction:column;gap:6px;min-width:0}
+.grow{flex:1;min-width:0}
+.muted{color:var(--muted)}
+.small{font-size:12px}
+.xsmall{font-size:11px}
+.strong{font-weight:500}
+.price{font-weight:500}
+.price .cur{font-size:12px;margin-right:1px}
+.right{margin-left:auto;text-align:right}
+.center{text-align:center}
+.nowrap{white-space:nowrap}
+.brk{overflow-wrap:anywhere}
+.hr{border:0;border-top:1px solid var(--line);margin:8px 0}
+.sect-t{font-size:13px;font-weight:500;margin:12px 0 6px}
+.sect-t:first-child{margin-top:0}
+/* 标签允许换行：属性类标签（如"可激活地区：仅支持 Steam 国区账号激活"）在窄栏内不能溢出 */
+.tag{display:inline-block;border:1px solid var(--line);background:#fff;font-size:11px;padding:3px 6px;margin:0 4px 4px 0;
+ white-space:normal;overflow-wrap:anywhere;max-width:100%;vertical-align:top}
+.tag.on{background:var(--primary);color:#fff;border-color:var(--primary)}
+.tag.warn{border-color:var(--warn);color:var(--warn)}
+.tag.err{border-color:var(--error);color:var(--error)}
+.tag.ok{border-color:var(--success);color:var(--success)}
+.chip{display:inline-block;background:var(--primary);color:#fff;font-size:11px;padding:2px 6px}
+/* 搜索历史（管理模式）：整条即删除按钮，右侧 × 只是视觉提示。
+   类名不用 .x——手机画布内 `.phone .x{min-height:44px}` 会把这个小圆点撑到 44px。 */
+.hist-del{display:inline-flex;align-items:center;gap:6px}
+.hist-del .hx{display:inline-flex;align-items:center;justify-content:center;flex:none;
+ width:16px;height:16px;border-radius:50%;background:#e6e9ec;color:#4a5158;font-size:12px;line-height:1}
+.hist-del:hover .hx,.hist-del:focus-visible .hx{background:var(--error);color:#fff}
+.btn{min-height:44px;border:1px solid var(--line);background:#fff;padding:10px 14px;border-radius:0;display:inline-flex;align-items:center;justify-content:center;gap:6px}
+.btn.primary{background:var(--primary);color:#fff;border-color:var(--primary)}
+/* 主按钮禁用态必须置灰：.btn.primary 的深色底优先级高于通用 button:disabled，
+   否则「已售罄」「补货中」等禁用主按钮仍显示为可点击的深色按钮（CHG-0101）。 */
+.btn.primary:disabled,.btn.primary[disabled]{background:#c9cdd3;color:#666b72;border-color:#c9cdd3;cursor:default}
+.btn.wide{width:100%}
+.btn.sm{min-height:36px;padding:6px 10px;font-size:12px}
+.btn-row{display:flex;gap:10px;flex-wrap:wrap}
+.inp{width:100%;min-height:44px;border:1px solid var(--line);background:#fff;padding:10px;border-radius:0}
+.inp.err{border:2px solid var(--error)}
+.inp:disabled,.inp[readonly]{background:var(--soft);color:#666b72}
+.lbl{font-size:12px;color:var(--muted);display:block;margin-bottom:3px}
+.err-txt{color:var(--error);font-size:12px;margin-top:4px}
+.ok-txt{color:var(--success);font-size:12px;margin-top:4px}
+.hint{font-size:12px;color:var(--muted);margin-top:4px}
+.goods-card{border:1px solid var(--line);background:#fff;overflow:hidden;min-width:0;display:flex;flex-direction:column}
+.goods-card .thumb{height:84px;background:#e4e6e9;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);border-bottom:1px solid var(--line)}
+.goods-card .body{padding:8px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.goods-card .nm{font-size:12px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.grid5{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+/* 桌面客户端画布网格：宽画布下约 4～6 列（贴近主流 PC 游戏商店），窄画布自动减列 */
+.grid-auto{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+/* 桌面客户端的分栏容器：按画布自身宽度折叠（容器查询），不依赖窗口宽度 */
+.split2{display:grid;gap:16px;align-items:start;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)}
+.split2.pay{grid-template-columns:minmax(0,1.35fr) minmax(260px,1fr)}
+@container desk (max-width:860px){
+  .split2,.split2.pay{grid-template-columns:minmax(0,1fr)}
+}
+.empty{border:1px dashed var(--line);background:#fff;padding:18px;text-align:center;color:var(--muted);font-size:12px}
+.empty .t{color:var(--ink);font-size:13px;display:block;margin-bottom:4px}
+.banner{border:1px solid var(--line);background:#f7f8f9;padding:8px 10px;font-size:12px;display:flex;gap:8px;align-items:center}
+.bottom-bar{position:sticky;bottom:0;background:#fff;border-top:1px solid var(--line);padding:10px 0 0;margin-top:10px}
+/* 实名结果：参考确认稿的居中盾牌 + 状态排版；只保留“已完成实名认证”和成人/未成年状态。 */
+.auth-result{padding:42px 16px 32px;text-align:center}
+.auth-result .shield{width:88px;height:88px;display:block;margin:0 auto 20px}
+.auth-result .title{font-size:19px;font-weight:600;letter-spacing:.5px}
+.auth-result .status{margin-top:12px;font-size:13px;color:var(--muted)}
+.auth-result .status b{color:var(--ink);font-weight:500}
+.auth-result .status .minor{color:var(--warn)}
+@media(max-width:759px){.auth-result{padding:34px 12px 26px}.auth-result .shield{width:76px;height:76px;margin-bottom:16px}.auth-result .title{font-size:17px}}
+.modal-mask{position:absolute;inset:0;background:rgba(32,36,42,.45);border-radius:20px;display:flex;
+ align-items:center;justify-content:center;padding:12px;z-index:5}
+.modal-mask.bottom{align-items:flex-end;padding:0}
+.modal{background:#fff;border:1px solid var(--line);border-radius:16px 16px 0 0;width:100%;max-height:88%;overflow:auto;padding:14px;position:relative}
+.modal.center{border-radius:16px;max-height:80%}
+.modal .x{position:absolute;top:6px;right:6px;min-width:40px;min-height:40px;border:1px solid var(--line);background:#fff;font-size:16px;line-height:1}
+.desk .modal-mask{border-radius:6px}
+.desk .modal{border-radius:16px;max-width:420px;margin:auto}
+/* WEB 购买面板（WEB-PRODUCT-01-C08）：PC 画布内的居中弹层，宽 560～640px（设计建议 TBD-03），
+   内容超高时弹层内滚动。遮罩定位相对 .desk，需给 .desk 建立定位上下文。 */
+.desk{position:relative}
+.desk .modal.dlg{max-width:600px;max-height:82%;width:100%}
+.desk .modal-mask.center{z-index:6}
+.steps{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0}
+.step{border:1px solid var(--line);font-size:11px;padding:2px 6px;background:#fff}
+.step.done{background:var(--primary);color:#fff;border-color:var(--primary)}
+.step.now{border-color:var(--ink);font-weight:500}
+.kv{display:flex;gap:8px;font-size:12px;padding:3px 0}
+.kv .k{color:var(--muted);flex:none;min-width:60px}
+.kv .v{min-width:0;overflow-wrap:anywhere}
+.sk{background:#eceef1;border:1px solid #dfe2e6;height:12px}
+.sk.h20{height:20px}
+.blk{background:#e4e6e9;border:1px solid #d6d9dd}
+.code-box{border:1px dashed var(--ink);background:#fbfbfb;padding:10px;font-family:Consolas,Menlo,monospace;
+ font-size:13px;letter-spacing:.5px;overflow-wrap:anywhere}
+/* 可交互标签/次要按钮的最小热区：移动画布按标准 7.2／7.5 保证 ≥44×44 CSS 像素；
+   桌面客户端 36px、后台 40px（标准 7.6.1）。非交互标签使用 span，不受影响。 */
+/* 作用域用 .phone 而非 .phone-body：底部面板与各类弹层挂在 .phone 下、不在 .phone-body 内 */
+button.tag{min-height:28px;padding:4px 8px}
+.phone button.tag,.phone .btn.sm,.phone .x{min-height:44px}
+.phone .x{min-width:44px}
+/* 非 button 的可交互元素同样纳入：卡片行、方式标签等用 role=button 标注，热度要求一致 */
+.phone [role="button"]{min-height:44px}
+.phone span.tag[role="button"]{display:inline-flex;align-items:center;justify-content:center}
+.desk-body button.tag{min-height:36px;padding:6px 10px}
+.admin-canvas button.tag{min-height:40px}
+
+/* 评审描边（标准 7.4.3：不占布局、不覆盖文字、不拦截业务操作）
+   只使用 outline（不参与布局）+ 绝对定位伪元素标签，不新增占位元素、不改动 border/padding/宽高。
+   offset 取负值画在元素内侧：画布容器（.phone-body／.desk-body）都有 overflow 裁剪，
+   外侧描边会被裁掉一段，看起来就是「描边框显示不全」；内侧描边不受裁剪影响。
+   编号标签仍放在元素外上方——放进元素内会压住组件自己的首行文字，与标准 7.4.3
+   「不覆盖文字」冲突；代价是元素顶边贴住画布容器上沿时标签会被裁掉（组件编号在
+   选择器与说明标题里同时可见，不影响识别）。 */
+body.outline-on [data-component].rv-sel{position:relative;outline:2px dashed #526477;outline-offset:-2px}
+body.outline-on [data-component].rv-sel::after{
+  content:attr(data-component);position:absolute;top:0;left:0;transform:translateY(-100%);
+  background:#526477;color:#fff;font-size:10px;line-height:1.5;padding:0 4px;
+  pointer-events:none;white-space:nowrap;z-index:9;font-weight:400;letter-spacing:0}
+body.outline-on .admin-table tr[data-component].rv-sel::after,
+body.outline-on .admin-tabs button[data-component].rv-sel::after{transform:none;opacity:.92}
+
+/* ============================================================
+   右侧说明区
+   ============================================================ */
+/* 评审级反馈条：位于说明区，不进入业务画布 */
+.rv-flash{display:none}
+.rv-flash.on{display:block;background:#eef1f4;border:1px solid var(--line);border-left:3px solid var(--primary);
+ padding:7px 10px;font-size:12.5px;margin-bottom:12px;overflow-wrap:anywhere}
+.rv-flash.err{background:#f7ecec;border-color:var(--error);border-left-color:var(--error);color:var(--error)}
+/* 组件选择器吸顶：滚到组件说明深处时仍可切换组件，不必回到说明区顶部。
+   容器（.rv-side，内含组件说明）比选择器高得多，选择器才有可吸附的行程。
+   下方用伪元素盖住吸顶后露出的外边距，避免说明内容从缝里透出。 */
+#secPicker{position:sticky;top:0;z-index:7}
+#secPicker::after{content:'';position:absolute;left:0;right:0;top:100%;height:14px;background:var(--bg)}
+/* .rv-side 自身已成为滚动容器，选择器贴的是容器上沿，两栏布局下都不再留 12px 缝 */
+.admin-shell-layout #secPicker{top:0}
+.side-sec{border:1px solid var(--line);background:#fff;margin-bottom:12px}
+.side-sec>.h{background:#f5f6f7;border-bottom:1px solid var(--line);padding:8px 10px;font-size:12px;
+ display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;align-items:center}
+.side-sec>.b{padding:10px}
+/* 协议勾选行：整行可点，热区满足移动端 ≥44×44（标准 7.2／7.5） */
+.check-row{min-height:44px;align-items:center;cursor:pointer;gap:8px}
+.check-row input[type=checkbox]{margin:0}
+/* 组件选择器：下拉框形式。选项文本为「名称（完整编号）」，一行一个、默认收起，
+   不再把全部组件铺开成列表（评审反馈：改成拉框形式，不用完全铺开）。 */
+.picker-sel{width:100%;min-height:44px;border:1px solid var(--line);background:#fff;
+ padding:8px 10px;font-size:12.5px;border-radius:0}
+.picker-sel:focus-visible{outline:2px solid var(--primary);outline-offset:1px}
+.doc-sec{border-top:1px solid var(--line);padding:10px 0}
+.doc-sec:first-child{border-top:0;padding-top:0}
+.doc-sec>.h{font-size:13px;font-weight:500;margin-bottom:6px;color:#2b5d8a}
+.doc-sec .doc-body{font-size:13px;line-height:1.7;overflow-wrap:anywhere}
+.doc-body table{width:100%;border-collapse:collapse;margin:8px 0;font-size:12px}
+.doc-body th,.doc-body td{border:1px solid var(--line);padding:5px 6px;vertical-align:top;overflow-wrap:anywhere;text-align:left}
+.doc-body th{background:#f5f6f7;font-weight:500}
+.doc-body ul,.doc-body ol{margin:6px 0;padding-left:1.4em}
+.doc-body code{background:#f0f1f3;padding:0 3px;font-family:Consolas,Menlo,monospace;font-size:12px}
+.doc-body pre{background:#f5f6f7;border:1px solid var(--line);padding:8px;overflow:auto;font-size:12px}
+.doc-body h4,.doc-body h5{font-size:13px;margin:8px 0 4px}
+
+/* ============================================================
+   流程与图示
+   ============================================================ */
+.diagram-box{border:1px solid var(--line);background:#fff;margin-bottom:12px}
+.diagram-box>.h{background:#f5f6f7;border-bottom:1px solid var(--line);padding:8px 10px;font-size:12px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.diagram-box>.b{padding:10px;overflow:auto}
+.diagram-box svg{display:block;max-width:100%;height:auto}
+details.src{margin:0 10px 10px;font-size:12px}
+details.src>summary{cursor:pointer;color:var(--muted)}
+details.src pre{background:#f7f8f9;border:1px solid var(--line);padding:8px;overflow:auto;font-size:12px;max-height:260px}
+
+/* 图示清单：默认只列标题，点击后在弹层内查看，避免原型底部平铺全部图示 */
+.dgm-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:6px}
+.dgm-item{display:flex;align-items:center;gap:8px;border:1px solid var(--line);background:#fff;
+ padding:7px 9px;text-align:left;min-height:40px;font-size:12.5px;overflow-wrap:anywhere}
+.dgm-item:hover{background:#f5f6f7}
+.dgm-item .tag{margin:0;flex:none;font-size:11px}
+.dgm-item .grow{min-width:0}
+.dgm-empty{border:1px dashed var(--line);background:#fff;padding:14px;color:var(--muted);font-size:12.5px}
+/* 图示弹层 */
+.dgm-mask{position:fixed;inset:0;background:rgba(32,36,42,.5);z-index:60;display:none;padding:20px}
+.dgm-mask.on{display:block}
+.dgm-dialog{background:#fff;border:1px solid var(--line);max-width:1180px;height:100%;margin:auto;
+ display:flex;flex-direction:column;overflow:hidden}
+.dgm-dialog .dt{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:8px 12px;border-bottom:1px solid var(--line);flex:none}
+.dgm-dialog .dt .t{font-size:13px;font-weight:500;min-width:0;overflow-wrap:anywhere}
+.dgm-dialog .dt button{min-height:36px;padding:6px 10px;border:1px solid var(--line);background:#fff;font-size:12px}
+.dgm-dialog .db{overflow:auto;padding:14px;flex:1;min-height:0;background:#fff}
+.dgm-dialog .db svg{display:block;max-width:100%;height:auto}
+/* PlantUML 内嵌 SVG：宽度由缩放档位控制（见 applyDgmZoom），这里不设 max-width */
+.dgm-dialog .puml-fig svg{max-width:none;height:auto}
+.dgm-zoom{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted)}
+.dgm-zoom select{min-height:36px;padding:6px 8px;border:1px solid var(--line);background:#fff;font-size:12px}
+@media(max-width:760px){.dgm-mask{padding:8px}.dgm-list{grid-template-columns:minmax(0,1fr)}}
+
+/* 评审注释（画布外）：集中的页面/组件说明 */
+/* 评审注释：不再单独成块，随「当前状态」与「所选组件说明」就地展示 */
+/* 「当前状态」块铺满整行后按多列排布：宽屏下列数自适应，窄屏（后台左列约 390px）自然回落单列 */
+#secState .b{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:6px 20px;align-items:start}
+#secState .b>.hint,#secState .b>.note-hd,#secState .b>.note-list{grid-column:1/-1}
+#secState .b>.note-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:6px 20px}
+.note-hd{font-size:12px;color:var(--muted);margin:10px 0 6px;padding-top:8px;border-top:1px dashed var(--line)}
+.note-fold .h{background:#fbfbfc}
+.note-fold .doc-body{padding-top:8px}
+.note-list{display:flex;flex-direction:column;gap:6px}
+.note-item{border-left:3px solid var(--line);background:#fbfbfc;padding:6px 8px;font-size:12.5px;
+ line-height:1.65;overflow-wrap:anywhere}
+.note-item .own{color:var(--muted);font-size:11px;display:block;margin-bottom:2px}
+/* 任何带 rv-annot 的节点只属于评审工具，不进入业务画布展示 */
+#canvas .rv-annot{display:none!important}
+
+/* ============================================================
+   文档阅读器（标准 8.5）
+   ============================================================ */
+.reader-mask{position:fixed;inset:0;background:rgba(32,36,42,.5);z-index:50;display:none;padding:20px}
+.reader-mask.on{display:block}
+.reader{background:#fff;border:1px solid var(--line);max-width:1180px;height:100%;margin:auto;display:grid;
+ grid-template-columns:250px minmax(0,1fr);grid-template-rows:minmax(0,1fr);overflow:hidden}
+.reader-nav{border-right:1px solid var(--line);display:flex;flex-direction:column;min-width:0;min-height:0;background:#fafbfc}
+.reader-nav .rh{padding:10px;border-bottom:1px solid var(--line);font-size:12px;color:var(--muted);flex:none}
+.reader-nav .list{overflow:auto;padding:6px;flex:1;min-height:0}
+.reader-nav .list button{display:block;width:100%;text-align:left;background:#fff;border:1px solid var(--line);
+ padding:7px 9px;margin-bottom:5px;min-height:38px;font-size:12px;overflow-wrap:anywhere}
+.reader-nav .list button[aria-pressed="true"]{background:var(--primary);color:#fff;border-color:var(--primary)}
+.reader-nav .narrow{display:none;padding:8px;flex:none}
+.reader-main{display:flex;flex-direction:column;min-width:0;min-height:0;height:100%;overflow:hidden}
+.reader-tools{border-bottom:1px solid var(--line);padding:8px 12px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;background:#fff;flex:none}
+.reader-tools .t{font-size:13px;font-weight:500;min-width:0;overflow-wrap:anywhere}
+.reader-tools button{min-height:36px;padding:6px 10px;border:1px solid var(--line);background:#fff;font-size:12px}
+/* 阅读区两栏（文档列表 + 正文），章节目录改为正文顶部的标签条，避免第三栏挤压正文 */
+.reader-body{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden}
+.reader-toc{display:flex;flex-wrap:wrap;gap:6px;flex:none;border-bottom:1px solid var(--line);
+ padding:10px 22px;background:#fafbfc;max-height:118px;overflow:auto}
+.reader-toc .toc-h{font-size:12px;color:var(--muted);width:100%;margin-bottom:2px}
+.reader-toc a{font-size:12px;padding:4px 8px;border:1px solid var(--line);background:#fff;
+ color:#334f6b;text-decoration:none;overflow-wrap:anywhere;max-width:100%}
+.reader-toc a:hover{background:#eef0f2}
+.reader-doc{overflow:auto;padding:16px 22px;min-width:0;min-height:0;position:relative;scroll-behavior:smooth;flex:1}
+.reader-empty{border:1px dashed var(--line);padding:14px;color:var(--muted);font-size:13px}
+.md-h1{font-size:20px;font-weight:500;margin:6px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.md-h2{font-size:17px;font-weight:500;margin:16px 0 8px}
+.md-h3{font-size:15px;font-weight:500;margin:13px 0 6px}
+.md-h4,.md-h5,.md-h6{font-size:14px;font-weight:500;margin:11px 0 5px}
+.md-p{margin:7px 0;font-size:14px;line-height:1.8}
+.md-li{margin:3px 0 3px 1.2em;font-size:14px;line-height:1.8;list-style:disc}
+.md-li.ol{list-style:decimal}
+.md-quote{border-left:3px solid var(--line);padding:4px 10px;color:var(--muted);margin:8px 0;font-size:13px}
+.md-tbl-wrap{overflow-x:auto;max-width:100%;margin:10px 0}
+.md-tbl-wrap table{border-collapse:collapse;font-size:13px;min-width:100%}
+/* 说明区表格改为「换行铺开」而不是「横向滚动」：
+   ① 去掉表头的 white-space:nowrap；② 单元格最小宽度由 90px 收到 60px；③ 内边距由 6×8 收到 5×6。
+   三者叠加后，9 列宽表的最小宽度从约 840px 降到约 650px，可在说明区内完整铺开。 */
+.md-tbl-wrap th,.md-tbl-wrap td{border:1px solid var(--line);padding:5px 6px;vertical-align:top;
+ text-align:left;overflow-wrap:anywhere;line-height:1.65;min-width:60px}
+.md-tbl-wrap th{background:#f5f6f7;font-weight:500;line-height:1.45}
+.md-tbl-wrap{overflow-x:visible}
+.md-pre{background:#f5f6f7;border:1px solid var(--line);padding:10px;overflow:auto;font-size:12px;
+ font-family:Consolas,Menlo,monospace;line-height:1.6;margin:10px 0}
+.md-code{background:#f0f1f3;padding:0 3px;font-family:Consolas,Menlo,monospace;font-size:12.5px;overflow-wrap:anywhere}
+.md-hr{border:0;border-top:1px solid var(--line);margin:14px 0}
+.md-img-miss{border:1px dashed var(--line);background:#fafbfc;padding:10px;font-size:12px;color:var(--muted);margin:8px 0}
+.md-diagram{border:1px solid var(--line);background:#fafbfc;padding:8px;overflow:auto;margin:10px 0}
+.md-diagram svg{display:block;max-width:100%;height:auto}
+@media(max-width:860px){
+  .reader{grid-template-columns:minmax(0,1fr)}
+  .reader-nav{border-right:0;border-bottom:1px solid var(--line)}
+  .reader-nav .list{display:none}
+  .reader-nav .narrow{display:block}
+  .reader-toc{padding:8px 14px;max-height:96px}
+  .reader-doc{padding:14px}
+  .reader-mask{padding:8px}
+}
+@media print{.rv-head,.rv-toolbar,.rv-side,.reader-mask{display:none!important}}
+/* 协议富文本与权限菜单（CHG-0089） */
+.agree-toolbar{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.agree-toolbar select{min-height:34px;height:34px;padding:2px 8px;font-size:12px;width:auto}
+.agree-editor{line-height:1.8;font-size:14px;outline:none}
+.agree-editor:focus{border-color:#526477}
+.agree-rich{line-height:1.8;font-size:14px}
+.agree-rich p{margin:0 0 8px}
+.rbac-group{margin-bottom:10px}
+.rbac-group .t{font-size:12px;color:#6b7280;margin-bottom:4px}
+.rbac-cb{display:inline-flex;align-items:center;gap:6px;margin:0 14px 6px 0;font-size:13px}
+.rbac-cb input{width:16px;height:16px}

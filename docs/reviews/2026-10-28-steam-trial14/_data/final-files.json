@@ -1,0 +1,164 @@
+[
+  {
+    "path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.5\\00_交付说明与变更记录.md",
+    "relative": "00_交付说明与变更记录.md",
+    "bytes": 171029,
+    "sha256": "eeda8bf37e42c0ed4dbed4fb9415c59c57f5fce16fce8e9973882b0038912889",
+    "encoding": "utf-8",
+    "lines": 302,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.5\\01_页面与状态说明.md",
+    "relative": "01_页面与状态说明.md",
+    "bytes": 139700,
+    "sha256": "9ff370b3cf46c1578cc7be45f8e6deb44ef2d8b124b57481b3e972942deb75e2",
+    "encoding": "utf-8",
+    "lines": 819,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.5\\02_低保真交互原型.html",
+    "relative": "02_低保真交互原型.html",
+    "bytes": 6434934,
+    "sha256": "179e0d93471d098861a85bf1653ee0f84fa13a62a0e21b0e4611077fa65d62ac",
+    "encoding": "utf-8",
+    "lines": 9258,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.5\\03_组件级文档.md",
+    "relative": "03_组件级文档.md",
+    "bytes": 1609330,
+    "sha256": "550cdbdc7f665669ccd306befa35503f196df7991a1376c47b393653de85afba",
+    "encoding": "utf-8",
+    "lines": 13536,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.5\\04_业务流程与异常规则.md",
+    "relative": "04_业务流程与异常规则.md",
+    "bytes": 240706,
+    "sha256": "8c358d78088171a24d0c6bd64c973ad6d3a889470da6da65934d2853eca1f397",
+    "encoding": "utf-8",
+    "lines": 2196,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.5\\05_接口数据与权限说明.md",
+    "relative": "05_接口数据与权限说明.md",
+    "bytes": 343090,
+    "sha256": "92a03a1020256b97438eb952eb72d355ff87d3d17b46e9a2938dc89bb2296fd1",
+    "encoding": "utf-8",
+    "lines": 3112,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.5\\06_埋点文档.md",
+    "relative": "06_埋点文档.md",
+    "bytes": 124331,
+    "sha256": "0edf64e2e197a43afa1b02c22d5df8a545efcfb9b35b8b184411c0163a36d5ec",
+    "encoding": "utf-8",
+    "lines": 713,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.5\\07_测试用例.md",
+    "relative": "07_测试用例.md",
+    "bytes": 290233,
+    "sha256": "e10b5331f2d2709ebfb5ad0086187adcc47758b32920bffb15b7ba813d8df66c",
+    "encoding": "utf-8",
+    "lines": 2395,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.5\\08_验证记录与验收映射.md",
+    "relative": "08_验证记录与验收映射.md",
+    "bytes": 379114,
+    "sha256": "faa17d684ac2d7508a79c8071a66187d722afe9d134d111bf71548798c4463fa",
+    "encoding": "utf-8",
+    "lines": 2286,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.5\\09_待确认事项与设计决策.md",
+    "relative": "09_待确认事项与设计决策.md",
+    "bytes": 48237,
+    "sha256": "2fdcca2a3b6676710fc915a1cfa643f3a52399f4cbaf5b6fa88c1976a9c4e572",
+    "encoding": "utf-8",
+    "lines": 234,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.5\\_checks\\验证证据_2026-10-15.md",
+    "relative": "_checks/验证证据_2026-10-15.md",
+    "bytes": 156224,
+    "sha256": "4cc93e35201749d86507694c8eb891b0eff887789c189e64aa03b34273c76a87",
+    "encoding": "utf-8",
+    "lines": 2487,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.5\\_checks\\验证证据_CHG-0096_2026-10-22.md",
+    "relative": "_checks/验证证据_CHG-0096_2026-10-22.md",
+    "bytes": 2519,
+    "sha256": "a496d5ae83f262c2e50a57896c6b4985fc88b054901b5b0d4119e506602833c4",
+    "encoding": "utf-8",
+    "lines": 46,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.5\\_checks\\验证证据_CHG-0097_2026-10-22.md",
+    "relative": "_checks/验证证据_CHG-0097_2026-10-22.md",
+    "bytes": 2241,
+    "sha256": "671f3a36fa0b3b43c17dd12b41205bd255a0bbe6b37b07fc23dc96e58c4f833a",
+    "encoding": "utf-8",
+    "lines": 44,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.5\\_checks\\验证证据_CHG-0098_2026-10-22.md",
+    "relative": "_checks/验证证据_CHG-0098_2026-10-22.md",
+    "bytes": 1314,
+    "sha256": "e6ee1dcdc8c083d1c42ca02f24f7371f280d895084d5736ed7c11231fdf2779b",
+    "encoding": "utf-8",
+    "lines": 30,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.5\\_checks\\验证证据_CHG-0099_2026-10-22.md",
+    "relative": "_checks/验证证据_CHG-0099_2026-10-22.md",
+    "bytes": 4095,
+    "sha256": "18cde5d22e7252a3ee73c6ff73f1f8b6e3a405a7d606db031ddc23ab8df6db6f",
+    "encoding": "utf-8",
+    "lines": 76,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.5\\_checks\\验证证据_CHG-0100_2026-10-22.md",
+    "relative": "_checks/验证证据_CHG-0100_2026-10-22.md",
+    "bytes": 3109,
+    "sha256": "e80ab3d5147c25a5a6892b4e8184255076688fb411842743be604065ae6ba452",
+    "encoding": "utf-8",
+    "lines": 87,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.5\\_checks\\验证证据_CHG-0101_2026-10-22.md",
+    "relative": "_checks/验证证据_CHG-0101_2026-10-22.md",
+    "bytes": 1579,
+    "sha256": "31fbb33767db5a97f3f976468d830fc9f8715b181c9cabf637cef86d21c34e6a",
+    "encoding": "utf-8",
+    "lines": 58,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.5\\补充_商城用户管理说明.md",
+    "relative": "补充_商城用户管理说明.md",
+    "bytes": 18397,
+    "sha256": "c1a10750d51b403e3d5d6f7c4920af0aa2bbdc650215f3dd5918c83490164d89",
+    "encoding": "utf-8",
+    "lines": 341,
+    "replacement_chars": 0
+  }
+]

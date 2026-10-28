@@ -1,0 +1,37 @@
+{
+  "protocol": "execution-evidence-1",
+  "profile": {
+    "path": "project/profile.json",
+    "sha256": "<sha256-of-original-profile-bytes>",
+    "algorithm": "sha256",
+    "truncation_length": 64,
+    "serialization": "<serialization used before hashing>",
+    "normalization": "<normalization used before hashing, or none>",
+    "consumed_fields": ["tokens", "page_shell", "modal_defaults"],
+    "consumption_stage": "before-generation"
+  },
+  "artifact": {
+    "path": "delivery/prototype.html",
+    "sha256": "<sha256-of-original-artifact-bytes>"
+  },
+  "run": {
+    "entrypoint": "tools/generate.py",
+    "working_directory": ".",
+    "dependencies": [],
+    "environment": "<actual browser/system/runtime values>",
+    "results_encoding": "utf-8",
+    "evidence_path": "evidence/RUN-001"
+  },
+  "write_readback": [
+    {
+      "action": "publish configured order",
+      "target_id": "stable-target-id",
+      "published_value": ["item-b", "item-a"],
+      "consumer_value": ["item-b", "item-a"],
+      "consumer": "<actual page/list that reads the published value>",
+      "evidence_path": "evidence/RUN-001/order-readback.json",
+      "evidence_sha256": "<sha256-of-original-evidence-bytes>",
+      "result_basis": "consumer-readback"
+    }
+  ]
+}

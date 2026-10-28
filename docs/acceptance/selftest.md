@@ -16,6 +16,7 @@
 | SELF-10 | 固定主文件再封存外部结果，核对07/08汇总和实际文件 | 运行ID、计划/产物哈希、证据文件存在；无内嵌哈希循环 |
 | SELF-11 | 对有人工展示顺序的后台列表拖拽、保存并重载；再用键盘/触屏替代操作；另测查询排序 | 把手、目标位置、保存反馈/持久化及失败恢复正确；查询排序字段和结果正确，互不混淆 |
 | SELF-12 | 按quality29.13分开查已批准含义、最终内外文档/下载源/注册同源、真实入口行为 | 三类各自方法/结果/限制，规范化比较留原哈希；参考反例与历史通过不继承 |
+| SELF-13 | 对每个写操作追踪“动作→状态写入→实际读取方→结果/恢复”；对拖拽、发布、弹层和失效对象分别执行正向与失败分支 | 目标ID、写前后快照、读取方实际值、恢复结果；只查DOM、只查Toast、消费者不更新、失效ID回首条等故意失败必须被识别 |
 
 几何、层栈和具体动作使用 [矩阵入口](README.md) 中相应方法；内容/表单/数据/查询按 [模式入口](../patterns/README.md) 选择。真实浏览器不具备时保留L4/L5未验证，可交评审稿，不宣称验收通过。
 
@@ -26,5 +27,11 @@
 权威为 quality29.13.1。先登记计划检查集合，逐条结果有稳定 ID、严格类型/状态及独立 detail，再从明细派生汇总。计划总数不能随非法结果减少；协议无效保留错误、原分母及未封存状态，不据 detail:false 推定图示失败。
 
 可选工具 [check_result_protocol.py](../../tools/check_result_protocol.py) 演示一个明确的 JSON 枚举协议，命令 `python tools/check_result_protocol.py 项目结果.json`。格式由工具 docstring 给出；这不是所有项目强制格式。`python tools/test_result_protocol.py` 检查合法通过、合法业务失败及类型/错位/漏项/重复/汇总反例。工具只验证协议，不能证明记录实际执行、浏览器通过或项目语义正确。采用布尔协议或人工表格时另作等价检查，不直接混用本例枚举。
+
+按需为生成器和验收器准备最小反例：把输出档案指纹冒充输入档案、把业务层弹层挂到视口、把排序保存后仍读旧列表、把失败结果只写成成功 Toast、把失效稳定 ID 替换为首条记录。反例只用于证明检查方法能阻断错误，不构成项目业务规则，也不替代真实浏览器验证。
+
+按需纯模型夹具为 `python tools/test_review_contract_fixture.py`，包含profile变更实际影响模型输出、业务/评审层宿主区分、拖拽/键盘共用稳定ID排序语义、发布值被读取方消费及失效ID反例。它不实现浏览器UI、拖拽事件或真实保存。
+
+可选的本地证据预检为 [check_execution_evidence.py](../../tools/check_execution_evidence.py)，用法 `python tools/check_execution_evidence.py <manifest.json> --root <project-root>`；字段示意见 [execution-evidence.example.json](execution-evidence.example.json)，反例测试为 `python tools/test_execution_evidence.py`。它检查路径、原字节哈希、声明的档案消费字段、写入值与读取方证据的一致性；它无法证明生成器实际读取了档案，也不能证明日志真实、读取方是浏览器中的真实页面或交互行为已通过。该协议和文件不强制成为每项目交付物。
 
 输入组件可按需读取 [input-kit](../../reference/implementations/input-kit/README.md)；同宿主混排、长标签及真实操作的项目集成结果单独记录。DEC 多视图检查按 decisions28.2～28.4 对齐当前 ID/状态/依据，合法历史变化与实施进度不判为批准。

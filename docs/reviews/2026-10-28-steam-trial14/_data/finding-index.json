@@ -1,0 +1,135 @@
+[
+  {
+    "id": "L14-01",
+    "title": "移动固定外框和基础密度",
+    "classification": "已有规则正向落实",
+    "report_prefix": "02",
+    "evidence": "source/documents/producer evidence; not independent browser test"
+  },
+  {
+    "id": "L14-02",
+    "title": "业务弹层视口定位",
+    "classification": "已有规则执行偏差",
+    "report_prefix": "02",
+    "evidence": "source/documents/producer evidence; not independent browser test"
+  },
+  {
+    "id": "L14-03",
+    "title": "输入/PC布局证据边界",
+    "classification": "正向与未验证并存",
+    "report_prefix": "02",
+    "evidence": "source/documents/producer evidence; not independent browser test"
+  },
+  {
+    "id": "L14-04",
+    "title": "重复入口职责解释不足",
+    "classification": "执行/项目说明",
+    "report_prefix": "02",
+    "evidence": "source/documents/producer evidence; not independent browser test"
+  },
+  {
+    "id": "L14-05",
+    "title": "人工排序无拖拽",
+    "classification": "已有规则执行偏差",
+    "report_prefix": "02",
+    "evidence": "source/documents/producer evidence; not independent browser test"
+  },
+  {
+    "id": "L14-06",
+    "title": "组件覆盖归属与日志口径",
+    "classification": "证据不足，非缺陷计数",
+    "report_prefix": "02",
+    "evidence": "source/documents/producer evidence; not independent browser test"
+  },
+  {
+    "id": "L14-07",
+    "title": "流程图XML不代表语义/视觉",
+    "classification": "未验证范围",
+    "report_prefix": "02",
+    "evidence": "source/documents/producer evidence; not independent browser test"
+  },
+  {
+    "id": "L14-08",
+    "title": "参考README陈旧默认",
+    "classification": "仓库参考维护漂移，候选C",
+    "report_prefix": "02",
+    "evidence": "source/documents/producer evidence; not independent browser test"
+  },
+  {
+    "id": "R14-01",
+    "title": "配置生产者/消费者断裂",
+    "classification": "既有执行偏差，最终有共同缺陷",
+    "report_prefix": "03",
+    "evidence": "source/documents/producer evidence; not independent browser test"
+  },
+  {
+    "id": "R14-02",
+    "title": "购买草稿和关闭/Esc",
+    "classification": "已有规则执行偏差",
+    "report_prefix": "03",
+    "evidence": "source/documents/producer evidence; not independent browser test"
+  },
+  {
+    "id": "R14-03",
+    "title": "审计before失真",
+    "classification": "已有规则执行偏差",
+    "report_prefix": "03",
+    "evidence": "source/documents/producer evidence; not independent browser test"
+  },
+  {
+    "id": "R14-04",
+    "title": "失效ID回首条",
+    "classification": "静态风险，具体路径未浏览器执行",
+    "report_prefix": "03",
+    "evidence": "source/documents/producer evidence; not independent browser test"
+  },
+  {
+    "id": "E14-01",
+    "title": "CHK/TC执行分母",
+    "classification": "证据界限",
+    "report_prefix": "04",
+    "evidence": "source/documents/producer evidence; not independent browser test"
+  },
+  {
+    "id": "E14-02",
+    "title": "断言不支持完整通过",
+    "classification": "已有执行偏差，候选C反例",
+    "report_prefix": "04",
+    "evidence": "source/documents/producer evidence; not independent browser test"
+  },
+  {
+    "id": "E14-03",
+    "title": "路径/编码/环境",
+    "classification": "执行偏差和候选B细化",
+    "report_prefix": "04",
+    "evidence": "source/documents/producer evidence; not independent browser test"
+  },
+  {
+    "id": "E14-04",
+    "title": "日志拼接和覆盖集不同",
+    "classification": "证据有效性",
+    "report_prefix": "04",
+    "evidence": "source/documents/producer evidence; not independent browser test"
+  },
+  {
+    "id": "E14-05",
+    "title": "Profile输入输出指纹混同",
+    "classification": "候选A澄清",
+    "report_prefix": "04",
+    "evidence": "source/documents/producer evidence; not independent browser test"
+  },
+  {
+    "id": "E14-06",
+    "title": "DEC表头与字段错位",
+    "classification": "已有规则执行偏差",
+    "report_prefix": "04",
+    "evidence": "source/documents/producer evidence; not independent browser test"
+  },
+  {
+    "id": "E14-07",
+    "title": "埋点时点与字段不一致",
+    "classification": "文档一致性执行偏差",
+    "report_prefix": "04",
+    "evidence": "source/documents/producer evidence; not independent browser test"
+  }
+]

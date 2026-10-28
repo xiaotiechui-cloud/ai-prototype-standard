@@ -1,0 +1,164 @@
+{
+  "trial": {
+    "folder": "D:\\模型汇总\\GitHub维护测试\\试跑14.0\\Steam商城首期原型交付_V1.0",
+    "html_sha256": "74c87e03f76fcdab299bb39d80c7ffbe54e86bb9ba12f18de99b920c50ee9857",
+    "meta": {
+      "name": "Steam商城首期",
+      "prd": "Steam商城_PRD_V1.6.md",
+      "prd_version": "V1.6",
+      "prd_date": "2026-10-22",
+      "prd_status": "待评审",
+      "delivery_version": "V1.0",
+      "batch": "BATCH-2026-10-27-01",
+      "standard": "V3.0 / modular-1 / draft-20261027-trial13-contracts",
+      "standard_commit": "c56bd070302420178df102a2c2b0c332b8862ce1",
+      "guid": "49 pages across H5/WEB/ADM"
+    },
+    "pages": 49,
+    "states": 236,
+    "instances": 308,
+    "definitions_referenced": 62,
+    "diagrams": 15,
+    "docs": 9,
+    "ends": {
+      "H5": 17,
+      "WEB": 16,
+      "ADM": 16
+    },
+    "embedded_docs": [
+      {
+        "file": "00_交付说明与变更记录.md",
+        "normalized_match": true,
+        "embedded_sha256": "1e3f36d92e97b7260eac6b8c0cc7658d777965ac20c020c7450d4b0e701a5b30",
+        "external_sha256": "1e3f36d92e97b7260eac6b8c0cc7658d777965ac20c020c7450d4b0e701a5b30"
+      },
+      {
+        "file": "01_页面与状态说明.md",
+        "normalized_match": true,
+        "embedded_sha256": "f5481f2f69173d957b42759830ed11631876de12f0005f226c0587e7a10c592b",
+        "external_sha256": "f5481f2f69173d957b42759830ed11631876de12f0005f226c0587e7a10c592b"
+      },
+      {
+        "file": "03_组件级文档.md",
+        "normalized_match": true,
+        "embedded_sha256": "2626dd859cc03e749fb3af9eefd29c6ccdb26a5f67f58a089298c17b848f6d7c",
+        "external_sha256": "2626dd859cc03e749fb3af9eefd29c6ccdb26a5f67f58a089298c17b848f6d7c"
+      },
+      {
+        "file": "04_业务流程与异常规则.md",
+        "normalized_match": true,
+        "embedded_sha256": "3c4417ad278c9ebd906c00069b3d9dbf2ec002656d0d23045e7b387329ae2331",
+        "external_sha256": "3c4417ad278c9ebd906c00069b3d9dbf2ec002656d0d23045e7b387329ae2331"
+      },
+      {
+        "file": "05_接口数据与权限说明.md",
+        "normalized_match": true,
+        "embedded_sha256": "3026b813a28ba716340036eafefc644dc80d42748f2d9c682cf44804705e2480",
+        "external_sha256": "3026b813a28ba716340036eafefc644dc80d42748f2d9c682cf44804705e2480"
+      },
+      {
+        "file": "06_埋点文档.md",
+        "normalized_match": true,
+        "embedded_sha256": "0d505c5bc7c7f84f34d64c88ba8f63334b565b9618f610dd7e303519b89a523d",
+        "external_sha256": "0d505c5bc7c7f84f34d64c88ba8f63334b565b9618f610dd7e303519b89a523d"
+      },
+      {
+        "file": "07_测试用例.md",
+        "normalized_match": true,
+        "embedded_sha256": "5db9fcf23b944a29ba858d04bdca3ea254dbc82b55d3ea11c606359c9c09dbd9",
+        "external_sha256": "5db9fcf23b944a29ba858d04bdca3ea254dbc82b55d3ea11c606359c9c09dbd9"
+      },
+      {
+        "file": "08_验证记录与验收映射.md",
+        "normalized_match": true,
+        "embedded_sha256": "f96d746f28b3070c3ef2d88fb76c1b6abaf4e3e1ebc98fcfe99d5e3d6c740df8",
+        "external_sha256": "f96d746f28b3070c3ef2d88fb76c1b6abaf4e3e1ebc98fcfe99d5e3d6c740df8"
+      },
+      {
+        "file": "09_待确认事项与设计决策.md",
+        "normalized_match": true,
+        "embedded_sha256": "998123231123faf2c50b5c81017e0e66044e03fdeeba05ca282894245eac4282",
+        "external_sha256": "998123231123faf2c50b5c81017e0e66044e03fdeeba05ca282894245eac4282"
+      }
+    ],
+    "normalized_text_sha256": "f0e5fb4c5fb59f16bbdc8377f28827fe211651f2d6ea8f3be9af34038bcade06"
+  },
+  "final": {
+    "folder": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.5",
+    "html_sha256": "179e0d93471d098861a85bf1653ee0f84fa13a62a0e21b0e4611077fa65d62ac",
+    "reused_inventory": "../2026-10-27-steam-trial13/_data/inventory.json",
+    "pages": 49,
+    "states": 185,
+    "diagrams": 36,
+    "component_definitions": 221
+  },
+  "source_map": {
+    "trial": [
+      {
+        "file": "trial-style-0.css",
+        "html_start_line": 7,
+        "line_offset": 6
+      },
+      {
+        "file": "trial-script-1.js",
+        "html_start_line": 480,
+        "line_offset": 479
+      }
+    ],
+    "final": [
+      {
+        "file": "final-style-0.css",
+        "html_start_line": 7,
+        "line_offset": 6
+      },
+      {
+        "file": "final-script-0.js",
+        "html_start_line": 1090,
+        "line_offset": 1089
+      },
+      {
+        "file": "final-script-1.js",
+        "html_start_line": 1328,
+        "line_offset": 1327
+      },
+      {
+        "file": "final-script-2.js",
+        "html_start_line": 2155,
+        "line_offset": 2154
+      },
+      {
+        "file": "final-script-3.js",
+        "html_start_line": 2848,
+        "line_offset": 2847
+      },
+      {
+        "file": "final-script-4.js",
+        "html_start_line": 3618,
+        "line_offset": 3617
+      },
+      {
+        "file": "final-script-5.js",
+        "html_start_line": 4327,
+        "line_offset": 4326
+      },
+      {
+        "file": "final-script-6.js",
+        "html_start_line": 5326,
+        "line_offset": 5325
+      },
+      {
+        "file": "final-script-7.js",
+        "html_start_line": 6057,
+        "line_offset": 6056
+      },
+      {
+        "file": "final-script-8.js",
+        "html_start_line": 6490,
+        "line_offset": 6489
+      }
+    ]
+  },
+  "browser": "file:// denied by browser URL security policy; no independent browser testing or workaround",
+  "evidence": "Source, external documents, producer scripts/results; producer results are not independent retest.",
+  "hash_note": "html_sha256: original bytes; normalized_text_sha256: BOM-stripped, newline-normalized UTF-8 text. Original-byte inventory is authoritative for artifact identity."
+}

@@ -1,0 +1,216 @@
+[
+  {
+    "path": "D:\\模型汇总\\GitHub维护测试\\试跑14.0\\Steam商城首期原型交付_V1.0\\00_交付说明与变更记录.md",
+    "relative": "00_交付说明与变更记录.md",
+    "bytes": 12338,
+    "sha256": "4de518d9f87252fa72890f3bfad32aa152e6f63e1ad50e1605a8542eabb27d7a",
+    "encoding": "utf-8",
+    "lines": 111,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\GitHub维护测试\\试跑14.0\\Steam商城首期原型交付_V1.0\\01_页面与状态说明.md",
+    "relative": "01_页面与状态说明.md",
+    "bytes": 211359,
+    "sha256": "5882625f70473401a11312305b7362c08966e143a169c20692c691371cafe532",
+    "encoding": "utf-8",
+    "lines": 1213,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\GitHub维护测试\\试跑14.0\\Steam商城首期原型交付_V1.0\\02_低保真交互原型.html",
+    "relative": "02_低保真交互原型.html",
+    "bytes": 5656881,
+    "sha256": "74c87e03f76fcdab299bb39d80c7ffbe54e86bb9ba12f18de99b920c50ee9857",
+    "encoding": "utf-8",
+    "lines": 2553,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\GitHub维护测试\\试跑14.0\\Steam商城首期原型交付_V1.0\\03_组件级文档.md",
+    "relative": "03_组件级文档.md",
+    "bytes": 431788,
+    "sha256": "f3b7bae0f476e0b344a1b4a441a3c9f640647aea482d426a664dc259b28eeeb9",
+    "encoding": "utf-8",
+    "lines": 5952,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\GitHub维护测试\\试跑14.0\\Steam商城首期原型交付_V1.0\\04_业务流程与异常规则.md",
+    "relative": "04_业务流程与异常规则.md",
+    "bytes": 41354,
+    "sha256": "b55f2f1de5131a8b9f02831446f0275f2d0058b36716cac7159ca8f8e2c89940",
+    "encoding": "utf-8",
+    "lines": 545,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\GitHub维护测试\\试跑14.0\\Steam商城首期原型交付_V1.0\\05_接口数据与权限说明.md",
+    "relative": "05_接口数据与权限说明.md",
+    "bytes": 76615,
+    "sha256": "72509da84e9841e4956986b051accdb31887d966a6ca415008b87d5389a8632f",
+    "encoding": "utf-8",
+    "lines": 1330,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\GitHub维护测试\\试跑14.0\\Steam商城首期原型交付_V1.0\\06_埋点文档.md",
+    "relative": "06_埋点文档.md",
+    "bytes": 9023,
+    "sha256": "d66a946551514982dd377ae1997f1802b0d39a767d06dad0fd30be4d843d33ce",
+    "encoding": "utf-8",
+    "lines": 99,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\GitHub维护测试\\试跑14.0\\Steam商城首期原型交付_V1.0\\07_测试用例.md",
+    "relative": "07_测试用例.md",
+    "bytes": 114758,
+    "sha256": "f1fb8fdf35804f7eebd7d832259e678674dc6e3dbc6652886cc7ca7c56839862",
+    "encoding": "utf-8",
+    "lines": 3610,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\GitHub维护测试\\试跑14.0\\Steam商城首期原型交付_V1.0\\08_验证记录与验收映射.md",
+    "relative": "08_验证记录与验收映射.md",
+    "bytes": 75790,
+    "sha256": "3a65df0141874ef8f239bbbef38a6008c510f8425c188af577c2320d2f0c6b00",
+    "encoding": "utf-8",
+    "lines": 378,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\GitHub维护测试\\试跑14.0\\Steam商城首期原型交付_V1.0\\09_待确认事项与设计决策.md",
+    "relative": "09_待确认事项与设计决策.md",
+    "bytes": 25615,
+    "sha256": "b4568a1543d38da14a6b4c21b0c81e9428cb252ce43289e9d2febf3370fc1514",
+    "encoding": "utf-8",
+    "lines": 143,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\GitHub维护测试\\试跑14.0\\Steam商城首期原型交付_V1.0\\_checks\\admin_final.out",
+    "relative": "_checks/admin_final.out",
+    "bytes": 566,
+    "sha256": "0ebc0c918ad5b6556010214832a9e95d6f11bb6dfd60c3b9dd03d5fda1dda310",
+    "encoding": "utf-8",
+    "lines": 21,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\GitHub维护测试\\试跑14.0\\Steam商城首期原型交付_V1.0\\_checks\\flow_final.out",
+    "relative": "_checks/flow_final.out",
+    "bytes": 1403,
+    "sha256": "c1dbd52ba84d65bf0e205e7c328600db7db9a71eb4f8ce72b251f7d29e9a3666",
+    "encoding": "utf-8",
+    "lines": 9,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\GitHub维护测试\\试跑14.0\\Steam商城首期原型交付_V1.0\\_checks\\geometry_final.json",
+    "relative": "_checks/geometry_final.json",
+    "bytes": 1137,
+    "sha256": "c51df4b520fd7f7969bac2e8866c67ed29ba18569b08f3322aff1cd7edb4201a",
+    "encoding": "utf-8",
+    "lines": 84,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\GitHub维护测试\\试跑14.0\\Steam商城首期原型交付_V1.0\\_checks\\README.md",
+    "relative": "_checks/README.md",
+    "bytes": 2206,
+    "sha256": "76cd9236e6fc1793407219ebcaf056bd3157d3b1737c4de2bb83d74da5cfae01",
+    "encoding": "utf-8",
+    "lines": 43,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\GitHub维护测试\\试跑14.0\\Steam商城首期原型交付_V1.0\\_checks\\states_result3.log",
+    "relative": "_checks/states_result3.log",
+    "bytes": 3302,
+    "sha256": "b0535b949b894570c635fc8dce696afdc9390372ab9627d4c932d48126a73c45",
+    "encoding": "utf-8",
+    "lines": 86,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\GitHub维护测试\\试跑14.0\\Steam商城首期原型交付_V1.0\\_checks\\static_result.json",
+    "relative": "_checks/static_result.json",
+    "bytes": 2545,
+    "sha256": "504e33fd13e5d49f02f416e98876fe4deb742692e220682f38c5adf20905bb5c",
+    "encoding": "not-utf-8"
+  },
+  {
+    "path": "D:\\模型汇总\\GitHub维护测试\\试跑14.0\\Steam商城首期原型交付_V1.0\\_checks\\tools\\run.cmd",
+    "relative": "_checks/tools/run.cmd",
+    "bytes": 65,
+    "sha256": "7024b44a5a00cbfd9cba60ae08525b78b04124a1cd1a07a71edc7a8ac870c65d",
+    "encoding": "utf-8",
+    "lines": 3,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\GitHub维护测试\\试跑14.0\\Steam商城首期原型交付_V1.0\\_checks\\tools\\run.sh",
+    "relative": "_checks/tools/run.sh",
+    "bytes": 164,
+    "sha256": "5a301874eb431be8b57186f6386aa6955369f38141d93843190c3eeb35dcb89d",
+    "encoding": "utf-8",
+    "lines": 5,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\GitHub维护测试\\试跑14.0\\Steam商城首期原型交付_V1.0\\_checks\\tools\\test_geometry.js",
+    "relative": "_checks/tools/test_geometry.js",
+    "bytes": 3746,
+    "sha256": "0c77e4a6f11062de77732330d46d2913aa12f029d3c6a1afe149228cd2196bb4",
+    "encoding": "utf-8",
+    "lines": 34,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\GitHub维护测试\\试跑14.0\\Steam商城首期原型交付_V1.0\\_checks\\tools\\test_states.js",
+    "relative": "_checks/tools/test_states.js",
+    "bytes": 3344,
+    "sha256": "4dab6e15d9445d2a063396df40ba1c317e113c5d64507b610c8f4a481a0a814e",
+    "encoding": "utf-8",
+    "lines": 68,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\GitHub维护测试\\试跑14.0\\Steam商城首期原型交付_V1.0\\_checks\\tools\\verify_static.py",
+    "relative": "_checks/tools/verify_static.py",
+    "bytes": 3894,
+    "sha256": "21376c200f9e19d8efa041beb18d59a2fe4fc8b2cd22bc965898e65c9897ef60",
+    "encoding": "utf-8",
+    "lines": 86,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\GitHub维护测试\\试跑14.0\\Steam商城首期原型交付_V1.0\\_checks\\tools\\verify_suite.js",
+    "relative": "_checks/tools/verify_suite.js",
+    "bytes": 25083,
+    "sha256": "861fef175fee90e76c8d15071c9b0d0b7c9ef6e802c1457942e5c84649008c5c",
+    "encoding": "utf-8",
+    "lines": 405,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\GitHub维护测试\\试跑14.0\\Steam商城首期原型交付_V1.0\\_checks\\verify_final.out",
+    "relative": "_checks/verify_final.out",
+    "bytes": 1660,
+    "sha256": "3c641545e94117f6b14222fb149295e9db0333fa35756c8ac90aa41573b302b0",
+    "encoding": "utf-8",
+    "lines": 35,
+    "replacement_chars": 0
+  },
+  {
+    "path": "D:\\模型汇总\\GitHub维护测试\\试跑14.0\\Steam商城首期原型交付_V1.0\\_checks\\verify_result.json",
+    "relative": "_checks/verify_result.json",
+    "bytes": 7473,
+    "sha256": "c2aec0e14bb588ac6b6848524d09255505cac57a58f03f161dd417a93a793e2e",
+    "encoding": "utf-8",
+    "lines": 212,
+    "replacement_chars": 0
+  }
+]
