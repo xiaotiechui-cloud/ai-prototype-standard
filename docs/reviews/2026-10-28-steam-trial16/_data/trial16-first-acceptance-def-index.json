@@ -1,0 +1,653 @@
+[
+  {
+    "id": "DEF-001",
+    "severity": "P0",
+    "title": "后台权限矩阵未被执行：OPS 默认可导出，账号授权可越过角色“不可”执行退款",
+    "status_at_first_acceptance": "待修复",
+    "blocking": true,
+    "rule_refs": {
+      "req": [
+        "REQ-ADM-CONFIG",
+        "REQ-ADM-ORDER"
+      ],
+      "chk": [
+        "CHK-SEM-005",
+        "CHK-ACT-016",
+        "CHK-ACT-018"
+      ],
+      "tc": [
+        "TC-ADMIN-001",
+        "TC-ADMIN-006",
+        "TC-ADMIN-007",
+        "TC-EXPORT-001"
+      ],
+      "dec": [
+        "D-29"
+      ],
+      "prior_run_def": []
+    },
+    "evidence_refs": [
+      {
+        "path": "evidence/observations.json",
+        "note": "permission_test：beforeGrant/afterGrant/export/executeVisible",
+        "sha256": "126f9aca2409e2176e7ecba9677186a2e75e43f8e414b356f4db6e9108bfe819",
+        "bytes": 10855
+      },
+      {
+        "path": "topics/semantic.md",
+        "note": "权限段",
+        "sha256": "a5f26c65c6f69808c6e2c0fec639bb05f3e8b70280bd91153cb92bd68c3e5b84",
+        "bytes": 3430
+      }
+    ]
+  },
+  {
+    "id": "DEF-002",
+    "severity": "P0",
+    "title": "协议“实质性变更”默认显示“是”，直接发布却记录普通更新；版本号跳过 V1.3",
+    "status_at_first_acceptance": "待修复",
+    "blocking": true,
+    "rule_refs": {
+      "req": [
+        "REQ-CHECKOUT"
+      ],
+      "chk": [
+        "CHK-SEM-004",
+        "CHK-ACT-015",
+        "CHK-ACT-014"
+      ],
+      "tc": [
+        "TC-CHECKOUT-002",
+        "TC-AGREEMENT-004"
+      ],
+      "dec": [
+        "D-26"
+      ],
+      "prior_run_def": []
+    },
+    "evidence_refs": [
+      {
+        "path": "evidence/observations.json",
+        "note": "agreement_test",
+        "sha256": "126f9aca2409e2176e7ecba9677186a2e75e43f8e414b356f4db6e9108bfe819",
+        "bytes": 10855
+      },
+      {
+        "path": "topics/semantic.md",
+        "note": "协议段",
+        "sha256": "a5f26c65c6f69808c6e2c0fec639bb05f3e8b70280bd91153cb92bd68c3e5b84",
+        "bytes": 3430
+      }
+    ]
+  },
+  {
+    "id": "DEF-003",
+    "severity": "P1",
+    "title": "搜索/订单详情返回丢失来源上下文，回到首页并清空查询/页签",
+    "status_at_first_acceptance": "待修复",
+    "blocking": true,
+    "rule_refs": {
+      "req": [
+        "REQ-SEARCH",
+        "REQ-ORDER"
+      ],
+      "chk": [
+        "CHK-SEM-006",
+        "CHK-ACT-008",
+        "CHK-ACT-011"
+      ],
+      "tc": [
+        "TC-SEARCH-003",
+        "TC-ORDER-002"
+      ],
+      "dec": [],
+      "prior_run_def": []
+    },
+    "evidence_refs": [
+      {
+        "path": "evidence/observations.json",
+        "note": "navigation_test",
+        "sha256": "126f9aca2409e2176e7ecba9677186a2e75e43f8e414b356f4db6e9108bfe819",
+        "bytes": 10855
+      },
+      {
+        "path": "topics/behavior.md",
+        "note": "返回上下文",
+        "sha256": "fff748b00ef68e9e2e7ad7463934f3403613e30919eacd3485c0c52d2d0d2351",
+        "bytes": 3363
+      }
+    ]
+  },
+  {
+    "id": "DEF-004",
+    "severity": "P1",
+    "title": "订单交付类型/状态跨类型错配：CODE 订单进入赠送流程，GIFT 订单显示 DELIVERED",
+    "status_at_first_acceptance": "待修复",
+    "blocking": true,
+    "rule_refs": {
+      "req": [
+        "REQ-CODE",
+        "REQ-GIFT",
+        "REQ-ORDER"
+      ],
+      "chk": [
+        "CHK-SEM-003",
+        "CHK-ACT-022"
+      ],
+      "tc": [
+        "TC-RESULT-001",
+        "TC-GIFT-002",
+        "TC-CODE-001"
+      ],
+      "dec": [
+        "D-22"
+      ],
+      "prior_run_def": []
+    },
+    "evidence_refs": [
+      {
+        "path": "evidence/observations.json",
+        "note": "data_consistency",
+        "sha256": "126f9aca2409e2176e7ecba9677186a2e75e43f8e414b356f4db6e9108bfe819",
+        "bytes": 10855
+      },
+      {
+        "path": "extracted/db.json",
+        "note": "orders 1015/1021",
+        "sha256": "b7a2c3c129b49fc7e1037be2becf20d756093fdca747fcca93bdebcb8e3496e8",
+        "bytes": 49887
+      }
+    ]
+  },
+  {
+    "id": "DEF-005",
+    "severity": "P1",
+    "title": "6 个 FL 图首尾节点显示技术 ID，04 节点表与 PlantUML/SVG 的节点 ID 不能精确映射；自测 lint 未检出",
+    "status_at_first_acceptance": "待修复",
+    "blocking": true,
+    "rule_refs": {
+      "req": [
+        "REQ-CHECKOUT",
+        "REQ-PAY",
+        "REQ-CODE",
+        "REQ-GIFT",
+        "REQ-REFUND",
+        "REQ-ADM-GOODS"
+      ],
+      "chk": [
+        "CHK-STR-007",
+        "CHK-LAY-008",
+        "CHK-ACT-021"
+      ],
+      "tc": [
+        "TC-ORDER-001",
+        "TC-PAY-004",
+        "TC-CODE-001",
+        "TC-GIFT-001",
+        "TC-REFUND-001"
+      ],
+      "dec": [],
+      "prior_run_def": []
+    },
+    "evidence_refs": [
+      {
+        "path": "evidence/observations.json",
+        "note": "diagram_lint",
+        "sha256": "126f9aca2409e2176e7ecba9677186a2e75e43f8e414b356f4db6e9108bfe819",
+        "bytes": 10855
+      },
+      {
+        "path": "topics/diagrams.md",
+        "note": "全表",
+        "sha256": "9562e94e9a4fda797eeb5c979b4a375ad1c1972618e940c80dec988472163190",
+        "bytes": 1849
+      },
+      {
+        "path": "evidence/provider_build_report.json",
+        "note": "diagrams 数组",
+        "sha256": "70a421ad12ab9eebaa4fd4013543444e869015712d8f71ee1f02a2a576b3e4cc",
+        "bytes": 9222
+      }
+    ]
+  },
+  {
+    "id": "DEF-006",
+    "severity": "P1",
+    "title": "W 支付成功后不进入结果页，W-RESULT-01 无真实入口",
+    "status_at_first_acceptance": "待修复",
+    "blocking": true,
+    "rule_refs": {
+      "req": [
+        "REQ-PAY",
+        "REQ-CODE",
+        "REQ-GIFT"
+      ],
+      "chk": [
+        "CHK-ACT-010",
+        "CHK-SEM-006"
+      ],
+      "tc": [
+        "TC-RESULT-001",
+        "TC-PAY-006",
+        "TC-PAY-007"
+      ],
+      "dec": [],
+      "prior_run_def": []
+    },
+    "evidence_refs": [
+      {
+        "path": "evidence/observations.json",
+        "note": "flows.W_pay",
+        "sha256": "126f9aca2409e2176e7ecba9677186a2e75e43f8e414b356f4db6e9108bfe819",
+        "bytes": 10855
+      },
+      {
+        "path": "topics/behavior.md",
+        "note": "W 段",
+        "sha256": "fff748b00ef68e9e2e7ad7463934f3403613e30919eacd3485c0c52d2d0d2351",
+        "bytes": 3363
+      }
+    ]
+  },
+  {
+    "id": "DEF-007",
+    "severity": "P1",
+    "title": "有未支付订单时无法换规格，未实现 PENDING-08“明确未支付后关闭旧单再建新单”",
+    "status_at_first_acceptance": "待修复",
+    "blocking": true,
+    "rule_refs": {
+      "req": [
+        "REQ-CHECKOUT",
+        "REQ-PRODUCT"
+      ],
+      "chk": [
+        "CHK-ACT-011",
+        "CHK-SEM-006"
+      ],
+      "tc": [
+        "TC-REPURCHASE-002",
+        "TC-REPURCHASE-003",
+        "TC-BUY-003"
+      ],
+      "dec": [
+        "D-22"
+      ],
+      "prior_run_def": []
+    },
+    "evidence_refs": [
+      {
+        "path": "evidence/observations.json",
+        "note": "flows.M_pending / navigation_test",
+        "sha256": "126f9aca2409e2176e7ecba9677186a2e75e43f8e414b356f4db6e9108bfe819",
+        "bytes": 10855
+      },
+      {
+        "path": "topics/behavior.md",
+        "note": "换规格段",
+        "sha256": "fff748b00ef68e9e2e7ad7463934f3403613e30919eacd3485c0c52d2d0d2351",
+        "bytes": 3363
+      }
+    ]
+  },
+  {
+    "id": "DEF-008",
+    "severity": "P1",
+    "title": "04 异常矩阵 16 个 TC 引用在 07 无定义，异常分支不可执行/不可追踪",
+    "status_at_first_acceptance": "待修复",
+    "blocking": true,
+    "rule_refs": {
+      "req": [
+        "REQ-AUTH",
+        "REQ-PAY",
+        "REQ-CODE",
+        "REQ-GIFT",
+        "REQ-ORDER",
+        "REQ-ADM-CONFIG"
+      ],
+      "chk": [
+        "CHK-STR-008",
+        "CHK-SEM-008"
+      ],
+      "tc": [
+        "TC-REPURCHASE-004",
+        "TC-PAY-008",
+        "TC-PAY-009",
+        "TC-CODE-004",
+        "TC-CODE-005",
+        "TC-REFUND-005",
+        "TC-REFUND-006",
+        "TC-GIFT-004",
+        "TC-ORDER-007",
+        "TC-ORDER-008",
+        "TC-PHONE-006",
+        "TC-ADMIN-011",
+        "TC-ADMIN-032",
+        "TC-ADMIN-123",
+        "TC-NOTIFY-003",
+        "TC-NOTIFY-004"
+      ],
+      "dec": [],
+      "prior_run_def": []
+    },
+    "evidence_refs": [
+      {
+        "path": "topics/structure.md",
+        "note": "TC 缺口",
+        "sha256": "f01b0973a33be52d408f0ae277b4f797240eae1701d4fba2d67c45356f6d45b6",
+        "bytes": 2612
+      },
+      {
+        "path": "topics/semantic.md",
+        "note": "异常覆盖",
+        "sha256": "a5f26c65c6f69808c6e2c0fec639bb05f3e8b70280bd91153cb92bd68c3e5b84",
+        "bytes": 3430
+      }
+    ]
+  },
+  {
+    "id": "DEF-009",
+    "severity": "P2",
+    "title": "01 引用 API-PHONE-004，05 未定义该接口",
+    "status_at_first_acceptance": "待修复",
+    "blocking": false,
+    "rule_refs": {
+      "req": [
+        "REQ-PHONE"
+      ],
+      "chk": [
+        "CHK-STR-008",
+        "CHK-SEM-009"
+      ],
+      "tc": [
+        "TC-PHONE-003",
+        "TC-PRIVACY-001"
+      ],
+      "dec": [],
+      "prior_run_def": []
+    },
+    "evidence_refs": [
+      {
+        "path": "topics/structure.md",
+        "note": "API 引用差",
+        "sha256": "f01b0973a33be52d408f0ae277b4f797240eae1701d4fba2d67c45356f6d45b6",
+        "bytes": 2612
+      }
+    ]
+  },
+  {
+    "id": "DEF-010",
+    "severity": "P2",
+    "title": "01 页面表进入/退出列与 §9 操作流转高度模板化，缺少页面级入口、守卫和返回契约",
+    "status_at_first_acceptance": "待修复",
+    "blocking": false,
+    "rule_refs": {
+      "req": [
+        "REQ-HOME",
+        "REQ-SEARCH",
+        "REQ-PRODUCT",
+        "REQ-ORDER",
+        "REQ-ADM-CONFIG"
+      ],
+      "chk": [
+        "CHK-SEM-006"
+      ],
+      "tc": [
+        "TC-SEARCH-003",
+        "TC-ORDER-001"
+      ],
+      "dec": [],
+      "prior_run_def": []
+    },
+    "evidence_refs": [
+      {
+        "path": "topics/semantic.md",
+        "note": "文档模板化",
+        "sha256": "a5f26c65c6f69808c6e2c0fec639bb05f3e8b70280bd91153cb92bd68c3e5b84",
+        "bytes": 3430
+      }
+    ]
+  },
+  {
+    "id": "DEF-011",
+    "severity": "P2",
+    "title": "评审控制“协议”与购买面板 cart.agreement 不同步：设为已同意仍弹购买须知",
+    "status_at_first_acceptance": "待修复",
+    "blocking": false,
+    "rule_refs": {
+      "req": [
+        "REQ-CHECKOUT"
+      ],
+      "chk": [
+        "CHK-ACT-019"
+      ],
+      "tc": [
+        "TC-AGREEMENT-001",
+        "TC-BUY-002"
+      ],
+      "dec": [],
+      "prior_run_def": []
+    },
+    "evidence_refs": [
+      {
+        "path": "evidence/observations.json",
+        "note": "review_shell.agreement_control",
+        "sha256": "126f9aca2409e2176e7ecba9677186a2e75e43f8e414b356f4db6e9108bfe819",
+        "bytes": 10855
+      }
+    ]
+  },
+  {
+    "id": "DEF-012",
+    "severity": "P2",
+    "title": "“重置评审现场”不重置 DB，订单/配置/协议版本跨测试残留",
+    "status_at_first_acceptance": "待修复",
+    "blocking": false,
+    "rule_refs": {
+      "req": [
+        "REQ-CHECKOUT",
+        "REQ-HOME",
+        "REQ-ADM-CONFIG"
+      ],
+      "chk": [
+        "CHK-ACT-019"
+      ],
+      "tc": [
+        "TC-ADMIN-009",
+        "TC-CHECKOUT-002"
+      ],
+      "dec": [],
+      "prior_run_def": []
+    },
+    "evidence_refs": [
+      {
+        "path": "evidence/observations.json",
+        "note": "review_shell.reset",
+        "sha256": "126f9aca2409e2176e7ecba9677186a2e75e43f8e414b356f4db6e9108bfe819",
+        "bytes": 10855
+      }
+    ]
+  },
+  {
+    "id": "DEF-013",
+    "severity": "P2",
+    "title": "页内状态转换后“页面状态”选择器残留旧值（RESULTS/NOTICE/TIMEOUT 显示 DEFAULT/OPEN/SHOWN）",
+    "status_at_first_acceptance": "待修复",
+    "blocking": false,
+    "rule_refs": {
+      "req": [
+        "REQ-SEARCH",
+        "REQ-CHECKOUT",
+        "REQ-PAY"
+      ],
+      "chk": [
+        "CHK-ACT-019"
+      ],
+      "tc": [
+        "TC-SEARCH-001",
+        "TC-BUY-002",
+        "TC-PAY-002"
+      ],
+      "dec": [],
+      "prior_run_def": []
+    },
+    "evidence_refs": [
+      {
+        "path": "evidence/observations.json",
+        "note": "review_shell.state_selector",
+        "sha256": "126f9aca2409e2176e7ecba9677186a2e75e43f8e414b356f4db6e9108bfe819",
+        "bytes": 10855
+      }
+    ]
+  },
+  {
+    "id": "DEF-014",
+    "severity": "P2",
+    "title": "6 个组件定义无页面实例注册，227 实例口径不完整（ADM 公共壳/COM-CLIENT-C04）",
+    "status_at_first_acceptance": "待修复",
+    "blocking": false,
+    "rule_refs": {
+      "req": [
+        "REQ-ADM-CONFIG",
+        "REQ-HOME"
+      ],
+      "chk": [
+        "CHK-STR-004"
+      ],
+      "tc": [
+        "TC-ADMIN-001"
+      ],
+      "dec": [],
+      "prior_run_def": []
+    },
+    "evidence_refs": [
+      {
+        "path": "extracted/structure_result.json",
+        "note": "unused defs",
+        "sha256": "12acd1f48d0f3b05b475a351393af294191a111e9a85fc6357b2f3c72274ce46",
+        "bytes": 22545
+      },
+      {
+        "path": "topics/structure.md",
+        "note": "组件口径",
+        "sha256": "f01b0973a33be52d408f0ae277b4f797240eae1701d4fba2d67c45356f6d45b6",
+        "bytes": 2612
+      }
+    ]
+  },
+  {
+    "id": "DEF-015",
+    "severity": "P2",
+    "title": "03 组件文档写复选框 16px，实际 CSS/渲染为 18×18",
+    "status_at_first_acceptance": "待修复",
+    "blocking": false,
+    "rule_refs": {
+      "req": [
+        "REQ-CHECKOUT"
+      ],
+      "chk": [
+        "CHK-SEM-010"
+      ],
+      "tc": [
+        "TC-AGREEMENT-001"
+      ],
+      "dec": [],
+      "prior_run_def": []
+    },
+    "evidence_refs": [
+      {
+        "path": "topics/layout.md",
+        "note": "输入控件",
+        "sha256": "0526fe4c82ee4f6230c1ddb562ddb818448fe88fb1e3cb885e506508464be5aa",
+        "bytes": 2220
+      }
+    ]
+  },
+  {
+    "id": "DEF-016",
+    "severity": "P2",
+    "title": "ADM-SEARCH-01 头部显示“最后保存：undefined · undefined”",
+    "status_at_first_acceptance": "待修复",
+    "blocking": false,
+    "rule_refs": {
+      "req": [
+        "REQ-SEARCH",
+        "REQ-ADM-CONFIG"
+      ],
+      "chk": [
+        "CHK-STR-011"
+      ],
+      "tc": [
+        "TC-SEARCH-005"
+      ],
+      "dec": [],
+      "prior_run_def": []
+    },
+    "evidence_refs": [
+      {
+        "path": "evidence/observations.json",
+        "note": "text_anomalies",
+        "sha256": "126f9aca2409e2176e7ecba9677186a2e75e43f8e414b356f4db6e9108bfe819",
+        "bytes": 10855
+      }
+    ]
+  },
+  {
+    "id": "DEF-017",
+    "severity": "P2",
+    "title": "ADM-CODE-01 交付列表 gid 全为“—”，抽屉显示“供应商 gid：undefined”",
+    "status_at_first_acceptance": "待修复",
+    "blocking": false,
+    "rule_refs": {
+      "req": [
+        "REQ-CODE"
+      ],
+      "chk": [
+        "CHK-STR-011"
+      ],
+      "tc": [
+        "TC-CODE-001",
+        "TC-CODE-002"
+      ],
+      "dec": [],
+      "prior_run_def": []
+    },
+    "evidence_refs": [
+      {
+        "path": "evidence/observations.json",
+        "note": "text_anomalies",
+        "sha256": "126f9aca2409e2176e7ecba9677186a2e75e43f8e414b356f4db6e9108bfe819",
+        "bytes": 10855
+      }
+    ]
+  },
+  {
+    "id": "DEF-018",
+    "severity": "P2",
+    "title": "后台确认层跨页残留：在支付核查打开的确认层切到口令码交付仍渲染并可作用于旧对象",
+    "status_at_first_acceptance": "待修复",
+    "blocking": false,
+    "rule_refs": {
+      "req": [
+        "REQ-ADM-ORDER",
+        "REQ-ADM-CONFIG"
+      ],
+      "chk": [
+        "CHK-ACT-019"
+      ],
+      "tc": [
+        "TC-ADMIN-005",
+        "TC-PAY-003"
+      ],
+      "dec": [],
+      "prior_run_def": []
+    },
+    "evidence_refs": [
+      {
+        "path": "evidence/observations.json",
+        "note": "review_shell.confirm_leak",
+        "sha256": "126f9aca2409e2176e7ecba9677186a2e75e43f8e414b356f4db6e9108bfe819",
+        "bytes": 10855
+      }
+    ]
+  }
+]

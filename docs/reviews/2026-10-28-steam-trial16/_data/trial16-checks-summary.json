@@ -1,0 +1,1455 @@
+{
+  "required_check_set.json": {
+    "protocol": "required-check-set-1",
+    "artifact": {
+      "path": "02_低保真交互原型.html",
+      "sha256": "fe423bea2603f48e503a9af8fde45d15d45518343e4d5559a73627cb01fabc5a"
+    },
+    "plan": [
+      {
+        "id": "CHK-STR-001",
+        "category": "structure",
+        "source": "S9 / quality29.13",
+        "required": true,
+        "evidence_required": true,
+        "minimum_basis": [
+          "build"
+        ]
+      },
+      {
+        "id": "CHK-BLD-001",
+        "category": "build",
+        "source": "S9 / quality29.3",
+        "required": true,
+        "evidence_required": true,
+        "minimum_basis": [
+          "build"
+        ]
+      },
+      {
+        "id": "CHK-REN-001",
+        "category": "render",
+        "source": "S10 / quality29.2",
+        "required": true,
+        "evidence_required": true,
+        "minimum_basis": [
+          "browser"
+        ]
+      },
+      {
+        "id": "CHK-REG-002",
+        "category": "components",
+        "source": "S10 / quality29.2",
+        "required": true,
+        "evidence_required": true,
+        "minimum_basis": [
+          "browser"
+        ]
+      },
+      {
+        "id": "CHK-DOC-001",
+        "category": "documents",
+        "source": "S10 / reader19",
+        "required": true,
+        "evidence_required": true,
+        "minimum_basis": [
+          "browser"
+        ]
+      },
+      {
+        "id": "CHK-M-001",
+        "category": "entry",
+        "source": "S10 / quality29.10",
+        "required": true,
+        "evidence_required": true,
+        "minimum_basis": [
+          "browser"
+        ]
+      },
+      {
+        "id": "CHK-W-001",
+        "category": "entry",
+        "source": "S10 / quality29.10",
+        "required": true,
+        "evidence_required": true,
+        "minimum_basis": [
+          "browser"
+        ]
+      },
+      {
+        "id": "CHK-ADM-001",
+        "category": "entry",
+        "source": "S10 / quality29.10",
+        "required": true,
+        "evidence_required": true,
+        "minimum_basis": [
+          "browser"
+        ]
+      },
+      {
+        "id": "CHK-ADM-010",
+        "category": "entry",
+        "source": "S10 / quality29.10",
+        "required": true,
+        "evidence_required": true,
+        "minimum_basis": [
+          "browser"
+        ]
+      },
+      {
+        "id": "CHK-LAY-002",
+        "category": "layout",
+        "source": "S10 / quality29.11",
+        "required": true,
+        "evidence_required": true,
+        "minimum_basis": [
+          "browser"
+        ]
+      }
+    ],
+    "checks": [
+      {
+        "id": "CHK-STR-001",
+        "status": "pass",
+        "executed": true,
+        "method": "Playwright 真实浏览器执行/构建脚本",
+        "basis": "build",
+        "actual": "结构/文件/计数检查：通过（见证据文件）",
+        "evidence": [
+          {
+            "path": "_checks/build_report.json",
+            "sha256": "e4d64e47fd44457352704a783b9b06f21e3ffc85421c52de8166b4b6023cbf9b"
+          }
+        ]
+      },
+      {
+        "id": "CHK-BLD-001",
+        "status": "pass",
+        "executed": true,
+        "method": "Playwright 真实浏览器执行/构建脚本",
+        "basis": "build",
+        "actual": "离线/语法检查：通过（见证据文件）",
+        "evidence": [
+          {
+            "path": "_checks/build_checks.txt",
+            "sha256": "f7e199f299073aa1dd2e9ac7ec4fe081d45ed46a8b99bd598fca5caeada92c5a"
+          }
+        ]
+      },
+      {
+        "id": "CHK-REN-001",
+        "status": "pass",
+        "executed": true,
+        "method": "Playwright 真实浏览器执行/构建脚本",
+        "basis": "browser",
+        "actual": "全页面×状态渲染：通过（见证据文件）",
+        "evidence": [
+          {
+            "path": "_checks/all_states_result.json",
+            "sha256": "168326d575301923a9fa86ec41b62644bcfbdb478342e4b5aeea0b867a8ade26"
+          }
+        ]
+      },
+      {
+        "id": "CHK-REG-002",
+        "status": "pass",
+        "executed": true,
+        "method": "Playwright 真实浏览器执行/构建脚本",
+        "basis": "browser",
+        "actual": "组件选择器十节：通过（见证据文件）",
+        "evidence": [
+          {
+            "path": "_checks/components_result.json",
+            "sha256": "91588219daa140b86f723424b662cdd5253964d075b02565c6966e1320a66887"
+          }
+        ]
+      },
+      {
+        "id": "CHK-DOC-001",
+        "status": "pass",
+        "executed": true,
+        "method": "Playwright 真实浏览器执行/构建脚本",
+        "basis": "browser",
+        "actual": "9份MD同源与阅读器：通过（见证据文件）",
+        "evidence": [
+          {
+            "path": "_checks/docs_sync_result.json",
+            "sha256": "c69deff48e1eca20648adc99b3671c45ded719a9f3b8abb66d716c01236596e5"
+          }
+        ]
+      },
+      {
+        "id": "CHK-M-001",
+        "status": "pass",
+        "executed": true,
+        "method": "Playwright 真实浏览器执行/构建脚本",
+        "basis": "browser",
+        "actual": "移动端购买主链：通过（见证据文件）",
+        "evidence": [
+          {
+            "path": "_checks/main_flow_result.json",
+            "sha256": "3d2e5b63eea444948435d8eb8c5b1c56572be4ef7a91bf71d5a4d59078ef0548"
+          }
+        ]
+      },
+      {
+        "id": "CHK-W-001",
+        "status": "pass",
+        "executed": true,
+        "method": "Playwright 真实浏览器执行/构建脚本",
+        "basis": "browser",
+        "actual": "PC购买与扫码三态：通过（见证据文件）",
+        "evidence": [
+          {
+            "path": "_checks/w_result.json",
+            "sha256": "fd00cd39c3a4f32e70c071e961372b9455c908f2e4cdebade08e481977ac0b44"
+          }
+        ]
+      },
+      {
+        "id": "CHK-ADM-001",
+        "status": "pass",
+        "executed": true,
+        "method": "Playwright 真实浏览器执行/构建脚本",
+        "basis": "browser",
+        "actual": "后台筛选/页签/分页/详情：通过（见证据文件）",
+        "evidence": [
+          {
+            "path": "_checks/admin_order_result.json",
+            "sha256": "1dc578a322307312cbdba2481ba46c35d32c95fcb4cb11da06af124123effa99"
+          }
+        ]
+      },
+      {
+        "id": "CHK-ADM-010",
+        "status": "pass",
+        "executed": true,
+        "method": "Playwright 真实浏览器执行/构建脚本",
+        "basis": "browser",
+        "actual": "协议/配置/权限生效：通过（见证据文件）",
+        "evidence": [
+          {
+            "path": "_checks/admin_config_result.json",
+            "sha256": "afe8a551c58950d1279927bf5516d6dc212dede1f3d3bd0e610a9035214e81be"
+          }
+        ]
+      },
+      {
+        "id": "CHK-LAY-002",
+        "status": "pass",
+        "executed": true,
+        "method": "Playwright 真实浏览器执行/构建脚本",
+        "basis": "browser",
+        "actual": "1440/1920布局与弹层：通过（见证据文件）",
+        "evidence": [
+          {
+            "path": "_checks/layout_result.json",
+            "sha256": "d906802cd6a16c5c60cb1a47edd8ad2d9472641a9478b3afa4c03b5fed82253d"
+          }
+        ]
+      }
+    ],
+    "summary": {
+      "pass": 10,
+      "fail": 0,
+      "unverified": 0,
+      "blocked": 0,
+      "not_applicable": 0,
+      "planned_total": 10,
+      "required_total": 10,
+      "required_pass": 10,
+      "gate_ready": true
+    }
+  },
+  "required_check_result.json": {
+    "protocol_valid": true,
+    "gate_ready": true,
+    "errors": [],
+    "summary": {
+      "pass": 10,
+      "fail": 0,
+      "unverified": 0,
+      "blocked": 0,
+      "not_applicable": 0,
+      "planned_total": 10,
+      "required_total": 10,
+      "required_pass": 10,
+      "gate_ready": true
+    }
+  },
+  "verification_summary.json": {
+    "rows": 57,
+    "pass": 53,
+    "fail": 0,
+    "unverified": 3,
+    "not_applicable": 1
+  },
+  "acceptance_fixes_result.json": {
+    "permission": {
+      "opsExportDisabled": true,
+      "opsExportCan": false,
+      "opsRefundExecuteCheckboxDisabled": true,
+      "opsRefundExecuteChecked": false,
+      "opsStillNoExecute": true,
+      "opsExecuteButtons": 0,
+      "opsDrawerHint": true,
+      "refundGuarded": true,
+      "finCodeNoPerm": 1,
+      "finCodeCan": false,
+      "finExportEnabled": true,
+      "finExecuteCan": true,
+      "adminAll": true
+    },
+    "agreement": {
+      "defaultSubstantive": "false",
+      "defaultVersion": "V1.3",
+      "afterDefault": {
+        "latest": "V1.3",
+        "substantive": false,
+        "has13": true,
+        "oldNeeds": false
+      },
+      "secondVersion": "V1.4",
+      "afterExplicit": {
+        "latest": "V1.4",
+        "substantive": true,
+        "oldNeeds": true
+      },
+      "frontReconfirm": true
+    },
+    "navigation": {
+      "searchBefore": {
+        "state": "RESULTS",
+        "kw": "赛博"
+      },
+      "returnPage": "M-SEARCH-01",
+      "returnState": "RESULTS",
+      "returnKeyword": "赛博",
+      "returnInput": "赛博",
+      "orderReturn": {
+        "page": "M-ORDER-LIST-01",
+        "tab": "REFUND",
+        "activeTab": "退款 3",
+        "scrollBefore": 0,
+        "scrollAfter": 0,
+        "scrollRestored": true
+      },
+      "orderScroll": {
+        "scrollBefore": 541,
+        "scrollAfter": 541,
+        "restored": true,
+        "page": "M-ORDER-LIST-01"
+      },
+      "wReturn": {
+        "page": "W-SEARCH-01",
+        "state": "RESULTS",
+        "kw": "赛博"
+      }
+    },
+    "data": {
+      "orders": 28,
+      "errors": [],
+      "o1015": {
+        "productId": "G-1004",
+        "type": "GIFT",
+        "status": "GIFT_PENDING"
+      },
+      "o1021": "GIFT_COMPLETED",
+      "giftResult": {
+        "waiting": true,
+        "noCodeText": true
+      }
+    },
+    "diagram": {
+      "start": true,
+      "end": true,
+      "noAlias": true
+    },
+    "wResult": {
+      "rows": 4,
+      "states": {
+        "ORD-20261028-1025": {
+          "page": "W-RESULT-01",
+          "state": "DELIVERED",
+          "expected": "DELIVERED",
+          "ok": true
+        },
+        "ORD-20261028-1026": {
+          "page": "W-RESULT-01",
+          "state": "ISSUING",
+          "expected": "ISSUING",
+          "ok": true
+        },
+        "ORD-20261028-1027": {
+          "page": "W-RESULT-01",
+          "state": "REFUND_FAILED",
+          "expected": "REFUND_FAILED",
+          "ok": true
+        },
+        "ORD-20261028-1028": {
+          "page": "W-RESULT-01",
+          "state": "GIFT_PENDING",
+          "expected": "GIFT_PENDING",
+          "ok": true
+        }
+      }
+    },
+    "sku": {
+      "oldNo": "ORD-20261028-3028",
+      "changeButton": 1,
+      "afterChange": {
+        "oldStatus": "CLOSED",
+        "oldReason": "用户换规格",
+        "newNo": "ORD-20261028-3029",
+        "newSku": "SKU-1001-B",
+        "payable": 1
+      },
+      "confirmingBlock": {
+        "countSame": true,
+        "oldStill": true,
+        "toast": "订单确认中，暂不能换规格；请先查询或联系客服"
+      }
+    },
+    "controls": {
+      "cartAgreement": true,
+      "agreedGoesCheckout": true,
+      "unagreedNotice": true,
+      "stateAfterNotice": "NOTICE",
+      "stateAfterSearch": "RESULTS",
+      "stateAfterTimeout": "TIMEOUT"
+    },
+    "reset": {
+      "orders": 28,
+      "home": "V3",
+      "agreement": "V1.2",
+      "page": "M-HOME-01",
+      "seedClean": true
+    },
+    "admUi": {
+      "searchHead": "搜索推荐\n保存即生效 · 最后保存：2026/10/28 13:35:00 · ops01",
+      "searchUndefined": false,
+      "searchUpdated": true,
+      "gidValues": [
+        "10303",
+        "11111",
+        "10191",
+        "10202",
+        "11212"
+      ],
+      "gidAll": true,
+      "codeMeta": "交付ID：DEL-1002 · 供应商 gid：10303 · 请求 orderid：REQ-1002",
+      "codeNoUndefined": true,
+      "denyDisabled": true,
+      "confirmShown": true,
+      "confirmCleared": true,
+      "confirmTextGone": true
+    },
+    "registry": {
+      "defs": 173,
+      "instances": 277,
+      "orphans": [],
+      "c04": false
+    },
+    "checkboxM": {
+      "w": 18,
+      "h": 18
+    },
+    "checkboxW": {
+      "w": 18,
+      "h": 18
+    },
+    "errors": []
+  },
+  "build_report.json": {
+    "build": "BUILD-BATCH-2026-10-28-16",
+    "at": "2026-10-28",
+    "artifact": {
+      "file": "02_低保真交互原型.html",
+      "bytes": 2350151,
+      "sha256": "fe423bea2603f48e503a9af8fde45d15d45518343e4d5559a73627cb01fabc5a"
+    },
+    "counts": {
+      "pages": 43,
+      "states": 217,
+      "instances": 277,
+      "defs": 173,
+      "diagrams": 15,
+      "docs": 9
+    },
+    "diagrams": [
+      {
+        "id": "FL-ORDER-001",
+        "type": "FL 业务流程",
+        "w": 965,
+        "h": 2061,
+        "text": 45,
+        "emptyText": 0,
+        "svgLint": {
+          "aliasTextLeak": 0,
+          "labelMissing": 0,
+          "errors": []
+        }
+      },
+      {
+        "id": "FL-PAY-002",
+        "type": "FL 业务流程",
+        "w": 1037,
+        "h": 1416,
+        "text": 31,
+        "emptyText": 0,
+        "svgLint": {
+          "aliasTextLeak": 0,
+          "labelMissing": 0,
+          "errors": []
+        }
+      },
+      {
+        "id": "FL-CODE-001",
+        "type": "FL 业务流程",
+        "w": 1084,
+        "h": 1416,
+        "text": 30,
+        "emptyText": 0,
+        "svgLint": {
+          "aliasTextLeak": 0,
+          "labelMissing": 0,
+          "errors": []
+        }
+      },
+      {
+        "id": "FL-GIFT-001",
+        "type": "FL 业务流程",
+        "w": 762,
+        "h": 1416,
+        "text": 25,
+        "emptyText": 0,
+        "svgLint": {
+          "aliasTextLeak": 0,
+          "labelMissing": 0,
+          "errors": []
+        }
+      },
+      {
+        "id": "FL-REFUND-001",
+        "type": "FL 业务流程",
+        "w": 1002,
+        "h": 1447,
+        "text": 31,
+        "emptyText": 0,
+        "svgLint": {
+          "aliasTextLeak": 0,
+          "labelMissing": 0,
+          "errors": []
+        }
+      },
+      {
+        "id": "FL-GOODS-001",
+        "type": "FL 业务流程",
+        "w": 825,
+        "h": 1287,
+        "text": 26,
+        "emptyText": 0,
+        "svgLint": {
+          "aliasTextLeak": 0,
+          "labelMissing": 0,
+          "errors": []
+        }
+      },
+      {
+        "id": "SM-PAY-001",
+        "type": "SM 状态机",
+        "w": 422,
+        "h": 401,
+        "text": 10,
+        "emptyText": 0,
+        "svgLint": null
+      },
+      {
+        "id": "SM-CODE-001",
+        "type": "SM 状态机",
+        "w": 358,
+        "h": 530,
+        "text": 10,
+        "emptyText": 0,
+        "svgLint": null
+      },
+      {
+        "id": "SM-GIFT-001",
+        "type": "SM 状态机",
+        "w": 227,
+        "h": 482,
+        "text": 8,
+        "emptyText": 0,
+        "svgLint": null
+      },
+      {
+        "id": "SM-REFUND-001",
+        "type": "SM 状态机",
+        "w": 175,
+        "h": 611,
+        "text": 9,
+        "emptyText": 0,
+        "svgLint": null
+      },
+      {
+        "id": "SM-NOTIFY-001",
+        "type": "SM 状态机",
+        "w": 295,
+        "h": 482,
+        "text": 8,
+        "emptyText": 0,
+        "svgLint": null
+      },
+      {
+        "id": "SEQ-PAY-001",
+        "type": "SEQ 时序",
+        "w": 388,
+        "h": 319,
+        "text": 15,
+        "emptyText": 0,
+        "svgLint": null
+      },
+      {
+        "id": "SEQ-CODE-001",
+        "type": "SEQ 时序",
+        "w": 446,
+        "h": 319,
+        "text": 17,
+        "emptyText": 0,
+        "svgLint": null
+      },
+      {
+        "id": "SEQ-REFUND-001",
+        "type": "SEQ 时序",
+        "w": 612,
+        "h": 319,
+        "text": 23,
+        "emptyText": 0,
+        "svgLint": null
+      },
+      {
+        "id": "SEQ-NOTIFY-001",
+        "type": "SEQ 时序",
+        "w": 361,
+        "h": 256,
+        "text": 13,
+        "emptyText": 0,
+        "svgLint": null
+      }
+    ],
+    "diagramLint": [
+      {
+        "id": "FL-ORDER-001",
+        "type": "FL",
+        "nodes": 19,
+        "edges": 26,
+        "aliases": {
+          "N-ORDER-001-01": "N_ORDER_001_01",
+          "N-ORDER-001-02": "N_ORDER_001_02",
+          "N-ORDER-001-03": "N_ORDER_001_03",
+          "N-ORDER-001-04": "N_ORDER_001_04",
+          "N-ORDER-001-05": "N_ORDER_001_05",
+          "N-ORDER-001-06": "N_ORDER_001_06",
+          "N-ORDER-001-07": "N_ORDER_001_07",
+          "N-ORDER-001-08": "N_ORDER_001_08",
+          "N-ORDER-001-09": "N_ORDER_001_09",
+          "N-ORDER-001-10": "N_ORDER_001_10",
+          "N-ORDER-001-11": "N_ORDER_001_11",
+          "N-ORDER-001-12": "N_ORDER_001_12",
+          "N-ORDER-001-13": "N_ORDER_001_13",
+          "N-ORDER-001-14": "N_ORDER_001_14",
+          "N-ORDER-001-15": "N_ORDER_001_15",
+          "N-ORDER-001-16": "N_ORDER_001_16",
+          "N-ORDER-001-17": "N_ORDER_001_17",
+          "N-ORDER-001-18": "N_ORDER_001_18",
+          "N-ORDER-001-19": "N_ORDER_001_19"
+        },
+        "errors": []
+      },
+      {
+        "id": "FL-PAY-002",
+        "type": "FL",
+        "nodes": 14,
+        "edges": 17,
+        "aliases": {
+          "N-PAY-001": "N_PAY_001",
+          "N-PAY-002": "N_PAY_002",
+          "N-PAY-003": "N_PAY_003",
+          "N-PAY-004": "N_PAY_004",
+          "N-PAY-005": "N_PAY_005",
+          "N-PAY-006": "N_PAY_006",
+          "N-PAY-007": "N_PAY_007",
+          "N-PAY-008": "N_PAY_008",
+          "N-PAY-009": "N_PAY_009",
+          "N-PAY-010": "N_PAY_010",
+          "N-PAY-011": "N_PAY_011",
+          "N-PAY-012": "N_PAY_012",
+          "N-PAY-013": "N_PAY_013",
+          "N-PAY-014": "N_PAY_014"
+        },
+        "errors": []
+      },
+      {
+        "id": "FL-CODE-001",
+        "type": "FL",
+        "nodes": 13,
+        "edges": 17,
+        "aliases": {
+          "N-CODE-001": "N_CODE_001",
+          "N-CODE-002": "N_CODE_002",
+          "N-CODE-003": "N_CODE_003",
+          "N-CODE-004": "N_CODE_004",
+          "N-CODE-005": "N_CODE_005",
+          "N-CODE-006": "N_CODE_006",
+          "N-CODE-007": "N_CODE_007",
+          "N-CODE-008": "N_CODE_008",
+          "N-CODE-009": "N_CODE_009",
+          "N-CODE-010": "N_CODE_010",
+          "N-CODE-011": "N_CODE_011",
+          "N-CODE-012": "N_CODE_012",
+          "N-CODE-013": "N_CODE_013"
+        },
+        "errors": []
+      },
+      {
+        "id": "FL-GIFT-001",
+        "type": "FL",
+        "nodes": 12,
+        "edges": 13,
+        "aliases": {
+          "N-GIFT-001": "N_GIFT_001",
+          "N-GIFT-002": "N_GIFT_002",
+          "N-GIFT-003": "N_GIFT_003",
+          "N-GIFT-004": "N_GIFT_004",
+          "N-GIFT-005": "N_GIFT_005",
+          "N-GIFT-006": "N_GIFT_006",
+          "N-GIFT-007": "N_GIFT_007",
+          "N-GIFT-008": "N_GIFT_008",
+          "N-GIFT-009": "N_GIFT_009",
+          "N-GIFT-010": "N_GIFT_010",
+          "N-GIFT-011": "N_GIFT_011",
+          "N-GIFT-012": "N_GIFT_012"
+        },
+        "errors": []
+      },
+      {
+        "id": "FL-REFUND-001",
+        "type": "FL",
+        "nodes": 14,
+        "edges": 17,
+        "aliases": {
+          "N-REF-001": "N_REF_001",
+          "N-REF-002": "N_REF_002",
+          "N-REF-003": "N_REF_003",
+          "N-REF-004": "N_REF_004",
+          "N-REF-005": "N_REF_005",
+          "N-REF-006": "N_REF_006",
+          "N-REF-007": "N_REF_007",
+          "N-REF-008": "N_REF_008",
+          "N-REF-009": "N_REF_009",
+          "N-REF-010": "N_REF_010",
+          "N-REF-011": "N_REF_011",
+          "N-REF-012": "N_REF_012",
+          "N-REF-013": "N_REF_013",
+          "N-REF-014": "N_REF_014"
+        },
+        "errors": []
+      },
+      {
+        "id": "FL-GOODS-001",
+        "type": "FL",
+        "nodes": 12,
+        "edges": 14,
+        "aliases": {
+          "N-GOODS-001": "N_GOODS_001",
+          "N-GOODS-002": "N_GOODS_002",
+          "N-GOODS-003": "N_GOODS_003",
+          "N-GOODS-004": "N_GOODS_004",
+          "N-GOODS-005": "N_GOODS_005",
+          "N-GOODS-006": "N_GOODS_006",
+          "N-GOODS-007": "N_GOODS_007",
+          "N-GOODS-008": "N_GOODS_008",
+          "N-GOODS-009": "N_GOODS_009",
+          "N-GOODS-010": "N_GOODS_010",
+          "N-GOODS-011": "N_GOODS_011",
+          "N-GOODS-012": "N_GOODS_012"
+        },
+        "errors": []
+      },
+      {
+        "id": "SM-PAY-001",
+        "type": "SM",
+        "states": 4,
+        "transitions": 6,
+        "errors": []
+      },
+      {
+        "id": "SM-CODE-001",
+        "type": "SM",
+        "states": 4,
+        "transitions": 6,
+        "errors": []
+      },
+      {
+        "id": "SM-GIFT-001",
+        "type": "SM",
+        "states": 4,
+        "transitions": 4,
+        "errors": []
+      },
+      {
+        "id": "SM-REFUND-001",
+        "type": "SM",
+        "states": 4,
+        "transitions": 5,
+        "errors": []
+      },
+      {
+        "id": "SM-NOTIFY-001",
+        "type": "SM",
+        "states": 4,
+        "transitions": 4,
+        "errors": []
+      },
+      {
+        "id": "SEQ-PAY-001",
+        "type": "SEQ",
+        "participants": 4,
+        "messages": 7,
+        "errors": []
+      },
+      {
+        "id": "SEQ-CODE-001",
+        "type": "SEQ",
+        "participants": 5,
+        "messages": 7,
+        "errors": []
+      },
+      {
+        "id": "SEQ-REFUND-001",
+        "type": "SEQ",
+        "participants": 8,
+        "messages": 7,
+        "errors": []
+      },
+      {
+        "id": "SEQ-NOTIFY-001",
+        "type": "SEQ",
+        "participants": 4,
+        "messages": 5,
+        "errors": []
+      }
+    ],
+    "diagramSvgLint": [
+      {
+        "id": "FL-ORDER-001",
+        "errors": [],
+        "checkedNodes": 19
+      },
+      {
+        "id": "FL-PAY-002",
+        "errors": [],
+        "checkedNodes": 14
+      },
+      {
+        "id": "FL-CODE-001",
+        "errors": [],
+        "checkedNodes": 13
+      },
+      {
+        "id": "FL-GIFT-001",
+        "errors": [],
+        "checkedNodes": 12
+      },
+      {
+        "id": "FL-REFUND-001",
+        "errors": [],
+        "checkedNodes": 14
+      },
+      {
+        "id": "FL-GOODS-001",
+        "errors": [],
+        "checkedNodes": 12
+      }
+    ],
+    "componentSections": {
+      "COM-CLIENT-C01": 10,
+      "COM-CLIENT-C02": 10,
+      "COM-CLIENT-C03": 10,
+      "COM-CLIENT-C05": 10,
+      "COM-CLIENT-C06": 10,
+      "COM-CLIENT-C07": 10,
+      "COM-CLIENT-C08": 10,
+      "COM-CLIENT-C09": 10,
+      "COM-CLIENT-C10": 10,
+      "COM-CLIENT-C11": 10,
+      "COM-CLIENT-C12": 10,
+      "COM-CLIENT-C13": 10,
+      "COM-CLIENT-C14": 10,
+      "ADM-COMMON-C01": 10,
+      "ADM-COMMON-C02": 10,
+      "ADM-COMMON-C03": 10,
+      "ADM-COMMON-C04": 10,
+      "ADM-COMMON-C05": 10,
+      "ADM-COMMON-C06": 10,
+      "ADM-COMMON-C07": 10,
+      "ADM-COMMON-C08": 10,
+      "ADM-COMMON-C09": 10,
+      "ADM-COMMON-C10": 10,
+      "ADM-COMMON-C11": 10,
+      "M-HOME-01-C01": 10,
+      "M-HOME-01-C02": 10,
+      "M-HOME-01-C03": 10,
+      "M-SEARCH-01-C01": 10,
+      "M-SEARCH-01-C02": 10,
+      "M-PRODUCT-01-C01": 10,
+      "M-PRODUCT-01-C02": 10,
+      "M-PRODUCT-01-C03": 10,
+      "M-PRODUCT-01-C04": 10,
+      "M-PRODUCT-01-C05": 10,
+      "M-PRODUCT-01-C06": 10,
+      "M-BUY-01-C01": 10,
+      "M-BUY-01-C02": 10,
+      "M-BUY-01-C03": 10,
+      "M-BUY-01-C04": 10,
+      "M-BUY-01-C05": 10,
+      "M-BUY-01-C06": 10,
+      "M-BUY-01-C07": 10,
+      "M-BUY-01-C08": 10,
+      "M-AGREEMENT-01-C01": 10,
+      "M-AGREEMENT-01-C02": 10,
+      "M-CHECKOUT-01-C01": 10,
+      "M-CHECKOUT-01-C02": 10,
+      "M-CHECKOUT-01-C03": 10,
+      "M-PAYRET-01-C01": 10,
+      "M-PAYRET-01-C02": 10,
+      "M-PAYRET-01-C03": 10,
+      "M-RESULT-01-C01": 10,
+      "M-RESULT-01-C02": 10,
+      "M-RESULT-01-C03": 10,
+      "M-RESULT-01-C04": 10,
+      "M-RESULT-01-C05": 10,
+      "M-ORDER-DETAIL-01-C01": 10,
+      "M-ORDER-DETAIL-01-C02": 10,
+      "M-ORDER-DETAIL-01-C03": 10,
+      "M-ORDER-DETAIL-01-C04": 10,
+      "M-ORDER-DETAIL-01-C05": 10,
+      "M-ORDER-DETAIL-01-C06": 10,
+      "M-PROFILE-01-C01": 10,
+      "M-PROFILE-01-C02": 10,
+      "M-PHONE-01-C01": 10,
+      "M-PHONE-01-C02": 10,
+      "M-PHONE-01-C03": 10,
+      "M-PHONE-01-C04": 10,
+      "M-SERVICE-01-C01": 10,
+      "M-SERVICE-01-C02": 10,
+      "W-HOME-01-C01": 10,
+      "W-HOME-01-C02": 10,
+      "W-HOME-01-C03": 10,
+      "W-HOME-01-C04": 10,
+      "W-SEARCH-01-C01": 10,
+      "W-SEARCH-01-C02": 10,
+      "W-SEARCH-01-C03": 10,
+      "W-PRODUCT-01-C01": 10,
+      "W-PRODUCT-01-C02": 10,
+      "W-PRODUCT-01-C03": 10,
+      "W-PRODUCT-01-C04": 10,
+      "W-PRODUCT-01-C05": 10,
+      "W-PRODUCT-01-C06": 10,
+      "W-BUY-01-C01": 10,
+      "W-BUY-01-C02": 10,
+      "W-BUY-01-C03": 10,
+      "W-BUY-01-C04": 10,
+      "W-BUY-01-C05": 10,
+      "W-BUY-01-C06": 10,
+      "W-BUY-01-C07": 10,
+      "W-BUY-01-C08": 10,
+      "W-AGREEMENT-01-C01": 10,
+      "W-AGREEMENT-01-C02": 10,
+      "W-AGREEMENT-01-C03": 10,
+      "W-CHECKOUT-01-C01": 10,
+      "W-CHECKOUT-01-C02": 10,
+      "W-CHECKOUT-01-C03": 10,
+      "W-CHECKOUT-01-C04": 10,
+      "W-CHECKOUT-01-C05": 10,
+      "W-PAY-01-C01": 10,
+      "W-PAY-01-C02": 10,
+      "W-PAY-01-C03": 10,
+      "W-PAY-01-C04": 10,
+      "W-RESULT-01-C01": 10,
+      "W-RESULT-01-C02": 10,
+      "W-RESULT-01-C03": 10,
+      "W-RESULT-01-C04": 10,
+      "W-RESULT-01-C05": 10,
+      "W-RESULT-01-C06": 10,
+      "W-ORDER-LIST-01-C01": 10,
+      "W-ORDER-LIST-01-C02": 10,
+      "W-ORDER-DETAIL-01-C01": 10,
+      "W-ORDER-DETAIL-01-C02": 10,
+      "W-ORDER-DETAIL-01-C03": 10,
+      "W-ORDER-DETAIL-01-C04": 10,
+      "W-ORDER-DETAIL-01-C05": 10,
+      "W-ORDER-DETAIL-01-C06": 10,
+      "W-ORDER-DETAIL-01-C07": 10,
+      "W-PROFILE-01-C01": 10,
+      "W-PROFILE-01-C02": 10,
+      "W-PHONE-01-C01": 10,
+      "W-PHONE-01-C02": 10,
+      "W-PHONE-01-C03": 10,
+      "W-PHONE-01-C04": 10,
+      "W-PHONE-01-C05": 10,
+      "W-SERVICE-01-C01": 10,
+      "W-SERVICE-01-C02": 10,
+      "W-SERVICE-01-C03": 10,
+      "ADM-LOGIN-01-C01": 10,
+      "ADM-LOGIN-01-C02": 10,
+      "ADM-SELECT-01-C01": 10,
+      "ADM-SELECT-01-C02": 10,
+      "ADM-HOME-01-C01": 10,
+      "ADM-HOME-01-C02": 10,
+      "ADM-HOME-01-C03": 10,
+      "ADM-SUPPLIER-01-C01": 10,
+      "ADM-SUPPLIER-01-C02": 10,
+      "ADM-SUPPLIER-01-C03": 10,
+      "ADM-SUPPLIER-01-C04": 10,
+      "ADM-STOCK-01-C01": 10,
+      "ADM-STOCK-01-C02": 10,
+      "ADM-ORDER-01-C01": 10,
+      "ADM-GIFT-01-C01": 10,
+      "ADM-GIFT-01-C02": 10,
+      "ADM-CODE-01-C01": 10,
+      "ADM-CODE-01-C02": 10,
+      "ADM-REFUND-01-C01": 10,
+      "ADM-REFUND-01-C02": 10,
+      "ADM-SERVICE-01-C01": 10,
+      "ADM-SERVICE-01-C02": 10,
+      "ADM-SERVICE-01-C03": 10,
+      "ADM-ROLE-01-C01": 10,
+      "ADM-ROLE-01-C02": 10,
+      "ADM-ROLE-01-C03": 10,
+      "ADM-ROLE-01-C04": 10,
+      "ADM-AUDIT-01-C01": 10,
+      "ADM-AUDIT-01-C02": 10,
+      "ADM-AGREEMENT-01-C01": 10,
+      "ADM-AGREEMENT-01-C02": 10,
+      "ADM-AGREEMENT-01-C03": 10,
+      "ADM-AGREEMENT-01-C04": 10,
+      "ADM-SEARCH-01-C01": 10,
+      "ADM-SEARCH-01-C02": 10,
+      "ADM-SEARCH-01-C03": 10,
+      "ADM-SEARCH-01-C04": 10,
+      "ADM-PAYCHECK-01-C01": 10,
+      "ADM-PAYCHECK-01-C02": 10,
+      "ADM-NOTIFY-01-C01": 10,
+      "ADM-NOTIFY-01-C02": 10,
+      "ADM-WALLET-01-C01": 10,
+      "ADM-WALLET-01-C02": 10,
+      "ADM-WALLET-01-C03": 10,
+      "ADM-WALLET-01-C04": 10
+    }
+  },
+  "layout_result.json": {
+    "mFrame": {
+      "frame": [
+        320,
+        640
+      ],
+      "screen": [
+        288,
+        592
+      ],
+      "scroll": [
+        454,
+        985
+      ]
+    },
+    "modal": {
+      "inside": true,
+      "screen": [
+        489.3125,
+        1081.3125
+      ],
+      "sheet": [
+        561.125,
+        1080.3125
+      ],
+      "bodyLocked": true,
+      "focusIn": true
+    },
+    "inputGeometry": {
+      "input": {
+        "w": 260,
+        "h": 44,
+        "pad": "0px 10px",
+        "ws": "normal"
+      },
+      "checkbox": {
+        "w": 18,
+        "h": 18,
+        "pad": "0px",
+        "ws": "normal"
+      },
+      "radio": {
+        "w": 260,
+        "h": 51.5,
+        "pad": "7px",
+        "ws": "normal"
+      }
+    },
+    "w": {
+      "1440": {
+        "doc": 1440,
+        "win": 1440,
+        "bodyOverflow": false,
+        "site": 1392
+      },
+      "1920": {
+        "doc": 1920,
+        "win": 1920,
+        "bodyOverflow": false,
+        "site": 1432
+      }
+    },
+    "adm": {
+      "1440": {
+        "doc": 1440,
+        "win": 1440,
+        "bodyOverflow": false,
+        "content": [
+          1170,
+          1170
+        ],
+        "table": [
+          1128,
+          1128
+        ]
+      },
+      "1920": {
+        "doc": 1920,
+        "win": 1920,
+        "bodyOverflow": false,
+        "content": [
+          1210,
+          1210
+        ],
+        "table": [
+          1168,
+          1168
+        ]
+      }
+    },
+    "errors": []
+  },
+  "docs_sync_result.json": {
+    "docs": 9,
+    "same": 9,
+    "diff": [],
+    "switch": [
+      {
+        "file": "00_交付说明与变更记录.md",
+        "h1": "00_交付说明与变更记录",
+        "len": 4570
+      },
+      {
+        "file": "01_页面与状态说明.md",
+        "h1": "01_页面与状态说明",
+        "len": 119374
+      },
+      {
+        "file": "03_组件级文档.md",
+        "h1": "03_组件级文档",
+        "len": 244794
+      },
+      {
+        "file": "04_业务流程与异常规则.md",
+        "h1": "04_业务流程与异常规则",
+        "len": 40482
+      },
+      {
+        "file": "05_接口数据与权限说明.md",
+        "h1": "05_接口数据与权限说明",
+        "len": 35757
+      },
+      {
+        "file": "06_埋点文档.md",
+        "h1": "06_埋点文档",
+        "len": 1116
+      },
+      {
+        "file": "07_测试用例.md",
+        "h1": "07_测试用例",
+        "len": 35677
+      },
+      {
+        "file": "08_验证记录与验收映射.md",
+        "h1": "08_验证记录与验收映射",
+        "len": 29106
+      },
+      {
+        "file": "09_待确认事项与设计决策.md",
+        "h1": "09_待确认事项与设计决策",
+        "len": 3939
+      }
+    ]
+  },
+  "docs_integrity_result.json": {
+    "api": {
+      "refs": 38,
+      "defs": 38,
+      "missing": [],
+      "phone004": true,
+      "notifyNote": true
+    },
+    "tc": {
+      "defined": 102,
+      "exRefs": 29,
+      "missing": [],
+      "expected": 102
+    },
+    "pageIo": {
+      "genericEntry": false,
+      "genericExit": false,
+      "genericAction": false,
+      "rows": 43
+    },
+    "components": {
+      "defs": 173,
+      "instances": 277,
+      "defsInDoc": 173,
+      "orphanNote": true
+    },
+    "style": {
+      "checkbox18": 2,
+      "checkbox16Buy": 0,
+      "adminBatch16": 1
+    },
+    "diagram": {
+      "flows": 6,
+      "nodeRows": 84,
+      "aliasRows": 0,
+      "missingAlias": [],
+      "missingPuml": [],
+      "svgLintErrors": []
+    },
+    "pass": true
+  },
+  "final_manifest.json": {
+    "runId": "RUN-20261028-16-R1",
+    "batch": "BATCH-2026-10-28-16",
+    "status": "设计评审稿（含独立验收 RUN-001 修复批）",
+    "generatedAt": "2026-10-28",
+    "environment": "Windows 10 Home China 10.0.19045；Microsoft Edge 156.0.4314.50；Playwright headless；视口 1440×1000（另测 1920/1280/1024/700）",
+    "artifact": {
+      "file": "02_低保真交互原型.html",
+      "bytes": 2350151,
+      "sha256": "fe423bea2603f48e503a9af8fde45d15d45518343e4d5559a73627cb01fabc5a"
+    },
+    "prd": {
+      "file": "Steam商城_PRD_V1.6.md",
+      "version": "V1.6",
+      "status": "待评审",
+      "sha256": "4b66a358fc5d6181ca04203ebcd39be6340587311ac8202094eeee61a8b0fe01"
+    },
+    "standard": {
+      "version": "V3.0",
+      "layout": "modular-1",
+      "revision": "draft-20261028-trial15-required-check-gate",
+      "commit": "668b14d798ad49d247da50f3321613848c7b95fc"
+    },
+    "uiProfile": {
+      "id": "steam-mall-gray-v1",
+      "revision": "2026-10-28-r1",
+      "sha256": "bee5abafcf11ef288fd008c55c24030e455deaaa2bc1d484347647f93b2113ac"
+    },
+    "files": [
+      {
+        "file": "00_交付说明与变更记录.md",
+        "bytes": 9062,
+        "sha256": "e9487822befabc74235842ddcfc22c7226228941f099a7f82bdc0de1fd7a782c"
+      },
+      {
+        "file": "01_页面与状态说明.md",
+        "bytes": 218930,
+        "sha256": "8e00ea0d986d573b02303559f7a405b5f4463aeefa0bd33774225e04215993ca"
+      },
+      {
+        "file": "02_低保真交互原型.html",
+        "bytes": 2350151,
+        "sha256": "fe423bea2603f48e503a9af8fde45d15d45518343e4d5559a73627cb01fabc5a"
+      },
+      {
+        "file": "03_组件级文档.md",
+        "bytes": 623323,
+        "sha256": "dcee1bd347247ff4800f4b7867d69b00aa776bcd2512799aff92e5868294185e"
+      },
+      {
+        "file": "04_业务流程与异常规则.md",
+        "bytes": 70230,
+        "sha256": "d9c10069abe9d7e82f8a0b30a320d51d718070280a63fd24dfb05953502ac4a5"
+      },
+      {
+        "file": "05_接口数据与权限说明.md",
+        "bytes": 82078,
+        "sha256": "d986760bd217161d2f2e3a294e08be6c44683173c86852a51d636fd4ee101e13"
+      },
+      {
+        "file": "06_埋点文档.md",
+        "bytes": 2759,
+        "sha256": "d506c56d749bb9be590e5ec2eee0fccc97d3c98c47cd6ab70b24cf2d44c01428"
+      },
+      {
+        "file": "07_测试用例.md",
+        "bytes": 73271,
+        "sha256": "9ed434c02512744cdafbeeba0fa58600dd152fae9cbfbf8a18857d8d1921936b"
+      },
+      {
+        "file": "08_验证记录与验收映射.md",
+        "bytes": 47998,
+        "sha256": "977d46c5a326a5a02e3857bc2040d5feac28dda1d05cb89a97eb775ee3200b19"
+      },
+      {
+        "file": "09_待确认事项与设计决策.md",
+        "bytes": 9194,
+        "sha256": "43dfebdc2fca49d957099c15aec6585c5bdc5120eca60fcc800d3704dc799cc0"
+      }
+    ],
+    "evidence": [
+      {
+        "file": "_checks/acceptance_fixes_result.json",
+        "bytes": 3923,
+        "sha256": "39705aa65ad54b06a4f20dd4e9006d7694ad008fb3944f1825ad7bb331ddacca"
+      },
+      {
+        "file": "_checks/admin_actions_result.json",
+        "bytes": 866,
+        "sha256": "421fc515f521a6cf407fef30a5f32a13f8912651d701cf88bd65cd657c729f90"
+      },
+      {
+        "file": "_checks/admin_config_result.json",
+        "bytes": 617,
+        "sha256": "afe8a551c58950d1279927bf5516d6dc212dede1f3d3bd0e610a9035214e81be"
+      },
+      {
+        "file": "_checks/admin_order_result.json",
+        "bytes": 1346,
+        "sha256": "1dc578a322307312cbdba2481ba46c35d32c95fcb4cb11da06af124123effa99"
+      },
+      {
+        "file": "_checks/all_states_result.json",
+        "bytes": 72,
+        "sha256": "168326d575301923a9fa86ec41b62644bcfbdb478342e4b5aeea0b867a8ade26"
+      },
+      {
+        "file": "_checks/build_checks.txt",
+        "bytes": 109,
+        "sha256": "f7e199f299073aa1dd2e9ac7ec4fe081d45ed46a8b99bd598fca5caeada92c5a"
+      },
+      {
+        "file": "_checks/build_report.json",
+        "bytes": 13872,
+        "sha256": "e4d64e47fd44457352704a783b9b06f21e3ffc85421c52de8166b4b6023cbf9b"
+      },
+      {
+        "file": "_checks/components_result.json",
+        "bytes": 83,
+        "sha256": "91588219daa140b86f723424b662cdd5253964d075b02565c6966e1320a66887"
+      },
+      {
+        "file": "_checks/counts.json",
+        "bytes": 182,
+        "sha256": "005195e0a7d1c74eb55cdb1fb94de0fc42502e7216e399cbc34be16b7a50d943"
+      },
+      {
+        "file": "_checks/delete_result.json",
+        "bytes": 131,
+        "sha256": "45c5bad69f48ec8e052866c40ad32557ef5d8df822dac2b917582ed4babc6576"
+      },
+      {
+        "file": "_checks/docs_integrity_result.json",
+        "bytes": 676,
+        "sha256": "b1cf898a983846686446bd52463e3c45f8ab03820da7d962392fecdab926951a"
+      },
+      {
+        "file": "_checks/docs_sync_result.json",
+        "bytes": 1130,
+        "sha256": "c69deff48e1eca20648adc99b3671c45ded719a9f3b8abb66d716c01236596e5"
+      },
+      {
+        "file": "_checks/dom_ids_result.json",
+        "bytes": 34,
+        "sha256": "78fed70851e066a2d811d048474ad0c5f6cea451aea4cde2cb9e4b93838e35ca"
+      },
+      {
+        "file": "_checks/file_manifest.json",
+        "bytes": 1714,
+        "sha256": "1e0e48f0e1d7774611e5244d1ee125665d5c873a18335a10a26409b3b2aa47b4"
+      },
+      {
+        "file": "_checks/focus_result.json",
+        "bytes": 170,
+        "sha256": "44ad4cf96b9275a28b8d3cf95f2aa7ab6ecc29ff404b8dd44bb7944fd55fc06a"
+      },
+      {
+        "file": "_checks/hosts_result.json",
+        "bytes": 448,
+        "sha256": "762105489929f3338ed7c7e56b699e5c1b7c9bb262801f7fa89a23050a0b67d5"
+      },
+      {
+        "file": "_checks/layout_result.json",
+        "bytes": 1305,
+        "sha256": "d906802cd6a16c5c60cb1a47edd8ad2d9472641a9478b3afa4c03b5fed82253d"
+      },
+      {
+        "file": "_checks/m_result.json",
+        "bytes": 1972,
+        "sha256": "6760ae94dd96c8dff839c697703110e08316575415d5eb1d05b413685eaf5076"
+      },
+      {
+        "file": "_checks/main_flow_result.json",
+        "bytes": 135,
+        "sha256": "3d2e5b63eea444948435d8eb8c5b1c56572be4ef7a91bf71d5a4d59078ef0548"
+      },
+      {
+        "file": "_checks/narrow_result.json",
+        "bytes": 613,
+        "sha256": "8ca9ce0b41337126ff375dbd87fe860e07bd6ecf911974a2d32269d1bc8c14c5"
+      },
+      {
+        "file": "_checks/payret_result.json",
+        "bytes": 44,
+        "sha256": "c16d17e673c74c36e781961c79306af589ee295a2225f65da652795f227c7c6d"
+      },
+      {
+        "file": "_checks/reader_result.json",
+        "bytes": 534,
+        "sha256": "73deb863151a11ee16177ef555017cee2bf8a348e42d174e360685ecce18d52c"
+      },
+      {
+        "file": "_checks/required_check_result.json",
+        "bytes": 280,
+        "sha256": "57fb69732f0da42df55ee06bad0206d0e11bb6104497370ffb99a54c3024b7ca"
+      },
+      {
+        "file": "_checks/required_check_set.json",
+        "bytes": 7193,
+        "sha256": "bdf5be033b81331af012138b773621e2fff3b8438e6e654c9199105ebc79e517"
+      },
+      {
+        "file": "_checks/verification_summary.json",
+        "bytes": 85,
+        "sha256": "57bbc8b5613e1978119a4a4c89bb8e975d9d9787c47c09deae24ae9390fbe99c"
+      },
+      {
+        "file": "_checks/w_result.json",
+        "bytes": 1494,
+        "sha256": "fd00cd39c3a4f32e70c071e961372b9455c908f2e4cdebade08e481977ac0b44"
+      },
+      {
+        "file": "_checks/校验说明.md",
+        "bytes": 6864,
+        "sha256": "d3cfa45b0ac0f0b0d3dc8e8275a1df4c02bf22618e69f8590c66077a8eadd8d8"
+      }
+    ],
+    "evidenceNote": "final_manifest.json 不登记自身哈希；其余 _checks 文件均登记。"
+  }
+}

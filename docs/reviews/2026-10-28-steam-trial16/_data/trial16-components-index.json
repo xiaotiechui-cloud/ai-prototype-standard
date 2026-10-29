@@ -1,0 +1,1040 @@
+[
+  {
+    "id": "COM-CLIENT-C01",
+    "name": "搜索输入框",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "COM-CLIENT-C02",
+    "name": "搜索提交动作",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "COM-CLIENT-C03",
+    "name": "商品卡片",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "COM-CLIENT-C05",
+    "name": "排序栏",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "COM-CLIENT-C06",
+    "name": "商品卡片列表",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "COM-CLIENT-C07",
+    "name": "客服入口",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "COM-CLIENT-C08",
+    "name": "顶部标题栏",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "COM-CLIENT-C09",
+    "name": "加载/空/失败状态区",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "COM-CLIENT-C10",
+    "name": "商品明细卡",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "COM-CLIENT-C11",
+    "name": "状态筛选页签",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "COM-CLIENT-C12",
+    "name": "订单卡片列表",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "COM-CLIENT-C13",
+    "name": "登录失效引导",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "COM-CLIENT-C14",
+    "name": "底部标签栏",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-COMMON-C01",
+    "name": "左侧业务菜单",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-COMMON-C02",
+    "name": "顶部账号栏",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-COMMON-C03",
+    "name": "筛选区",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-COMMON-C04",
+    "name": "状态页签",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-COMMON-C05",
+    "name": "数据表格",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-COMMON-C06",
+    "name": "分页",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-COMMON-C07",
+    "name": "详情/编辑弹窗",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-COMMON-C08",
+    "name": "行选择与批量",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-COMMON-C09",
+    "name": "导出动作",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-COMMON-C10",
+    "name": "指标汇总卡",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-COMMON-C11",
+    "name": "空态/错误/无权限区",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-HOME-01-C01",
+    "name": "首页广告位",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-HOME-01-C02",
+    "name": "快捷导航",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-HOME-01-C03",
+    "name": "首次实名提醒层",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-SEARCH-01-C01",
+    "name": "搜索发现关键词",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-SEARCH-01-C02",
+    "name": "热门商品",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-PRODUCT-01-C01",
+    "name": "媒体图集",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-PRODUCT-01-C02",
+    "name": "商品信息区",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-PRODUCT-01-C03",
+    "name": "交付与限制",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-PRODUCT-01-C04",
+    "name": "商品介绍与购买须知",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-PRODUCT-01-C05",
+    "name": "底部购买栏",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-PRODUCT-01-C06",
+    "name": "关联订单提示",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-BUY-01-C01",
+    "name": "购买面板容器",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-BUY-01-C02",
+    "name": "规格选择",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-BUY-01-C03",
+    "name": "交付方式",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-BUY-01-C04",
+    "name": "好友链接输入",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-BUY-01-C05",
+    "name": "支付方式",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-BUY-01-C06",
+    "name": "协议勾选",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-BUY-01-C07",
+    "name": "购买须知层",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-BUY-01-C08",
+    "name": "购买提交区",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-AGREEMENT-01-C01",
+    "name": "协议正文",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-AGREEMENT-01-C02",
+    "name": "协议版本信息",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-CHECKOUT-01-C01",
+    "name": "协议与支付方式",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-CHECKOUT-01-C02",
+    "name": "底部继续支付",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-CHECKOUT-01-C03",
+    "name": "协议更新提示",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-PAYRET-01-C01",
+    "name": "支付返回询问层",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-PAYRET-01-C02",
+    "name": "查询中状态",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-PAYRET-01-C03",
+    "name": "无结论状态",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-RESULT-01-C01",
+    "name": "结果状态头部",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-RESULT-01-C02",
+    "name": "口令码交付卡",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-RESULT-01-C03",
+    "name": "好友赠送进度卡",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-RESULT-01-C04",
+    "name": "退款状态卡",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-RESULT-01-C05",
+    "name": "结果操作区",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-ORDER-DETAIL-01-C01",
+    "name": "订单状态横幅",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-ORDER-DETAIL-01-C02",
+    "name": "订单商品快照",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-ORDER-DETAIL-01-C03",
+    "name": "支付与协议信息",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-ORDER-DETAIL-01-C04",
+    "name": "交付记录",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-ORDER-DETAIL-01-C05",
+    "name": "退款记录",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-ORDER-DETAIL-01-C06",
+    "name": "订单操作区",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-PROFILE-01-C01",
+    "name": "个人卡",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-PROFILE-01-C02",
+    "name": "订单入口",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-PHONE-01-C01",
+    "name": "手机号输入",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-PHONE-01-C02",
+    "name": "验证码输入与发送",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-PHONE-01-C03",
+    "name": "隐私告知",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-PHONE-01-C04",
+    "name": "绑定提交",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-SERVICE-01-C01",
+    "name": "客服说明卡",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "M-SERVICE-01-C02",
+    "name": "订单号复制",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-HOME-01-C01",
+    "name": "站点顶栏",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-HOME-01-C02",
+    "name": "首页广告位",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-HOME-01-C03",
+    "name": "快捷导航",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-HOME-01-C04",
+    "name": "首次实名提醒层",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-SEARCH-01-C01",
+    "name": "站点顶栏",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-SEARCH-01-C02",
+    "name": "搜索发现关键词",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-SEARCH-01-C03",
+    "name": "热门商品",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-PRODUCT-01-C01",
+    "name": "站点顶栏",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-PRODUCT-01-C02",
+    "name": "媒体区",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-PRODUCT-01-C03",
+    "name": "商品信息与购买卡",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-PRODUCT-01-C04",
+    "name": "介绍与购买须知",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-PRODUCT-01-C05",
+    "name": "关联订单提示",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-PRODUCT-01-C06",
+    "name": "返回入口",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-BUY-01-C01",
+    "name": "居中购买面板",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-BUY-01-C02",
+    "name": "规格选择",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-BUY-01-C03",
+    "name": "交付方式",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-BUY-01-C04",
+    "name": "好友链接输入",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-BUY-01-C05",
+    "name": "支付方式",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-BUY-01-C06",
+    "name": "协议勾选",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-BUY-01-C07",
+    "name": "购买须知层",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-BUY-01-C08",
+    "name": "购买提交区",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-AGREEMENT-01-C01",
+    "name": "页面标题栏",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-AGREEMENT-01-C02",
+    "name": "协议正文",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-AGREEMENT-01-C03",
+    "name": "协议版本信息",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-CHECKOUT-01-C01",
+    "name": "页面标题栏",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-CHECKOUT-01-C02",
+    "name": "订单明细与协议",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-CHECKOUT-01-C03",
+    "name": "协议更新提示",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-CHECKOUT-01-C04",
+    "name": "结算栏",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-CHECKOUT-01-C05",
+    "name": "继续支付动作",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-PAY-01-C01",
+    "name": "扫码支付弹层",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-PAY-01-C02",
+    "name": "二维码占位",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-PAY-01-C03",
+    "name": "支付状态",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-PAY-01-C04",
+    "name": "扫码操作区",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-RESULT-01-C01",
+    "name": "结果状态头部",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-RESULT-01-C02",
+    "name": "订单摘要",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-RESULT-01-C03",
+    "name": "口令码交付卡",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-RESULT-01-C04",
+    "name": "好友赠送进度卡",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-RESULT-01-C05",
+    "name": "退款状态卡",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-RESULT-01-C06",
+    "name": "结果操作区",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-ORDER-LIST-01-C01",
+    "name": "页面标题栏",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-ORDER-LIST-01-C02",
+    "name": "订单表格",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-ORDER-DETAIL-01-C01",
+    "name": "详情标题栏",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-ORDER-DETAIL-01-C02",
+    "name": "订单状态横幅",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-ORDER-DETAIL-01-C03",
+    "name": "订单商品快照",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-ORDER-DETAIL-01-C04",
+    "name": "支付与协议信息",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-ORDER-DETAIL-01-C05",
+    "name": "交付记录",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-ORDER-DETAIL-01-C06",
+    "name": "退款记录",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-ORDER-DETAIL-01-C07",
+    "name": "订单操作区",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-PROFILE-01-C01",
+    "name": "账号卡",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-PROFILE-01-C02",
+    "name": "订单入口",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-PHONE-01-C01",
+    "name": "页面标题栏",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-PHONE-01-C02",
+    "name": "手机号输入",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-PHONE-01-C03",
+    "name": "验证码输入与发送",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-PHONE-01-C04",
+    "name": "隐私告知",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-PHONE-01-C05",
+    "name": "绑定提交",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-SERVICE-01-C01",
+    "name": "客服说明卡",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-SERVICE-01-C02",
+    "name": "订单号复制",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "W-SERVICE-01-C03",
+    "name": "添加入口",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-LOGIN-01-C01",
+    "name": "登录表单",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-LOGIN-01-C02",
+    "name": "登录提交",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-SELECT-01-C01",
+    "name": "选品页标题与操作",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-SELECT-01-C02",
+    "name": "商品校验与内容区",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-HOME-01-C01",
+    "name": "首页配置操作区",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-HOME-01-C02",
+    "name": "首页配置区块列表",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-HOME-01-C03",
+    "name": "首页预览层",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-SUPPLIER-01-C01",
+    "name": "供应商页标题",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-SUPPLIER-01-C02",
+    "name": "供应商配置表单",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-SUPPLIER-01-C03",
+    "name": "gid 映射表",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-SUPPLIER-01-C04",
+    "name": "组合商品白名单",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-STOCK-01-C01",
+    "name": "库存页标题",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-STOCK-01-C02",
+    "name": "库存新鲜度与停售说明",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-ORDER-01-C01",
+    "name": "订单页标题与导出",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-GIFT-01-C01",
+    "name": "赠送页标题与批次操作",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-GIFT-01-C02",
+    "name": "批次成员与完成确认",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-CODE-01-C01",
+    "name": "交付页标题",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-CODE-01-C02",
+    "name": "重试/补发弹窗",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-REFUND-01-C01",
+    "name": "退款页标题与权限提示",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-REFUND-01-C02",
+    "name": "退款审核/执行弹窗",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-SERVICE-01-C01",
+    "name": "客服配置标题",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-SERVICE-01-C02",
+    "name": "客服配置表单",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-SERVICE-01-C03",
+    "name": "客服配置预览",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-ROLE-01-C01",
+    "name": "权限页标题",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-ROLE-01-C02",
+    "name": "账号列表",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-ROLE-01-C03",
+    "name": "角色权限矩阵",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-ROLE-01-C04",
+    "name": "权限分配弹窗",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-AUDIT-01-C01",
+    "name": "操作记录页标题",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-AUDIT-01-C02",
+    "name": "前后值详情",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-AGREEMENT-01-C01",
+    "name": "协议页标题与发布",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-AGREEMENT-01-C02",
+    "name": "协议版本列表",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-AGREEMENT-01-C03",
+    "name": "协议编辑/预览弹窗",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-AGREEMENT-01-C04",
+    "name": "发布确认区",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-SEARCH-01-C01",
+    "name": "搜索推荐页标题",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-SEARCH-01-C02",
+    "name": "关键词配置",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-SEARCH-01-C03",
+    "name": "热门商品配置",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-SEARCH-01-C04",
+    "name": "排序操作",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-PAYCHECK-01-C01",
+    "name": "支付核查页标题",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-PAYCHECK-01-C02",
+    "name": "核查弹窗与证据",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-NOTIFY-01-C01",
+    "name": "通知页标题",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-NOTIFY-01-C02",
+    "name": "通知详情与重试",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-WALLET-01-C01",
+    "name": "钱包页标题与刷新",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-WALLET-01-C02",
+    "name": "余额指标卡",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-WALLET-01-C03",
+    "name": "阈值配置",
+    "def": null,
+    "sections": 10
+  },
+  {
+    "id": "ADM-WALLET-01-C04",
+    "name": "余额历史与停售记录",
+    "def": null,
+    "sections": 10
+  }
+]

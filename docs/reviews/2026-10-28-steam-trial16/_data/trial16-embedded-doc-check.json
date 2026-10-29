@@ -1,0 +1,65 @@
+[
+  {
+    "file": "00_交付说明与变更记录.md",
+    "exists": true,
+    "match": true,
+    "embedded_sha256": "9242a070dadb263763fcc2d2e95b524effe43bda5a9c6eb21910d75b8d3d5542",
+    "external_sha256": "9242a070dadb263763fcc2d2e95b524effe43bda5a9c6eb21910d75b8d3d5542"
+  },
+  {
+    "file": "01_页面与状态说明.md",
+    "exists": true,
+    "match": true,
+    "embedded_sha256": "1986814f8684782c4aaf24327fe668044b2a0806bcbd9e451d1a958ee626bd23",
+    "external_sha256": "1986814f8684782c4aaf24327fe668044b2a0806bcbd9e451d1a958ee626bd23"
+  },
+  {
+    "file": "03_组件级文档.md",
+    "exists": true,
+    "match": true,
+    "embedded_sha256": "f4020b8a8bc475b29f48f1fb97cc6aeb4764d46fa9422a2d839a3573370ef0c2",
+    "external_sha256": "f4020b8a8bc475b29f48f1fb97cc6aeb4764d46fa9422a2d839a3573370ef0c2"
+  },
+  {
+    "file": "04_业务流程与异常规则.md",
+    "exists": true,
+    "match": true,
+    "embedded_sha256": "220611d21a666b0e595344a5521d6f2ee1c7f324ef283a308b190f3434b78108",
+    "external_sha256": "220611d21a666b0e595344a5521d6f2ee1c7f324ef283a308b190f3434b78108"
+  },
+  {
+    "file": "05_接口数据与权限说明.md",
+    "exists": true,
+    "match": true,
+    "embedded_sha256": "cda183d7415dfe6cf927a89c684392953a06d0c9af202f91117086dce112de1b",
+    "external_sha256": "cda183d7415dfe6cf927a89c684392953a06d0c9af202f91117086dce112de1b"
+  },
+  {
+    "file": "06_埋点文档.md",
+    "exists": true,
+    "match": true,
+    "embedded_sha256": "6469ac3af96c23ed7c0fd71cfd66644959114ec9c7d785e970f35769679ac74d",
+    "external_sha256": "6469ac3af96c23ed7c0fd71cfd66644959114ec9c7d785e970f35769679ac74d"
+  },
+  {
+    "file": "07_测试用例.md",
+    "exists": true,
+    "match": true,
+    "embedded_sha256": "0f6031309cba50b95bf0bb78e3a4bdacc0fde8e65bc3028292c53fca46b0ce6f",
+    "external_sha256": "0f6031309cba50b95bf0bb78e3a4bdacc0fde8e65bc3028292c53fca46b0ce6f"
+  },
+  {
+    "file": "08_验证记录与验收映射.md",
+    "exists": true,
+    "match": true,
+    "embedded_sha256": "b5818202a66999f6c1f015d0510f9a8f71cbc0960460fc5af8edaf5eab958dd9",
+    "external_sha256": "b5818202a66999f6c1f015d0510f9a8f71cbc0960460fc5af8edaf5eab958dd9"
+  },
+  {
+    "file": "09_待确认事项与设计决策.md",
+    "exists": true,
+    "match": true,
+    "embedded_sha256": "a3e11cbaf81e9d1e31c24a463ee49aa74603c828f97436607d8621aaefab45eb",
+    "external_sha256": "a3e11cbaf81e9d1e31c24a463ee49aa74603c828f97436607d8621aaefab45eb"
+  }
+]

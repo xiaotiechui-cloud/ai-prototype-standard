@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-29",
+  "content_revision": "draft-20261029-trial16-model-coverage",
+  "commands": [
+    {
+      "command": "D:\\Tools\\Python\\cpython-3.11.15-windows-x86_64-none\\python.exe tools/maintain.py verify",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "PASS: archive SHA-256; 45 source sections; 16 modules; 10 stable rule IDs; dependency routes; 12 opt-in resources; 694 links; 9 starter templates"
+    },
+    {
+      "command": "D:\\Tools\\Python\\cpython-3.11.15-windows-x86_64-none\\python.exe tools/maintain.py pack --stage verify --profiles client web admin --name trial16-default-verify",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "PASS: archive SHA-256; 45 source sections; 16 modules; 10 stable rule IDs; dependency routes; 12 opt-in resources; 694 links; 9 starter templates\nPACK: 6 modules; 103188 UTF-8 bytes vs baseline 191673 bytes (not a token estimate)\nCREATED: exports/trial16-default-verify.md"
+    },
+    {
+      "command": "D:\\Tools\\Python\\cpython-3.11.15-windows-x86_64-none\\python.exe tools/maintain.py pack --stage verify --profiles client web admin --support acceptance-selftest --name trial16-coverage-pilot",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "PASS: archive SHA-256; 45 source sections; 16 modules; 10 stable rule IDs; dependency routes; 12 opt-in resources; 694 links; 9 starter templates\nPACK: 6 modules; 178707 UTF-8 bytes vs baseline 191673 bytes (not a token estimate)\nCREATED: exports/trial16-coverage-pilot.md"
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": ""
+    },
+    {
+      "command": "D:\\Tools\\Python\\cpython-3.11.15-windows-x86_64-none\\python.exe tools/check_required_check_set.py docs/acceptance/required-check-set-v2.example.json --root .",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "purpose": "placeholder skeleton must not be gate-ready"
+    }
+  ],
+  "unit_tests": {
+    "command": "D:\\Tools\\Python\\cpython-3.11.15-windows-x86_64-none\\python.exe -m unittest discover -s tools -p test_*.py",
+    "exit_code": 0,
+    "tests_run": 43,
+    "result": "OK",
+    "scope": "protocol/declaration unit tests, not project browser"
+  },
+  "archive_bytes_unchanged": true,
+  "archive_sha256": {
+    "archive/AI原型图与组件级文档说明标准_V3.0.md": "d0c411cec047e0e2387a7a3c8f50f56cbbb7c8a2d4f88e6080ecf6a0ed4ba0ec"
+  },
+  "default_routes_unchanged": true,
+  "other_support_resources_unchanged": true,
+  "old_selftest_paths_retained": true,
+  "tool_and_method_sha256": {
+    "tools/check_required_check_set.py": "39a06ee8775eaed15d889b6cdeb203cd55b53ed551cc949bc6569b9af1e84ab1",
+    "tools/test_required_check_coverage.py": "9e52f77129bdc7de092fd2a7e7e09d84fb2d3552d78eb4f64b87cbd998a293b8",
+    "tools/check_navigation_model.py": "5f0b4ae15a7077b391754175a15cf6a30a27753d200417872913ab7d69c0d7d2",
+    "tools/test_navigation_model.py": "667d9554014ad1b9e7c1136dfa67220d8bdd878a3a0b8b50113c36157f95ac93",
+    "docs/acceptance/model-coverage.md": "f2eff4adb2d0091426d41b9200549033665f9b16c72f97d6989b69689a0b8946",
+    "standard-manifest.json": "93b67b97b9859f4c324be85ecd230bf155934a5840dfd0689af553976dfcacd4"
+  },
+  "current_project_html_sha256": "6943e1f3eb7a8728655b82fddcf100c2e80f5bd8dafba7a0a24867d35f676648",
+  "project_browser_rerun_this_turn": false,
+  "independent_RUN_002_created": false,
+  "historical_18_DEF_actual_regression_executed": false,
+  "v2_status": "optional declared-inventory protocol pilot",
+  "committed": false,
+  "pushed": false
+}

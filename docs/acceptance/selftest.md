@@ -37,3 +37,5 @@
 需要把本轮必须执行的检查固定成一个可失败的集合时，可按 [required-check-set.example.json](required-check-set.example.json) 建立项目自己的计划，然后运行 `python tools/check_required_check_set.py <required-check-set.json> --root <project-root>`；反例测试为 `python tools/test_required_check_set.py`。该门控会核对当前产物原字节哈希、计划与结果 ID、严格状态、必需项执行状态、证据文件哈希、最低证据基础和由明细派生的汇总。`dom-only`、`toast-only`、历史截图或提供方自报不能作为必需项的通过依据；缺项或未验证只能保留未验证并阻止 gate-ready。它仍不能证明浏览器动作真实发生，不能替代 08，也不能把门控通过解释为项目验收通过。
 
 输入组件可按需读取 [input-kit](../../reference/implementations/input-kit/README.md)；同宿主混排、长标签及真实操作的项目集成结果单独记录。DEC 多视图检查按 decisions28.2～28.4 对齐当前 ID/状态/依据，合法历史变化与实施进度不判为批准。
+
+模型派生覆盖、导航同源声明检查与连续旅程执行按[模型覆盖方法](model-coverage.md)选择required-check-set-2试点。固定最小检查与派生职责分开统计；来源冻结、全部职责映射、同一运行和当前证据哈希均须有效。v1仅证明旧计划集合；工具不证明模型完整或真实浏览器行为，尚需新独立RUN验证检出/误报能力。

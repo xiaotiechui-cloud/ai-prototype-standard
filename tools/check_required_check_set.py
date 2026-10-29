@@ -5,7 +5,8 @@ fixed plan is complete, the declared artifact is current, required results are
 explicit and evidence files are bound to this run. It cannot prove that a
 browser action really happened or that a project rule is correct.
 
-Protocol: required-check-set-1
+Protocols: required-check-set-1 (legacy plan only), required-check-set-2
+(also checks a separately frozen model-derived coverage inventory).
 """
 import argparse
 import hashlib
@@ -13,9 +14,151 @@ import json
 from pathlib import Path
 
 PROTOCOL = 'required-check-set-1'
+MODEL_PROTOCOL = 'required-check-set-2'
 STATUSES = ('pass', 'fail', 'unverified', 'blocked', 'not_applicable')
 DISALLOWED_BASES = {'dom-only', 'toast-only', 'historical', 'self-report',
-                    'static-claim', 'screenshot-only'}
+                    'static-claim', 'screenshot-only', 'render-only'}
+
+
+def validate_coverage(data, root, plan_by_id, check_by_id, errors):
+    """Validate declared coverage, not the truth/completeness of its source model.
+
+    The inventory is a separately hashed pre-execution input. It must not be
+    regenerated from the checks that happened to pass.
+    """
+    coverage = data.get('coverage')
+    if type(coverage) is not dict:
+        errors.append('v2 requires coverage inventory binding')
+        return {}
+    try:
+        path = resolve(root, coverage.get('path'))
+        if digest(path) != coverage.get('sha256'):
+            errors.append('coverage inventory sha256 mismatch')
+        inventory = json.loads(path.read_text(encoding='utf-8-sig'))
+    except (ValueError, OSError) as exc:
+        errors.append(f'coverage inventory: {exc}')
+        return {}
+    if type(inventory) is not dict:
+        errors.append('coverage inventory must be an object')
+        return {}
+    for field in ('plan_version', 'derivation_method', 'scope_review'):
+        if type(inventory.get(field)) is not str or not inventory[field].strip():
+            errors.append(f'coverage.{field} is required')
+    sources = inventory.get('sources')
+    if type(sources) is not list or not sources:
+        errors.append('coverage.sources must bind current model/document bytes')
+        sources = []
+    source_ids = set()
+    for source in sources:
+        if (type(source) is not dict or type(source.get('id')) is not str
+                or not source['id'].strip()):
+            errors.append('coverage source requires id/path/sha256')
+            continue
+        if source['id'] in source_ids:
+            errors.append('duplicate coverage source: ' + source['id'])
+        source_ids.add(source['id'])
+        try:
+            if digest(resolve(root, source.get('path'))) != source.get('sha256'):
+                errors.append('coverage source sha256 mismatch: ' + source['id'])
+        except (ValueError, OSError) as exc:
+            errors.append(f'coverage source: {exc}')
+    duties = inventory.get('obligations')
+    if type(duties) is not list or not duties:
+        errors.append('coverage.obligations must be nonempty')
+        duties = []
+    known = {}
+    browser_kinds = {'p0-journey', 'risk-positive', 'risk-negative', 'navigation', 'layout'}
+    kinds = browser_kinds | {'diagram', 'references'}
+    for duty in duties:
+        if type(duty) is not dict or type(duty.get('id')) is not str or not duty['id'].strip():
+            errors.append('coverage obligation requires nonempty id')
+            continue
+        duty_id = duty['id']
+        if duty_id in known:
+            errors.append('duplicate obligation: ' + duty_id)
+        known[duty_id] = duty
+        for field in ('end', 'source_locator', 'expected'):
+            if type(duty.get(field)) is not str or not duty[field].strip():
+                errors.append(f'obligation[{duty_id}].{field} is required')
+        if type(duty.get('source_id')) is not str or duty['source_id'] not in source_ids:
+            errors.append(f'obligation[{duty_id}] has unknown source')
+        if type(duty.get('kind')) is not str or duty['kind'] not in kinds:
+            errors.append(f'obligation[{duty_id}] has unknown kind')
+        if type(duty.get('kind')) is str and duty['kind'] in browser_kinds:
+            for field in ('entry', 'unchanged'):
+                if type(duty.get(field)) is not str or not duty[field].strip():
+                    errors.append(f'obligation[{duty_id}].{field} is required')
+
+    ends = inventory.get('ends')
+    if type(ends) is not list or not ends or any(type(v) is not str or not v.strip() for v in ends):
+        errors.append('coverage.ends must list applicable project ends')
+        ends = []
+    if len(set(ends)) != len(ends):
+        errors.append('duplicate coverage end')
+    for end in ends:
+        if not any(d.get('kind') == 'p0-journey' and d.get('end') == end for d in known.values()):
+            errors.append('missing P0 journey for end: ' + end)
+    for duty_id, duty in known.items():
+        if duty.get('end') not in ends:
+            errors.append(f'obligation[{duty_id}] end outside declared scope')
+
+    links = {duty_id: [] for duty_id in known}
+    for check_id, item in plan_by_id.items():
+        if item.get('origin') not in ('fixed', 'derived'):
+            errors.append(f'plan[{check_id}].origin must be fixed or derived')
+        covers = item.get('covers')
+        if type(covers) is not list or any(type(v) is not str for v in covers):
+            errors.append(f'plan[{check_id}].covers must be a string list')
+            continue
+        if item.get('origin') == 'derived' and not covers:
+            errors.append(f'plan[{check_id}] derived item requires obligations')
+        for duty_id in covers:
+            if duty_id not in known:
+                errors.append(f'plan[{check_id}] unknown obligation: {duty_id}')
+                continue
+            links[duty_id].append(check_id)
+            if item.get('required') is not True or item.get('evidence_required') is not True:
+                errors.append(f'obligation[{duty_id}] must map to required evidenced checks')
+            kind = known[duty_id].get('kind')
+            if type(kind) is str and kind in browser_kinds and item.get('minimum_basis') != ['browser']:
+                errors.append(f'obligation[{duty_id}] requires real browser basis')
+    for duty_id, linked in links.items():
+        if not linked:
+            errors.append('uncovered obligation: ' + duty_id)
+
+    run_id = data.get('run_id')
+    if type(run_id) is not str or not run_id.strip():
+        errors.append('v2 requires run_id')
+    for check_id, result in check_by_id.items():
+        if result.get('run_id') != run_id:
+            errors.append(f'checks[{check_id}] run_id mismatch')
+        if result.get('basis') == 'browser' and result.get('executed') is True:
+            environment = result.get('environment', {})
+            if type(environment) is not dict:
+                environment = {}
+            viewport = environment.get('viewport')
+            zoom = environment.get('zoom')
+            if (type(viewport) is not list or len(viewport) != 2 or
+                    any(type(v) is not int or v <= 0 for v in viewport) or
+                    type(zoom) not in (int, float) or not 0 < zoom < 1000 or
+                    not isinstance(environment.get('browser'), str) or not environment['browser'].strip()):
+                errors.append(f'checks[{check_id}] requires browser/viewport/zoom environment')
+
+    def passed(check_id):
+        row = check_by_id.get(check_id, {})
+        return row.get('status') == 'pass' and row.get('executed') is True
+
+    fixed = [cid for cid, item in plan_by_id.items()
+             if item.get('origin') == 'fixed' and item.get('required') is True]
+    if not fixed:
+        errors.append('v2 must retain fixed minimum checks')
+    return {
+        'fixed_required_total': len(fixed),
+        'fixed_required_pass': sum(passed(cid) for cid in fixed),
+        'derived_total': len(known),
+        'derived_covered': sum(bool(ids) for ids in links.values()),
+        'derived_pass': sum(bool(ids) and all(passed(cid) for cid in ids) for ids in links.values()),
+    }
 
 
 def resolve(root, relative):
@@ -42,8 +185,8 @@ def validate(data, root):
     errors = []
     if type(data) is not dict:
         return ['root must be an object'], None
-    if data.get('protocol') != PROTOCOL:
-        errors.append(f'protocol must be {PROTOCOL}')
+    if data.get('protocol') not in (PROTOCOL, MODEL_PROTOCOL):
+        errors.append(f'protocol must be {PROTOCOL} or {MODEL_PROTOCOL}')
 
     artifact = data.get('artifact')
     artifact_ok = False
@@ -177,6 +320,9 @@ def validate(data, root):
         result = check_by_id.get(check_id)
         if result and result.get('status') == 'pass' and result.get('executed') is True:
             required_pass += 1
+    coverage_counts = {}
+    if data.get('protocol') == MODEL_PROTOCOL:
+        coverage_counts = validate_coverage(data, root, plan_by_id, check_by_id, errors)
     gate_ready = not errors and artifact_ok and required_pass == len(required_ids)
     counts = _count(statuses)
     derived = {
@@ -184,6 +330,7 @@ def validate(data, root):
         'planned_total': len(plan_by_id),
         'required_total': len(required_ids),
         'required_pass': required_pass,
+        **coverage_counts,
         'gate_ready': gate_ready,
     }
     summary = data.get('summary')
@@ -197,6 +344,8 @@ def validate(data, root):
 def assess(data, root):
     errors, derived = validate(data, root)
     return {
+        'coverage_scope': ('declared-model-inventory' if isinstance(data, dict) and data.get('protocol') == MODEL_PROTOCOL
+                           else 'legacy-plan-only'),
         'protocol_valid': not errors,
         'gate_ready': bool(derived and not errors and derived['gate_ready']),
         'errors': errors,

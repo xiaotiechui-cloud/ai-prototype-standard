@@ -1,0 +1,266 @@
+[
+  {
+    "id": "FL-ORDER-001",
+    "title": "浏览到支付完成的购买主流程",
+    "type": "FL 业务流程",
+    "source_chars": 2146,
+    "svg_chars": 28409,
+    "w": 965,
+    "h": 2061,
+    "empty_svg_text_elements": 0,
+    "lint": {
+      "textCount": 45,
+      "emptyText": 0,
+      "entityCount": 0
+    },
+    "svgLint": {
+      "aliasTextLeak": 0,
+      "labelMissing": 0,
+      "errors": []
+    }
+  },
+  {
+    "id": "FL-PAY-002",
+    "title": "支付返回、确认中与晚到款",
+    "type": "FL 业务流程",
+    "source_chars": 1352,
+    "svg_chars": 19042,
+    "w": 1037,
+    "h": 1416,
+    "empty_svg_text_elements": 0,
+    "lint": {
+      "textCount": 31,
+      "emptyText": 0,
+      "entityCount": 0
+    },
+    "svgLint": {
+      "aliasTextLeak": 0,
+      "labelMissing": 0,
+      "errors": []
+    }
+  },
+  {
+    "id": "FL-CODE-001",
+    "title": "口令码自动交付与 24 小时重试",
+    "type": "FL 业务流程",
+    "source_chars": 1393,
+    "svg_chars": 18946,
+    "w": 1084,
+    "h": 1416,
+    "empty_svg_text_elements": 0,
+    "lint": {
+      "textCount": 30,
+      "emptyText": 0,
+      "entityCount": 0
+    },
+    "svgLint": {
+      "aliasTextLeak": 0,
+      "labelMissing": 0,
+      "errors": []
+    }
+  },
+  {
+    "id": "FL-GIFT-001",
+    "title": "好友赠送人工交付与批次",
+    "type": "FL 业务流程",
+    "source_chars": 1127,
+    "svg_chars": 15432,
+    "w": 762,
+    "h": 1416,
+    "empty_svg_text_elements": 0,
+    "lint": {
+      "textCount": 25,
+      "emptyText": 0,
+      "entityCount": 0
+    },
+    "svgLint": {
+      "aliasTextLeak": 0,
+      "labelMissing": 0,
+      "errors": []
+    }
+  },
+  {
+    "id": "FL-REFUND-001",
+    "title": "退款闭环：系统闭集与特殊退款",
+    "type": "FL 业务流程",
+    "source_chars": 1281,
+    "svg_chars": 19053,
+    "w": 1002,
+    "h": 1447,
+    "empty_svg_text_elements": 0,
+    "lint": {
+      "textCount": 31,
+      "emptyText": 0,
+      "entityCount": 0
+    },
+    "svgLint": {
+      "aliasTextLeak": 0,
+      "labelMissing": 0,
+      "errors": []
+    }
+  },
+  {
+    "id": "FL-GOODS-001",
+    "title": "供应商选品到前台发布",
+    "type": "FL 业务流程",
+    "source_chars": 1248,
+    "svg_chars": 16593,
+    "w": 825,
+    "h": 1287,
+    "empty_svg_text_elements": 0,
+    "lint": {
+      "textCount": 26,
+      "emptyText": 0,
+      "entityCount": 0
+    },
+    "svgLint": {
+      "aliasTextLeak": 0,
+      "labelMissing": 0,
+      "errors": []
+    }
+  },
+  {
+    "id": "SM-PAY-001",
+    "title": "支付状态机",
+    "type": "SM 状态机",
+    "source_chars": 413,
+    "svg_chars": 6503,
+    "w": 422,
+    "h": 401,
+    "empty_svg_text_elements": 0,
+    "lint": {
+      "textCount": 10,
+      "emptyText": 0,
+      "entityCount": 0
+    },
+    "svgLint": null
+  },
+  {
+    "id": "SM-CODE-001",
+    "title": "口令码交付状态机",
+    "type": "SM 状态机",
+    "source_chars": 406,
+    "svg_chars": 6367,
+    "w": 358,
+    "h": 530,
+    "empty_svg_text_elements": 0,
+    "lint": {
+      "textCount": 10,
+      "emptyText": 0,
+      "entityCount": 0
+    },
+    "svgLint": null
+  },
+  {
+    "id": "SM-GIFT-001",
+    "title": "好友赠送状态机",
+    "type": "SM 状态机",
+    "source_chars": 361,
+    "svg_chars": 5721,
+    "w": 227,
+    "h": 482,
+    "empty_svg_text_elements": 0,
+    "lint": {
+      "textCount": 8,
+      "emptyText": 0,
+      "entityCount": 0
+    },
+    "svgLint": null
+  },
+  {
+    "id": "SM-REFUND-001",
+    "title": "退款单状态机",
+    "type": "SM 状态机",
+    "source_chars": 384,
+    "svg_chars": 6340,
+    "w": 175,
+    "h": 611,
+    "empty_svg_text_elements": 0,
+    "lint": {
+      "textCount": 9,
+      "emptyText": 0,
+      "entityCount": 0
+    },
+    "svgLint": null
+  },
+  {
+    "id": "SM-NOTIFY-001",
+    "title": "站内信任务状态机",
+    "type": "SM 状态机",
+    "source_chars": 366,
+    "svg_chars": 5835,
+    "w": 295,
+    "h": 482,
+    "empty_svg_text_elements": 0,
+    "lint": {
+      "textCount": 8,
+      "emptyText": 0,
+      "entityCount": 0
+    },
+    "svgLint": null
+  },
+  {
+    "id": "SEQ-PAY-001",
+    "title": "支付发起、返回查询与回调",
+    "type": "SEQ 时序",
+    "source_chars": 400,
+    "svg_chars": 6263,
+    "w": 388,
+    "h": 319,
+    "empty_svg_text_elements": 0,
+    "lint": {
+      "textCount": 15,
+      "emptyText": 0,
+      "entityCount": 0
+    },
+    "svgLint": null
+  },
+  {
+    "id": "SEQ-CODE-001",
+    "title": "供应商取码与失败重试",
+    "type": "SEQ 时序",
+    "source_chars": 430,
+    "svg_chars": 6977,
+    "w": 446,
+    "h": 319,
+    "empty_svg_text_elements": 0,
+    "lint": {
+      "textCount": 17,
+      "emptyText": 0,
+      "entityCount": 0
+    },
+    "svgLint": null
+  },
+  {
+    "id": "SEQ-REFUND-001",
+    "title": "退款审核、执行与失败重试",
+    "type": "SEQ 时序",
+    "source_chars": 487,
+    "svg_chars": 9019,
+    "w": 612,
+    "h": 319,
+    "empty_svg_text_elements": 0,
+    "lint": {
+      "textCount": 23,
+      "emptyText": 0,
+      "entityCount": 0
+    },
+    "svgLint": null
+  },
+  {
+    "id": "SEQ-NOTIFY-001",
+    "title": "站内信任务、去重与重试",
+    "type": "SEQ 时序",
+    "source_chars": 358,
+    "svg_chars": 5478,
+    "w": 361,
+    "h": 256,
+    "empty_svg_text_elements": 0,
+    "lint": {
+      "textCount": 13,
+      "emptyText": 0,
+      "entityCount": 0
+    },
+    "svgLint": null
+  }
+]

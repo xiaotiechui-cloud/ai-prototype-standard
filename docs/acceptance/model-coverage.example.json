@@ -1,0 +1,27 @@
+{
+  "plan_version": "<frozen-plan-version>",
+  "derivation_method": "<01/04/05/07/09 and page registry derivation method>",
+  "scope_review": "<review applicable duties and omissions before execution; this skeleton is incomplete>",
+  "ends": [
+    "client"
+  ],
+  "sources": [
+    {
+      "id": "01",
+      "path": "01_页面与状态说明.md",
+      "sha256": "<current-source-sha256>"
+    }
+  ],
+  "obligations": [
+    {
+      "id": "DUTY-P0-CLIENT",
+      "kind": "p0-journey",
+      "end": "client",
+      "source_id": "01",
+      "source_locator": "<section and page/flow ID>",
+      "entry": "<real visible entry>",
+      "expected": "<guard, data change, return, result/recovery>",
+      "unchanged": "<query, tab, scroll, object facts and permissions>"
+    }
+  ]
+}
