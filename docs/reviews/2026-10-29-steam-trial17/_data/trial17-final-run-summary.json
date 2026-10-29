@@ -1,0 +1,123 @@
+{
+  "runId": "RUN-20261029-FINAL-02",
+  "artifact": {
+    "file": "02_低保真交互原型.html",
+    "sha256": "a1462d051dcb87c96065ca4f0243cbefe0d6e6014cd592385bda8e89584a9fe0",
+    "bytes": 2171726,
+    "styleSha256": "072f0d175d917b9fcbec884b8e1f875c50748d3cacc8c1b13f3d36c406db0a9f",
+    "appScriptSha256": "f06388987777608e74d1fdf10b75db73f1dbf61924f36af28eff3607a8737517",
+    "buildReportSha256": "e646d90ff6a1cc99ea4634c13a00d24a5e2de4b724fa40cff7b8c5009dc3dba2"
+  },
+  "runtime": {
+    "ready": true,
+    "pages": 43,
+    "docs": 9,
+    "diagrams": 16,
+    "comps": 52,
+    "compBadSections": 0
+  },
+  "render": {
+    "states": 255,
+    "renderFail": 0,
+    "unregistered": 0,
+    "consoleErrors": 0
+  },
+  "environment": {
+    "browser": "Chromium 131.0.6778.33",
+    "playwright": "1.64.1 (npx cache)",
+    "os": "Windows 10 Home China 10.0.19045",
+    "viewport": "1440×900；另 1920×1080、760×900",
+    "zoom": "100%"
+  },
+  "structural": {
+    "htmlSha256": "a1462d051dcb87c96065ca4f0243cbefe0d6e6014cd592385bda8e89584a9fe0",
+    "checks": [
+      {
+        "id": "CHK-FILES-01",
+        "verdict": "通过"
+      },
+      {
+        "id": "CHK-HEADER-01",
+        "verdict": "通过"
+      },
+      {
+        "id": "CHK-COMP-01",
+        "verdict": "通过"
+      },
+      {
+        "id": "CHK-COUNT-01",
+        "verdict": "通过"
+      },
+      {
+        "id": "CHK-PLACEHOLDER-01",
+        "verdict": "通过"
+      },
+      {
+        "id": "CHK-OFFLINE-01",
+        "verdict": "通过"
+      },
+      {
+        "id": "CHK-BOUNDARY-01",
+        "verdict": "通过"
+      },
+      {
+        "id": "CHK-EMBED-01",
+        "verdict": "通过"
+      },
+      {
+        "id": "CHK-DIAGRAM-LINT-01",
+        "verdict": "通过"
+      },
+      {
+        "id": "CHK-RENDER-01",
+        "verdict": "通过"
+      },
+      {
+        "id": "CHK-DOM-UNIQUE-01",
+        "verdict": "通过"
+      },
+      {
+        "id": "CHK-SYNTAX-01",
+        "verdict": "通过"
+      },
+      {
+        "id": "CHK-ID-01",
+        "verdict": "通过"
+      },
+      {
+        "id": "CHK-TRACE-01",
+        "verdict": "通过"
+      },
+      {
+        "id": "CHK-EVENT-01",
+        "verdict": "通过"
+      },
+      {
+        "id": "CHK-STATE-DISTINCT-01",
+        "verdict": "通过"
+      },
+      {
+        "id": "CHK-DOC-STATE-01",
+        "verdict": "通过"
+      },
+      {
+        "id": "CHK-EVENT-7COL-01",
+        "verdict": "通过"
+      },
+      {
+        "id": "CHK-TC-REF-01",
+        "verdict": "通过"
+      },
+      {
+        "id": "CHK-DEC-01",
+        "verdict": "通过"
+      },
+      {
+        "id": "CHK-HASH-01",
+        "verdict": "未验证"
+      }
+    ]
+  },
+  "layout": null,
+  "journeys": null
+}

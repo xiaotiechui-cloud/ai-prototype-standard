@@ -1,0 +1,4105 @@
+[
+  {
+    "id": "APP-HOME-01",
+    "end": "APP",
+    "name": "首页",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "空数据"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ],
+      [
+        "NOTICE_CERTIFIED",
+        "首次提醒·已认证"
+      ],
+      [
+        "NOTICE_UNVERIFIED",
+        "首次提醒·未认证"
+      ],
+      [
+        "NOTICE_UNKNOWN",
+        "首次提醒·状态未知"
+      ],
+      [
+        "DEGRADED",
+        "平台能力降级"
+      ]
+    ],
+    "components": [
+      {
+        "id": "APP-HOME-01-C01",
+        "def": "CL-NAV",
+        "role": "页头标题与返回/搜索/客服",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-HOME-01-C02",
+        "def": "CL-SEARCH",
+        "role": "首页搜索入口",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-HOME-01-C03",
+        "def": "CL-SERVICE",
+        "role": "企业微信客服入口",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-HOME-01-C04",
+        "def": "CL-MEDIA",
+        "role": "广告位图片/单图占位",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-HOME-01-C05",
+        "def": "CL-TAG",
+        "role": "快捷导航入口",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-HOME-01-C06",
+        "def": "CL-GRID",
+        "role": "已发布商品双列/多列网格",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-HOME-01-C07",
+        "def": "CL-STATE",
+        "role": "加载/空/失败/降级状态区",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-HOME-01-C08",
+        "def": "CL-TAB",
+        "role": "底部一级导航",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-HOME-01-C09",
+        "def": "CL-NOTICE",
+        "role": "首次进入实名提醒弹窗",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-HOME-01-C10",
+        "def": "CL-ALERT",
+        "role": "平台能力与库存风险提示",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "WEB-HOME-01",
+    "end": "WEB",
+    "name": "首页",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "空数据"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ],
+      [
+        "NOTICE_CERTIFIED",
+        "首次提醒·已认证"
+      ],
+      [
+        "NOTICE_UNVERIFIED",
+        "首次提醒·未认证"
+      ],
+      [
+        "NOTICE_UNKNOWN",
+        "首次提醒·状态未知"
+      ],
+      [
+        "DEGRADED",
+        "平台能力降级"
+      ]
+    ],
+    "components": [
+      {
+        "id": "WEB-HOME-01-C01",
+        "def": "CL-NAV",
+        "role": "页头标题与返回/搜索/客服",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-HOME-01-C02",
+        "def": "CL-SEARCH",
+        "role": "首页搜索入口",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-HOME-01-C03",
+        "def": "CL-SERVICE",
+        "role": "企业微信客服入口",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-HOME-01-C04",
+        "def": "CL-MEDIA",
+        "role": "广告位图片/单图占位",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-HOME-01-C05",
+        "def": "CL-TAG",
+        "role": "快捷导航入口",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-HOME-01-C06",
+        "def": "CL-GRID",
+        "role": "已发布商品双列/多列网格",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-HOME-01-C07",
+        "def": "CL-STATE",
+        "role": "加载/空/失败/降级状态区",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-HOME-01-C09",
+        "def": "CL-NOTICE",
+        "role": "首次进入实名提醒弹窗",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-HOME-01-C10",
+        "def": "CL-ALERT",
+        "role": "平台能力与库存风险提示",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "APP-SEARCH-01",
+    "end": "APP",
+    "name": "搜索",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "RESULTS",
+        "有结果"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "空数据"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ],
+      [
+        "END",
+        "已到末页"
+      ]
+    ],
+    "components": [
+      {
+        "id": "APP-SEARCH-01-C01",
+        "def": "CL-NAV",
+        "role": "返回与标题",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-SEARCH-01-C02",
+        "def": "CL-SEARCH",
+        "role": "搜索输入框",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-SEARCH-01-C03",
+        "def": "CL-SEARCHACT",
+        "role": "搜索提交动作",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-SEARCH-01-C04",
+        "def": "CL-TAG",
+        "role": "搜索发现关键词",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-SEARCH-01-C05",
+        "def": "CL-GRID",
+        "role": "热门商品与搜索结果列表",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-SEARCH-01-C06",
+        "def": "CL-STATE",
+        "role": "无结果/失败/末页状态",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-SEARCH-01-C07",
+        "def": "CL-ALERT",
+        "role": "排序口径待确认提示",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "WEB-SEARCH-01",
+    "end": "WEB",
+    "name": "搜索",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "RESULTS",
+        "有结果"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "空数据"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ],
+      [
+        "END",
+        "已到末页"
+      ]
+    ],
+    "components": [
+      {
+        "id": "WEB-SEARCH-01-C01",
+        "def": "CL-NAV",
+        "role": "返回与标题",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-SEARCH-01-C02",
+        "def": "CL-SEARCH",
+        "role": "搜索输入框",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-SEARCH-01-C03",
+        "def": "CL-SEARCHACT",
+        "role": "搜索提交动作",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-SEARCH-01-C04",
+        "def": "CL-TAG",
+        "role": "搜索发现关键词",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-SEARCH-01-C05",
+        "def": "CL-GRID",
+        "role": "热门商品与搜索结果列表",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-SEARCH-01-C06",
+        "def": "CL-STATE",
+        "role": "无结果/失败/末页状态",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-SEARCH-01-C07",
+        "def": "CL-ALERT",
+        "role": "排序口径待确认提示",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "APP-PRODUCT-01",
+    "end": "APP",
+    "name": "商品详情与购买面板",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "BUY_OPEN",
+        "购买面板打开"
+      ],
+      [
+        "BUY_VALIDATION_ERROR",
+        "购买校验失败"
+      ],
+      [
+        "BUY_AGREEMENT",
+        "购买须知确认"
+      ],
+      [
+        "BUY_SUBMITTING",
+        "购买提交中"
+      ],
+      [
+        "UNAVAILABLE",
+        "不可购买"
+      ],
+      [
+        "SOLD_OUT",
+        "售罄"
+      ],
+      [
+        "PENDING_ORDER",
+        "订单处理中"
+      ],
+      [
+        "PAID_DELIVERING",
+        "已支付交付中"
+      ],
+      [
+        "UNKNOWN_STOCK",
+        "库存未知"
+      ],
+      [
+        "EXPIRED",
+        "已过期"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ]
+    ],
+    "components": [
+      {
+        "id": "APP-PRODUCT-01-C01",
+        "def": "CL-NAV",
+        "role": "返回、搜索、客服与标题",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-PRODUCT-01-C02",
+        "def": "CL-MEDIA",
+        "role": "主图与图集",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-PRODUCT-01-C03",
+        "def": "CL-DETAIL",
+        "role": "名称、售价、规格与可售状态",
+        "states": [
+          "DEFAULT",
+          "BUY_OPEN"
+        ]
+      },
+      {
+        "id": "APP-PRODUCT-01-C04",
+        "def": "CL-INFOSEC",
+        "role": "Steam 限制、交付说明与购买须知",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-PRODUCT-01-C05",
+        "def": "CL-EXPAND",
+        "role": "长介绍展开/收起",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-PRODUCT-01-C06",
+        "def": "CL-ALERT",
+        "role": "库存/余额/交付中提示",
+        "states": [
+          "DEFAULT",
+          "PAID_DELIVERING",
+          "UNKNOWN_STOCK",
+          "BUY_OPEN"
+        ]
+      },
+      {
+        "id": "APP-PRODUCT-01-C07",
+        "def": "CL-BUYBAR",
+        "role": "底部/侧栏购买操作栏",
+        "states": [
+          "DEFAULT",
+          "PENDING_ORDER",
+          "PAID_DELIVERING",
+          "UNAVAILABLE",
+          "SOLD_OUT",
+          "UNKNOWN_STOCK"
+        ]
+      },
+      {
+        "id": "APP-PRODUCT-01-C08",
+        "def": "CL-BUYPANEL",
+        "role": "购买面板宿主与关闭",
+        "states": [
+          "BUY_OPEN",
+          "BUY_VALIDATION_ERROR",
+          "BUY_AGREEMENT",
+          "BUY_SUBMITTING"
+        ]
+      },
+      {
+        "id": "APP-PRODUCT-01-C09",
+        "def": "CL-CHOICE",
+        "role": "规格与交付方式单选",
+        "states": [
+          "BUY_OPEN"
+        ]
+      },
+      {
+        "id": "APP-PRODUCT-01-C10",
+        "def": "CL-INPUT",
+        "role": "好友链接输入（仅赠送）",
+        "states": [
+          "BUY_OPEN"
+        ]
+      },
+      {
+        "id": "APP-PRODUCT-01-C11",
+        "def": "CL-PAYCHOICE",
+        "role": "微信/支付宝单选",
+        "states": [
+          "BUY_OPEN"
+        ]
+      },
+      {
+        "id": "APP-PRODUCT-01-C12",
+        "def": "CL-AGREE",
+        "role": "协议勾选与购买须知",
+        "states": [
+          "BUY_OPEN",
+          "BUY_AGREEMENT"
+        ]
+      },
+      {
+        "id": "APP-PRODUCT-01-C13",
+        "def": "CL-SERVICE",
+        "role": "客服入口",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-PRODUCT-01-C14",
+        "def": "CL-STATE",
+        "role": "商品加载/下架/过期状态",
+        "states": [
+          "LOADING",
+          "ERROR",
+          "EXPIRED",
+          "UNAVAILABLE"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "WEB-PRODUCT-01",
+    "end": "WEB",
+    "name": "商品详情与购买面板",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "BUY_OPEN",
+        "购买面板打开"
+      ],
+      [
+        "BUY_VALIDATION_ERROR",
+        "购买校验失败"
+      ],
+      [
+        "BUY_AGREEMENT",
+        "购买须知确认"
+      ],
+      [
+        "BUY_SUBMITTING",
+        "购买提交中"
+      ],
+      [
+        "UNAVAILABLE",
+        "不可购买"
+      ],
+      [
+        "SOLD_OUT",
+        "售罄"
+      ],
+      [
+        "PENDING_ORDER",
+        "订单处理中"
+      ],
+      [
+        "PAID_DELIVERING",
+        "已支付交付中"
+      ],
+      [
+        "UNKNOWN_STOCK",
+        "库存未知"
+      ],
+      [
+        "EXPIRED",
+        "已过期"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ]
+    ],
+    "components": [
+      {
+        "id": "WEB-PRODUCT-01-C01",
+        "def": "CL-NAV",
+        "role": "返回、搜索、客服与标题",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-PRODUCT-01-C02",
+        "def": "CL-MEDIA",
+        "role": "主图与图集",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-PRODUCT-01-C03",
+        "def": "CL-DETAIL",
+        "role": "名称、售价、规格与可售状态",
+        "states": [
+          "DEFAULT",
+          "BUY_OPEN"
+        ]
+      },
+      {
+        "id": "WEB-PRODUCT-01-C04",
+        "def": "CL-INFOSEC",
+        "role": "Steam 限制、交付说明与购买须知",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-PRODUCT-01-C05",
+        "def": "CL-EXPAND",
+        "role": "长介绍展开/收起",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-PRODUCT-01-C06",
+        "def": "CL-ALERT",
+        "role": "库存/余额/交付中提示",
+        "states": [
+          "DEFAULT",
+          "PAID_DELIVERING",
+          "UNKNOWN_STOCK",
+          "BUY_OPEN"
+        ]
+      },
+      {
+        "id": "WEB-PRODUCT-01-C07",
+        "def": "CL-BUYBAR",
+        "role": "底部/侧栏购买操作栏",
+        "states": [
+          "DEFAULT",
+          "PENDING_ORDER",
+          "PAID_DELIVERING",
+          "UNAVAILABLE",
+          "SOLD_OUT",
+          "UNKNOWN_STOCK"
+        ]
+      },
+      {
+        "id": "WEB-PRODUCT-01-C08",
+        "def": "CL-BUYPANEL",
+        "role": "购买面板宿主与关闭",
+        "states": [
+          "BUY_OPEN",
+          "BUY_VALIDATION_ERROR",
+          "BUY_AGREEMENT",
+          "BUY_SUBMITTING"
+        ]
+      },
+      {
+        "id": "WEB-PRODUCT-01-C09",
+        "def": "CL-CHOICE",
+        "role": "规格与交付方式单选",
+        "states": [
+          "BUY_OPEN"
+        ]
+      },
+      {
+        "id": "WEB-PRODUCT-01-C10",
+        "def": "CL-INPUT",
+        "role": "好友链接输入（仅赠送）",
+        "states": [
+          "BUY_OPEN"
+        ]
+      },
+      {
+        "id": "WEB-PRODUCT-01-C11",
+        "def": "CL-PAYCHOICE",
+        "role": "微信/支付宝单选",
+        "states": [
+          "BUY_OPEN"
+        ]
+      },
+      {
+        "id": "WEB-PRODUCT-01-C12",
+        "def": "CL-AGREE",
+        "role": "协议勾选与购买须知",
+        "states": [
+          "BUY_OPEN",
+          "BUY_AGREEMENT"
+        ]
+      },
+      {
+        "id": "WEB-PRODUCT-01-C13",
+        "def": "CL-SERVICE",
+        "role": "客服入口",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-PRODUCT-01-C14",
+        "def": "CL-STATE",
+        "role": "商品加载/下架/过期状态",
+        "states": [
+          "LOADING",
+          "ERROR",
+          "EXPIRED",
+          "UNAVAILABLE"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "APP-AGREEMENT-01",
+    "end": "APP",
+    "name": "购买协议",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ],
+      [
+        "STALE",
+        "版本已更新"
+      ]
+    ],
+    "components": [
+      {
+        "id": "APP-AGREEMENT-01-C01",
+        "def": "CL-NAV",
+        "role": "返回购买现场",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-AGREEMENT-01-C02",
+        "def": "CL-AGREEPAGE",
+        "role": "协议全文与版本",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-AGREEMENT-01-C03",
+        "def": "CL-META",
+        "role": "版本号、生效时间、实质性变更标记",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-AGREEMENT-01-C04",
+        "def": "CL-STATE",
+        "role": "加载失败与版本变化提示",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "WEB-AGREEMENT-01",
+    "end": "WEB",
+    "name": "购买协议",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ],
+      [
+        "STALE",
+        "版本已更新"
+      ]
+    ],
+    "components": [
+      {
+        "id": "WEB-AGREEMENT-01-C01",
+        "def": "CL-NAV",
+        "role": "返回购买现场",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-AGREEMENT-01-C02",
+        "def": "CL-AGREEPAGE",
+        "role": "协议全文与版本",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-AGREEMENT-01-C03",
+        "def": "CL-META",
+        "role": "版本号、生效时间、实质性变更标记",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-AGREEMENT-01-C04",
+        "def": "CL-STATE",
+        "role": "加载失败与版本变化提示",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "APP-AUTH-01",
+    "end": "APP",
+    "name": "登录与实名引导",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "REALNAME",
+        "未实名"
+      ],
+      [
+        "MINOR",
+        "未成年拦截"
+      ],
+      [
+        "LAUNCHING",
+        "唤起平台能力"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ]
+    ],
+    "components": [
+      {
+        "id": "APP-AUTH-01-C01",
+        "def": "CL-AUTH",
+        "role": "登录/实名引导层",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-AUTH-01-C02",
+        "def": "CL-BUTTON",
+        "role": "前往登录/认证、暂不认证",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-AUTH-01-C03",
+        "def": "CL-ALERT",
+        "role": "核验失败与未成年说明",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-AUTH-01-C04",
+        "def": "CL-STATE",
+        "role": "能力不可用/失败",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "WEB-AUTH-01",
+    "end": "WEB",
+    "name": "登录与实名引导",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "REALNAME",
+        "未实名"
+      ],
+      [
+        "MINOR",
+        "未成年拦截"
+      ],
+      [
+        "LAUNCHING",
+        "唤起平台能力"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ]
+    ],
+    "components": [
+      {
+        "id": "WEB-AUTH-01-C01",
+        "def": "CL-AUTH",
+        "role": "登录/实名引导层",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-AUTH-01-C02",
+        "def": "CL-BUTTON",
+        "role": "前往登录/认证、暂不认证",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-AUTH-01-C03",
+        "def": "CL-ALERT",
+        "role": "核验失败与未成年说明",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-AUTH-01-C04",
+        "def": "CL-STATE",
+        "role": "能力不可用/失败",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "APP-PHONE-01",
+    "end": "APP",
+    "name": "手机号绑定",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "CODE_SENT",
+        "验证码已发送"
+      ],
+      [
+        "VALIDATION_ERROR",
+        "校验失败"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ],
+      [
+        "LOCKED",
+        "已锁定"
+      ]
+    ],
+    "components": [
+      {
+        "id": "APP-PHONE-01-C01",
+        "def": "CL-NAV",
+        "role": "返回购买现场",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-PHONE-01-C02",
+        "def": "CL-INPUT",
+        "role": "手机号输入",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-PHONE-01-C03",
+        "def": "CL-INPUT",
+        "role": "验证码输入",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-PHONE-01-C04",
+        "def": "CL-PHONEACT",
+        "role": "获取/重发验证码",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-PHONE-01-C05",
+        "def": "CL-BUTTON",
+        "role": "提交绑定",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-PHONE-01-C06",
+        "def": "CL-ALERT",
+        "role": "隐私告知与错误提示",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-PHONE-01-C07",
+        "def": "CL-META",
+        "role": "验证码有效期与频控说明",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "WEB-PHONE-01",
+    "end": "WEB",
+    "name": "手机号绑定",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "CODE_SENT",
+        "验证码已发送"
+      ],
+      [
+        "VALIDATION_ERROR",
+        "校验失败"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ],
+      [
+        "LOCKED",
+        "已锁定"
+      ]
+    ],
+    "components": [
+      {
+        "id": "WEB-PHONE-01-C01",
+        "def": "CL-NAV",
+        "role": "返回购买现场",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-PHONE-01-C02",
+        "def": "CL-INPUT",
+        "role": "手机号输入",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-PHONE-01-C03",
+        "def": "CL-INPUT",
+        "role": "验证码输入",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-PHONE-01-C04",
+        "def": "CL-PHONEACT",
+        "role": "获取/重发验证码",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-PHONE-01-C05",
+        "def": "CL-BUTTON",
+        "role": "提交绑定",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-PHONE-01-C06",
+        "def": "CL-ALERT",
+        "role": "隐私告知与错误提示",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-PHONE-01-C07",
+        "def": "CL-META",
+        "role": "验证码有效期与频控说明",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "APP-CHECKOUT-01",
+    "end": "APP",
+    "name": "确认订单",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "EXPIRED",
+        "订单已过期"
+      ],
+      [
+        "AGREEMENT_RECONFIRM",
+        "协议需重新确认"
+      ],
+      [
+        "SUBMITTING",
+        "提交中"
+      ],
+      [
+        "CLOSED",
+        "订单已关闭"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ]
+    ],
+    "components": [
+      {
+        "id": "APP-CHECKOUT-01-C01",
+        "def": "CL-NAV",
+        "role": "返回商品/订单",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-CHECKOUT-01-C02",
+        "def": "CL-DETAIL",
+        "role": "商品与金额快照",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-CHECKOUT-01-C03",
+        "def": "CL-AGREE",
+        "role": "协议版本与重新确认",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-CHECKOUT-01-C04",
+        "def": "CL-PAYCHOICE",
+        "role": "支付方式",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-CHECKOUT-01-C05",
+        "def": "CL-DETAIL",
+        "role": "金额汇总",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-CHECKOUT-01-C06",
+        "def": "CL-COUNTDOWN",
+        "role": "可信到期时间倒计时",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-CHECKOUT-01-C07",
+        "def": "CL-BUTTON",
+        "role": "继续支付/重新购买",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-CHECKOUT-01-C08",
+        "def": "CL-ALERT",
+        "role": "过期、关闭、协议变化提示",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-CHECKOUT-01-C09",
+        "def": "CL-SERVICE",
+        "role": "客服入口",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "WEB-CHECKOUT-01",
+    "end": "WEB",
+    "name": "确认订单",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "EXPIRED",
+        "订单已过期"
+      ],
+      [
+        "AGREEMENT_RECONFIRM",
+        "协议需重新确认"
+      ],
+      [
+        "SUBMITTING",
+        "提交中"
+      ],
+      [
+        "CLOSED",
+        "订单已关闭"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ]
+    ],
+    "components": [
+      {
+        "id": "WEB-CHECKOUT-01-C01",
+        "def": "CL-NAV",
+        "role": "返回商品/订单",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-CHECKOUT-01-C02",
+        "def": "CL-DETAIL",
+        "role": "商品与金额快照",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-CHECKOUT-01-C03",
+        "def": "CL-AGREE",
+        "role": "协议版本与重新确认",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-CHECKOUT-01-C04",
+        "def": "CL-PAYCHOICE",
+        "role": "支付方式",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-CHECKOUT-01-C05",
+        "def": "CL-DETAIL",
+        "role": "金额汇总",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-CHECKOUT-01-C06",
+        "def": "CL-COUNTDOWN",
+        "role": "可信到期时间倒计时",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-CHECKOUT-01-C07",
+        "def": "CL-BUTTON",
+        "role": "继续支付/重新购买",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-CHECKOUT-01-C08",
+        "def": "CL-ALERT",
+        "role": "过期、关闭、协议变化提示",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-CHECKOUT-01-C09",
+        "def": "CL-SERVICE",
+        "role": "客服入口",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "APP-PAYRET-01",
+    "end": "APP",
+    "name": "支付返回确认",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "QUERYING",
+        "查询中"
+      ],
+      [
+        "PAID",
+        "已支付"
+      ],
+      [
+        "UNPAID",
+        "明确未支付"
+      ],
+      [
+        "TIMEOUT",
+        "结果未知"
+      ],
+      [
+        "CLOSED",
+        "订单已关闭"
+      ]
+    ],
+    "components": [
+      {
+        "id": "APP-PAYRET-01-C01",
+        "def": "CL-PAYASK",
+        "role": "“您是否已经完成了支付？”询问层",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-PAYRET-01-C02",
+        "def": "CL-STATE",
+        "role": "查询中/未知/关闭状态",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-PAYRET-01-C03",
+        "def": "CL-DETAIL",
+        "role": "当前订单摘要",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-PAYRET-01-C04",
+        "def": "CL-SERVICE",
+        "role": "客服入口",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "WEB-PAYRET-01",
+    "end": "WEB",
+    "name": "支付返回确认",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "QUERYING",
+        "查询中"
+      ],
+      [
+        "PAID",
+        "已支付"
+      ],
+      [
+        "UNPAID",
+        "明确未支付"
+      ],
+      [
+        "TIMEOUT",
+        "结果未知"
+      ],
+      [
+        "CLOSED",
+        "订单已关闭"
+      ]
+    ],
+    "components": [
+      {
+        "id": "WEB-PAYRET-01-C01",
+        "def": "CL-PAYASK",
+        "role": "“您是否已经完成了支付？”询问层",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-PAYRET-01-C02",
+        "def": "CL-STATE",
+        "role": "查询中/未知/关闭状态",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-PAYRET-01-C03",
+        "def": "CL-DETAIL",
+        "role": "当前订单摘要",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-PAYRET-01-C04",
+        "def": "CL-SERVICE",
+        "role": "客服入口",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "APP-PAY-01",
+    "end": "APP",
+    "name": "支付发起与支付结果",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "WAIT_SCAN",
+        "待扫码"
+      ],
+      [
+        "CONFIRMING",
+        "确认中"
+      ],
+      [
+        "SUCCESS",
+        "成功"
+      ],
+      [
+        "EXPIRED",
+        "支付超时"
+      ]
+    ],
+    "components": [
+      {
+        "id": "APP-PAY-01-C01",
+        "def": "CL-SCAN",
+        "role": "扫码支付层/唤起说明",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-PAY-01-C02",
+        "def": "CL-DETAIL",
+        "role": "订单号与金额",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-PAY-01-C03",
+        "def": "CL-BUTTON",
+        "role": "返回商城/重新查询",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-PAY-01-C04",
+        "def": "CL-STATE",
+        "role": "支付等待/确认中/成功",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "WEB-PAY-01",
+    "end": "WEB",
+    "name": "支付发起与支付结果",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "WAIT_SCAN",
+        "待扫码"
+      ],
+      [
+        "CONFIRMING",
+        "确认中"
+      ],
+      [
+        "SUCCESS",
+        "成功"
+      ],
+      [
+        "EXPIRED",
+        "支付超时"
+      ]
+    ],
+    "components": [
+      {
+        "id": "WEB-PAY-01-C01",
+        "def": "CL-SCAN",
+        "role": "扫码支付层/唤起说明",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-PAY-01-C02",
+        "def": "CL-DETAIL",
+        "role": "订单号与金额",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-PAY-01-C03",
+        "def": "CL-BUTTON",
+        "role": "返回商城/重新查询",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-PAY-01-C04",
+        "def": "CL-STATE",
+        "role": "支付等待/确认中/成功",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "APP-RESULT-01",
+    "end": "APP",
+    "name": "支付与交付结果",
+    "states": [
+      [
+        "CODE_ISSUING",
+        "发码中"
+      ],
+      [
+        "CODE_DELIVERED",
+        "口令码已交付"
+      ],
+      [
+        "CODE_EXCEPTION",
+        "交付异常"
+      ],
+      [
+        "GIFT_PENDING",
+        "赠送待处理"
+      ],
+      [
+        "GIFT_PROCESSING",
+        "赠送处理中"
+      ],
+      [
+        "GIFT_DONE",
+        "赠送已完成"
+      ],
+      [
+        "REFUNDING",
+        "退款中"
+      ],
+      [
+        "REFUNDED",
+        "已退款"
+      ],
+      [
+        "REFUND_FAILED",
+        "退款失败"
+      ],
+      [
+        "CONFIRMING",
+        "支付确认中"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ]
+    ],
+    "components": [
+      {
+        "id": "APP-RESULT-01-C01",
+        "def": "CL-RESULT",
+        "role": "支付与交付状态摘要",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-RESULT-01-C02",
+        "def": "CL-DETAIL",
+        "role": "订单号、商品、金额",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-RESULT-01-C03",
+        "def": "CL-DELIVERY",
+        "role": "口令码/赠送/退款交付卡",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-RESULT-01-C04",
+        "def": "CL-TIMELINE",
+        "role": "交付与退款记录时间线",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-RESULT-01-C05",
+        "def": "CL-COPY",
+        "role": "复制口令码/订单号",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-RESULT-01-C06",
+        "def": "CL-BUTTON",
+        "role": "查看订单/重新查询",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-RESULT-01-C07",
+        "def": "CL-SERVICE",
+        "role": "客服入口",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-RESULT-01-C08",
+        "def": "CL-ALERT",
+        "role": "发码异常/退款失败说明",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "WEB-RESULT-01",
+    "end": "WEB",
+    "name": "支付与交付结果",
+    "states": [
+      [
+        "CODE_ISSUING",
+        "发码中"
+      ],
+      [
+        "CODE_DELIVERED",
+        "口令码已交付"
+      ],
+      [
+        "CODE_EXCEPTION",
+        "交付异常"
+      ],
+      [
+        "GIFT_PENDING",
+        "赠送待处理"
+      ],
+      [
+        "GIFT_PROCESSING",
+        "赠送处理中"
+      ],
+      [
+        "GIFT_DONE",
+        "赠送已完成"
+      ],
+      [
+        "REFUNDING",
+        "退款中"
+      ],
+      [
+        "REFUNDED",
+        "已退款"
+      ],
+      [
+        "REFUND_FAILED",
+        "退款失败"
+      ],
+      [
+        "CONFIRMING",
+        "支付确认中"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ]
+    ],
+    "components": [
+      {
+        "id": "WEB-RESULT-01-C01",
+        "def": "CL-RESULT",
+        "role": "支付与交付状态摘要",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-RESULT-01-C02",
+        "def": "CL-DETAIL",
+        "role": "订单号、商品、金额",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-RESULT-01-C03",
+        "def": "CL-DELIVERY",
+        "role": "口令码/赠送/退款交付卡",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-RESULT-01-C04",
+        "def": "CL-TIMELINE",
+        "role": "交付与退款记录时间线",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-RESULT-01-C05",
+        "def": "CL-COPY",
+        "role": "复制口令码/订单号",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-RESULT-01-C06",
+        "def": "CL-BUTTON",
+        "role": "查看订单/重新查询",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-RESULT-01-C07",
+        "def": "CL-SERVICE",
+        "role": "客服入口",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-RESULT-01-C08",
+        "def": "CL-ALERT",
+        "role": "发码异常/退款失败说明",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "APP-ORDER-01",
+    "end": "APP",
+    "name": "我的与订单",
+    "states": [
+      [
+        "RESULTS",
+        "有结果"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "空数据"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ],
+      [
+        "SESSION_EXPIRED",
+        "会话失效"
+      ]
+    ],
+    "components": [
+      {
+        "id": "APP-ORDER-01-C01",
+        "def": "CL-NAV",
+        "role": "标题与返回",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-ORDER-01-C02",
+        "def": "CL-ACCOUNT",
+        "role": "昵称、实名/手机号状态",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-ORDER-01-C03",
+        "def": "CL-TABS",
+        "role": "订单状态页签",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-ORDER-01-C04",
+        "def": "CL-ORDERCARD",
+        "role": "订单卡片列表",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-ORDER-01-C05",
+        "def": "CL-STATE",
+        "role": "空/失败/加载",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-ORDER-01-C06",
+        "def": "CL-SESSION",
+        "role": "登录失效引导",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-ORDER-01-C07",
+        "def": "CL-SERVICE",
+        "role": "客服入口",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-ORDER-01-C08",
+        "def": "CL-TAB",
+        "role": "底部一级导航",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "WEB-ORDER-01",
+    "end": "WEB",
+    "name": "我的与订单",
+    "states": [
+      [
+        "RESULTS",
+        "有结果"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "空数据"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ],
+      [
+        "SESSION_EXPIRED",
+        "会话失效"
+      ]
+    ],
+    "components": [
+      {
+        "id": "WEB-ORDER-01-C01",
+        "def": "CL-NAV",
+        "role": "标题与返回",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-ORDER-01-C02",
+        "def": "CL-ACCOUNT",
+        "role": "昵称、实名/手机号状态",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-ORDER-01-C03",
+        "def": "CL-TABS",
+        "role": "订单状态页签",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-ORDER-01-C04",
+        "def": "CL-ORDERCARD",
+        "role": "订单卡片列表",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-ORDER-01-C05",
+        "def": "CL-STATE",
+        "role": "空/失败/加载",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-ORDER-01-C06",
+        "def": "CL-SESSION",
+        "role": "登录失效引导",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-ORDER-01-C07",
+        "def": "CL-SERVICE",
+        "role": "客服入口",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "APP-ORDERDETAIL-01",
+    "end": "APP",
+    "name": "订单详情",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "PENDING",
+        "待支付"
+      ],
+      [
+        "CONFIRMING",
+        "支付确认中"
+      ],
+      [
+        "GIFT_PROCESSING",
+        "赠送处理中"
+      ],
+      [
+        "REFUND_FAILED",
+        "退款失败"
+      ],
+      [
+        "SESSION_EXPIRED",
+        "会话失效"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ]
+    ],
+    "components": [
+      {
+        "id": "APP-ORDERDETAIL-01-C01",
+        "def": "CL-NAV",
+        "role": "返回订单列表",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-ORDERDETAIL-01-C02",
+        "def": "CL-RESULT",
+        "role": "当前展示状态摘要",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-ORDERDETAIL-01-C03",
+        "def": "CL-DETAIL",
+        "role": "商品与成交快照",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-ORDERDETAIL-01-C04",
+        "def": "CL-FACTS",
+        "role": "支付、交付、退款事实分列",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-ORDERDETAIL-01-C05",
+        "def": "CL-DELIVERY",
+        "role": "口令码/赠送结果/退款状态",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-ORDERDETAIL-01-C06",
+        "def": "CL-TIMELINE",
+        "role": "操作与交付记录",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-ORDERDETAIL-01-C07",
+        "def": "CL-COPY",
+        "role": "复制订单号/口令码",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-ORDERDETAIL-01-C08",
+        "def": "CL-BUTTON",
+        "role": "继续支付/重新查询",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-ORDERDETAIL-01-C09",
+        "def": "CL-SERVICE",
+        "role": "客服入口",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "WEB-ORDERDETAIL-01",
+    "end": "WEB",
+    "name": "订单详情",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "PENDING",
+        "待支付"
+      ],
+      [
+        "CONFIRMING",
+        "支付确认中"
+      ],
+      [
+        "GIFT_PROCESSING",
+        "赠送处理中"
+      ],
+      [
+        "REFUND_FAILED",
+        "退款失败"
+      ],
+      [
+        "SESSION_EXPIRED",
+        "会话失效"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ]
+    ],
+    "components": [
+      {
+        "id": "WEB-ORDERDETAIL-01-C01",
+        "def": "CL-NAV",
+        "role": "返回订单列表",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-ORDERDETAIL-01-C02",
+        "def": "CL-RESULT",
+        "role": "当前展示状态摘要",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-ORDERDETAIL-01-C03",
+        "def": "CL-DETAIL",
+        "role": "商品与成交快照",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-ORDERDETAIL-01-C04",
+        "def": "CL-FACTS",
+        "role": "支付、交付、退款事实分列",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-ORDERDETAIL-01-C05",
+        "def": "CL-DELIVERY",
+        "role": "口令码/赠送结果/退款状态",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-ORDERDETAIL-01-C06",
+        "def": "CL-TIMELINE",
+        "role": "操作与交付记录",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-ORDERDETAIL-01-C07",
+        "def": "CL-COPY",
+        "role": "复制订单号/口令码",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-ORDERDETAIL-01-C08",
+        "def": "CL-BUTTON",
+        "role": "继续支付/重新查询",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-ORDERDETAIL-01-C09",
+        "def": "CL-SERVICE",
+        "role": "客服入口",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "APP-SERVICE-01",
+    "end": "APP",
+    "name": "企业微信客服",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "WITH_ORDER",
+        "带订单号"
+      ],
+      [
+        "NO_ORDER",
+        "无订单号"
+      ],
+      [
+        "FALLBACK",
+        "无法唤起"
+      ]
+    ],
+    "components": [
+      {
+        "id": "APP-SERVICE-01-C01",
+        "def": "CL-NAV",
+        "role": "返回来源页",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-SERVICE-01-C02",
+        "def": "CL-SERVICECARD",
+        "role": "企业微信联系方式/二维码占位",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-SERVICE-01-C03",
+        "def": "CL-COPY",
+        "role": "复制订单号",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "APP-SERVICE-01-C04",
+        "def": "CL-ALERT",
+        "role": "无法唤起/服务时间说明",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "WEB-SERVICE-01",
+    "end": "WEB",
+    "name": "企业微信客服",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "WITH_ORDER",
+        "带订单号"
+      ],
+      [
+        "NO_ORDER",
+        "无订单号"
+      ],
+      [
+        "FALLBACK",
+        "无法唤起"
+      ]
+    ],
+    "components": [
+      {
+        "id": "WEB-SERVICE-01-C01",
+        "def": "CL-NAV",
+        "role": "返回来源页",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-SERVICE-01-C02",
+        "def": "CL-SERVICECARD",
+        "role": "企业微信联系方式/二维码占位",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-SERVICE-01-C03",
+        "def": "CL-COPY",
+        "role": "复制订单号",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "WEB-SERVICE-01-C04",
+        "def": "CL-ALERT",
+        "role": "无法唤起/服务时间说明",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ADM-HOME-01",
+    "end": "ADM",
+    "name": "首页配置",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "EDITING",
+        "编辑中"
+      ],
+      [
+        "VALIDATION_ERROR",
+        "校验失败"
+      ],
+      [
+        "PREVIEW",
+        "预览"
+      ],
+      [
+        "PUBLISHING",
+        "发布中"
+      ],
+      [
+        "SUCCESS",
+        "成功"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "components": [
+      {
+        "id": "ADM-HOME-01-C01",
+        "def": "ADM-MENU",
+        "role": "左侧业务菜单",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-HOME-01-C02",
+        "def": "ADM-TOPBAR",
+        "role": "账号与角色",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-HOME-01-C03",
+        "def": "ADM-FORM",
+        "role": "首页配置表单",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-HOME-01-C04",
+        "def": "ADM-CONFIRM",
+        "role": "发布确认与工作区提示",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-HOME-01-C05",
+        "def": "ADM-STATE",
+        "role": "加载/无权限/错误",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-HOME-01-C06",
+        "def": "ADM-DRAWER",
+        "role": "预览层",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ADM-PRODUCT-01",
+    "end": "ADM",
+    "name": "选品与商品",
+    "states": [
+      [
+        "RESULTS",
+        "有结果"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "空数据"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "components": [
+      {
+        "id": "ADM-PRODUCT-01-C01",
+        "def": "ADM-MENU",
+        "role": "左侧业务菜单",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-PRODUCT-01-C02",
+        "def": "ADM-TOPBAR",
+        "role": "账号与角色",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-PRODUCT-01-C03",
+        "def": "ADM-FILTER",
+        "role": "商品筛选",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-PRODUCT-01-C04",
+        "def": "ADM-TABS",
+        "role": "选品/发布页签",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-PRODUCT-01-C05",
+        "def": "ADM-TABLE",
+        "role": "商品表格",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-PRODUCT-01-C06",
+        "def": "ADM-PAGE",
+        "role": "分页",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-PRODUCT-01-C07",
+        "def": "ADM-DRAWER",
+        "role": "商品详情/编辑",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-PRODUCT-01-C08",
+        "def": "ADM-BATCH",
+        "role": "批量发布/下架",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-PRODUCT-01-C09",
+        "def": "ADM-EXPORT",
+        "role": "导出候选/商品",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-PRODUCT-01-C10",
+        "def": "ADM-METRIC",
+        "role": "待处理/价格不合规指标",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-PRODUCT-01-C11",
+        "def": "ADM-STATE",
+        "role": "空/错误/无权限",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-PRODUCT-01-C12",
+        "def": "ADM-CONFIRM",
+        "role": "发布/下架确认",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-PRODUCT-01-C13",
+        "def": "ADM-FORM",
+        "role": "编辑草稿",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ADM-SUPPLIER-01",
+    "end": "ADM",
+    "name": "供应商与映射",
+    "states": [
+      [
+        "RESULTS",
+        "有结果"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "空数据"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "components": [
+      {
+        "id": "ADM-SUPPLIER-01-C01",
+        "def": "ADM-MENU",
+        "role": "左侧业务菜单",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-SUPPLIER-01-C02",
+        "def": "ADM-TOPBAR",
+        "role": "账号与角色",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-SUPPLIER-01-C03",
+        "def": "ADM-FILTER",
+        "role": "供应商筛选",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-SUPPLIER-01-C04",
+        "def": "ADM-TABLE",
+        "role": "映射表格",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-SUPPLIER-01-C05",
+        "def": "ADM-PAGE",
+        "role": "分页",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-SUPPLIER-01-C06",
+        "def": "ADM-DRAWER",
+        "role": "映射详情",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-SUPPLIER-01-C07",
+        "def": "ADM-FORM",
+        "role": "凭据/映射编辑",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-SUPPLIER-01-C08",
+        "def": "ADM-CONFIRM",
+        "role": "保存确认",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-SUPPLIER-01-C09",
+        "def": "ADM-STATE",
+        "role": "空/错误/无权限",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ADM-STOCK-01",
+    "end": "ADM",
+    "name": "库存查看",
+    "states": [
+      [
+        "RESULTS",
+        "有结果"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "空数据"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "components": [
+      {
+        "id": "ADM-STOCK-01-C01",
+        "def": "ADM-MENU",
+        "role": "左侧业务菜单",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-STOCK-01-C02",
+        "def": "ADM-TOPBAR",
+        "role": "账号与角色",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-STOCK-01-C03",
+        "def": "ADM-FILTER",
+        "role": "库存筛选",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-STOCK-01-C04",
+        "def": "ADM-TABLE",
+        "role": "库存表格",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-STOCK-01-C05",
+        "def": "ADM-PAGE",
+        "role": "分页",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-STOCK-01-C06",
+        "def": "ADM-DRAWER",
+        "role": "库存详情",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-STOCK-01-C07",
+        "def": "ADM-STATE",
+        "role": "空/错误/无权限",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-STOCK-01-C08",
+        "def": "ADM-METRIC",
+        "role": "新鲜/过期/售罄指标",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ADM-ORDER-01",
+    "end": "ADM",
+    "name": "订单管理",
+    "states": [
+      [
+        "RESULTS",
+        "有结果"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "空数据"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "components": [
+      {
+        "id": "ADM-ORDER-01-C01",
+        "def": "ADM-MENU",
+        "role": "左侧业务菜单",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-ORDER-01-C02",
+        "def": "ADM-TOPBAR",
+        "role": "账号与角色",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-ORDER-01-C03",
+        "def": "ADM-FILTER",
+        "role": "订单筛选",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-ORDER-01-C04",
+        "def": "ADM-TABS",
+        "role": "支付/交付/退款页签",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-ORDER-01-C05",
+        "def": "ADM-TABLE",
+        "role": "订单表格",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-ORDER-01-C06",
+        "def": "ADM-PAGE",
+        "role": "分页",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-ORDER-01-C07",
+        "def": "ADM-DRAWER",
+        "role": "订单详情",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-ORDER-01-C08",
+        "def": "ADM-BATCH",
+        "role": "批量导出选择",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-ORDER-01-C09",
+        "def": "ADM-EXPORT",
+        "role": "导出当前筛选",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-ORDER-01-C10",
+        "def": "ADM-METRIC",
+        "role": "订单状态指标",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-ORDER-01-C11",
+        "def": "ADM-STATE",
+        "role": "空/错误/无权限",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ADM-GIFT-01",
+    "end": "ADM",
+    "name": "好友赠送",
+    "states": [
+      [
+        "RESULTS",
+        "有结果"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "空数据"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "components": [
+      {
+        "id": "ADM-GIFT-01-C01",
+        "def": "ADM-MENU",
+        "role": "左侧业务菜单",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-GIFT-01-C02",
+        "def": "ADM-TOPBAR",
+        "role": "账号与角色",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-GIFT-01-C03",
+        "def": "ADM-FILTER",
+        "role": "赠送筛选",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-GIFT-01-C04",
+        "def": "ADM-TABS",
+        "role": "处理状态页签",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-GIFT-01-C05",
+        "def": "ADM-TABLE",
+        "role": "待处理/批次表格",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-GIFT-01-C06",
+        "def": "ADM-PAGE",
+        "role": "分页",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-GIFT-01-C07",
+        "def": "ADM-DRAWER",
+        "role": "赠送详情",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-GIFT-01-C08",
+        "def": "ADM-BATCH",
+        "role": "选择订单",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-GIFT-01-C09",
+        "def": "ADM-EXPORT",
+        "role": "批次导出",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-GIFT-01-C10",
+        "def": "ADM-STATE",
+        "role": "空/错误/无权限",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-GIFT-01-C11",
+        "def": "ADM-CONFIRM",
+        "role": "完成/异常确认",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ADM-CODE-01",
+    "end": "ADM",
+    "name": "口令码交付",
+    "states": [
+      [
+        "RESULTS",
+        "有结果"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "空数据"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "components": [
+      {
+        "id": "ADM-CODE-01-C01",
+        "def": "ADM-MENU",
+        "role": "左侧业务菜单",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-CODE-01-C02",
+        "def": "ADM-TOPBAR",
+        "role": "账号与角色",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-CODE-01-C03",
+        "def": "ADM-FILTER",
+        "role": "交付筛选",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-CODE-01-C04",
+        "def": "ADM-TABS",
+        "role": "异常/重试页签",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-CODE-01-C05",
+        "def": "ADM-TABLE",
+        "role": "交付表格",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-CODE-01-C06",
+        "def": "ADM-PAGE",
+        "role": "分页",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-CODE-01-C07",
+        "def": "ADM-DRAWER",
+        "role": "请求/返回详情",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-CODE-01-C08",
+        "def": "ADM-EXPORT",
+        "role": "导出交付记录",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-CODE-01-C09",
+        "def": "ADM-STATE",
+        "role": "空/错误/无权限",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-CODE-01-C10",
+        "def": "ADM-CONFIRM",
+        "role": "重试/补发确认",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-CODE-01-C11",
+        "def": "ADM-FORM",
+        "role": "补发/换码表单",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ADM-REFUND-01",
+    "end": "ADM",
+    "name": "退款管理",
+    "states": [
+      [
+        "RESULTS",
+        "有结果"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "空数据"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "components": [
+      {
+        "id": "ADM-REFUND-01-C01",
+        "def": "ADM-MENU",
+        "role": "左侧业务菜单",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-REFUND-01-C02",
+        "def": "ADM-TOPBAR",
+        "role": "账号与角色",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-REFUND-01-C03",
+        "def": "ADM-FILTER",
+        "role": "退款筛选",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-REFUND-01-C04",
+        "def": "ADM-TABS",
+        "role": "待处理/失败页签",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-REFUND-01-C05",
+        "def": "ADM-TABLE",
+        "role": "退款表格",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-REFUND-01-C06",
+        "def": "ADM-PAGE",
+        "role": "分页",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-REFUND-01-C07",
+        "def": "ADM-DRAWER",
+        "role": "退款详情",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-REFUND-01-C08",
+        "def": "ADM-EXPORT",
+        "role": "导出退款",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-REFUND-01-C09",
+        "def": "ADM-STATE",
+        "role": "空/错误/无权限",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-REFUND-01-C10",
+        "def": "ADM-CONFIRM",
+        "role": "审核/执行确认",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-REFUND-01-C11",
+        "def": "ADM-FORM",
+        "role": "审核/执行表单",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ADM-SERVICE-01",
+    "end": "ADM",
+    "name": "客服配置",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "EDITING",
+        "编辑中"
+      ],
+      [
+        "SUBMITTING",
+        "提交中"
+      ],
+      [
+        "SUCCESS",
+        "成功"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "components": [
+      {
+        "id": "ADM-SERVICE-01-C01",
+        "def": "ADM-MENU",
+        "role": "左侧业务菜单",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-SERVICE-01-C02",
+        "def": "ADM-TOPBAR",
+        "role": "账号与角色",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-SERVICE-01-C03",
+        "def": "ADM-FORM",
+        "role": "客服配置表单",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-SERVICE-01-C04",
+        "def": "ADM-STATE",
+        "role": "保存失败/无权限",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-SERVICE-01-C05",
+        "def": "ADM-CONFIRM",
+        "role": "保存生效提示",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ADM-RBAC-01",
+    "end": "ADM",
+    "name": "权限管理",
+    "states": [
+      [
+        "RESULTS",
+        "有结果"
+      ],
+      [
+        "EMPTY",
+        "空数据"
+      ],
+      [
+        "DRAWER",
+        "编辑弹窗"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "components": [
+      {
+        "id": "ADM-RBAC-01-C01",
+        "def": "ADM-MENU",
+        "role": "左侧业务菜单",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-RBAC-01-C02",
+        "def": "ADM-TOPBAR",
+        "role": "账号与角色",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-RBAC-01-C03",
+        "def": "ADM-TABS",
+        "role": "账号/角色页签",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-RBAC-01-C04",
+        "def": "ADM-TABLE",
+        "role": "账号/角色表格",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-RBAC-01-C05",
+        "def": "ADM-PAGE",
+        "role": "分页",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-RBAC-01-C06",
+        "def": "ADM-DRAWER",
+        "role": "权限编辑",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-RBAC-01-C07",
+        "def": "ADM-FORM",
+        "role": "角色授权表单",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-RBAC-01-C08",
+        "def": "ADM-STATE",
+        "role": "空/失败/无权限",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-RBAC-01-C09",
+        "def": "ADM-CONFIRM",
+        "role": "权限变更确认",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ADM-AUDIT-01",
+    "end": "ADM",
+    "name": "操作记录",
+    "states": [
+      [
+        "RESULTS",
+        "有结果"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "空数据"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "components": [
+      {
+        "id": "ADM-AUDIT-01-C01",
+        "def": "ADM-MENU",
+        "role": "左侧业务菜单",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-AUDIT-01-C02",
+        "def": "ADM-TOPBAR",
+        "role": "账号与角色",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-AUDIT-01-C03",
+        "def": "ADM-FILTER",
+        "role": "审计筛选",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-AUDIT-01-C04",
+        "def": "ADM-TABLE",
+        "role": "审计表格",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-AUDIT-01-C05",
+        "def": "ADM-PAGE",
+        "role": "分页",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-AUDIT-01-C06",
+        "def": "ADM-DRAWER",
+        "role": "前后值详情",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-AUDIT-01-C07",
+        "def": "ADM-EXPORT",
+        "role": "导出审计",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-AUDIT-01-C08",
+        "def": "ADM-STATE",
+        "role": "空/失败/无权限",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ADM-AGREEMENT-01",
+    "end": "ADM",
+    "name": "协议管理",
+    "states": [
+      [
+        "RESULTS",
+        "有结果"
+      ],
+      [
+        "EDITING",
+        "编辑中"
+      ],
+      [
+        "PREVIEW",
+        "预览"
+      ],
+      [
+        "PUBLISHING",
+        "发布中"
+      ],
+      [
+        "SUCCESS",
+        "成功"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "components": [
+      {
+        "id": "ADM-AGREEMENT-01-C01",
+        "def": "ADM-MENU",
+        "role": "左侧业务菜单",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-AGREEMENT-01-C02",
+        "def": "ADM-TOPBAR",
+        "role": "账号与角色",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-AGREEMENT-01-C03",
+        "def": "ADM-TABS",
+        "role": "版本列表",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-AGREEMENT-01-C04",
+        "def": "ADM-TABLE",
+        "role": "版本表格",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-AGREEMENT-01-C05",
+        "def": "ADM-PAGE",
+        "role": "分页",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-AGREEMENT-01-C06",
+        "def": "ADM-DRAWER",
+        "role": "版本详情",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-AGREEMENT-01-C07",
+        "def": "ADM-FORM",
+        "role": "协议编辑",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-AGREEMENT-01-C08",
+        "def": "ADM-STATE",
+        "role": "加载/失败/无权限",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-AGREEMENT-01-C09",
+        "def": "ADM-CONFIRM",
+        "role": "发布确认",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ADM-SEARCH-01",
+    "end": "ADM",
+    "name": "搜索推荐",
+    "states": [
+      [
+        "RESULTS",
+        "有结果"
+      ],
+      [
+        "EDITING",
+        "编辑中"
+      ],
+      [
+        "SUCCESS",
+        "成功"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "components": [
+      {
+        "id": "ADM-SEARCH-01-C01",
+        "def": "ADM-MENU",
+        "role": "左侧业务菜单",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-SEARCH-01-C02",
+        "def": "ADM-TOPBAR",
+        "role": "账号与角色",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-SEARCH-01-C03",
+        "def": "ADM-TABS",
+        "role": "关键词/热门商品",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-SEARCH-01-C04",
+        "def": "ADM-TABLE",
+        "role": "配置表格",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-SEARCH-01-C05",
+        "def": "ADM-PAGE",
+        "role": "分页",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-SEARCH-01-C06",
+        "def": "ADM-DRAWER",
+        "role": "编辑",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-SEARCH-01-C07",
+        "def": "ADM-FORM",
+        "role": "关键词/商品表单",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-SEARCH-01-C08",
+        "def": "ADM-CONFIRM",
+        "role": "删除/保存确认",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-SEARCH-01-C09",
+        "def": "ADM-STATE",
+        "role": "空/失败/无权限",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ADM-PAYCHECK-01",
+    "end": "ADM",
+    "name": "支付核查",
+    "states": [
+      [
+        "RESULTS",
+        "有结果"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "空数据"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "components": [
+      {
+        "id": "ADM-PAYCHECK-01-C01",
+        "def": "ADM-MENU",
+        "role": "左侧业务菜单",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-PAYCHECK-01-C02",
+        "def": "ADM-TOPBAR",
+        "role": "账号与角色",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-PAYCHECK-01-C03",
+        "def": "ADM-FILTER",
+        "role": "核查筛选",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-PAYCHECK-01-C04",
+        "def": "ADM-TABS",
+        "role": "超时/已定性页签",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-PAYCHECK-01-C05",
+        "def": "ADM-TABLE",
+        "role": "核查表格",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-PAYCHECK-01-C06",
+        "def": "ADM-PAGE",
+        "role": "分页",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-PAYCHECK-01-C07",
+        "def": "ADM-DRAWER",
+        "role": "支付尝试/证据",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-PAYCHECK-01-C08",
+        "def": "ADM-FORM",
+        "role": "定性表单",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-PAYCHECK-01-C09",
+        "def": "ADM-CONFIRM",
+        "role": "定性确认",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-PAYCHECK-01-C10",
+        "def": "ADM-STATE",
+        "role": "空/失败/无权限",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ADM-NOTIFY-01",
+    "end": "ADM",
+    "name": "通知记录",
+    "states": [
+      [
+        "RESULTS",
+        "有结果"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "EMPTY",
+        "空数据"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "components": [
+      {
+        "id": "ADM-NOTIFY-01-C01",
+        "def": "ADM-MENU",
+        "role": "左侧业务菜单",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-NOTIFY-01-C02",
+        "def": "ADM-TOPBAR",
+        "role": "账号与角色",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-NOTIFY-01-C03",
+        "def": "ADM-FILTER",
+        "role": "通知筛选",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-NOTIFY-01-C04",
+        "def": "ADM-TABS",
+        "role": "失败/未知页签",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-NOTIFY-01-C05",
+        "def": "ADM-TABLE",
+        "role": "通知任务表格",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-NOTIFY-01-C06",
+        "def": "ADM-PAGE",
+        "role": "分页",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-NOTIFY-01-C07",
+        "def": "ADM-DRAWER",
+        "role": "任务详情",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-NOTIFY-01-C08",
+        "def": "ADM-STATE",
+        "role": "空/失败/无权限",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-NOTIFY-01-C09",
+        "def": "ADM-CONFIRM",
+        "role": "重试确认",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ADM-WALLET-01",
+    "end": "ADM",
+    "name": "钱包余额",
+    "states": [
+      [
+        "RESULTS",
+        "有结果"
+      ],
+      [
+        "LOADING",
+        "加载中"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ],
+      [
+        "NO_PERM",
+        "无权限"
+      ]
+    ],
+    "components": [
+      {
+        "id": "ADM-WALLET-01-C01",
+        "def": "ADM-MENU",
+        "role": "左侧业务菜单",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-WALLET-01-C02",
+        "def": "ADM-TOPBAR",
+        "role": "账号与角色",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-WALLET-01-C03",
+        "def": "ADM-METRIC",
+        "role": "钱包指标",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-WALLET-01-C04",
+        "def": "ADM-TABLE",
+        "role": "余额历史/受影响商品",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-WALLET-01-C05",
+        "def": "ADM-PAGE",
+        "role": "分页",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-WALLET-01-C06",
+        "def": "ADM-DRAWER",
+        "role": "余额详情",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-WALLET-01-C07",
+        "def": "ADM-FORM",
+        "role": "阈值设置",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-WALLET-01-C08",
+        "def": "ADM-CONFIRM",
+        "role": "阈值保存确认",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-WALLET-01-C09",
+        "def": "ADM-STATE",
+        "role": "加载/失败/无权限",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ADM-LOGIN-01",
+    "end": "ADM",
+    "name": "后台登录",
+    "states": [
+      [
+        "DEFAULT",
+        "默认"
+      ],
+      [
+        "ERROR",
+        "加载失败"
+      ],
+      [
+        "LOCKED",
+        "已锁定"
+      ],
+      [
+        "SUBMITTING",
+        "提交中"
+      ]
+    ],
+    "components": [
+      {
+        "id": "ADM-LOGIN-01-C01",
+        "def": "ADM-LOGIN",
+        "role": "后台登录表单",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-LOGIN-01-C02",
+        "def": "ADM-STATE",
+        "role": "错误/锁定提示",
+        "states": [
+          "DEFAULT"
+        ]
+      },
+      {
+        "id": "ADM-LOGIN-01-C03",
+        "def": "ADM-FORM",
+        "role": "账号密码输入",
+        "states": [
+          "DEFAULT"
+        ]
+      }
+    ]
+  }
+]

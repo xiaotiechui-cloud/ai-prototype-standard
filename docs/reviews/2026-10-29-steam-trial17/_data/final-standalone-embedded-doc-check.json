@@ -1,0 +1,83 @@
+[
+  {
+    "file": "00_交付说明与变更记录.md",
+    "embedded_version": "V1.0",
+    "embedded_chars": 71178,
+    "embedded_sha256": "461cc4ab0aad335d8d4f961482d73df2b5e11fa367c5858e7145c1888b76457f",
+    "external_sha256": "ef16b7a47aacde88f7740b88381db65ae8210f9521cec8b9a4dce0d2308df829",
+    "exists": true,
+    "match": false
+  },
+  {
+    "file": "01_页面与状态说明.md",
+    "embedded_version": "V1.0",
+    "embedded_chars": 74686,
+    "embedded_sha256": "0152d3fc65edb535509c96cb375ed72fd8a1e4956baaf9f6c185ef1564417b90",
+    "external_sha256": "38bcd7f2521996efebb504b8dbac9484eb83147f256a8e0582cd86df21da9186",
+    "exists": true,
+    "match": false
+  },
+  {
+    "file": "03_组件级文档.md",
+    "embedded_version": "V1.0",
+    "embedded_chars": 746804,
+    "embedded_sha256": "74448866bc37e3ffd75defed952d6d6b21f29f29f333bef43905bcc9f3de5d4c",
+    "external_sha256": "d7e59736d1a468bb37290e8b5872592cc946a25e809fc25676c4562becd05cd0",
+    "exists": true,
+    "match": false
+  },
+  {
+    "file": "04_业务流程与异常规则.md",
+    "embedded_version": "V1.0",
+    "embedded_chars": 123010,
+    "embedded_sha256": "66fb8a29d5c19fcc48751d206d2920ba7053843991f1fdd0d47000554c668093",
+    "external_sha256": "27fa286f62aa24c989f942a48841021e2fd03a12c2526d3775ed52b2635a7144",
+    "exists": true,
+    "match": false
+  },
+  {
+    "file": "05_接口数据与权限说明.md",
+    "embedded_version": "V1.0",
+    "embedded_chars": 183783,
+    "embedded_sha256": "c29c9446c1b7fa724295696f1e1b3d3134df3df35710941e73bc203839e4c63c",
+    "external_sha256": "27489df873d624d038081571f1f6d041b053fc3ceb13aff024120134253edb0d",
+    "exists": true,
+    "match": false
+  },
+  {
+    "file": "06_埋点文档.md",
+    "embedded_version": "V1.0",
+    "embedded_chars": 60700,
+    "embedded_sha256": "96297473e85d2f9d8094943fe3ba122e312bc8554938787850479a5512fe1638",
+    "external_sha256": "6cc580d938c00e6646f4bf346973dd49eba256bc6e613e9fa4bdd52c4c694aa7",
+    "exists": true,
+    "match": false
+  },
+  {
+    "file": "07_测试用例.md",
+    "embedded_version": "V1.0",
+    "embedded_chars": 124064,
+    "embedded_sha256": "a16550eb1577064682630ae584eaec3b9ed2eea02c13b001ad59215f6f2d6cff",
+    "external_sha256": "7b363f986554d74513757f459639ce7429158bf2b16a7953b045b4b3ba5d85dc",
+    "exists": true,
+    "match": false
+  },
+  {
+    "file": "08_验证记录与验收映射.md",
+    "embedded_version": "V1.0",
+    "embedded_chars": 175270,
+    "embedded_sha256": "29e905e33b9bebe5c1c3af25c66aefeb1371777154557b2ff39a7c80052bf220",
+    "external_sha256": "eaea7f2e7a18f6a6525e6bdeab40b60796b2b40d67e517c40c7fcb4b9c41d166",
+    "exists": true,
+    "match": false
+  },
+  {
+    "file": "09_待确认事项与设计决策.md",
+    "embedded_version": "V1.0",
+    "embedded_chars": 14877,
+    "embedded_sha256": "b78ee501b586cbf58fd0b9b20309f04bf64970103753dc36912c7cbb5c323e69",
+    "external_sha256": "387f13ce999266aee9f78d928440da0ed589f400fb890bc98137b82afd15995e",
+    "exists": true,
+    "match": false
+  }
+]

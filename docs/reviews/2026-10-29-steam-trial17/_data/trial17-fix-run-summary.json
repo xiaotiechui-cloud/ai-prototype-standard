@@ -1,0 +1,210 @@
+{
+  "at": "2026-10-29T03:50:11.187Z",
+  "artifact_sha256": "a1462d051dcb87c96065ca4f0243cbefe0d6e6014cd592385bda8e89584a9fe0",
+  "summary": {
+    "total": 33,
+    "pass": 33,
+    "fail": 0,
+    "consoleErrors": []
+  },
+  "results": [
+    {
+      "id": "DEF-001",
+      "title": "订单重询只改目标订单",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-001"
+    },
+    {
+      "id": "DEF-002",
+      "title": "确认中不继续支付；到期先查询",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-002"
+    },
+    {
+      "id": "DEF-003A",
+      "title": "新码单唯一ID并入交付/通知队列",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-003A"
+    },
+    {
+      "id": "DEF-003B",
+      "title": "新赠单进入待处理批次",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-003B"
+    },
+    {
+      "id": "DEF-004",
+      "title": "结果状态绑定对应订单",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-004"
+    },
+    {
+      "id": "DEF-005",
+      "title": "核心页面状态预设可区分",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-005"
+    },
+    {
+      "id": "DEF-006",
+      "title": "真实首次进入提醒与会话级记录",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-006"
+    },
+    {
+      "id": "DEF-007",
+      "title": "混合商品 gift 不受余额/库存拦截",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-007"
+    },
+    {
+      "id": "DEF-008",
+      "title": "验证码仅接受 123456",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-008"
+    },
+    {
+      "id": "DEF-009",
+      "title": "NO_PERM 不泄露数据且角色切回恢复",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-009"
+    },
+    {
+      "id": "DEF-010",
+      "title": "赠送异常与权限矩阵不再是死按钮",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-010"
+    },
+    {
+      "id": "DEF-011",
+      "title": "首页推荐/导航配置被前台消费，空推荐隐藏",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-011"
+    },
+    {
+      "id": "DEF-012",
+      "title": "赠送批次导出与批次成员一致",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-012"
+    },
+    {
+      "id": "DEF-013",
+      "title": "01 状态明细 255 行且字段状态特定",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-013"
+    },
+    {
+      "id": "DEF-014",
+      "title": "06 事件七列语义正确",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-014"
+    },
+    {
+      "id": "DEF-015",
+      "title": "16 图无 undefined/悬空，交付状态机指向 S5",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-015"
+    },
+    {
+      "id": "DEF-016",
+      "title": "TC 引用全部可定位",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-016"
+    },
+    {
+      "id": "DEF-017",
+      "title": "255 状态 DOM 组件实例唯一",
+      "ok": true,
+      "evidence": "_checks/render-results.json"
+    },
+    {
+      "id": "DEF-018",
+      "title": "自测范围扩展到状态差异/DOM/引用/七列/图示",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-018"
+    },
+    {
+      "id": "DEF-019",
+      "title": "商品内容可维护且改价写前后值审计",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-019"
+    },
+    {
+      "id": "DEF-020",
+      "title": "晚到款撞同商品新已支付单只退款",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-020"
+    },
+    {
+      "id": "DEF-021",
+      "title": "订单页登录后返回订单上下文",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-021"
+    },
+    {
+      "id": "DEF-022",
+      "title": "SESSION_EXPIRED 清除旧订单并显示登录",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-022"
+    },
+    {
+      "id": "DEF-023",
+      "title": "首页客服不携带旧订单，订单页携带当前单",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-023"
+    },
+    {
+      "id": "DEF-024",
+      "title": "空搜索提示与滚动加载",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-024"
+    },
+    {
+      "id": "DEF-025",
+      "title": "重置演示恢复全部模拟数据",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-025"
+    },
+    {
+      "id": "DEF-026",
+      "title": "A/B 合并引用 DEC-001",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-026"
+    },
+    {
+      "id": "DEF-027",
+      "title": "供应商凭据/gid/异常记录可维护且运营只读",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-027"
+    },
+    {
+      "id": "DEF-028",
+      "title": "CL-WEBTOP 无孤立定义；图/表节点 ID 对齐；退款关闭动作已移除",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-028"
+    },
+    {
+      "id": "DEF-029",
+      "title": "搜索推荐排序/启停保存并前台生效",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-029"
+    },
+    {
+      "id": "DEF-030",
+      "title": "首页广告字段/排序/启停发布并前台生效",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-030"
+    },
+    {
+      "id": "DEF-031",
+      "title": "后台登录 ERROR/SUBMITTING/LOCKED 不进入后台",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-031"
+    },
+    {
+      "id": "DEF-032",
+      "title": "PC 支付五态文案正确",
+      "ok": true,
+      "evidence": "acceptance-fix-run.json#DEF-032"
+    }
+  ]
+}

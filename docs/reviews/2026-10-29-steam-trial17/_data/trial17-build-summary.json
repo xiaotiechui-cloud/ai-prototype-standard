@@ -1,0 +1,80 @@
+{
+  "generatedAt": "2026-10-29T03:48:39.453Z",
+  "project": "Steam商城首期",
+  "version": "V1.1",
+  "batch": "BATCH-2026-10-29-02",
+  "counts": {
+    "PAGES": 43,
+    "STATES": 255,
+    "COMP_INSTANCES": 333,
+    "COMP_DEFS": 52,
+    "FLOWS": 7,
+    "SMS": 5,
+    "EXS": 24,
+    "APIS": 22,
+    "SEQS": 4,
+    "EVENTS": 14,
+    "TCS": 183,
+    "DIAGRAMS": 16,
+    "DOCS": 9,
+    "ENDS": 3
+  },
+  "docs": [
+    {
+      "file": "00_交付说明与变更记录.md",
+      "bytes": 17156
+    },
+    {
+      "file": "01_页面与状态说明.md",
+      "bytes": 283299
+    },
+    {
+      "file": "03_组件级文档.md",
+      "bytes": 261009
+    },
+    {
+      "file": "04_业务流程与异常规则.md",
+      "bytes": 64259
+    },
+    {
+      "file": "05_接口数据与权限说明.md",
+      "bytes": 35351
+    },
+    {
+      "file": "06_埋点文档.md",
+      "bytes": 10703
+    },
+    {
+      "file": "07_测试用例.md",
+      "bytes": 90402
+    },
+    {
+      "file": "08_验证记录与验收映射.md",
+      "bytes": 87866
+    },
+    {
+      "file": "09_待确认事项与设计决策.md",
+      "bytes": 14126
+    }
+  ],
+  "componentsParsed": 52,
+  "missingComponentDocs": [],
+  "diagramCount": 16,
+  "diagramLint": {
+    "diagrams": 16,
+    "undefined": 0,
+    "emptyText": 0,
+    "minText": 8
+  },
+  "htmlSha256": "a1462d051dcb87c96065ca4f0243cbefe0d6e6014cd592385bda8e89584a9fe0",
+  "htmlBytes": 2171726,
+  "standard": {
+    "ruleVersion": "V3.0",
+    "layoutRevision": "modular-1",
+    "contentRevision": "draft-20261029-trial16-model-coverage",
+    "repo": "D:\\资料备份\\产品蒸馏房\\ai-prototype-standard",
+    "commit": "bb875f6c12f752dcff61ef39f70963a8bdf33eb4",
+    "commitDate": "2026-10-29 09:04:42 +0800",
+    "commitSubject": "试跑16：补齐模型职责覆盖、导航入口校验与弹层滚动验证"
+  }
+}

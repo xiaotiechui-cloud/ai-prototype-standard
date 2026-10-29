@@ -1,0 +1,13 @@
+{
+  "protocol": "comparison-baseline-1",
+  "review_id": "<review-id>",
+  "required_roles": ["trial_artifact", "acceptance_artifact", "visual_reference", "document_reference", "prd"],
+  "inputs": [
+    {"id": "trial-current", "role": "trial_artifact", "path": "02_低保真交互原型.html", "version": "<version>", "sha256": "<sha256>", "purpose": "current repaired artifact", "relationship": "subject"},
+    {"id": "trial-accepted", "role": "acceptance_artifact", "path": "RUN-001/input.html", "version": "<version>", "sha256": "<sha256>", "purpose": "artifact actually tested by first acceptance", "relationship": "historical acceptance target"},
+    {"id": "visual-final", "role": "visual_reference", "path": "final.html", "version": "<version>", "sha256": "<sha256>", "purpose": "人工认可的视觉/交互参考", "relationship": "reference-only"},
+    {"id": "docs-final", "role": "document_reference", "path": "final/01_页面与状态说明.md", "version": "<version>", "sha256": "<sha256>", "purpose": "业务与交付文档参考", "relationship": "reference-only"},
+    {"id": "prd", "role": "prd", "path": "PRD.md", "version": "<version>", "sha256": "<sha256>", "purpose": "需求依据", "relationship": "normative-input"}
+  ],
+  "comparison": {"semantic_mapping_required": true, "counts_not_quality": true, "mismatch_action": "split visual and document findings; do not merge baselines"}
+}

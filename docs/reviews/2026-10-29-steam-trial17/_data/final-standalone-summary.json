@@ -1,0 +1,19 @@
+{
+  "path": "D:\\模型汇总\\CDK商城\\02_低保真交互原型-最终版本.html",
+  "bytes": 5930662,
+  "sha256": "04bf9e76f416833e1ac84e97408b81cbceb043bb44dca4a0529f3c80f418765f",
+  "model_present": false,
+  "page_count": 41,
+  "state_count": 152,
+  "instance_count": 0,
+  "component_definition_count": 192,
+  "diagram_count": 35,
+  "embedded_doc_count": 9,
+  "page_ends": {
+    "APP": 17,
+    "WEB": 8,
+    "ADM": 16
+  },
+  "embedded_docs_matched": 0,
+  "embedded_docs_checked": 9
+}

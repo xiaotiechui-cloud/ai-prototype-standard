@@ -1,0 +1,314 @@
+[
+  {
+    "id": "CL-NAV",
+    "name": "顶部标题栏",
+    "pattern": "PAT-NAV-01",
+    "sections": 10
+  },
+  {
+    "id": "CL-TAB",
+    "name": "底部一级导航",
+    "pattern": "PAT-NAV-02",
+    "sections": 10
+  },
+  {
+    "id": "CL-SEARCH",
+    "name": "搜索输入框",
+    "pattern": "PAT-INPUT-01",
+    "sections": 10
+  },
+  {
+    "id": "CL-SEARCHACT",
+    "name": "搜索提交动作",
+    "pattern": "PAT-ACTION-01",
+    "sections": 10
+  },
+  {
+    "id": "CL-GRID",
+    "name": "商品网格/列表",
+    "pattern": "PAT-GRID-01",
+    "sections": 10
+  },
+  {
+    "id": "CL-STATE",
+    "name": "状态区（加载/空/失败/末页）",
+    "pattern": "PAT-FEEDBACK-01",
+    "sections": 10
+  },
+  {
+    "id": "CL-SERVICE",
+    "name": "客服入口",
+    "pattern": "PAT-EXTERNAL-01",
+    "sections": 10
+  },
+  {
+    "id": "CL-DETAIL",
+    "name": "商品/订单明细卡",
+    "pattern": "PAT-CARD-01",
+    "sections": 10
+  },
+  {
+    "id": "CL-TABS",
+    "name": "状态筛选页签",
+    "pattern": "PAT-FILTER-02",
+    "sections": 10
+  },
+  {
+    "id": "CL-ORDERCARD",
+    "name": "订单卡片列表",
+    "pattern": "PAT-LIST-03",
+    "sections": 10
+  },
+  {
+    "id": "CL-SESSION",
+    "name": "登录失效引导",
+    "pattern": "PAT-FEEDBACK-02",
+    "sections": 10
+  },
+  {
+    "id": "CL-BUYPANEL",
+    "name": "购买面板",
+    "pattern": "PAT-MODAL-02",
+    "sections": 10
+  },
+  {
+    "id": "CL-AGREE",
+    "name": "协议勾选与购买须知",
+    "pattern": "PAT-CHECK-01",
+    "sections": 10
+  },
+  {
+    "id": "CL-INPUT",
+    "name": "表单输入框",
+    "pattern": "PAT-INPUT-01",
+    "sections": 10
+  },
+  {
+    "id": "CL-CHOICE",
+    "name": "规格与交付方式单选",
+    "pattern": "PAT-CHOICE-01",
+    "sections": 10
+  },
+  {
+    "id": "CL-AGREEPAGE",
+    "name": "协议全文页",
+    "pattern": "PAT-MODAL-01",
+    "sections": 10
+  },
+  {
+    "id": "CL-AUTH",
+    "name": "登录与实名引导层",
+    "pattern": "PAT-MODAL-01",
+    "sections": 10
+  },
+  {
+    "id": "CL-NOTICE",
+    "name": "首次进入实名提醒",
+    "pattern": "PAT-MODAL-01",
+    "sections": 10
+  },
+  {
+    "id": "CL-PAYCHOICE",
+    "name": "支付方式选择",
+    "pattern": "PAT-CHOICE-02",
+    "sections": 10
+  },
+  {
+    "id": "CL-PAYASK",
+    "name": "支付返回询问层",
+    "pattern": "PAT-MODAL-03",
+    "sections": 10
+  },
+  {
+    "id": "CL-RESULT",
+    "name": "支付与交付状态摘要",
+    "pattern": "PAT-CARD-02",
+    "sections": 10
+  },
+  {
+    "id": "CL-DELIVERY",
+    "name": "口令码/赠送/退款交付卡",
+    "pattern": "PAT-CARD-01",
+    "sections": 10
+  },
+  {
+    "id": "CL-TIMELINE",
+    "name": "订单/交付时间线",
+    "pattern": "PAT-TIMELINE-01",
+    "sections": 10
+  },
+  {
+    "id": "CL-COPY",
+    "name": "复制动作",
+    "pattern": "PAT-COPY-01",
+    "sections": 10
+  },
+  {
+    "id": "CL-MEDIA",
+    "name": "商品媒体/广告位",
+    "pattern": "PAT-GALLERY-01",
+    "sections": 10
+  },
+  {
+    "id": "CL-EXPAND",
+    "name": "长文展开/收起",
+    "pattern": "PAT-EXPAND-01",
+    "sections": 10
+  },
+  {
+    "id": "CL-COUNTDOWN",
+    "name": "条件倒计时",
+    "pattern": "PAT-COUNTDOWN-01",
+    "sections": 10
+  },
+  {
+    "id": "CL-SCAN",
+    "name": "扫码支付层",
+    "pattern": "PAT-MODAL-02",
+    "sections": 10
+  },
+  {
+    "id": "CL-BUYBAR",
+    "name": "购买操作栏",
+    "pattern": "PAT-ACTION-02",
+    "sections": 10
+  },
+  {
+    "id": "CL-TAG",
+    "name": "关键词/快捷标签",
+    "pattern": "PAT-LIST-02",
+    "sections": 10
+  },
+  {
+    "id": "CL-INFOSEC",
+    "name": "信息分区",
+    "pattern": "PAT-CARD-01",
+    "sections": 10
+  },
+  {
+    "id": "CL-ALERT",
+    "name": "业务提示条",
+    "pattern": "PAT-NOTICE-01",
+    "sections": 10
+  },
+  {
+    "id": "CL-PHONEACT",
+    "name": "验证码动作",
+    "pattern": "PAT-ACTION-01",
+    "sections": 10
+  },
+  {
+    "id": "CL-BUTTON",
+    "name": "主次按钮组",
+    "pattern": "PAT-ACTION-01",
+    "sections": 10
+  },
+  {
+    "id": "CL-META",
+    "name": "版本/元信息",
+    "pattern": "PAT-CARD-01",
+    "sections": 10
+  },
+  {
+    "id": "CL-ACCOUNT",
+    "name": "个人中心信息卡",
+    "pattern": "PAT-CARD-03",
+    "sections": 10
+  },
+  {
+    "id": "CL-FACTS",
+    "name": "支付/交付/退款事实分区",
+    "pattern": "PAT-CARD-02",
+    "sections": 10
+  },
+  {
+    "id": "CL-SERVICECARD",
+    "name": "客服卡片",
+    "pattern": "PAT-CARD-01",
+    "sections": 10
+  },
+  {
+    "id": "ADM-MENU",
+    "name": "左侧业务菜单",
+    "pattern": "PAT-NAV-04",
+    "sections": 10
+  },
+  {
+    "id": "ADM-TOPBAR",
+    "name": "顶部账号栏",
+    "pattern": "PAT-NAV-04",
+    "sections": 10
+  },
+  {
+    "id": "ADM-FILTER",
+    "name": "筛选区",
+    "pattern": "PAT-FILTER-03",
+    "sections": 10
+  },
+  {
+    "id": "ADM-TABS",
+    "name": "状态页签",
+    "pattern": "PAT-FILTER-02",
+    "sections": 10
+  },
+  {
+    "id": "ADM-TABLE",
+    "name": "数据表格",
+    "pattern": "PAT-TABLE-02",
+    "sections": 10
+  },
+  {
+    "id": "ADM-PAGE",
+    "name": "分页",
+    "pattern": "PAT-PAGE-02",
+    "sections": 10
+  },
+  {
+    "id": "ADM-DRAWER",
+    "name": "详情/编辑弹窗",
+    "pattern": "PAT-DRAWER-01/02",
+    "sections": 10
+  },
+  {
+    "id": "ADM-BATCH",
+    "name": "行选择与批量",
+    "pattern": "PAT-BATCH-01",
+    "sections": 10
+  },
+  {
+    "id": "ADM-EXPORT",
+    "name": "导出动作",
+    "pattern": "PAT-EXPORT-01",
+    "sections": 10
+  },
+  {
+    "id": "ADM-METRIC",
+    "name": "指标汇总卡",
+    "pattern": "PAT-CARD-04",
+    "sections": 10
+  },
+  {
+    "id": "ADM-STATE",
+    "name": "空态/错误/无权限区",
+    "pattern": "PAT-FEEDBACK-01",
+    "sections": 10
+  },
+  {
+    "id": "ADM-FORM",
+    "name": "配置/编辑表单",
+    "pattern": "PAT-INPUT-03",
+    "sections": 10
+  },
+  {
+    "id": "ADM-CONFIRM",
+    "name": "二次确认与工作区提示",
+    "pattern": "PAT-MODAL-03",
+    "sections": 10
+  },
+  {
+    "id": "ADM-LOGIN",
+    "name": "后台登录",
+    "pattern": "PAT-INPUT-03",
+    "sections": 10
+  }
+]

@@ -1,0 +1,254 @@
+[
+  {
+    "id": "FL-BROWSE-001",
+    "type": null,
+    "title": "2.1 FL-BROWSE-001 免登录浏览（首页→排序→搜索→详情）",
+    "source_chars": 1404,
+    "svg_chars": 24028
+  },
+  {
+    "id": "FL-SEARCH-001",
+    "type": null,
+    "title": "2.2 FL-SEARCH-001 搜索（默认页→提交→结果→继续加载/失败）",
+    "source_chars": 1220,
+    "svg_chars": 21030
+  },
+  {
+    "id": "FL-AUTH-001",
+    "type": null,
+    "title": "2.3 FL-AUTH-001 首次进入实名提醒（状态判定→按钮→关闭/跳转→返回重查）",
+    "source_chars": 1067,
+    "svg_chars": 14999
+  },
+  {
+    "id": "FL-AUTH-002",
+    "type": null,
+    "title": "2.4 FL-AUTH-002 购买时实名衔接（未实名→说明弹层→暂不认证/去认证→返回重查）",
+    "source_chars": 925,
+    "svg_chars": 13726
+  },
+  {
+    "id": "FL-BUY-001",
+    "type": null,
+    "title": "2.5 FL-BUY-001 购买主流程（与 PRD 5.1 主流程图一致）",
+    "source_chars": 1352,
+    "svg_chars": 22162
+  },
+  {
+    "id": "FL-PHONE-001",
+    "type": null,
+    "title": "2.6 FL-PHONE-001 手机号绑定衔接",
+    "source_chars": 812,
+    "svg_chars": 10146
+  },
+  {
+    "id": "FL-CHECKOUT-001",
+    "type": null,
+    "title": "2.7 FL-CHECKOUT-001 未支付订单恢复与继续支付",
+    "source_chars": 1416,
+    "svg_chars": 21241
+  },
+  {
+    "id": "FL-PAY-001",
+    "type": null,
+    "title": "2.8 FL-PAY-001 支付发起与返回确认（PAY-07～10 与结果去向）",
+    "source_chars": 1322,
+    "svg_chars": 19329
+  },
+  {
+    "id": "FL-DELIVER-001",
+    "type": null,
+    "title": "2.9 FL-DELIVER-001 口令码自动交付与站内信通知",
+    "source_chars": 1298,
+    "svg_chars": 16130
+  },
+  {
+    "id": "FL-DELIVER-002",
+    "type": null,
+    "title": "2.10 FL-DELIVER-002 好友赠送人工交付（工作时段规则与未定时间边界）",
+    "source_chars": 1380,
+    "svg_chars": 18548
+  },
+  {
+    "id": "FL-ORDER-001",
+    "type": null,
+    "title": "2.11 FL-ORDER-001 订单查看与状态恢复",
+    "source_chars": 1405,
+    "svg_chars": 24140
+  },
+  {
+    "id": "FL-SERVICE-001",
+    "type": null,
+    "title": "2.12 FL-SERVICE-001 企业微信客服与后台售后",
+    "source_chars": 1126,
+    "svg_chars": 15779
+  },
+  {
+    "id": "FL-ADM-HOME-001",
+    "type": null,
+    "title": "2.13 FL-ADM-HOME-001 首页配置发布",
+    "source_chars": 1020,
+    "svg_chars": 15007
+  },
+  {
+    "id": "FL-ADM-GOODS-001",
+    "type": null,
+    "title": "2.14 FL-ADM-GOODS-001 商品与规格维护",
+    "source_chars": 1072,
+    "svg_chars": 16323
+  },
+  {
+    "id": "FL-ADM-ORDER-001",
+    "type": null,
+    "title": "2.15 FL-ADM-ORDER-001 后台订单处理与导出",
+    "source_chars": 1302,
+    "svg_chars": 22903
+  },
+  {
+    "id": "FL-ADM-GIFT-001",
+    "type": null,
+    "title": "2.16 FL-ADM-GIFT-001 赠送批次处理（导出→人工赠送→核实→完成确认）",
+    "source_chars": 952,
+    "svg_chars": 11968
+  },
+  {
+    "id": "FL-ADM-CODE-001",
+    "type": null,
+    "title": "2.17 FL-ADM-CODE-001 人工补发",
+    "source_chars": 1268,
+    "svg_chars": 18090
+  },
+  {
+    "id": "FL-ADM-REFUND-001",
+    "type": null,
+    "title": "2.18 FL-ADM-REFUND-001 特殊退款",
+    "source_chars": 1067,
+    "svg_chars": 13235
+  },
+  {
+    "id": "FL-ADM-NOTIFY-001",
+    "type": null,
+    "title": "2.19 FL-ADM-NOTIFY-001 站内信任务与失败重试",
+    "source_chars": 923,
+    "svg_chars": 12094
+  },
+  {
+    "id": "FL-ADM-AGREE-001",
+    "type": null,
+    "title": "2.20 FL-ADM-AGREE-001 协议版本发布",
+    "source_chars": 832,
+    "svg_chars": 10071
+  },
+  {
+    "id": "FL-ADM-SUPPLY-001",
+    "type": null,
+    "title": "2.21 FL-ADM-SUPPLY-001 上游自动发货与人工核查",
+    "source_chars": 549,
+    "svg_chars": 14274
+  },
+  {
+    "id": "SM-PAY-001",
+    "type": null,
+    "title": "3.1 SM-PAY-001 支付",
+    "source_chars": 902,
+    "svg_chars": 9568
+  },
+  {
+    "id": "SM-CODE-001",
+    "type": null,
+    "title": "3.2 SM-CODE-001 口令码交付",
+    "source_chars": 833,
+    "svg_chars": 7479
+  },
+  {
+    "id": "SM-GIFT-001",
+    "type": null,
+    "title": "3.3 SM-GIFT-001 好友赠送",
+    "source_chars": 828,
+    "svg_chars": 8031
+  },
+  {
+    "id": "SM-AFTER-001",
+    "type": null,
+    "title": "3.4 SM-AFTER-001 售后",
+    "source_chars": 635,
+    "svg_chars": 5491
+  },
+  {
+    "id": "SM-REFUND-001",
+    "type": null,
+    "title": "3.5 SM-REFUND-001 退款单",
+    "source_chars": 874,
+    "svg_chars": 7860
+  },
+  {
+    "id": "SM-NOTIFY-001",
+    "type": null,
+    "title": "3.6 SM-NOTIFY-001 站内信任务",
+    "source_chars": 952,
+    "svg_chars": 9344
+  },
+  {
+    "id": "SEQ-AUTH-001",
+    "type": null,
+    "title": "6.1 SEQ-AUTH-001 登录与实名衔接",
+    "source_chars": 1189,
+    "svg_chars": 25285
+  },
+  {
+    "id": "SEQ-BUY-001",
+    "type": null,
+    "title": "6.2 SEQ-BUY-001 下单与支付",
+    "source_chars": 1729,
+    "svg_chars": 36436
+  },
+  {
+    "id": "SEQ-PAY-001",
+    "type": null,
+    "title": "6.3 SEQ-PAY-001 支付返回与结果确认（12项说明第9项）",
+    "source_chars": 1148,
+    "svg_chars": 20804
+  },
+  {
+    "id": "SEQ-CODE-001",
+    "type": null,
+    "title": "6.4 SEQ-CODE-001 口令码自动交付与站内信通知",
+    "source_chars": 1180,
+    "svg_chars": 23978
+  },
+  {
+    "id": "SEQ-GIFT-001",
+    "type": null,
+    "title": "6.5 SEQ-GIFT-001 好友赠送人工交付",
+    "source_chars": 1179,
+    "svg_chars": 20535
+  },
+  {
+    "id": "SEQ-NOTIFY-001",
+    "type": null,
+    "title": "6.6 SEQ-NOTIFY-001 站内信发送与失败核查重试",
+    "source_chars": 1124,
+    "svg_chars": 22590
+  },
+  {
+    "id": "SEQ-ADM-001",
+    "type": null,
+    "title": "6.7 SEQ-ADM-001 后台订单查询与导出",
+    "source_chars": 911,
+    "svg_chars": 17658
+  },
+  {
+    "id": "SEQ-ADM-002",
+    "type": null,
+    "title": "6.8 SEQ-ADM-002 人工补发",
+    "source_chars": 1005,
+    "svg_chars": 18874
+  },
+  {
+    "id": "SEQ-ADM-003",
+    "type": null,
+    "title": "6.9 SEQ-ADM-003 特殊退款",
+    "source_chars": 1245,
+    "svg_chars": 25629
+  }
+]

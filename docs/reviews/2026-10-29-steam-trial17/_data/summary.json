@@ -1,0 +1,162 @@
+{
+  "trial17_v11": {
+    "path": "D:\\模型汇总\\GitHub维护测试\\试跑17.0\\项目原型交付_V1.1\\02_低保真交互原型.html",
+    "bytes": 2171726,
+    "sha256": "a1462d051dcb87c96065ca4f0243cbefe0d6e6014cd592385bda8e89584a9fe0",
+    "model_present": true,
+    "page_count": 43,
+    "state_count": 255,
+    "instance_count": 333,
+    "component_definition_count": 52,
+    "diagram_count": 16,
+    "embedded_doc_count": 9,
+    "page_ends": {
+      "APP": 13,
+      "WEB": 13,
+      "ADM": 17
+    },
+    "embedded_docs_matched": 9,
+    "embedded_docs_checked": 9
+  },
+  "trial17_run001": {
+    "run": "RUN-001",
+    "tested_html_sha256": "a253d4e7465c4b53983612fce35528e9ac281851d6549d394ca65d3e96c2c862",
+    "artifact_version": "V1.0 / BATCH-2026-10-29-01",
+    "verdict": "failed",
+    "development_readiness": "暂不可进入开发",
+    "issue_count": 32,
+    "counts": {
+      "checks": {
+        "total": 50,
+        "applicable": 50,
+        "passed": 14,
+        "failed": 31,
+        "unverified": 5,
+        "not_applicable": 0
+      },
+      "defects_by_severity": {
+        "P0": 2,
+        "P1": 20,
+        "P2": 10
+      },
+      "defects_by_status": {
+        "待修复": 29,
+        "待决定": 3
+      }
+    },
+    "repair_html_sha256": "a1462d051dcb87c96065ca4f0243cbefe0d6e6014cd592385bda8e89584a9fe0",
+    "same_artifact_as_repair": false
+  },
+  "final_v15_package": {
+    "path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.5\\02_低保真交互原型.html",
+    "bytes": 6434934,
+    "sha256": "179e0d93471d098861a85bf1653ee0f84fa13a62a0e21b0e4611077fa65d62ac",
+    "model_present": false,
+    "page_count": 49,
+    "state_count": 185,
+    "instance_count": 0,
+    "component_definition_count": 221,
+    "diagram_count": 36,
+    "embedded_doc_count": 9,
+    "page_ends": {
+      "APP": 21,
+      "WEB": 12,
+      "ADM": 16
+    },
+    "embedded_docs_matched": 9,
+    "embedded_docs_checked": 9
+  },
+  "final_standalone_html": {
+    "path": "D:\\模型汇总\\CDK商城\\02_低保真交互原型-最终版本.html",
+    "bytes": 5930662,
+    "sha256": "04bf9e76f416833e1ac84e97408b81cbceb043bb44dca4a0529f3c80f418765f",
+    "inventory": {
+      "path": "D:\\模型汇总\\CDK商城\\02_低保真交互原型-最终版本.html",
+      "bytes": 5930662,
+      "sha256": "04bf9e76f416833e1ac84e97408b81cbceb043bb44dca4a0529f3c80f418765f",
+      "model_present": false,
+      "page_count": 41,
+      "state_count": 152,
+      "instance_count": 0,
+      "component_definition_count": 192,
+      "diagram_count": 35,
+      "embedded_doc_count": 9,
+      "page_ends": {
+        "APP": 17,
+        "WEB": 8,
+        "ADM": 16
+      },
+      "embedded_docs_matched": 0,
+      "embedded_docs_checked": 9
+    }
+  },
+  "final_package_doc_files": [
+    "00_交付说明与变更记录.md",
+    "01_页面与状态说明.md",
+    "03_组件级文档.md",
+    "04_业务流程与异常规则.md",
+    "05_接口数据与权限说明.md",
+    "06_埋点文档.md",
+    "07_测试用例.md",
+    "08_验证记录与验收映射.md",
+    "09_待确认事项与设计决策.md",
+    "补充_商城用户管理说明.md"
+  ],
+  "trial17_doc_files": [
+    "00_交付说明与变更记录.md",
+    "01_页面与状态说明.md",
+    "03_组件级文档.md",
+    "04_业务流程与异常规则.md",
+    "05_接口数据与权限说明.md",
+    "06_埋点文档.md",
+    "07_测试用例.md",
+    "08_验证记录与验收映射.md",
+    "09_待确认事项与设计决策.md"
+  ],
+  "build_counts": {
+    "PAGES": 43,
+    "STATES": 255,
+    "COMP_INSTANCES": 333,
+    "COMP_DEFS": 52,
+    "FLOWS": 7,
+    "SMS": 5,
+    "EXS": 24,
+    "APIS": 22,
+    "SEQS": 4,
+    "EVENTS": 14,
+    "TCS": 183,
+    "DIAGRAMS": 16,
+    "DOCS": 9,
+    "ENDS": 3
+  },
+  "fix_run": {
+    "total": 33,
+    "pass": 33,
+    "fail": 0,
+    "consoleErrors": []
+  },
+  "final_run_id": "RUN-20261029-FINAL-02",
+  "comparison_screenshots": [
+    {
+      "file": "trial17-v11-home.png",
+      "bytes": 129998,
+      "sha256": "641f91951ebb1fe2f393040c3ce5556f09608b8bfc448f461e59b5466f1bf929",
+      "viewport": "1440x900",
+      "browser": "Microsoft Edge headless; file://; default page state"
+    },
+    {
+      "file": "final-v15-home.png",
+      "bytes": 106785,
+      "sha256": "4287d8dd6b63298101d457e6f7158e93414ba76e1a0e8c763422885a27a31b0d",
+      "viewport": "1440x900",
+      "browser": "Microsoft Edge headless; file://; default page state"
+    },
+    {
+      "file": "final-standalone-home.png",
+      "bytes": 107716,
+      "sha256": "5231ce9dbfa4eafae9da4e831a4639c134bcba87998505251ec3865147d8c5e5",
+      "viewport": "1440x900",
+      "browser": "Microsoft Edge headless; file://; default page state"
+    }
+  ]
+}

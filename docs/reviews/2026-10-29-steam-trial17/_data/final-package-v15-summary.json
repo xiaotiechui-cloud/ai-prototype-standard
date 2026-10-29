@@ -1,0 +1,19 @@
+{
+  "path": "D:\\模型汇总\\CDK商城\\Steam商城原型交付_V1.5\\02_低保真交互原型.html",
+  "bytes": 6434934,
+  "sha256": "179e0d93471d098861a85bf1653ee0f84fa13a62a0e21b0e4611077fa65d62ac",
+  "model_present": false,
+  "page_count": 49,
+  "state_count": 185,
+  "instance_count": 0,
+  "component_definition_count": 221,
+  "diagram_count": 36,
+  "embedded_doc_count": 9,
+  "page_ends": {
+    "APP": 21,
+    "WEB": 12,
+    "ADM": 16
+  },
+  "embedded_docs_matched": 9,
+  "embedded_docs_checked": 9
+}

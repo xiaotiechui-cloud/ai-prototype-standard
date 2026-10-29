@@ -1,0 +1,114 @@
+[
+  {
+    "id": "FL-BUY-001",
+    "type": "FL",
+    "title": "购买主流程与条件校验",
+    "source_chars": 0,
+    "svg_chars": 24277
+  },
+  {
+    "id": "FL-PAY-001",
+    "type": "FL",
+    "title": "支付确认、查询与晚到款",
+    "source_chars": 0,
+    "svg_chars": 18718
+  },
+  {
+    "id": "FL-CODE-001",
+    "type": "FL",
+    "title": "口令码交付与 24 小时重试",
+    "source_chars": 0,
+    "svg_chars": 15423
+  },
+  {
+    "id": "FL-GIFT-001",
+    "type": "FL",
+    "title": "好友赠送批次与完成确认",
+    "source_chars": 0,
+    "svg_chars": 13209
+  },
+  {
+    "id": "FL-REFUND-001",
+    "type": "FL",
+    "title": "退款闭集、执行与失败重试",
+    "source_chars": 0,
+    "svg_chars": 13991
+  },
+  {
+    "id": "FL-SELECT-001",
+    "type": "FL",
+    "title": "选品、定价、发布与前台消费",
+    "source_chars": 0,
+    "svg_chars": 12927
+  },
+  {
+    "id": "FL-CONFIG-001",
+    "type": "FL",
+    "title": "首页与协议的草稿、预览、发布",
+    "source_chars": 0,
+    "svg_chars": 11985
+  },
+  {
+    "id": "SM-ORDER-001",
+    "type": "SM",
+    "title": "订单支付状态",
+    "source_chars": 0,
+    "svg_chars": 7606
+  },
+  {
+    "id": "SM-DELIVERY-001",
+    "type": "SM",
+    "title": "交付状态",
+    "source_chars": 0,
+    "svg_chars": 7008
+  },
+  {
+    "id": "SM-REFUND-001",
+    "type": "SM",
+    "title": "退款单状态",
+    "source_chars": 0,
+    "svg_chars": 5752
+  },
+  {
+    "id": "SM-PAYCHECK-001",
+    "type": "SM",
+    "title": "支付核查任务",
+    "source_chars": 0,
+    "svg_chars": 5582
+  },
+  {
+    "id": "SM-GIFT-001",
+    "type": "SM",
+    "title": "好友赠送状态",
+    "source_chars": 0,
+    "svg_chars": 5023
+  },
+  {
+    "id": "SEQ-PAY-001",
+    "type": "SEQ",
+    "title": "支付回调、查询与晚到款",
+    "source_chars": 0,
+    "svg_chars": 17013
+  },
+  {
+    "id": "SEQ-SUPPLIER-001",
+    "type": "SEQ",
+    "title": "供应商取码、重试与对账",
+    "source_chars": 0,
+    "svg_chars": 15108
+  },
+  {
+    "id": "SEQ-NOTIFY-001",
+    "type": "SEQ",
+    "title": "口令码与退款站内信",
+    "source_chars": 0,
+    "svg_chars": 12989
+  },
+  {
+    "id": "SEQ-AUTH-001",
+    "type": "SEQ",
+    "title": "登录、实名与手机号绑定返回",
+    "source_chars": 0,
+    "svg_chars": 13214
+  }
+]

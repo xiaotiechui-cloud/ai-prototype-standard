@@ -1,0 +1,345 @@
+[
+  {
+    "id": "APP-HOME-01",
+    "end": "APP",
+    "name": "商城首页（一级页面「商城」）",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "APP-NOTICE-01",
+    "end": "APP",
+    "name": "首次进入实名提醒（弹层）",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "APP-SEARCH-01",
+    "end": "APP",
+    "name": "搜索默认页",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "APP-SEARCH-02",
+    "end": "APP",
+    "name": "搜索结果页",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "APP-PRODUCT-01",
+    "end": "APP",
+    "name": "商品详情",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "APP-PANEL-01",
+    "end": "APP",
+    "name": "购买面板（底部弹层）",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "APP-AUTH-01",
+    "end": "APP",
+    "name": "实名说明弹层（平台/手工认证衔接）",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "APP-AGREEMENT-01",
+    "end": "APP",
+    "name": "购买协议查看",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "APP-PHONE-01",
+    "end": "APP",
+    "name": "绑定手机号",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "APP-LOGIN-01",
+    "end": "APP",
+    "name": "商城手机号登录/注册",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "APP-REALNAME-01",
+    "end": "APP",
+    "name": "独立账号实名认证",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "APP-REALNAME-02",
+    "end": "APP",
+    "name": "实名认证结果",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "APP-PRIVACY-01",
+    "end": "APP",
+    "name": "隐私政策",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "APP-CHECKOUT-01",
+    "end": "APP",
+    "name": "确认订单",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "APP-PAYRET-01",
+    "end": "APP",
+    "name": "支付返回确认（弹窗）",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "APP-RESULT-01",
+    "end": "APP",
+    "name": "支付与交付结果页",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "APP-ORDER-01",
+    "end": "APP",
+    "name": "我的订单",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "APP-ORDER-02",
+    "end": "APP",
+    "name": "订单详情",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "APP-MINE-01",
+    "end": "APP",
+    "name": "我的（一级页面「我的」）",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "APP-SERVICE-01",
+    "end": "APP",
+    "name": "企业微信客服",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "APP-CONTAINER-01",
+    "end": "APP",
+    "name": "容器异常提示",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "WEB-HOME-01",
+    "end": "WEB",
+    "name": "商城首页（多列，一级页面「商城」）",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "WEB-SEARCH-01",
+    "end": "WEB",
+    "name": "搜索与结果",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "WEB-PRODUCT-01",
+    "end": "WEB",
+    "name": "商品详情（分栏，含购买面板）",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "WEB-CHECKOUT-01",
+    "end": "WEB",
+    "name": "确认订单（左右分栏）",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "WEB-PAYRET-01",
+    "end": "WEB",
+    "name": "支付返回确认（居中弹窗）",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "WEB-RESULT-01",
+    "end": "WEB",
+    "name": "支付与交付结果页",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "WEB-ORDER-01",
+    "end": "WEB",
+    "name": "我的订单（列表+详情）",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "WEB-MINE-01",
+    "end": "WEB",
+    "name": "我的（一级页面「我的」）",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "WEB-LOGIN-01",
+    "end": "WEB",
+    "name": "手机号登录/注册（PC）",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "WEB-PHONE-01",
+    "end": "WEB",
+    "name": "绑定手机号（PC）",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "WEB-REALNAME-01",
+    "end": "WEB",
+    "name": "实名认证（PC）",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "WEB-REALNAME-02",
+    "end": "WEB",
+    "name": "实名认证结果（PC）",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "ADM-LOGIN-01",
+    "end": "ADM",
+    "name": "后台登录",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "ADM-HOME-01",
+    "end": "ADM",
+    "name": "首页配置管理",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "ADM-GOODS-01",
+    "end": "ADM",
+    "name": "商品管理",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "ADM-STOCK-01",
+    "end": "ADM",
+    "name": "可售库存",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "ADM-SEARCH-01",
+    "end": "ADM",
+    "name": "搜索推荐配置",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "ADM-ORDER-01",
+    "end": "ADM",
+    "name": "订单管理",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "ADM-GIFT-01",
+    "end": "ADM",
+    "name": "好友赠送",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "ADM-CODE-01",
+    "end": "ADM",
+    "name": "口令码交付",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "ADM-NOTIFY-01",
+    "end": "ADM",
+    "name": "通知记录",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "ADM-REFUND-01",
+    "end": "ADM",
+    "name": "特殊退款",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "ADM-PAYCHK-01",
+    "end": "ADM",
+    "name": "支付核查",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "ADM-AGREE-01",
+    "end": "ADM",
+    "name": "协议管理",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "ADM-SERVICE-01",
+    "end": "ADM",
+    "name": "客服配置",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "ADM-RBAC-01",
+    "end": "ADM",
+    "name": "权限管理",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "ADM-AUDIT-01",
+    "end": "ADM",
+    "name": "操作记录",
+    "states": [],
+    "components": []
+  },
+  {
+    "id": "ADM-STAT-01",
+    "end": "ADM",
+    "name": "基础统计",
+    "states": [],
+    "components": []
+  }
+]

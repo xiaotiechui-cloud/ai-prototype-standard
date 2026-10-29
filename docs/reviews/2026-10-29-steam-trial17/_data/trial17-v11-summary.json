@@ -1,0 +1,19 @@
+{
+  "path": "D:\\模型汇总\\GitHub维护测试\\试跑17.0\\项目原型交付_V1.1\\02_低保真交互原型.html",
+  "bytes": 2171726,
+  "sha256": "a1462d051dcb87c96065ca4f0243cbefe0d6e6014cd592385bda8e89584a9fe0",
+  "model_present": true,
+  "page_count": 43,
+  "state_count": 255,
+  "instance_count": 333,
+  "component_definition_count": 52,
+  "diagram_count": 16,
+  "embedded_doc_count": 9,
+  "page_ends": {
+    "APP": 13,
+    "WEB": 13,
+    "ADM": 17
+  },
+  "embedded_docs_matched": 9,
+  "embedded_docs_checked": 9
+}
